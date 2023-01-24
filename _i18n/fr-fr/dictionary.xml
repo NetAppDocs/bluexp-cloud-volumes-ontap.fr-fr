@@ -4409,8 +4409,6 @@
   <block id="3d9563c3da13e16d8921ac243a987129" category="paragraph">Une configuration de plusieurs zones de disponibilité Cloud Volumes ONTAP HA dans Azure inclut les composants suivants :</block>
   <block id="ad6e11a5573fe6579ae1e6dcdce60d8b" category="inline-image-macro">Image conceptuelle qui affiche un équilibreur de charge gérant le trafic entrant de BlueXP et de clients, deux nœuds Cloud Volumes ONTAP dans deux zones de disponibilité, des disques SSD pour les données de démarrage et des disques gérés pour les données client.</block>
   <block id="af874ecaf1a103d4d596315556c66e56" category="paragraph"><block ref="af874ecaf1a103d4d596315556c66e56" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="77a1f8867dc12013c0da2ead2b6c9ca3" category="inline-link">En savoir plus sur la redondance du stockage Azure dans les documents Azure</block>
-  <block id="2b6a2a78ba6ba0d1bf316591f2c9f89b" category="list-text">Deux nœuds Cloud Volumes ONTAP sont déployés sur différentes zones de disponibilité. Les zones de disponibilité garantissent que les nœuds se trouvent dans différents domaines de défaillance.<block ref="c8912f6a29cb2653305e1189cf1fa38a" category="inline-link-rx"></block>.</block>
   <block id="0297170537ff589d5fd67ec8db7c4ae4" category="inline-link-macro">données de démarrage, racine, racine partenaire et données principales</block>
   <block id="419c5f0dee6c475074f478e8aca659fd" category="list-text">Les données clients résident sur des disques gérés ZRS (zone-redondant Storage). Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour <block ref="21b5d37c4ebe0dabed7cc2a884c8db5a" category="inline-link-macro-rx"></block>.</block>
   <block id="b04fd67a98a3b32956894024aa6fcf4f" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Configuration du KMS AWS</block>
@@ -4620,4 +4618,14 @@
   <block id="432afd81656ecff91097001b2dbff0ad" category="section-title">Version 9.10.0 et antérieure</block>
   <block id="ee11a9e37983cbc9cebba6a139158639" category="paragraph">Vous pouvez activer le stockage WORM sur un système Cloud Volumes ONTAP lorsque vous créez un nouvel environnement de travail. Vous ne pouvez pas activer le stockage WORM sur des volumes individuels :-WORM doit être activé au niveau du système. Elle ne peut être activée que lorsque vous créez l'environnement de travail.</block>
   <block id="05f24457306e58dd0ea1e99766bc28dc" category="list-text">Un nœud Edge avec chaque capacité de 3 tibs achetée</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Prise en charge des solutions des fournisseurs cloud</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">Pour obtenir une assistance technique sur les solutions de fournisseurs de services cloud suivantes que vous avez intégrées à BlueXP, reportez-vous à la section « obtention d'aide » de la documentation BlueXP de ce produit.</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX pour ONTAP</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service pour Google Cloud</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="6d50c94851edb68865f91b19a7c8e802" category="inline-link">En savoir plus sur le stockage redondant par zone Azure pour les disques gérés dans la documentation Azure</block>
+  <block id="d0dd1e24dc3eec7e346159d97577b2a5" category="list-text">Deux nœuds Cloud Volumes ONTAP sont déployés sur différentes zones de disponibilité. Les zones de disponibilité garantissent que les nœuds se trouvent dans différents domaines de défaillance.<block ref="ac08b397e7ae08c3f76d7057ac214476" category="inline-link-rx"></block>.</block>
 </blocks>
