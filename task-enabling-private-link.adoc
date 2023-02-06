@@ -43,7 +43,7 @@ Si votre entreprise le requiert, vous pouvez modifier un paramètre dans BlueXP 
 
 == Utilisation des liens privés Azure
 
-Dans la plupart des cas, rien n'est nécessaire pour configurer des liens privés Azure avec Cloud Volumes ONTAP. BlueXP gère des liens privés Azure pour vous. Mais si vous utilisez le DNS privé Azure, vous devrez modifier un fichier de configuration. Vous devez également connaître une exigence pour l'emplacement du connecteur dans Azure.
+Dans la plupart des cas, aucune action n'est nécessaire pour configurer des liens privés Azure avec Cloud Volumes ONTAP. BlueXP gère des liens privés Azure pour vous. Cependant, si vous utilisez Azure Private DNS, vous devez modifier un fichier de configuration. Vous devez également connaître une exigence pour l'emplacement du connecteur dans Azure.
 
 
 
@@ -81,6 +81,7 @@ Notez que le nom DNS doit correspondre aux exigences de nommage des DNS Azure ht
    "resource-group" : "<resource group name of the DNS zone>",
    "subscription" : "<subscription ID>",
    "use-existing" : true
+   "create-private-dns-zone-link" : true
 }
 ....
 +

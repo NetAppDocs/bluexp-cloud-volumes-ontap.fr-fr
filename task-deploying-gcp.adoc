@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-deploying-gcp.html 
-keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create, gcp, BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, gcp ha, ha in gcp, ha pair 
+keywords: Cloud Volumes ONTAP, deploying, launching, creating, deploy, launch, create,  BYOL, license key, serial number, location, license, preconfigured packages, programmatic deployments, disk size, write speed, access control, volume protection, usage profile, register, CIFS share, quota, qtree, HA, high availability, google cloud ha, ha in google cloud, ha pair 
 summary: Vous pouvez lancer Cloud Volumes ONTAP dans une configuration à un seul système ou en tant que paire HA dans Google Cloud Platform. 
 ---
-= Lancement d'Cloud Volumes ONTAP dans GCP
+= Lancement d'Cloud Volumes ONTAP dans Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Vous pouvez lancer Cloud Volumes ONTAP dans une configuration à un seu
 
 
 [role="lead"]
-Vous pouvez lancer Cloud Volumes ONTAP dans une configuration à un seul nœud ou en tant que paire HA dans Google Cloud Platform.
+Vous pouvez lancer Cloud Volumes ONTAP dans une configuration à un seul nœud ou en tant que paire HA dans Google Cloud.
 
 
 
@@ -32,7 +32,7 @@ Vous avez besoin des éléments suivants pour créer un environnement de travail
 
 * Compréhension de la configuration que vous voulez utiliser.
 +
-Vous devez vous préparer en choisissant une configuration et en obtenant des informations de mise en réseau GCP de votre administrateur. Pour plus de détails, voir link:task-planning-your-config-gcp.html["Planification de votre configuration Cloud Volumes ONTAP"].
+Vous devez vous préparer en choisissant une configuration et en obtenant des informations de mise en réseau Google Cloud de votre administrateur. Pour plus de détails, voir link:task-planning-your-config-gcp.html["Planification de votre configuration Cloud Volumes ONTAP"].
 
 * Comprendre les exigences de configuration des licences pour Cloud Volumes ONTAP.
 +
@@ -51,9 +51,9 @@ link:task-set-up-licensing-gcp.html["Découvrez comment configurer les licences"
 
 
 
-== Lancement d'un système à un seul nœud dans GCP
+== Lancement d'un système à un seul nœud dans Google Cloud
 
-Créez un environnement de travail dans BlueXP pour lancer Cloud Volumes ONTAP dans GCP.
+Créez un environnement de travail dans BlueXP pour lancer Cloud Volumes ONTAP dans Google Cloud.
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
@@ -70,13 +70,13 @@ Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de 
 | Champ | Description 
 
 
-| Nom de l'environnement de travail | BlueXP utilise le nom de l'environnement de travail pour nommer à la fois le système Cloud Volumes ONTAP et l'instance de machine virtuelle GCP. Il utilise également le nom comme préfixe pour le groupe de sécurité prédéfini, si vous sélectionnez cette option. 
+| Nom de l'environnement de travail | BlueXP utilise le nom de l'environnement de travail pour nommer à la fois le système Cloud Volumes ONTAP et l'instance Google Cloud VM. Il utilise également le nom comme préfixe pour le groupe de sécurité prédéfini, si vous sélectionnez cette option. 
 
 
 | Nom du compte de service | Si vous prévoyez d'utiliser link:concept-data-tiering.html["tiering des données"] ou https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["La sauvegarde dans le cloud"^] Avec Cloud Volumes ONTAP, vous devez alors activer *compte de service* et sélectionner un compte de service disposant du rôle d'administrateur de stockage prédéfini. link:task-creating-gcp-service-account.html["Découvrez comment créer un compte de service"]. 
 
 
-| Ajouter des étiquettes | Les étiquettes sont des métadonnées pour les ressources GCP. BlueXP ajoute les étiquettes au système Cloud Volumes ONTAP et aux ressources GCP associées au système. Vous pouvez ajouter jusqu'à quatre étiquettes à partir de l'interface utilisateur lors de la création d'un environnement de travail, puis vous pouvez en ajouter d'autres une fois qu'elles ont été créées. Notez que l'API ne vous limite pas à quatre étiquettes lors de la création d'un environnement de travail. Pour plus d'informations sur les étiquettes, reportez-vous à la section https://cloud.google.com/compute/docs/labeling-resources["Documentation Google Cloud : étiquetage des ressources"^]. 
+| Ajouter des étiquettes | Les étiquettes sont des métadonnées pour vos ressources Google Cloud. BlueXP ajoute les étiquettes au système Cloud Volumes ONTAP et aux ressources Google Cloud associées au système. Vous pouvez ajouter jusqu'à quatre étiquettes à partir de l'interface utilisateur lors de la création d'un environnement de travail, puis vous pouvez en ajouter d'autres une fois qu'elles ont été créées. Notez que l'API ne vous limite pas à quatre étiquettes lors de la création d'un environnement de travail. Pour plus d'informations sur les étiquettes, reportez-vous à la section https://cloud.google.com/compute/docs/labeling-resources["Documentation Google Cloud : étiquetage des ressources"^]. 
 
 
 | Nom d'utilisateur et mot de passe | Il s'agit des identifiants du compte d'administrateur du cluster Cloud Volumes ONTAP. Vous pouvez utiliser ces identifiants pour vous connecter à Cloud Volumes ONTAP via System Manager ou son interface de ligne de commandes. Conservez le nom d'utilisateur _admin_ par défaut ou remplacez-le par un nom d'utilisateur personnalisé. 
@@ -92,15 +92,19 @@ NOTE: Il s'agit du compte de service que vous avez configuré pour BlueXP, link:
 
 Cliquez sur *Ajouter un abonnement* pour associer les informations d'identification sélectionnées à un abonnement.
 
-Pour créer un système Cloud Volumes ONTAP de paiement basé sur l'utilisation, vous devez sélectionner un projet GCP associé à un abonnement à Cloud Volumes ONTAP depuis GCP Marketplace.
+Pour créer un système Cloud Volumes ONTAP de paiement basé sur l'utilisation, vous devez sélectionner un projet Google Cloud associé à un abonnement à Cloud Volumes ONTAP depuis Google Cloud Marketplace.
 
 |===
 +
-La vidéo suivante explique comment associer un abonnement Marketplace basé sur l'utilisation à votre projet GCP. Vous pouvez également suivre les étapes pour vous abonner à la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Association d'un abonnement Marketplace aux informations d'identification GCP"^] section.
+La vidéo suivante explique comment associer un abonnement au Marketplace à paiement basé sur l'utilisation à votre projet Google Cloud. Vous pouvez également suivre les étapes pour vous abonner à la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Association d'un abonnement Marketplace aux identifiants Google Cloud"^] section.
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . *Services* : sélectionnez les services que vous souhaitez utiliser sur ce système. Pour sélectionner Cloud Backup ou utiliser Tiering, vous devez avoir spécifié le compte de service à l'étape 3.
++
+
+TIP: Si vous souhaitez utiliser le stockage WORM et le Tiering des données, vous devez désactiver Cloud Backup et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
+
 . *Localisation et connectivité* : sélectionnez un emplacement, choisissez une stratégie de pare-feu et confirmez la connectivité réseau au stockage Google Cloud pour le Tiering des données.
 +
 Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -148,30 +152,33 @@ Le type de disque correspond au volume initial. Vous pouvez choisir un autre typ
 La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 
 +
-Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionnement du système dans GCP"].
+Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionnement du système dans Google Cloud"].
 
-. *Vitesse d'écriture et WORM* : choisissez *Normal* ou *vitesse d'écriture élevée*, et activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
+. *Vitesse d'écriture et WORM* :
 +
-La sélection d'une vitesse d'écriture est prise en charge avec les systèmes à un seul nœud uniquement.
-
+.. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
 link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
+.. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
-IMPOSSIBLE D'activer WORM si le Tiering des données était activé.
+LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
 link:concept-worm.html["En savoir plus sur le stockage WORM"].
 
-. *Tiering de données dans Google Cloud Platform* : choisissez d'activer ou non le Tiering des données sur l'agrégat initial, choisissez une classe de stockage pour les données hiérarchisées, puis sélectionnez un compte de service disposant du rôle d'administrateur de stockage prédéfini (requis pour Cloud Volumes ONTAP 9.7 ou version ultérieure). Ou sélectionnez un compte GCP (obligatoire pour Cloud Volumes ONTAP 9.6).
+.. Si vous activez le stockage WORM, sélectionnez la période de conservation.
+
+
+. *Tiering de données dans Google Cloud Platform* : choisissez d'activer ou non le Tiering des données sur l'agrégat initial, choisissez une classe de stockage pour les données hiérarchisées, puis sélectionnez un compte de service disposant du rôle d'administrateur de stockage prédéfini (requis pour Cloud Volumes ONTAP 9.7 ou version ultérieure). Ou sélectionnez un compte Google Cloud (obligatoire pour Cloud Volumes ONTAP 9.6).
 +
 Notez ce qui suit :
 
 +
 ** BlueXP définit le compte de service sur l'instance Cloud Volumes ONTAP. Ce compte de service fournit des autorisations de Tiering des données vers un compartiment Google Cloud Storage. Assurez-vous d'ajouter le compte de service Connector en tant qu'utilisateur du compte de service Tiering, sinon, vous ne pouvez pas le sélectionner dans BlueXP
-** Pour obtenir de l'aide sur l'ajout d'un compte GCP, reportez-vous à https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Configuration et ajout de comptes GCP pour le Tiering des données avec la version 9.6"^].
+** Pour obtenir de l'aide sur l'ajout d'un compte Google Cloud, consultez la section https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Configuration et ajout de comptes Google Cloud pour le Tiering des données avec 9.6"^].
 ** Vous pouvez choisir une règle de Tiering des volumes spécifique lorsque vous créez ou modifiez un volume.
-** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants, mais vous devrez désactiver le système et ajouter un compte de service à partir de la console GCP.
+** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants, mais vous devrez désactiver le système et ajouter un compte de service depuis la console Google Cloud.
 +
 link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
 
@@ -247,7 +254,7 @@ Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choosing-
 . *Revue et approbation* : consultez et confirmez vos choix.
 +
 .. Consultez les détails de la configuration.
-.. Cliquez sur *plus d'informations* pour en savoir plus sur l'assistance et les ressources GCP que BlueXP achètera.
+.. Cliquez sur *plus d'informations* pour en savoir plus sur le support et les ressources Google Cloud que BlueXP achètera.
 .. Cochez les cases *Je comprends...*.
 .. Cliquez sur *Go*.
 
@@ -271,9 +278,9 @@ Les quotas vous permettent de restreindre ou de suivre l'espace disque et le nom
 
 
 
-== Lancement d'une paire haute disponibilité dans GCP
+== Lancement d'une paire HA dans Google Cloud
 
-Créez un environnement de travail dans BlueXP pour lancer Cloud Volumes ONTAP dans GCP.
+Créez un environnement de travail dans BlueXP pour lancer Cloud Volumes ONTAP dans Google Cloud.
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
@@ -289,13 +296,13 @@ Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de 
 | Champ | Description 
 
 
-| Nom de l'environnement de travail | BlueXP utilise le nom de l'environnement de travail pour nommer à la fois le système Cloud Volumes ONTAP et l'instance de machine virtuelle GCP. Il utilise également le nom comme préfixe pour le groupe de sécurité prédéfini, si vous sélectionnez cette option. 
+| Nom de l'environnement de travail | BlueXP utilise le nom de l'environnement de travail pour nommer à la fois le système Cloud Volumes ONTAP et l'instance Google Cloud VM. Il utilise également le nom comme préfixe pour le groupe de sécurité prédéfini, si vous sélectionnez cette option. 
 
 
 | Nom du compte de service | Si vous avez l'intention d'utiliser le link:concept-data-tiering.html["Tiering"] ou https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["La sauvegarde dans le cloud"^] Services, vous devez activer le commutateur *compte de service*, puis sélectionner le compte de service qui a le rôle d'administrateur de stockage prédéfini. 
 
 
-| Ajouter des étiquettes | Les étiquettes sont des métadonnées pour les ressources GCP. BlueXP ajoute les étiquettes au système Cloud Volumes ONTAP et aux ressources GCP associées au système. Vous pouvez ajouter jusqu'à quatre étiquettes à partir de l'interface utilisateur lors de la création d'un environnement de travail, puis vous pouvez en ajouter d'autres une fois qu'elles ont été créées. Notez que l'API ne vous limite pas à quatre étiquettes lors de la création d'un environnement de travail. Pour plus d'informations sur les étiquettes, reportez-vous à la section https://cloud.google.com/compute/docs/labeling-resources["Documentation Google Cloud : étiquetage des ressources"^]. 
+| Ajouter des étiquettes | Les étiquettes sont des métadonnées pour vos ressources Google Cloud. BlueXP ajoute les étiquettes au système Cloud Volumes ONTAP et aux ressources Google Cloud associées au système. Vous pouvez ajouter jusqu'à quatre étiquettes à partir de l'interface utilisateur lors de la création d'un environnement de travail, puis vous pouvez en ajouter d'autres une fois qu'elles ont été créées. Notez que l'API ne vous limite pas à quatre étiquettes lors de la création d'un environnement de travail. Pour plus d'informations sur les étiquettes, reportez-vous à la section https://cloud.google.com/compute/docs/labeling-resources["Documentation Google Cloud : étiquetage des ressources"^]. 
 
 
 | Nom d'utilisateur et mot de passe | Il s'agit des identifiants du compte d'administrateur du cluster Cloud Volumes ONTAP. Vous pouvez utiliser ces identifiants pour vous connecter à Cloud Volumes ONTAP via System Manager ou son interface de ligne de commandes. Conservez le nom d'utilisateur _admin_ par défaut ou remplacez-le par un nom d'utilisateur personnalisé. 
@@ -311,15 +318,19 @@ NOTE: Il s'agit du compte de service que vous avez configuré pour BlueXP, link:
 
 Cliquez sur *Ajouter un abonnement* pour associer les informations d'identification sélectionnées à un abonnement.
 
-Pour créer un système Cloud Volumes ONTAP de paiement basé sur l'utilisation, vous devez sélectionner un projet GCP associé à un abonnement à Cloud Volumes ONTAP depuis GCP Marketplace.
+Pour créer un système Cloud Volumes ONTAP de paiement basé sur l'utilisation, vous devez sélectionner un projet Google Cloud associé à un abonnement à Cloud Volumes ONTAP depuis Google Cloud Marketplace.
 
 |===
 +
-La vidéo suivante explique comment associer un abonnement Marketplace basé sur l'utilisation à votre projet GCP. Vous pouvez également suivre les étapes pour vous abonner à la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Association d'un abonnement Marketplace aux informations d'identification GCP"^] section.
+La vidéo suivante explique comment associer un abonnement au Marketplace à paiement basé sur l'utilisation à votre projet Google Cloud. Vous pouvez également suivre les étapes pour vous abonner à la https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Association d'un abonnement Marketplace aux identifiants Google Cloud"^] section.
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
 . *Services* : sélectionnez les services que vous souhaitez utiliser sur ce système. Pour sélectionner Cloud Backup ou utiliser Tiering, vous devez avoir spécifié le compte de service à l'étape 3.
++
+
+TIP: Si vous souhaitez utiliser le stockage WORM et le Tiering des données, vous devez désactiver Cloud Backup et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
+
 . *Modèles de déploiement haute disponibilité* : choisissez plusieurs zones (recommandé) ou une seule zone pour la configuration haute disponibilité. Sélectionnez ensuite une région et des zones.
 +
 link:concept-ha-google-cloud.html["En savoir plus sur les modèles de déploiement pour la haute disponibilité"].
@@ -371,20 +382,32 @@ Le type de disque correspond au volume initial. Vous pouvez choisir un autre typ
 La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 
 +
-Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionnement du système dans GCP"].
+Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionnement du système dans Google Cloud"].
 
-. *WORM* : activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
+. *Vitesse d'écriture et WORM* :
 +
-IMPOSSIBLE D'activer WORM si le Tiering des données était activé. link:concept-worm.html["En savoir plus sur le stockage WORM"].
+.. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
++
+link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
-. *Tiering de données dans Google Cloud Platform* : choisissez d'activer ou non le Tiering de données sur l'agrégat initial, choisissez une classe de stockage pour les données hiérarchisées, puis sélectionnez un compte de service avec le rôle d'administrateur de stockage prédéfini.
+.. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
++
+LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
+
++
+link:concept-worm.html["En savoir plus sur le stockage WORM"].
+
+.. Si vous activez le stockage WORM, sélectionnez la période de conservation.
+
+
+. *Tiering de données dans Google Cloud* : choisissez d'activer ou non le Tiering de données sur l'agrégat initial, choisissez une classe de stockage pour les données hiérarchisées, puis sélectionnez un compte de service avec le rôle d'administrateur de stockage prédéfini.
 +
 Notez ce qui suit :
 
 +
 ** BlueXP définit le compte de service sur l'instance Cloud Volumes ONTAP. Ce compte de service fournit des autorisations de Tiering des données vers un compartiment Google Cloud Storage. Assurez-vous d'ajouter le compte de service Connector en tant qu'utilisateur du compte de service Tiering, sinon, vous ne pouvez pas le sélectionner dans BlueXP.
 ** Vous pouvez choisir une règle de Tiering des volumes spécifique lorsque vous créez ou modifiez un volume.
-** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants, mais vous devrez désactiver le système et ajouter un compte de service à partir de la console GCP.
+** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants, mais vous devrez désactiver le système et ajouter un compte de service depuis la console Google Cloud.
 +
 link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
 
@@ -460,7 +483,7 @@ Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choosing-
 . *Revue et approbation* : consultez et confirmez vos choix.
 +
 .. Consultez les détails de la configuration.
-.. Cliquez sur *plus d'informations* pour en savoir plus sur l'assistance et les ressources GCP que BlueXP achètera.
+.. Cliquez sur *plus d'informations* pour en savoir plus sur le support et les ressources Google Cloud que BlueXP achètera.
 .. Cochez les cases *Je comprends...*.
 .. Cliquez sur *Go*.
 

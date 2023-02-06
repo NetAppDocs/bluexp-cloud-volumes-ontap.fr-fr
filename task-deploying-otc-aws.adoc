@@ -91,6 +91,10 @@ TIP: Si plusieurs utilisateurs IAM travaillent sur le même compte AWS, chaque u
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Pour en savoir plus sur Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["En savoir plus sur Cloud Backup"^]
++
+
+TIP: Si vous souhaitez utiliser le stockage WORM et le Tiering des données, vous devez désactiver Cloud Backup et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
+
 
 
 . *Localisation et connectivité* : saisissez les informations de réseau que vous avez enregistrées dans le link:task-planning-your-config.html#aws-network-information-worksheet["Fiche AWS"].
@@ -169,15 +173,21 @@ link:concept-data-tiering.html["Découvrez le fonctionnement du Tiering des donn
 
 
 
-. *Vitesse d'écriture et WORM* : choisissez *Normal* ou *vitesse d'écriture élevée*, et activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
+. *Vitesse d'écriture et WORM* :
++
+.. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
 link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
+.. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
-IMPOSSIBLE D'activer WORM si le Tiering des données était activé.
+LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
 link:concept-worm.html["En savoir plus sur le stockage WORM"].
+
+.. Si vous activez le stockage WORM, sélectionnez la période de conservation.
+
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +
@@ -321,6 +331,10 @@ TIP: Si plusieurs utilisateurs IAM travaillent sur le même compte AWS, chaque u
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Pour en savoir plus sur Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-to-s3.html["En savoir plus sur Cloud Backup"^]
++
+
+TIP: Si vous souhaitez utiliser le stockage WORM et le Tiering des données, vous devez désactiver Cloud Backup et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
+
 
 
 . *Modèles de déploiement haute disponibilité* : choisir une configuration haute disponibilité.
@@ -409,15 +423,21 @@ link:concept-data-tiering.html["Découvrez le fonctionnement du Tiering des donn
 
 
 
-. *Vitesse d'écriture et WORM* : choisissez *Normal* ou *vitesse d'écriture élevée*, et activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
+. *Vitesse d'écriture et WORM* :
++
+.. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
 link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
+.. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
-IMPOSSIBLE D'activer WORM si le Tiering des données était activé.
+LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
 link:concept-worm.html["En savoir plus sur le stockage WORM"].
+
+.. Si vous activez le stockage WORM, sélectionnez la période de conservation.
+
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +

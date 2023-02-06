@@ -20,6 +20,36 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 5 février 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.26 du connecteur.
+
+
+
+=== Création de groupes de placement dans AWS
+
+Un nouveau paramètre de configuration peut désormais être utilisé pour créer des groupes de placement avec AWS HA unique Availability zone (AZ). Vous pouvez désormais choisir de contourner les créations de groupes ayant échoué et d'autoriser les déploiements d'AWS HA unique en AZ à s'effectuer avec succès.
+
+Pour plus d'informations sur la configuration du paramètre de création du groupe de placement, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Configurez la création de groupe de placement pour AWS HA Single AZ"^].
+
+
+
+=== Mise à jour de la configuration de la zone DNS privée
+
+Un nouveau paramètre de configuration est désormais disponible afin d'éviter de créer un lien entre une zone DNS privée et un réseau virtuel lors de l'utilisation de liens privés Azure. La création est activée par défaut.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Fournissez BlueXP avec des informations détaillées sur votre DNS privé Azure"^]
+
+
+
+=== Stockage WORM et Tiering des données
+
+Vous pouvez désormais activer à la fois le Tiering des données et le stockage WORM lorsque vous créez un système Cloud Volumes ONTAP 9.8 ou une version ultérieure. L'activation du Tiering des données avec le stockage WORM vous permet de transférer les données vers un magasin d'objets dans le cloud.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["En savoir plus sur le stockage WORM"^]
+
+
+
 == 1er janvier 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.25 du connecteur.

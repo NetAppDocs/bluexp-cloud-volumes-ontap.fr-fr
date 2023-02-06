@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-worm.html 
-keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage 
+keywords: worm, write once, read many, snaplock, retain, retention, period, cloud worm, worm storage, tiering 
 summary: 'Vous pouvez activer le stockage WORM (écriture unique) en lecture seule sur un système Cloud Volumes ONTAP pour conserver les fichiers sous forme non modifiée pendant une période de conservation spécifiée. Le stockage WORM dans le cloud est optimisé par la technologie SnapLock, ce qui signifie que les fichiers WORM sont protégés au niveau des fichiers.' 
 ---
 = Stockage WORM
@@ -81,9 +81,21 @@ Après avoir activé le stockage WORM sur un système Cloud Volumes ONTAP, vous 
 
 
 
+== WORM et Tiering des données
+
+Lorsque vous créez un nouveau système Cloud Volumes ONTAP 9.8 ou une version ultérieure, vous pouvez activer à la fois le Tiering et le stockage WORM. L'activation du Tiering des données avec le stockage WORM vous permet de transférer les données vers un magasin d'objets dans le cloud.
+
+Voici les éléments à prendre en compte concernant l'activation du Tiering des données et du stockage WORM :
+
+* Les données transférées vers le stockage objet n'incluent pas la fonctionnalité WORM d'ONTAP. Pour garantir la fonctionnalité WORM de bout en bout, vous devez configurer correctement les autorisations des compartiments.
+* Les données placées dans le Tier de stockage objet n'ont pas la fonctionnalité WORM. Techniquement, quiconque dispose d'un accès complet aux compartiments et aux conteneurs peut utiliser et supprimer les objets placés à un Tier par ONTAP.
+* La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
+
+
+
+
 == Limites
 
 * Le stockage WORM dans Cloud Volumes ONTAP fonctionne selon un modèle « administrateur de stockage de confiance ». Les fichiers WORM sont protégés contre les modifications ou modifications, mais un administrateur du cluster peut supprimer des volumes, même si ces volumes contiennent des données WORM non expirées.
 * En plus du modèle d'administrateur de stockage de confiance, le stockage WORM dans Cloud Volumes ONTAP fonctionne aussi implicitement sous un modèle d'administrateur cloud reconnu. Un administrateur cloud peut supprimer des données WORM avant leur date d'expiration en supprimant ou en modifiant directement le stockage cloud du fournisseur cloud.
-* Lorsque le stockage WORM est activé, le Tiering des données vers le stockage objet ne peut pas être activé.
 

@@ -88,6 +88,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Pour en savoir plus sur Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["En savoir plus sur Cloud Backup"^]
++
+
+TIP: Si vous souhaitez utiliser le stockage WORM et le Tiering des données, vous devez désactiver Cloud Backup et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
+
 
 
 . *Emplacement* : sélectionnez une région, une zone de disponibilité, un réseau vnet et un sous-réseau, puis cochez la case pour confirmer la connectivité réseau entre le connecteur et l'emplacement cible.
@@ -156,15 +160,24 @@ link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
 
 
 
-. *Vitesse d'écriture et WORM* : choisissez *Normal* ou *vitesse d'écriture élevée*, et activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
+. *Vitesse d'écriture et WORM* :
++
+.. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
 link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
+.. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
-IMPOSSIBLE D'activer WORM si le Tiering des données était activé.
+Cette option n'est disponible que pour certains types de VM. Pour connaître les types de VM pris en charge, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configurations prises en charge par licence pour les paires haute disponibilité"].
+
++
+LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
 link:concept-worm.html["En savoir plus sur le stockage WORM"].
+
+.. Si vous activez le stockage WORM, sélectionnez la période de conservation.
+
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +
@@ -298,6 +311,10 @@ video::video_subscribing_azure.mp4[width=848,height=480]
 +
 ** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["Pour en savoir plus sur Cloud Data Sense"^]
 ** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["En savoir plus sur Cloud Backup"^]
++
+
+TIP: Si vous souhaitez utiliser le stockage WORM et le Tiering des données, vous devez désactiver Cloud Backup et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
+
 
 
 . *Modèles de déploiement haute disponibilité* :
@@ -375,18 +392,24 @@ link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
 
 
 
-. *Vitesse d'écriture et WORM* : choisissez *Normal* ou *vitesse d'écriture élevée*, et activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
+. *Vitesse d'écriture et WORM* :
++
+.. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
 link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
+.. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
 Cette option n'est disponible que pour certains types de VM. Pour connaître les types de VM pris en charge, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configurations prises en charge par licence pour les paires haute disponibilité"].
 
 +
-IMPOSSIBLE D'activer WORM si le Tiering des données était activé.
+LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
 link:concept-worm.html["En savoir plus sur le stockage WORM"].
+
+.. Si vous activez le stockage WORM, sélectionnez la période de conservation.
+
 
 . *Communication sécurisée au stockage et WORM* : choisissez d'activer ou non une connexion HTTPS aux comptes de stockage Azure et d'activer le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
