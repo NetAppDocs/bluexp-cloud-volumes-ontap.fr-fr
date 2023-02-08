@@ -215,6 +215,9 @@ Notez que deux jeux de règles de pare-feu sont nécessaires pour une configurat
 
 
 
+TIP: Vous recherchez des informations sur le connecteur ? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Afficher les règles de pare-feu du connecteur"^]
+
+
 
 ==== Règles entrantes
 
@@ -461,4 +464,6 @@ La communication entre les nœuds HA et le médiateur HA se fait via le port 326
 
 Si vous n'avez pas encore créé de connecteur, vous devez également consulter les exigences de mise en réseau pour le connecteur.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Afficher les exigences de mise en réseau du connecteur"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Afficher les exigences de mise en réseau du connecteur"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
+

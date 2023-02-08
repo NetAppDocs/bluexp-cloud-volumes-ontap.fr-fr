@@ -597,7 +597,6 @@
   <block id="80292c326dbd4c631ce6da31d922620c" category="paragraph">Vous devez utiliser un groupe de ressources _dédié_ pour chaque paire HA Cloud Volumes ONTAP que vous déployez dans Azure. Une seule paire haute disponibilité est prise en charge dans un groupe de ressources.</block>
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">BlueXP rencontre des problèmes de connexion si vous essayez de déployer une seconde paire HA Cloud Volumes ONTAP dans un groupe de ressources Azure.</block>
   <block id="9175bb34d0aede26315b313b9432bcbb" category="section-title">Groupes de sécurité</block>
-  <block id="ce23ccd5f69f45f3f2a022750ab9d6e7" category="paragraph">Vous n'avez pas besoin de créer des groupes de sécurité car BlueXP le fait pour vous. Si vous devez utiliser votre propre système, reportez-vous aux règles du groupe de sécurité répertoriées ci-dessous.</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="section-title">Règles de groupe de sécurité</block>
   <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP crée des groupes de sécurité Azure qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.</block>
   <block id="4f4194111f63429efd99a405e5d8ec85" category="paragraph">Le groupe de sécurité pour Cloud Volumes ONTAP requiert des règles entrantes et sortantes.</block>
@@ -782,14 +781,7 @@
   <block id="7dca630291dc35d5447daa0c9abf8da4" category="cell">Fournit un accès SSH à l'hôte du connecteur</block>
   <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale</block>
-  <block id="2fcfd53faae8a46d655bdd5bf49e4324" category="cell">Permet à Cloud Volumes ONTAP d'accéder à Internet pour l'envoi des messages AutoSupport au support NetApp. Vous devez ouvrir ce port manuellement après le déploiement du connecteur.</block>
-  <block id="f27967c4c8769094dfb727988a22cbfa" category="paragraph">Le groupe de sécurité prédéfini pour le connecteur ouvre tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.</block>
   <block id="422c84262f431352e9da45084016a52c" category="paragraph">Le groupe de sécurité prédéfini pour le connecteur inclut les règles de trafic sortant suivantes.</block>
-  <block id="4c7e4350b2ac4e79ecdf1d8f33b2d41e" category="paragraph">Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utiliser les informations suivantes pour ouvrir uniquement les ports requis pour la communication sortante par le connecteur.</block>
-  <block id="a94c44d83136ca0aa23c397adb28b116" category="admonition">L'adresse IP source est l'hôte du connecteur.</block>
-  <block id="241b5fab8e737eaa79c543efe7307059" category="cell">Appels API et AutoSupport</block>
-  <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">LIF de gestion de cluster ONTAP et Internet sortant</block>
-  <block id="ecd87ae03b07f0712964d94eb75683a5" category="cell">Utilisé pour la résolution DNS par BlueXP</block>
   <block id="987e6a12f4054c7d2b4fb12b670fd3e2" category="summary">La configuration par défaut de Cloud Volumes ONTAP peut vous aider à configurer et administrer vos systèmes, surtout si vous connaissez ONTAP, car la configuration par défaut de Cloud Volumes ONTAP est différente de ONTAP.</block>
   <block id="f280b5a5c0eeaf41d31a8a2661b341cb" category="doc">Configuration par défaut pour Cloud Volumes ONTAP</block>
   <block id="ba6a8b64123c5bbe5d7d30c1bd941cc0" category="section-title">Configuration par défaut</block>
@@ -2820,7 +2812,6 @@
   <block id="bff3c591c699ca31f730e1f2040baf4f" category="section-title">LIF pour paires haute disponibilité dans plusieurs systèmes AZS</block>
   <block id="ecb277307bf56fdc012332a896c09dc2" category="cell">Accès client via le protocole iSCSI. Cette LIF gère également la migration d'adresses IP flottantes entre les nœuds.</block>
   <block id="ab89f6727a41ad22707663146b9002d8" category="admonition">Lorsqu'il est déployé dans plusieurs zones de disponibilité, plusieurs LIF sont associées à <block ref="c1f676036d5f93c88159c13cc04402fb" category="inline-link-macro-rx"></block>, Qui ne sont pas pris en compte par rapport à la limite IP privée AWS.</block>
-  <block id="939507fbe623e8fd878f92a352424732" category="paragraph">Il n'est pas nécessaire de créer des groupes de sécurité car BlueXP le fait pour vous. Si vous devez utiliser votre propre, reportez-vous à la section <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>.</block>
   <block id="a83fb1ff36ceed286841d6eef8f99b92" category="section-title">Connexion pour le Tiering des données</block>
   <block id="4376aec17418e75d2d4cfdf8fada938a" category="paragraph">Si vous souhaitez utiliser EBS comme niveau de performance et AWS S3 comme niveau de capacité, vous devez vous assurer que Cloud Volumes ONTAP est connecté à S3. La meilleure façon de fournir cette connexion est de créer un terminal VPC vers le service S3. Pour obtenir des instructions, reportez-vous à la section<block ref="739944581ddd86bd6d09f3841372a69b" category="inline-link-rx"></block>.</block>
   <block id="796c258d3cfe94e30ef75a753c2128b0" category="paragraph">Si vous rencontrez des problèmes, reportez-vous à la section<block ref="133eaae00ad88e811386070963e01d00" category="inline-link-rx"></block></block>
@@ -3604,9 +3595,7 @@
   <block id="82defe4f45724f0ce17f1a11c6980420" category="paragraph"><block ref="82defe4f45724f0ce17f1a11c6980420" category="inline-link-rx"></block></block>
   <block id="cf0a6f286be266af220bb56bf7b6365c" category="inline-link">En savoir plus sur Cloud Volumes ONTAP</block>
   <block id="5a2555dcf0776f4107419f613e0a9582" category="paragraph"><block ref="5a2555dcf0776f4107419f613e0a9582" category="inline-link-rx"></block></block>
-  <block id="313ffec3230aa3292dde2f11b0bfa481" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes que BlueXP et Cloud Volumes ONTAP doivent fonctionner correctement. Vous pouvez vous référer aux ports à des fins de test ou si vous devez utiliser votre propre.</block>
   <block id="ff12fe6f5d97035a37481ab9694afb95" category="doc">Règles de groupe de sécurité pour AWS</block>
-  <block id="dfd7076c3cd05fe305cbd204cf4845a9" category="paragraph">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes que le connecteur et Cloud Volumes ONTAP doivent fonctionner correctement. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.</block>
   <block id="01cc3f2faf08762df2ba5632863fa9b9" category="section-title">Règles pour Cloud Volumes ONTAP</block>
   <block id="a58f484608b0d692f1839295a398638d" category="cell">Sauvegarde vers S3</block>
   <block id="999028872cfff7ae8ee330a33cbd3874" category="cell">5010</block>
@@ -3628,16 +3617,6 @@
   <block id="7893e453f8f5e33915b2a7890867e098" category="paragraph">Le groupe de sécurité interne prédéfini pour une configuration Cloud Volumes ONTAP HA comprend les règles suivantes. Ce groupe de sécurité permet la communication entre les nœuds HA et entre le médiateur et les nœuds.</block>
   <block id="4c06e1c4065aa853ffa68ddc60e138c3" category="paragraph">BlueXP crée toujours ce groupe de sécurité. Vous n'avez pas la possibilité d'utiliser vos propres ressources.</block>
   <block id="75fb76c71939b7f9f3ee363c4aec2044" category="section-title">Règles pour le connecteur</block>
-  <block id="e41468f89241b53dc9a8cebeff010b25" category="cell">Fournit un accès HTTP depuis les navigateurs Web du client vers l'interface utilisateur locale et les connexions à partir de Cloud Data SENSE</block>
-  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">Appels d'API vers AWS et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp</block>
-  <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">Appels API</block>
-  <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA médiateur</block>
-  <block id="ad4167f20adb487bdfdd71a56ab00120" category="cell">Communication avec le médiateur ONTAP HA</block>
-  <block id="172ef5a94b4dd0aa120c6878fc29f70c" category="cell">8088</block>
-  <block id="168342a53455f99d5b1d8d7d95e99567" category="cell">Appels d'API vers Backup vers S3</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="cell">Sens des données cloud</block>
-  <block id="6cf25d0dcbf586ed6aff3b930e4d8019" category="cell">Instance Cloud Data Sense</block>
-  <block id="059ace13ef3980df592dafb754ef8883" category="cell">Des solutions clouds adaptées à Cloud Volumes ONTAP</block>
   <block id="4803d974c37e8a3895fbff420f579823" category="summary">Cloud Volumes ONTAP utilise une liaison privée Azure pour les connexions aux comptes de stockage associés. Si nécessaire, vous pouvez désactiver les liens privés Azure et utiliser les terminaux de service.</block>
   <block id="998afd8cfe6da6d00c47dc7bb4b8a5b1" category="doc">Utilisez une liaison privée Azure ou des terminaux de service</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">Présentation</block>
@@ -4629,4 +4608,18 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">*Tiering de données dans Google Cloud* : choisissez d'activer ou non le Tiering de données sur l'agrégat initial, choisissez une classe de stockage pour les données hiérarchisées, puis sélectionnez un compte de service avec le rôle d'administrateur de stockage prédéfini.</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">Configurer la création d'un groupe de placement</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
+  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.</block>
+  <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">Afficher les règles de groupe de sécurité du connecteur</block>
+  <block id="c456915aac0f612541f35dc3bfc19faf" category="paragraph"><block ref="c456915aac0f612541f35dc3bfc19faf" category="inline-link-rx"></block></block>
+  <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">Afficher les règles de pare-feu du connecteur</block>
+  <block id="fd21d6325b77b856e27ff0f3a2769254" category="admonition">Vous recherchez des informations sur le connecteur ?<block ref="b4a1b1e09448c4916df7db5a89b51b2b" category="inline-link-rx"></block></block>
+  <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Règles de pare-feu dans Google Cloud</block>
+  <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
+  <block id="314f455c046d8114edc23b21e45ae3e0" category="admonition">Vous recherchez des informations sur le connecteur ?<block ref="03f0ff9a2503a569189cff8aff64ae33" category="inline-link-rx"></block></block>
+  <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Règles de groupe de sécurité dans Azure</block>
+  <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
+  <block id="0b79e4862d28fb04132c84c8aab97cc4" category="paragraph">Vous n'avez pas besoin de créer des groupes de sécurité car BlueXP le fait pour vous. Si vous devez utiliser votre propre, reportez-vous à la section <block ref="6b621ae9e3deb16d56da37977cce65f3" category="inline-link-macro-rx"></block>.</block>
+  <block id="a8fd24da5145000ecce0c3f4f64ade44" category="admonition">Vous recherchez des informations sur le connecteur ?<block ref="388760eab464a72355382b7e30fcff50" category="inline-link-rx"></block></block>
+  <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">Règles de groupe de sécurité dans AWS</block>
+  <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
 </blocks>

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-security-groups.html 
 keywords: security group, security groups, rules, ports, aws, inbound, outbound, rules 
-summary: BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes que BlueXP et Cloud Volumes ONTAP doivent fonctionner correctement. Vous pouvez vous référer aux ports à des fins de test ou si vous devez utiliser votre propre. 
+summary: BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité. 
 ---
 = Règles de groupe de sécurité pour AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: BlueXP crée des groupes de sécurité AWS qui incluent les règles ent
 
 
 [role="lead"]
-BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes que le connecteur et Cloud Volumes ONTAP doivent fonctionner correctement. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.
+BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.
 
 
 
@@ -361,75 +361,4 @@ Le groupe de sécurité prédéfini inclut les règles de sortie suivantes.
 
 == Règles pour le connecteur
 
-Le groupe de sécurité du connecteur nécessite à la fois des règles entrantes et sortantes.
-
-
-
-=== Règles entrantes
-
-[cols="10,10,80"]
-|===
-| Protocole | Port | Objectif 
-
-
-| SSH | 22 | Fournit un accès SSH à l'hôte du connecteur 
-
-
-| HTTP | 80 | Fournit un accès HTTP depuis les navigateurs Web du client vers l'interface utilisateur locale et les connexions à partir de Cloud Data SENSE 
-
-
-| HTTPS | 443 | Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale 
-
-
-| TCP | 3128 | Permet à Cloud Volumes ONTAP d'accéder à Internet pour l'envoi des messages AutoSupport au support NetApp. Vous devez ouvrir ce port manuellement après le déploiement du connecteur. 
-|===
-
-
-=== Règles de sortie
-
-Le groupe de sécurité prédéfini pour le connecteur ouvre tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.
-
-
-
-==== Règles de base pour les appels sortants
-
-Le groupe de sécurité prédéfini pour le connecteur inclut les règles de trafic sortant suivantes.
-
-[cols="20,20,60"]
-|===
-| Protocole | Port | Objectif 
-
-
-| Tous les protocoles TCP | Tout | Tout le trafic sortant 
-
-
-| Tous les protocoles UDP | Tout | Tout le trafic sortant 
-|===
-
-
-==== Règles de sortie avancées
-
-Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utiliser les informations suivantes pour ouvrir uniquement les ports requis pour la communication sortante par le connecteur.
-
-
-NOTE: L'adresse IP source est l'hôte du connecteur.
-
-[cols="5*"]
-|===
-| Service | Protocole | Port | Destination | Objectif 
-
-
-| Appels API et AutoSupport | HTTPS | 443 | LIF de gestion de cluster ONTAP et Internet sortant | Appels d'API vers AWS et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp 
-
-
-.2+| Appels API | TCP | 3000 | ONTAP HA médiateur | Communication avec le médiateur ONTAP HA 
-
-
-| TCP | 8088 | Sauvegarde vers S3 | Appels d'API vers Backup vers S3 
-
-
-| DNS | UDP | 53 | DNS | Utilisé pour la résolution DNS par BlueXP 
-
-
-| Sens des données cloud | HTTP | 80 | Instance Cloud Data Sense | Des solutions clouds adaptées à Cloud Volumes ONTAP 
-|===
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Afficher les règles de groupe de sécurité du connecteur"^]
