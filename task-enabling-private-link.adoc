@@ -30,7 +30,9 @@ Dans les deux cas, BlueXP limite toujours l'accès réseau pour les connexions e
 
 == Désactivez les liens privés Azure et utilisez plutôt les terminaux de service
 
-Si votre entreprise le requiert, vous pouvez modifier un paramètre dans BlueXP afin qu'il configure Cloud Volumes ONTAP pour qu'il utilise des points de terminaison de service au lieu d'un lien privé Azure. La modification de ce paramètre s'applique aux nouveaux systèmes Cloud Volumes ONTAP que vous créez.
+Si votre entreprise le requiert, vous pouvez modifier un paramètre dans BlueXP afin qu'il configure Cloud Volumes ONTAP pour qu'il utilise des points de terminaison de service au lieu d'un lien privé Azure. La modification de ce paramètre s'applique aux nouveaux systèmes Cloud Volumes ONTAP que vous créez. Les terminaux de service ne sont pris en charge que dans link:https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paires de régions Azure"^] Entre le connecteur et les Cloud Volumes ONTAP VNets.
+
+Le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère ou dans https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
@@ -43,7 +45,13 @@ Si votre entreprise le requiert, vous pouvez modifier un paramètre dans BlueXP 
 
 == Utilisation des liens privés Azure
 
-Dans la plupart des cas, aucune action n'est nécessaire pour configurer des liens privés Azure avec Cloud Volumes ONTAP. BlueXP gère des liens privés Azure pour vous. Cependant, si vous utilisez Azure Private DNS, vous devez modifier un fichier de configuration. Vous devez également connaître une exigence pour l'emplacement du connecteur dans Azure.
+Dans la plupart des cas, aucune action n'est nécessaire pour configurer des liens privés Azure avec Cloud Volumes ONTAP. BlueXP gère des liens privés Azure pour vous. Mais si vous utilisez une zone Azure Private DNS existante, vous devez modifier un fichier de configuration.
+
+
+
+=== Condition requise pour les DNS personnalisés
+
+Si vous utilisez un DNS personnalisé, vous devez également créer un transitaire conditionnel vers la zone DNS privée Azure à partir de vos serveurs DNS personnalisés. Pour en savoir plus, reportez-vous à la section link:https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns#on-premises-workloads-using-a-dns-forwarder["La documentation d'Azure sur l'utilisation d'un transitaire DNS"^].
 
 
 
@@ -58,10 +66,7 @@ Voici un exemple illustrant l'accès des clients par liaison privée à partir d
 image:diagram_azure_private_link.png["Image conceptuelle qui montre l'accès aux données vers Cloud Volumes ONTAP et par l'intermédiaire d'un point de terminaison privé et d'un lien privé vers le compte de stockage."]
 
 
-
-=== Emplacement du connecteur dans Azure
-
-Le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère ou dans https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.
+NOTE: Si le connecteur et les systèmes Cloud Volumes ONTAP sont déployés dans différents VNets, vous devez configurer le peering de vnet entre le vnet où le connecteur est déployé et le vnet où les systèmes Cloud Volumes ONTAP sont déployés.
 
 
 
@@ -111,7 +116,9 @@ Vous pouvez modifier ce comportement par défaut en activant la restauration si 
 
 Si vous activez la restauration, BlueXP arrête l'action et annule toutes les ressources créées dans le cadre de l'action.
 
-L'activation de la restauration est prise en charge via l'API uniquement.
+Vous pouvez activer le retour arrière via l'API ou en mettant à jour le fichier APP.conf.
+
+*Activer le retour arrière via l'API*
 
 .Étape
 . Utilisez le `PUT /occm/config` Appel d'API avec le corps de demande suivant :
@@ -119,5 +126,16 @@ L'activation de la restauration est prise en charge via l'API uniquement.
 [source, json]
 ----
 { "rollbackOnAzurePrivateLinkFailure": true }
+----
+
+
+*Activer le retour arrière en mettant à jour app.conf*
+
+.Étape
+. Utilisez le `PUT /occm/config` Appel d'API avec le corps de demande suivant :
++
+[source, json]
+----
+{ "rollbackOnAzurePrivateLinkFailure": false }
 ----
 
