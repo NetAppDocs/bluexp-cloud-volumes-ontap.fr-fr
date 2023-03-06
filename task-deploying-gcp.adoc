@@ -390,6 +390,10 @@ Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reporte
 +
 link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
++
+
+NOTE: _Flash cache_, une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 sont disponibles via l'option de vitesse d'écriture *élevée* avec les types d'instances n2-standard-16, n2-standard-32, n2-standard-48 et n2-standard-64. En outre, pour atteindre un MTU plus élevé de 9 8,896, vous devez sélectionner VCP-1, VPC-2 ou VCP-3 pour le déploiement. _Flash cache_, une vitesse d'écriture élevée et un MTU de 9 8,896 dépendent des fonctionnalités et ne peuvent pas être désactivés individuellement dans une instance configurée.
+
 .. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
 LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.

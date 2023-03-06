@@ -96,7 +96,7 @@ ifdef::gcp[]
 
 Si vous utilisez un système à un seul nœud, Cloud Volumes ONTAP prend en charge une vitesse d'écriture élevée pour tous les types de machines.
 
-Cloud Volumes ONTAP ne prend pas en charge une vitesse d'écriture élevée avec les paires HA dans Google Cloud.
+Si vous utilisez une paire haute disponibilité, Cloud Volumes ONTAP prend en charge la vitesse d'écriture élevée avec plusieurs types de machines virtuelles, à commencer par la version 9.13.0. Accédez au https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Notes de version de Cloud Volumes ONTAP"^] Pour afficher les types de VM qui prennent en charge une vitesse d'écriture élevée.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Découvrez plus en détail les types de machines Google Cloud pris en charge par Cloud Volumes ONTAP"^].
 
