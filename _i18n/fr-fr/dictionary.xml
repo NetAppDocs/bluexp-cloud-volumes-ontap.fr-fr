@@ -233,15 +233,10 @@
   <block id="ecd871e3e8bbcd8fb9b67fde1abb1ca5" category="paragraph">Découvrez Cloud Volumes ONTAP dans AWS en quelques étapes.</block>
   <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="inline-link">Connecteur</block>
   <block id="74d2f2a8ee613c321072e364f7ed33b2" category="inline-link">Découvrez comment créer un connecteur dans AWS</block>
-  <block id="48c18ed38455bb7fa700b44ef3c04c42" category="paragraph">Si vous n'avez pas de<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block>.</block>
-  <block id="035e8e0fe7b70bf47c761ac008c0042c" category="paragraph">Lorsque vous créez votre premier environnement de travail Cloud Volumes ONTAP, BlueXP (anciennement Cloud Manager) vous invite à déployer un connecteur si vous n'en avez pas encore.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">En savoir plus &gt;&gt;</block>
   <block id="0c29cb137ebcfb10c1b30edf702322ea" category="paragraph">BlueXP offre des packages préconfigurés qui répondent à vos exigences de charge de travail, ou vous pouvez créer votre propre configuration. Dans ce dernier cas, il est important de connaître les options dont vous disposez. <block ref="786d547ede2f0e723e26aaa12a2cb737" category="inline-link-macro-rx"></block>.</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="c5a74d045a159ee12555da1d786bd27c" category="list-text">Vérifiez que votre VPC et vos sous-réseaux prennent en charge la connectivité entre le connecteur et Cloud Volumes ONTAP.</block>
-  <block id="9a3287fcb26e5124ab289087c07c9388" category="list-text">Activez l'accès Internet sortant à partir du VPC cible de sorte que le connecteur et le Cloud Volumes ONTAP puissent contacter plusieurs terminaux.</block>
-  <block id="19c8e498334c0ca06860eccd287db869" category="inline-link-macro">Le connecteur et le Cloud Volumes ONTAP</block>
-  <block id="93bd04110cbfe99e86acdf0e6821558e" category="paragraph">Cette étape est importante car le connecteur ne peut pas gérer Cloud Volumes ONTAP sans accès Internet sortant. Si vous devez limiter la connectivité sortante, reportez-vous à la liste des noeuds finaux pour <block ref="40c53126370550c6e3e9b05d7cc4fab9" category="inline-link-macro-rx"></block>.</block>
   <block id="c1540e16429791c7515c0322aad07fcf" category="list-text">Configurez un terminal VPC sur le service S3.</block>
   <block id="4274b83eccea8c2453ce00d6c7cde54e" category="paragraph">Un point de terminaison VPC est requis si vous souhaitez transférer des données à froid de Cloud Volumes ONTAP vers un stockage objet économique.</block>
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">En savoir plus sur les exigences de mise en réseau</block>
@@ -2852,11 +2847,8 @@
   <block id="aef294321c5e9daca32778610304f081" category="summary">Découvrez Cloud Volumes ONTAP pour Azure en quelques étapes.</block>
   <block id="6b9ec885733dcee16db8c4d8dde6312a" category="doc">Démarrage rapide de Cloud Volumes ONTAP dans Azure</block>
   <block id="019fd7c8c6395aedf9e4d8fe995febee" category="inline-link">Découvrez comment créer un connecteur dans Azure</block>
-  <block id="25d1f3c3b2feb0e5beb6b392b1138dee" category="paragraph">Si vous n'avez pas de<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block>.</block>
   <block id="0ed492eac5f86d35987ba9152345c07c" category="paragraph">BlueXP offre des packages préconfigurés qui répondent à vos exigences de charge de travail, ou vous pouvez créer votre propre configuration. Dans ce dernier cas, il est important de connaître les options dont vous disposez. <block ref="9ca4f67c2d4212e79227daec95e33cdd" category="inline-link-macro-rx"></block>.</block>
   <block id="adbae5f6c0e5278e80011271a859029d" category="list-text">Assurez-vous que votre VNet et vos sous-réseaux prennent en charge la connectivité entre le connecteur et Cloud Volumes ONTAP.</block>
-  <block id="ccd3fcdc67d3ef83a68e87c46c6d76e3" category="list-text">Activez l'accès Internet sortant à partir du réseau vnet cible de sorte que le connecteur et Cloud Volumes ONTAP puissent contacter plusieurs noeuds finaux.</block>
-  <block id="c5461127c15425e013bece2753887444" category="paragraph">Cette étape est importante car le connecteur ne peut pas gérer Cloud Volumes ONTAP sans accès Internet sortant. Si vous devez limiter la connectivité sortante, reportez-vous à la liste des noeuds finaux pour <block ref="192ffe6bd8d29acdcc19bbb1f6770b4c" category="inline-link-macro-rx"></block>.</block>
   <block id="0d21ff817105e810cdab25bd9f2d902a" category="paragraph"><block ref="6e8067af2836c2e6e39420cbcee5abb4" category="inline-link-macro-rx"></block>.</block>
   <block id="7f4227f5e289d9b09c1c0e06243584ef" category="paragraph">Cliquez sur *Ajouter un environnement de travail*, sélectionnez le type de système que vous souhaitez déployer et suivez les étapes de l'assistant. <block ref="6f7d7b3de08ec5c6f3771511caa5244a" category="inline-link-macro-rx"></block>.</block>
   <block id="103cbb6d6f7a112f9eb15cc3d5a4c7b2" category="list-text"><block ref="103cbb6d6f7a112f9eb15cc3d5a4c7b2" category="inline-link-rx"></block></block>
@@ -3066,8 +3058,6 @@
   <block id="29788364ff656936651870f4b1c88537" category="list-text">Facultatif : créez une LIF de gestion de VM de stockage en spécifiant l'adresse IP que vous avez ajoutée dans Google Cloud.</block>
   <block id="12a19dbc8dd437ef46c92163497504b1" category="paragraph">Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage sur un système Cloud Volumes ONTAP dans Google Cloud. L'utilisation de l'API (et non de System Manager ou de l'interface de ligne de commande) est requise, car BlueXP configure la machine virtuelle de stockage avec les services LIF requis, ainsi qu'une LIF iSCSI requise pour les communications SMB/CIFS sortantes.</block>
   <block id="2c5d07ca61673fa8fb94be1c97bf91fe" category="paragraph">Notez que BlueXP alloue les adresses IP requises dans Google Cloud et crée la machine virtuelle de stockage avec une LIF de données pour les accès SMB/NFS et une LIF iSCSI pour les communications SMB sortantes.</block>
-  <block id="4bd46f200c4c3391a3b00fc9aa8af7dd" category="paragraph">Depuis la version 3.9.19, le connecteur requiert les autorisations suivantes pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP :</block>
-  <block id="9bbbccce6014d45ac8f43e7614d2a34c" category="paragraph">Ces autorisations sont incluses dans<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>.</block>
   <block id="8786838db6c83df6feac856057d2e141" category="list-text">Utilisez l'appel d'API suivant pour créer une machine virtuelle de stockage :</block>
   <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph"><block ref="969418114de5daee0030fd2eade35222" prefix="" category="inline-code"></block></block>
   <block id="995ddfd1247131c9653edbf829fa6e28" category="paragraph">Le corps de la demande doit comprendre les éléments suivants :</block>
@@ -3271,10 +3261,7 @@
   <block id="2a06c764d503a44b1651d5bd884cbe17" category="paragraph">Lorsque vous supprimez un système existant, une licence BYOL basée sur des nœuds est transférable entre les systèmes Cloud Volumes ONTAP, puis créez un nouveau système en utilisant la même licence.</block>
   <block id="c8019f1ffa1872e83dcb3addf5f94fa6" category="paragraph">Par exemple, vous pouvez supprimer un système sous licence existant, puis utiliser la licence avec un nouveau système BYOL dans un autre fournisseur VPC/vNet ou cloud. Notez que seuls les numéros de série _indépendants du cloud peuvent fonctionner dans n'importe quel fournisseur cloud. Les numéros de série indépendants du cloud commencent par le préfixe _908xxxx_.</block>
   <block id="577b267f9988dbdc61738174a3158ab9" category="paragraph">Il est important de noter que la licence BYOL est liée à votre entreprise et à un ensemble spécifique d'informations d'identification sur le site de support NetApp.</block>
-  <block id="7a0f0cbfb576252735561bf366791b09" category="summary">Lancez-vous avec Cloud Volumes ONTAP pour GCP en quelques étapes.</block>
   <block id="c816d65f45a034b0842bc039567fcb6b" category="doc">Démarrage rapide pour Cloud Volumes ONTAP dans Google Cloud</block>
-  <block id="b1602fa6fa97985ef68ff003c11124ae" category="inline-link">Découvrez comment créer un connecteur dans GCP</block>
-  <block id="76f915f1735f8e90aeadfbca5bcf13e8" category="paragraph">Si vous n'avez pas de<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="26c29a7306b61a92e3953c6b8ea9ef70" category="inline-link-rx"></block>.</block>
   <block id="c8ce4a03cda52de4d81a6d52e83dcfc7" category="paragraph">BlueXP offre des packages préconfigurés qui répondent à vos exigences de charge de travail, ou vous pouvez créer votre propre configuration. Dans ce dernier cas, il est important de connaître les options dont vous disposez.</block>
   <block id="2529fbdc4c253bec28669839cfb92bd4" category="inline-link-macro">En savoir plus sur la planification de votre configuration</block>
   <block id="e0bce116621fe62848ab384f3d3a607f" category="paragraph"><block ref="efb0a51bcf2d14d25bf3c3e32647f9b6" category="inline-link-macro-rx"></block>.</block>
@@ -3282,7 +3269,6 @@
   <block id="18bc49f7b78f896ce4e7d8b5500b328f" category="list-text">Si vous prévoyez d'activer le Tiering des données,<block ref="79d3319f0d772940c7bc4dbea4092e64" category="inline-link-rx"></block>.</block>
   <block id="6751c9f5e8a3c198a8b10468007e6216" category="list-text">Si vous déployez une paire haute disponibilité, assurez-vous d'avoir quatre VPC, chacun avec son propre sous-réseau.</block>
   <block id="0b06d386717fdc64bf7c7a380d7e926d" category="list-text">Si vous utilisez un VPC partagé, indiquez le rôle _Compute Network User_ au compte de service Connector.</block>
-  <block id="f94bd78922cfb0510d4854a74c6f88bc" category="paragraph">Cette étape est importante car le connecteur ne peut pas gérer Cloud Volumes ONTAP sans accès Internet sortant. Si vous devez limiter la connectivité sortante, reportez-vous à la liste des noeuds finaux pour <block ref="cf01e0d720b6d65690d9d75394ed0328" category="inline-link-macro-rx"></block>.</block>
   <block id="7e1b099e8ddd48733a860e9dc84718f9" category="paragraph"><block ref="81d7ec58de725abfb78667b4f46a89ab" category="inline-link-macro-rx"></block>.</block>
   <block id="5337ecb9fc5a808e9812ea4cd428ebfe" category="paragraph"><block ref="55d152079aa637ec597e09245025de50" category="inline-link-macro-rx"></block>.</block>
   <block id="e478bf49f8034f2197e96520fa338da6" category="inline-link">Activez les API Google Cloud suivantes dans votre projet</block>
@@ -3294,8 +3280,6 @@
   <block id="71660685d00034957db3f9a31c160978" category="list-text">API de gestion des identités et des accès</block>
   <block id="b3b157e5786bf5334a6407290f42337e" category="paragraph">Cliquez sur *Ajouter un environnement de travail*, sélectionnez le type de système que vous souhaitez déployer et suivez les étapes de l'assistant. <block ref="e7b659d6e9cf4401150cabbf78e23874" category="inline-link-macro-rx"></block>.</block>
   <block id="f9ba5de6e1e6e10258b5319a01017c4f" category="list-text"><block ref="f9ba5de6e1e6e10258b5319a01017c4f" category="inline-link-rx"></block></block>
-  <block id="09b1c9db3412d658147935c3c63672bf" category="inline-link">Avantages de BlueXP avec les autorisations GCP</block>
-  <block id="fd68e9c683a8ff70d9bdae99d8f70237" category="list-text"><block ref="fd68e9c683a8ff70d9bdae99d8f70237" category="inline-link-rx"></block></block>
   <block id="7dfb6c2c87a3491ee04b30bc313e53c5" category="summary">BlueXP vous permet de gérer des volumes et des serveurs CIFS. Il vous invite également à déplacer des volumes afin d'éviter les problèmes de capacité.</block>
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">Gérer les volumes existants</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">Gérer les volumes</block>
@@ -4760,4 +4744,16 @@
   <block id="5cb40010f012896cbae43d59859ac520" category="sidebar">Vérification de la signature d'image</block>
   <block id="734726fba5c0a704a6a780254a724e08" category="sidebar">Vérifiez les images signées GCP</block>
   <block id="11bb059fb2906ae78eda04a864443447" category="sidebar">Vérifiez le contenu à l'aide d'OpenSSL</block>
+  <block id="8fa0059a7c3b7b511ddc3ef2fd394b8e" category="summary">Commencez à utiliser Cloud Volumes ONTAP pour Google Cloud en quelques étapes.</block>
+  <block id="aa5c1c092b41ba183b34ea75815e55a2" category="inline-link">Découvrez comment créer un connecteur dans Google Cloud</block>
+  <block id="410319d8e485760a446e1bdee0ff326b" category="paragraph">Si vous n'avez pas de<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="ae1244ceb54b5b14bb70d7bfb0adabbd" category="inline-link-rx"></block></block>
+  <block id="20323efc4d51de74865285e21220bc14" category="inline-link">Apprenez à installer manuellement le connecteur dans un emplacement sans accès à Internet</block>
+  <block id="af6bcead3114e39003d2acc90fa53454" category="paragraph">Si vous souhaitez déployer Cloud Volumes ONTAP dans un sous-réseau sans accès à Internet, vous devez installer manuellement le connecteur et accéder à l'interface utilisateur BlueXP qui s'exécute sur ce connecteur.<block ref="1fc505e892ad76b5ccb867f11989c2d8" category="inline-link-rx"></block></block>
+  <block id="b73b2829274aee64ee8dcd0fc7290f49" category="list-text">Activez l'accès Internet sortant à partir du VPC cible pour NetApp AutoSupport.</block>
+  <block id="f26437251ef23953176712de75dc4d69" category="paragraph">Cette étape n'est pas nécessaire si vous déployez Cloud Volumes ONTAP dans un endroit où aucun accès Internet n'est disponible.</block>
+  <block id="824be8b95270c8a8618f49cb7fb21ae8" category="inline-link">Rôle de BlueXP avec les autorisations Google Cloud</block>
+  <block id="1857f44521f712859d70ea04bc03b602" category="list-text"><block ref="1857f44521f712859d70ea04bc03b602" category="inline-link-rx"></block></block>
+  <block id="686559ad5b35ebcac7c3039ba4d273ec" category="paragraph">Si vous n'avez pas de<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="5057dc0bf3c81969de0b1b1e5a9bc718" category="inline-link-rx"></block></block>
+  <block id="a646f605cbf6ed0d1902ed148dff6a02" category="paragraph">Si vous n'avez pas de<block ref="ce642092b3a3bac7e23e8926be1087c4" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="e02c55c05c6081d62516fdec2316cf6c" category="inline-link-rx"></block></block>
+  <block id="60a5bfe73545b12bdf2f8c33e65bedb4" category="paragraph">Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans<block ref="4e2f5782ef353f7277cd9ba2163caaf1" category="inline-link-rx"></block>.</block>
 </blocks>

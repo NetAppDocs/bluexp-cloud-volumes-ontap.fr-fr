@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-getting-started-gcp.html 
 keywords: google cloud platform, gcp, cloud manager, deploy BlueXP, launch BlueXP, create BlueXP, getting started, networking, gcp networking, service account, tiering, data tiering, bucket, fabricpool, cloud backup, storage access key, gcp role, role, iam role, permissions, gcp permissions 
-summary: Lancez-vous avec Cloud Volumes ONTAP pour GCP en quelques étapes. 
+summary: Commencez à utiliser Cloud Volumes ONTAP pour Google Cloud en quelques étapes. 
 ---
 = Démarrage rapide pour Cloud Volumes ONTAP dans Google Cloud
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Lancez-vous avec Cloud Volumes ONTAP pour GCP en quelques étapes.
 
 
 [role="lead"]
-Lancez-vous avec Cloud Volumes ONTAP pour GCP en quelques étapes.
+Commencez à utiliser Cloud Volumes ONTAP pour Google Cloud en quelques étapes.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas de https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Connecteur"^] Cependant, un administrateur de compte doit en créer un. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Découvrez comment créer un connecteur dans GCP"^].
+Si vous n'avez pas de https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Connecteur"^] Cependant, un administrateur de compte doit en créer un. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Découvrez comment créer un connecteur dans Google Cloud"^]
 
 [role="quick-margin-para"]
-Lorsque vous créez votre premier environnement de travail Cloud Volumes ONTAP, BlueXP (anciennement Cloud Manager) vous invite à déployer un connecteur si vous n'en avez pas encore.
+Si vous souhaitez déployer Cloud Volumes ONTAP dans un sous-réseau sans accès à Internet, vous devez installer manuellement le connecteur et accéder à l'interface utilisateur BlueXP qui s'exécute sur ce connecteur. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Apprenez à installer manuellement le connecteur dans un emplacement sans accès à Internet"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Planification de la configuration
 [role="quick-margin-para"]
@@ -36,9 +36,9 @@ link:task-planning-your-config-gcp.html["En savoir plus sur la planification de 
 . Si vous prévoyez d'activer le Tiering des données, https://cloud.google.com/vpc/docs/configure-private-google-access["Configurez le sous-réseau Cloud Volumes ONTAP pour un accès privé à Google"^].
 . Si vous déployez une paire haute disponibilité, assurez-vous d'avoir quatre VPC, chacun avec son propre sous-réseau.
 . Si vous utilisez un VPC partagé, indiquez le rôle _Compute Network User_ au compte de service Connector.
-. Activez l'accès Internet sortant à partir du VPC cible de sorte que le connecteur et le Cloud Volumes ONTAP puissent contacter plusieurs terminaux.
+. Activez l'accès Internet sortant à partir du VPC cible pour NetApp AutoSupport.
 +
-Cette étape est importante car le connecteur ne peut pas gérer Cloud Volumes ONTAP sans accès Internet sortant. Si vous devez limiter la connectivité sortante, reportez-vous à la liste des noeuds finaux pour link:reference-networking-gcp.html["Le connecteur et le Cloud Volumes ONTAP"].
+Cette étape n'est pas nécessaire si vous déployez Cloud Volumes ONTAP dans un endroit où aucun accès Internet n'est disponible.
 
 
 
@@ -74,5 +74,5 @@ Cliquez sur *Ajouter un environnement de travail*, sélectionnez le type de syst
 .Liens connexes
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Création d'un connecteur depuis BlueXP"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installation du logiciel du connecteur sur un hôte Linux"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Avantages de BlueXP avec les autorisations GCP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Rôle de BlueXP avec les autorisations Google Cloud"^]
 

@@ -106,14 +106,7 @@ Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage s
 Notez que BlueXP alloue les adresses IP requises dans Google Cloud et crée la machine virtuelle de stockage avec une LIF de données pour les accès SMB/NFS et une LIF iSCSI pour les communications SMB sortantes.
 
 .Autorisations Google Cloud requises
-Depuis la version 3.9.19, le connecteur requiert les autorisations suivantes pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP :
-
-[source, yaml]
-----
-- compute.instanceGroups.get
-- compute.addresses.get
-----
-Ces autorisations sont incluses dans https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Règles fournies par NetApp"].
+Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Règles fournies par NetApp"].
 
 .Étapes
 . Utilisez l'appel d'API suivant pour créer une machine virtuelle de stockage :
