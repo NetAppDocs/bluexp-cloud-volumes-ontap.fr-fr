@@ -96,10 +96,10 @@ BlueXP crée le compte de stockage avec les paramètres suivants :
 
 
 --
-Les niveaux d'accès au stockage:: Le niveau d'accès au stockage par défaut pour les données hiérarchisées dans Azure est le _hot_ Tier. Le Tier actif est idéal pour les données fréquemment utilisées.
+Les niveaux d'accès au stockage:: Le niveau d'accès au stockage par défaut pour les données hiérarchisées dans Azure est le _hot_ Tier. Le Tier actif est idéal pour les données fréquemment utilisées dans le Tier de capacité.
 +
 --
-Si vous ne prévoyez pas d'accéder aux données inactives, vous pouvez réduire vos coûts de stockage en utilisant le niveau de stockage _cool_. Lorsque vous modifiez le niveau de stockage, les données inactives commencent dans le Tier de stockage à chaud et se transfère sur le Tier de stockage à froid, si les données ne sont pas accessibles au bout de 30 jours.
+Si vous ne prévoyez pas d'accéder aux données inactives du niveau de capacité, vous pouvez réduire vos coûts de stockage en passant au niveau de stockage _cool_. Lorsque vous modifiez le Tier de stockage pour qu'il soit froid, les données inactives du Tier de capacité sont transférées directement vers le Tier de stockage utilisé.
 
 Les coûts d'accès sont plus élevés si vous accédez aux données, prenez donc ces considérations avant de changer le Tier de stockage. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["En savoir plus sur les tiers d'accès au stockage Azure Blob"^].
 
@@ -137,7 +137,7 @@ Lorsque BlueXP crée le compartiment, il utilise les paramètres par défaut sui
 
 
 --
-Classes de stockage:: La classe de stockage par défaut pour les données hiérarchisées est la classe _Standard Storage_. Si les données sont rarement utilisées, vous pouvez réduire vos coûts de stockage en utilisant _Nearline Storage_ ou _Coldline Storage_. Lorsque vous modifiez la classe de stockage, les données inactives commencent dans la classe de stockage standard et sont transitions vers la classe de stockage que vous avez sélectionnée, si les données ne sont pas accessibles après 30 jours.
+Classes de stockage:: La classe de stockage par défaut pour les données hiérarchisées est la classe _Standard Storage_. Si les données sont rarement utilisées, vous pouvez réduire vos coûts de stockage en utilisant _Nearline Storage_ ou _Coldline Storage_. Lorsque vous modifiez la classe de stockage, les données inactives se déplacent directement vers la classe que vous avez sélectionnée.
 +
 --
 Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://cloud.google.com/storage/docs/storage-classes["En savoir plus sur les classes de stockage pour Google Cloud Storage"^].

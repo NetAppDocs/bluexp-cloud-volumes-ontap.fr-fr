@@ -137,7 +137,7 @@ Payez par capacité pour tout type de configuration Cloud Volumes ONTAP avec des
 +
 Un seul nœud ou haute disponibilité avec chargement de la capacité pour les volumes primaires et secondaires au même rythme
 
-* Inclut les sauvegardes d'un volume illimité avec Cloud Backup, mais uniquement pour les systèmes Cloud Volumes ONTAP déployés avec le package Professional
+* Inclut des sauvegardes de volume illimitées avec Cloud Backup, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent le pack professionnel
 * Ajoutez des services de données cloud de NetApp à vos frais supplémentaires
 
 
