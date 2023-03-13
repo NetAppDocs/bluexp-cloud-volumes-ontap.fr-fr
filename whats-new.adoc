@@ -26,6 +26,14 @@ Les modifications suivantes ont été introduites avec la version 3.9.27 du conn
 
 
 
+=== Cloud Volumes ONTAP 9.13.0
+
+BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.13.0 dans AWS, Azure et Google Cloud.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
+
+
+
 === Prise en charge de 16 Tio et de 32 Tib dans Azure
 
 Cloud Volumes ONTAP prend désormais en charge les tailles de disques de 16 Tio et 32 Tio pour les déploiements haute disponibilité sur des disques gérés dans Azure.
