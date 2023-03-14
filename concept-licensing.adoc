@@ -199,6 +199,7 @@ Votre licence est toujours facturée en premier, mais vous devrez payer à l'heu
 
 
 * Si vous avez un contrat annuel provenant d'un marché, les systèmes _All_ Cloud Volumes ONTAP que vous déployez sont facturés pour ce contrat. Vous ne pouvez pas combiner un contrat annuel de marché avec BYOL.
+* Seuls les systèmes à un seul nœud avec BYOL sont pris en charge dans les régions chinoises.
 
 
 

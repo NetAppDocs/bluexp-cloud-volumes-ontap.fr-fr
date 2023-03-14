@@ -459,6 +459,9 @@ Pendant ce temps, les règles de pare-feu prédéfinies que BlueXP crée pour le
 La communication entre les nœuds HA et le médiateur HA se fait via le port 3260 (iSCSI).
 
 
+NOTE: Pour permettre une vitesse d'écriture élevée dans les nouveaux déploiements de paires haute disponibilité Google Cloud, une unité de transmission (MTU) maximale est requise d'au moins 8,896 octets pour les VPC-1, VPC-2 et VPC-3. Si vous choisissez de mettre à niveau les VPC-1, VPC-2 et VPC-3 existants vers un MTU de 1 8,896 octets, vous devez arrêter tous les systèmes haute disponibilité existants en utilisant ces VPC lors du processus de configuration.
+
+
 
 == Configuration requise pour le connecteur
 

@@ -31,5 +31,9 @@ Avant de modifier la vitesse d'écriture, vous devez link:concept-write-speed.ht
 +
 Si vous choisissez Haut, vous devrez lire l'énoncé « Je comprends... » et confirmer en cochant la case.
 
++
+
+NOTE: L'option de vitesse d'écriture *élevée* est prise en charge avec les paires haute disponibilité Cloud Volumes ONTAP dans Google Cloud à partir de la version 9.13.0.
+
 . Cliquez sur *Enregistrer*, vérifiez le message de confirmation, puis cliquez sur *Continuer*.
 
