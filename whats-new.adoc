@@ -20,6 +20,23 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 13 mars 2023
+
+
+
+=== Soutien de la région chinoise
+
+À partir de Cloud Volumes ONTAP 9.12.1 GA, la prise en charge par région Chine est désormais prise en charge dans Azure comme suit.
+
+* Cloud Volumes ONTAP est pris en charge dans le nord de la Chine 3.
+* Les systèmes à un seul nœud sont pris en charge.
+* Les licences achetées directement auprès de NetApp sont prises en charge.
+
+
+Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
+
+
+
 == 5 mars 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.27 du connecteur.
