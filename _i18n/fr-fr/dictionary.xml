@@ -71,10 +71,8 @@
   <block id="5031fdddd713681aa180d7bfa60b1f72" category="list-text">Assurez-vous que les règles de groupe de sécurité réseau pour Cloud Volumes ONTAP permettent à l'équilibreur de charge d'envoyer des sondes TCP pour les sondes d'intégrité créées à l'étape 4 ci-dessus. Notez que cette option est autorisée par défaut.</block>
   <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="open-title">PME</block>
   <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">Les adresses IP utilisées pour les données SMB sont allouées au équilibreur de charge afin que les adresses IP puissent migrer vers l'autre nœud en cas d'événements de basculement.</block>
-  <block id="da253cd0d6c8d87b61a60f7e67560913" category="list-text">Une adresse IP pour une LIF iSCSI sur le nœud 1</block>
   <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">Une adresse IP pour une LIF iSCSI sur le nœud 2</block>
   <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">Les LIFs iSCSI sont requises pour les communications DNS et SMB. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.</block>
-  <block id="ccc2da4a96a5d07ea0b03ab18f4ed608" category="list-text">Créez le nombre requis de configurations IP frontales :</block>
   <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">Créez un VM de stockage et des LIF</block>
   <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">Une fois que vous avez alloué des adresses IP dans Azure, vous pouvez créer une nouvelle machine virtuelle de stockage sur un système à un seul nœud ou sur une paire haute disponibilité.</block>
   <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">La création d'une VM de stockage et de LIF sur un système à un seul nœud dépend du protocole de stockage que vous utilisez.</block>
@@ -94,7 +92,6 @@
   <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">Utiliser la commande suivante pour créer une LIF NAS sur le nœud 1.</block>
   <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">Utiliser la commande suivante pour créer une LIF NAS sur le nœud 2.</block>
   <block id="6c6c472de3f0cea0f21c8e31be81490c" category="list-text">Création de LIF de données NAS :</block>
-  <block id="477dc9bfd99f5e3ed09c8dbdc76a2c7c" category="list-text">Créez des LIFs iSCSI pour fournir des communications DNS et SMB :</block>
   <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">Après avoir créé un serveur virtuel de stockage sur une paire haute disponibilité, il est préférable d'attendre 12 heures avant de provisionner le stockage sur ce SVM. Depuis la version Cloud Volumes ONTAP 9.10.1, BlueXP analyse les paramètres de l'équilibreur de charge d'une paire HA à un intervalle de 12 heures. S'il existe de nouveaux SVM, BlueXP activation d'un paramètre qui permet un basculement non planifié plus court.</block>
   <block id="2d136412703a915f2b3b47846e42252a" category="summary">Gérez vous-même les agrégats en ajoutant des disques, en affichant les informations sur les agrégats et en les supprimant.</block>
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">Gérer les paramètres de capacité sur un connecteur</block>
@@ -4775,4 +4772,19 @@
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Les licences achetées directement auprès de NetApp sont prises en charge.</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cartes des régions mondiales pour Cloud Volumes ONTAP</block>
   <block id="39aeb3e37839611b14bfa6c7390065c1" category="paragraph">Pour connaître la disponibilité régionale, reportez-vous à la section <block ref="69e22a6a63d14aa651819a20b96c9cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="8a83d5aff252fbe923fc5b8ce4cab9f9" category="paragraph">Les LIF iSCSI sont requises pour la communication DNS. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.</block>
+  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">Vous devrez créer les adresses IP suivantes dans l'équilibreur de charge :</block>
+  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">Une adresse IP pour une LIF iSCSI sur le nœud 1 dans la NIC0 respective de chaque machine virtuelle</block>
+  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">Créer le nombre requis de configurations IP front-end pour les LIFs data et SVM uniquement :</block>
+  <block id="37dd90c0b5c3c64f5ce58ece1a549527" category="admonition">Une IP front-end ne doit être créée sous NIC0 que pour chaque SVM correspondant. Pour plus d'informations sur l'ajout de l'adresse IP au SVM NIC0, voir « Etape 7 [hyperlien] »</block>
+  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">Pour les LIFs iSCSI, ajoutez l'adresse IP de NIC0.</block>
+  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">Sous Paramètres, cliquez sur *configurations IP*.</block>
+  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Copie d'écran de la page de configurations IP du portail Azure</block>
+  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">Entrez un nom pour la configuration IP, sélectionnez dynamique, puis cliquez sur *OK*.</block>
+  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">Capture d'écran de la fenêtre Ajouter une configuration IP</block>
+  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">Cliquez sur le nom de la configuration IP que vous venez de créer, définissez l'affectation sur statique, puis cliquez sur *Enregistrer*.</block>
+  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">Entrez la commande suivante pour accéder au mode avancé.</block>
+  <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">Créez des LIF iSCSI pour fournir une communication DNS :</block>
 </blocks>

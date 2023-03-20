@@ -111,6 +111,9 @@ Vous devez créer les adresses IP suivantes :
 * Une adresse IP pour l'accès LIF de données NAS depuis le nœud 2
 * Une adresse IP facultative pour une LIF de gestion de VM de stockage (SVM
 +
+Les LIF iSCSI sont requises pour la communication DNS. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.
+
++
 Cette LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.
 
 
@@ -173,11 +176,11 @@ image:screenshot_azure_lb_rule.gif["Capture d'écran de l'ajout d'une règle d'�
 --
 Les adresses IP utilisées pour les données SMB sont allouées au équilibreur de charge afin que les adresses IP puissent migrer vers l'autre nœud en cas d'événements de basculement.
 
-Vous devez créer les adresses IP suivantes :
+Vous devrez créer les adresses IP suivantes dans l'équilibreur de charge :
 
 * Une adresse IP pour l'accès LIF de données NAS depuis le nœud 1
 * Une adresse IP pour l'accès LIF de données NAS depuis le nœud 2
-* Une adresse IP pour une LIF iSCSI sur le nœud 1
+* Une adresse IP pour une LIF iSCSI sur le nœud 1 dans la NIC0 respective de chaque machine virtuelle
 * Une adresse IP pour une LIF iSCSI sur le nœud 2
 +
 Les LIFs iSCSI sont requises pour les communications DNS et SMB. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.
@@ -191,7 +194,11 @@ Cette LIF de gestion fournit une connexion à des outils de gestion tels que Sna
 .Étapes
 . Dans le portail Azure, ouvrez le service *Load balancers*.
 . Cliquez sur le nom du équilibreur de charge pour la paire HA.
-. Créez le nombre requis de configurations IP frontales :
+. Créer le nombre requis de configurations IP front-end pour les LIFs data et SVM uniquement :
++
+
+NOTE: Une IP front-end ne doit être créée sous NIC0 que pour chaque SVM correspondant. Pour plus d'informations sur l'ajout de l'adresse IP au SVM NIC0, voir « Etape 7 [hyperlien] »
+
 +
 .. Sous *Paramètres*, cliquez sur *Configuration IP Frontend*.
 .. Cliquez sur *Ajouter*.
@@ -239,7 +246,27 @@ image:screenshot_azure_lb_rule.gif["Capture d'écran de l'ajout d'une règle d'�
 
 
 . Assurez-vous que les règles de groupe de sécurité réseau pour Cloud Volumes ONTAP permettent à l'équilibreur de charge d'envoyer des sondes TCP pour les sondes d'intégrité créées à l'étape 4 ci-dessus. Notez que cette option est autorisée par défaut.
+. Pour les LIFs iSCSI, ajoutez l'adresse IP de NIC0.
++
+.. Cliquez sur le nom de la machine virtuelle Cloud Volumes ONTAP.
+.. Cliquez sur *réseau*.
+.. Cliquez sur le nom de l'interface réseau pour nic0.
+.. Sous Paramètres, cliquez sur *configurations IP*.
+.. Cliquez sur *Ajouter*.
++
+image:screenshot_azure_ip_config_add.png["Copie d'écran de la page de configurations IP du portail Azure"]
 
+.. Entrez un nom pour la configuration IP, sélectionnez dynamique, puis cliquez sur *OK*.
++
+image:screenshot_azure_ip_add_config_window.png["Capture d'écran de la fenêtre Ajouter une configuration IP"]
+
+.. Cliquez sur le nom de la configuration IP que vous venez de créer, définissez l'affectation sur statique, puis cliquez sur *Enregistrer*.
+
+
+
+
+
+NOTE: Il est préférable d'utiliser une adresse IP statique car une adresse IP statique garantit que l'adresse IP ne change pas, ce qui peut aider à éviter les pannes inutiles de votre application.
 
 --
 ====
@@ -280,7 +307,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
 ----
 . Facultatif : créez une LIF de gestion de machine virtuelle de stockage.
 +
@@ -320,7 +347,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . Facultatif : créez une LIF de gestion de machine virtuelle de stockage.
 +
@@ -360,7 +387,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nas-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy disabled -firewall-policy data -home-port e0a -auto-revert true -failover-group Default
 ----
 . Facultatif : créez une LIF de gestion de machine virtuelle de stockage.
 +
@@ -411,13 +438,13 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
 ----
 .. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 2.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
 ----
 
 
@@ -441,6 +468,13 @@ Cette étape est obligatoire car la nouvelle machine virtuelle de stockage doit 
 
 . Si vous exécutez Cloud Volumes ONTAP 9.11.1 ou version ultérieure, modifiez les stratégies de service réseau pour la VM de stockage.
 +
+.. Entrez la commande suivante pour accéder au mode avancé.
++
+[source, cli]
+----
+::> set adv -con off
+----
++
 La modification des services est requise, car elle permet à Cloud Volumes ONTAP d'utiliser la LIF iSCSI pour les connexions de gestion sortantes.
 
 +
@@ -462,6 +496,8 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
 ----
+
+
 
 
 --
@@ -487,7 +523,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. Utiliser la commande suivante pour créer une LIF NAS sur le nœud 2.
 +
@@ -496,6 +532,31 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node2> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe2>
 ----
 
+
+. Créez des LIF iSCSI pour fournir une communication DNS :
++
+.. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 1.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+----
+.. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 2.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
+----
+
+
+. Facultatif : créez une LIF de gestion de VM de stockage sur le nœud 1.
++
+[source, cli]
+----
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol none -address <svm-mgmt-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy mgmt -home-port e0a -auto-revert false -failover-group Default -probe-port <port-number-for-azure-health-probe3>
+----
++
+Cette LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.
 
 . Facultatif : créez une LIF de gestion de VM de stockage sur le nœud 1.
 +
@@ -516,6 +577,13 @@ vserver add-aggregates -vserver svm_2 -aggregates aggr1,aggr2
 Cette étape est obligatoire car la nouvelle machine virtuelle de stockage doit accéder à au moins un agrégat avant de pouvoir créer des volumes sur cette machine virtuelle de stockage.
 
 . Si vous exécutez Cloud Volumes ONTAP 9.11.1 ou version ultérieure, modifiez les stratégies de service réseau pour la VM de stockage.
++
+.. Entrez la commande suivante pour accéder au mode avancé.
++
+[source, cli]
+----
+::> set adv -con off
+----
 +
 La modification des services est requise, car elle permet à Cloud Volumes ONTAP d'utiliser la LIF iSCSI pour les connexions de gestion sortantes.
 
@@ -538,6 +606,8 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
 ----
+
+
 
 
 --
@@ -563,7 +633,7 @@ network route create -destination 0.0.0.0/0 -vserver <svm-name> -gateway <ip-of-
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs--ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
+network interface create -vserver <svm-name> -lif <lif-name> -role data -data-protocol cifs,nfs -address <nfs-cifs-ip-address> -netmask-length <length> -home-node <name-of-node1> -status-admin up -failover-policy system-defined -firewall-policy data -home-port e0a -auto-revert true -failover-group Default -probe-port <port-number-for-azure-health-probe1>
 ----
 .. Utiliser la commande suivante pour créer une LIF NAS sur le nœud 2.
 +
@@ -573,19 +643,19 @@ network interface create -vserver <svm-name> -lif <lif-name> -role data -data-pr
 ----
 
 
-. Créez des LIFs iSCSI pour fournir des communications DNS et SMB :
+. Créez des LIF iSCSI pour fournir une communication DNS :
 +
 .. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 1.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node1> -data-protocol iscsi
 ----
 .. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 2.
 +
 [source, cli]
 ----
-network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
+network interface create -vserver <svm-name> -home-port e0a -address <iscsi-ip-address> -netmask-length <# of mask bits> -lif <lif-name> -home-node <name-of-node2> -data-protocol iscsi
 ----
 
 
@@ -609,6 +679,13 @@ Cette étape est obligatoire car la nouvelle machine virtuelle de stockage doit 
 
 . Si vous exécutez Cloud Volumes ONTAP 9.11.1 ou version ultérieure, modifiez les stratégies de service réseau pour la VM de stockage.
 +
+.. Entrez la commande suivante pour accéder au mode avancé.
++
+[source, cli]
+----
+::> set adv -con off
+----
++
 La modification des services est requise, car elle permet à Cloud Volumes ONTAP d'utiliser la LIF iSCSI pour les connexions de gestion sortantes.
 
 +
@@ -630,6 +707,8 @@ network interface service-policy add-service -vserver <svm-name> -policy default
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-ldap-client
 network interface service-policy add-service -vserver <svm-name> -policy default-data-iscsi -service management-nis-client
 ----
+
+
 
 
 --
