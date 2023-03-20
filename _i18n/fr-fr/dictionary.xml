@@ -3544,12 +3544,9 @@
   <block id="7d6fe0dd606232f7155fdeae2ea620a9" category="cell">ICMP</block>
   <block id="4cfc36b50d04aaf1a0c91d6e93be6dca" category="cell">Rester en vie (Cloud Volumes ONTAP HA uniquement)</block>
   <block id="a476a8c72bef590ea37867c7275919b7" category="section-title">Règles pour le groupe de sécurité externe du médiateur de haute disponibilité</block>
-  <block id="1975a8843b2153f2d02f2a63ead63c6d" category="paragraph">La source des règles entrantes est 0.0.0.0/0.</block>
   <block id="decc3cc349f3757e43ecd0c47a092341" category="paragraph">Le groupe de sécurité prédéfini du médiateur HA ouvre tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.</block>
   <block id="9528bcb068299f44f7850e2e930d3f00" category="paragraph">Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utiliser les informations suivantes pour ouvrir uniquement les ports requis pour la communication sortante par le médiateur haute disponibilité.</block>
-  <block id="6c8a72bb428eef0fb772b736267a33ca" category="cell">Adresse IP du connecteur</block>
   <block id="2b14ebecd08152e1467e0863951e038a" category="cell">Télécharger les mises à niveau pour le médiateur</block>
-  <block id="4fa494f1ae1d15d791b8daf53f3d2a55" category="cell">Services API AWS</block>
   <block id="fa1cddc8ac392ea41880d5f31e86fbf3" category="cell">Assistance pour le basculement du stockage</block>
   <block id="1e56718e9810cd52e22fd292a9b32245" category="admonition">Plutôt que d'ouvrir les ports 443 et 53, vous pouvez créer un terminal VPC d'interface à partir du sous-réseau cible vers le service AWS EC2.</block>
   <block id="81cc31df8f1cfdded8f19bde6b378f31" category="section-title">Règles du groupe de sécurité interne de la configuration haute disponibilité</block>
@@ -4787,4 +4784,8 @@
   <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">Cliquez sur le nom de la configuration IP que vous venez de créer, définissez l'affectation sur statique, puis cliquez sur *Enregistrer*.</block>
   <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">Entrez la commande suivante pour accéder au mode avancé.</block>
   <block id="87f1ece84a21ef92f0776380600117e6" category="list-text">Créez des LIF iSCSI pour fournir une communication DNS :</block>
+  <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">Le groupe de sécurité prédéfini pour le médiateur HA inclut la règle entrante suivante.</block>
+  <block id="52554fb81854d42f02280f83a1067574" category="cell">CIDR du connecteur</block>
+  <block id="cdbb82146d412877f64f943229bd9533" category="cell">Adresse IP du connecteur sur l'instance AWS EC2</block>
+  <block id="2e7f33375cb03e7deb01286344bbca46" category="cell">ec2.amazonaws.com</block>
 </blocks>

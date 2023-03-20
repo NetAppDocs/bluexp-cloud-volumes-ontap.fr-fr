@@ -267,17 +267,14 @@ Le groupe de sécurité externe prédéfini pour le médiateur Cloud Volumes ONT
 
 === Règles entrantes
 
-La source des règles entrantes est 0.0.0.0/0.
+Le groupe de sécurité prédéfini pour le médiateur HA inclut la règle entrante suivante.
 
-[cols="20,20,60"]
+[cols="20,20,20,40"]
 |===
-| Protocole | Port | Objectif 
+| Protocole | Port | Source | Objectif 
 
 
-| SSH | 22 | Connexions SSH au médiateur haute disponibilité 
-
-
-| TCP | 3000 | Accès à l'API RESTful depuis le connecteur 
+| TCP | 3000 | CIDR du connecteur | Accès à l'API RESTful depuis le connecteur 
 |===
 
 
@@ -312,13 +309,13 @@ Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utili
 | Protocole | Port | Destination | Objectif 
 
 
-| HTTP | 80 | Adresse IP du connecteur | Télécharger les mises à niveau pour le médiateur 
+| HTTP | 80 | Adresse IP du connecteur sur l'instance AWS EC2 | Télécharger les mises à niveau pour le médiateur 
 
 
-| HTTPS | 443 | Services API AWS | Assistance pour le basculement du stockage 
+| HTTPS | 443 | ec2.amazonaws.com | Assistance pour le basculement du stockage 
 
 
-| UDP | 53 | Services API AWS | Assistance pour le basculement du stockage 
+| UDP | 53 | ec2.amazonaws.com | Assistance pour le basculement du stockage 
 |===
 
 NOTE: Plutôt que d'ouvrir les ports 443 et 53, vous pouvez créer un terminal VPC d'interface à partir du sous-réseau cible vers le service AWS EC2.
