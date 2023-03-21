@@ -391,6 +391,9 @@ NOTE: La source est l'interface (adresse IP) du système Cloud Volumes ONTAP.
 | TCP | 3128 | FRV de gestion des nœuds | Connecteur | Envoi de messages AutoSupport via un serveur proxy sur le connecteur, si aucune connexion Internet sortante n'est disponible 
 
 
+| Sauvegardes de la configuration | HTTP | 80 | FRV de gestion des nœuds | \Http://<connector-IP-address>/occm/offboxconfig | Envoyer des sauvegardes de configuration au connecteur. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["En savoir plus sur les fichiers de sauvegarde de configuration"^]. 
+
+
 | DHCP | 68 | UDP | FRV de gestion des nœuds | DHCP | Client DHCP pour la première configuration 
 
 

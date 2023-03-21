@@ -93,9 +93,9 @@ endif::gcp[]
 NOTE: Le basculement de LIF est désactivé par défaut pour Cloud Volumes ONTAP en raison des exigences du fournisseur de cloud. La migration d'un LIF vers un port différent rompt le mappage externe entre les adresses IP et les interfaces réseau de l'instance, ce qui rend le LIF inaccessible.
 
 +
-** Cloud Volumes ONTAP envoie des sauvegardes de configuration au connecteur via HTTPS.
+** Cloud Volumes ONTAP envoie des sauvegardes de configuration au connecteur via HTTP.
 +
-Les sauvegardes sont accessibles à partir de https://ipaddress/occm/offboxconfig/[] Où _ipaddress_ est l'adresse IP de l'hôte du connecteur.
+Les sauvegardes sont accessibles à partir de http://ipaddress/occm/offboxconfig/[] Où _ipaddress_ est l'adresse IP de l'hôte du connecteur.
 
 ** BlueXP définit quelques attributs de volume différemment des autres outils de gestion (System Manager ou CLI, par exemple).
 +

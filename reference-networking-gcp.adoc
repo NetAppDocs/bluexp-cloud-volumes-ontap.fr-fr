@@ -413,6 +413,9 @@ NOTE: La source est l'interface (adresse IP) du système Cloud Volumes ONTAP.
 | Cluster | Tout le trafic | Tout le trafic | Tous les LIF sur un nœud | Tous les LIF de l'autre nœud | Communications InterCluster (Cloud Volumes ONTAP HA uniquement) 
 
 
+| Sauvegardes de la configuration | HTTP | 80 | FRV de gestion des nœuds | \Http://<connector-IP-address>/occm/offboxconfig | Envoyer des sauvegardes de configuration au connecteur. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["En savoir plus sur les fichiers de sauvegarde de configuration"^]. 
+
+
 | DHCP | UDP | 68 | FRV de gestion des nœuds | DHCP | Client DHCP pour la première configuration 
 
 
