@@ -124,16 +124,16 @@ Vous pouvez ignorer la création de la LIF de gestion de VM de stockage (SVM) si
 
 
 
-* *Paire HA* BlueXP alloue 14 adresses IP à une paire HA :
+* *Paire HA* BlueXP alloue 12-13 adresses IP à une paire HA :
 +
 ** 2 LIF de gestion de nœuds (e0a)
+** 1 LIF de gestion de cluster (e0a)
 ** 2 LIF iSCSI (e0a)
 +
 
 NOTE: Une LIF iSCSI fournit un accès client via le protocole iSCSI et est utilisée par le système pour d'autres flux de travail réseau importants. Ces LIFs sont requises et ne doivent pas être supprimées.
 
-** 2 LIF NAS (e0a)
-** 2 LIF intercluster (e0a)
+** 1 ou 2 LIF NAS (e0a)
 ** 2 LIF Cluster (e0b)
 ** 2 adresses IP d'interconnexion HA (e0c)
 ** 2 adresses IP iSCSI RSM (e0d)
