@@ -1795,10 +1795,6 @@
   <block id="c0d1b864d00da3eb6415590dfa2621ab" category="paragraph">Vous pouvez ignorer la création de la LIF de gestion de VM de stockage (SVM) si vous déployez Cloud Volumes ONTAP à l'aide de l'API et spécifier le drapeau suivant :</block>
   <block id="9389c2cd70872a229cd788537557d183" category="paragraph"><block ref="68829208e7a5528882bfbb0e23b76f1c" prefix="" category="inline-code"></block></block>
   <block id="2be40f62b7c4e1d13a18dcc030852bf8" category="paragraph">Une LIF est une adresse IP associée à un port physique. Une LIF de gestion de VM de stockage (SVM) est requise pour les outils de gestion tels que SnapCenter.</block>
-  <block id="0ac7ae25c356474957d53018f385f434" category="list-text">7 ou 8 adresses IP privées pour VPC-0</block>
-  <block id="16dba371e7c3be679c75a860acf986a5" category="list-text">Deux adresses IP privées pour VPC-1</block>
-  <block id="3b36c3b05500e8c44c01c05c2c597b97" category="list-text">Deux adresses IP privées pour VPC-2</block>
-  <block id="75a392272a1bb675ed8f846182436d6e" category="list-text">Trois adresses IP privées pour VPC-3</block>
   <block id="4dfddd1829f7fb340bd9b36bff6e3130" category="list-text">Règles de pare-feu</block>
   <block id="2a361a1f21cbd928455b1bd06df94169" category="paragraph">Notez que deux jeux de règles de pare-feu sont nécessaires pour une configuration haute disponibilité :</block>
   <block id="5e74b536fe3c8bd111e49f783c8e991c" category="inline-link">Documentation Google Cloud : configuration de Private Google Access</block>
@@ -2748,11 +2744,8 @@
   <block id="b28334323356fda049acaa1568ee382c" category="paragraph">BlueXP alloue automatiquement le nombre requis d'adresses IP privées à Cloud Volumes ONTAP. Vous devez vous assurer que votre réseau dispose de suffisamment d'adresses IP privées.</block>
   <block id="bdc0bf1240a907023821eccea893d017" category="paragraph">Le nombre de LIF alloués par BlueXP pour Cloud Volumes ONTAP dépend du déploiement d'un système à un seul nœud ou d'une paire haute disponibilité. Une LIF est une adresse IP associée à un port physique.</block>
   <block id="80c103dec1da91d2850236e737249870" category="section-title">Adresses IP d'un système à un seul nœud</block>
-  <block id="7a4fc6df5acc7a338525efe76c970bd8" category="paragraph">BlueXP alloue 6 adresses IP à un système à nœud unique :</block>
   <block id="15a4d902a9e2eeb56724bdb94f9d1977" category="list-text">LIF Cluster-management</block>
-  <block id="ca44bf750b10b8a875a517d3a3ab5da6" category="list-text">LIF de données NAS</block>
   <block id="e837515a89200e7cd1bddfc96747979e" category="list-text">LIF de données iSCSI</block>
-  <block id="e4595cde20c3c7c41bb9f7fba19a0fc1" category="list-text">LIF Storage VM management</block>
   <block id="f7fb4679628db57f6d5d8a1ad673e5d9" category="paragraph">Une LIF de gestion de machines virtuelles de stockage est utilisée avec des outils de gestion tels que SnapCenter.</block>
   <block id="754851680a34e87fae0aca5083f7dbfe" category="section-title">Adresses IP des paires haute disponibilité</block>
   <block id="e438a6efe5f9ab56c9230159070485aa" category="paragraph">Les paires HAUTE DISPONIBILITÉ requièrent plus d'adresses IP qu'un système à un seul nœud. Ces adresses IP sont réparties sur différentes interfaces ethernet, comme illustré dans l'image suivante :</block>
@@ -2788,7 +2781,6 @@
   <block id="e63d2e05b66ab370cc2baaae9d2dcfe9" category="cell">Le trafic iSCSI RAID SyncMirror, ainsi que la communication entre les deux nœuds Cloud Volumes ONTAP et le médiateur.</block>
   <block id="af90726bf48cd763b5fb4e961da15871" category="cell">Canal de communication entre les nœuds et le médiateur pour faciliter les processus de basculement et de rétablissement du stockage.</block>
   <block id="bff3c591c699ca31f730e1f2040baf4f" category="section-title">LIF pour paires haute disponibilité dans plusieurs systèmes AZS</block>
-  <block id="ecb277307bf56fdc012332a896c09dc2" category="cell">Accès client via le protocole iSCSI. Cette LIF gère également la migration d'adresses IP flottantes entre les nœuds.</block>
   <block id="ab89f6727a41ad22707663146b9002d8" category="admonition">Lorsqu'il est déployé dans plusieurs zones de disponibilité, plusieurs LIF sont associées à <block ref="c1f676036d5f93c88159c13cc04402fb" category="inline-link-macro-rx"></block>, Qui ne sont pas pris en compte par rapport à la limite IP privée AWS.</block>
   <block id="a83fb1ff36ceed286841d6eef8f99b92" category="section-title">Connexion pour le Tiering des données</block>
   <block id="4376aec17418e75d2d4cfdf8fada938a" category="paragraph">Si vous souhaitez utiliser EBS comme niveau de performance et AWS S3 comme niveau de capacité, vous devez vous assurer que Cloud Volumes ONTAP est connecté à S3. La meilleure façon de fournir cette connexion est de créer un terminal VPC vers le service S3. Pour obtenir des instructions, reportez-vous à la section<block ref="739944581ddd86bd6d09f3841372a69b" category="inline-link-rx"></block>.</block>
@@ -4459,8 +4451,6 @@
   <block id="4c62b2e0648ccb7cc5ac07de5a4c67f4" category="section-title">Quatre clouds privés virtuels</block>
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">Quatre clouds privés virtuels (VPC) sont nécessaires dans le cadre d'une configuration haute disponibilité. Quatre VPC sont requis car Google Cloud exige que chaque interface réseau réside dans un réseau VPC distinct.</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">Sous-réseaux</block>
-  <block id="206f49c25e0bbd2da69d30f14f4f222d" category="paragraph">BlueXP alloue 14 ou 15 adresses IP privées à une paire haute disponibilité dans Google Cloud :</block>
-  <block id="974715540568df2f5efe3c40777931b7" category="section-title">Connexion à Google Cloud Storage pour le Tiering des données</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Pour répliquer les données entre un système Cloud Volumes ONTAP dans Google Cloud et des systèmes ONTAP sur d'autres réseaux, vous devez disposer d'une connexion VPN entre le VPC et l'autre réseau, par exemple votre réseau d'entreprise.</block>
   <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP crée des règles de pare-feu Google Cloud qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres règles de pare-feu.</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Les règles de pare-feu de Cloud Volumes ONTAP requièrent des règles entrantes et sortantes. Si vous déployez une configuration haute disponibilité, ce sont les règles de pare-feu pour Cloud Volumes ONTAP dans VPC-0.</block>
@@ -4792,4 +4782,24 @@
   <block id="bbacf5ab57ba08e16b08f7b20295279f" category="inline-link-macro">En savoir plus sur les fichiers de sauvegarde de configuration</block>
   <block id="2ffb2b9a3d63d4562dc012fb7ccbe8f0" category="cell">Envoyer des sauvegardes de configuration au connecteur. <block ref="60ef96540660b8c0ada3ca23fe3c6d48" category="inline-link-macro-rx"></block>.</block>
   <block id="91927d042dca36bab1fa5fb92c667147" category="paragraph">Les sauvegardes sont accessibles à partir de \http://ipaddress/occm/offboxconfig/ où _ipaddress_ est l'adresse IP de l'hôte du connecteur.</block>
+  <block id="a3a425fe01b7b7835f40e98d5131d953" category="paragraph">BlueXP alloue automatiquement le nombre requis d'adresses IP privées à Cloud Volumes ONTAP dans GCP. Vous devez vous assurer que votre réseau dispose de suffisamment d'adresses privées.</block>
+  <block id="d73dbd7a9a0f76a49c1b796c3bbf2e51" category="paragraph">+ le nombre de LIF alloués par Cloud Manager pour Cloud Volumes ONTAP dépend du déploiement d'un système à un seul nœud ou d'une paire haute disponibilité. Une LIF est une adresse IP associée à un port physique. Une LIF de gestion SVM est nécessaire pour les outils de gestion tels que SnapCenter.</block>
+  <block id="498c90636197dec64c0feb8b682990f2" category="list-text">*Single node* BlueXP alloue 4 adresses IP à un système à nœud unique :</block>
+  <block id="a28292fa77dc234022cd48bc08becd01" category="list-text">LIF NAS</block>
+  <block id="db29658b73395ac9c81d9ab9db9c854e" category="list-text">*Paire HA* BlueXP alloue 14 adresses IP à une paire HA :</block>
+  <block id="4be2acabdfd03ad1e08cbfefbda0ff51" category="list-text">2 LIF de gestion de nœuds (e0a)</block>
+  <block id="0c0ae10290400b878c0abf083889e78d" category="list-text">2 LIF iSCSI (e0a)</block>
+  <block id="b2eba5b8e0037393ec3f8a81ae77e78b" category="list-text">2 LIF NAS (e0a)</block>
+  <block id="e0c98565c3b923fcfdca593269481630" category="list-text">2 LIF intercluster (e0a)</block>
+  <block id="a00377c792cd8ccb6a0c832ffec2c1dc" category="list-text">2 LIF Cluster (e0b)</block>
+  <block id="bbe8dbabe5bfd1d32eaa2131b90c191a" category="list-text">2 adresses IP d'interconnexion HA (e0c)</block>
+  <block id="0baf3fbe98870c6047f6b10e5370bff7" category="list-text">2 adresses IP iSCSI RSM (e0d)</block>
+  <block id="c3872c89a315822852621c448e41aac4" category="list-text">Il n'est pas nécessaire de créer des règles de pare-feu car BlueXP le fait pour vous. Si vous devez vous en servir, reportez-vous aux règles de pare-feu répertoriées ci-dessous.</block>
+  <block id="01e18e5463e6c1fc9c05a5b8a728f3ff" category="list-text">Un ensemble de règles pour les composants HA dans VPC-0. Ces règles permettent l'accès aux données à Cloud Volumes ONTAP. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
+  <block id="204347da7430e0509c4b62949e49e5dc" category="list-text">Un autre ensemble de règles pour les composants HA dans les VPC-1, VPC-2 et VPC-3. Ces règles sont ouvertes pour les communications entrantes et sortantes entre les composants HA. <block ref="889fb5c02a9d32a6457688ad005f7e96" category="inline-xref-macro-rx"></block>.</block>
+  <block id="e2f177a250a8772cd8ebbe4839390958" category="paragraph">BlueXP alloue 6 adresses IP à un système à nœud unique.</block>
+  <block id="b4f6a6268e9ed79637c765266075ab8c" category="paragraph">Le tableau suivant fournit des informations détaillées sur les LIFs associées à chaque adresse IP privée.</block>
+  <block id="6d0c9e6ffd2de679838428abdea38009" category="cell">Accès client via le protocole iSCSI. Également utilisé par le système pour d'autres flux de travail réseau importants. Cette LIF est requise et ne doit pas être supprimée.</block>
+  <block id="c3c3a9cabe89fd2f00daf39d11c934e0" category="cell">Gestion des machines virtuelles de stockage</block>
+  <block id="5a81ac921ca7aad4221a846f305e2643" category="cell">Accès client via le protocole iSCSI. Ces LIFs gèrent également la migration d'adresses IP flottantes entre nœuds. Ces LIFs sont requises et ne doivent pas être supprimées.</block>
 </blocks>

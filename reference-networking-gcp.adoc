@@ -102,18 +102,49 @@ Les sous-réseaux de ces VPC doivent avoir des plages CIDR distinctes. Les gamme
 
 ==== Adresses IP privées
 
-BlueXP alloue 14 ou 15 adresses IP privées à une paire haute disponibilité dans Google Cloud :
+BlueXP alloue automatiquement le nombre requis d'adresses IP privées à Cloud Volumes ONTAP dans GCP. Vous devez vous assurer que votre réseau dispose de suffisamment d'adresses privées.
 
-* 7 ou 8 adresses IP privées pour VPC-0
++ le nombre de LIF alloués par Cloud Manager pour Cloud Volumes ONTAP dépend du déploiement d'un système à un seul nœud ou d'une paire haute disponibilité. Une LIF est une adresse IP associée à un port physique. Une LIF de gestion SVM est nécessaire pour les outils de gestion tels que SnapCenter.
+
+* *Single node* BlueXP alloue 4 adresses IP à un système à nœud unique :
++
+** FRV de gestion des nœuds
+** LIF Cluster-management
+** LIF de données iSCSI
++
+
+NOTE: Une LIF iSCSI fournit un accès client via le protocole iSCSI et est utilisée par le système pour d'autres flux de travail réseau importants. Ces LIFs sont requises et ne doivent pas être supprimées.
+
+** LIF NAS
 +
 Vous pouvez ignorer la création de la LIF de gestion de VM de stockage (SVM) si vous déployez Cloud Volumes ONTAP à l'aide de l'API et spécifier le drapeau suivant :
 
 +
 `skipSvmManagementLif: true`
 
-* Deux adresses IP privées pour VPC-1
-* Deux adresses IP privées pour VPC-2
-* Trois adresses IP privées pour VPC-3
+
+
+* *Paire HA* BlueXP alloue 14 adresses IP à une paire HA :
++
+** 2 LIF de gestion de nœuds (e0a)
+** 2 LIF iSCSI (e0a)
++
+
+NOTE: Une LIF iSCSI fournit un accès client via le protocole iSCSI et est utilisée par le système pour d'autres flux de travail réseau importants. Ces LIFs sont requises et ne doivent pas être supprimées.
+
+** 2 LIF NAS (e0a)
+** 2 LIF intercluster (e0a)
+** 2 LIF Cluster (e0b)
+** 2 adresses IP d'interconnexion HA (e0c)
+** 2 adresses IP iSCSI RSM (e0d)
++
+Vous pouvez ignorer la création de la LIF de gestion de VM de stockage (SVM) si vous déployez Cloud Volumes ONTAP à l'aide de l'API et spécifier le drapeau suivant :
+
++
+`skipSvmManagementLif: true`
+
+
+
 
 
 
@@ -184,9 +215,17 @@ TIP: Si vous utilisez une paire haute disponibilité, le médiateur haute dispon
 
 Si BlueXP vous informe que les messages AutoSupport ne peuvent pas être envoyés, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Résoudre les problèmes de configuration AutoSupport"].
 
+Règles de pare-feu:: Il n'est pas nécessaire de créer des règles de pare-feu car BlueXP le fait pour vous. Si vous devez vous en servir, reportez-vous aux règles de pare-feu répertoriées ci-dessous.
++
+--
+Notez que deux jeux de règles de pare-feu sont nécessaires pour une configuration haute disponibilité :
+
+* Un ensemble de règles pour les composants HA dans VPC-0. Ces règles permettent l'accès aux données à Cloud Volumes ONTAP. <<Firewall rules for Cloud Volumes ONTAP,En savoir plus >>>>.
+* Un autre ensemble de règles pour les composants HA dans les VPC-1, VPC-2 et VPC-3. Ces règles sont ouvertes pour les communications entrantes et sortantes entre les composants HA. <<Firewall rules for Cloud Volumes ONTAP,En savoir plus >>>>.
 
 
-=== Connexion à Google Cloud Storage pour le Tiering des données
+--
+
 
 Si vous souhaitez effectuer le Tiering des données inactives dans un compartiment de stockage Google Cloud, le sous-réseau dans lequel réside Cloud Volumes ONTAP doit être configuré pour l'accès privé à Google (si vous utilisez une paire haute disponibilité, il s'agit du sous-réseau dans VPC-0). Pour obtenir des instructions, reportez-vous à la section https://cloud.google.com/vpc/docs/configure-private-google-access["Documentation Google Cloud : configuration de Private Google Access"^].
 

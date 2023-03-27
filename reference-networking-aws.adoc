@@ -64,19 +64,32 @@ Le nombre de LIF alloués par BlueXP pour Cloud Volumes ONTAP dépend du déploi
 
 ==== Adresses IP d'un système à un seul nœud
 
-BlueXP alloue 6 adresses IP à un système à nœud unique :
+BlueXP alloue 6 adresses IP à un système à nœud unique.
 
-* LIF Cluster-management
-* FRV de gestion des nœuds
-* FRV InterCluster
-* LIF de données NAS
-* LIF de données iSCSI
-* LIF Storage VM management
-+
-Une LIF de gestion de machines virtuelles de stockage est utilisée avec des outils de gestion tels que SnapCenter.
+Le tableau suivant fournit des informations détaillées sur les LIFs associées à chaque adresse IP privée.
+
+[cols="20,40"]
+|===
+| LIF | Objectif 
 
 
+| Gestion du cluster | Gestion administrative de l'ensemble du cluster (paire HA). 
 
+
+| Gestion de nœuds | Gestion administrative d'un nœud. 
+
+
+| Intercluster | Communication, sauvegarde et réplication entre les clusters 
+
+
+| Données NAS | Accès client via les protocoles NAS. 
+
+
+| Données iSCSI | Accès client via le protocole iSCSI. Également utilisé par le système pour d'autres flux de travail réseau importants. Cette LIF est requise et ne doit pas être supprimée. 
+
+
+| Gestion des machines virtuelles de stockage | Une LIF de gestion de machines virtuelles de stockage est utilisée avec des outils de gestion tels que SnapCenter. 
+|===
 
 
 ==== Adresses IP des paires haute disponibilité
@@ -139,7 +152,7 @@ Les tableaux suivants fournissent des informations détaillées sur les LIF asso
 | Intercluster | eth0 | les nœuds 1 et 2 | Communication, sauvegarde et réplication entre les clusters 
 
 
-| Données iSCSI | eth0 | les nœuds 1 et 2 | Accès client via le protocole iSCSI. Cette LIF gère également la migration d'adresses IP flottantes entre les nœuds. 
+| Données iSCSI | eth0 | les nœuds 1 et 2 | Accès client via le protocole iSCSI. Ces LIFs gèrent également la migration d'adresses IP flottantes entre nœuds. Ces LIFs sont requises et ne doivent pas être supprimées. 
 
 
 | Connectivité au cluster | eth1 | les nœuds 1 et 2 | Permet aux nœuds de communiquer les uns avec les autres et de déplacer les données au sein du cluster. 
