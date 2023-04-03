@@ -40,32 +40,37 @@ Le porte-monnaie numérique vous indique la capacité totale consommée dans vot
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
-. Si vous sélectionnez *licences basées sur la capacité*, affichez le résumé des packages, qui indique la capacité consommée, la capacité totale sous licence et la capacité totale en PAYGO.
+. Lorsque *Capacity Based Licenses* est sélectionné, affichez le résumé des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.
 +
 ** _Capacité totale consommée_ correspond à la capacité totale provisionnée de tous les systèmes Cloud Volumes ONTAP de votre compte NetApp. La charge dépend de la taille de provisionnement de chaque volume, peu importe l'espace local, utilisé, stocké ou effectif au sein du volume.
-** _Total sous licence_ correspond à la capacité totale sous licence (BYOL) que vous avez achetée auprès de NetApp.
+** _La capacité totale préallouée_ correspond à la capacité totale sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.
 ** _Total PAYGO_ est la capacité totale provisionnée via des abonnements Cloud Marketplace. La facturation via PAYGO n'est utilisée que si la capacité consommée est supérieure à la capacité sous licence ou si aucune licence BYOL n'est disponible dans le portefeuille numérique.
 +
-Voici un exemple de compte ayant une capacité consommée de 2000 Tio :
+Voici un exemple de résumé des packages Cloud Volumes ONTAP dans le portefeuille digital :
 
 +
-image:screenshot_capacity-based-licenses.png["Capture d'écran indiquant la quantité de capacité provisionnée par rapport à la capacité sous licence du package professionnel et Essentials."]
+image:screenshot_capacity-based-licenses.png["Capture d'écran affichant un récapitulatif des packages Cloud Volumes ONTAP incluant la capacité totale consommée, la capacité totale préallouée (contrats BYOL et Marketplace) et la capacité totale PAYGO, ou provisionnée dans le portefeuille digital."]
 
 
 
 . Sous le récapitulatif, consultez la capacité consommée pour chaque package de licences.
 +
-** _Consul Capacity_ vous indique la capacité totale des volumes pour ce paquet. Pour plus de détails sur un pack spécifique, placez le curseur de la souris sur l'info-bulle.
+** _Consumed Capacity_ indique la capacité des volumes de ce package. Pour plus de détails sur un pack spécifique, placez le curseur de la souris sur l'info-bulle.
 +
 Pour mieux comprendre les capacités affichées dans le pack Essentials, vous devez connaître le fonctionnement de la charge. link:concept-licensing.html#notes-about-charging["En savoir plus sur le chargement pour le pack Essentials"].
 
-** _BYOL_ vous indique la capacité sous licence que vous avez achetée auprès de NetApp.
-** _PAYGO_ vous indique la capacité totale consommée par modèle de consommation de licence.
+** _La capacité recommandée_ correspond à la capacité sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.
++
+*** _BYOL_ indique la capacité sous licence achetée auprès de NetApp pour ce type de package.
+*** _Contrats Marketplace_ indique la capacité sous licence que vous avez achetée avec un contrat Marketplace pour ce type de package.
+
+
+** _PAYGO_ vous indique la capacité consommée par modèle de consommation de licence.
 +
 Voici un exemple de compte avec plusieurs packages de licences :
 
 +
-image:screenshot-digital-wallet-packages.png["Capture d'écran indiquant la capacité consommée pour les progiciels professionnels, optimisés et essentiels."]
+image:screenshot-digital-wallet-packages.png["Capture d'écran affichant la capacité consommée, la capacité préallouée et PAYGO ou provisionnée pour les packages essentiels et professionnels."]
 
 
 

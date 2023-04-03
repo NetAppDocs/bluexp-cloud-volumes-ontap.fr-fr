@@ -25,7 +25,9 @@ Notez ce qui suit :
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sur la page Canevas, double-cliquez sur l'environnement de travail Cloud Volumes ONTAP sur lequel vous souhaitez gérer les volumes.
-. Sélectionnez un volume, puis cliquez sur *IQN cible*.
+. Dans l'environnement de travail, cliquez sur l'onglet *volumes*.
+. Dans l'onglet volumes, accédez au titre du volume souhaité, puis cliquez sur *gérer le volume* pour accéder au panneau de droite gérer les volumes.
+. Cliquez sur *IQN cible*.
 . Cliquez sur *Copy* pour copier le nom IQN.
 . Configurez une connexion iSCSI de l'hôte vers le LUN.
 +

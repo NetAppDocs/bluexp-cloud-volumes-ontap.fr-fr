@@ -30,7 +30,7 @@ Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+image:screenshot_settings_icon.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
 . Sous *Azure*, cliquez sur *verrous CIFS Azure pour les environnements de travail Azure HA*.
 . Cochez la case pour activer la fonctionnalité, puis cliquez sur *Enregistrer*.

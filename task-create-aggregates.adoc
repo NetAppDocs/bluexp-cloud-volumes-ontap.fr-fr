@@ -22,8 +22,7 @@ CAUTION: Tous les disques et agrégats doivent être créés et supprimés direc
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sur la page Canevas, double-cliquez sur le nom de l'instance Cloud Volumes ONTAP dans laquelle vous souhaitez gérer les agrégats.
-. Cliquez sur l'icône du menu, puis sur *Avancé > attribution avancée*.
-. Cliquez sur *Ajouter agrégat*, puis spécifiez les détails de l'agrégat.
+. Dans l'onglet Aggregates, cliquez sur *Ajouter agrégat*, puis spécifiez les détails de l'agrégat.
 +
 [role="tabbed-block"]
 ====

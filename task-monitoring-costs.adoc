@@ -33,7 +33,11 @@ Pour suivre vos coûts AWS, BlueXP attribue une balise d'allocation des coûts a
 
 
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
-. Sur la page Canevas, sélectionnez un environnement de travail Cloud Volumes ONTAP, puis cliquez sur *coût*.
+. Sur la page Canevas, sélectionnez un environnement de travail Cloud Volumes ONTAP.
+. Cliquez sur l'icône de menu, puis cliquez sur *Afficher le rapport de coût*.
++
+image:screenshot_view_cost_report.png["Capture d'écran : affiche l'option de menu Afficher le rapport de coût."]
+
 +
 La page coûts affiche les coûts des mois actuels et précédents et présente vos économies annuelles sur les produits NetApp, si vous avez activé les fonctions d'économies de volumes offertes par NetApp.
 

@@ -26,11 +26,10 @@ TIP: Un système qui n'est pas enregistré pour le support recevra toujours les 
 +
 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Découvrez comment ajouter des comptes au site de support NetApp"^].
 
-. Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*
 . Sur la page Canevas, double-cliquez sur le nom du système que vous souhaitez enregistrer.
-. Cliquez sur l'icône du menu, puis sur *support Registration* :
+. Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *enregistrement du support*.
 +
-image:screenshot_menu_registration.gif["Capture d'écran : affiche l'option d'enregistrement Support sélectionnée dans l'icône de menu d'un système Cloud Volumes ONTAP."]
+image:screenshot_features_support_registration_2.png["Capture d'écran : affiche l'option d'enregistrement du support sous le panneau fonctions d'un système Cloud Volumes ONTAP."]
 
 . Sélectionnez un compte sur le site de support NetApp et cliquez sur *Register*.
 

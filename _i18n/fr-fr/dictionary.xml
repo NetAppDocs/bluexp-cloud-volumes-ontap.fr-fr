@@ -104,11 +104,9 @@
   <block id="270bb1237f850224c48374b974319501" category="list-text">Choisissez si BlueXP vous informe des décisions relatives à la capacité de stockage ou si BlueXP gère automatiquement les besoins en capacité pour vous.</block>
   <block id="af1f64d74440547a71a0dfdd077d8a15" category="inline-link-macro">Découvrez le fonctionnement du mode de gestion de la capacité</block>
   <block id="46e6171a2e84c75269ac8bcb3c5004d8" category="paragraph"><block ref="f8a3c55f9fa8638c083e126aaf830b07" category="inline-link-macro-rx"></block>.</block>
-  <block id="562e73580c466cead324e6a17fbfe1c8" category="list-text">Rapport d'espace libre</block>
   <block id="314b05c3387324c9621b3b3cd58816d4" category="list-text">Déclenche une notification lorsque le taux d'espace libre sur un agrégat chute en dessous du seuil spécifié.</block>
   <block id="a27b16792f86cfcc4c0f28d5d58e43f4" category="paragraph">Le rapport d'espace libre est calculé comme suit :</block>
   <block id="b9fbc310908f08e909d0f601f964b6d5" category="paragraph">(capacité de l'agrégat : capacité totale utilisée sur l'agrégat) / capacité de l'agrégat</block>
-  <block id="1bf0c6edc1ff4a9b211fcdf6bda9cef9" category="list-text">Ratio d'espace libre pour le Tiering des données</block>
   <block id="0bc3c683bdb3389ca9d8d2211fce0878" category="list-text">Définit la quantité d'espace disponible requise sur le Tier de performance (disques) lors du Tiering des données vers un Tier de capacité (stockage objet).</block>
   <block id="3e230a58ba269a917d314abcc623818e" category="paragraph">Le ratio est important pour les scénarios de reprise après incident. Lorsque les données sont lues depuis le niveau de capacité, Cloud Volumes ONTAP les déplace vers le Tier de performance pour de meilleures performances. Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données.</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Cliquez sur *Enregistrer*.</block>
@@ -159,16 +157,12 @@
   <block id="a02b7ad2b280aa9926f66385ec1478c2" category="summary">Cloud Volumes ONTAP inclut un compte d'administration de cluster. Vous pouvez modifier le mot de passe de ce compte depuis BlueXP, si nécessaire.</block>
   <block id="95d79008b0be56c31d097e76b7584763" category="doc">Changer le mot de passe pour Cloud Volumes ONTAP</block>
   <block id="7c73e4ed4b91266d07c912a53798c240" category="admonition">Vous ne devez pas modifier le mot de passe du compte admin via System Manager ou l'interface de ligne de commande. Le mot de passe ne sera pas reflété dans BlueXP. Par conséquent, BlueXP ne peut pas contrôler l'instance correctement.</block>
-  <block id="8ade5dd9392dfe1171a2a14523929e7d" category="list-text">Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *Avancé &gt; définir mot de passe*.</block>
-  <block id="4ca6940bf893c214ac89a699b609845c" category="list-text">Saisissez le nouveau mot de passe deux fois, puis cliquez sur *Enregistrer*.</block>
   <block id="809993be97183c1aad51ef5ea989cd2a" category="paragraph">Le nouveau mot de passe doit être différent de l'un des six derniers mots de passe utilisés.</block>
   <block id="8bb4bde51e0ea674bc0393c5923c7145" category="summary">Vous pouvez créer des agrégats vous-même ou laisser BlueXP le faire pour vous lors de la création de volumes. L'avantage de créer des agrégats vous-même est de choisir la taille du disque sous-jacent, ce qui vous permet de dimensionner l'agrégat en fonction de la capacité ou des performances requises.</block>
   <block id="c165494898bc0fbf27151d6359a27936" category="doc">Créer des agrégats</block>
   <block id="0dca6333e3e343d1b25adfe474ce6b88" category="admonition">Tous les disques et agrégats doivent être créés et supprimés directement depuis BlueXP. Vous ne devez pas effectuer ces actions à partir d'un autre outil de gestion. Cela peut avoir un impact sur la stabilité du système, entraver la possibilité d'ajouter des disques à l'avenir et générer potentiellement des frais de fournisseur de cloud redondant.</block>
   <block id="5d8d2c55116ea837270739e0c1ee4fb7" category="list-text">Dans le menu de navigation de gauche, sélectionnez *stockage &gt; Canvas*.</block>
   <block id="67ea3f429e13cb33e66f1359eb85cc04" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'instance Cloud Volumes ONTAP dans laquelle vous souhaitez gérer les agrégats.</block>
-  <block id="d56f9c2528e1e01328b3a8b34a35154d" category="list-text">Cliquez sur l'icône du menu, puis sur *Avancé &gt; attribution avancée*.</block>
-  <block id="ff4facf1a49a9f339fdb4bf4880c23f1" category="list-text">Cliquez sur *Ajouter agrégat*, puis spécifiez les détails de l'agrégat.</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
   <block id="7b2dece9fd16e6a10b60cfdf7e41b57f" category="inline-link-macro">Planification de votre configuration Cloud Volumes ONTAP dans AWS</block>
   <block id="d2d74ae0bae0ce5e572e1e18ee02a826" category="list-text">Si vous êtes invité à choisir un type et une taille de disque, reportez-vous à la section <block ref="26bea762cd1da7392687166de680dabd" category="inline-link-macro-rx"></block>.</block>
@@ -218,7 +212,6 @@
   <block id="de4e4bb6bc85c14c6a8601fd20afdca3" category="inline-link">Activer la balise *WorkingEnvironnement*</block>
   <block id="ee0050b628db7de40e04e661d528d91f" category="list-text"><block ref="541edff71c56eae6d36d5f7a463cfcca" category="inline-link-rx"></block>.</block>
   <block id="5137e20086fbd2e10511433ace3ac154" category="paragraph">Pour suivre vos coûts AWS, BlueXP attribue une balise d'allocation des coûts aux instances Cloud Volumes ONTAP. Après avoir créé votre premier environnement de travail, activez la balise *WorkingEnvironment,Id*. Les balises définies par l'utilisateur n'apparaissent pas dans les rapports de facturation AWS tant que vous ne les activez pas dans la console de facturation et de gestion des coûts.</block>
-  <block id="525637918edc816fd2dd073b6aa98f41" category="list-text">Sur la page Canevas, sélectionnez un environnement de travail Cloud Volumes ONTAP, puis cliquez sur *coût*.</block>
   <block id="9dfa1bfa6d369f6aee8b4ba09ac15642" category="paragraph">La page coûts affiche les coûts des mois actuels et précédents et présente vos économies annuelles sur les produits NetApp, si vous avez activé les fonctions d'économies de volumes offertes par NetApp.</block>
   <block id="c58c67877e90861ec92c90c10b7ad7f4" category="paragraph">L'image suivante montre un exemple de page de coût :</block>
   <block id="37423695a33e814084966c17d451584a" category="inline-image-macro">Capture d'écran : affiche les coûts par mois d'une instance Cloud Volumes ONTAP.</block>
@@ -253,8 +246,6 @@
   <block id="4760896a3351a42c072a61eb664108e5" category="summary">Vous pouvez modifier les tables de routage AWS incluant des routes vers les adresses IP flottantes pour une paire HA déployée sur plusieurs zones de disponibilité AWS. Vous pouvez le faire si les nouveaux clients NFS ou CIFS ont besoin d'accéder à une paire haute disponibilité dans AWS.</block>
   <block id="f431a02cb5c1646114365a3adfa4233b" category="doc">Modifier les tables de routage pour les paires HA dans plusieurs AZS</block>
   <block id="89cac051c93d21ebf3a23db9a240bbd1" category="paragraph">Vous pouvez modifier les tables de routage AWS qui incluent des routes vers les adresses IP flottantes pour une paire HA déployée dans plusieurs zones de disponibilité AWS (AZS). Vous pouvez le faire si les nouveaux clients NFS ou CIFS ont besoin d'accéder à une paire haute disponibilité dans AWS.</block>
-  <block id="e60243467f676326e36a7e657bc20970" category="list-text">Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *informations*.</block>
-  <block id="411f67726812722e40994bad9091a5ac" category="list-text">Cliquez sur *tables de routage*.</block>
   <block id="ce501a2e9d8b238043619a3db4abc141" category="list-text">Modifiez la liste des tables de routage sélectionnées, puis cliquez sur *Enregistrer*.</block>
   <block id="ad4ac1c47a9ebdd6164879be3ae930d1" category="paragraph">BlueXP envoie une demande AWS pour modifier les tables de routage.</block>
   <block id="ed3dc1533e1874c37866040dfa3c4de6" category="summary">Les notes de version de Cloud Volumes ONTAP fournissent des informations spécifiques à la version. Nouveautés de la version, configurations prises en charge, limites de stockage et limitations ou problèmes connus susceptibles d'affecter le fonctionnement du produit.</block>
@@ -266,7 +257,6 @@
   <block id="4ea3aab4d949982c440f4df5e309a486" category="list-text">La gestion automatique de la capacité de BlueXP ne s'applique pas aux LUN. Lorsque BlueXP crée un LUN, il désactive la fonction Autogrow.</block>
   <block id="d83c309b20d472b0bf78b20e2b89dbf8" category="list-text">Vous pouvez créer des LUN supplémentaires depuis System Manager ou l'interface de ligne de commandes.</block>
   <block id="ad125360a406d7d2d9b4c68551674284" category="list-text">Sur la page Canevas, double-cliquez sur l'environnement de travail Cloud Volumes ONTAP sur lequel vous souhaitez gérer les volumes.</block>
-  <block id="c2a685651a77d71812f2c11efaa07339" category="list-text">Sélectionnez un volume, puis cliquez sur *IQN cible*.</block>
   <block id="061f7108b0f0dba32dea682112e8a8ef" category="list-text">Cliquez sur *Copy* pour copier le nom IQN.</block>
   <block id="f7e4c3d5763e79fa885b9b9326640f23" category="list-text">Configurez une connexion iSCSI de l'hôte vers le LUN.</block>
   <block id="f92a559c41b14f784b626bb4d7348a57" category="inline-link">Configuration iSCSI express ONTAP 9 pour Red Hat Enterprise Linux : démarrage des sessions iSCSI avec la cible</block>
@@ -378,13 +368,6 @@
   <block id="e8fafc5515dbe922c9cd7f7101d3a661" category="paragraph">Pour les systèmes à nœud unique, les E/S sont interrompues.</block>
   <block id="0da5cbb23a0a7d13b0f40ce06d29d3b4" category="paragraph">Pour les paires HA, le changement n'est pas perturbateur. Les paires HA continuent de servir les données.</block>
   <block id="66abe501678500958b330ea34f7f3794" category="admonition">BlueXP change aisément un nœud à la fois en lançant le basculement et en attente de retour. L'équipe d'assurance qualité de NetApp a testé l'écriture et la lecture des fichiers pendant ce processus et n'a rencontré aucun problème côté client. Au fur et à mesure des changements de connexion, nous avons constaté des tentatives d'E/S au niveau des E/S, mais la couche applicative a pu faire face à ces courtes « connexions » NFS/CIFS.</block>
-  <block id="10b7e2e8f5f0b89386db5d8f54c2583a" category="list-text">Dans la zone de travail, sélectionnez l'environnement de travail.</block>
-  <block id="26adcf62b4b0748e28f414b46e0ad443" category="list-text">Dans le volet de droite, cliquez sur l'icône de menu et sélectionnez *optimiser les coûts et les performances*.</block>
-  <block id="bbcd7b9a3e132961d93ea08d77eb732e" category="inline-image-macro">Capture d'écran de l'option optimiser le coût et les performances disponible sur la toile.</block>
-  <block id="84fb9846fd45aafb7e227dceba2bf483" category="paragraph"><block ref="41ee20c5926363ecd6aaed7cd5cd1cdd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0e6517b6c0b570b620f706f71cb176c" category="admonition">Cette option est également disponible en entrant dans l'environnement de travail, en ouvrant le menu d'action et en sélectionnant *changer VM*.</block>
-  <block id="7ad9575195738d8c7f1b3ae6cea26ee2" category="list-text">Si vous utilisez une licence PAYGO basée sur un nœud, vous pouvez éventuellement choisir une licence différente.</block>
-  <block id="611a1fa2f8a37527bbcb1f0228321b4d" category="list-text">Sélectionnez un type de VM, cochez la case pour confirmer que vous comprenez les implications de la modification, puis cliquez sur *OK*.</block>
   <block id="a8e111d8043785d9d556635c64194b73" category="paragraph">Cloud Volumes ONTAP redémarre avec la nouvelle configuration.</block>
   <block id="383f69885998c1a12752a714d0112637" category="summary">Depuis la version 9.11.1, les paires haute disponibilité Cloud Volumes ONTAP sont prises en charge dans AWS avec le partage VPC. Le partage VPC permet à votre entreprise de partager des sous-réseaux avec d'autres comptes AWS. Pour utiliser cette configuration, vous devez configurer votre environnement AWS, puis déployer la paire HA à l'aide de l'API.</block>
   <block id="1ddb0e5b328575796533c1e7f5b1f802" category="doc">Déploiement d'une paire haute disponibilité dans un sous-réseau partagé</block>
@@ -475,25 +458,18 @@
   <block id="05c1f921312a3701ff4fe737635bbfb0" category="paragraph">Si vous souhaitez supprimer un agrégat, vous devez d'abord supprimer les volumes de l'agrégat.</block>
   <block id="14f6e5cbecec465db4af750335c3369b" category="paragraph">Si un agrégat manque d'espace de stockage, il est possible de déplacer des volumes vers un autre agrégat via System Manager.</block>
   <block id="47a29d3d79731f5f3ac2e35595cdd5a9" category="list-text">Sur la page Canevas, double-cliquez sur l'environnement de travail Cloud Volumes ONTAP dans lequel vous souhaitez gérer les agrégats.</block>
-  <block id="be6c4e6315a42d6166b9bdefd99b4175" category="list-text">Cliquez sur l'icône du menu, puis sur *Avancé &gt; attribution avancée*.</block>
   <block id="4ee08bb978546541b2d29cc9458a50b6" category="list-text">Gérez vos agrégats :</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Tâche</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">Action</block>
   <block id="6fb0fc660dff117671a3212aa98c1e9a" category="cell">Afficher des informations sur un agrégat</block>
-  <block id="a40afba5e0bd72803969dff1b0ed7469" category="cell">Sélectionnez un agrégat et cliquez sur *Info*.</block>
   <block id="b50c158eaf466db16b58f00ceffdc6e1" category="cell">Créez un volume sur un agrégat spécifique</block>
-  <block id="90f1a1f2730a3abc2245b4a979df10f4" category="cell">Sélectionnez un agrégat et cliquez sur *Create volume*.</block>
   <block id="ee1ffb740641bd768beada794d582fc1" category="cell">Ajoutez des disques à un agrégat</block>
-  <block id="0558557eddde3c400b73684dfb49fdbb" category="list-text">Sélectionnez un agrégat et cliquez sur *Add disks*.</block>
   <block id="b98fc1f56f56b03e2525b90a45df7e45" category="list-text">Sélectionnez le nombre de disques que vous souhaitez ajouter et cliquez sur *Ajouter*.</block>
   <block id="a40e4d3ab198f5d9c9e23e409e7abae3" category="admonition">Tous les disques qui composent un agrégat doivent être de la même taille.</block>
   <block id="149dd55e6760c710e611c0480e5069ac" category="cell">Augmentation de la capacité d'un agrégat prenant en charge Amazon EBS Elastic volumes</block>
-  <block id="f17996ff912274a89bd46a09126f54a0" category="list-text">Sélectionnez un agrégat et cliquez sur *augmenter la capacité*.</block>
-  <block id="c2ee080a41f3128dec50564d5d2cf945" category="list-text">Saisissez la capacité supplémentaire que vous souhaitez ajouter, puis cliquez sur *Ajouter*.</block>
   <block id="ddc70e48be52170226876f32fd0d0955" category="paragraph">Notez que vous devez augmenter la capacité de l'agrégat d'au moins 256 Gio ou 10 % de la taille de l'agrégat.</block>
   <block id="457b4b096cd2396d1dc52e52b77f7f16" category="paragraph">Par exemple, si vous avez un agrégat de 1.77 Tio, 10 % est égal au 181 Gio. Soit plus faible que 256 Gio, donc la taille de l'agrégat doit être augmentée de 256 Gio au minimum.</block>
   <block id="8ce62ed0fdfe7abb736c3597956922c2" category="cell">Supprimer un agrégat</block>
-  <block id="55acf40831b2a6bbebbb0948c51c7dad" category="list-text">Sélectionnez un agrégat qui ne contient aucun volume et cliquez sur *Supprimer*.</block>
   <block id="a87e9e2d6f69725c3669d99fad70371d" category="list-text">Cliquez à nouveau sur *Supprimer* pour confirmer.</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp prend en charge BlueXP de plusieurs façons. De nombreuses options d'auto-assistance gratuites sont disponibles 24 h/24 et 7 j/7, comme des articles de la base de connaissances (KB) et un forum communautaire. Votre inscription au support inclut un support technique à distance via la création de tickets en ligne.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Obtenez de l'aide</block>
@@ -921,22 +897,12 @@
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">Affichez la capacité consommée dans votre compte</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">Le porte-monnaie numérique vous indique la capacité totale consommée dans votre compte et la capacité consommée par le package de licences. Cela vous permet de mieux comprendre la façon dont vous achetez de la capacité supplémentaire et si celle-ci est nécessaire.</block>
   <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.</block>
-  <block id="d5dde91fb8d63e816b49f1eaaf1b31f0" category="list-text">Si vous sélectionnez *licences basées sur la capacité*, affichez le résumé des packages, qui indique la capacité consommée, la capacité totale sous licence et la capacité totale en PAYGO.</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_Capacité totale consommée_ correspond à la capacité totale provisionnée de tous les systèmes Cloud Volumes ONTAP de votre compte NetApp. La charge dépend de la taille de provisionnement de chaque volume, peu importe l'espace local, utilisé, stocké ou effectif au sein du volume.</block>
-  <block id="2895d33d8798ea34fbece2f03c7b1a44" category="list-text">_Total sous licence_ correspond à la capacité totale sous licence (BYOL) que vous avez achetée auprès de NetApp.</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_ est la capacité totale provisionnée via des abonnements Cloud Marketplace. La facturation via PAYGO n'est utilisée que si la capacité consommée est supérieure à la capacité sous licence ou si aucune licence BYOL n'est disponible dans le portefeuille numérique.</block>
-  <block id="fa5b039d6c7312346b7c921f81258971" category="paragraph">Voici un exemple de compte ayant une capacité consommée de 2000 Tio :</block>
-  <block id="8881e3192df3d6a5d7efc284f0e0beee" category="inline-image-macro">Capture d'écran indiquant la quantité de capacité provisionnée par rapport à la capacité sous licence du package professionnel et Essentials.</block>
-  <block id="a67c1e3fa166897e8cc4f860ff4aa0c5" category="paragraph"><block ref="a67c1e3fa166897e8cc4f860ff4aa0c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">Sous le récapitulatif, consultez la capacité consommée pour chaque package de licences.</block>
-  <block id="39d8821e12869173bcc44d49a6c82619" category="list-text">_Consul Capacity_ vous indique la capacité totale des volumes pour ce paquet. Pour plus de détails sur un pack spécifique, placez le curseur de la souris sur l'info-bulle.</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">En savoir plus sur le chargement pour le pack Essentials</block>
   <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">Pour mieux comprendre les capacités affichées dans le pack Essentials, vous devez connaître le fonctionnement de la charge. <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>.</block>
-  <block id="4f68f7a47531b2df7b7a4db5225d57b5" category="list-text">_BYOL_ vous indique la capacité sous licence que vous avez achetée auprès de NetApp.</block>
-  <block id="0c27ea3454ff74c09bafc9361752d263" category="list-text">_PAYGO_ vous indique la capacité totale consommée par modèle de consommation de licence.</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">Voici un exemple de compte avec plusieurs packages de licences :</block>
-  <block id="9dbb08096054a8593f55c8cd3e2863d6" category="inline-image-macro">Capture d'écran indiquant la capacité consommée pour les progiciels professionnels, optimisés et essentiels.</block>
-  <block id="943b03ddb77b543ab329dfed996ad4ac" category="paragraph"><block ref="943b03ddb77b543ab329dfed996ad4ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">Ajoutez des licences achetées à votre compte</block>
   <block id="e3562c1adf2604137baf3d2df3c68ecd" category="paragraph">Si vous ne voyez pas vos licences achetées dans le porte-monnaie numérique, vous devrez ajouter les licences à BlueXP pour que la capacité soit disponible pour Cloud Volumes ONTAP.</block>
   <block id="160caa44a14b9421593597c51ec2a7e8" category="list-text">Vous devez fournir à BlueXP le numéro de série de la licence ou du fichier de licence.</block>
@@ -1515,10 +1481,7 @@
   <block id="b684a678c3e505841ebacb9d4d1cb66d" category="paragraph"><block ref="ac2e95b9536af713edc378ae2cd06df9" category="inline-link-rx"></block>.</block>
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">Supprimer l'environnement de travail Cloud Volumes ONTAP.</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP que vous souhaitez supprimer.</block>
-  <block id="ce57c223c9772471dcabe8db7fec79ea" category="list-text">Cliquez sur l'icône de menu, puis sur *Supprimer*.</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">Capture d'écran affichant le menu disponible dans l'environnement de travail contenant l'action Supprimer.</block>
-  <block id="2d3838f6845c3ac0398071b3ad7e14f5" category="paragraph"><block ref="2d3838f6845c3ac0398071b3ad7e14f5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27bf96ea2dd4c98f397498424680c167" category="list-text">Saisissez le nom de l'environnement de travail, puis cliquez sur *Supprimer*.</block>
   <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">La suppression de l'environnement de travail peut prendre jusqu'à 5 minutes.</block>
   <block id="f71bca1a74e3009d7cff4912558ab628" category="summary">Configurez une passerelle de transit AWS pour permettre à un client NAS d'accéder à des adresses IP flottantes depuis l'extérieur sur le VPC où réside Cloud Volumes ONTAP. Cette fonctionnalité est avantageuse car les adresses IP flottantes migrent automatiquement entre les nœuds en cas de défaillances.</block>
   <block id="d2a72b7b5a38468116ebf74213d0a809" category="doc">Configuration d'une passerelle de transit AWS pour les paires HA dans plusieurs AZS</block>
@@ -1557,9 +1520,7 @@
   <block id="e1c0bf56f7a531effc9ef27a4e57f96e" category="inline-image-macro">Une capture d'écran de la console AWS montre la table de la route pour VPC 1. Elle inclut une route vers les adresses IP flottantes et vers VPC 2, c'est-à-dire où réside un client.</block>
   <block id="0a746eb7dceb143e3aac00bd3d507d00" category="paragraph"><block ref="0a746eb7dceb143e3aac00bd3d507d00" category="inline-image-macro-rx" type="image"></block></block>
   <block id="de0c14b39dbeb6aa804318f10069c1ca" category="list-text">Montez les volumes sur des clients à l'aide de l'adresse IP flottante.</block>
-  <block id="9036b8f651252283ddfb9a00295cfa70" category="paragraph">Vous pouvez trouver l'adresse IP correcte dans BlueXP en sélectionnant un volume et en cliquant sur *Mount Command*.</block>
   <block id="d0eb9723d8f743b568ca7af03af706b0" category="inline-image-macro">Capture d'écran : affiche la commande Mount qui est disponible lorsque vous sélectionnez un volume.</block>
-  <block id="a5061c073213535809d187195725e86c" category="paragraph"><block ref="a5061c073213535809d187195725e86c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e41b6df544fc6e3dae54d0f364e3942" category="list-text">Si vous montez un volume NFS, configurez la export policy pour qu'elle corresponde au sous-réseau du VPC client.</block>
   <block id="b5db75984831b38729eaafcd865d67e4" category="inline-link-macro">Découvrez comment modifier un volume</block>
   <block id="0da139308525636e62be136978fa7e43" category="paragraph"><block ref="1b5a3ed48a00633adbc203b0ae302c43" category="inline-link-macro-rx"></block>.</block>
@@ -1896,7 +1857,6 @@
   <block id="d8072809ae78c7f725f816f0bd8b9543" category="section-title">Accès client au stockage</block>
   <block id="21d971c1fd1bf90d09fc9c3acbf89eef" category="paragraph">Les clients doivent accéder aux volumes NFS et CIFS en utilisant l'adresse IP de données du nœud sur lequel réside le volume. Si les clients NAS accèdent à un volume en utilisant l'adresse IP du nœud partenaire, le trafic passe entre les deux nœuds, ce qui réduit les performances.</block>
   <block id="7dc27ef59812147ac25a6539ca8487d1" category="admonition">Si vous déplacez un volume entre les nœuds d'une paire HA, vous devez remonter le volume en utilisant l'adresse IP de l'autre nœud. Sinon, vous pouvez bénéficier d'une performance réduite. Si les clients prennent en charge les renvois NFSv4 ou la redirection de dossiers pour CIFS, vous pouvez activer ces fonctionnalités sur les systèmes Cloud Volumes ONTAP pour éviter de remanier le volume. Pour plus d'informations, consultez la documentation ONTAP.</block>
-  <block id="00c9595bc5cbf65901adf1c05dbc4c08" category="paragraph">Vous pouvez facilement identifier l'adresse IP appropriée à partir de BlueXP :</block>
   <block id="d6e98757d1df5cdc1234e534f0d83efe" category="summary">Le composant AutoSupport de ONTAP collecte les données de télémétrie et les envoie pour analyse. Le conseiller digital Active IQ analyse les données d'AutoSupport et fournit un support proactif et une optimisation. Avec l'intelligence artificielle, Active IQ peut identifier les problèmes potentiels et vous aider à les résoudre avant qu'ils n'affectent votre activité.</block>
   <block id="0f68b2b3e9b96354c8791aefa8416cb6" category="doc">Conseiller digital AutoSupport et Active IQ</block>
   <block id="534cf99258be6454cc1c45fef4893c42" category="paragraph">Active IQ vous permet d'optimiser votre infrastructure de données dans l'ensemble de votre cloud hybride grâce à un portail cloud et à une application mobile qui offrent des analyses prédictives et un support proactif. Les informations et les recommandations basées sur les données de Active IQ sont accessibles à tous les clients NetApp qui possèdent un contrat SupportEdge actif (les fonctionnalités varient selon le produit et le niveau de support).</block>
@@ -2033,12 +1993,9 @@
   <block id="bb1ef255816e8724de2a508f11ab6faa" category="list-text">Sur la page Canevas, double-cliquez sur le nom d'un système Cloud Volumes ONTAP.</block>
   <block id="a31b079030fd3d406e06a9ce180abf58" category="list-text">Dans le coin supérieur droit, cliquez sur *basculer vers la vue avancée*.</block>
   <block id="4764848a2e939676e46196b57ed3d239" category="inline-image-macro">Capture d'écran d'un environnement de travail Cloud Volumes ONTAP affichant l'option basculer vers la vue avancée.</block>
-  <block id="3ee38239984a2c6b3ae4074ced0704c7" category="paragraph"><block ref="3ee38239984a2c6b3ae4074ced0704c7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="74d668d6c47cd0c55c4ff8f77ad621bd" category="list-text">Si le message de confirmation apparaît, lisez-le et cliquez sur *Fermer*.</block>
   <block id="f0da217269d7f8fb37fd503f586df2ef" category="list-text">Utilisez System Manager pour gérer Cloud Volumes ONTAP.</block>
   <block id="e7b3f56c45c6705f279b059a9274225d" category="list-text">Si nécessaire, cliquez sur *basculer vers la vue standard* pour revenir à la gestion standard via BlueXP.</block>
-  <block id="c7c80403ddad5bf0ae3c78cf20ad2cf1" category="inline-image-macro">Capture d'écran d'un environnement de travail Cloud Volumes ONTAP affichant l'option basculer vers la vue standard.</block>
-  <block id="b98d787e610274d7cf438bd9dacb5eb3" category="paragraph"><block ref="b98d787e610274d7cf438bd9dacb5eb3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9091c5cdacecb3d4082594d5d5a31855" category="section-title">Aide sur l'utilisation de System Manager</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link">Documentation ONTAP</block>
   <block id="29b2dad08499788ccf25f529167b3782" category="paragraph">Si vous avez besoin d'aide pour utiliser System Manager avec Cloud Volumes ONTAP, vous pouvez voir<block ref="e4712fca3ed0fd9138bc58dbf36327e9" category="inline-link-rx"></block> pour obtenir des instructions détaillées. Voici quelques liens utiles :</block>
@@ -2085,7 +2042,6 @@
   <block id="4dbaad4c9dc389d54a40700cf043efae" category="list-text">Choisissez le type de système Cloud Volumes ONTAP.</block>
   <block id="e5274090bc4227c2e22055ba915c593c" category="list-text">Cliquez sur le lien pour découvrir un système existant.</block>
   <block id="40017add8025d214a0f7daaa7b0901e1" category="inline-image-macro">Copie d'écran montrant un lien permettant de découvrir un système Cloud Volumes ONTAP existant.</block>
-  <block id="99c8d21234f18ca8a3a220793fea2262" category="paragraph">+<block ref="d4324b56e309570d8b82ab9a959b9228" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff41b305e511b8485cd86e974b8b33c3" category="list-text">Sur la page Région, choisissez la région dans laquelle les instances sont exécutées, puis sélectionnez les instances.</block>
   <block id="3e46ae3398c8487fda843885c6277e38" category="list-text">Sur la page informations d'identification, entrez le mot de passe de l'utilisateur administrateur Cloud Volumes ONTAP, puis cliquez sur *Go*.</block>
   <block id="b518e1d4e9d8729a5ddeeb3439018240" category="paragraph">BlueXP ajoute les instances Cloud Volumes ONTAP à l'espace de travail.</block>
@@ -2228,24 +2184,16 @@
   <block id="4df66712f957d539001edc73bbb48742" category="list-text">Cette tâche planifie les arrêts automatiques des deux nœuds d'une paire haute disponibilité.</block>
   <block id="a38060fa2aae177f0fbef99ef2923324" category="list-text">Les snapshots des disques de démarrage et racine ne sont pas créés lors de la mise hors tension de Cloud Volumes ONTAP au cours des arrêts programmés.</block>
   <block id="1f9d590b21cddc0cc992effc141a9be2" category="paragraph">Les instantanés sont automatiquement créés uniquement lors d'un arrêt manuel, comme décrit dans la section suivante.</block>
-  <block id="8a1b478d84a6f80cc4e08b04f317d63b" category="list-text">Dans l'environnement de travail, cliquez sur l'icône horloge :</block>
   <block id="34e70391062bd14a2cecba6e39595285" category="inline-image-macro">Capture d'écran : affiche l'icône qui charge la page d'arrêt automatique.</block>
-  <block id="3bbcb84741fc1c9468cb750fd8649a74" category="paragraph"><block ref="3bbcb84741fc1c9468cb750fd8649a74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f95206b8c2df1268bd8a4454e57f5df" category="list-text">Spécifiez la planification de l'arrêt :</block>
   <block id="3a3fb4513da1ae453de12bb3293a3aa1" category="list-text">Choisissez si vous souhaitez arrêter le système tous les jours, tous les jours de semaine, tous les week-ends ou toute combinaison des trois options.</block>
   <block id="063dc598b5df43ce8c2ce8aebd705d40" category="list-text">Indiquez quand vous souhaitez désactiver le système et pendant combien de temps vous voulez le désactiver.</block>
-  <block id="f884ea208e6bcd01380f10fb59dea173" category="paragraph">L'image suivante montre un programme qui demande à BlueXP d'arrêter le système tous les samedis à 12 h 00 pendant 48 heures. BlueXP redémarre le système tous les lundis à 12:00</block>
-  <block id="fe684206be5bfef48a19e96654dd77eb" category="inline-image-macro">Capture d'écran : affiche un programme d'arrêt qui arrête Cloud Volumes ONTAP tous les week-ends à 12:00 AM pendant 48 heures.</block>
-  <block id="dcf55005a499d7c230aed9db69cce7cc" category="paragraph"><block ref="dcf55005a499d7c230aed9db69cce7cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bb0a5bced808713247ccd116ba565493" category="inline-image-macro">Capture d'écran : affiche l'icône d'arrêt automatique après qu'un programme a été défini.</block>
-  <block id="e47eeb0d6a9544ebd7c2192d93a896cc" category="paragraph">BlueXP enregistre le planning. L'icône de l'horloge change pour indiquer qu'un programme est défini : <block ref="74bec5e5dc52030c6eeec717b2b26a75" category="inline-image-macro-rx" type="image"></block></block>
   <block id="743f723fb93463aec3e7652a73bd3890" category="section-title">Arrêt d'Cloud Volumes ONTAP</block>
   <block id="9db86a680f4bae1de09076b7c830129a" category="paragraph">L'arrêt de Cloud Volumes ONTAP vous permet d'économiser de l'espace de calcul et de créer des snapshots des disques racines et de démarrage, ce qui peut être utile pour la résolution des problèmes.</block>
   <block id="d96640cb9857bedea622da8e210171a8" category="admonition">Pour réduire les coûts, BlueXP supprime régulièrement les anciens snapshots des disques racine et de démarrage. Seuls les deux instantanés les plus récents sont conservés pour les disques racine et de démarrage.</block>
   <block id="50840e2145fe17e7b2d3355bf1858f3b" category="paragraph">Lorsque vous arrêtez une paire haute disponibilité, BlueXP arrête les deux nœuds.</block>
   <block id="07bd6b4bc48913b55530949bce54eea8" category="list-text">Dans l'environnement de travail, cliquez sur l'icône *Désactiver*.</block>
   <block id="b47a0575c3200f7dd372fe15d0a725a2" category="inline-image-macro">Capture d'écran : affiche l'icône permettant de désactiver un système Cloud Volumes ONTAP.</block>
-  <block id="b23fbf5cfb02f1455245e12c56aee2f3" category="paragraph"><block ref="b23fbf5cfb02f1455245e12c56aee2f3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8fa2551f6408bfa93fe493745bac6f4" category="list-text">Conservez l'option de création de snapshots activés car les snapshots peuvent activer la récupération du système.</block>
   <block id="bb7e6cfdc4746a614a2674f0e2c56e43" category="list-text">Cliquez sur *Désactiver*.</block>
   <block id="5f2e3fd1b057bcc33ab14fddf0b6d211" category="paragraph">L'arrêt du système peut prendre jusqu'à quelques minutes. Vous pouvez redémarrer les systèmes ultérieurement à partir de la page de l'environnement de travail.</block>
@@ -2361,10 +2309,7 @@
   <block id="544cf6a9b3209b8642549a9f636f850d" category="paragraph">BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, tant qu'il n'y a aucun problème de connectivité ou d'autorisation. Si vous n'avez pas mis en œuvre les exigences énumérées ci-dessus jusqu'à ce que vous ayez créé le système, vous devrez activer manuellement le Tiering, qui crée le magasin d'objets.</block>
   <block id="153099ca90154cd624989c2d0ba20c2b" category="inline-xref">Assurez-vous que vous avez satisfait à toutes les exigences</block>
   <block id="87d6e798cac3a87c0353ec294be704dd" category="list-text"><block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>.</block>
-  <block id="b9abd7055dd68825b2f07a610643808b" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'instance Cloud Volumes ONTAP.</block>
   <block id="8bafa552ca08956804ea81c5b66b12db" category="list-text">Cliquez sur l'icône de menu et sélectionnez *Activer la hiérarchisation de capacité*.</block>
-  <block id="7ba788606ad56bde2415340a76fe7dc0" category="inline-image-macro">Capture d'écran de l'option Activer la hiérarchisation de capacité disponible dans le menu de l'environnement de travail si un problème a été rencontré lorsque BlueXP a essayé d'activer la hiérarchisation des données.</block>
-  <block id="c40ae3d4404caf2d331095e8007c76d0" category="paragraph"><block ref="c40ae3d4404caf2d331095e8007c76d0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="34a53c9826b73666c9ff291fdbb73cc4" category="paragraph">Cette option ne s'affiche que si le Tiering des données n'a pas pu être activé lorsque BlueXP a créé le système.</block>
   <block id="03b060a90dee73a6134cc6c1ebdf7458" category="paragraph">Dans Google Cloud, un compte de service doit être joint à Cloud Volumes ONTAP avant que cette option ne s'affiche. <block ref="066865d547a10de791f5772d517b17f7" category="inline-xref-macro-rx"></block>.</block>
   <block id="0ed8d1c9d40b89d8bb30156f2ff80b44" category="list-text">Cliquez sur *Activer* pour que BlueXP puisse créer le magasin d'objets que ce système Cloud Volumes ONTAP utilisera pour les données hiérarchisées.</block>
@@ -2376,10 +2321,7 @@
   <block id="603cb1023afc4d427cec5523f7e57a44" category="paragraph">Pour activer le Tiering des données sur un volume existant, vous devez vous assurer que le Tiering des données est activé sur l'agrégat sous-jacent. Si le Tiering des données n'est pas activé sur l'agrégat existant, vous devez utiliser System Manager pour associer un agrégat existant au magasin d'objets.</block>
   <block id="8ccc20b42c5589bb063180b688f1b75c" category="list-title">Étapes pour vérifier si la hiérarchisation est activée sur un agrégat</block>
   <block id="6f7dbe99eb1dafd47fcc1667c1661873" category="list-text">Ouvrez l'environnement de travail dans BlueXP.</block>
-  <block id="164a2b16a831f0be194767eec1e394e9" category="list-text">Cliquez sur l'icône du menu, puis sur *Avancé*, puis sur *attribution avancée*.</block>
-  <block id="42e0fd08a018bc4ebe85c982dcdbf69e" category="list-text">Vérifiez que le Tiering est activé ou désactivé sur l'agrégat.</block>
   <block id="c42d7d1729e77b6aa2d88e357efbb241" category="inline-image-macro">Capture d'écran affichant des informations sur un agrégat dans BlueXP qui inclut l'état de hiérarchisation.</block>
-  <block id="ec23400a3a57e1931ad6d6c4bcadc5f4" category="paragraph"><block ref="ec23400a3a57e1931ad6d6c4bcadc5f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f996b43685fd706b80aeb790d46b2ba2" category="list-title">Les étapes permettant d'activer la hiérarchisation sur un agrégat</block>
   <block id="fa993d0910660bdcad473652ec5f6fd9" category="list-text">Dans System Manager, cliquez sur *stockage &gt; niveaux*.</block>
   <block id="a81d10975a3cf570e21398a50ce230b9" category="list-text">Cliquez sur le menu d'action de l'agrégat et sélectionnez *attacher Cloud tiers*.</block>
@@ -2387,15 +2329,11 @@
   <block id="a323b1a6695991c4c107a123436089fb" category="paragraph">Vous pouvez désormais activer le Tiering des données sur les volumes, nouveaux ou existants, comme expliqué dans la section suivante.</block>
   <block id="4378a09b2897cb95172610f9ab82105b" category="section-title">Tiering des données à partir de volumes en lecture/écriture</block>
   <block id="38f85b7b21b44c9b59780ab299932eff" category="paragraph">Cloud Volumes ONTAP peut déplacer les données inactives sur des volumes en lecture/écriture vers un stockage objet économique, libérant ainsi le Tier de performance pour les données actives.</block>
-  <block id="cdf6af3897d6557455ac809e1ffde97c" category="list-text">Dans l'environnement de travail, créez un nouveau volume ou modifiez le niveau d'un volume existant :</block>
   <block id="39bd65df7752a24493d186f47c1c4bcd" category="cell">Créez un nouveau volume</block>
   <block id="e0e02b01eefffa92ef6dd41ca0bfddaa" category="cell">Cliquez sur *Ajouter nouveau volume*.</block>
   <block id="182706d5a3d41050c9687bc12322e932" category="cell">Modifier un volume existant</block>
-  <block id="5db974b5f3510ad309e326c50b08ea61" category="cell">Sélectionnez le volume et cliquez sur *Modifier le type de disque et la stratégie de hiérarchisation*.</block>
   <block id="8e18d8c821310741023d16bcccb5aa95" category="list-text">Sélectionnez une règle de hiérarchisation.</block>
   <block id="9566ee0b8867f3b42d0387e3792c2561" category="paragraph">Pour obtenir une description de ces politiques, reportez-vous à la section <block ref="69d3706831f999336fb27703356dae22" category="inline-link-macro-rx"></block>.</block>
-  <block id="ed3fffd1e98b6ea6e3c87bde5d798945" category="inline-image-macro">Capture d'écran affichant l'icône permettant de hiérarchiser le stockage des objets.</block>
-  <block id="6173457770f08d006795bfe77a9ee1ff" category="paragraph"><block ref="6173457770f08d006795bfe77a9ee1ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f662e89926d99c2d0078857e1e0594" category="paragraph">BlueXP crée un nouvel agrégat pour le volume si un agrégat sur lequel le Tiering des données est déjà activé.</block>
   <block id="bbef357c8db2518419bffde441df9910" category="section-title">Tiering des données à partir des volumes de protection des données</block>
   <block id="f7ace3ec87f10c0e3afcafcb4cf7b425" category="paragraph">Cloud Volumes ONTAP permet de hiérarchiser les données d'un volume de protection des données vers un niveau de capacité. Si vous activez le volume de destination, les données passent progressivement au niveau de performance tel qu'il est lu.</block>
@@ -2418,11 +2356,9 @@
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">Le ratio est important pour les scénarios de reprise d'activité, car lors de la lecture des données à partir du magasin d'objets, Cloud Volumes ONTAP déplace les données vers des disques SSD/HDD pour de meilleures performances. Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données. Prenez en compte ces changements pour répondre aux besoins de votre entreprise.</block>
   <block id="2b891711a30d74a376864ff361ead016" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône *Paramètres*, puis sélectionnez *Paramètres du connecteur*.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP.</block>
-  <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">Sous *capacité*, cliquez sur *seuils de capacité d'agrégat - ratio d'espace libre pour le Tiering des données*.</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">Modifiez le ratio d'espace libre en fonction de vos besoins et cliquez sur *Enregistrer*.</block>
   <block id="24c979ae168264040ca2c88e59f2902a" category="section-title">Modification de la période de refroidissement de la règle de hiérarchisation automatique</block>
-  <block id="314e806b4e1a10feefefa7b140062fab" category="paragraph">Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est prise en charge à l'aide de l'API uniquement.</block>
   <block id="77ac5bdafcd5300a46db8d23117433c1" category="paragraph">La période de refroidissement correspond au nombre de jours pendant lesquels les données utilisateur d'un volume doivent rester inactives avant qu'elles ne soient considérées comme « inactives » et déplacées vers le stockage objet.</block>
   <block id="15d3560479839db873ba3a7d6309b50c" category="paragraph">La période de refroidissement par défaut de la règle de hiérarchisation automatique est de 31 jours. Vous pouvez modifier la période de refroidissement comme suit :</block>
   <block id="07c1e6ebf913a40fd18f3f57f20d6d68" category="list-text">9.8 ou ultérieure: 2 jours à 183 jours</block>
@@ -2435,10 +2371,6 @@
   <block id="8a5743c35b84714fc6fe40c2cfab576b" category="list-text">Redécouvrez-le dans un autre espace de travail</block>
   <block id="017482efc6f3c5791be39e26da43f9c3" category="list-text">Redécouvrez-le à partir d'un autre système BlueXP</block>
   <block id="c0745336f44247c724e2de0e640b4daa" category="list-text">Redécouvrez-le si vous avez rencontré des problèmes lors de la découverte initiale</block>
-  <block id="b55eb28344378e34c1c9c9f4b1a693ae" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *Outils*.</block>
-  <block id="125c3f7f1a34115bd5d7a3312f502185" category="list-text">Dans la page Outils, cliquez sur *lancer*.</block>
-  <block id="c9c1fe399a016eb71ef77b98d9d3908c" category="list-text">Sélectionnez l'environnement de travail Cloud Volumes ONTAP que vous souhaitez supprimer.</block>
-  <block id="844581166f3d6c9fef0c12b72220bb3d" category="list-text">Sur la page Revue et approbation, cliquez sur *Go*.</block>
   <block id="fefa70b1c4e33b9a37d96658b2133389" category="paragraph">BlueXP supprime l'environnement de travail. Les utilisateurs peuvent redécouvrir cet environnement de travail à tout moment à partir de la page Canvas.</block>
   <block id="0e90b6bbef3911eccc0d09b6e4087aff" category="summary">Mettez à niveau Cloud Volumes ONTAP depuis BlueXP pour accéder aux dernières nouvelles fonctionnalités et améliorations. Préparez les systèmes Cloud Volumes ONTAP avant de mettre à niveau le logiciel.</block>
   <block id="2182ff9388484137699eb937c0df0141" category="doc">Mettez à niveau le logiciel Cloud Volumes ONTAP</block>
@@ -2447,7 +2379,6 @@
   <block id="61560599f4747b091e1abc457824f639" category="section-title">Mise à niveau depuis BlueXP uniquement</block>
   <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">Comment mettre à niveau</block>
-  <block id="bed8a3185a4b2ddb1020be5c9da45358" category="paragraph">BlueXP offre deux façons de mettre à niveau Cloud Volumes ONTAP :</block>
   <block id="4e8ece9c9800d81b5414293e7c524859" category="list-text">En suivant les notifications de mise à niveau qui apparaissent dans l'environnement de travail</block>
   <block id="9291a80d43d5b5496ef3da30291aed0c" category="list-text">En plaçant l'image de mise à niveau dans un emplacement HTTPS, puis en fournissant BlueXP avec l'URL</block>
   <block id="eccc8325175b53fdef9a1846222d4161" category="section-title">Chemins de mise à niveau pris en charge</block>
@@ -2503,10 +2434,7 @@
   <block id="502ba236a1cae83a29d3574451caea8b" category="list-text">Sélectionnez la relation et cliquez sur *opérations &gt; Quiesce*.</block>
   <block id="58f03f4aa156a72c372951a943f6b4d3" category="section-title">Vérifiez que les agrégats sont en ligne</block>
   <block id="8934d548c1104122f0b1a27daeb92ffa" category="paragraph">Les agrégats pour Cloud Volumes ONTAP doivent être en ligne avant de mettre à jour le logiciel. Les agrégats doivent être en ligne dans la plupart des configurations, mais si ce n'est pas le cas, vous devez les mettre en ligne.</block>
-  <block id="13c88f068a7d567935bc3e57b6ac65e9" category="list-text">Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *Avancé &gt; allocation avancée*.</block>
-  <block id="bad0781b91218856a150922e68d07abe" category="list-text">Sélectionnez un agrégat, cliquez sur *Info*, puis vérifiez que l'état est en ligne.</block>
   <block id="8a58bd2f86c7acb1b532ae3d8d8ffea5" category="inline-image-macro">Capture d'écran : affiche le champ État lorsque vous affichez les informations d'un agrégat.</block>
-  <block id="9a995e2acb4483a9819c1ce69c1838e4" category="paragraph"><block ref="9a995e2acb4483a9819c1ce69c1838e4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c9582501e322eb574b7a8f727a9838c" category="list-text">Si l'agrégat est hors ligne, utilisez System Manager pour mettre l'agrégat en ligne :</block>
   <block id="9f4fc08ee817c29b22638b7544f0a27a" category="list-text">Cliquez sur *stockage &gt; agrégats et disques &gt; agrégats*.</block>
   <block id="c8a8f302f21fc7d1accf5a0eb3025496" category="list-text">Sélectionnez l'agrégat, puis cliquez sur *plus d'actions &gt; État &gt; en ligne*.</block>
@@ -2516,16 +2444,9 @@
   <block id="32d300cab53087f3ab3e15c01593d633" category="section-title">Mise à niveau depuis les notifications BlueXP</block>
   <block id="5f75615300b4a5dfb537f7f68f86cad0" category="paragraph">BlueXP affiche une notification dans les environnements de travail Cloud Volumes ONTAP lorsqu'une nouvelle version de Cloud Volumes ONTAP est disponible :</block>
   <block id="31d167cba5cdd422c65657c793b962dc" category="inline-image-macro">Capture d'écran : affiche la notification Nouvelle version disponible qui s'affiche dans la page Canvas après avoir sélectionné un environnement de travail.</block>
-  <block id="93e69b27c99652c72cf49fd51a487813" category="paragraph"><block ref="93e69b27c99652c72cf49fd51a487813" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1e565fae8cb8375a73df9abf2e99667a" category="paragraph">Vous pouvez lancer le processus de mise à niveau à partir de cette notification, qui automatise le processus en obtenant l'image logicielle à partir d'un compartiment S3, en installant l'image, puis en redémarrant le système.</block>
   <block id="31aacf5ad0f1f7f769f403486ca64107" category="paragraph">Les opérations BlueXP, telles que la création de volume ou d'agrégat, ne doivent pas être en cours sur le système Cloud Volumes ONTAP.</block>
   <block id="d51a07decbe601cbb24e543eb1a87686" category="list-text">Sélectionnez un environnement de travail.</block>
-  <block id="253804b3f61f30ff9abeb479b2c10701" category="paragraph">Une notification s'affiche dans le volet droit si une nouvelle version est disponible :</block>
-  <block id="3ff5bd4f7d1ec1b55544ace7c0a77dbc" category="list-text">Si une nouvelle version est disponible, cliquez sur *Upgrade*.</block>
-  <block id="04f69386f5a6c4daab4b7332e06cb8ea" category="list-text">Dans la page informations sur la version, cliquez sur le lien pour lire les notes de version de la version spécifiée, puis cochez la case *J'ai lu...*.</block>
-  <block id="ba897f4b2dc97e3650f4751a409565f3" category="list-text">Dans la page du contrat de licence utilisateur final (CLUF), lisez le CLUF, puis sélectionnez *J'ai lu et approuvé le CLUF*.</block>
-  <block id="f475ec9a2d7eef21df387d22c2657629" category="list-text">Dans la page Revue et approbation, lisez les notes importantes, sélectionnez *Je comprends...*, puis cliquez sur *Go*.</block>
-  <block id="9be46f2eecdd8ba27897fc5c3d9e21f3" category="paragraph">BlueXP démarre la mise à niveau du logiciel. Vous pouvez effectuer des actions sur l'environnement de travail une fois la mise à jour logicielle terminée.</block>
   <block id="9a5aec1f134672fe587fc8acffcdf87f" category="paragraph">Si vous avez suspendu les transferts SnapMirror, utilisez System Manager pour reprendre les transferts.</block>
   <block id="8a2e35e048f2fec22cf01ac1e91ac6e6" category="section-title">Mise à niveau à partir d'une image disponible sur une URL</block>
   <block id="daf09a56a5eef482eb39aae95ad9c10d" category="paragraph">Vous pouvez placer l'image du logiciel Cloud Volumes ONTAP sur le connecteur ou sur un serveur HTTP, puis lancer la mise à niveau du logiciel depuis BlueXP. Vous pouvez utiliser cette option si BlueXP ne peut pas accéder au compartiment S3 pour mettre à niveau le logiciel.</block>
@@ -2649,9 +2570,6 @@
   <block id="d842642316b39be001efb718a0cad4bd" category="inline-link-macro">Découvrez comment créer des agrégats</block>
   <block id="3af655005fd29fbbd8824a6ef2f040dc" category="paragraph"><block ref="bdaa17f2dfe16043f8bea33e0b6d1ef8" category="inline-link-macro-rx"></block>.</block>
   <block id="71ce9ba1a5339afe1098587175217b4b" category="list-text">Identifiez les agrégats pour lesquels Elastic volumes est activé</block>
-  <block id="71ba010a4e2b551c25de28ee7b4f8a9a" category="paragraph">Lorsque vous accédez à la page allocation avancée, vous pouvez déterminer si la fonctionnalité Elastic volumes est activée ou non sur un agrégat. Dans l'exemple suivant, aggr2 possède les volumes Elastic activés, contrairement à aggr1.</block>
-  <block id="090c5fa182e6b93f4da9c8d06195700f" category="inline-image-macro">Copie d'écran montrant deux agrégats où l'un dispose d'un champ avec le texte Elastic volumes activés.</block>
-  <block id="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="paragraph"><block ref="ee7cf33bd0cd0b3af6a7cc58c5d43380" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13cb5ebd8c0b7becb3143ed413ade223" category="list-text">Accroître la capacité d'un agrégat</block>
   <block id="51cbce0195f13997e34cad7a23a2b638" category="paragraph">BlueXP ajoute automatiquement de la capacité aux agrégats selon les besoins, mais vous pouvez également augmenter vous-même la capacité.</block>
   <block id="dc71aae1559eb6f97026da188f10aa46" category="inline-link-macro">Découvrez comment augmenter la capacité des agrégats</block>
@@ -2663,8 +2581,6 @@
   <block id="4df04bd818b4ec915902bb9d71d89e11" category="summary">Vous pouvez choisir parmi plusieurs instances ou types lorsque vous lancez Cloud Volumes ONTAP dans AWS. Vous pouvez modifier le type d'instance à tout moment si vous déterminez qu'il est sous-dimensionné ou surdimensionné en fonction de vos besoins.</block>
   <block id="58cfda201064f1899f15aad3e019b071" category="doc">Modifiez le type d'instance EC2 pour Cloud Volumes ONTAP</block>
   <block id="64001104830dfdff90f2cf316af055f4" category="list-text">La modification du type d'instance peut affecter les frais de service AWS.</block>
-  <block id="9097b7003d9efcc9b19c4d5073cdcd3b" category="admonition">Cette option est également disponible en entrant dans l'environnement de travail, en ouvrant le menu d'action et en sélectionnant *Modifier l'instance*.</block>
-  <block id="ba1aa64af19fe534f8edf051425fc04d" category="list-text">Choisissez un type d'instance, cochez la case pour confirmer que vous comprenez les implications de la modification, puis cliquez sur *OK*.</block>
   <block id="75b8c5a187d84d0b9176c9a71ca76c92" category="summary">La page Portefeuille numérique vous permet de gérer les licences pour Cloud Volumes ONTAP à partir d'un seul emplacement. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.</block>
   <block id="46172ce69f0d69dc6b2a28ea9573950b" category="doc">Gérez les abonnements Keystone Flex</block>
   <block id="541be6e1dda8fc9678c974d148e15469" category="paragraph">Gérez vos abonnements Keystone Flex à partir du portefeuille digital en activant les abonnements pour une utilisation avec Cloud Volumes ONTAP. Vous pouvez également demander des modifications à la capacité engagée et annuler la liaison des abonnements.</block>
@@ -2873,12 +2789,8 @@
   <block id="9b05479b15e861dbc906267a8986b841" category="list-text">Créez un nouveau volume en laissant BlueXP gérer l'allocation de disque pour vous ou choisissez un agrégat spécifique pour le volume.</block>
   <block id="8fe21d93cbc571a932071994087670db" category="paragraph">Il est recommandé de choisir un agrégat spécifique uniquement si vous comprenez bien les agrégats de données de votre système Cloud Volumes ONTAP.</block>
   <block id="71c3e1e405ad66b5bff9ec466ea6a3f4" category="open-title">Tout agrégat</block>
-  <block id="26b392aa05064fe814836b0694a9882f" category="paragraph">Dans l'onglet volumes, cliquez sur *Ajouter un volume* &gt; *Nouveau volume*.</block>
   <block id="8f16078272611a0f4398b213c95246b5" category="open-title">Agrégat spécifique</block>
-  <block id="c838714246a1663c8542bc0fc4ad1aab" category="list-text">Cliquez sur le menu correspondant à un agrégat.</block>
-  <block id="e980b61c0751016af2c2c6c2323619ea" category="list-text">Cliquez sur *Créer un volume*.</block>
   <block id="108a74a6cbb575c986177039e07dc411" category="list-text">Suivez les étapes de l'assistant pour créer le volume.</block>
-  <block id="9691bf3a7c5f05b620ab3b20437b6123" category="list-text">*Détails, protection et balises* : saisissez les informations de base sur le volume et sélectionnez une stratégie d'instantané.</block>
   <block id="3b0e375a08fe94a129cba31916c9d2dc" category="paragraph">Certains des champs de cette page sont explicites. La liste suivante décrit les champs pour lesquels vous pourriez avoir besoin de conseils :</block>
   <block id="191fac23c2b2ea4e948178972521292f" category="cell">Taille du volume</block>
   <block id="189f63f277cd73395561651753563065" category="cell">Étiquettes</block>
@@ -2924,25 +2836,15 @@
   <block id="bc41c927b050313fabe4e7bfa9c82224" category="paragraph">Le modèle doit faciliter votre travail car certains paramètres de volume seront déjà définis dans le modèle, tels que le type de disque, la taille, le protocole, la stratégie Snapshot, le fournisseur de cloud, entre autres. Lorsqu'un paramètre est déjà prédéfini, il vous suffit de passer au paramètre de volume suivant.</block>
   <block id="395f4870d887a81edabc6ad40f5a84f0" category="admonition">Vous pouvez créer des volumes NFS ou CIFS uniquement lors de l'utilisation de modèles.</block>
   <block id="3464a6536597fb17300e864f33f6b63d" category="list-text">Sur la page Canevas, cliquez sur le nom du système Cloud Volumes ONTAP dans lequel vous souhaitez provisionner un volume.</block>
-  <block id="9de6e01935c802f21691e7efbefa9680" category="inline-image-macro">Une icône de trois points côte à côte.</block>
-  <block id="4cd7acfcbb86932901020185b1df1ec0" category="list-text">Cliquez sur <block ref="231de61ef434abbab90a4356a7d32c83" category="inline-image-macro-rx" type="image"></block> &gt; *Ajouter un volume à partir du modèle*.</block>
   <block id="74099e7b70c30e3a55db543cda9bfc1e" category="inline-image-macro">Capture d'écran indiquant comment ajouter un nouveau volume à partir d'un modèle.</block>
-  <block id="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="paragraph"><block ref="2adf96b75ce7acafe3eaaa1d8d3b1b2a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b33742921c3a09b3c0916cff2d87632" category="list-text">Dans la page _Select Template_, sélectionnez le modèle à utiliser pour créer le volume et cliquez sur *Next*.</block>
   <block id="41fdbb8293e553892079d0e7ad8a9ad9" category="inline-image-macro">Capture d'écran des modèles d'application disponibles.</block>
   <block id="f2a6f7bb83d518b8832e241b44419c17" category="paragraph"><block ref="f2a6f7bb83d518b8832e241b44419c17" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8675916eaff2fb10955e8a3b1b14108f" category="paragraph">La page _Define Parameters_ s'affiche.</block>
   <block id="19f5b7f92268b2f8e63e4083819666c9" category="inline-image-macro">Capture d'écran montrant un modèle vierge que vous devez remplir pour créer un volume.</block>
   <block id="f9fb39421cb5c84a9897e58b19c84510" category="paragraph"><block ref="f9fb39421cb5c84a9897e58b19c84510" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c5ebc721265bff6f5891df31595f9db9" category="admonition">Vous pouvez cliquer sur la case à cocher *Afficher les paramètres en lecture seule* pour afficher tous les champs qui ont été verrouillés par le modèle si vous souhaitez voir les valeurs de ces paramètres. Par défaut, ces champs prédéfinis sont masqués et seuls les champs à compléter sont affichés.</block>
-  <block id="f916a27cf580c1cb72d910a796827151" category="list-text">Dans la zone _context_, l'environnement de travail est rempli avec le nom de l'environnement de travail avec lequel vous avez commencé. Vous devez sélectionner la *VM de stockage* où le volume sera créé.</block>
-  <block id="0149fd22e5722b132cbafe2d3e86e10b" category="list-text">Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Pour déployer un volume Cloud Volumes ONTAP, consultez la section relative aux paramètres à respecter.</block>
-  <block id="7c40758a149a5a65989345e1641d496d" category="list-text">S'il n'y a pas d'autres actions à définir (par exemple, configuration de Cloud Backup), cliquez sur *Exécuter le modèle*.</block>
   <block id="db382d688e4cb3e09b6e7a743ce00edb" category="paragraph">S'il existe d'autres actions, cliquez sur l'action dans le volet gauche pour afficher les paramètres à compléter.</block>
   <block id="a31e4f2aa7f454321015e4c5b02bae97" category="inline-image-macro">Capture d'écran indiquant comment sélectionner des actions supplémentaires à réaliser.</block>
   <block id="0fdf861b8e72c9acd6caea0924545667" category="paragraph"><block ref="0fdf861b8e72c9acd6caea0924545667" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805efa3cb5ac86159dc412d73e3ea0ee" category="paragraph">Par exemple, si l'action Activer la sauvegarde dans le cloud requiert que vous sélectionniez une stratégie de sauvegarde, vous pouvez le faire maintenant.</block>
-  <block id="4e4c407dde2bf455a9c4fcfb4d35f0cb" category="list-text">Cliquez sur *Exécuter le modèle*.</block>
   <block id="f97c61e27cbf22f850ec5f0412358f0b" category="paragraph">Cloud Volumes ONTAP provisionne le volume et affiche une page afin que vous puissiez voir sa progression.</block>
   <block id="40136e65ff57723941fc2af2bf21d54a" category="inline-image-macro">Capture d'écran indiquant la progression de la création de votre nouveau volume à partir du modèle.</block>
   <block id="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="paragraph"><block ref="d1ad4ec8d83a0a6b7ef8ac4c5acc2d2f" category="inline-image-macro-rx" type="image"></block></block>
@@ -2950,7 +2852,6 @@
   <block id="841221afb195f2b9f58a8b1dc6a57132" category="section-title">Créer un volume sur le second nœud dans une configuration HA</block>
   <block id="06d1a78e29ba350cf4a2e2603b5838a3" category="paragraph">Par défaut, BlueXP crée des volumes sur le premier nœud d'une configuration HA. Si vous avez besoin d'une configuration active-active, dans laquelle les deux nœuds servent les données aux clients, vous devez créer des agrégats et des volumes sur le second nœud.</block>
   <block id="60a2834a97bdfe49641e5ed1d42e4116" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP sur lequel vous souhaitez gérer les agrégats.</block>
-  <block id="ad8627b73ca7a7c5d40024a795bad541" category="list-text">Cliquez sur *Ajouter agrégat*, puis créez l'agrégat.</block>
   <block id="c8f3514620e31924fc247388a82834fa" category="list-text">Pour le nœud principal, choisissez le second nœud dans la paire HA.</block>
   <block id="04dbb7b0d943c7bb658e9a2654dd9862" category="list-text">Une fois que BlueXP a créé l'agrégat, sélectionnez-le, puis cliquez sur *Créer un volume*.</block>
   <block id="3e508ca38cc9707d385da2b9195e69c1" category="list-text">Entrez les détails du nouveau volume, puis cliquez sur *Créer*.</block>
@@ -3011,12 +2912,7 @@
   <block id="2c6d5150f38721bc5e8328cd9dc5b306" category="summary">Vous pouvez choisir parmi plusieurs types de machines lorsque vous lancez Cloud Volumes ONTAP dans Google Cloud. Vous pouvez modifier l'instance ou le type de machine à tout moment si vous déterminez qu'elle est sous-dimensionnée ou surdimensionnée en fonction de vos besoins.</block>
   <block id="63dc3ec64c0baf254902131c292519e8" category="doc">Modifier le type de machine Google Cloud pour Cloud Volumes ONTAP</block>
   <block id="dd8e1c2b938f2d476fec7ab194600ab4" category="list-text">La modification du type de machine peut affecter les frais de service Google Cloud.</block>
-  <block id="5ed78720df0a22827c77c0f200597bec" category="admonition">Cette option est également disponible en entrant dans l'environnement de travail, en ouvrant le menu d'action et en sélectionnant *changer machine*.</block>
-  <block id="124da972831d8567648a5d865ca52285" category="list-text">Sélectionnez un type de machine, cochez la case pour confirmer que vous comprenez les implications du changement, puis cliquez sur *OK*.</block>
   <block id="0c0c93dcca58dc6ba5a46ef2bf56980b" category="doc">Renforcer la protection contre les attaques par ransomware</block>
-  <block id="3e2be8b5f27f1aa296209f82d9266254" category="list-text">Dans l'environnement de travail, cliquez sur l'icône *ransomware*.</block>
-  <block id="b4d57e3816d3dc9005d5675c781d08bf" category="inline-image-macro">Capture d'écran affichant l'icône ransomware disponible en haut à droite de la page lors de l'affichage d'un environnement de travail.</block>
-  <block id="7e750d159c031938f4193b0bd8d03636" category="paragraph"><block ref="7e750d159c031938f4193b0bd8d03636" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fd2a34cb3ac050adc4e4ef8cbaf3727" category="list-text">Implémentez la solution NetApp en cas d'attaque par ransomware :</block>
   <block id="630bed2396b7232862aa978bb71ea4a6" category="list-text">Cliquez sur *Activer la stratégie de snapshot*, si des volumes n'ont pas de règle de snapshot activée.</block>
   <block id="939f63aeda74246a5fa38c869770bd7c" category="paragraph">La technologie Snapshot de NetApp offre la meilleure solution du secteur pour résoudre les problèmes liés aux attaques par ransomware. Le mieux pour réussir la récupération est d'effectuer une restauration à partir de sauvegardes non infectées. Les copies Snapshot sont en lecture seule, ce qui empêche la corruption par ransomware. Ils peuvent également assurer la granularité pour créer des images d'une copie de fichiers unique ou d'une solution complète de reprise après incident.</block>
@@ -3060,11 +2956,6 @@
   <block id="f82d1b6b82e3a4e80812051b0f0d956c" category="list-text">Si vous n'avez pas encore ajouté votre compte sur le site de support NetApp à BlueXP, accédez à *Paramètres du compte* et ajoutez-le maintenant.</block>
   <block id="17a487ae56e17c3c175366c070697ba7" category="inline-link">Découvrez comment ajouter des comptes au site de support NetApp</block>
   <block id="8e396ea0aa1df92258d1f707577a2a06" category="paragraph"><block ref="15f23b395848b815304786c7c573b912" category="inline-link-rx"></block>.</block>
-  <block id="b9ea5f54d5e7487561836a098ec50c0c" category="list-text">Dans le menu de navigation de gauche, sélectionnez *stockage &gt; Canvas*</block>
-  <block id="598a7189c0a8955db5d1e7c0795da2a6" category="list-text">Sur la page Canevas, double-cliquez sur le nom du système que vous souhaitez enregistrer.</block>
-  <block id="ddfc5fbf9d4116f75fab6bc240ee3629" category="list-text">Cliquez sur l'icône du menu, puis sur *support Registration* :</block>
-  <block id="c91422d2af44df29262eeef0050de7fb" category="inline-image-macro">Capture d'écran : affiche l'option d'enregistrement Support sélectionnée dans l'icône de menu d'un système Cloud Volumes ONTAP.</block>
-  <block id="f82fe496603bf204ff4b4b1c2f2016dc" category="paragraph"><block ref="f82fe496603bf204ff4b4b1c2f2016dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5e09b978da9c03ac56e9ae009a493fb2" category="list-text">Sélectionnez un compte sur le site de support NetApp et cliquez sur *Register*.</block>
   <block id="3c133f4bc8bc3ebf4d10cf6cfdf4d97f" category="paragraph">BlueXP enregistre le système avec NetApp.</block>
   <block id="7e3a4c0ec1aee45acf094839bb9c449f" category="summary">Gérez vos licences basées sur des nœuds dans le porte-monnaie numérique pour vous assurer que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.</block>
@@ -3267,37 +3158,24 @@
   <block id="9038e7cfcfe9bb9df9afd31371070be8" category="doc">Gérer les volumes existants</block>
   <block id="e2439a8512b353f75391ba9c346bc84d" category="section-title">Gérer les volumes</block>
   <block id="78b58016122bb23db763832d3df72599" category="paragraph">Vous pouvez gérer les volumes en fonction de l'évolution des besoins de stockage. Vous pouvez afficher, modifier, cloner, restaurer et supprimer des volumes.</block>
-  <block id="75ab567efb1db447b59b0343c1a2ceb3" category="list-text">Gérez vos volumes :</block>
   <block id="289d57ca7886b8016f08f4d17ad68a55" category="cell">Afficher des informations sur un volume</block>
-  <block id="af7d09d8e320bd6a243e7e191eb7025d" category="cell">Sélectionnez un volume, puis cliquez sur *Info*.</block>
   <block id="fa66a5498542b41c797489000210e5cb" category="cell">Modifier un volume (volumes en lecture-écriture uniquement)</block>
-  <block id="3a952a555dd0c4bc3d26bcf0d7fde45e" category="list-text">Sélectionnez un volume, puis cliquez sur *Modifier*.</block>
-  <block id="fbec2ab2a5e28a01696c847ad1605c40" category="list-text">Modifiez la stratégie Snapshot du volume, la version du protocole NFS, la liste de contrôle d'accès NFS (export policy) ou les autorisations de partage, puis cliquez sur *Update*.</block>
   <block id="4d72f256b7a978be1277616666d0ce81" category="admonition">Si vous avez besoin de règles Snapshot personnalisées, vous pouvez les créer à l'aide de System Manager.</block>
   <block id="d50044469c0bf9ab38eff9cf7243fb25" category="cell">Clonez un volume</block>
-  <block id="94c63f19be46a66b73356db561854603" category="list-text">Sélectionnez un volume, puis cliquez sur *Clone*.</block>
   <block id="50086f0f77547b0171b7a431d6a39fa0" category="list-text">Modifiez le nom du clone selon vos besoins, puis cliquez sur *Clone*.</block>
   <block id="4cc808195cbf18422cb9719f962fd525" category="paragraph">Ce processus crée un volume FlexClone. Un volume FlexClone est une copie inscriptible, ponctuelle et efficace dans l'espace, car il utilise une petite quantité d'espace pour les métadonnées, puis ne consomme que de l'espace supplémentaire lorsque les données sont modifiées ou ajoutées.</block>
   <block id="0fa0071d4364b9114c15a5d2758f2577" category="inline-link">Guide de gestion du stockage logique ONTAP 9</block>
   <block id="4717b449094c1b48fb9da6fe4ec03c44" category="paragraph">Pour en savoir plus sur les volumes FlexClone, consultez le<block ref="3ae98799f9586e965a749204c2b3e8f9" category="inline-link-rx"></block>.</block>
   <block id="dc86e5cdedf617184e568612bb0f4b0e" category="cell">Restaurer les données d'une copie Snapshot vers un nouveau volume</block>
-  <block id="0e7e803934c43587ce046f079fb159ae" category="list-text">Sélectionnez un volume, puis cliquez sur *Restaurer à partir de la copie Snapshot*.</block>
   <block id="d68e4493e40c36ff887078a04d29a0c7" category="list-text">Sélectionnez une copie Snapshot, indiquez le nom du nouveau volume, puis cliquez sur *Restore*.</block>
   <block id="7037507985b932c715517fcf78ae11e3" category="cell">Créez une copie Snapshot à la demande</block>
-  <block id="60e2cc66323270a764c3d126ddbdb292" category="list-text">Sélectionnez un volume, puis cliquez sur *Créer une copie snapshot*.</block>
   <block id="4e421f73920c619b2a88e35f954c3429" category="list-text">Modifiez le nom, si nécessaire, puis cliquez sur *Créer*.</block>
   <block id="9fe2538a2d5bb7e8ab50729192e9bae8" category="cell">Obtenez la commande NFS mount</block>
-  <block id="93b75fd4fe38319058f69c169a51599d" category="list-text">Sélectionnez un volume, puis cliquez sur *Mount Command*.</block>
   <block id="a9320a3f6836ed5a97720b08ba97994a" category="list-text">Cliquez sur *Copier*.</block>
-  <block id="b4791f5803f8c06f9ebe79fab64eb94c" category="cell">Afficher l'IQN cible d'un volume iSCSI</block>
-  <block id="ff898fbdb96b746cb44abc417a9434e1" category="inline-link-macro">Utilisez l'IQN pour vous connecter à la LUN à partir de vos hôtes</block>
-  <block id="ef0b4c9a075f5ca377b2629e230fb1bf" category="list-text"><block ref="294b9b4974581388516e364caa79c936" category="inline-link-macro-rx"></block>.</block>
   <block id="e85050d3f9317d1eb563323469b5f697" category="cell">Modifiez le type de disque sous-jacent</block>
-  <block id="0a669a096950b6abbcba32005af805c3" category="list-text">Sélectionnez un volume, puis cliquez sur *Modifier le type de disque et la stratégie de hiérarchisation*.</block>
   <block id="73ffd7bf843e4fa686f3e89c1e8480d8" category="list-text">Sélectionnez le type de disque, puis cliquez sur *changer*.</block>
   <block id="56b02e9e8848ef5443c7bdbcb313ec2c" category="admonition">BlueXP déplace le volume vers un agrégat existant qui utilise le type de disque sélectionné ou crée un nouvel agrégat pour le volume.</block>
   <block id="9f4aa892debf403a854859b0ca9c9ff6" category="cell">Modifiez la stratégie de hiérarchisation</block>
-  <block id="df36c1d5436d58b70c3730737e5458b1" category="list-text">Cliquez sur *Modifier la stratégie*.</block>
   <block id="460e97605d9d46a32c5b9fbf3be9143b" category="list-text">Sélectionnez une autre stratégie et cliquez sur *Modifier*.</block>
   <block id="f162010d329e7b7904453b50a89c50d5" category="admonition">BlueXP déplace le volume vers un agrégat existant qui utilise le type de disque sélectionné avec hiérarchisation, ou crée un nouvel agrégat pour le volume.</block>
   <block id="8e9a64bda9d21f945b6489df2e7946e1" category="cell">Supprimer un volume</block>
@@ -3307,7 +3185,6 @@
   <block id="6ad5e0a20f49ad6a370454bb3afc9a9e" category="inline-link">ONTAP System Manager</block>
   <block id="6b851ed63a549d28a80d2c974afcec80" category="section-title">Modifier le serveur CIFS</block>
   <block id="fd549a6bcd2d53b8accb49a7225fcfa0" category="paragraph">Si vous modifiez vos serveurs DNS ou votre domaine Active Directory, vous devez modifier le serveur CIFS dans Cloud Volumes ONTAP pour pouvoir continuer à servir le stockage aux clients.</block>
-  <block id="26eb89266cb77257e69e50bb61b2da4e" category="list-text">Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *Avancé &gt; Configuration CIFS*.</block>
   <block id="47839a059e385e1317a08bc188364e78" category="list-text">Spécifiez les paramètres du serveur CIFS :</block>
   <block id="d72f7fe99597ed8f22050ed88031cb7e" category="paragraph">Cloud Volumes ONTAP met à jour le serveur CIFS avec les modifications.</block>
   <block id="3fa1556429ab2d5c82bf33695eafd79b" category="section-title">Déplacer un volume</block>
@@ -3325,11 +3202,7 @@
   <block id="5a31c45fe6b6d37f4ceeb5b86c4346da" category="list-text">Consultez les informations avancées du message Action requise pour identifier l'agrégat ayant atteint sa limite de capacité.</block>
   <block id="34b14acb1a2ab9863c3c5dad4fd43a16" category="paragraph">Par exemple, l'information avancée devrait dire quelque chose de similaire à ce qui suit : aggr1 global a atteint sa limite de capacité.</block>
   <block id="d741de259d45adde48602bde8af2fa1e" category="list-text">Identifiez un ou plusieurs volumes à sortir de l'agrégat :</block>
-  <block id="2b0c89ca25e54b64f2450bc1ed62e7dd" category="list-text">Sélectionnez l'agrégat, puis cliquez sur *Info*.</block>
-  <block id="a03fe4765cf778bd609159dbd02518f9" category="list-text">Développez la liste des volumes.</block>
   <block id="44996e2a556779f9e9d262677dc18a32" category="inline-image-macro">Capture d'écran : affiche la liste des volumes d'un agrégat dans la boîte de dialogue Informations sur l'agrégat.</block>
-  <block id="ebb164430899be4a43aac5ed08017381" category="paragraph"><block ref="ebb164430899be4a43aac5ed08017381" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9c288511bce9b8d3e44ff0677a0b22b" category="list-text">Passez en revue la taille de chaque volume et choisissez un ou plusieurs volumes pour sortir de l'agrégat.</block>
   <block id="1ac63b40afca7dec0b6be58237e990c5" category="paragraph">Vous devez choisir des volumes suffisamment volumineux pour libérer de l'espace dans l'agrégat afin d'éviter d'autres problèmes de capacité à l'avenir.</block>
   <block id="a64d88ebebbadd18db492923a6de8f40" category="list-text">Si le système n'a pas atteint la limite de disque, vous devez déplacer les volumes vers un agrégat existant ou vers un nouvel agrégat sur le même système.</block>
   <block id="b665b3a7d068d10da4bb1ff6a9eebc76" category="inline-link-macro">Déplacement des volumes vers un autre agrégat pour éviter les problèmes de capacité</block>
@@ -3355,11 +3228,8 @@
   <block id="9b75835d1597be290e865df9d9c03011" category="section-title">Déplacez les volumes vers un autre agrégat pour éviter les problèmes de capacité</block>
   <block id="46532ea93f05a647dcfb9dbb7724acf3" category="paragraph">Vous pouvez déplacer un ou plusieurs volumes vers un autre agrégat pour éviter les problèmes de capacité.</block>
   <block id="b9caee734c459ea1d440e0f169eb1723" category="list-text">Vérifiez si un agrégat existant a la capacité disponible pour les volumes que vous devez déplacer :</block>
-  <block id="a2d464b6fa7b04c397c84554c3e39809" category="list-text">Sélectionnez chaque agrégat, cliquez sur *Info*, puis affichez la capacité disponible (capacité d'agrégat moins la capacité d'agrégat utilisée).</block>
   <block id="82cf261b628d223daf02ae88b056b424" category="inline-image-macro">Capture d'écran : affiche la capacité totale d'agrégat et la capacité d'agrégat utilisée disponibles dans la boîte de dialogue Informations d'agrégat.</block>
-  <block id="fc8b427ea07afce711bc9c553569a274" category="paragraph"><block ref="fc8b427ea07afce711bc9c553569a274" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8bd018e0e8deb966bda4a09610591ac" category="list-text">Si nécessaire, ajoutez des disques à un agrégat existant :</block>
-  <block id="5e3902fe134d9ed2c4f422ab0316579f" category="list-text">Sélectionner l'agrégat, puis cliquer sur *Add disks*.</block>
   <block id="3425dbe0168b60aed62d54b2290baad1" category="list-text">Sélectionnez le nombre de disques à ajouter, puis cliquez sur *Ajouter*.</block>
   <block id="e272fdd11a7aa99158a093a41c65fdd9" category="list-text">Si aucun agrégat n'a de capacité disponible, créez un nouvel agrégat.</block>
   <block id="0e725e4f9ac82ce0408528d6e38105f1" category="inline-link-macro">Création d'agrégats</block>
@@ -4039,10 +3909,8 @@
   <block id="69e28a1ba6bc5233cc60dd248c362636" category="paragraph">Avant de modifier la vitesse d'écriture, vous devez <block ref="eb987e41d6a04bba64a9af2bb235fccb" category="inline-link-macro-rx"></block>.</block>
   <block id="d9072539538ac46d98e04043ff27fe64" category="list-text">Assurez-vous que les opérations telles que la création de volume ou d'agrégat ne sont pas en cours.</block>
   <block id="48e74d5adada7060074e975baf48822e" category="list-text">Notez que cette modification redémarre le système Cloud Volumes ONTAP. Il s'agit d'un processus perturbateur qui requiert des temps d'indisponibilité pour l'ensemble du système.</block>
-  <block id="95f9e248ac6da6c5225434c857ed26af" category="list-text">Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *Avancé &gt; vitesse d'écriture*.</block>
   <block id="96f68979b7e20270904a489e3ffb5590" category="list-text">Sélectionnez *Normal* ou *Haut*.</block>
   <block id="1dc9045fa2256d31acd9a9e96f728946" category="paragraph">Si vous choisissez Haut, vous devrez lire l'énoncé « Je comprends... » et confirmer en cochant la case.</block>
-  <block id="b020ae609de3aa70a34f31ba07ba8917" category="list-text">Cliquez sur *Enregistrer*, vérifiez le message de confirmation, puis cliquez sur *Continuer*.</block>
   <block id="96b6d7d9126b9ae9264c568037532584" category="summary">Comprendre comment Cloud Volumes ONTAP utilise le stockage cloud pour vous aider à comprendre vos coûts de stockage.</block>
   <block id="4a2a51b2a8cfd502b2d8ec4b5b09a0b3" category="doc">Disques et agrégats</block>
   <block id="39e2b767214c275b689fa1f6078494bc" category="paragraph">Cloud Volumes ONTAP utilise le stockage du fournisseur cloud comme disques et les regroupe dans un ou plusieurs agrégats. Les agrégats fournissent du stockage à un ou plusieurs volumes.</block>
@@ -4317,7 +4185,6 @@
   <block id="c69ac98b36cf0e598f3cae6b175a8eec" category="list-text">Les comptes de stockage sont utilisés pour les déploiements sur disques gérés pour la gestion des journaux de diagnostic et le Tiering sur le stockage d'objets blob.</block>
   <block id="dba89da91170934734e847dcfe4ad5d0" category="section-title">Cloud Volumes ONTAP 9.12.1</block>
   <block id="2dd09f45720a8f94b29c4d048b61ff4e" category="section-title">15 novembre 2022</block>
-  <block id="cca494b1b1d22bc8b5c8a8ecd5367bf8" category="section-title">Licence ONTAP S3 dans GCP</block>
   <block id="44f72ae2127b89a470e082ae9f772acf" category="paragraph">Une licence ONTAP S3 est désormais incluse sur les systèmes Cloud Volumes ONTAP nouveaux et existants qui exécutent la version 9.12.1 ou une version ultérieure dans Google Cloud Platform.</block>
   <block id="50ffa0cb1ebb11ac1969ed98e7c94bf5" category="admonition">NIC3 s'applique uniquement aux déploiements haute disponibilité qui utilisent le stockage d'objets blob de page.</block>
   <block id="baa56a5cbeb0b5811b307c481a824728" category="paragraph">Par défaut, BlueXP active une liaison privée Azure pour les connexions entre les comptes de stockage d'objets blob de pages Cloud Volumes ONTAP et Azure.</block>
@@ -4652,7 +4519,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icône avec trois points qui apparaît dans la dernière colonne du tableau</block>
   <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">Pour gérer un dossier de demande de support existant, cliquez sur <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir cas*: Afficher tous les détails sur un cas spécifique.</block>
-  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et cliquez sur *Fermer le cas*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau.</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
@@ -4801,4 +4667,200 @@
   <block id="7f09653ec569404a6d78270f050d7c18" category="list-text">*Paire HA* BlueXP alloue 12-13 adresses IP à une paire HA :</block>
   <block id="99388f0fdeac933c80f2d52c95fe6eac" category="list-text">1 LIF de gestion de cluster (e0a)</block>
   <block id="07ddec46aac81bd14d6fc7f0d22ee78d" category="list-text">1 ou 2 LIF NAS (e0a)</block>
+  <block id="e8c25ea78d67a6ef891f303353422dbd" category="paragraph">+<block ref="45bd8c026c5ef22179001445b3bd636a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2c75d71bcadfabfa7cf8757cbfdd3d85" category="inline-image-macro">Capture d'écran de l'option Paramètres du connecteur sous l'icône Paramètres de la barre d'état.</block>
+  <block id="473c33023a339a6b370b4ddd3b34813e" category="paragraph"><block ref="473c33023a339a6b370b4ddd3b34813e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2e11b0ec6ed47b1e8f7051aaab70da38" category="list-text">Seuil de capacité de l'agrégat : ratio d'espace libre</block>
+  <block id="c707daf76e9202bb2278e4872c7db485" category="list-text">Seuils de capacité de l'agrégat : ratio d'espace libre pour le Tiering des données</block>
+  <block id="93538ad94a332061adf2239e8ac21a4d" category="list-text">Sur la page Canevas, sélectionnez l'environnement de travail.</block>
+  <block id="ca2685261e68781c7e281c106027c9d6" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *tables d'acheminement*.</block>
+  <block id="4b6844f3c505a6f4a3db39ea33fd3cf0" category="inline-image-macro">Capture d'écran affichant le paramètre tables de routage sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail.</block>
+  <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.</block>
+  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">Dans l'onglet Aggregates, accédez au titre souhaité, puis cliquez sur le bouton *... (icône ellipse)*.</block>
+  <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">Capture d'écran des options du menu Aggregates.</block>
+  <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">Sous le ... (Ellipse), cliquez sur *Afficher les détails de l'agrégat*.</block>
+  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">Sous le ... (Ellipse), cliquez sur *Ajouter volume*.</block>
+  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">Sous le ... (Ellipse), cliquez sur *Ajouter des disques*.</block>
+  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">Sous le ... (Icône ellipse), cliquez sur *augmenter la capacité*.</block>
+  <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">Entrez la capacité supplémentaire que vous souhaitez ajouter, puis cliquez sur *augmenter*.</block>
+  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">Sélectionnez une mosaïque d'agrégats ne contenant aucun volume. Cliquez sur le bouton *... (Icône ellipse) &gt; Supprimer*.</block>
+  <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">Sur la page Canevas, double-cliquez sur le nom du système que vous configurez pour la vitesse d'écriture.</block>
+  <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *vitesse d'écriture*.</block>
+  <block id="bc3c9695426ff48d40dce0286c7e05f4" category="inline-image-macro">Capture d'écran affichant le paramètre vitesse d'écriture sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail.</block>
+  <block id="98dbfe06324c35bb25c949f4b21d581a" category="paragraph"><block ref="98dbfe06324c35bb25c949f4b21d581a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">Cliquez sur *Enregistrer*, vérifiez le message de confirmation, puis cliquez sur *approuver*.</block>
+  <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP.</block>
+  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône ellipse, puis sélectionnez *définir mot de passe*.</block>
+  <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">Capture d'écran affichant le menu disponible dans l'environnement de travail qui contient l'action définir le mot de passe.</block>
+  <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="906b0fc78378feea1883fe721c72e648" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *Type de machine*.</block>
+  <block id="6466b41798117de76beee910171ffc8f" category="inline-image-macro">Capture d'écran affichant le paramètre Type de machine sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail.</block>
+  <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">Si vous utilisez une licence PAYGO basée sur des nœuds, vous pouvez choisir une autre licence et un autre type de machine en cliquant sur l'icône en forme de crayon en regard de *Type de licence*.</block>
+  <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">Choisissez un type de machine, cochez la case pour confirmer que vous comprenez les implications du changement, puis cliquez sur *Modifier*.</block>
+  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">Lorsque *Capacity Based Licenses* est sélectionné, affichez le résumé des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.</block>
+  <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_La capacité totale préallouée_ correspond à la capacité totale sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.</block>
+  <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">Voici un exemple de résumé des packages Cloud Volumes ONTAP dans le portefeuille digital :</block>
+  <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">Capture d'écran affichant un récapitulatif des packages Cloud Volumes ONTAP incluant la capacité totale consommée, la capacité totale préallouée (contrats BYOL et Marketplace) et la capacité totale PAYGO, ou provisionnée dans le portefeuille digital.</block>
+  <block id="68519fd40c76d6220d905ceda4e0956b" category="paragraph"><block ref="68519fd40c76d6220d905ceda4e0956b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="af61e314a8c2484dfcfef0afc2e5b8b9" category="list-text">_Consumed Capacity_ indique la capacité des volumes de ce package. Pour plus de détails sur un pack spécifique, placez le curseur de la souris sur l'info-bulle.</block>
+  <block id="cfc852810f89c13febd473e12117d828" category="list-text">_La capacité recommandée_ correspond à la capacité sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.</block>
+  <block id="b35741916171a2b4d1210c1ccf6e3920" category="list-text">_BYOL_ indique la capacité sous licence achetée auprès de NetApp pour ce type de package.</block>
+  <block id="59bdc4172870791ff34a990174b34a66" category="list-text">_Contrats Marketplace_ indique la capacité sous licence que vous avez achetée avec un contrat Marketplace pour ce type de package.</block>
+  <block id="e733f8e4574a8639831d6df796e6a0eb" category="list-text">_PAYGO_ vous indique la capacité consommée par modèle de consommation de licence.</block>
+  <block id="b0980f4f35d961e95a685e0af8bda7e4" category="inline-image-macro">Capture d'écran affichant la capacité consommée, la capacité préallouée et PAYGO ou provisionnée pour les packages essentiels et professionnels.</block>
+  <block id="71b669d4d19df676d975ef4911ded7af" category="paragraph"><block ref="71b669d4d19df676d975ef4911ded7af" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a98606dee1787dfd2471d2ef8adeb680" category="list-text">Sur la page Canevas, double-cliquez sur le nom du système que vous souhaitez enregistrer.</block>
+  <block id="24901c53838efd4b9981ed8ffd510413" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *enregistrement du support*.</block>
+  <block id="055fb099b650eb50b3be2ee6aaa5edaa" category="inline-image-macro">Capture d'écran : affiche l'option d'enregistrement du support sous le panneau fonctions d'un système Cloud Volumes ONTAP.</block>
+  <block id="683ad9be450b1e4aaffcdcab8b33b0c4" category="paragraph"><block ref="683ad9be450b1e4aaffcdcab8b33b0c4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4da26c1efc91c7136517504959cc0687" category="paragraph"><block ref="4da26c1efc91c7136517504959cc0687" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fc2c97abb2fb8e3c019de4850d91d264" category="list-text">Sur la page Canevas, sélectionnez un environnement de travail Cloud Volumes ONTAP.</block>
+  <block id="6ba9fc3c166e3d53b824216485ae89ee" category="list-text">Cliquez sur l'icône de menu, puis cliquez sur *Afficher le rapport de coût*.</block>
+  <block id="e657448bf5ab3960e8e1fc068d83deee" category="inline-image-macro">Capture d'écran : affiche l'option de menu Afficher le rapport de coût.</block>
+  <block id="4881300462ed76e4f5ebaf3070d5e7d9" category="paragraph"><block ref="4881300462ed76e4f5ebaf3070d5e7d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6200e275553fcb2d81141061804129aa" category="list-text">Sur la page Canvas, double-cliquez sur le nom du système que vous configurez pour la protection contre les ransomware.</block>
+  <block id="68e277e7409c8587f5447ff6e1d07bac" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *protection contre les ransomware*.</block>
+  <block id="e44870bfe38bf3731499fca3154b9528" category="inline-image-macro">Capture d'écran affichant le paramètre protection contre les ransomware sous le panneau fonctionnalités disponible en haut à droite de la page Présentation lors de l'affichage d'un environnement de travail.</block>
+  <block id="2a39771bd60186d9d0eea3e49bb0d221" category="paragraph"><block ref="2a39771bd60186d9d0eea3e49bb0d221" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0b1fe5e5e43d6e24cc20f730b8d1742" category="paragraph">Vous pouvez facilement identifier l'adresse IP correcte via l'option _Mount Command_ du panneau Manage volumes de BlueXP.</block>
+  <block id="b717cb7368a7773e8663a0b7444325ad" category="paragraph"><block ref="b717cb7368a7773e8663a0b7444325ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36466e75ef3251345a1fc3b957275568" category="list-text">Dans l'onglet Aggregates, cliquez sur *Ajouter agrégat*, puis spécifiez les détails de l'agrégat.</block>
+  <block id="3c27c0be3b51a96fbeaf21988a5d0da7" category="paragraph">Lorsque vous accédez à la page allocation avancée, vous pouvez déterminer si la fonctionnalité Elastic volumes est activée ou non sur un agrégat. Dans l'exemple suivant, Elastic volumes est activé sur aggr1.</block>
+  <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">Capture d'écran affichant deux agrégats où un champ a le texte volumes élastiques activés.</block>
+  <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">Sur la page Canevas, double-cliquez sur l'environnement de travail à supprimer.</block>
+  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône ellipse et sélectionnez *Supprimer de l'espace de travail*.</block>
+  <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">Capture d'écran affichant l'option « Supprimer de l'espace de travail » dans le coin supérieur droit de la console BlueXP.</block>
+  <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">Dans la fenêtre Revue à partir de l'espace de travail, cliquez sur *Supprimer*.</block>
+  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 avril 2023</block>
+  <block id="2dfd965acb2426b281b13a70df99c06b" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.</block>
+  <block id="7ce52c94db42646098e71a61d9836b73" category="section-title">La région de Turin est désormais prise en charge dans Google Cloud</block>
+  <block id="84030861d628cd7238a62da972a260f4" category="paragraph">La région de Turin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et le connecteur pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
+  <block id="671e2a59b2bfa852def9660bf14badde" category="section-title">Amélioration du portefeuille digital</block>
+  <block id="d3ab2a9ddd985032aa120324e6da3710" category="paragraph">Le portefeuille digital affiche désormais la capacité sous licence achetée avec des offres privées Marketplace.</block>
+  <block id="6ee7d527518e93562cc9e691d20fb1d5" category="section-title">Prise en charge des commentaires lors de la création du volume</block>
+  <block id="ac14eb6382fa5b619966ba72622ecd3f" category="paragraph">Cette version vous permet de faire des commentaires lors de la création d'un volume Cloud Volumes ONTAP FlexGroup ou d'un volume FlexVol lors de l'utilisation de l'API.</block>
+  <block id="231ea98554191e640c216736796158d5" category="section-title">Nouvelle conception de l'interface utilisateur BlueXP pour les pages de présentation, de volumes et d'agrégats Cloud Volumes ONTAP</block>
+  <block id="1cc55fcb982bea0e8f241a1271bda985" category="paragraph">BlueXP inclut désormais une interface utilisateur repensée pour les pages Présentation de Cloud Volumes ONTAP, volumes et agrégats. La conception en mosaïque présente des informations plus complètes dans chaque mosaïque pour une meilleure expérience utilisateur.</block>
+  <block id="9000895c1e7c46e6e8fc9eb750dfb403" category="inline-image-macro">Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes.</block>
+  <block id="23fbfdbb598644432ab089fa6e533405" category="paragraph"><block ref="23fbfdbb598644432ab089fa6e533405" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fff4762fc0aeb74dd0a918683c157ae" category="section-title">FlexGroup volumes peut être consulté via Cloud Volumes ONTAP</block>
+  <block id="8d40e6e8379382ee39fba2c4a1cb5629" category="paragraph">Les volumes FlexGroup créés directement via l'interface de ligne de commande ou System Manager sont désormais visibles dans la mosaïque volumes repensés dans BlueXP. Comme les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées sur les volumes FlexGroup créés via une mosaïque volumes dédiés.</block>
+  <block id="905d8520d584560b3995118b2a01f6c2" category="admonition">Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.</block>
+  <block id="91f0dcc3b5f3e7c2ced12a923ca3b92e" category="inline-image-macro">Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes.</block>
+  <block id="ce46ac36501bd1de8616d715ef7ee1c2" category="paragraph"><block ref="ce46ac36501bd1de8616d715ef7ee1c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f223d40f9c90f08d9cd6ef8cba648c3" category="inline-link-macro">En savoir plus sur l'affichage des volumes FlexGroup créés.</block>
+  <block id="acef74218ad5e199582b5c76062e5559" category="paragraph"><block ref="acef74218ad5e199582b5c76062e5559" category="inline-link-macro-rx"></block></block>
+  <block id="d92a428713f7303c87adb54fb04cf41b" category="section-title">Licence ONTAP S3 dans Google Cloud</block>
+  <block id="df8131ce273465a002c95cb0c5cf8a39" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *VM type*.</block>
+  <block id="838630480d269a60c2c6bb929717f964" category="inline-image-macro">Capture d'écran affichant le paramètre de type de machine virtuelle sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail.</block>
+  <block id="4782218bc1564550fa76897e159be9bf" category="paragraph"><block ref="4782218bc1564550fa76897e159be9bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e257ba6100e7f02e04c1d8b474024a3c" category="list-text">Si vous utilisez une licence PAYGO basée sur des nœuds, vous pouvez choisir une autre licence et un autre type de machine virtuelle en cliquant sur l'icône en forme de crayon en regard de *Type de licence*.</block>
+  <block id="0b52c0f8f311ea5465845d81cc4401f1" category="list-text">Sélectionnez un type de VM, cochez la case pour confirmer que vous comprenez les implications du changement, puis cliquez sur *Modifier*.</block>
+  <block id="c529c6170bed402afd9deff05a6b3d0d" category="paragraph">Vous pouvez trouver l'adresse IP correcte dans BlueXP via l'option *Mount Command* sous le panneau gérer les volumes de BlueXP.</block>
+  <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.</block>
+  <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.</block>
+  <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.</block>
+  <block id="a3e3a06edf2b13412206a49650d28c73" category="list-text">Sur la page Canevas, sélectionnez le nom de l'instance Cloud Volumes ONTAP.</block>
+  <block id="c8ae9612aebf2aa8477908ecc9dc4ad2" category="list-text">Cliquez sur l'onglet Aggregates.</block>
+  <block id="93bad64eb0d84f1d45ce1ff481e26c51" category="list-text">Accédez à la mosaïque souhaitée et vérifiez si le Tiering est activé ou désactivé sur l'agrégat.</block>
+  <block id="cc26bc8be32a1d905f6d22627e65a0b9" category="paragraph"><block ref="cc26bc8be32a1d905f6d22627e65a0b9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b433e385414da518f50fc6f6b243cce6" category="list-text">Dans l'onglet volumes, sous l'environnement de travail, créez un nouveau volume ou modifiez le niveau d'un volume existant :</block>
+  <block id="4fea09deb083b39f9519227c4dc045e5" category="cell">Sélectionnez la mosaïque de volume souhaitée, cliquez sur *gérer le volume* pour accéder au panneau de droite gérer les volumes, puis cliquez sur *actions avancées* et *Modifier la stratégie de hiérarchisation* dans le panneau de droite.</block>
+  <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">Capture d'écran affichant les options disponibles pour modifier la règle de Tiering d'un volume.</block>
+  <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est prise en charge uniquement à l'aide de l'API et de l'interface de ligne de commande.</block>
+  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône de l'ellipse, puis sélectionnez *Supprimer*.</block>
+  <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">Dans la fenêtre Supprimer l'environnement de travail, saisissez le nom de l'environnement de travail, puis cliquez sur *Supprimer*.</block>
+  <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *volumes*.</block>
+  <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">Dans l'onglet volumes, accédez au titre du volume souhaité, puis cliquez sur *gérer le volume* pour accéder au panneau de droite gérer les volumes.</block>
+  <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">Cliquez sur *IQN cible*.</block>
+  <block id="a56a5ae6f53f5f4ccfd018cd42004ea1" category="list-text">Sur la page Canevas, double-cliquez sur l'environnement de travail souhaité.</block>
+  <block id="1db430d5f476ccb7c5abbdfc3d4402d2" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *temps d'arrêt programmé*.</block>
+  <block id="16fe8db807301272754ce201908a4d01" category="paragraph"><block ref="16fe8db807301272754ce201908a4d01" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0e1d67ee86981cf82fb4f5195e170da1" category="paragraph">L'image suivante montre un planning qui demande à BlueXP d'arrêter le système tous les samedis à 20:00 (8 h 00) pendant 12 heures. BlueXP redémarre le système tous les lundis à 12:00</block>
+  <block id="3d33a0e91197625fe5c19262b8588a5e" category="inline-image-macro">Capture d'écran : affiche l'écran planifier les temps d'arrêt.</block>
+  <block id="b7964eed3054006e2dc32e71addc9330" category="paragraph"><block ref="b7964eed3054006e2dc32e71addc9330" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="833d40bbf64439ee457b9a9720b3cc4c" category="paragraph">BlueXP enregistre le planning. L'élément correspondant à la ligne de temps d'arrêt planifié sous le panneau fonctions affiche « activé ».</block>
+  <block id="ee55aa8843d0fe4882d1ebc2115835c8" category="paragraph"><block ref="ee55aa8843d0fe4882d1ebc2115835c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e6441a36027812e99b99675afebb1ad3" category="inline-image-macro">Capture d'écran du bouton Ajouter un volume sous l'onglet vue d'ensemble.</block>
+  <block id="d3c83108d2d70bd2eb22fbd1bb485f2f" category="paragraph">Dans l'onglet vue d'ensemble, accédez à la mosaïque volumes et cliquez sur *Ajouter un volume*.<block ref="d66b0ca71189f0ddd53cd4b3e65bbf57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d67d87305db3f29260c81473dd44e3f1" category="inline-image-macro">Capture d'écran du bouton Ajouter un volume sous l'onglet agrégats.</block>
+  <block id="13f1658d880a29010b36402880b7742d" category="paragraph">Dans l'onglet Aggregates, accédez à la mosaïque d'agrégat souhaitée. Cliquez sur l'icône de menu, puis cliquez sur *Ajouter un volume*.<block ref="90511a2a61b219fe659f6c6204d0e9f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5359c0cc8b61614ec08d953783fef7e9" category="list-text">*Volumes, Détails, protection et balises* : saisissez les détails de base du volume et sélectionnez une stratégie Snapshot.</block>
+  <block id="5a33fdd3ad048388d676b3cfe62a76b4" category="cell">Nom du volume</block>
+  <block id="da791c0c870c83e87ff0b50e41446b5f" category="cell">Nom identifiable que vous pouvez saisir pour le nouveau volume.</block>
+  <block id="8bc5e99f50f67c6de120548d75821d83" category="cell">VM de stockage (SVM)</block>
+  <block id="360a6a454911fe3432462fbd11f3588c" category="cell">Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. Vous pouvez spécifier la VM de stockage du nouveau volume.</block>
+  <block id="83153603fdc3097c323cd6a9c354a74c" category="list-text">Accédez à l'onglet volumes et cliquez sur *Ajouter un volume* &gt; *Nouveau volume à partir du modèle*.</block>
+  <block id="d5b72c940ba2727afcbba5dd037893f5" category="paragraph"><block ref="d5b72c940ba2727afcbba5dd037893f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac2c13cd2f76af0753933c8630446e5f" category="paragraph">La page _Editor_ s'affiche.</block>
+  <block id="18a9b2315ac5b98381d542571ba28299" category="list-text">Au-dessus du panneau _action_, entrez un nom pour le modèle.</block>
+  <block id="74f7c9266baa87f8e4aceef158811143" category="list-text">Sous _Context_, l'environnement de travail contient le nom de l'environnement de travail avec lequel vous avez démarré. Sélectionnez la *VM de stockage* où le volume sera créé.</block>
+  <block id="02550edcd072d55bf0b10ab3bdd4bc07" category="list-text">Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <block ref="c4711ce582f4a278fe266c32d7e1a70b" category="inline-xref-macro-rx"></block> Pour obtenir des informations détaillées sur tous les paramètres nécessaires au déploiement d'un volume Cloud Volumes ONTAP.</block>
+  <block id="746037c3b6a0eec6bb1e41959d51e07e" category="list-text">Cliquez sur *appliquer* pour enregistrer les paramètres configurés dans l'action sélectionnée.</block>
+  <block id="ceaf2fbd590803b94d4b9355d3432936" category="list-text">Si vous n'avez pas besoin de définir d'autres actions (par exemple, configuration de Cloud Backup), cliquez sur *Enregistrer le modèle*.</block>
+  <block id="be2645489c0ae0149fc30f6dc8d80bbb" category="paragraph">Par exemple, si l'action Activer Cloud Backup sur volume nécessite que vous sélectionniez une règle de sauvegarde, vous pouvez le faire maintenant.</block>
+  <block id="f0131c80c45b00e70cb9a1d8c9e3448a" category="list-text">Une fois la configuration des actions du modèle terminée, cliquez sur *Enregistrer le modèle*.</block>
+  <block id="bc321d6d3a5b549e1c0961440ef815f4" category="list-text">Dans l'onglet Aggregates, cliquez sur *Ajouter un agrégat*.</block>
+  <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">A partir de l'écran _Add aggregate_, créez l'agrégat.</block>
+  <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">Capture d'écran montrant la progression de l'ajout d'un agrégat.</block>
+  <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f0652f3e88178c774443201328e4d2a" category="paragraph">BlueXP propose trois méthodes de mise à niveau d'Cloud Volumes ONTAP :</block>
+  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">Sous le titre de l'agrégat, cliquez sur le bouton ellipse, puis sélectionnez *Afficher les détails de l'agrégat*.</block>
+  <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">Une notification apparaît dans l'onglet vue d'ensemble si une nouvelle version est disponible :</block>
+  <block id="9646f8f8111c91fa6c731c727c894c5f" category="inline-image-macro">Une capture d'écran qui montre « mettre à niveau maintenant ! » Sous l'onglet vue d'ensemble.</block>
+  <block id="96189d65a45e7fa44a02098d1c2994b3" category="paragraph"><block ref="96189d65a45e7fa44a02098d1c2994b3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c8a40603d5d9f8240beba1de505700ab" category="list-text">Si une nouvelle version est disponible, cliquez sur *mettre à niveau maintenant!*</block>
+  <block id="e4e172ed018cf6c10be6941fd7282e6f" category="list-text">Sur la page Cloud Volumes ONTAP de mise à niveau, lisez le CLUF, puis sélectionnez *J'ai lu et approuvé le CLUF*.</block>
+  <block id="f6e8db7e26c18ff77395c70107114b81" category="list-text">Cliquez sur *Upgrade*.</block>
+  <block id="aac15e5127b7a8b7e9fa2c9cd925e9b5" category="paragraph">BlueXP démarre la mise à niveau du logiciel. Vous pouvez effectuer des actions sur l'environnement de travail lorsque la mise à jour du logiciel est terminée.</block>
+  <block id="2d06184bb48576ef2fb92fc134897025" category="admonition">Actuellement, vous ne pouvez effectuer la mise à niveau vers la dernière version ONTAP disponible que via l'interface utilisateur BlueXP. La mise à niveau vers une version ONTAP spécifique via l'interface utilisateur BlueXP sera disponible dans une prochaine version.</block>
+  <block id="fa7b604cc90feece6d71e8400213710f" category="list-text">Modifiez APP.conf en ajoutant le paramètre et la valeur suivants :</block>
+  <block id="4356eb78a767f5eff5a7176feb088ce4" category="inline-image-macro">Capture d'écran du bouton gérer le volume sous l'onglet volumes.</block>
+  <block id="3113f5bbc88ead26c7d366fdec38f27b" category="paragraph"><block ref="3113f5bbc88ead26c7d366fdec38f27b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8f56224592abe10774e5575500874b11" category="cell">Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Afficher les détails du volume*.</block>
+  <block id="d4c98b540182b809e992d8b4a580423e" category="list-text">Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Mount Command*.</block>
+  <block id="98c56e9d0291f443f1ed942549039cc3" category="list-text">Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Cloner le volume*.</block>
+  <block id="c36ae8709c4f5551dcd33c1fa09b1144" category="cell">Modifier les balises de volume (volumes en lecture-écriture uniquement)</block>
+  <block id="0c76e6ded4e12f0dc0b2564def628aae" category="list-text">Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Modifier les balises de volume* pour modifier la balise de volume attribuée au volume sélectionné.</block>
+  <block id="186ac335ead3bdabcd70b18a0e6f40ed" category="list-text">Entrez la clé de balise de volume et la valeur sous les champs fournis.</block>
+  <block id="cf92c264f59ad57e63ae663106047d25" category="list-text">Pour inclure des balises supplémentaires, cliquez sur *Ajouter une nouvelle balise*.</block>
+  <block id="29f680a1731a2250d73a33aede73a2eb" category="list-text">Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Modifier les paramètres de volume*</block>
+  <block id="ac11ccea860c1468f49807407e073557" category="list-text">Modifiez la règle Snapshot du volume, la version du protocole NFS, la liste de contrôle d'accès NFS (export policy) ou les autorisations de partage, puis cliquez sur *Apply*.</block>
+  <block id="6271604d64ad8f6bcdad901be64df292" category="list-text">Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Supprimer le volume*.</block>
+  <block id="a1546ebb48752d4bd4d09e75842decd8" category="list-text">Dans la fenêtre Delete Volume, entrez le nom du volume à supprimer.</block>
+  <block id="0776ce27c5318514c6a838e721b809ce" category="list-text">Sous actions de protection dans le panneau gérer les volumes, cliquez sur *Créer une copie Snapshot*.</block>
+  <block id="23d745e528991c6cbab9c76044a9058b" category="list-text">Sous actions de protection dans le panneau gérer les volumes, cliquez sur *Restaurer à partir de la copie Snapshot*.</block>
+  <block id="44ef2d8eff57541b631f3815660b4ecf" category="list-text">Sous actions avancées dans le panneau gérer les volumes, cliquez sur *Modifier le type de disque*.</block>
+  <block id="7dfcaaac35e1f30c1f24428c9e96edbf" category="list-text">Sous actions avancées dans le panneau gérer les volumes, cliquez sur *Modifier la stratégie de hiérarchisation*.</block>
+  <block id="29d65535c1a7fceff3430e7f581ccab6" category="list-text">Saisissez le nom du volume dans la boîte de dialogue.</block>
+  <block id="df558d420bf0d201f04fde33701f2df7" category="list-text">Dans l'onglet vue d'ensemble de l'environnement de travail, cliquez sur l'onglet fonction sous le panneau de droite.</block>
+  <block id="7a35a25a92271952afb7c4819b18295f" category="list-text">Dans le champ CIFS Setup, cliquez sur l'icône *crayon* pour afficher la fenêtre CIFS Setup.</block>
+  <block id="1931ad448159a5e88348fe5bcc0f9382" category="cell">Sélectionnez Storage VM (SVM)</block>
+  <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">La sélection du SVM (Cloud Volume ONTAP Storage Virtual machine) affiche les informations CIFS configurées.</block>
+  <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">Cliquez sur *définir*.</block>
+  <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.</block>
+  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône ellipse) &gt; Afficher les détails de l'agrégat*.</block>
+  <block id="920937d0401827a767850d6598f69cf9" category="list-text">Sous l'onglet Overview de l'écran Aggregate Details, vérifiez la taille de chaque volume et choisissez un ou plusieurs volumes à déplacer hors de l'agrégat.</block>
+  <block id="e992ef205a43832966f09572f1eb3492" category="paragraph"><block ref="e992ef205a43832966f09572f1eb3492" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">Sous la vignette Aggregate, afficher la capacité disponible (taille provisionnée moins capacité agrégée utilisée).</block>
+  <block id="448b7e585e92285ee5349bcda1a7acd0" category="paragraph"><block ref="448b7e585e92285ee5349bcda1a7acd0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">Sélectionner l'agrégat, puis cliquer sur le bouton *... (Icône ellipse) &gt; Ajouter des disques*.</block>
+  <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">Découvrir FlexGroup volumes</block>
+  <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">Vous pouvez afficher les volumes FlexGroup créés via l'interface de ligne de commande ou System Manager directement via l'onglet volumes de BlueXP. De même que les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées pour les volumes FleGroup créés via une mosaïque volumes dédiés. Sous la vignette volumes, vous pouvez identifier chaque groupe de volumes FlexGroup à l'aide du texte qui s'affiche lorsque vous positionnez le curseur de votre souris sur cette icône. En outre, vous pouvez identifier et trier les volumes FlexGroup sous la vue de liste des volumes via la colonne style de volume.</block>
+  <block id="b732fd66a88d23ecd20ddd54d252bde0" category="paragraph"><block ref="b732fd66a88d23ecd20ddd54d252bde0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *Type d'instance*.</block>
+  <block id="246617af3cc2b3a4751f4377e63c90d9" category="inline-image-macro">Capture d'écran affichant le paramètre Type d'instance sous le panneau fonctions disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail.</block>
+  <block id="22d199cf6285224598c87a4bf598fec7" category="paragraph"><block ref="22d199cf6285224598c87a4bf598fec7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e977a40ba12e4cbe82ec5ad1eeca10d3" category="list-text">Si vous utilisez une licence PAYGO basée sur des nœuds, vous pouvez choisir une autre licence et un autre type d'instance en cliquant sur l'icône en forme de crayon en regard de *Type de licence*.</block>
+  <block id="dcee8dbc1dce5317d8cfa6588f8f050e" category="list-text">Choisissez un type d'instance, cochez la case pour confirmer que vous comprenez les implications de la modification, puis cliquez sur *Modifier*.</block>
 </blocks>

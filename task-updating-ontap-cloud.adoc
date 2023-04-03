@@ -32,7 +32,7 @@ Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis Blue
 
 === Comment mettre à niveau
 
-BlueXP offre deux façons de mettre à niveau Cloud Volumes ONTAP :
+BlueXP propose trois méthodes de mise à niveau d'Cloud Volumes ONTAP :
 
 * En suivant les notifications de mise à niveau qui apparaissent dans l'environnement de travail
 * En plaçant l'image de mise à niveau dans un emplacement HTTPS, puis en fournissant BlueXP avec l'URL
@@ -47,6 +47,9 @@ La version de Cloud Volumes ONTAP sur laquelle vous pouvez effectuer la mise à 
 [cols="2*"]
 |===
 | Version actuelle | Versions pouvant être directement mises à niveau vers 
+
+
+| 9.12.1 | 9.13.0 
 
 
 | 9.12.1 | 9.13.0 
@@ -206,10 +209,10 @@ Les agrégats pour Cloud Volumes ONTAP doivent être en ligne avant de mettre à
 Ces étapes décrivent l'utilisation de System Manager pour la version 9.3 et ultérieure.
 
 .Étapes
-. Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *Avancé > allocation avancée*.
-. Sélectionnez un agrégat, cliquez sur *Info*, puis vérifiez que l'état est en ligne.
+. Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.
+. Sous le titre de l'agrégat, cliquez sur le bouton ellipse, puis sélectionnez *Afficher les détails de l'agrégat*.
 +
-image:screenshot_aggr_state.gif["Capture d'écran : affiche le champ État lorsque vous affichez les informations d'un agrégat."]
+image:screenshots_aggregate_details_state.png["Capture d'écran : affiche le champ État lorsque vous affichez les informations d'un agrégat."]
 
 . Si l'agrégat est hors ligne, utilisez System Manager pour mettre l'agrégat en ligne :
 +
@@ -233,7 +236,7 @@ Une autre façon d'effectuer des mises à niveau logicielles à l'aide d'une ima
 
 BlueXP affiche une notification dans les environnements de travail Cloud Volumes ONTAP lorsqu'une nouvelle version de Cloud Volumes ONTAP est disponible :
 
-image:screenshot_cot_upgrade.gif["Capture d'écran : affiche la notification Nouvelle version disponible qui s'affiche dans la page Canvas après avoir sélectionné un environnement de travail."]
+image:screenshot_overview_upgrade.png["Capture d'écran : affiche la notification Nouvelle version disponible qui s'affiche dans la page Canvas après avoir sélectionné un environnement de travail."]
 
 Vous pouvez lancer le processus de mise à niveau à partir de cette notification, qui automatise le processus en obtenant l'image logicielle à partir d'un compartiment S3, en installant l'image, puis en redémarrant le système.
 
@@ -244,19 +247,21 @@ Les opérations BlueXP, telles que la création de volume ou d'agrégat, ne doiv
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sélectionnez un environnement de travail.
 +
-Une notification s'affiche dans le volet droit si une nouvelle version est disponible :
+Une notification apparaît dans l'onglet vue d'ensemble si une nouvelle version est disponible :
 
 +
-image:screenshot_cot_upgrade.gif["Capture d'écran : affiche la notification Nouvelle version disponible qui s'affiche dans la page Canvas après avoir sélectionné un environnement de travail."]
+image:screenshot_overview_upgrade.png["Une capture d'écran qui montre « mettre à niveau maintenant ! » Sous l'onglet vue d'ensemble."]
 
-. Si une nouvelle version est disponible, cliquez sur *Upgrade*.
-. Dans la page informations sur la version, cliquez sur le lien pour lire les notes de version de la version spécifiée, puis cochez la case *J'ai lu...*.
-. Dans la page du contrat de licence utilisateur final (CLUF), lisez le CLUF, puis sélectionnez *J'ai lu et approuvé le CLUF*.
-. Dans la page Revue et approbation, lisez les notes importantes, sélectionnez *Je comprends...*, puis cliquez sur *Go*.
+. Si une nouvelle version est disponible, cliquez sur *mettre à niveau maintenant!*
+. Sur la page Cloud Volumes ONTAP de mise à niveau, lisez le CLUF, puis sélectionnez *J'ai lu et approuvé le CLUF*.
+. Cliquez sur *Upgrade*.
 
 
 .Résultat
-BlueXP démarre la mise à niveau du logiciel. Vous pouvez effectuer des actions sur l'environnement de travail une fois la mise à jour logicielle terminée.
+BlueXP démarre la mise à niveau du logiciel. Vous pouvez effectuer des actions sur l'environnement de travail lorsque la mise à jour du logiciel est terminée.
+
+
+NOTE: Actuellement, vous ne pouvez effectuer la mise à niveau vers la dernière version ONTAP disponible que via l'interface utilisateur BlueXP. La mise à niveau vers une version ONTAP spécifique via l'interface utilisateur BlueXP sera disponible dans une prochaine version.
 
 .Une fois que vous avez terminé
 Si vous avez suspendu les transferts SnapMirror, utilisez System Manager pour reprendre les transferts.

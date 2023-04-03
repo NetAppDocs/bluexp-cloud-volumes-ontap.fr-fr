@@ -169,10 +169,10 @@ link:task-create-aggregates.html["Découvrez comment créer des agrégats"].
 
 * Identifiez les agrégats pour lesquels Elastic volumes est activé
 +
-Lorsque vous accédez à la page allocation avancée, vous pouvez déterminer si la fonctionnalité Elastic volumes est activée ou non sur un agrégat. Dans l'exemple suivant, aggr2 possède les volumes Elastic activés, contrairement à aggr1.
+Lorsque vous accédez à la page allocation avancée, vous pouvez déterminer si la fonctionnalité Elastic volumes est activée ou non sur un agrégat. Dans l'exemple suivant, Elastic volumes est activé sur aggr1.
 
 +
-image:screenshot-elastic-volumes-enabled.png["Copie d'écran montrant deux agrégats où l'un dispose d'un champ avec le texte Elastic volumes activés."]
+image:screenshot_elastic_volume_enabled.png["Capture d'écran affichant deux agrégats où un champ a le texte volumes élastiques activés."]
 
 * Accroître la capacité d'un agrégat
 +

@@ -17,8 +17,11 @@ summary: 'Vous pouvez modifier les tables de routage AWS incluant des routes ver
 Vous pouvez modifier les tables de routage AWS qui incluent des routes vers les adresses IP flottantes pour une paire HA déployée dans plusieurs zones de disponibilité AWS (AZS). Vous pouvez le faire si les nouveaux clients NFS ou CIFS ont besoin d'accéder à une paire haute disponibilité dans AWS.
 
 .Étapes
-. Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *informations*.
-. Cliquez sur *tables de routage*.
+. Sur la page Canevas, sélectionnez l'environnement de travail.
+. Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *tables d'acheminement*.
++
+image:screenshot_features_route_tables.png["Capture d'écran affichant le paramètre tables de routage sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail."]
+
 . Modifiez la liste des tables de routage sélectionnées, puis cliquez sur *Enregistrer*.
 
 

@@ -27,13 +27,12 @@ La suppression d'un environnement de travail de BlueXP vous permet d'effectuer l
 
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *Outils*.
+. Sur la page Canevas, double-cliquez sur l'environnement de travail à supprimer.
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône ellipse et sélectionnez *Supprimer de l'espace de travail*.
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+image:screenshot_settings_remove.png["Capture d'écran affichant l'option « Supprimer de l'espace de travail » dans le coin supérieur droit de la console BlueXP."]
 
-. Dans la page Outils, cliquez sur *lancer*.
-. Sélectionnez l'environnement de travail Cloud Volumes ONTAP que vous souhaitez supprimer.
-. Sur la page Revue et approbation, cliquez sur *Go*.
+. Dans la fenêtre Revue à partir de l'espace de travail, cliquez sur *Supprimer*.
 
 
 .Résultat

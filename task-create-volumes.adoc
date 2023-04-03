@@ -60,21 +60,18 @@ Il est recommandé de choisir un agrégat spécifique uniquement si vous compren
 ====
 .Tout agrégat
 --
-Dans l'onglet volumes, cliquez sur *Ajouter un volume* > *Nouveau volume*.
+Dans l'onglet vue d'ensemble, accédez à la mosaïque volumes et cliquez sur *Ajouter un volume*.image:screenshot_add_volume_button.png["Capture d'écran du bouton Ajouter un volume sous l'onglet vue d'ensemble."]
 
 --
 .Agrégat spécifique
 --
-.. Cliquez sur l'icône du menu, puis sur *Avancé > attribution avancée*.
-.. Cliquez sur le menu correspondant à un agrégat.
-.. Cliquez sur *Créer un volume*.
-
+Dans l'onglet Aggregates, accédez à la mosaïque d'agrégat souhaitée. Cliquez sur l'icône de menu, puis cliquez sur *Ajouter un volume*.image:screenshot_add_volume_button_agg.png["Capture d'écran du bouton Ajouter un volume sous l'onglet agrégats."]
 
 --
 ====
 . Suivez les étapes de l'assistant pour créer le volume.
 +
-.. *Détails, protection et balises* : saisissez les informations de base sur le volume et sélectionnez une stratégie d'instantané.
+.. *Volumes, Détails, protection et balises* : saisissez les détails de base du volume et sélectionnez une stratégie Snapshot.
 +
 Certains des champs de cette page sont explicites. La liste suivante décrit les champs pour lesquels vous pourriez avoir besoin de conseils :
 
@@ -84,10 +81,16 @@ Certains des champs de cette page sont explicites. La liste suivante décrit les
 | Champ | Description 
 
 
+| Nom du volume | Nom identifiable que vous pouvez saisir pour le nouveau volume. 
+
+
 | Taille du volume | La taille maximale que vous pouvez saisir dépend en grande partie de l'activation du provisionnement fin, ce qui vous permet de créer un volume plus grand que le stockage physique actuellement disponible. 
 
 
 | Étiquettes | Les balises que vous ajoutez à un volume sont associées à l' https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Service modèles d'applications"^], qui peut vous aider à organiser et à simplifier la gestion de vos ressources. 
+
+
+| VM de stockage (SVM) | Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. Vous pouvez spécifier la VM de stockage du nouveau volume. 
 
 
 | Stratégie Snapshot | Une stratégie de copie Snapshot spécifie la fréquence et le nombre de copies Snapshot créées automatiquement. Une copie Snapshot de NetApp est une image système de fichiers instantanée qui n'a aucun impact sur les performances et nécessite un stockage minimal. Vous pouvez choisir la règle par défaut ou aucune. Vous pouvez en choisir aucune pour les données transitoires : par exemple, tempdb pour Microsoft SQL Server. 
@@ -231,27 +234,25 @@ NOTE: Vous pouvez créer des volumes NFS ou CIFS uniquement lors de l'utilisatio
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sur la page Canevas, cliquez sur le nom du système Cloud Volumes ONTAP dans lequel vous souhaitez provisionner un volume.
-. Cliquez sur image:screenshot_gallery_options.gif["Une icône de trois points côte à côte."] > *Ajouter un volume à partir du modèle*.
+. Accédez à l'onglet volumes et cliquez sur *Ajouter un volume* > *Nouveau volume à partir du modèle*.
 +
-image:screenshot_template_add_vol_cvo.png["Capture d'écran indiquant comment ajouter un nouveau volume à partir d'un modèle."]
+image:screenshot_add_volume_template.png["Capture d'écran indiquant comment ajouter un nouveau volume à partir d'un modèle."]
 
 . Dans la page _Select Template_, sélectionnez le modèle à utiliser pour créer le volume et cliquez sur *Next*.
 +
 image:screenshot_select_template_cvo.png["Capture d'écran des modèles d'application disponibles."]
 
 +
-La page _Define Parameters_ s'affiche.
+La page _Editor_ s'affiche.
 
 +
 image:screenshot_define_cvo_vol_from_template.png["Capture d'écran montrant un modèle vierge que vous devez remplir pour créer un volume."]
 
-+
-
-NOTE: Vous pouvez cliquer sur la case à cocher *Afficher les paramètres en lecture seule* pour afficher tous les champs qui ont été verrouillés par le modèle si vous souhaitez voir les valeurs de ces paramètres. Par défaut, ces champs prédéfinis sont masqués et seuls les champs à compléter sont affichés.
-
-. Dans la zone _context_, l'environnement de travail est rempli avec le nom de l'environnement de travail avec lequel vous avez commencé. Vous devez sélectionner la *VM de stockage* où le volume sera créé.
-. Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <<create a volume,Créer un volume>> Pour déployer un volume Cloud Volumes ONTAP, consultez la section relative aux paramètres à respecter.
-. S'il n'y a pas d'autres actions à définir (par exemple, configuration de Cloud Backup), cliquez sur *Exécuter le modèle*.
+. Au-dessus du panneau _action_, entrez un nom pour le modèle.
+. Sous _Context_, l'environnement de travail contient le nom de l'environnement de travail avec lequel vous avez démarré. Sélectionnez la *VM de stockage* où le volume sera créé.
+. Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <<create a volume,Créer un volume>> Pour obtenir des informations détaillées sur tous les paramètres nécessaires au déploiement d'un volume Cloud Volumes ONTAP.
+. Cliquez sur *appliquer* pour enregistrer les paramètres configurés dans l'action sélectionnée.
+. Si vous n'avez pas besoin de définir d'autres actions (par exemple, configuration de Cloud Backup), cliquez sur *Enregistrer le modèle*.
 +
 S'il existe d'autres actions, cliquez sur l'action dans le volet gauche pour afficher les paramètres à compléter.
 
@@ -259,9 +260,9 @@ S'il existe d'autres actions, cliquez sur l'action dans le volet gauche pour aff
 image:screenshot_template_select_next_action.png["Capture d'écran indiquant comment sélectionner des actions supplémentaires à réaliser."]
 
 +
-Par exemple, si l'action Activer la sauvegarde dans le cloud requiert que vous sélectionniez une stratégie de sauvegarde, vous pouvez le faire maintenant.
+Par exemple, si l'action Activer Cloud Backup sur volume nécessite que vous sélectionniez une règle de sauvegarde, vous pouvez le faire maintenant.
 
-. Cliquez sur *Exécuter le modèle*.
+. Une fois la configuration des actions du modèle terminée, cliquez sur *Enregistrer le modèle*.
 
 
 .Résultat
@@ -280,8 +281,11 @@ Par défaut, BlueXP crée des volumes sur le premier nœud d'une configuration H
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP sur lequel vous souhaitez gérer les agrégats.
-. Cliquez sur l'icône du menu, puis sur *Avancé > attribution avancée*.
-. Cliquez sur *Ajouter agrégat*, puis créez l'agrégat.
+. Dans l'onglet Aggregates, cliquez sur *Ajouter un agrégat*.
+. A partir de l'écran _Add aggregate_, créez l'agrégat.
++
+image:screenshot_add_aggregate_cvo.png["Capture d'écran montrant la progression de l'ajout d'un agrégat."]
+
 . Pour le nœud principal, choisissez le second nœud dans la paire HA.
 . Une fois que BlueXP a créé l'agrégat, sélectionnez-le, puis cliquez sur *Créer un volume*.
 . Entrez les détails du nouveau volume, puis cliquez sur *Créer*.

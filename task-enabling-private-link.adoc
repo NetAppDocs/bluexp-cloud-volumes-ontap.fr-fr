@@ -36,6 +36,9 @@ Le connecteur doit être déployé dans la même région Azure que les systèmes
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
++
+image:screenshot_settings_icon.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+
 . Sous *Azure*, cliquez sur *Use Azure Private Link*.
 . Désélectionnez *connexion de liaison privée entre Cloud Volumes ONTAP et les comptes de stockage*.
 . Cliquez sur *Enregistrer*.
@@ -136,11 +139,14 @@ Vous pouvez activer le retour arrière via l'API ou en mettant à jour le fichie
 
 *Activer le retour arrière en mettant à jour app.conf*
 
-.Étape
-. Utilisez le `PUT /occm/config` Appel d'API avec le corps de demande suivant :
+.Étapes
+. SSH vers l'hôte du connecteur et connectez-vous.
+. Accédez au répertoire suivant : /opt/application/netapp/cloudManager/docker_ocm/data
+. Modifiez APP.conf en ajoutant le paramètre et la valeur suivants :
 +
-[source, json]
-----
-{ "rollbackOnAzurePrivateLinkFailure": false }
-----
+ "rollback-on-private-link-failure": true
+. Enregistrez le fichier et déconnectez le connecteur.
++
+Aucun redémarrage n'est requis.
+
 

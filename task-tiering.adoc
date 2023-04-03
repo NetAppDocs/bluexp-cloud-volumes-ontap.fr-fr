@@ -200,13 +200,11 @@ BlueXP crée un magasin d'objets pour les données inactives lorsque le système
 .Étapes
 . <<De formation,Assurez-vous que vous avez satisfait à toutes les exigences>>.
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
-. Sur la page Canevas, double-cliquez sur le nom de l'instance Cloud Volumes ONTAP.
+. Sur la page Canevas, sélectionnez le nom de l'instance Cloud Volumes ONTAP.
 . Cliquez sur l'icône de menu et sélectionnez *Activer la hiérarchisation de capacité*.
 +
-image:screenshot_enable_capacity_tiering.gif["Capture d'écran de l'option Activer la hiérarchisation de capacité disponible dans le menu de l'environnement de travail si un problème a été rencontré lorsque BlueXP a essayé d'activer la hiérarchisation des données."]
 
-+
-Cette option ne s'affiche que si le Tiering des données n'a pas pu être activé lorsque BlueXP a créé le système.
+NOTE: Cette option ne s'affiche que si le Tiering des données n'a pas pu être activé lorsque BlueXP a créé le système.
 
 +
 Dans Google Cloud, un compte de service doit être joint à Cloud Volumes ONTAP avant que cette option ne s'affiche. <<De formation,Assurez-vous que vous avez satisfait à toutes les exigences>>.
@@ -232,10 +230,10 @@ Pour activer le Tiering des données sur un volume existant, vous devez vous ass
 
 .Étapes pour vérifier si la hiérarchisation est activée sur un agrégat
 . Ouvrez l'environnement de travail dans BlueXP.
-. Cliquez sur l'icône du menu, puis sur *Avancé*, puis sur *attribution avancée*.
-. Vérifiez que le Tiering est activé ou désactivé sur l'agrégat.
+. Cliquez sur l'onglet Aggregates.
+. Accédez à la mosaïque souhaitée et vérifiez si le Tiering est activé ou désactivé sur l'agrégat.
 +
-image:screenshot_aggr_tiering.gif["Capture d'écran affichant des informations sur un agrégat dans BlueXP qui inclut l'état de hiérarchisation."]
+image:screenshot_aggregate_tiering_enabled.png["Capture d'écran affichant des informations sur un agrégat dans BlueXP qui inclut l'état de hiérarchisation."]
 
 
 
@@ -255,7 +253,7 @@ Vous pouvez désormais activer le Tiering des données sur les volumes, nouveaux
 Cloud Volumes ONTAP peut déplacer les données inactives sur des volumes en lecture/écriture vers un stockage objet économique, libérant ainsi le Tier de performance pour les données actives.
 
 .Étapes
-. Dans l'environnement de travail, créez un nouveau volume ou modifiez le niveau d'un volume existant :
+. Dans l'onglet volumes, sous l'environnement de travail, créez un nouveau volume ou modifiez le niveau d'un volume existant :
 +
 [cols="30,70"]
 |===
@@ -265,7 +263,7 @@ Cloud Volumes ONTAP peut déplacer les données inactives sur des volumes en lec
 | Créez un nouveau volume | Cliquez sur *Ajouter nouveau volume*. 
 
 
-| Modifier un volume existant | Sélectionnez le volume et cliquez sur *Modifier le type de disque et la stratégie de hiérarchisation*. 
+| Modifier un volume existant | Sélectionnez la mosaïque de volume souhaitée, cliquez sur *gérer le volume* pour accéder au panneau de droite gérer les volumes, puis cliquez sur *actions avancées* et *Modifier la stratégie de hiérarchisation* dans le panneau de droite. 
 |===
 . Sélectionnez une règle de hiérarchisation.
 +
@@ -275,7 +273,7 @@ Pour obtenir une description de ces politiques, reportez-vous à la section link
 *Exemple*
 
 +
-image:screenshot_tiered_storage.gif["Capture d'écran affichant l'icône permettant de hiérarchiser le stockage des objets."]
+image:screenshot_volumes_change_tiering_policy.png["Capture d'écran affichant les options disponibles pour modifier la règle de Tiering d'un volume."]
 
 +
 BlueXP crée un nouvel agrégat pour le volume si un agrégat sur lequel le Tiering des données est déjà activé.
@@ -334,7 +332,7 @@ Le ratio est important pour les scénarios de reprise d'activité, car lors de l
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône *Paramètres*, puis sélectionnez *Paramètres du connecteur*.
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+image:screenshot_settings_icon.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
 . Sous *capacité*, cliquez sur *seuils de capacité d'agrégat - ratio d'espace libre pour le Tiering des données*.
 . Modifiez le ratio d'espace libre en fonction de vos besoins et cliquez sur *Enregistrer*.
@@ -344,7 +342,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 
 == Modification de la période de refroidissement de la règle de hiérarchisation automatique
 
-Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est prise en charge à l'aide de l'API uniquement.
+Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est prise en charge uniquement à l'aide de l'API et de l'interface de ligne de commande.
 
 La période de refroidissement correspond au nombre de jours pendant lesquels les données utilisateur d'un volume doivent rester inactives avant qu'elles ne soient considérées comme « inactives » et déplacées vers le stockage objet.
 

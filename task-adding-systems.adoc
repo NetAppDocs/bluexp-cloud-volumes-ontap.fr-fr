@@ -29,7 +29,7 @@ Vous devez connaître le mot de passe du compte d'administrateur Cloud Volumes O
 
 ifdef::aws[]
 
-+image:screenshot_discover.gif["Copie d'écran montrant un lien permettant de découvrir un système Cloud Volumes ONTAP existant."]
++image:screenshot_discover_redesign.png["Copie d'écran montrant un lien permettant de découvrir un système Cloud Volumes ONTAP existant."]
 
 endif::aws[]
 

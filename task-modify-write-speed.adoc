@@ -26,7 +26,11 @@ Avant de modifier la vitesse d'écriture, vous devez link:concept-write-speed.ht
 
 
 .Étapes
-. Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *Avancé > vitesse d'écriture*.
+. Sur la page Canevas, double-cliquez sur le nom du système que vous configurez pour la vitesse d'écriture.
+. Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *vitesse d'écriture*.
++
+image:screenshot_features_write_speed.png["Capture d'écran affichant le paramètre vitesse d'écriture sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail."]
+
 . Sélectionnez *Normal* ou *Haut*.
 +
 Si vous choisissez Haut, vous devrez lire l'énoncé « Je comprends... » et confirmer en cochant la case.
@@ -35,5 +39,5 @@ Si vous choisissez Haut, vous devrez lire l'énoncé « Je comprends... » et co
 
 NOTE: L'option de vitesse d'écriture *élevée* est prise en charge avec les paires haute disponibilité Cloud Volumes ONTAP dans Google Cloud à partir de la version 9.13.0.
 
-. Cliquez sur *Enregistrer*, vérifiez le message de confirmation, puis cliquez sur *Continuer*.
+. Cliquez sur *Enregistrer*, vérifiez le message de confirmation, puis cliquez sur *approuver*.
 

@@ -17,9 +17,10 @@ summary: 'Les attaques par ransomware peuvent coûter du temps, des ressources e
 Les attaques par ransomware peuvent coûter du temps, des ressources et de la réputation à l'entreprise. BlueXP vous permet d'implémenter la solution NetApp pour ransomware. Elle fournit des outils efficaces pour la visibilité, la détection et la résolution de problèmes.
 
 .Étapes
-. Dans l'environnement de travail, cliquez sur l'icône *ransomware*.
+. Sur la page Canvas, double-cliquez sur le nom du système que vous configurez pour la protection contre les ransomware.
+. Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *protection contre les ransomware*.
 +
-image:screenshot_ransomware_icon.gif["Capture d'écran affichant l'icône ransomware disponible en haut à droite de la page lors de l'affichage d'un environnement de travail."]
+image:screenshot_features_ransomware.png["Capture d'écran affichant le paramètre protection contre les ransomware sous le panneau fonctionnalités disponible en haut à droite de la page Présentation lors de l'affichage d'un environnement de travail."]
 
 . Implémentez la solution NetApp en cas d'attaque par ransomware :
 +

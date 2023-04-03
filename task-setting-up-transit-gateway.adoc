@@ -75,10 +75,10 @@ image:screenshot_transit_gateway3.png["Une capture d'écran de la console AWS mo
 
 . Montez les volumes sur des clients à l'aide de l'adresse IP flottante.
 +
-Vous pouvez trouver l'adresse IP correcte dans BlueXP en sélectionnant un volume et en cliquant sur *Mount Command*.
+Vous pouvez trouver l'adresse IP correcte dans BlueXP via l'option *Mount Command* sous le panneau gérer les volumes de BlueXP.
 
 +
-image:screenshot_mount.gif["Capture d'écran : affiche la commande Mount qui est disponible lorsque vous sélectionnez un volume."]
+image:screenshot_mount_option.png["Capture d'écran : affiche la commande Mount qui est disponible lorsque vous sélectionnez un volume."]
 
 . Si vous montez un volume NFS, configurez la export policy pour qu'elle corresponde au sous-réseau du VPC client.
 +

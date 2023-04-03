@@ -35,9 +35,10 @@ Les instantanés sont automatiquement créés uniquement lors d'un arrêt manuel
 
 
 .Étapes
-. Dans l'environnement de travail, cliquez sur l'icône horloge :
+. Sur la page Canevas, double-cliquez sur l'environnement de travail souhaité.
+. Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *temps d'arrêt programmé*.
 +
-image:screenshot_shutdown_icon.gif["Capture d'écran : affiche l'icône qui charge la page d'arrêt automatique."]
+image:screenshot_schedule_downtime.png["Capture d'écran : affiche l'icône qui charge la page d'arrêt automatique."]
 
 . Spécifiez la planification de l'arrêt :
 +
@@ -47,10 +48,10 @@ image:screenshot_shutdown_icon.gif["Capture d'écran : affiche l'icône qui char
 *Exemple*
 
 +
-L'image suivante montre un programme qui demande à BlueXP d'arrêter le système tous les samedis à 12 h 00 pendant 48 heures. BlueXP redémarre le système tous les lundis à 12:00
+L'image suivante montre un planning qui demande à BlueXP d'arrêter le système tous les samedis à 20:00 (8 h 00) pendant 12 heures. BlueXP redémarre le système tous les lundis à 12:00
 
 +
-image:screenshot_shutdown.gif["Capture d'écran : affiche un programme d'arrêt qui arrête Cloud Volumes ONTAP tous les week-ends à 12:00 AM pendant 48 heures."]
+image:screenshot_schedule_downtime_window.png["Capture d'écran : affiche l'écran planifier les temps d'arrêt."]
 
 
 
@@ -58,7 +59,7 @@ image:screenshot_shutdown.gif["Capture d'écran : affiche un programme d'arrêt 
 
 
 .Résultat
-BlueXP enregistre le planning. L'icône de l'horloge change pour indiquer qu'un programme est défini : image:screenshot_shutdown_icon_scheduled.gif["Capture d'écran : affiche l'icône d'arrêt automatique après qu'un programme a été défini."]
+BlueXP enregistre le planning. L'élément correspondant à la ligne de temps d'arrêt planifié sous le panneau fonctions affiche « activé ».
 
 
 
@@ -75,7 +76,7 @@ Lorsque vous arrêtez une paire haute disponibilité, BlueXP arrête les deux n�
 .Étapes
 . Dans l'environnement de travail, cliquez sur l'icône *Désactiver*.
 +
-image:screenshot_otc_turn_off.gif["Capture d'écran : affiche l'icône permettant de désactiver un système Cloud Volumes ONTAP."]
+image:screenshot_turn_off_redesign.png["Capture d'écran : affiche l'icône permettant de désactiver un système Cloud Volumes ONTAP."]
 
 . Conservez l'option de création de snapshots activés car les snapshots peuvent activer la récupération du système.
 . Cliquez sur *Désactiver*.
