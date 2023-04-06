@@ -20,6 +20,18 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 4 avril 2023
+
+À partir de la version Cloud Volumes ONTAP 9.12.1 GA, les régions chinoises sont désormais prises en charge dans AWS de la manière suivante.
+
+* Les systèmes à un seul nœud sont pris en charge.
+* Les licences achetées directement auprès de NetApp sont prises en charge.
+
+
+Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
+
+
+
 == 3 avril 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.
