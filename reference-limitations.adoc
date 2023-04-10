@@ -20,9 +20,12 @@ Ces limitations sont spécifiques à la gestion de Cloud Volumes ONTAP dans Blue
 
 
 
-== BlueXP ne prend pas en charge les volumes FlexGroup
+== BlueXP ne prend pas en charge la création des volumes FlexGroup
 
-Bien que Cloud Volumes ONTAP prenne en charge les volumes FlexGroup, BlueXP ne le fait pas. Si vous créez un volume FlexGroup à partir de System Manager ou de l'interface de ligne de commande, définissez le mode gestion de la capacité de BlueXP sur Manuel. Le mode automatique peut ne pas fonctionner correctement avec les volumes FlexGroup.
+Cloud Volumes ONTAP prend en charge les volumes FlexGroup, mais BlueXP ne prend pas encore en charge la création de volumes FlexGroup. Si vous créez un volume FlexGroup à partir de System Manager ou de l'interface de ligne de commande, définissez le mode gestion de la capacité de BlueXP sur Manuel. Le mode automatique peut ne pas fonctionner correctement avec les volumes FlexGroup.
+
+
+NOTE: La création de volumes FlexGroup dans BlueXP est prévue pour une prochaine version.
 
 
 
