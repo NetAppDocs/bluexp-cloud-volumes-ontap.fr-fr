@@ -886,7 +886,6 @@
   <block id="93ed65a89f306426be7980ddc22595e8" category="paragraph">_Licences basées sur la capacité_ vous pouvez payer pour Cloud Volumes ONTAP par Tio de capacité.</block>
   <block id="d9bf30eba2f9818a8ee777ae42a8f9f5" category="paragraph">Le _Portefeuille numérique_ vous permet de gérer les licences de Cloud Volumes ONTAP à partir d'un seul emplacement. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.</block>
   <block id="8caaaa4afae93c31b741be21eed669cc" category="inline-link-macro">En savoir plus sur les licences Cloud Volumes ONTAP</block>
-  <block id="6cfeec56d62104397ed8dc01e81de3ba" category="paragraph"><block ref="2ccb396125a12f708cc5bb17905b5f90" category="inline-link-macro-rx"></block>.</block>
   <block id="331320477ecac4cca1b63e686d99f8d3" category="section-title">Comment les licences sont ajoutées au porte-monnaie numérique</block>
   <block id="792eeb7f686f2ad37b664f6478d40bed" category="paragraph">Une fois que vous aurez acheté une licence auprès de votre ingénieur commercial NetApp, NetApp vous enverra un e-mail contenant le numéro de série et les informations supplémentaires relatives aux licences.</block>
   <block id="b6bc1ae4ef8c82767b9ae039ea083da2" category="paragraph">En attendant, BlueXP interroge automatiquement le service des licences NetApp pour obtenir des informations sur les licences associées à votre compte du site de support NetApp. En l'absence d'erreurs, BlueXP ajoute automatiquement les licences au porte-monnaie numérique.</block>
@@ -899,7 +898,6 @@
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_ est la capacité totale provisionnée via des abonnements Cloud Marketplace. La facturation via PAYGO n'est utilisée que si la capacité consommée est supérieure à la capacité sous licence ou si aucune licence BYOL n'est disponible dans le portefeuille numérique.</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">Sous le récapitulatif, consultez la capacité consommée pour chaque package de licences.</block>
   <block id="d30bc4bd5cee7ac23a1df54311d1f4b3" category="inline-link-macro">En savoir plus sur le chargement pour le pack Essentials</block>
-  <block id="33b4838dec7acdb2df64d13961f0a255" category="paragraph">Pour mieux comprendre les capacités affichées dans le pack Essentials, vous devez connaître le fonctionnement de la charge. <block ref="eee0a6ebb632d7e4c34635f35e9b54cf" category="inline-link-macro-rx"></block>.</block>
   <block id="bbb170bfbf4105204b0dbe4292724d6e" category="paragraph">Voici un exemple de compte avec plusieurs packages de licences :</block>
   <block id="b2dfe525c9a6bec7392826fba889fe07" category="section-title">Ajoutez des licences achetées à votre compte</block>
   <block id="e3562c1adf2604137baf3d2df3c68ecd" category="paragraph">Si vous ne voyez pas vos licences achetées dans le porte-monnaie numérique, vous devrez ajouter les licences à BlueXP pour que la capacité soit disponible pour Cloud Volumes ONTAP.</block>
@@ -3038,7 +3036,6 @@
   <block id="0f1f7d0cff1734f943c2503c9febec73" category="paragraph"><block ref="0f1f7d0cff1734f943c2503c9febec73" category="inline-link-rx"></block></block>
   <block id="2dd15870a87ceaf45f31f08d066afaeb" category="list-text">Mettez fin au système Cloud Volumes ONTAP dont vous n'avez plus besoin en supprimant l'environnement de travail d'origine .</block>
   <block id="2464ba8f7f97ce117f749b75a1c60906" category="inline-link-macro">Découvrez comment supprimer un environnement de travail Cloud Volumes ONTAP</block>
-  <block id="4397e74dad93d251efd7f65b1756f22b" category="paragraph"><block ref="8170ae40f603808099e16014cfba3f00" category="inline-link-macro-rx"></block>.</block>
   <block id="d3c0e82fe05c62b621815b706b024e29" category="doc">Gérez les clés avec Azure Key Vault</block>
   <block id="2f8fe9f0bb3ca6b63c1111b1fd670f9e" category="paragraph">Vous pouvez utiliser <block ref="9061d13c3fae693003c080b827f91c1c" category="inline-link-macro-rx"></block> Afin de protéger vos clés de chiffrement ONTAP dans une application déployée dans Azure.</block>
   <block id="4294aa58822f061e77d8da0c76ebf94d" category="inline-link-macro">Clés NetApp Volume Encryption (NVE)</block>
@@ -4866,4 +4863,7 @@
   <block id="88e0131339701d1e970c1ab7a5495d25" category="section-title">BlueXP ne prend pas en charge la création des volumes FlexGroup</block>
   <block id="fff40ddae0362c17ba575430d4cdd727" category="paragraph">Cloud Volumes ONTAP prend en charge les volumes FlexGroup, mais BlueXP ne prend pas encore en charge la création de volumes FlexGroup. Si vous créez un volume FlexGroup à partir de System Manager ou de l'interface de ligne de commande, définissez le mode gestion de la capacité de BlueXP sur Manuel. Le mode automatique peut ne pas fonctionner correctement avec les volumes FlexGroup.</block>
   <block id="be5e56e337ebbc7d99062048ba94693e" category="admonition">La création de volumes FlexGroup dans BlueXP est prévue pour une prochaine version.</block>
+  <block id="6e987a799bff743a20629c6963efee7e" category="paragraph"><block ref="88e663ceca138a2ba6bdf07d4cbe79f1" category="inline-link-rx"></block>.</block>
+  <block id="9bb754282eec4e66c9472848d18fa68b" category="paragraph">Pour mieux comprendre les capacités affichées dans le pack Essentials, vous devez connaître le fonctionnement de la charge.<block ref="e0127f60c714803ed2bb7172384e02ad" category="inline-link-rx"></block>.</block>
+  <block id="180b09672bfae24bd56a0aee5f3b1b2b" category="paragraph"><block ref="a9e2b0598eacf571f92143c75c6c24a3" category="inline-link-rx"></block>.</block>
 </blocks>

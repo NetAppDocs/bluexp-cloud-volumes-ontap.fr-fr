@@ -20,7 +20,7 @@ _Licences basées sur la capacité_ vous pouvez payer pour Cloud Volumes ONTAP p
 
 Le _Portefeuille numérique_ vous permet de gérer les licences de Cloud Volumes ONTAP à partir d'un seul emplacement. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.
 
-link:concept-licensing.html["En savoir plus sur les licences Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les licences Cloud Volumes ONTAP"].
 
 
 
@@ -57,7 +57,7 @@ image:screenshot_capacity-based-licenses.png["Capture d'écran affichant un réc
 +
 ** _Consumed Capacity_ indique la capacité des volumes de ce package. Pour plus de détails sur un pack spécifique, placez le curseur de la souris sur l'info-bulle.
 +
-Pour mieux comprendre les capacités affichées dans le pack Essentials, vous devez connaître le fonctionnement de la charge. link:concept-licensing.html#notes-about-charging["En savoir plus sur le chargement pour le pack Essentials"].
+Pour mieux comprendre les capacités affichées dans le pack Essentials, vous devez connaître le fonctionnement de la charge. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#notes-about-charging["En savoir plus sur le chargement pour le pack Essentials"].
 
 ** _La capacité recommandée_ correspond à la capacité sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.
 +

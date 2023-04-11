@@ -20,7 +20,7 @@ Un _Keystone Flex Subscription_ est un service de stockage NetApp qui offre un m
 
 Le _Portefeuille numérique_ vous permet de gérer les licences de Cloud Volumes ONTAP à partir d'un seul emplacement. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.
 
-link:concept-licensing.html["En savoir plus sur les licences Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les licences Cloud Volumes ONTAP"].
 
 
 
