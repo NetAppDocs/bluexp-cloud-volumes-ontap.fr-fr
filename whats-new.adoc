@@ -36,15 +36,11 @@ Pour connaître la disponibilité régionale, reportez-vous à la section link:h
 
 Les modifications suivantes ont été introduites avec la version 3.9.28 du connecteur.
 
-ifdef::gcp[]
-
 
 
 === La région de Turin est désormais prise en charge dans Google Cloud
 
 La région de Turin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et le connecteur pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
-
-endif::gcp[]
 
 
 
@@ -66,7 +62,7 @@ Cette version vous permet de faire des commentaires lors de la création d'un vo
 
 BlueXP inclut désormais une interface utilisateur repensée pour les pages Présentation de Cloud Volumes ONTAP, volumes et agrégats. La conception en mosaïque présente des informations plus complètes dans chaque mosaïque pour une meilleure expérience utilisateur.
 
-image:screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
 
 
 
@@ -77,7 +73,7 @@ Les volumes FlexGroup créés directement via l'interface de ligne de commande o
 
 NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
 
-image:screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
 
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
 
@@ -112,8 +108,6 @@ BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.13.0 dans AWS, 
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
 
-ifdef::azure[]
-
 
 
 === Prise en charge de 16 Tio et de 32 Tib dans Azure
@@ -121,8 +115,6 @@ ifdef::azure[]
 Cloud Volumes ONTAP prend désormais en charge les tailles de disques de 16 Tio et 32 Tio pour les déploiements haute disponibilité sur des disques gérés dans Azure.
 
 En savoir plus sur https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#supported-disk-sizes["Tailles de disques prises en charge dans Azure"^].
-
-endif::azure[]
 
 
 
@@ -145,8 +137,6 @@ Cloud Volumes ONTAP est désormais pris en charge dans tous les environnements c
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
 
 
-ifdef::gcp[]
-
 
 
 === Flash cache et vitesse d'écriture élevée dans Google Cloud
@@ -155,15 +145,11 @@ La prise en charge de Flash cache, de la vitesse d'écriture élevée et d'une u
 
 En savoir plus sur link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configurations prises en charge par licence pour Google Cloud"^].
 
-endif::gcp[]
-
 
 
 == 5 février 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.26 du connecteur.
-
-ifdef::aws[]
 
 
 
@@ -172,10 +158,6 @@ ifdef::aws[]
 Un nouveau paramètre de configuration peut désormais être utilisé pour créer des groupes de placement avec AWS HA unique Availability zone (AZ). Vous pouvez désormais choisir de contourner les créations de groupes ayant échoué et d'autoriser les déploiements d'AWS HA unique en AZ à s'effectuer avec succès.
 
 Pour plus d'informations sur la configuration du paramètre de création du groupe de placement, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Configurez la création de groupe de placement pour AWS HA Single AZ"^].
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -199,8 +181,6 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-wor
 
 Les modifications suivantes ont été introduites avec la version 3.9.25 du connecteur.
 
-ifdef::gcp[]
-
 
 
 === Packages de licences disponibles dans Google Cloud
@@ -208,8 +188,6 @@ ifdef::gcp[]
 Des packages de licence optimisés et Edge cache basés sur la capacité sont disponibles pour Cloud Volumes ONTAP dans Google Cloud Marketplace, à la demande ou en tant que contrat annuel.
 
 Voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Licences Cloud Volumes ONTAP"^].
-
-endif::gcp[]
 
 
 
@@ -267,8 +245,6 @@ La région Israël est désormais prise en charge dans Google Cloud pour Cloud V
 
 Les modifications suivantes ont été introduites avec la version 3.9.23 du connecteur.
 
-ifdef::gcp[]
-
 
 
 === Licence ONTAP S3 dans Google Cloud
@@ -277,15 +253,11 @@ Une licence ONTAP S3 est désormais incluse sur les systèmes Cloud Volumes ONTA
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Découvrez comment configurer et gérer les services de stockage objet S3 dans ONTAP"^]
 
-endif::gcp[]
-
 
 
 == 6 novembre 2022
 
 Les modifications suivantes ont été introduites avec la version 3.9.23 du connecteur.
-
-ifdef::azure[]
 
 
 
@@ -295,8 +267,6 @@ Vous pouvez maintenant déplacer un environnement de travail d'un groupe de ress
 
 Pour plus d'informations, voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["Déplacement de groupes de ressources"].
 
-endif::azure[]
-
 
 
 === Certification NDMP-copie
@@ -305,8 +275,6 @@ NDMP-copy est désormais certifié pour Cloud Volume ONTAP.
 
 Pour plus d'informations sur la configuration et l'utilisation de NDMP, reportez-vous à la section https://docs.netapp.com/us-en/ontap/ndmp/index.html["Présentation de la configuration NDMP"].
 
-ifdef::azure[]
-
 
 
 === Prise en charge du chiffrement de disque géré pour Azure
@@ -314,8 +282,6 @@ ifdef::azure[]
 Une nouvelle autorisation Azure a été ajoutée qui vous permet maintenant de chiffrer tous les disques gérés lors de leur création.
 
 Pour plus d'informations sur cette nouvelle fonctionnalité, voir https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["Configuration de Cloud Volumes ONTAP pour utiliser une clé gérée par le client dans Azure"].
-
-endif::azure[]
 
 
 
@@ -402,8 +368,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 == 18 juillet 2022
 
-ifdef::azure[]
-
 
 
 === Nouveaux packages de licences dans Azure
@@ -415,8 +379,6 @@ Deux nouveaux packages de licence basés sur la capacité sont disponibles pour 
 
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["En savoir plus sur ces packs de licences"].
-
-endif::azure[]
 
 
 
@@ -440,8 +402,6 @@ BlueXP prend désormais en charge la fonctionnalité Amazon EBS Elastic volumes 
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes dans AWS"].
 
-ifdef::aws[]
-
 
 
 === Licence ONTAP S3 dans AWS
@@ -449,10 +409,6 @@ ifdef::aws[]
 Une licence ONTAP S3 est désormais incluse sur les systèmes Cloud Volumes ONTAP nouveaux et existants qui exécutent la version 9.11.0 ou une version ultérieure dans AWS.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Découvrez comment configurer et gérer les services de stockage objet S3 dans ONTAP"^]
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -469,8 +425,6 @@ https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste compl�
 Une licence ONTAP S3 est désormais incluse sur les systèmes Cloud Volumes ONTAP nouveaux et existants qui exécutent la version 9.9.1 ou une version ultérieure dans Azure.
 
 https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Découvrez comment configurer et gérer les services de stockage objet S3 dans ONTAP"^]
-
-endif::azure[]
 
 
 
@@ -495,8 +449,6 @@ Si vous devez effectuer une gestion avancée de Cloud Volumes ONTAP, vous pouvez
 Cette vue avancée est disponible sous forme d'aperçu avec Cloud Volumes ONTAP 9.10.0 et versions ultérieures. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["En savoir plus sur la vue avancée"].
-
-ifdef::aws[]
 
 
 
@@ -525,10 +477,6 @@ Cloud Volumes ONTAP 9.11.1 inclut la prise en charge du partage VPC AWS. Cette v
 
 link:task-deploy-aws-shared-vpc.html["Découvrez comment déployer une paire haute disponibilité dans un sous-réseau partagé"].
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === Accès limité au réseau lors de l'utilisation de terminaux de service
@@ -536,10 +484,6 @@ ifdef::azure[]
 BlueXP limite désormais l'accès au réseau lors de l'utilisation d'un terminal de service vnet pour les connexions entre Cloud Volumes ONTAP et les comptes de stockage. BlueXP utilise un point de terminaison de service si vous désactivez les connexions Azure Private Link.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["En savoir plus sur les connexions Azure Private Link avec Cloud Volumes ONTAP"].
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -559,8 +503,6 @@ Notez que vous devez utiliser l'interface de ligne de commandes ou System Manage
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["En savoir plus sur les limites des machines virtuelles de stockage dans Google Cloud"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Découvrez comment créer des machines virtuelles de stockage destinées aux données pour Cloud Volumes ONTAP dans Google Cloud"]
 
-
-endif::gcp[]
 
 
 
@@ -590,8 +532,6 @@ L'onglet K8s était obsolète dans une version précédente et a été supprimé
 
 https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["En savoir plus sur la gestion des données Kubernetes dans BlueXP"^]
 
-ifdef::azure[]
-
 
 
 === Contrat annuel dans Azure
@@ -602,8 +542,6 @@ Une fois que NetApp vous a fait part de son offre privée, vous pouvez sélectio
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les licences"].
 
-endif::azure[]
-
 
 
 === Récupération instantanée S3 Glacier
@@ -611,8 +549,6 @@ endif::azure[]
 Vous pouvez désormais stocker des données hiérarchisées dans la classe de stockage Amazon S3 Glacier Instant Retrieval.
 
 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["Découvrez comment changer la classe de stockage des données hiérarchisées"].
-
-ifdef::aws[]
 
 
 
@@ -628,10 +564,6 @@ Les autorisations suivantes sont désormais nécessaires pour créer un groupe d
 Ces autorisations sont désormais nécessaires pour optimiser la façon dont BlueXP crée le groupe de placement.
 
 Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Consultez les dernières règles de connexion pour AWS"^].
-
-endif::aws[]
-
-ifdef::gcp[]
 
 
 
@@ -673,8 +605,6 @@ Auparavant, BlueXP n'affichera aucune règle dans les VPC-1, VPC-2 ou VPC-3 qui 
 Lorsque vous sélectionnez le compte de service Google Cloud à utiliser avec Cloud Volumes ONTAP, BlueXP affiche désormais l'adresse e-mail associée à chaque compte de service. L'affichage de l'adresse e-mail peut faciliter la distinction entre les comptes de service partageant le même nom.
 
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["Capture d'écran du champ du compte de service"]
-
-endif::gcp[]
 
 
 
@@ -774,8 +704,6 @@ Nous avons mis à jour le *Portefeuille numérique* en consolidant les licences 
 
 Les modifications suivantes ont été introduites avec la version 3.9.14 du connecteur.
 
-ifdef::azure[]
-
 
 
 === Prise en charge de types de VM Azure supplémentaires
@@ -789,8 +717,6 @@ Cloud Volumes ONTAP est désormais pris en charge avec les types de machine virt
 
 
 Accédez au https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Notes de version de Cloud Volumes ONTAP"^] pour plus d'informations sur les configurations prises en charge,
-
-endif::azure[]
 
 
 
@@ -855,17 +781,11 @@ Un abonnement Keystone Flex est pris en charge avec toutes les nouvelles version
 * link:task-manage-keystone.html["Découvrez comment vous lancer avec les abonnements Keystone Flex dans BlueXP"].
 
 
-ifdef::aws[]
-
 
 
 === Prise en charge des nouvelles régions AWS
 
 Le Cloud Volumes ONTAP est maintenant soutenu dans la région AWS Asie-Pacifique (Osaka) (ap-Nord-est-3).
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -874,8 +794,6 @@ ifdef::azure[]
 Les ports 8023 et 49000 ne sont plus ouverts sur les systèmes Cloud Volumes ONTAP dans Azure à la fois pour les systèmes à un seul nœud et les paires haute disponibilité.
 
 Cette modification s'applique aux systèmes _New_ Cloud Volumes ONTAP commençant par la version 3.9.13 du connecteur.
-
-endif::azure[]
 
 
 
@@ -891,7 +809,11 @@ BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.10.0.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-9100-relnotes["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
 
-ifdef::azure[]
+
+
+=== Réduction des délais de déploiement
+
+Nous avons réduit le temps de déploiement d'un environnement de travail Cloud Volumes ONTAP dans Microsoft Azure ou dans Google Cloud lorsque la vitesse d'écriture standard est activée. Le délai de déploiement est désormais inférieur de 3-4 minutes en moyenne.
 
 
 
@@ -910,8 +832,6 @@ Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure 
 
 
 link:task-set-up-azure-encryption.html["En savoir plus sur ces étapes"].
-
-endif::azure[]
 
 
 
@@ -944,8 +864,6 @@ image:screenshot_cvo_charging_methods.png["Capture d'écran de l'assistant de l'
 
 Le stockage WORM (Write Once, Read Many) n'est plus inclus dans la version Aperçu et peut désormais être utilisé de manière générale avec Cloud Volumes ONTAP. link:concept-worm.html["En savoir plus sur le stockage WORM"].
 
-ifdef::aws[]
-
 
 
 === Prise en charge de m5dn.24xgrand dans AWS
@@ -953,10 +871,6 @@ ifdef::aws[]
 Depuis la version 9.9.1, Cloud Volumes ONTAP prend désormais en charge le type d'instance m5dn.24xgrand avec les méthodes de chargement suivantes : PAYGO Premium, apportez votre propre licence (BYOL) et Freemium.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["Affichez les configurations prises en charge pour Cloud Volumes ONTAP dans AWS"^].
-
-endif::aws[]
-
-ifdef::azure[]
 
 
 
@@ -991,10 +905,6 @@ Cela signifie que les comptes de _All_ stockage de Cloud Volumes ONTAP utilisero
 
 link:task-enabling-private-link.html["En savoir plus sur l'utilisation d'un lien privé Azure avec Cloud Volumes ONTAP"].
 
-endif::azure[]
-
-ifdef::gcp[]
-
 
 
 === Des disques persistants équilibrés dans Google Cloud
@@ -1013,15 +923,11 @@ Si vous disposez d'un système existant fonctionnant sur ce type de machine, vou
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Affichez les configurations prises en charge pour Cloud Volumes ONTAP dans GCP"^].
 
-endif::gcp[]
-
 
 
 == 30 mai 2021
 
 Les modifications suivantes ont été introduites avec la version 3.9.7 du connecteur.
-
-ifdef::aws[]
 
 
 
@@ -1040,8 +946,6 @@ Accédez au https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["Page A
 BlueXP ajoute désormais des balises aux volumes EBS lorsqu'il crée un nouvel environnement de travail Cloud Volumes ONTAP. Les balises étaient préalablement créées après le déploiement de Cloud Volumes ONTAP.
 
 Ce changement peut aider si votre organisation utilise des stratégies de contrôle de service (SCPS) pour gérer les autorisations.
-
-endif::aws[]
 
 
 
@@ -1065,16 +969,12 @@ BlueXP supprime désormais les anciens snapshots cloud des disques racine et de 
 
 Cette amélioration contribue à réduire les coûts des fournisseurs de cloud en supprimant les snapshots qui ne sont plus nécessaires.
 
-ifdef::azure[]
-
 Notez qu'un connecteur requiert une nouvelle autorisation pour supprimer les snapshots Azure. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Découvrez la dernière règle de connecteurs pour Azure"^].
 
 [source, json]
 ----
 "Microsoft.Compute/snapshots/delete"
 ----
-endif::azure[]
-
 
 
 == 24 mai 2021
@@ -1101,8 +1001,6 @@ BlueXP permet désormais de générer des rapports d'espace logique sur la machi
 
 Lorsqu'un espace est indiqué de manière logique, ONTAP indique l'espace volume afin que toutes les fonctionnalités d'efficacité du stockage soient également signalées comme utilisées.
 
-ifdef::aws[]
-
 
 
 === Prise en charge des disques gp3 dans AWS
@@ -1117,17 +1015,11 @@ link:task-planning-your-config.html#sizing-your-system-in-aws["En savoir plus su
 
 Cloud Volumes ONTAP ne prend plus en charge les disques durs à froid (sc1).
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === TLS 1.2 pour les comptes de stockage Azure
 
 Lorsque BlueXP crée des comptes de stockage dans Azure pour Cloud Volumes ONTAP, la version TLS du compte de stockage est maintenant la version 1.2.
-
-endif::azure[]
 
 
 
@@ -1142,8 +1034,6 @@ Les modifications suivantes ont été introduites avec la version 3.9.4 du conne
 BlueXP peut désormais déployer et gérer Cloud Volumes ONTAP 9.9.0.
 
 https://docs.netapp.com/us-en/cloud-volumes-ontap-990-relnotes["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
-
-ifdef::aws[]
 
 
 
@@ -1163,19 +1053,11 @@ Notez que vous devrez fournir le rôle IAM Cloud Volumes ONTAP pour utiliser le 
 
 link:task-setting-up-kms.html["En savoir plus sur la configuration du KMS AWS avec Cloud Volumes ONTAP"].
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === Prise en charge d'Azure DoD
 
 Vous pouvez désormais déployer Cloud Volumes ONTAP 9.8 dans le service Azure Department of Defense (DoD) impact Level 6 (IL6).
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -1193,15 +1075,11 @@ Lorsque vous déployez une paire haute disponibilité Cloud Volumes ONTAP dans G
 
 link:reference-networking-gcp.html["En savoir plus sur les exigences de mise en réseau de Google Cloud"].
 
-endif::gcp[]
-
 
 
 == 4 janvier 2021
 
 Les modifications suivantes ont été introduites avec la version 3.9.2 du connecteur.
-
-ifdef::aws[]
 
 
 
@@ -1218,10 +1096,6 @@ Quelques limites peuvent être soulignent :
 * Seuls les disques SSD polyvalents (gp2) sont pris en charge à l'heure actuelle
 
 
-endif::aws[]
-
-ifdef::azure[]
-
 
 
 === VNVRAM Ultra SSD dans les régions Azure prises en charge
@@ -1237,10 +1111,6 @@ VNVRAM offre de meilleures performances en écriture.
 Vous pouvez désormais choisir la zone de disponibilité dans laquelle vous souhaitez déployer un système Cloud Volumes ONTAP à un seul nœud. Si vous ne sélectionnez pas d'AZ, BlueXP en sélectionne un pour vous.
 
 image:screenshot_azure_az.gif["Capture d'écran de la liste déroulante zone de disponibilité disponible après avoir choisi une région."]
-
-endif::azure[]
-
-ifdef::gcp[]
 
 
 
@@ -1262,10 +1132,6 @@ Cloud Volumes ONTAP prend désormais en charge les types de machine suivants :
 * n2-standard-32 avec licence Premium et BYOL
 
 
-endif::gcp[]
-
-ifdef::azure[]
-
 
 
 == 3 novembre 2020
@@ -1281,5 +1147,3 @@ Par défaut, BlueXP autorise désormais une connexion Azure Private Link entre C
 * https://docs.microsoft.com/en-us/azure/private-link/private-link-overview["En savoir plus sur les liens privés Azure"^]
 * link:task-enabling-private-link.html["En savoir plus sur l'utilisation d'un lien privé Azure avec Cloud Volumes ONTAP"]
 
-
-endif::azure[]
