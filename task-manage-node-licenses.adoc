@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 La page porte-monnaie numérique vous permet d'afficher des détails sur chacun de vos systèmes Cloud Volumes ONTAP PAYGO, y compris le numéro de série et le type de licence PAYGO.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Cliquez sur *PAYGO*.
 . Pour en savoir plus, consultez le tableau relatif à chacune de vos licences PAYGO.
@@ -56,7 +56,7 @@ Gérez les licences que vous avez achetées directement auprès de NetApp en ajo
 Ajoutez une licence basée sur un nœud au porte-monnaie numérique pour pouvoir sélectionner la licence lorsque vous créez un nouveau système Cloud Volumes ONTAP. Le porte-monnaie numérique identifie ces licences comme _non affectées_.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Cliquez sur *non affecté*.
 . Cliquez sur *Ajouter des licences non attribuées*.
@@ -85,7 +85,7 @@ L'échange de la licence révoque la licence Cloud Volumes ONTAP et crée une li
 La licence convertie a la même date d'expiration que la licence Cloud Volumes ONTAP.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Cliquez sur *non affecté*.
 . Cliquez sur *Exchange License*.
@@ -127,7 +127,7 @@ Lorsque vous renouvelez un abonnement BYOL en contactant un représentant NetApp
 Si BlueXP ne parvient pas à accéder au fichier de licence via la connexion Internet sécurisée, vous pouvez obtenir le fichier vous-même, puis le télécharger manuellement vers BlueXP.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Dans l'onglet *BYOL*, développez les détails d'un système Cloud Volumes ONTAP.
 . Cliquez sur le menu d'action en regard de la licence système et sélectionnez *mettre à jour la licence*.
@@ -153,7 +153,7 @@ Le nombre de licences que vous pouvez acheter pour un système à un seul nœud 
 Achetez une licence de capacité supplémentaire en nous contactant par l'icône de chat dans le coin inférieur droit de BlueXP. Une fois la licence acheté, vous pouvez l'appliquer sur un système Cloud Volumes ONTAP.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Dans l'onglet *BYOL*, développez les détails d'un système Cloud Volumes ONTAP.
 . Cliquez sur *Ajouter une licence de capacité*.
@@ -168,7 +168,7 @@ Achetez une licence de capacité supplémentaire en nous contactant par l'icône
 Si vous avez prolongé la durée d'une licence de capacité supplémentaire, vous devez mettre à jour la licence dans BlueXP.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Dans l'onglet *BYOL*, développez les détails d'un système Cloud Volumes ONTAP.
 . Cliquez sur le menu d'action en regard de la licence de capacité et sélectionnez *mettre à jour la licence*.
@@ -183,7 +183,7 @@ Si vous avez prolongé la durée d'une licence de capacité supplémentaire, vou
 Si une licence de capacité supplémentaire a expiré et n'est plus utilisée, vous pouvez la supprimer à tout moment.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Dans l'onglet *BYOL*, développez les détails d'un système Cloud Volumes ONTAP.
 . Cliquez sur le menu d'action en regard de la licence de capacité et sélectionnez *Supprimer la licence*.
@@ -203,7 +203,7 @@ Lorsque vous convertissez une licence d'évaluation en licence BYOL, BlueXP red�
 
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences par nœud* dans la liste déroulante.
 . Cliquez sur *Eval*.
 . Dans le tableau, cliquez sur *convertir en licence BYOL* pour un système Cloud Volumes ONTAP.

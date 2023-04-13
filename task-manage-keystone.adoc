@@ -29,8 +29,8 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 Avant de pouvoir utiliser et gérer les abonnements Keystone Flex dans BlueXP, vous devez contacter NetApp pour autoriser votre compte utilisateur BlueXP avec vos abonnements Keystone Flex.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
-. Cliquez sur *abonnement Keystone Flex*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+. Sélectionnez *Keystone*.
 . Si vous voyez la page *Bienvenue dans NetApp Keystone*, envoyez un e-mail à l'adresse indiquée sur la page.
 +
 Un représentant NetApp traitera votre demande en autorisant votre compte utilisateur à accéder aux abonnements.
@@ -51,8 +51,8 @@ Associez les abonnements que vous souhaitez utiliser avec Cloud Volumes ONTAP.
 Après avoir autorisé votre compte, vous devez lier des abonnements Keystone Flex à utiliser avec Cloud Volumes ONTAP. Cette action permet aux utilisateurs de sélectionner l'abonnement comme méthode de facturation pour les nouveaux systèmes Cloud Volumes ONTAP.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
-. Cliquez sur *abonnement Keystone Flex*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+. Sélectionnez *Keystone*.
 . Pour l'abonnement que vous souhaitez lier, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Et sélectionnez *Link*.
 +
 image:screenshot-keystone-link.png["Capture d'écran affichant l'option de lien pour un abonnement."]
@@ -69,8 +69,8 @@ L'abonnement est désormais lié à votre compte BlueXP et disponible pour la cr
 Si vous devez ajuster la capacité engagée pour un abonnement, vous pouvez envoyer une demande directement à partir de l'interface BlueXP.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
-. Cliquez sur *abonnement Keystone Flex*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+. Sélectionnez *Keystone*.
 . Pour l'abonnement pour lequel vous souhaitez ajuster la capacité, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Et sélectionnez *Afficher le détail et modifier*.
 . Saisissez la capacité d'engagement requise pour un ou plusieurs abonnements.
 +
@@ -89,8 +89,8 @@ Votre demande crée un ticket dans le système NetApp.
 Si vous ne souhaitez plus utiliser un abonnement Keystone Flex avec de nouveaux systèmes Cloud Volumes ONTAP, vous pouvez annuler la liaison de l'abonnement. Notez que vous ne pouvez dissocier qu'un abonnement qui n'est pas associé à un abonnement Cloud Volumes ONTAP existant.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
-. Cliquez sur *abonnement Keystone Flex*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+. Sélectionnez *Keystone*.
 . Pour l'abonnement que vous souhaitez dissocier, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Et sélectionnez *Unlink*.
 
 

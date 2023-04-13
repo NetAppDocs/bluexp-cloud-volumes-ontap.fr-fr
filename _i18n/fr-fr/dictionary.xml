@@ -893,7 +893,6 @@
   <block id="e71139eb9146e38a7b8cdb5f435f8ed1" category="paragraph">Si BlueXP ne peut pas ajouter la licence, vous devrez les ajouter manuellement au porte-monnaie numérique vous-même. Par exemple, si le connecteur est installé dans un emplacement qui n'a pas accès à Internet, vous devrez ajouter vous-même les licences. <block ref="2b377ff52574668221716136185f8476" category="inline-xref-macro-rx"></block>.</block>
   <block id="03021ab228ad1d1c921bbf536e2913a4" category="section-title">Affichez la capacité consommée dans votre compte</block>
   <block id="e54d493645f297f788982c1215f721bf" category="paragraph">Le porte-monnaie numérique vous indique la capacité totale consommée dans votre compte et la capacité consommée par le package de licences. Cela vous permet de mieux comprendre la façon dont vous achetez de la capacité supplémentaire et si celle-ci est nécessaire.</block>
-  <block id="c0d3ce4ea1bcde455d433b9182cdde33" category="list-text">Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.</block>
   <block id="29f9c9781f75b695cb6c7c93910280cd" category="list-text">_Capacité totale consommée_ correspond à la capacité totale provisionnée de tous les systèmes Cloud Volumes ONTAP de votre compte NetApp. La charge dépend de la taille de provisionnement de chaque volume, peu importe l'espace local, utilisé, stocké ou effectif au sein du volume.</block>
   <block id="4cca90046112da5c5d3a703dafebbb7e" category="list-text">_Total PAYGO_ est la capacité totale provisionnée via des abonnements Cloud Marketplace. La facturation via PAYGO n'est utilisée que si la capacité consommée est supérieure à la capacité sous licence ou si aucune licence BYOL n'est disponible dans le portefeuille numérique.</block>
   <block id="ea7c202c277e5ccf92e08be29b4a64e9" category="list-text">Sous le récapitulatif, consultez la capacité consommée pour chaque package de licences.</block>
@@ -2583,7 +2582,6 @@
   <block id="144db5f18aa0a48a9fe63c8b55bd0275" category="paragraph">Un _Keystone Flex Subscription_ est un service de stockage NetApp qui offre un modèle de paiement à l'utilisation.</block>
   <block id="4edb70089cdbc18de22fa9ead5189bc8" category="section-title">Autoriser votre compte</block>
   <block id="5187c95ccaa9cce754eff51fdf83a80b" category="paragraph">Avant de pouvoir utiliser et gérer les abonnements Keystone Flex dans BlueXP, vous devez contacter NetApp pour autoriser votre compte utilisateur BlueXP avec vos abonnements Keystone Flex.</block>
-  <block id="34050b9fba3323c4ec7fb2d89aa95a36" category="list-text">Cliquez sur *abonnement Keystone Flex*.</block>
   <block id="daf4ae396784c74ec2cbf002eaaa25f4" category="list-text">Si vous voyez la page *Bienvenue dans NetApp Keystone*, envoyez un e-mail à l'adresse indiquée sur la page.</block>
   <block id="16692c26ca4528e651bbb36d93c465c7" category="paragraph">Un représentant NetApp traitera votre demande en autorisant votre compte utilisateur à accéder aux abonnements.</block>
   <block id="ed53b278164ebd0a6b2a2a8f63581c09" category="list-text">Revenez à l'abonnement *Keystone Flex* pour afficher vos abonnements.</block>
@@ -4695,7 +4693,6 @@
   <block id="65501384f1f7cf6e689e492914a698c1" category="paragraph"><block ref="65501384f1f7cf6e689e492914a698c1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6ccb38ae114176203c2592f430a889d7" category="list-text">Si vous utilisez une licence PAYGO basée sur des nœuds, vous pouvez choisir une autre licence et un autre type de machine en cliquant sur l'icône en forme de crayon en regard de *Type de licence*.</block>
   <block id="f5e2fedd06abf8315436e3971f9755de" category="list-text">Choisissez un type de machine, cochez la case pour confirmer que vous comprenez les implications du changement, puis cliquez sur *Modifier*.</block>
-  <block id="1bb49759ca91107ea85449bc0249ce13" category="list-text">Lorsque *Capacity Based Licenses* est sélectionné, affichez le résumé des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.</block>
   <block id="def968f0e18d0f7aed6421ac81039272" category="list-text">_La capacité totale préallouée_ correspond à la capacité totale sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.</block>
   <block id="6805f1cb53971ab8cf6263bd093c5d20" category="paragraph">Voici un exemple de résumé des packages Cloud Volumes ONTAP dans le portefeuille digital :</block>
   <block id="e9132fa20985cf4b3d5004a6a371ecab" category="inline-image-macro">Capture d'écran affichant un récapitulatif des packages Cloud Volumes ONTAP incluant la capacité totale consommée, la capacité totale préallouée (contrats BYOL et Marketplace) et la capacité totale PAYGO, ou provisionnée dans le portefeuille digital.</block>
@@ -4868,4 +4865,8 @@
   <block id="78f9ca50556d02ff8700efd01af0d528" category="paragraph"><block ref="78f9ca50556d02ff8700efd01af0d528" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9cc2b6cdaf0b50459353a2d67c0baa80" category="section-title">Réduction des délais de déploiement</block>
   <block id="66d5639668d7c3e585771304940a252b" category="paragraph">Nous avons réduit le temps de déploiement d'un environnement de travail Cloud Volumes ONTAP dans Microsoft Azure ou dans Google Cloud lorsque la vitesse d'écriture standard est activée. Le délai de déploiement est désormais inférieur de 3-4 minutes en moyenne.</block>
+  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">Dans le menu de navigation BlueXP, sélectionnez *gouvernance &gt; porte-monnaie numérique*.</block>
+  <block id="e83a5b2754cd537ac6467dc025115726" category="list-text">Dans l'onglet *Cloud Volumes ONTAP*, conservez *licences basées sur la capacité* sélectionné.</block>
+  <block id="2bd469c6a2a1a44818909050205d416b" category="list-text">Consultez le récapitulatif des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.</block>
+  <block id="492847bcbc9ec0bd3075b612aa43e4a7" category="list-text">Sélectionnez *Keystone*.</block>
 </blocks>

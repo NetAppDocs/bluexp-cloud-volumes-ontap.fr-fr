@@ -39,8 +39,9 @@ Si BlueXP ne peut pas ajouter la licence, vous devrez les ajouter manuellement a
 Le porte-monnaie numérique vous indique la capacité totale consommée dans votre compte et la capacité consommée par le package de licences. Cela vous permet de mieux comprendre la façon dont vous achetez de la capacité supplémentaire et si celle-ci est nécessaire.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
-. Lorsque *Capacity Based Licenses* est sélectionné, affichez le résumé des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+. Dans l'onglet *Cloud Volumes ONTAP*, conservez *licences basées sur la capacité* sélectionné.
+. Consultez le récapitulatif des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.
 +
 ** _Capacité totale consommée_ correspond à la capacité totale provisionnée de tous les systèmes Cloud Volumes ONTAP de votre compte NetApp. La charge dépend de la taille de provisionnement de chaque volume, peu importe l'espace local, utilisé, stocké ou effectif au sein du volume.
 ** _La capacité totale préallouée_ correspond à la capacité totale sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.
@@ -88,7 +89,7 @@ Si vous ne voyez pas vos licences achetées dans le porte-monnaie numérique, vo
 
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, sélectionnez *licences basées sur la capacité* et cliquez sur *Ajouter licence*.
 . Entrez le numéro de série de la licence basée sur la capacité ou téléchargez le fichier de licence.
 +
@@ -109,7 +110,7 @@ Cependant, si vous avez déployé BlueXP dans un emplacement qui n'a pas d'accè
 Le fichier de licence (ou _files_ si vous avez une paire HA).
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, cliquez sur le menu d'action en regard de la licence et sélectionnez *mettre à jour la licence*.
 . Téléchargez le fichier de licence.
 . Cliquez sur *Télécharger la licence*.
@@ -132,7 +133,7 @@ endif::azure[]
 Si vous disposez d'une offre ou d'un contrat privé sur le marché de votre fournisseur cloud, le fait de changer de méthode de facturation non incluse dans votre contrat entraînera une facturation en fonction du modèle BYOL (si vous avez acheté une licence auprès de NetApp) ou du modèle de facturation PAYGO.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, cliquez sur *changer la méthode de chargement*.
 +
 image:screenshot-digital-wallet-charging-method-button.png["Capture d'écran de la page Cloud Volumes ONTAP dans le porte-monnaie numérique où le bouton changer la méthode de chargement se trouve juste au-dessus du tableau."]
@@ -156,7 +157,7 @@ Vous pouvez également remarquer que le porte-monnaie numérique actualise la ca
 Si une licence basée sur la capacité a expiré et n'est plus utilisée, vous pouvez la supprimer à tout moment.
 
 .Étapes
-. Dans le menu de navigation de gauche, sélectionnez *Portefeuille numérique*.
+. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, cliquez sur le menu d'action en regard de la licence et sélectionnez *Supprimer la licence*.
 . Cliquez sur *Supprimer* pour confirmer.
 
