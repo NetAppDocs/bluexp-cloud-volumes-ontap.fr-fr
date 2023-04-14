@@ -22,7 +22,7 @@ Vous avez besoin des éléments suivants pour créer un environnement de travail
 [[licensing]]
 * Un connecteur opérationnel.
 +
-** Vous devez avoir un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Connecteur associé à votre espace de travail"^].
+** Vous devez avoir un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Connecteur associé à votre espace de travail"^].
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Vous devez être prêt à laisser le connecteur fonctionner en permanence"^].
 
 
@@ -57,7 +57,7 @@ Si vous souhaitez lancer un système Cloud Volumes ONTAP à un seul nœud dans A
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . [[Subscribe]]sur la page Canvas, cliquez sur *Ajouter un environnement de travail* et suivez les invites.
 . *Choisissez un emplacement* : sélectionnez *Microsoft Azure* et *Cloud Volumes ONTAP nœud unique*.
-. Si vous y êtes invité, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Créer un connecteur"^].
+. Si vous y êtes invité, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Créer un connecteur"^].
 . *Détails et informations d'identification* : modifiez éventuellement les informations d'identification et l'abonnement Azure, spécifiez un nom de cluster, ajoutez des balises si nécessaire, puis spécifiez les informations d'identification.
 +
 Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -280,7 +280,7 @@ Si vous souhaitez lancer une paire Cloud Volumes ONTAP HA dans Azure, vous devez
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . [[Subscribe]]sur la page Canvas, cliquez sur *Ajouter un environnement de travail* et suivez les invites.
-. Si vous y êtes invité, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Créer un connecteur"^].
+. Si vous y êtes invité, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["Créer un connecteur"^].
 . *Détails et informations d'identification* : modifiez éventuellement les informations d'identification et l'abonnement Azure, spécifiez un nom de cluster, ajoutez des balises si nécessaire, puis spécifiez les informations d'identification.
 +
 Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :

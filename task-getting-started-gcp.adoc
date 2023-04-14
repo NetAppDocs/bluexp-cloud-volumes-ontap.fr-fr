@@ -18,10 +18,10 @@ Commencez à utiliser Cloud Volumes ONTAP pour Google Cloud en quelques étapes.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Créer un connecteur
 [role="quick-margin-para"]
-Si vous n'avez pas de https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Connecteur"^] Cependant, un administrateur de compte doit en créer un. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Découvrez comment créer un connecteur dans Google Cloud"^]
+Si vous n'avez pas de https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Connecteur"^] Cependant, un administrateur de compte doit en créer un. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Découvrez comment créer un connecteur dans Google Cloud"^]
 
 [role="quick-margin-para"]
-Si vous souhaitez déployer Cloud Volumes ONTAP dans un sous-réseau sans accès à Internet, vous devez installer manuellement le connecteur et accéder à l'interface utilisateur BlueXP qui s'exécute sur ce connecteur. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Apprenez à installer manuellement le connecteur dans un emplacement sans accès à Internet"^]
+Si vous souhaitez déployer Cloud Volumes ONTAP dans un sous-réseau sans accès à Internet, vous devez installer manuellement le connecteur et accéder à l'interface utilisateur BlueXP qui s'exécute sur ce connecteur. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Apprenez à installer manuellement le connecteur dans un emplacement sans accès à Internet"^]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Planification de la configuration
 [role="quick-margin-para"]
@@ -72,7 +72,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Activez les AP
 Cliquez sur *Ajouter un environnement de travail*, sélectionnez le type de système que vous souhaitez déployer et suivez les étapes de l'assistant. link:task-deploying-gcp.html["Lisez les instructions détaillées"].
 
 .Liens connexes
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["Création d'un connecteur depuis BlueXP"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["Installation du logiciel du connecteur sur un hôte Linux"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Création d'un connecteur depuis BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["Installation du logiciel du connecteur sur un hôte Linux"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Rôle de BlueXP avec les autorisations Google Cloud"^]
 

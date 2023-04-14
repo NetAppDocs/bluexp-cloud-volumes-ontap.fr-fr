@@ -132,7 +132,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 Cloud Volumes ONTAP est désormais pris en charge dans tous les environnements cloud isolés d'Internet. Seule la licence basée sur les nœuds (BYOL) est prise en charge dans ces environnements. Les licences basées sur la capacité ne sont pas prises en charge. Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital, puis déployez Cloud Volumes ONTAP. 
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
 
