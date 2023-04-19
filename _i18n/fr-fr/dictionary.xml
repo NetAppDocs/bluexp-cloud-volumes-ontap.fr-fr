@@ -3027,7 +3027,6 @@
   <block id="d3c0e82fe05c62b621815b706b024e29" category="doc">Gérez les clés avec Azure Key Vault</block>
   <block id="2f8fe9f0bb3ca6b63c1111b1fd670f9e" category="paragraph">Vous pouvez utiliser <block ref="9061d13c3fae693003c080b827f91c1c" category="inline-link-macro-rx"></block> Afin de protéger vos clés de chiffrement ONTAP dans une application déployée dans Azure.</block>
   <block id="4294aa58822f061e77d8da0c76ebf94d" category="inline-link-macro">Clés NetApp Volume Encryption (NVE)</block>
-  <block id="46653d32d1199a88497ad4000ed4e7b3" category="paragraph">AKV peut être utilisé pour protéger <block ref="8531e852e621158c599cbd603b309c10" category="inline-link-macro-rx"></block> Uniquement pour les SVM de données.</block>
   <block id="b80b61bef9c57d9979c8a0a11310d79b" category="paragraph">La gestion des clés via AKV peut être activée via l'interface de ligne de commande ou l'API REST ONTAP.</block>
   <block id="e99dab450e193aa16ab181a9cbb70701" category="paragraph">Lorsque vous utilisez AKV, notez que par défaut une LIF de SVM de données permet de communiquer avec le terminal de gestion des clés cloud. Un réseau de gestion de nœuds est utilisé pour communiquer avec les services d'authentification du fournisseur de cloud (login.microsoftonline.com). Si le réseau de cluster n'est pas configuré correctement, le cluster n'utilisera pas correctement le service de gestion des clés.</block>
   <block id="8c01e5151cb74437e444454be784333c" category="list-text">Licence Volume Encryption (VE) installée (la licence NetApp Volume Encryption est automatiquement installée sur chaque système Cloud Volumes ONTAP enregistré auprès du support NetApp).</block>
@@ -4869,4 +4868,5 @@
   <block id="a8bbd59ca2a81e7bb031ca075a23d475" category="list-text">Si vous y êtes invité,<block ref="ab60b4fc7da5cbb71bc719deeeffb706" category="inline-link-rx"></block>.</block>
   <block id="bda3783d2bc581168e75face42b077fc" category="admonition">Il s'agit du compte de service que vous avez configuré pour BlueXP, <block ref="217ece91c776cfab87e2daa3df8115e9" category="inline-link-macro-rx"></block>.</block>
   <block id="00da77f8fd6be3d642021bca988d9b5e" category="paragraph"><block ref="00da77f8fd6be3d642021bca988d9b5e" category="inline-link-rx"></block></block>
+  <block id="ece137c555d8c53c8378fee53f6273c4" category="paragraph">AKV peut être utilisé pour protéger <block ref="defc94716dcceab396c0509ed7db9366" category="inline-link-macro-rx"></block> Uniquement pour les SVM de données.</block>
 </blocks>
