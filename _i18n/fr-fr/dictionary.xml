@@ -3089,8 +3089,6 @@
   <block id="fef06ca11f3dec6f0be51962fd93388c" category="section-title">Licences de système BYOL</block>
   <block id="f9402b876a835ea0ecd00da4d201433a" category="paragraph">Une licence basée sur les nœuds offre jusqu'à 368 Tio de capacité pour une seule nœud ou paire HA.</block>
   <block id="7bf9d9c18215351b0d16f4f9343c9700" category="paragraph">Vous pouvez acheter plusieurs licences pour un système Cloud Volumes ONTAP BYOL pour allouer plus de 368 Tio de capacité. Par exemple, vous pouvez acheter deux licences pour allouer une capacité allant jusqu'à 736 Tio à Cloud Volumes ONTAP. Vous pouvez également acheter quatre licences pour obtenir jusqu'à 1.4 Pio.</block>
-  <block id="c695cd123d8c1b69b12f443c42ad98f9" category="inline-link">Voyez si vous disposez de licences disponibles à utiliser</block>
-  <block id="d5777fa0c0510a8e0af55b024f765d10" category="admonition">Certains systèmes de stockage ONTAP sur site que vous avez achetés peuvent inclure une licence Cloud Volumes ONTAP gratuite. Vous pouvez utiliser la licence pour créer un système Cloud Volumes ONTAP. Vous pouvez également appliquer la licence à un système Cloud Volumes ONTAP existant afin d'étendre la capacité.<block ref="e219f91c05893e1e7e9c773a8103d487" category="inline-link-rx"></block>.</block>
   <block id="ba23388576c937a1743b84554bd13c72" category="inline-link-macro">tiering des données inactives vers le stockage objet</block>
   <block id="255a885478279e7778252b0fbb8e555b" category="inline-link">Limites de stockage dans les notes de mise à jour de Cloud Volumes ONTAP</block>
   <block id="b64442e22e4baecde15d6214c922aa65" category="paragraph">Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de <block ref="c80d06c6bbd06cbbb7b267be96c5b90c" category="inline-link-macro-rx"></block>. Pour plus d'informations sur les limites de disques, reportez-vous à la section<block ref="02f1a1c120ffb5f37ea9d7c14b5f1158" category="inline-link-rx"></block>.</block>
@@ -3792,7 +3790,6 @@
   <block id="eef256fe1f25b0dfdcc3971d7f0a9974" category="summary">Vous pouvez lancer Cloud Volumes ONTAP dans une configuration à un seul système ou en tant que paire HA dans Google Cloud Platform.</block>
   <block id="9e1dbaa97d16ff9bc20f90cb1663f522" category="inline-link">doit disposer des autorisations requises</block>
   <block id="acbe60cca2f08e7905a3283a0c9d7b09" category="list-text">Compte de service associé au connecteur<block ref="9efb82dd4baa51f3442d848d3fff4260" category="inline-link-rx"></block></block>
-  <block id="1093810fe4a9e55d156722b8332da3cd" category="paragraph"><block ref="9b79239dba046d18af2dfc2ca929db17" category="inline-link-macro-rx"></block>.</block>
   <block id="fb387d3403e9d0f4168631a5c1e65d3d" category="inline-link">activé dans votre projet</block>
   <block id="3f7dd317abe229076594c229e96f375d" category="list-text">Les API Google Cloud doivent être de<block ref="2bf1d71c4d11fe94040400dbdd9bbe2e" category="inline-link-rx"></block>:</block>
   <block id="02468344d7eb024c93087ede43938890" category="list-text">*Choisissez un emplacement* : sélectionnez *Google Cloud* et *Cloud Volumes ONTAP*.</block>
@@ -4871,4 +4868,5 @@
   <block id="c6a56bb8eca094c529c75a2c22c92bcc" category="inline-link-macro">En savoir plus sur la gestion des licences basées sur les nœuds</block>
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Gérez les licences basées sur les nœuds dans le portefeuille digital pour vous assurer que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.</block>
+  <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
 </blocks>
