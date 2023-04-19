@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-license-management.html 
-keywords: byol, bring your own license, expiration, warning, node-based byol, node license 
+keywords: byol, bring your own license, expiration, warning, node-based byol, node license, capacity 
 summary: 'Chaque système Cloud Volumes ONTAP associé à un modèle BYOL basé sur des nœuds doit disposer d"une licence système installée avec un abonnement actif. BlueXP simplifie le processus en gérant les licences pour vous et en affichant un avertissement avant leur expiration.' 
 ---
 = Gestion de licence pour le modèle BYOL basé sur les nœuds
@@ -20,6 +20,8 @@ Chaque système Cloud Volumes ONTAP associé à un modèle BYOL basé sur des n�
 TIP: Une licence basée sur des nœuds est la génération précédente (BYOL) pour Cloud Volumes ONTAP. Une licence basée sur les nœuds est disponible uniquement pour les renouvellements de licence.
 
 link:concept-licensing.html["En savoir plus sur les options des licences Cloud Volumes ONTAP"].
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["En savoir plus sur la gestion des licences basées sur les nœuds"^].
 
 
 

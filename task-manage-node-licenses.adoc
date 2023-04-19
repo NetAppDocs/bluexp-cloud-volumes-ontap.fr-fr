@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-manage-node-licenses.html 
-keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator 
+keywords: license, licensing, install, updating license, system license, add system license, adding a system license, byol license, add byol license, update byol license, nlf, license generator, extra, by-node 
 summary: 'Gérez vos licences basées sur des nœuds dans le porte-monnaie numérique pour vous assurer que chaque système Cloud Volumes ONTAP dispose d"une licence valide avec la capacité requise.' 
 ---
 = Gestion des licences basées sur des nœuds
@@ -14,7 +14,7 @@ summary: 'Gérez vos licences basées sur des nœuds dans le porte-monnaie numé
 
 
 [role="lead"]
-Gérez les licences par nœud dans le portefeuille numérique pour vous assurer que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.
+Gérez les licences basées sur les nœuds dans le portefeuille digital pour vous assurer que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.
 
 _Les licences par nœud_ sont le modèle de licence de génération précédente (et non disponible pour les nouveaux clients) :
 
