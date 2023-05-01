@@ -1794,7 +1794,6 @@
   <block id="cd5ddfb19671526301ef6b32141e2e79" category="section-title">RPO et RTO</block>
   <block id="723596a60ea78fba91bcc7acb47cb786" category="paragraph">Une configuration haute disponibilité maintient la haute disponibilité de vos données comme suit :</block>
   <block id="f04b83c6c15bc920bde6b3bda82d692e" category="list-text">L'objectif du point de récupération (RPO) est de 0 seconde. Vos données sont transactionnaires, sans perte de données.</block>
-  <block id="9a761447afd0b14671defde47da1673b" category="list-text">L'objectif de temps de récupération (RTO) est de 60 secondes. En cas de panne, les données doivent être disponibles en 60 secondes ou moins.</block>
   <block id="218815dee60a5e42cd50732e4ad90420" category="section-title">Modèles de déploiement HA</block>
   <block id="a2efc5fc54fd68c09324deea01c6bc06" category="paragraph">Vous pouvez garantir la haute disponibilité de vos données en déployant une configuration haute disponibilité sur plusieurs zones de disponibilité (AZS) ou dans un seul AZ. Vous devriez consulter plus de détails sur chaque configuration afin de choisir celle qui répond le mieux à vos besoins.</block>
   <block id="bc2a46f921494df9fc5f911909c03874" category="section-title">Plusieurs zones de disponibilité</block>
@@ -2012,8 +2011,6 @@
   <block id="48c4b347a69acc97f71ef6775bf6260d" category="list-text">Pour Debian, l'utilisateur de Cloud par défaut est<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block>. Google Cloud crée et ajoute des certificats pour le<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block> Utilisateur lorsque l'accès SSH est demandé via la console Google Cloud ou la ligne de commande gcloud. Vous pouvez spécifier<block ref="d338b3f0f405eb5e51c8cc1e5ca66f02" prefix=" " category="inline-code"></block> pour obtenir des privilèges root.</block>
   <block id="b9c7a6d43bec359b40ab04efb944c7c4" category="list-text">L'objectif du point de récupération (RPO) est de 0 seconde.</block>
   <block id="bf7c76034279e30c18d14dc7990ee330" category="paragraph">Vos données sont transactionnaires, sans perte de données.</block>
-  <block id="856d7ffe64733ea6b89924ff6410d489" category="list-text">L'objectif de temps de récupération (RTO) est de 60 secondes.</block>
-  <block id="a440b74cbaeb3025f8a909b3dd0782ed" category="paragraph">En cas de panne, les données doivent être disponibles en 60 secondes ou moins.</block>
   <block id="8bf571523805ed82609d8283f739355b" category="paragraph">Vous pouvez assurer la haute disponibilité de vos données en déployant une configuration haute disponibilité dans plusieurs zones ou sur une seule zone.</block>
   <block id="6bf98e65a399f1401fd22fb5e31efc11" category="paragraph">À la différence d'un cluster ONTAP, le stockage dans une paire haute disponibilité Cloud Volumes ONTAP dans GCP n'est pas partagé entre les nœuds. En revanche, les données sont mises en miroir de manière synchrone entre les nœuds afin que les données soient disponibles en cas de panne.</block>
   <block id="a7f1ed3502c297566d12e3e3732abf11" category="paragraph">Vous pouvez utiliser une paire HA comme configuration active-active, dans laquelle les deux nœuds servent les données aux clients ou comme configuration active-passive, dans laquelle le nœud passif répond aux demandes de données uniquement s'il a pris en charge le stockage pour le nœud actif.</block>
@@ -4869,4 +4866,7 @@
   <block id="6dbf080f75126585a20cc8d6d87df22f" category="paragraph"><block ref="6b55a043b67b958778673f44bc8845b9" category="inline-link-macro-rx"></block>.</block>
   <block id="5a91158751eaabe4d195cd633fa37db6" category="paragraph">Gérez les licences basées sur les nœuds dans le portefeuille digital pour vous assurer que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.</block>
   <block id="0c1a89022d40f1a10025e9f9354168a0" category="paragraph"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block>.</block>
+  <block id="ed40352f9ed490b733344d4ac872054a" category="list-text">L'objectif de délai de restauration (RTO) est de 120 secondes. En cas de panne, les données doivent être disponibles en moins de 120 secondes.</block>
+  <block id="1b4ae0cf922638f65d049bc6332ca497" category="list-text">L'objectif de délai de restauration (RTO) est de 120 secondes.</block>
+  <block id="dbbdb92d530311690266ca56ba26d998" category="paragraph">En cas de panne, les données doivent être disponibles en moins de 120 secondes.</block>
 </blocks>

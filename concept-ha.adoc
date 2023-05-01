@@ -63,7 +63,7 @@ Le basculement, la resynchronisation et le rétablissement du stockage sont auto
 Une configuration haute disponibilité maintient la haute disponibilité de vos données comme suit :
 
 * L'objectif du point de récupération (RPO) est de 0 seconde. Vos données sont transactionnaires, sans perte de données.
-* L'objectif de temps de récupération (RTO) est de 60 secondes. En cas de panne, les données doivent être disponibles en 60 secondes ou moins.
+* L'objectif de délai de restauration (RTO) est de 120 secondes. En cas de panne, les données doivent être disponibles en moins de 120 secondes.
 
 
 
