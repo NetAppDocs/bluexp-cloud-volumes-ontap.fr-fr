@@ -83,4 +83,8 @@ image:screenshot_turn_off_redesign.png["Capture d'écran : affiche l'icône perm
 +
 L'arrêt du système peut prendre jusqu'à quelques minutes. Vous pouvez redémarrer les systèmes ultérieurement à partir de la page de l'environnement de travail.
 
++
+
+NOTE: Les snapshots sont créés automatiquement au redémarrage.
+
 

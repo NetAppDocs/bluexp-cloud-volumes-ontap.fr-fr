@@ -153,6 +153,10 @@ ifdef::aws[]
 
 
 * Un instantané EBS pour chaque disque d'initialisation et disque racine
++
+
+NOTE: Les snapshots sont créés automatiquement au redémarrage.
+
 * Pour les paires HA, un volume EBS pour l'instance Mediator, qui est d'environ 8 Gio
 * Lorsque vous activez le chiffrement des données dans AWS à l'aide du service de gestion des clés (KMS), les disques racine et de démarrage pour Cloud Volumes ONTAP sont également chiffrés. Cela comprend le disque de démarrage de l'instance médiateur dans une paire HA. Les disques sont chiffrés à l'aide du CMK que vous sélectionnez lors de la création de l'environnement de travail.
 
@@ -193,6 +197,10 @@ Si la machine virtuelle que vous choisissez pour Cloud Volumes ONTAP prend en ch
 * Deux disques durs standard de 1024 Gio pour les cœurs économiques (un par nœud)
 * Deux disques SSD Premium de 512 Gio pour la NVRAM (un par nœud)
 * Un snapshot Azure pour chaque disque d'initialisation et disque racine
++
+
+NOTE: Les snapshots sont créés automatiquement au redémarrage.
+
 * Par défaut, chaque disque dans Azure est chiffré au repos.
 
 
@@ -202,6 +210,10 @@ Si la machine virtuelle que vous choisissez pour Cloud Volumes ONTAP prend en ch
 * Deux disques durs standard de 1024 Gio pour les cœurs économiques (un par nœud)
 * Deux disques SSD Premium de 512 Gio pour la NVRAM (un par nœud)
 * Un snapshot Azure pour chaque disque d'initialisation et disque racine
++
+
+NOTE: Les snapshots sont créés automatiquement au redémarrage.
+
 * Par défaut, chaque disque dans Azure est chiffré au repos.
 
 
@@ -218,6 +230,10 @@ ifdef::gcp[]
 * Un disque persistant SSD de 500 Gio pour la NVRAM
 * Un disque persistant standard de 315 Gio pour économiser les cœurs
 * Snapshots pour les données de démarrage et racines
++
+
+NOTE: Les snapshots sont créés automatiquement au redémarrage.
+
 * Les disques de démarrage et racine sont chiffrés par défaut.
 
 
@@ -232,6 +248,10 @@ ifdef::gcp[]
 * Un disque persistant standard de 10 Gio pour les données médiateurs
 * Un disque persistant standard de 10 Gio pour les données de démarrage médiateur
 * Snapshots pour les données de démarrage et racines
++
+
+NOTE: Les snapshots sont créés automatiquement au redémarrage.
+
 * Les disques de démarrage et racine sont chiffrés par défaut.
 
 
