@@ -236,6 +236,7 @@ Si vous prévoyez d'utiliser Cloud Backup avec vos systèmes Cloud Volumes ONTAP
 ====
 ** Ha médiateur
 +
+--
 [source, json]
 ----
 {
@@ -251,12 +252,15 @@ Si vous prévoyez d'utiliser Cloud Backup avec vos systèmes Cloud Volumes ONTAP
 				"ec2:DescribeVpcs",
 				"ec2:ReplaceRoute",
 				"ec2:UnassignPrivateIpAddresses"
+                "sts:AssumeRole"
+                "ec2:DescribeSubnets"
 			],
 			"Resource": "*"
 		}
 	]
 }
 ----
+--
 
 
 . Créez un rôle IAM et associez les règles que vous avez créées au rôle.
