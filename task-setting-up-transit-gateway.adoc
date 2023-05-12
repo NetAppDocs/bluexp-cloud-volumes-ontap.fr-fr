@@ -29,7 +29,7 @@ image:diagram_transit_gateway.png["Un schéma qui montre une configuration haute
 Les étapes suivantes montrent comment configurer une configuration similaire.
 
 .Étapes
-. https://docs.aws.amazon.com/vpc/latest/tgw/tgw-getting-started.html["Créez une passerelle de transit et connectez les VPC à la passerelle"^].
+. https://["Créez une passerelle de transit et connectez les VPC à la passerelle"^].
 . Associez les VPC à la table de routage de la passerelle de transit.
 +
 .. Dans le service *VPC*, cliquez sur *Transit Gateway route tables*.

@@ -52,7 +52,7 @@ Les solutions de cryptage NetApp sont compatibles avec le chiffrement natif de v
 
 === Solutions de chiffrement NetApp (NVE et NAE)
 
-Prise en charge de Cloud Volumes ONTAP https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption (NVE) et chiffrement d'agrégat NetApp (NAE)"^]. NVE et NAE sont des solutions logicielles qui permettent le chiffrement des données au repos (conformes à la norme FIPS) de volumes 140-2. NVE et NAE utilisent tous deux le chiffrement AES 256 bits.
+Prise en charge de Cloud Volumes ONTAP https://["NetApp Volume Encryption (NVE) et chiffrement d'agrégat NetApp (NAE)"^]. NVE et NAE sont des solutions logicielles qui permettent le chiffrement des données au repos (conformes à la norme FIPS) de volumes 140-2. NVE et NAE utilisent tous deux le chiffrement AES 256 bits.
 
 * NVE chiffre les données au repos un volume à la fois. Chaque volume de données dispose de sa propre clé de chiffrement unique.
 * NAE est une extension de NVE qui chiffre les données pour chaque volume, tandis que les volumes partagent une clé dans l'ensemble de l'agrégat. NAE permet également la déduplication de blocs communs à tous les volumes de l'agrégat.
@@ -78,7 +78,7 @@ ifdef::aws[]
 
 === Service de gestion des clés AWS
 
-Lorsque vous lancez un système Cloud Volumes ONTAP dans AWS, vous pouvez activer le chiffrement des données à l'aide du http://docs.aws.amazon.com/kms/latest/developerguide/overview.html["AWS Key Management Service (KMS)"^]. BlueXP demande des clés de données à l'aide d'une clé maître client (CMK).
+Lorsque vous lancez un système Cloud Volumes ONTAP dans AWS, vous pouvez activer le chiffrement des données à l'aide du http://["AWS Key Management Service (KMS)"^]. BlueXP demande des clés de données à l'aide d'une clé maître client (CMK).
 
 
 TIP: Une fois que vous avez créé un système Cloud Volumes ONTAP, vous ne pouvez pas modifier la méthode de chiffrement des données AWS.
@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Chiffrement de service de stockage Azure
 
-Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide de https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Chiffrement de service de stockage Azure"^] Et elle est dotée d'une clé gérée par Microsoft.
+Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide de https://["Chiffrement de service de stockage Azure"^] Et elle est dotée d'une clé gérée par Microsoft.
 
 Si vous préférez, vous pouvez utiliser vos propres clés de chiffrement. link:task-set-up-azure-encryption.html["Découvrez comment configurer Cloud Volumes ONTAP de manière à utiliser une clé gérée par le client dans Azure"].
 
@@ -105,7 +105,7 @@ ifdef::gcp[]
 
 === Chiffrement par défaut Google Cloud Platform
 
-https://cloud.google.com/security/encryption-at-rest/["Chiffrement des données au repos Google Cloud Platform"^] Est activé par défaut pour Cloud Volumes ONTAP. Aucune configuration n'est requise.
+https://["Chiffrement des données au repos Google Cloud Platform"^] Est activé par défaut pour Cloud Volumes ONTAP. Aucune configuration n'est requise.
 
 Google Cloud Storage chiffre toujours vos données avant leur écriture sur le disque, mais vous pouvez utiliser les API BlueXP pour créer un système Cloud Volumes ONTAP qui utilise des clés de chiffrement _gérées par le client_. Il s'agit des clés que vous créez et gérez dans GCP à l'aide du service Cloud Key Management. link:task-setting-up-gcp-encryption.html["En savoir plus >>"].
 
@@ -119,9 +119,9 @@ Vous pouvez utiliser la fonctionnalité antivirus intégrée sur les systèmes O
 
 L'analyse antivirus ONTAP, appelée _Vscan_, associe le meilleur logiciel antivirus tiers à des fonctionnalités ONTAP, vous offrant ainsi la flexibilité nécessaire pour contrôler quels fichiers sont analysés et à quel moment.
 
-Pour plus d'informations sur les fournisseurs, les logiciels et les versions pris en charge par Vscan, voir le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^].
+Pour plus d'informations sur les fournisseurs, les logiciels et les versions pris en charge par Vscan, voir le http://["Matrice d'interopérabilité NetApp"^].
 
-Pour plus d'informations sur la configuration et la gestion de la fonctionnalité antivirus sur les systèmes ONTAP, consultez la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["Guide de configuration antivirus ONTAP 9"^].
+Pour plus d'informations sur la configuration et la gestion de la fonctionnalité antivirus sur les systèmes ONTAP, consultez la http://["Guide de configuration antivirus ONTAP 9"^].
 
 
 

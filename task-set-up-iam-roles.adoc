@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-iam-roles.html 
-keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions 
+keywords: iam role, mediator role, cloud volumes ontap role, policy, iam policy, permissions, cloud backup 
 summary: Les rôles IAM avec les autorisations requises doivent être associés à chaque nœud Cloud Volumes ONTAP. Il en va de même pour le médiateur HA. Il est plus facile de laisser BlueXP créer les rôles IAM pour vous, mais vous pouvez utiliser vos propres rôles. 
 ---
 = Configurer les rôles IAM pour Cloud Volumes ONTAP
@@ -120,7 +120,7 @@ NOTE: La fourniture de votre propre rôle IAM est requise dans l'environnement d
 ====
 ** Règle de sauvegarde pour les nœuds Cloud Volumes ONTAP
 +
-Si vous prévoyez d'utiliser Cloud Backup avec vos systèmes Cloud Volumes ONTAP, le rôle IAM pour les nœuds doit inclure la seconde règle indiquée ci-dessous.
+Si vous prévoyez d'utiliser la sauvegarde et la restauration BlueXP avec vos systèmes Cloud Volumes ONTAP, le rôle IAM des nœuds doit inclure la seconde règle présentée ci-dessous.
 
 +
 [role="tabbed-block"]
@@ -270,6 +270,6 @@ Si vous prévoyez d'utiliser Cloud Backup avec vos systèmes Cloud Volumes ONTAP
 Vous disposez désormais de rôles IAM que vous pouvez sélectionner lorsque vous créez un nouvel environnement de travail Cloud Volumes ONTAP.
 
 .Plus d'informations
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html["Documentation AWS : création de règles IAM"^]
-* https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentation AWS : création des rôles IAM"^]
+* https://["Documentation AWS : création de règles IAM"^]
+* https://["Documentation AWS : création des rôles IAM"^]
 

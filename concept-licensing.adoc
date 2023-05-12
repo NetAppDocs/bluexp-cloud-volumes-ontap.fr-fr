@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-licensing.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, cloud backup, digital wallet 
 summary: 'Plusieurs options de licence sont disponibles pour Cloud Volumes ONTAP. Chacune d"elles vous permet de choisir une configuration qui répond à vos besoins.' 
 ---
 = Licences Cloud Volumes ONTAP
@@ -23,7 +23,7 @@ Plusieurs options de licence sont disponibles pour Cloud Volumes ONTAP. Chacune 
 Des options de licence sont disponibles pour les nouveaux clients :
 
 Licences basées sur la capacité:: Payez plusieurs systèmes Cloud Volumes ONTAP sur votre compte NetApp grâce à la capacité provisionnée. Inclut la possibilité d'acheter des services de données cloud supplémentaires.
-Abonnement Keystone Flex:: Service basé sur un abonnement avec paiement à l'utilisation qui offre une expérience de cloud hybride transparente pour les paires haute disponibilité.
+Abonnement Keystone:: Service basé sur un abonnement avec paiement à l'utilisation qui offre une expérience de cloud hybride transparente pour les paires haute disponibilité.
 
 
 Le modèle de licence par nœud précédent reste disponible pour les clients qui ont déjà acheté une licence ou qui disposent d'un abonnement actif sur le marché.
@@ -137,7 +137,7 @@ Payez par capacité pour tout type de configuration Cloud Volumes ONTAP avec des
 +
 Un seul nœud ou haute disponibilité avec chargement de la capacité pour les volumes primaires et secondaires au même rythme
 
-* Inclut des sauvegardes de volume illimitées avec Cloud Backup, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent le pack professionnel
+* Inclut des sauvegardes de volume illimitées avec la sauvegarde et la restauration BlueXP, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent l'offre professionnelle
 * Ajoutez des services de données cloud de NetApp à vos frais supplémentaires
 
 
@@ -166,7 +166,7 @@ ifdef::gcp[]
 
 endif::gcp[]
 
-https://cloud.netapp.com/cloud-volumes-edge-cache["Découvrez comment Cloud volumes Edge cache peut aider votre entreprise"^]
+https://["Découvrez comment Cloud volumes Edge cache peut aider votre entreprise"^]
 
 
 
@@ -214,13 +214,13 @@ link:task-manage-capacity-licenses.html["Apprenez à changer les méthodes de ch
 
 === Tarifs
 
-Pour plus d'informations sur les prix, rendez-vous sur https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["Site Web NetApp BlueXP"^].
+Pour plus d'informations sur les prix, rendez-vous sur https://["Site Web NetApp BlueXP"^].
 
 
 
 === Essais gratuits
 
-Vous pouvez bénéficier d'un essai gratuit de 30 jours sur l'abonnement au paiement à l'utilisation disponible sur le marché de votre fournisseur cloud. Profitez de notre offre d'essai gratuit : Cloud Volumes ONTAP et Cloud Backup. La version d'évaluation commence lorsque vous vous inscrivez à l'offre sur le marché.
+Vous pouvez bénéficier d'un essai gratuit de 30 jours sur l'abonnement au paiement à l'utilisation disponible sur le marché de votre fournisseur cloud. L'essai gratuit inclut les fonctionnalités de sauvegarde et de restauration Cloud Volumes ONTAP et BlueXP. La version d'évaluation commence lorsque vous vous inscrivez à l'offre sur le marché.
 
 Il n'y a aucune limite d'instance ou de capacité. Vous pouvez déployer autant de systèmes Cloud Volumes ONTAP que vous le souhaitez et allouer gratuitement la capacité nécessaire pendant 30 jours. L'essai gratuit est automatiquement converti en abonnement payant à l'heure après 30 jours.
 
@@ -269,7 +269,7 @@ Ce total compte six systèmes. Vous aurez alors de la place pour 14 systèmes su
 
 Si vous disposez d'un déploiement de grande envergure nécessitant plus de 20 systèmes, contactez votre ingénieur commercial ou votre responsable de compte.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["En savoir plus sur les comptes NetApp"^].
+https://["En savoir plus sur les comptes NetApp"^].
 
 
 
@@ -299,7 +299,7 @@ Si vous dépassez votre capacité BYOL ou si votre licence expire, vous serez fa
 
 Le pack Essentials est facturé par type de déploiement (haute disponibilité ou nœud unique) et par type de volume (primaire ou secondaire). Par exemple, _Essentials HA_ a des prix différents de ceux de _Essentials Secondary HA_.
 
-Si vous avez acheté une licence Essentials auprès de NetApp (BYOL) et que vous dépassez la capacité de licence requise pour ce déploiement et ce type de volume, le porte-monnaie numérique facture les frais supplémentaires par rapport à une licence Essentials à un tarif plus élevé (le cas échéant). Cela arrive parce que nous utilisons la capacité disponible que vous avez déjà achetée en tant que capacité prépayée avant de payer par rapport au Marketplace. La facturation sur le marché ajouterait des coûts à votre facture mensuelle.
+Si vous avez acheté une licence Essentials auprès de NetApp (BYOL) et que vous dépassez la capacité sous licence pour ce type de déploiement et de volume, le portefeuille digital BlueXP facture les frais par rapport à une licence Essentials à prix plus élevé (si vous en avez une). Cela arrive parce que nous utilisons la capacité disponible que vous avez déjà achetée en tant que capacité prépayée avant de payer par rapport au Marketplace. La facturation sur le marché ajouterait des coûts à votre facture mensuelle.
 
 Voici un exemple. Imaginons que vous ayez les licences suivantes pour le pack Essentials :
 
@@ -307,9 +307,9 @@ Voici un exemple. Imaginons que vous ayez les licences suivantes pour le pack Es
 * Une licence _Essentials Single Node_ de 500 Tio qui n'a que 100 Tio de capacité engagée
 
 
-Une autre de 50 To est provisionnée sur une paire haute disponibilité avec des volumes secondaires. Au lieu de facturer ce 50 Tio à PAYGO, le porte-monnaie numérique facture le surplus de 50 Tio par rapport à la licence _Essentials Single Node_. Le prix de cette licence est supérieur à celui de _Essentials Secondary HA_, mais il est moins cher que le taux de facturation.
+Une autre de 50 To est provisionnée sur une paire haute disponibilité avec des volumes secondaires. Au lieu de facturer 50 Tio dans PAYGO, le portefeuille digital BlueXP facture le surplus de 50 Tio par rapport à la licence _Essentials Single Node_. Le prix de cette licence est supérieur à celui de _Essentials Secondary HA_, mais il est moins cher que le taux de facturation.
 
-Dans le porte-monnaie numérique, 50 Tio seront affichées comme facturés par rapport à la licence _Essentials Single Node_.
+Dans le portefeuille digital BlueXP, cette quantité de 50 To sera indiquée comme facturée sur la licence _Essentials Single Node_.
 
 
 
@@ -362,21 +362,21 @@ endif::gcp[]
 
 
 
-== Abonnement Keystone Flex
+== Abonnement Keystone
 
 Service basé sur un abonnement avec paiement à l'utilisation qui offre une expérience de cloud hybride transparente, pour les modèles de consommation OpEx, qui préfèrent les CapEx ou les crédits sur investissement en amont.
 
-Le chargement est basé sur la taille de la capacité engagée pour une ou plusieurs paires haute disponibilité Cloud Volumes ONTAP dans votre abonnement Keystone Flex.
+Le coût est calculé en fonction de la taille de votre capacité allouée pour une ou plusieurs paires Cloud Volumes ONTAP HA dans votre abonnement Keystone.
 
-La capacité provisionnée pour chaque volume est agrégée et comparée à la capacité dédiée à votre abonnement Keystone Flex. Les suppléments de capacité excédentaire sont facturés en rafale sur votre abonnement Keystone Flex.
+La capacité provisionnée pour chaque volume est agrégée et comparée à la capacité allouée dans votre abonnement Keystone régulièrement, et tout dépassement est facturé en rafale dans votre abonnement Keystone.
 
-https://www.netapp.com/services/subscriptions/keystone/flex-subscription/["En savoir plus sur les abonnements Keystone Flex"^].
+https://["En savoir plus sur les abonnements NetApp Keystone"^].
 
 
 
 === Configurations compatibles
 
-Les abonnements Keystone Flex sont pris en charge avec des paires haute disponibilité. Cette option de licence n'est pas prise en charge pour le moment avec des systèmes à un seul nœud.
+Les abonnements Keystone sont pris en charge avec les paires haute disponibilité. Cette option de licence n'est pas prise en charge pour le moment avec des systèmes à un seul nœud.
 
 
 
@@ -388,7 +388,7 @@ Chaque système Cloud Volumes ONTAP peut atteindre jusqu'à 2 Pio de capacité m
 
 === Comment démarrer
 
-Découvrez comment se lancer avec un abonnement Keystone Flex :
+Découvrez comment vous lancer avec un abonnement Keystone :
 
 ifdef::aws[]
 
@@ -427,7 +427,7 @@ Une licence basée sur les nœuds est toujours disponible pour les clients exist
 
 == Conversions de licence
 
-La conversion d'un système Cloud Volumes ONTAP existant en une autre méthode de licence n'est pas prise en charge. Les trois méthodes de licence actuelles sont les licences basées sur la capacité, les abonnements Keystone Flex et les licences basées sur les nœuds. Par exemple, vous ne pouvez pas convertir un système d'un système en licence basée sur des nœuds vers un système de licence basé sur la capacité (et inversement).
+La conversion d'un système Cloud Volumes ONTAP existant en une autre méthode de licence n'est pas prise en charge. Les trois méthodes de licence actuelles sont les licences basées sur la capacité, les abonnements Keystone et les licences basées sur les nœuds. Par exemple, vous ne pouvez pas convertir un système d'un système en licence basée sur des nœuds vers un système de licence basé sur la capacité (et inversement).
 
 Si vous souhaitez passer à un autre mode de licence, vous pouvez acheter une licence, déployer un nouveau système Cloud Volumes ONTAP avec cette licence, puis répliquer les données sur ce nouveau système.
 

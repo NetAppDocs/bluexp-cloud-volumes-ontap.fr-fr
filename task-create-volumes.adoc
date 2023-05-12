@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
 summary: Si vous avez besoin de plus de stockage après le lancement de votre système Cloud Volumes ONTAP initial, vous pouvez créer de nouveaux volumes FlexVol pour NFS, CIFS ou iSCSI à partir de BlueXP. 
 ---
 = Créer des volumes FlexVol
@@ -87,7 +87,7 @@ Certains des champs de cette page sont explicites. La liste suivante décrit les
 | Taille du volume | La taille maximale que vous pouvez saisir dépend en grande partie de l'activation du provisionnement fin, ce qui vous permet de créer un volume plus grand que le stockage physique actuellement disponible. 
 
 
-| Étiquettes | Les balises que vous ajoutez à un volume sont associées à l' https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Service modèles d'applications"^], qui peut vous aider à organiser et à simplifier la gestion de vos ressources. 
+| Étiquettes | Les balises que vous ajoutez à un volume sont associées à l' https://["Service modèles d'applications"^], qui peut vous aider à organiser et à simplifier la gestion de vos ressources. 
 
 
 | VM de stockage (SVM) | Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. Vous pouvez spécifier la VM de stockage du nouveau volume. 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Pour configurer les services de domaine Azure AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs ADDC* ou *ou=utilisateurs ADDC* dans ce champ.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Documentation Azure : créez une unité organisationnelle dans un domaine géré Azure AD Domain Services"^]
+*** Pour configurer les services de domaine Azure AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs ADDC* ou *ou=utilisateurs ADDC* dans ce champ.https://["Documentation Azure : créez une unité organisationnelle dans un domaine géré Azure AD Domain Services"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Pour configurer Google Managed Microsoft AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs,ou=Cloud* dans ce champ.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud Documentation : les unités organisationnelles de Google Managed Microsoft AD"^]
+*** Pour configurer Google Managed Microsoft AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs,ou=Cloud* dans ce champ.https://["Google Cloud Documentation : les unités organisationnelles de Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
 
 Domaine DNS:: Le domaine DNS de la machine virtuelle de stockage Cloud Volumes ONTAP (SVM). Dans la plupart des cas, le domaine est identique au domaine AD.
-Serveur NTP:: Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documents d'automatisation BlueXP"^] pour plus d'informations.
+Serveur NTP:: Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://["Documents d'automatisation BlueXP"^] pour plus d'informations.
 +
 --
 Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS.
@@ -252,7 +252,7 @@ image:screenshot_define_cvo_vol_from_template.png["Capture d'écran montrant un 
 . Sous _Context_, l'environnement de travail contient le nom de l'environnement de travail avec lequel vous avez démarré. Sélectionnez la *VM de stockage* où le volume sera créé.
 . Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <<create a volume,Créer un volume>> Pour obtenir des informations détaillées sur tous les paramètres nécessaires au déploiement d'un volume Cloud Volumes ONTAP.
 . Cliquez sur *appliquer* pour enregistrer les paramètres configurés dans l'action sélectionnée.
-. Si vous n'avez pas besoin de définir d'autres actions (par exemple, configuration de Cloud Backup), cliquez sur *Enregistrer le modèle*.
+. Si vous n'avez pas besoin de définir d'autres actions (par exemple, configuration de la sauvegarde et de la restauration BlueXP), cliquez sur *Enregistrer le modèle*.
 +
 S'il existe d'autres actions, cliquez sur l'action dans le volet gauche pour afficher les paramètres à compléter.
 
@@ -270,7 +270,7 @@ Cloud Volumes ONTAP provisionne le volume et affiche une page afin que vous puis
 
 image:screenshot_template_creating_resource_cvo.png["Capture d'écran indiquant la progression de la création de votre nouveau volume à partir du modèle."]
 
-En outre, si une action secondaire est implémentée dans le modèle, par exemple, l'activation de Cloud Backup sur le volume, cette action est également effectuée.
+Par ailleurs, si une action secondaire est implémentée dans le modèle, par exemple pour l'activation de la sauvegarde et de la restauration BlueXP sur le volume, cette action est également exécutée.
 
 
 

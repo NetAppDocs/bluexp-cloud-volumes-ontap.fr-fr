@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-updating-ontap-cloud.html 
-keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading 
+keywords: update, updating, upgrading, upgrade, software, downgrade, downgrading, FTP, HTTP, mediator, local image, revert, reverting, downgrading, cloud backup 
 summary: Mettez à niveau Cloud Volumes ONTAP depuis BlueXP pour accéder aux dernières nouvelles fonctionnalités et améliorations. Préparez les systèmes Cloud Volumes ONTAP avant de mettre à niveau le logiciel. 
 ---
 = Mettez à niveau le logiciel Cloud Volumes ONTAP
@@ -172,7 +172,7 @@ La mise à niveau d'une paire haute disponibilité s'effectue sans interruption 
 
 Le rétablissement automatique doit être activé sur une paire Cloud Volumes ONTAP HA (paramètre par défaut). Si ce n'est pas le cas, l'opération échouera.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentation ONTAP 9 : commandes pour la configuration du rétablissement automatique"^]
+http://["Documentation ONTAP 9 : commandes pour la configuration du rétablissement automatique"^]
 
 
 
@@ -181,7 +181,7 @@ http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D
 Si un système Cloud Volumes ONTAP a des relations SnapMirror actives, il est préférable de suspendre les transferts avant de mettre à jour le logiciel Cloud Volumes ONTAP. La suspension des transferts empêche les défaillances de SnapMirror. Vous devez suspendre les transferts depuis le système de destination.
 
 
-NOTE: Même si Cloud Backup utilise une implémentation de SnapMirror pour créer des fichiers de sauvegarde (appelée SnapMirror Cloud), les sauvegardes n'ont pas besoin d'être suspendues lors de la mise à niveau d'un système.
+NOTE: Même si la sauvegarde et la restauration BlueXP utilisent une implémentation de SnapMirror pour créer des fichiers de sauvegarde (appelé SnapMirror Cloud), il n'est pas nécessaire de suspendre les sauvegardes lors de la mise à niveau d'un système.
 
 .Description de la tâche
 Ces étapes décrivent l'utilisation de System Manager pour la version 9.3 et ultérieure.
@@ -279,7 +279,7 @@ Vous pouvez placer l'image du logiciel Cloud Volumes ONTAP sur le connecteur ou 
 Accédez à la base de connaissances NetApp pour obtenir des instructions détaillées :
 
 +
-https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/How_to_configure_Cloud_Manager_as_an_HTTPS_server_to_host_upgrade_images["Base de connaissances NetApp : comment configurer BlueXP en tant que serveur HTTPS pour héberger les images de mise à niveau"^]
+https://["Base de connaissances NetApp : comment configurer BlueXP en tant que serveur HTTPS pour héberger les images de mise à niveau"^]
 
 
 
@@ -293,7 +293,7 @@ Si vous disposez d'une connexion VPN au réseau virtuel, vous pouvez placer l'im
 
 NOTE: Le groupe de sécurité Cloud Volumes ONTAP prédéfini permet par défaut les connexions HTTP sortantes.
 
-. Obtenez l'image logicielle de https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["Le site de support NetApp"^].
+. Obtenez l'image logicielle de https://["Le site de support NetApp"^].
 . Copiez l'image du logiciel dans un répertoire du connecteur ou sur un serveur HTTP à partir duquel le fichier sera servi.
 +
 Deux chemins sont disponibles. Le chemin correct dépend de la version de votre connecteur.
@@ -342,6 +342,6 @@ La valeur de _maxDownloadSessions_ peut être 1 ou n'importe quel entier supéri
 
 Notez que 32 est un exemple de valeur. La valeur que vous devez utiliser dépend de votre configuration NAT et du nombre de sessions que vous pouvez avoir simultanément.
 
-https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["En savoir plus sur l'appel API /ocm/config"^].
+https://["En savoir plus sur l'appel API /ocm/config"^].
 
 endif::gcp[]

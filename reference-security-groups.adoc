@@ -361,4 +361,4 @@ Le groupe de sécurité prédéfini inclut les règles de sortie suivantes.
 
 == Règles pour le connecteur
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Afficher les règles de groupe de sécurité du connecteur"^]
+https://["Afficher les règles de groupe de sécurité du connecteur"^]

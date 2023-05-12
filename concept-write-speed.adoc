@@ -72,7 +72,7 @@ Si vous utilisez un système à un seul nœud, Cloud Volumes ONTAP prend en char
 
 Dès la version 9.8, Cloud Volumes ONTAP prend en charge une vitesse d'écriture élevée avec des paires HA lorsque vous utilisez presque tous les types d'instances EC2 pris en charge, sauf pour les instances m5.XLarge et r5.XLarge.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html["En savoir plus sur les instances Amazon EC2 prises en charge par Cloud Volumes ONTAP"^].
+https://["En savoir plus sur les instances Amazon EC2 prises en charge par Cloud Volumes ONTAP"^].
 
 endif::aws[]
 
@@ -84,7 +84,7 @@ ifdef::azure[]
 
 Si vous utilisez un système à un seul nœud, Cloud Volumes ONTAP prend en charge une vitesse d'écriture élevée pour tous les types de VM.
 
-Si vous utilisez une paire haute disponibilité, Cloud Volumes ONTAP prend en charge une vitesse d'écriture élevée avec plusieurs types de VM, à partir de la version 9.8.1. Accédez au https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Notes de version de Cloud Volumes ONTAP"^] Pour afficher les types de VM qui prennent en charge une vitesse d'écriture élevée.
+Si vous utilisez une paire haute disponibilité, Cloud Volumes ONTAP prend en charge une vitesse d'écriture élevée avec plusieurs types de VM, à partir de la version 9.8.1. Accédez au https://["Notes de version de Cloud Volumes ONTAP"^] Pour afficher les types de VM qui prennent en charge une vitesse d'écriture élevée.
 
 endif::azure[]
 
@@ -96,9 +96,9 @@ ifdef::gcp[]
 
 Si vous utilisez un système à un seul nœud, Cloud Volumes ONTAP prend en charge une vitesse d'écriture élevée pour tous les types de machines.
 
-Si vous utilisez une paire haute disponibilité, Cloud Volumes ONTAP prend en charge la vitesse d'écriture élevée avec plusieurs types de machines virtuelles, à commencer par la version 9.13.0. Accédez au https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html#supported-configurations-by-license["Notes de version de Cloud Volumes ONTAP"^] Pour afficher les types de VM qui prennent en charge une vitesse d'écriture élevée.
+Si vous utilisez une paire haute disponibilité, Cloud Volumes ONTAP prend en charge la vitesse d'écriture élevée avec plusieurs types de machines virtuelles, à commencer par la version 9.13.0. Accédez au https://["Notes de version de Cloud Volumes ONTAP"^] Pour afficher les types de VM qui prennent en charge une vitesse d'écriture élevée.
 
-https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Découvrez plus en détail les types de machines Google Cloud pris en charge par Cloud Volumes ONTAP"^].
+https://["Découvrez plus en détail les types de machines Google Cloud pris en charge par Cloud Volumes ONTAP"^].
 
 endif::gcp[]
 
@@ -142,7 +142,7 @@ Pour vérifier les paramètres NVFAIL:: `vol show -volume <vol-name> -fields nvf
 Pour désactiver l'option NVFAIL:: `vol modify -volume <vol-name> -nvfail off`
 
 
-En cas de perte de données, un volume NFS ou iSCSI avec NVFAIL activé devrait cesser de transmettre les données (le protocole CIFS n'a aucun impact, ce qui est sans état, n'a aucun impact). Pour plus de détails, reportez-vous à https://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mcc-mgmt-dr/GUID-40D04B8A-01F7-4E87-8161-E30BD80F5B7F.html["Impact de NVFAIL sur l'accès aux volumes NFS ou aux LUN"^].
+En cas de perte de données, un volume NFS ou iSCSI avec NVFAIL activé devrait cesser de transmettre les données (le protocole CIFS n'a aucun impact, ce qui est sans état, n'a aucun impact). Pour plus de détails, reportez-vous à https://["Impact de NVFAIL sur l'accès aux volumes NFS ou aux LUN"^].
 
 Pour vérifier l'état NVFAIL:: `vol show -fields in-nvfailed-state`
 

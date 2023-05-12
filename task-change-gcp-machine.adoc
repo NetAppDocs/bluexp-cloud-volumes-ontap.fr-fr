@@ -19,7 +19,7 @@ Vous pouvez choisir parmi plusieurs types de machines lorsque vous lancez Cloud 
 .Description de la tâche
 * Le rétablissement automatique doit être activé sur une paire Cloud Volumes ONTAP HA (paramètre par défaut). Si ce n'est pas le cas, l'opération échouera.
 +
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentation ONTAP 9 : commandes pour la configuration du rétablissement automatique"^]
+http://["Documentation ONTAP 9 : commandes pour la configuration du rétablissement automatique"^]
 
 * La modification du type de machine peut affecter les frais de service Google Cloud.
 * L'opération redémarre Cloud Volumes ONTAP.

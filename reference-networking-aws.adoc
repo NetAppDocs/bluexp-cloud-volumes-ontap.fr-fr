@@ -40,7 +40,7 @@ Si aucune connexion Internet sortante n'est disponible pour envoyer des messages
 
 Si vous avez défini des règles sortantes strictes pour Cloud Volumes ONTAP, vous devrez également vous assurer que le groupe de sécurité Cloud Volumes ONTAP autorise les connexions _sortantes_ sur le port 3128.
 
-Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous à la section https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentation ONTAP : configuration d'AutoSupport"^].
+Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous à la section https://["Documentation ONTAP : configuration d'AutoSupport"^].
 
 Si BlueXP vous informe que les messages AutoSupport ne peuvent pas être envoyés, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Résoudre les problèmes de configuration AutoSupport"].
 
@@ -50,7 +50,7 @@ Si BlueXP vous informe que les messages AutoSupport ne peuvent pas être envoyé
 
 L'instance de médiateur haute disponibilité doit disposer d'une connexion sortante au service AWS EC2 pour qu'il puisse faciliter le basculement du stockage. Pour fournir la connexion, vous pouvez ajouter une adresse IP publique, spécifier un serveur proxy ou utiliser une option manuelle.
 
-L'option manuelle peut être une passerelle NAT ou un terminal VPC d'interface, du sous-réseau cible au service AWS EC2. Pour plus de détails sur les terminaux VPC, reportez-vous à http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["Documentation AWS : terminaux VPC d'interface (AWS PrivateLink)"^].
+L'option manuelle peut être une passerelle NAT ou un terminal VPC d'interface, du sous-réseau cible au service AWS EC2. Pour plus de détails sur les terminaux VPC, reportez-vous à http://["Documentation AWS : terminaux VPC d'interface (AWS PrivateLink)"^].
 
 
 
@@ -176,23 +176,23 @@ TIP: Lorsqu'il est déployé dans plusieurs zones de disponibilité, plusieurs L
 Vous n'avez pas besoin de créer des groupes de sécurité car BlueXP le fait pour vous. Si vous devez utiliser votre propre, reportez-vous à la section link:reference-security-groups.html["Règles de groupe de sécurité"].
 
 
-TIP: Vous recherchez des informations sur le connecteur ? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Afficher les règles de groupe de sécurité du connecteur"^]
+TIP: Vous recherchez des informations sur le connecteur ? https://["Afficher les règles de groupe de sécurité du connecteur"^]
 
 
 
 === Connexion pour le Tiering des données
 
-Si vous souhaitez utiliser EBS comme niveau de performance et AWS S3 comme niveau de capacité, vous devez vous assurer que Cloud Volumes ONTAP est connecté à S3. La meilleure façon de fournir cette connexion est de créer un terminal VPC vers le service S3. Pour obtenir des instructions, reportez-vous à la section https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentation AWS : création d'un terminal de passerelle"^].
+Si vous souhaitez utiliser EBS comme niveau de performance et AWS S3 comme niveau de capacité, vous devez vous assurer que Cloud Volumes ONTAP est connecté à S3. La meilleure façon de fournir cette connexion est de créer un terminal VPC vers le service S3. Pour obtenir des instructions, reportez-vous à la section https://["Documentation AWS : création d'un terminal de passerelle"^].
 
 Lorsque vous créez le terminal VPC, veillez à sélectionner la région, le VPC et la table de routage correspondant à l'instance Cloud Volumes ONTAP. Vous devez également modifier le groupe de sécurité pour ajouter une règle HTTPS sortante qui active le trafic vers le terminal S3. Dans le cas contraire, Cloud Volumes ONTAP ne peut pas se connecter au service S3.
 
-Si vous rencontrez des problèmes, reportez-vous à la section https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^]
+Si vous rencontrez des problèmes, reportez-vous à la section https://["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^]
 
 
 
 === Connexions aux systèmes ONTAP
 
-Pour répliquer les données entre un système Cloud Volumes ONTAP dans AWS et des systèmes ONTAP d'autres réseaux, vous devez disposer d'une connexion VPN entre le VPC AWS et l'autre réseau, par exemple votre réseau d'entreprise. Pour obtenir des instructions, reportez-vous à la section https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/SetUpVPNConnections.html["Documentation AWS : configuration d'une connexion VPN AWS"^].
+Pour répliquer les données entre un système Cloud Volumes ONTAP dans AWS et des systèmes ONTAP d'autres réseaux, vous devez disposer d'une connexion VPN entre le VPC AWS et l'autre réseau, par exemple votre réseau d'entreprise. Pour obtenir des instructions, reportez-vous à la section https://["Documentation AWS : configuration d'une connexion VPN AWS"^].
 
 
 
@@ -202,7 +202,7 @@ Si vous souhaitez provisionner le stockage CIFS, vous devez configurer DNS et Ac
 
 Le serveur DNS doit fournir des services de résolution de noms pour l'environnement Active Directory. Vous pouvez configurer les jeux d'options DHCP pour qu'ils utilisent le serveur DNS EC2 par défaut, qui ne doit pas être le serveur DNS utilisé par l'environnement Active Directory.
 
-Pour obtenir des instructions, reportez-vous à la section https://aws-quickstart.github.io/quickstart-microsoft-activedirectory/["Documentation AWS : active Directory Domain Services sur le cloud AWS : déploiement de référence rapide"^].
+Pour obtenir des instructions, reportez-vous à la section https://["Documentation AWS : active Directory Domain Services sur le cloud AWS : déploiement de référence rapide"^].
 
 
 
@@ -254,7 +254,7 @@ Si vous ne disposez que d'une seule table de routage pour les sous-réseaux de v
 
 Par exemple, vous pouvez avoir deux sous-réseaux associés à différentes tables de routage. Si vous sélectionnez la table de routage A, mais pas la table de routage B, les clients du sous-réseau associé à la table de routage A peuvent accéder à la paire HA, mais les clients du sous-réseau associé à la table de routage B ne peuvent pas.
 
-Pour plus d'informations sur les tables de routage, voir http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Route_Tables.html["Documentation AWS : tables de routage"^].
+Pour plus d'informations sur les tables de routage, voir http://["Documentation AWS : tables de routage"^].
 
 --
 Connexion aux outils de gestion NetApp:: Pour utiliser les outils de gestion NetApp avec des configurations haute disponibilité figurant dans plusieurs modèles AZS, vous disposez de deux options de connexion :
@@ -281,6 +281,6 @@ image:diagram_ha_networking.png["Image conceptuelle de l'association des composa
 
 Si vous n'avez pas encore créé de connecteur, vous devez également consulter les exigences de mise en réseau pour le connecteur.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Afficher les exigences de mise en réseau du connecteur"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["Règles de groupe de sécurité dans AWS"^]
+* https://["Afficher les exigences de mise en réseau du connecteur"^]
+* https://["Règles de groupe de sécurité dans AWS"^]
 

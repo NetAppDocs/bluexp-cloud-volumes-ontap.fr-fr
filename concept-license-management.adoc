@@ -33,7 +33,7 @@ Vous pouvez acheter plusieurs licences pour un système Cloud Volumes ONTAP BYOL
 
 Le nombre de licences que vous pouvez acheter pour un système à un seul nœud ou une paire HA est illimité.
 
-Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de link:concept-data-tiering.html["tiering des données inactives vers le stockage objet"]. Pour plus d'informations sur les limites de disques, reportez-vous à la section https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Limites de stockage dans les notes de mise à jour de Cloud Volumes ONTAP"^].
+Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de link:concept-data-tiering.html["tiering des données inactives vers le stockage objet"]. Pour plus d'informations sur les limites de disques, reportez-vous à la section https://["Limites de stockage dans les notes de mise à jour de Cloud Volumes ONTAP"^].
 
 
 
@@ -41,7 +41,7 @@ Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de
 
 Lorsque vous créez un système BYOL basé sur des nœuds, BlueXP vous demande le numéro de série de votre licence et votre compte sur le site de support NetApp. BlueXP utilise le compte pour télécharger le fichier de licence depuis NetApp et l'installer sur le système Cloud Volumes ONTAP.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Découvrez comment ajouter des comptes au site de support NetApp à BlueXP"^].
+https://["Découvrez comment ajouter des comptes au site de support NetApp à BlueXP"^].
 
 Si BlueXP ne peut pas accéder au fichier de licence via la connexion Internet sécurisée, vous pouvez link:task-manage-node-licenses.html["Procurez-vous le fichier vous-même, puis téléchargez manuellement le fichier dans BlueXP"].
 

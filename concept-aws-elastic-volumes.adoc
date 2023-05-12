@@ -37,7 +37,7 @@ Notez que les limites de capacité totale du système restent les mêmes.
 
 
 
-https://aws.amazon.com/ebs/features/["En savoir plus sur Elastic volumes d'AWS"^]
+https://["En savoir plus sur Elastic volumes d'AWS"^]
 
 
 
@@ -69,7 +69,7 @@ Depuis la version 3.9.19, le connecteur nécessite les autorisations suivantes p
 * ec2 : Modifier le volume
 
 
-Ces autorisations sont incluses dans https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Règles fournies par NetApp"^]
+Ces autorisations sont incluses dans https://["Règles fournies par NetApp"^]
 
 
 
@@ -186,6 +186,6 @@ link:task-manage-aggregates.html["Découvrez comment augmenter la capacité des 
 Si le système Cloud Volumes ONTAP de destination prend en charge les volumes Elastic, un volume de destination sera placé sur un agrégat sur lequel les volumes élastiques sont activés (tant que vous choisissez un disque gp3 ou io1).
 
 +
-https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Découvrez comment configurer la réplication des données"^]
+https://["Découvrez comment configurer la réplication des données"^]
 
 

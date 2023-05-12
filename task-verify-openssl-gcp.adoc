@@ -14,7 +14,7 @@ summary: 'Vérifiez le fichier disk.RAW téléchargé de Google Cloud par rappor
 
 
 [role="lead"]
-Vous pouvez vérifier le fichier Disk.RAW téléchargé de Google Cloud par rapport au contenu du fichier condensé disponible via le https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^] Utilisation d'OpenSSL.
+Vous pouvez vérifier le fichier Disk.RAW téléchargé de Google Cloud par rapport au contenu du fichier condensé disponible via le https://["NSS"^] Utilisation d'OpenSSL.
 
 
 NOTE: Les commandes OpenSSL permettant de valider l'image sont compatibles avec les machines Linux, Mac OS et Windows.

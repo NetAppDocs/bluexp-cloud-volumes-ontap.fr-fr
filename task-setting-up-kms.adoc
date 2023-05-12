@@ -22,14 +22,14 @@ Si vous souhaitez utiliser le chiffrement Amazon avec Cloud Volumes ONTAP, vous 
 La CMK peut être une CMK gérée par AWS ou une CMK gérée par le client. Il peut se trouver dans le même compte AWS que BlueXP et Cloud Volumes ONTAP ou dans un autre compte AWS.
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master_keys["Documentation AWS : clés principales client (CMK)"^]
+https://["Documentation AWS : clés principales client (CMK)"^]
 
 . Modifiez la stratégie clé pour chaque CMK en ajoutant le rôle IAM qui fournit des autorisations à BlueXP en tant qu'utilisateur _key_.
 +
 L'ajout du rôle IAM en tant qu'utilisateur principal donne aux autorisations BlueXP d'utiliser le CMK avec Cloud Volumes ONTAP.
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["Documentation AWS : modification des clés"^]
+https://["Documentation AWS : modification des clés"^]
 
 . Si le CMK se trouve dans un autre compte AWS, procédez comme suit :
 +
@@ -96,7 +96,7 @@ La stratégie suivante fournit les autorisations dont BlueXP a besoin pour utili
 }
 ----
 +
-Pour plus d'informations sur ce processus, reportez-vous à la section https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["Documentation AWS : possibilité pour les utilisateurs d'autres comptes d'utiliser une clé KMS"^].
+Pour plus d'informations sur ce processus, reportez-vous à la section https://["Documentation AWS : possibilité pour les utilisateurs d'autres comptes d'utiliser une clé KMS"^].
 
 
 
@@ -108,6 +108,6 @@ Cette étape est nécessaire si le Tiering des données sur Cloud Volumes ONTAP 
 Vous devrez effectuer cette étape _After_ déployer Cloud Volumes ONTAP car le rôle IAM est créé lorsque vous créez un environnement de travail. (Bien sûr, vous avez la possibilité d'utiliser un rôle IAM Cloud Volumes ONTAP existant afin d'effectuer cette étape auparavant.)
 
 +
-https://docs.aws.amazon.com/kms/latest/developerguide/editing-keys.html["Documentation AWS : modification des clés"^]
+https://["Documentation AWS : modification des clés"^]
 
 

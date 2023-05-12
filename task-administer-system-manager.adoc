@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-administer-advanced-view.html 
-keywords: system manager, advanced view, access system manager, load system manager, use system manager 
+keywords: system manager, advanced view, access system manager, load system manager, use system manager, cloud tiering 
 summary: 'Si vous avez besoin d"effectuer une gestion avancée d"Cloud Volumes ONTAP, vous pouvez utiliser ONTAP System Manager, interface de gestion fournie avec un système ONTAP. Nous avons inclus l"interface System Manager directement dans BlueXP afin que vous n"ayez pas besoin de laisser BlueXP pour une gestion avancée.' 
 ---
 = Administrer Cloud Volumes ONTAP à l'aide de la vue avancée
@@ -60,9 +60,9 @@ L'intégration de System Manager n'est pas prise en charge dans les régions Gov
 
 Quelques fonctionnalités qui s'affichent dans l'interface de System Manager ne sont pas prises en charge avec Cloud Volumes ONTAP :
 
-* Tiering dans le cloud
+* Tiering BlueXP
 +
-Le service NetApp Cloud Tiering n'est pas pris en charge par Cloud Volumes ONTAP. Le Tiering des données vers le stockage objet doit être configuré directement depuis la vue standard de BlueXP lors de la création de volumes.
+Le service de Tiering BlueXP n'est pas pris en charge avec Cloud Volumes ONTAP. Le Tiering des données vers le stockage objet doit être configuré directement depuis la vue standard de BlueXP lors de la création de volumes.
 
 * Tiers
 +
@@ -98,9 +98,9 @@ image:screenshot_advanced_view.png["Capture d'écran d'un environnement de trava
 
 == Aide sur l'utilisation de System Manager
 
-Si vous avez besoin d'aide pour utiliser System Manager avec Cloud Volumes ONTAP, vous pouvez voir https://docs.netapp.com/us-en/ontap/index.html["Documentation ONTAP"^] pour obtenir des instructions détaillées. Voici quelques liens utiles :
+Si vous avez besoin d'aide pour utiliser System Manager avec Cloud Volumes ONTAP, vous pouvez voir https://["Documentation ONTAP"^] pour obtenir des instructions détaillées. Voici quelques liens utiles :
 
-* https://docs.netapp.com/us-en/ontap/volume-admin-overview-concept.html["Gestion des volumes et des LUN"^]
-* https://docs.netapp.com/us-en/ontap/network-manage-overview-concept.html["Gestion du réseau"^]
-* https://docs.netapp.com/us-en/ontap/concept_dp_overview.html["Protection des données"^]
+* https://["Gestion des volumes et des LUN"^]
+* https://["Gestion du réseau"^]
+* https://["Protection des données"^]
 

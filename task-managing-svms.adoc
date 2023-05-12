@@ -23,7 +23,7 @@ Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit 
 
 == Nombre de machines virtuelles de stockage pris en charge
 
-Plusieurs machines virtuelles de stockage sont prises en charge dans certaines configurations. Accédez au https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notes de version de Cloud Volumes ONTAP"^] Pour vérifier le nombre de machines virtuelles de stockage pris en charge pour votre version de Cloud Volumes ONTAP.
+Plusieurs machines virtuelles de stockage sont prises en charge dans certaines configurations. Accédez au https://["Notes de version de Cloud Volumes ONTAP"^] Pour vérifier le nombre de machines virtuelles de stockage pris en charge pour votre version de Cloud Volumes ONTAP.
 
 
 
@@ -62,6 +62,6 @@ image:screenshot_svm.gif["Capture d'écran : affiche le champ Nom de la SVM et l
 
 BlueXP ne propose pas de prise en charge de la configuration ou de l'orchestration pour la reprise après incident des machines virtuelles de stockage. Vous devez utiliser System Manager ou l'interface de ligne de commandes.
 
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["Guide de préparation rapide pour la reprise après incident du SVM"^]
-* https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["Guide de reprise après incident de SVM Express"^]
+* https://["Guide de préparation rapide pour la reprise après incident du SVM"^]
+* https://["Guide de reprise après incident de SVM Express"^]
 
