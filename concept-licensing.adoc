@@ -370,7 +370,7 @@ Le coût est calculé en fonction de la taille de votre capacité allouée pour 
 
 La capacité provisionnée pour chaque volume est agrégée et comparée à la capacité allouée dans votre abonnement Keystone régulièrement, et tout dépassement est facturé en rafale dans votre abonnement Keystone.
 
-https://[][En savoir plus sur les abonnements NetApp Keystone^].
+https://["En savoir plus sur les abonnements NetApp Keystone"^].
 
 
 

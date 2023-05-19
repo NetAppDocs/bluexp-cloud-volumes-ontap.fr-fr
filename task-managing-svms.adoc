@@ -43,25 +43,4 @@ image:screenshot_replicate_volume_svm.gif["Une capture d'écran montre la possib
 
 == Modifier le nom de la VM de stockage par défaut
 
-BlueXP nomme automatiquement la machine virtuelle de stockage unique qu'elle crée pour Cloud Volumes ONTAP. Si vous avez des normes de nommage très strictes, vous pouvez modifier le nom de la machine virtuelle de stockage. Par exemple, vous pouvez indiquer le nom des machines virtuelles de stockage dans vos clusters ONTAP.
-
-Si vous avez créé des machines virtuelles de stockage supplémentaires pour Cloud Volumes ONTAP, vous ne pouvez pas renommer ces machines virtuelles de BlueXP. Pour ce faire, vous devez utiliser System Manager ou l'interface de ligne de commandes directement dans Cloud Volumes ONTAP.
-
-.Étapes
-. Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *informations*.
-. Cliquez sur l'icône d'édition située à droite du nom de la VM de stockage.
-+
-image:screenshot_svm.gif["Capture d'écran : affiche le champ Nom de la SVM et l'icône d'édition que vous devez cliquer pour modifier le nom de la SVM."]
-
-. Dans la boîte de dialogue Modifier le nom du SVM, modifiez le nom, puis cliquez sur *Enregistrer*.
-
-
-
-
-== Gérer les machines virtuelles de stockage pour la reprise après incident
-
-BlueXP ne propose pas de prise en charge de la configuration ou de l'orchestration pour la reprise après incident des machines virtuelles de stockage. Vous devez utiliser System Manager ou l'interface de ligne de commandes.
-
-* https://["Guide de préparation rapide pour la reprise après incident du SVM"^]
-* https://["Guide de reprise après incident de SVM Express"^]
-
+BlueXP nomme automatiquement la machine virtuelle de stockage unique qu'elle crée pour Cloud Volumes ONTAP. Dans System Manager, l'interface de ligne de commandes ou l'API, vous pouvez modifier le nom de la machine virtuelle de stockage si vous avez des normes de nommage strictes. Par exemple, vous pouvez indiquer le nom des machines virtuelles de stockage dans vos clusters ONTAP.

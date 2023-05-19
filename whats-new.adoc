@@ -822,7 +822,7 @@ L'abonnement Keystone est un service d'abonnement flexible avec paiement à l'ut
 L'abonnement Keystone est pris en charge avec toutes les nouvelles versions de Cloud Volumes ONTAP que vous pouvez déployer à partir de BlueXP.
 
 * https://["En savoir plus sur les abonnements NetApp Keystone"^].
-* link:task-manage-keystone.html["Découvrez comment vous lancer avec les abonnements Keystone dans BlueXP"].
+* link:task-manage-keystone.html["Découvrez comment vous lancer avec les abonnements Keystone dans BlueXP"^].
 
 
 

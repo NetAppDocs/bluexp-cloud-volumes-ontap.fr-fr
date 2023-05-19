@@ -14,7 +14,7 @@ summary: 'Gérez vos licences basées sur des nœuds dans le portefeuille digita
 
 
 [role="lead"]
-5a91158751eaabe4d195cd633fa37db6
+Gérez les licences basées sur les nœuds dans le portefeuille digital BlueXP pour vérifier que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.
 
 _Les licences par nœud_ sont le modèle de licence de génération précédente (et non disponible pour les nouveaux clients) :
 

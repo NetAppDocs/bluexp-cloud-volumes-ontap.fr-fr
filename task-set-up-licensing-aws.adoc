@@ -152,7 +152,7 @@ link:task-deploying-otc-aws.html["Consultez des instructions détaillées pour l
 
 == Abonnement Keystone
 
-L'abonnement Keystone est un service d'abonnement avec paiement basé sur l'utilisation. link:concept-licensing.html#keystone-subscription["En savoir plus sur les abonnements NetApp Keystone"].
+L'abonnement Keystone est un service d'abonnement avec paiement basé sur l'utilisation. link:concept-licensing.html#keystone-subscription["En savoir plus sur les abonnements NetApp Keystone"^].
 
 .Étapes
 . Si vous n'avez pas encore d'abonnement, https://["Contactez NetApp"^]
