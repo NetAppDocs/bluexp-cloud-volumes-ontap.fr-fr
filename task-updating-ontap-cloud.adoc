@@ -32,7 +32,7 @@ Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis Blue
 
 === Comment mettre à niveau
 
-BlueXP propose trois méthodes de mise à niveau d'Cloud Volumes ONTAP :
+BlueXP offre deux façons de mettre à niveau Cloud Volumes ONTAP :
 
 * En suivant les notifications de mise à niveau qui apparaissent dans l'environnement de travail
 * En plaçant l'image de mise à niveau dans un emplacement HTTPS, puis en fournissant BlueXP avec l'URL
