@@ -308,6 +308,10 @@ Si vous avez copié l'image logicielle sur le connecteur dans le chemin indiqué
 +
 \http://<Connector-private-IP-address>/ontap/images/<image-file-name>
 
++
+
+NOTE: Dans l'URL, *image-file-name* doit suivre le format "COT.image.9.13.1P2.tgz".
+
 
 
 .Résultat
