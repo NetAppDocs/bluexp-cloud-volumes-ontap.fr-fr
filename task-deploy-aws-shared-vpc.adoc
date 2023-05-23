@@ -16,7 +16,7 @@ summary: 'Depuis la version 9.11.1, les paires haute disponibilité Cloud Volume
 [role="lead"]
 Depuis la version 9.11.1, les paires haute disponibilité Cloud Volumes ONTAP sont prises en charge dans AWS avec le partage VPC. Le partage VPC permet à votre entreprise de partager des sous-réseaux avec d'autres comptes AWS. Pour utiliser cette configuration, vous devez configurer votre environnement AWS, puis déployer la paire HA à l'aide de l'API.
 
-Avec https://["Partage de VPC"^], Une configuration Cloud Volumes ONTAP HA est répartie sur deux comptes :
+Avec https://aws.amazon.com/blogs/networking-and-content-delivery/vpc-sharing-a-new-approach-to-multiple-accounts-and-vpc-management/["Partage de VPC"^], Une configuration Cloud Volumes ONTAP HA est répartie sur deux comptes :
 
 * Le compte propriétaire du VPC, qui détient le réseau (le VPC, les sous-réseaux, les tables de routage et le groupe de sécurité Cloud Volumes ONTAP)
 * Le compte participant, où les instances EC2 sont déployées dans des sous-réseaux partagés (incluant les deux nœuds HA et le médiateur)
@@ -38,7 +38,7 @@ Lorsque vous créez l'environnement de travail Cloud Volumes ONTAP, BlueXP crée
 Cette étape est requise pour déployer la paire haute disponibilité dans les sous-réseaux partagés.
 
 +
-https://["Documentation AWS : partagez un sous-réseau"^]
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html#vpc-sharing-share-subnet["Documentation AWS : partagez un sous-réseau"^]
 
 . Dans le compte propriétaire VPC, créez un groupe de sécurité pour Cloud Volumes ONTAP.
 +
@@ -82,7 +82,7 @@ Par exemple :
 }
 ----
 +
-https://["Découvrez l'API Cloud Volumes ONTAP"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/overview.html["Découvrez l'API Cloud Volumes ONTAP"^]
 
 
 

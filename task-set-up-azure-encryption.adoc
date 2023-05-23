@@ -14,13 +14,13 @@ summary: Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP da
 
 
 [role="lead"]
-Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide de https://["Chiffrement de service de stockage Azure"] Et elle est dotée d'une clé gérée par Microsoft. Mais vous pouvez utiliser votre propre clé de cryptage en suivant les étapes de cette page.
+Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide de https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Chiffrement de service de stockage Azure"] Et elle est dotée d'une clé gérée par Microsoft. Mais vous pouvez utiliser votre propre clé de cryptage en suivant les étapes de cette page.
 
 
 
 == Présentation du chiffrement des données
 
-Les données Cloud Volumes ONTAP sont automatiquement chiffrées dans Azure à l'aide de https://["Chiffrement de service de stockage Azure"^]. L'implémentation par défaut utilise une clé gérée par Microsoft. Aucune configuration n'est requise.
+Les données Cloud Volumes ONTAP sont automatiquement chiffrées dans Azure à l'aide de https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Chiffrement de service de stockage Azure"^]. L'implémentation par défaut utilise une clé gérée par Microsoft. Aucune configuration n'est requise.
 
 Pour utiliser une clé gérée par le client avec Cloud Volumes ONTAP, vous devez effectuer les opérations suivantes :
 
@@ -54,7 +54,7 @@ Zone de disponibilité unique d'Azure HA::
 --
 * Tous les comptes de stockage Azure pour Cloud Volumes ONTAP sont chiffrés à l'aide d'une clé gérée par le client.^1^
 * Tous les nouveaux comptes de stockage (par exemple, lorsque vous ajoutez des disques ou des agrégats) utilisent également la même clé.^1^
-* À partir de ONTAP 9.10.1P3, pour la NVRAM et le disque principal, BlueXP utilise un https://["jeu de cryptage de disques"^], qui permet la gestion des clés de cryptage avec des disques gérés. Les versions inférieures utilisent une clé gérée par Microsoft au lieu de la clé gérée par le client.
+* À partir de ONTAP 9.10.1P3, pour la NVRAM et le disque principal, BlueXP utilise un https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["jeu de cryptage de disques"^], qui permet la gestion des clés de cryptage avec des disques gérés. Les versions inférieures utilisent une clé gérée par Microsoft au lieu de la clé gérée par le client.
 
 
 --
@@ -62,7 +62,7 @@ Un seul nœud::
 +
 --
 * Tous les comptes de stockage Azure pour Cloud Volumes ONTAP sont chiffrés à l'aide d'une clé gérée par le client. ^1^
-* Pour les disques racine, de démarrage et de données, BlueXP utilise un https://["jeu de cryptage de disques"^], qui permet la gestion des clés de cryptage avec des disques gérés.
+* Pour les disques racine, de démarrage et de données, BlueXP utilise un https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption["jeu de cryptage de disques"^], qui permet la gestion des clés de cryptage avec des disques gérés.
 * Les nouveaux disques de données utilisent également le même jeu de cryptage de disque.
 * À partir de ONTAP 9.9.1P7, pour la NVRAM et le disque central, BlueXP utilise un ensemble de cryptage de disque qui permet de gérer les clés de cryptage avec des disques gérés. Les versions inférieures utilisent une clé gérée par Microsoft au lieu de la clé gérée par le client.
 
@@ -81,7 +81,7 @@ Un seul nœud::
 Le coffre-fort de clés doit résider dans la même région et l'abonnement Azure dans laquelle vous prévoyez de créer le système Cloud Volumes ONTAP.
 
 .Étapes
-. https://["Créez un coffre-fort de clés dans votre abonnement Azure"^].
+. https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Créez un coffre-fort de clés dans votre abonnement Azure"^].
 +
 Notez les exigences suivantes pour le coffre-fort de clés :
 
@@ -96,7 +96,7 @@ Notez les exigences suivantes pour le coffre-fort de clés :
 
 
 
-. https://["Générez une clé dans le coffre-fort de clés"^].
+. https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["Générez une clé dans le coffre-fort de clés"^].
 +
 Notez les exigences suivantes pour la clé :
 
@@ -126,7 +126,7 @@ Si vous souhaitez utiliser une clé gérée par le client avec un système Cloud
 "Microsoft.KeyVault/vaults/accessPolicies/write"
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
-https://["Affichez la liste des autorisations les plus récentes"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Affichez la liste des autorisations les plus récentes"^]
 
 
 NOTE: Les autorisations ne sont pas nécessaires pour les paires haute disponibilité dans une seule zone.
@@ -143,7 +143,7 @@ Pour un seul nœud : `GET /azure/vsa/metadata/vaults`
 Notez les *name* et *ResourceGroup*. Vous devrez spécifier ces valeurs à l'étape suivante.
 
 +
-https://["En savoir plus sur cet appel d'API"^].
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["En savoir plus sur cet appel d'API"^].
 
 . Obtenez la liste des clés dans le coffre-fort à l'aide de l'appel d'API BlueXP suivant.
 +
@@ -156,7 +156,7 @@ Pour un seul nœud : `GET /azure/vsa/metadata/keys-vault`
 Notez le *keyName*. Vous devrez spécifier cette valeur (avec le nom du coffre-fort) à l'étape suivante.
 
 +
-https://["En savoir plus sur cet appel d'API"^].
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-hametadata["En savoir plus sur cet appel d'API"^].
 
 . Créez un système Cloud Volumes ONTAP à l'aide de l'appel d'API BlueXP suivant.
 +
@@ -177,7 +177,7 @@ Le corps de la demande doit inclure les champs suivants :
 }
 ----
 +
-https://["En savoir plus sur cet appel d'API"^].
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-haworking-environments["En savoir plus sur cet appel d'API"^].
 
 .. Pour un système à un seul nœud :
 +
@@ -196,7 +196,7 @@ Le corps de la demande doit inclure les champs suivants :
 }
 ----
 +
-https://["En savoir plus sur cet appel d'API"^].
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#azure-vsaworking-environments["En savoir plus sur cet appel d'API"^].
 
 
 

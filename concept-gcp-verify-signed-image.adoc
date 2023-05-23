@@ -22,7 +22,7 @@ Pour vérifier l'image signée Google Cloud exportée, vous devez télécharger 
 
 Voici une présentation du workflow de vérification des images signées Google Cloud.
 
-* À partir du https://["NSS"^], Téléchargez l'archive Google Cloud contenant les fichiers suivants :
+* À partir du https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab["NSS"^], Téléchargez l'archive Google Cloud contenant les fichiers suivants :
 +
 ** Digest signé (.SIG)
 ** Certificat contenant la clé publique (.pem)

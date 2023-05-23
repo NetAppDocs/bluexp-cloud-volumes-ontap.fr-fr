@@ -87,7 +87,7 @@ Certains des champs de cette page sont explicites. La liste suivante décrit les
 | Taille du volume | La taille maximale que vous pouvez saisir dépend en grande partie de l'activation du provisionnement fin, ce qui vous permet de créer un volume plus grand que le stockage physique actuellement disponible. 
 
 
-| Étiquettes | Les balises que vous ajoutez à un volume sont associées à l' https://["Service modèles d'applications"^], qui peut vous aider à organiser et à simplifier la gestion de vos ressources. 
+| Étiquettes | Les balises que vous ajoutez à un volume sont associées à l' https://docs.netapp.com/us-en/cloud-manager-app-template/task-using-tags.html["Service modèles d'applications"^], qui peut vous aider à organiser et à simplifier la gestion de vos ressources. 
 
 
 | VM de stockage (SVM) | Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. Vous pouvez spécifier la VM de stockage du nouveau volume. 
@@ -145,20 +145,20 @@ endif::aws[]
 
 ifdef::azure[]
 
-*** Pour configurer les services de domaine Azure AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs ADDC* ou *ou=utilisateurs ADDC* dans ce champ.https://["Documentation Azure : créez une unité organisationnelle dans un domaine géré Azure AD Domain Services"^]
+*** Pour configurer les services de domaine Azure AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs ADDC* ou *ou=utilisateurs ADDC* dans ce champ.https://docs.microsoft.com/en-us/azure/active-directory-domain-services/create-ou["Documentation Azure : créez une unité organisationnelle dans un domaine géré Azure AD Domain Services"^]
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-*** Pour configurer Google Managed Microsoft AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs,ou=Cloud* dans ce champ.https://["Google Cloud Documentation : les unités organisationnelles de Google Managed Microsoft AD"^]
+*** Pour configurer Google Managed Microsoft AD en tant que serveur AD pour Cloud Volumes ONTAP, entrez *ou=ordinateurs,ou=Cloud* dans ce champ.https://cloud.google.com/managed-microsoft-ad/docs/manage-active-directory-objects#organizational_units["Google Cloud Documentation : les unités organisationnelles de Google Managed Microsoft AD"^]
 
 
 endif::gcp[]
 
 Domaine DNS:: Le domaine DNS de la machine virtuelle de stockage Cloud Volumes ONTAP (SVM). Dans la plupart des cas, le domaine est identique au domaine AD.
-Serveur NTP:: Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://["Documents d'automatisation BlueXP"^] pour plus d'informations.
+Serveur NTP:: Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documents d'automatisation BlueXP"^] pour plus d'informations.
 +
 --
 Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS.

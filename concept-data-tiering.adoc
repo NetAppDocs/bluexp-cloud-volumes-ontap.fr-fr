@@ -58,7 +58,7 @@ Classes de stockage:: La classe de stockage par défaut pour les données hiéra
 --
 Si vous ne prévoyez pas d'accéder aux données inactives, vous pouvez réduire vos coûts de stockage en remplaçant la classe de stockage par l'une des catégories suivantes : _Intelligent Tiering_, _One-zone Infrequent Access_, _Standard-Infrequent Access_ ou _S3 Glacier Instant Retrieval_. Lorsque vous modifiez la classe de stockage, les données inactives commencent dans la classe de stockage Standard et sont transitions vers la classe de stockage que vous avez sélectionnée, si les données ne sont pas accessibles après 30 jours.
 
-Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://["En savoir plus sur les classes de stockage Amazon S3"^].
+Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://aws.amazon.com/s3/storage-classes["En savoir plus sur les classes de stockage Amazon S3"^].
 
 Vous pouvez sélectionner une classe de stockage lors de la création de l'environnement de travail et la modifier à tout moment après. Pour plus de détails sur la modification de la classe de stockage, voir link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
 
@@ -101,7 +101,7 @@ Les niveaux d'accès au stockage:: Le niveau d'accès au stockage par défaut po
 --
 Si vous ne prévoyez pas d'accéder aux données inactives du niveau de capacité, vous pouvez réduire vos coûts de stockage en passant au niveau de stockage _cool_. Lorsque vous modifiez le Tier de stockage pour qu'il soit froid, les données inactives du Tier de capacité sont transférées directement vers le Tier de stockage utilisé.
 
-Les coûts d'accès sont plus élevés si vous accédez aux données, prenez donc ces considérations avant de changer le Tier de stockage. https://["En savoir plus sur les tiers d'accès au stockage Azure Blob"^].
+Les coûts d'accès sont plus élevés si vous accédez aux données, prenez donc ces considérations avant de changer le Tier de stockage. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["En savoir plus sur les tiers d'accès au stockage Azure Blob"^].
 
 Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus d'informations sur la modification du niveau de stockage, reportez-vous à la section link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
 
@@ -140,7 +140,7 @@ Lorsque BlueXP crée le compartiment, il utilise les paramètres par défaut sui
 Classes de stockage:: La classe de stockage par défaut pour les données hiérarchisées est la classe _Standard Storage_. Si les données sont rarement utilisées, vous pouvez réduire vos coûts de stockage en utilisant _Nearline Storage_ ou _Coldline Storage_. Lorsque vous modifiez la classe de stockage, les données inactives se déplacent directement vers la classe que vous avez sélectionnée.
 +
 --
-Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://["En savoir plus sur les classes de stockage pour Google Cloud Storage"^].
+Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://cloud.google.com/storage/docs/storage-classes["En savoir plus sur les classes de stockage pour Google Cloud Storage"^].
 
 Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus de détails sur la modification de la classe de stockage, voir link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
 
@@ -166,7 +166,7 @@ Pour activer la hiérarchisation des données, vous devez sélectionner une stra
 Certaines stratégies de hiérarchisation ont une période de refroidissement minimale associée, qui définit le temps pendant lequel les données utilisateur d'un volume doivent rester inactives pour que les données soient considérées comme "froides" et déplacées vers le niveau de capacité. La période de refroidissement commence lorsque les données sont écrites sur l'agrégat.
 
 
-TIP: Vous pouvez modifier la période de refroidissement minimale et le seuil global par défaut de 50 % (plus d'informations sur ce point ci-dessous). http://["Découvrez comment changer la période de refroidissement"^] et http://["découvrez comment modifier le seuil"^].
+TIP: Vous pouvez modifier la période de refroidissement minimale et le seuil global par défaut de 50 % (plus d'informations sur ce point ci-dessous). http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-AD522711-01F9-4413-A254-929EAE871EBF.html["Découvrez comment changer la période de refroidissement"^] et http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-mgng-stor-tier-fp/GUID-8FC4BFD5-F258-4AA6-9FCB-663D42D92CAA.html["découvrez comment modifier le seuil"^].
 
 BlueXP vous permet de choisir parmi les stratégies de hiérarchisation de volume suivantes lorsque vous créez ou modifiez un volume :
 

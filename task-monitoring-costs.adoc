@@ -24,9 +24,9 @@ BlueXP met à jour les coûts lorsque vous actualisez la page. Vous devez vous r
 +
 .. Assurez-vous que la stratégie IAM qui fournit des autorisations à BlueXP inclut les autorisations requises.
 +
-https://["Afficher les autorisations requises"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Afficher les autorisations requises"^]
 
-.. https://["Activer la balise *WorkingEnvironnement*"^].
+.. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["Activer la balise *WorkingEnvironnement*"^].
 +
 Pour suivre vos coûts AWS, BlueXP attribue une balise d'allocation des coûts aux instances Cloud Volumes ONTAP. Après avoir créé votre premier environnement de travail, activez la balise *WorkingEnvironment,Id*. Les balises définies par l'utilisateur n'apparaissent pas dans les rapports de facturation AWS tant que vous ne les activez pas dans la console de facturation et de gestion des coûts.
 

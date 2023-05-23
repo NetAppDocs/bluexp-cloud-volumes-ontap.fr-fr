@@ -30,7 +30,7 @@ Plusieurs options de licence sont disponibles pour Cloud Volumes ONTAP. Chacune 
 
 == Choisissez une région prise en charge
 
-Cloud Volumes ONTAP est pris en charge dans la plupart des régions Microsoft Azure. https://["Afficher la liste complète des régions prises en charge"^].
+Cloud Volumes ONTAP est pris en charge dans la plupart des régions Microsoft Azure. https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^].
 
 
 
@@ -38,7 +38,7 @@ Cloud Volumes ONTAP est pris en charge dans la plupart des régions Microsoft Az
 
 Cloud Volumes ONTAP prend en charge plusieurs types de VM, selon le type de licence que vous choisissez.
 
-https://["Configurations prises en charge pour Cloud Volumes ONTAP dans Azure"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge pour Cloud Volumes ONTAP dans Azure"^]
 
 
 
@@ -46,7 +46,7 @@ https://["Configurations prises en charge pour Cloud Volumes ONTAP dans Azure"^]
 
 La limite de capacité brute d'un système Cloud Volumes ONTAP dépend de la licence. Des limites supplémentaires ont un impact sur la taille des agrégats et des volumes. Il est important de connaître ces dernières lors de la planification de la configuration.
 
-https://["Limites de stockage pour Cloud Volumes ONTAP dans Azure"^]
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Limites de stockage pour Cloud Volumes ONTAP dans Azure"^]
 
 
 
@@ -54,11 +54,11 @@ https://["Limites de stockage pour Cloud Volumes ONTAP dans Azure"^]
 
 Le dimensionnement du système Cloud Volumes ONTAP permet de répondre à vos besoins de performance et de capacité. Quelques points clés sont à noter lors de la sélection d'un type de VM, d'un type de disque et d'une taille de disque :
 
-Type de machine virtuelle:: Examinez les types de machines virtuelles prises en charge dans le http://["Notes de version de Cloud Volumes ONTAP"^] Examinez ensuite toutes les informations sur chaque type de machine virtuelle pris en charge. Notez que chaque type de VM prend en charge un nombre spécifique de disques de données.
+Type de machine virtuelle:: Examinez les types de machines virtuelles prises en charge dans le http://docs.netapp.com/cloud-volumes-ontap/us-en/index.html["Notes de version de Cloud Volumes ONTAP"^] Examinez ensuite toutes les informations sur chaque type de machine virtuelle pris en charge. Notez que chaque type de VM prend en charge un nombre spécifique de disques de données.
 +
 --
-* https://["Documentation Azure : tailles de machine virtuelle à usage général"^]
-* https://["Documentation Azure : tailles de machines virtuelles optimisées pour la mémoire"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-general#dsv2-series["Documentation Azure : tailles de machine virtuelle à usage général"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-memory#dsv2-series-11-15["Documentation Azure : tailles de machines virtuelles optimisées pour la mémoire"^]
 
 
 --
@@ -72,7 +72,7 @@ Les systèmes à un seul nœud peuvent utiliser trois types de disques gérés A
 * _Les disques gérés HDD standard_ sont un bon choix si vous n'avez pas besoin d'IOPS élevées et souhaitez réduire vos coûts.
 
 
-Pour plus d'informations sur les cas d'utilisation de ces disques, reportez-vous à la section https://["Documentation Microsoft Azure : quels types de disques sont disponibles dans Azure ?"^].
+Pour plus d'informations sur les cas d'utilisation de ces disques, reportez-vous à la section https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentation Microsoft Azure : quels types de disques sont disponibles dans Azure ?"^].
 
 --
 Type de disque Azure avec paires haute disponibilité:: Les systèmes HAUTE DISPONIBILITÉ utilisent des disques gérés partagés Premium SSD, qui offrent à la fois des performances élevées pour les charges de travail exigeantes en E/S, à un coût plus élevé. Les déploiements HAUTE DISPONIBILITÉ créés avant la version 9.12.1 utilisent des objets blob de pages Premium.
@@ -90,8 +90,8 @@ Avec un stockage standard, les performances sont les mêmes pour toutes les tail
 
 Pour les IOPS et le débit par taille de disque, consultez Azure :
 
-* https://["Microsoft Azure : tarification des disques gérés"^]
-* https://["Microsoft Azure : tarification Blobs de page"^]
+* https://azure.microsoft.com/en-us/pricing/details/managed-disks/["Microsoft Azure : tarification des disques gérés"^]
+* https://azure.microsoft.com/en-us/pricing/details/storage/page-blobs/["Microsoft Azure : tarification Blobs de page"^]
 
 
 --
@@ -106,7 +106,7 @@ En plus du stockage pour les données utilisateur, BlueXP achète également le 
 link:reference-default-configs.html#azure-single-node["Afficher les disques par défaut des données système Cloud Volumes ONTAP dans Azure"].
 
 
-TIP: Le connecteur nécessite également un disque système. https://["Afficher des détails sur la configuration par défaut du connecteur"^].
+TIP: Le connecteur nécessite également un disque système. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Afficher des détails sur la configuration par défaut du connecteur"^].
 
 
 

@@ -24,13 +24,13 @@ Les ressources gérées par d'autres services, tels que les sauvegardes pour la 
 NOTE: Lorsque BlueXP déploie Cloud Volumes ONTAP dans votre fournisseur cloud, il assure la protection des instances. Cette option permet d'éviter les raccordements accidentels.
 
 .Étapes
-. Si vous avez activé la sauvegarde et la restauration BlueXP dans l'environnement de travail, déterminez si les données sauvegardées sont toujours requises https://["supprimez les sauvegardes, si nécessaire"^].
+. Si vous avez activé la sauvegarde et la restauration BlueXP dans l'environnement de travail, déterminez si les données sauvegardées sont toujours requises https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-manage-backups-ontap.html#deleting-backups["supprimez les sauvegardes, si nécessaire"^].
 +
 La sauvegarde et la restauration BlueXP sont indépendantes de Cloud Volumes ONTAP. La sauvegarde et la restauration BlueXP ne suppriment pas automatiquement les sauvegardes lorsque vous supprimez un système Cloud Volumes ONTAP. De plus, l'interface utilisateur ne prend pas en charge la suppression des sauvegardes après la suppression du système.
 
 . Si vous avez activé la classification BlueXP sur cet environnement de travail et qu'aucun autre environnement de travail n'utilise ce service, vous devez supprimer l'instance du service.
 +
-https://["En savoir plus sur l'instance de classification BlueXP"^].
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#the-cloud-data-sense-instance["En savoir plus sur l'instance de classification BlueXP"^].
 
 . Supprimer l'environnement de travail Cloud Volumes ONTAP.
 +

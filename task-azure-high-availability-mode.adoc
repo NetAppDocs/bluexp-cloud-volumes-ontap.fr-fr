@@ -30,7 +30,7 @@ Notez ce qui suit :
 Un utilisateur Azure disposant de privilèges « propriétaire » peut activer cette fonctionnalité à partir de l'interface de ligne de commande Azure.
 
 .Étapes
-. https://["Accédez au shell cloud Azure depuis le portail Azure"^]
+. https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Accédez au shell cloud Azure depuis le portail Azure"^]
 . Enregistrez la fonction de mode haute disponibilité :
 +
 [source, azurecli]

@@ -182,15 +182,15 @@ S'il s'agit d'un système à un seul nœud, le VPC peut être un VPC partagé ou
 
 Pour une paire haute disponibilité, quatre VPC sont nécessaires. Chacun de ces VPC peut être partagé ou autonome. Par exemple, VPC-0 peut être un VPC partagé, tandis que VPC-1, VPC-2 et VPC-3 peut être un VPC autonome.
 
-Un VPC partagé vous permet de configurer et de gérer de manière centralisée les réseaux virtuels dans plusieurs projets. Vous pouvez configurer des réseaux VPC partagés dans le projet _host_ et déployer les instances de machines virtuelles Connector et Cloud Volumes ONTAP dans un projet _service_. https://["Documentation Google Cloud : présentation du VPC partagé"^].
+Un VPC partagé vous permet de configurer et de gérer de manière centralisée les réseaux virtuels dans plusieurs projets. Vous pouvez configurer des réseaux VPC partagés dans le projet _host_ et déployer les instances de machines virtuelles Connector et Cloud Volumes ONTAP dans un projet _service_. https://cloud.google.com/vpc/docs/shared-vpc["Documentation Google Cloud : présentation du VPC partagé"^].
 
-https://["Vérifiez les autorisations VPC partagées requises couvertes par le déploiement du connecteur"^]
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Vérifiez les autorisations VPC partagées requises couvertes par le déploiement du connecteur"^]
 
 
 
 === Duplication de paquets dans les VPC
 
-https://["Mise en miroir de paquets"^] Doit être désactivé dans le VPC Google Cloud dans lequel vous déployez Cloud Volumes ONTAP. Cloud Volumes ONTAP ne peut pas fonctionner correctement si la mise en miroir des paquets est activée.
+https://cloud.google.com/vpc/docs/packet-mirroring["Mise en miroir de paquets"^] Doit être désactivé dans le VPC Google Cloud dans lequel vous déployez Cloud Volumes ONTAP. Cloud Volumes ONTAP ne peut pas fonctionner correctement si la mise en miroir des paquets est activée.
 
 
 
@@ -208,7 +208,7 @@ Si aucune connexion Internet sortante n'est disponible pour envoyer des messages
 
 Si vous avez défini des règles de trafic sortant strictes pour Cloud Volumes ONTAP, vous devrez également vous assurer que le pare-feu Cloud Volumes ONTAP autorise les connexions _sortantes_ sur le port 3128.
 
-Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous à la section https://["Documentation ONTAP : configuration d'AutoSupport"^].
+Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous à la section https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentation ONTAP : configuration d'AutoSupport"^].
 
 
 TIP: Si vous utilisez une paire haute disponibilité, le médiateur haute disponibilité ne nécessite pas d'accès à Internet sortant.
@@ -227,7 +227,7 @@ Notez que deux jeux de règles de pare-feu sont nécessaires pour une configurat
 --
 
 
-Si vous souhaitez effectuer le Tiering des données inactives dans un compartiment de stockage Google Cloud, le sous-réseau dans lequel réside Cloud Volumes ONTAP doit être configuré pour l'accès privé à Google (si vous utilisez une paire haute disponibilité, il s'agit du sous-réseau dans VPC-0). Pour obtenir des instructions, reportez-vous à la section https://["Documentation Google Cloud : configuration de Private Google Access"^].
+Si vous souhaitez effectuer le Tiering des données inactives dans un compartiment de stockage Google Cloud, le sous-réseau dans lequel réside Cloud Volumes ONTAP doit être configuré pour l'accès privé à Google (si vous utilisez une paire haute disponibilité, il s'agit du sous-réseau dans VPC-0). Pour obtenir des instructions, reportez-vous à la section https://cloud.google.com/vpc/docs/configure-private-google-access["Documentation Google Cloud : configuration de Private Google Access"^].
 
 Pour connaître les étapes supplémentaires nécessaires à la configuration du Tiering des données dans BlueXP, reportez-vous à la section link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
 
@@ -237,7 +237,7 @@ Pour connaître les étapes supplémentaires nécessaires à la configuration du
 
 Pour répliquer les données entre un système Cloud Volumes ONTAP dans Google Cloud et des systèmes ONTAP sur d'autres réseaux, vous devez disposer d'une connexion VPN entre le VPC et l'autre réseau, par exemple votre réseau d'entreprise.
 
-Pour obtenir des instructions, reportez-vous à la section https://["Documentation Google Cloud : présentation de Cloud VPN"^].
+Pour obtenir des instructions, reportez-vous à la section https://cloud.google.com/vpn/docs/concepts/overview["Documentation Google Cloud : présentation de Cloud VPN"^].
 
 
 
@@ -254,7 +254,7 @@ Notez que deux jeux de règles de pare-feu sont nécessaires pour une configurat
 
 
 
-TIP: Vous recherchez des informations sur le connecteur ? https://["Afficher les règles de pare-feu du connecteur"^]
+TIP: Vous recherchez des informations sur le connecteur ? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Afficher les règles de pare-feu du connecteur"^]
 
 
 
@@ -266,7 +266,7 @@ Lorsque vous créez un environnement de travail, vous pouvez choisir le filtre s
 * *Tous les VPC* : le filtre source pour le trafic entrant est la plage IP 0.0.0.0/0.
 
 
-Si vous utilisez votre propre stratégie de pare-feu, assurez-vous d'ajouter tous les réseaux qui doivent communiquer avec Cloud Volumes ONTAP, mais aussi d'ajouter les deux plages d'adresses pour permettre à Google Load Balancer interne de fonctionner correctement. Ces adresses sont 130.211.0.0/22 et 35.191.0.0/16. Pour plus d'informations, reportez-vous à la section https://["Documentation Google Cloud : règles du pare-feu Load Balancer"^].
+Si vous utilisez votre propre stratégie de pare-feu, assurez-vous d'ajouter tous les réseaux qui doivent communiquer avec Cloud Volumes ONTAP, mais aussi d'ajouter les deux plages d'adresses pour permettre à Google Load Balancer interne de fonctionner correctement. Ces adresses sont 130.211.0.0/22 et 35.191.0.0/16. Pour plus d'informations, reportez-vous à la section https://cloud.google.com/load-balancing/docs/tcp#firewall_rules["Documentation Google Cloud : règles du pare-feu Load Balancer"^].
 
 [cols="10,10,80"]
 |===
@@ -509,6 +509,6 @@ NOTE: Pour permettre une vitesse d'écriture élevée dans les nouveaux déploie
 
 Si vous n'avez pas encore créé de connecteur, vous devez également consulter les exigences de mise en réseau pour le connecteur.
 
-* https://["Afficher les exigences de mise en réseau du connecteur"^]
-* https://["Règles de pare-feu dans Google Cloud"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Afficher les exigences de mise en réseau du connecteur"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
 

@@ -23,7 +23,7 @@ Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit 
 
 == Nombre de machines virtuelles de stockage pris en charge
 
-Plusieurs machines virtuelles de stockage sont prises en charge avec des configurations Cloud Volumes ONTAP spécifiques dans Google Cloud à partir de la version 9.11.1. Accédez au https://["Notes de version de Cloud Volumes ONTAP"^] Pour vérifier le nombre de machines virtuelles de stockage pris en charge pour votre version de Cloud Volumes ONTAP.
+Plusieurs machines virtuelles de stockage sont prises en charge avec des configurations Cloud Volumes ONTAP spécifiques dans Google Cloud à partir de la version 9.11.1. Accédez au https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/index.html["Notes de version de Cloud Volumes ONTAP"^] Pour vérifier le nombre de machines virtuelles de stockage pris en charge pour votre version de Cloud Volumes ONTAP.
 
 Toutes les autres configurations Cloud Volumes ONTAP prennent en charge une VM de stockage servant aux données et une VM de stockage de destination utilisée pour la reprise après incident. Vous pouvez activer la machine virtuelle de stockage de destination pour accéder aux données en cas de panne sur la machine virtuelle de stockage source.
 
@@ -48,7 +48,7 @@ image:screenshot-gcp-add-ip-range.png["Capture d'écran de la console Google Clo
 Vous avez besoin d'une adresse IP pour une LIF de données et d'une autre adresse IP facultative si vous souhaitez créer une LIF de gestion sur la machine virtuelle de stockage.
 
 +
-https://["Documentation Google Cloud : ajout de plages d'adresses IP d'alias à une instance existante"^]
+https://cloud.google.com/vpc/docs/configure-alias-ip-ranges#adding_alias_ip_ranges_to_an_existing_instance["Documentation Google Cloud : ajout de plages d'adresses IP d'alias à une instance existante"^]
 
 . Créer la VM de stockage et une route vers la VM de stockage
 +
@@ -106,7 +106,7 @@ Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage s
 Notez que BlueXP alloue les adresses IP requises dans Google Cloud et crée la machine virtuelle de stockage avec une LIF de données pour les accès SMB/NFS et une LIF iSCSI pour les communications SMB sortantes.
 
 .Autorisations Google Cloud requises
-Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans https://["Règles fournies par NetApp"].
+Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Règles fournies par NetApp"].
 
 .Étapes
 . Utilisez l'appel d'API suivant pour créer une machine virtuelle de stockage :
