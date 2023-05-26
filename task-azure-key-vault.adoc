@@ -19,7 +19,7 @@ La gestion des clés via AKV peut être activée via l'interface de ligne de com
 
 Lorsque vous utilisez AKV, notez que par défaut une LIF de SVM de données permet de communiquer avec le terminal de gestion des clés cloud. Un réseau de gestion de nœuds est utilisé pour communiquer avec les services d'authentification du fournisseur de cloud (login.microsoftonline.com). Si le réseau de cluster n'est pas configuré correctement, le cluster n'utilisera pas correctement le service de gestion des clés.
 
-.Prérequis
+.Avant de commencer
 * Cloud Volumes ONTAP doit exécuter la version 9.10.1 ou ultérieure
 * Licence Volume Encryption (VE) installée (la licence NetApp Volume Encryption est automatiquement installée sur chaque système Cloud Volumes ONTAP enregistré auprès du support NetApp).
 * Vous devez disposer d'une licence MT_EK_MGMT (Multi-tenant Encryption Key Management)
