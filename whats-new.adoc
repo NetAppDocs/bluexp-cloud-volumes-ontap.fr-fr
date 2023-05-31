@@ -54,7 +54,7 @@ Vous pouvez désormais connaître les frais facturés lorsque vous souscrivez à
 * Utilisation des volumes
 
 
-Pour plus d'informations, voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^].
 
 
 
@@ -92,7 +92,7 @@ La région de Turin est désormais prise en charge dans Google Cloud pour Cloud 
 
 Le portefeuille digital BlueXP affiche désormais la capacité sous licence que vous avez achetée avec des offres privées Marketplace.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"^].
 
 
 
@@ -106,7 +106,7 @@ Cette version vous permet de faire des commentaires lors de la création d'un vo
 
 BlueXP inclut désormais une interface utilisateur repensée pour les pages Présentation de Cloud Volumes ONTAP, volumes et agrégats. La conception en mosaïque présente des informations plus complètes dans chaque mosaïque pour une meilleure expérience utilisateur.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-resource-page-rn.png["Cette capture d'écran présente l'interface utilisateur de BlueXP repensée sur la page de présentation de Cloud Volumes ONTAP. Plusieurs vignettes présentent l'efficacité du stockage, la version, la distribution de la capacité, les informations sur le déploiement Cloud Volumes ONTAP, les volumes, les agrégats, les réplications et les sauvegardes."]
 
 
 
@@ -117,9 +117,9 @@ Les volumes FlexGroup créés directement via l'interface de ligne de commande o
 
 NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
 
 
 
@@ -168,7 +168,7 @@ La licence MTEKM (Multi-tenant Encryption Key Management) est désormais incluse
 
 La gestion externe et mutualisée des clés permet à chaque machine virtuelle de stockage (SVM) de gérer ses propres clés via un serveur KMIP grâce à NetApp Volume Encryption.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment chiffrer les volumes à l'aide des solutions de cryptage NetApp"^].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment chiffrer les volumes à l'aide des solutions de cryptage NetApp"^].
 
 
 
@@ -176,9 +176,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-
 
 Cloud Volumes ONTAP est désormais pris en charge dans tous les environnements cloud isolés d'Internet. Seule la licence basée sur les nœuds (BYOL) est prise en charge dans ces environnements. Les licences basées sur la capacité ne sont pas prises en charge. Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital BlueXP, puis déployez Cloud Volumes ONTAP.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
 
 
 
@@ -201,7 +201,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.26 du conn
 
 Un nouveau paramètre de configuration peut désormais être utilisé pour créer des groupes de placement avec AWS HA unique Availability zone (AZ). Vous pouvez désormais choisir de contourner les créations de groupes ayant échoué et d'autoriser les déploiements d'AWS HA unique en AZ à s'effectuer avec succès.
 
-Pour plus d'informations sur la configuration du paramètre de création du groupe de placement, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Configurez la création de groupe de placement pour AWS HA Single AZ"^].
+Pour plus d'informations sur la configuration du paramètre de création du groupe de placement, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Configurez la création de groupe de placement pour AWS HA Single AZ"^].
 
 
 
@@ -209,7 +209,7 @@ Pour plus d'informations sur la configuration du paramètre de création du grou
 
 Un nouveau paramètre de configuration est désormais disponible afin d'éviter de créer un lien entre une zone DNS privée et un réseau virtuel lors de l'utilisation de liens privés Azure. La création est activée par défaut.
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Fournissez BlueXP avec des informations détaillées sur votre DNS privé Azure"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html#provide-bluexp-with-details-about-your-azure-private-dns["Fournissez BlueXP avec des informations détaillées sur votre DNS privé Azure"^]
 
 
 
@@ -217,7 +217,7 @@ link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabli
 
 Vous pouvez désormais activer à la fois le Tiering des données et le stockage WORM lorsque vous créez un système Cloud Volumes ONTAP 9.8 ou une version ultérieure. L'activation du Tiering des données avec le stockage WORM vous permet de transférer les données vers un magasin d'objets dans le cloud.
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-worm.html["En savoir plus sur le stockage WORM"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["En savoir plus sur le stockage WORM"^]
 
 
 
@@ -231,7 +231,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.25 du conn
 
 Des packages de licence optimisés et Edge cache basés sur la capacité sont disponibles pour Cloud Volumes ONTAP dans Google Cloud Marketplace, à la demande ou en tant que contrat annuel.
 
-Voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["Licences Cloud Volumes ONTAP"^].
+Voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Licences Cloud Volumes ONTAP"^].
 
 
 
@@ -239,7 +239,7 @@ Voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concep
 
 La licence MTEKM (Multi-tenant Encryption Key Management) n'est plus incluse dans les nouveaux déploiements Cloud Volumes ONTAP.
 
-Pour plus d'informations sur les licences de fonction ONTAP installées automatiquement avec Cloud Volumes ONTAP, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/reference-default-configs.html["Configuration par défaut pour Cloud Volumes ONTAP"^].
+Pour plus d'informations sur les licences de fonction ONTAP installées automatiquement avec Cloud Volumes ONTAP, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Configuration par défaut pour Cloud Volumes ONTAP"^].
 
 
 
@@ -309,7 +309,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.23 du conn
 
 Vous pouvez maintenant déplacer un environnement de travail d'un groupe de ressources vers un autre groupe de ressources dans Azure dans le même abonnement Azure.
 
-Pour plus d'informations, voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-moving-resource-groups-azure.html["Déplacement de groupes de ressources"].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["Déplacement de groupes de ressources"].
 
 
 
@@ -325,7 +325,7 @@ Pour plus d'informations sur la configuration et l'utilisation de NDMP, reportez
 
 Une nouvelle autorisation Azure a été ajoutée qui vous permet maintenant de chiffrer tous les disques gérés lors de leur création.
 
-Pour plus d'informations sur cette nouvelle fonctionnalité, voir https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-set-up-azure-encryption.html["Configuration de Cloud Volumes ONTAP pour utiliser une clé gérée par le client dans Azure"].
+Pour plus d'informations sur cette nouvelle fonctionnalité, voir https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["Configuration de Cloud Volumes ONTAP pour utiliser une clé gérée par le client dans Azure"].
 
 
 
@@ -342,11 +342,11 @@ Les modifications suivantes ont été introduites avec la version 3.9.22 du conn
 Ces informations vous permettront de mieux comprendre la facturation et l'achat de capacité supplémentaire.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Découvrez comment afficher la capacité consommée dans votre compte"].
 
 * Vous pouvez désormais passer d'une méthode de charge à la méthode de charge optimisée.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Apprenez à changer les méthodes de charge"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Apprenez à changer les méthodes de charge"].
 
 
 
@@ -358,7 +358,7 @@ Vous pouvez désormais optimiser les coûts et les performances d'un système Cl
 
 Après avoir sélectionné un environnement de travail, vous pouvez choisir l'option *optimiser les coûts et les performances* pour changer le type d'instance de Cloud Volumes ONTAP. La sélection d'une instance de plus petite taille peut vous aider à réduire les coûts, tandis que le passage à une instance de plus grande taille peut vous aider à optimiser les performances.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["Capture d'écran de l'option optimiser le coût et les performances disponible sur la toile après avoir sélectionné un environnement de travail."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-optimize-cost-performance.png["Capture d'écran de l'option optimiser le coût et les performances disponible sur la toile après avoir sélectionné un environnement de travail."]
 
 
 
@@ -380,7 +380,7 @@ La licence MTEKM (Multi-tenant Encryption Key Management) est désormais incluse
 
 La gestion externe et mutualisée des clés permet à chaque machine virtuelle de stockage (SVM) de gérer ses propres clés via un serveur KMIP grâce à NetApp Volume Encryption.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment chiffrer les volumes à l'aide des solutions de cryptage NetApp"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes.html["Découvrez comment chiffrer les volumes à l'aide des solutions de cryptage NetApp"].
 
 
 
@@ -398,7 +398,7 @@ La seule condition est de s'assurer que le groupe de sécurité du connecteur au
 
 Vous pouvez désormais modifier la méthode de facturation d'un système Cloud Volumes ONTAP utilisant des licences basées sur la capacité. Par exemple, si vous avez déployé un système Cloud Volumes ONTAP avec le pack Essentials, vous pouvez le remplacer par le pack Professional si vos besoins évoluent. Cette fonction est disponible dans le porte-monnaie numérique.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capacity-licenses.html["Apprenez à changer les méthodes de charge"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Apprenez à changer les méthodes de charge"].
 
 
 
@@ -406,7 +406,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-capa
 
 Lorsque vous créez un environnement de travail Cloud Volumes ONTAP, l'interface utilisateur vous permet désormais de choisir si vous souhaitez que le groupe de sécurité prédéfini autorise le trafic dans le réseau sélectionné uniquement (recommandé) ou sur tous les réseaux.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["Capture d'écran indiquant l'option Autoriser le trafic dans disponible dans l'assistant de l'environnement de travail lors de la sélection d'un groupe de sécurité."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-allow-traffic.png["Capture d'écran indiquant l'option Autoriser le trafic dans disponible dans l'assistant de l'environnement de travail lors de la sélection d'un groupe de sécurité."]
 
 
 
@@ -422,7 +422,7 @@ Deux nouveaux packages de licence basés sur la capacité sont disponibles pour 
 * *Edge cache* : licences pour https://cloud.netapp.com/cloud-volumes-edge-cache["Cloud volumes Edge cache"^]
 
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages["En savoir plus sur ces packs de licences"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["En savoir plus sur ces packs de licences"].
 
 
 
@@ -436,7 +436,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.20 du conn
 
 Le porte-monnaie numérique vous indique maintenant la capacité totale consommée dans votre compte et la capacité consommée par le package de licences. Cela vous permet de mieux comprendre la façon dont vous achetez de la capacité supplémentaire et si celle-ci est nécessaire.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["Capture d'écran qui affiche la page du portefeuille numérique pour les licences basées sur la capacité. La page présente la capacité consommée dans votre compte et réduit la capacité consommée par le package de licences."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-digital-wallet-summary.png["Capture d'écran qui affiche la page du portefeuille numérique pour les licences basées sur la capacité. La page présente la capacité consommée dans votre compte et réduit la capacité consommée par le package de licences."]
 
 
 
@@ -444,7 +444,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 BlueXP prend désormais en charge la fonctionnalité Amazon EBS Elastic volumes lors de la création d'un environnement de travail Cloud Volumes ONTAP à partir de l'interface utilisateur. La fonctionnalité Elastic volumes est activée par défaut lors de l'utilisation de disques gp3 ou io1. Après le déploiement de Cloud Volumes ONTAP, vous pouvez choisir la capacité initiale en fonction de vos besoins en stockage, puis la réviser.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes dans AWS"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes dans AWS"].
 
 
 
@@ -492,7 +492,7 @@ Si vous devez effectuer une gestion avancée de Cloud Volumes ONTAP, vous pouvez
 
 Cette vue avancée est disponible sous forme d'aperçu avec Cloud Volumes ONTAP 9.10.0 et versions ultérieures. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-administer-advanced-view.html["En savoir plus sur la vue avancée"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-advanced-view.html["En savoir plus sur la vue avancée"].
 
 
 
@@ -502,7 +502,7 @@ La prise en charge de la fonctionnalité Amazon EBS Elastic volumes intégrée d
 
 La prise en charge des volumes Elastic est disponible à partir des _nouveaux_ systèmes Cloud Volumes ONTAP 9.11.0 et avec les types de disques gp3 et io1 EBS.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes"].
 
 Notez que la prise en charge d'Elastic volumes requiert de nouvelles autorisations AWS pour le connecteur :
 
@@ -511,7 +511,7 @@ Notez que la prise en charge d'Elastic volumes requiert de nouvelles autorisatio
 "ec2:DescribeVolumesModifications",
 "ec2:ModifyVolume",
 ----
-Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Consultez les dernières règles de connexion pour AWS"^].
+Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Consultez les dernières règles de connexion pour AWS"^].
 
 
 
@@ -527,7 +527,7 @@ link:task-deploy-aws-shared-vpc.html["Découvrez comment déployer une paire hau
 
 BlueXP limite désormais l'accès au réseau lors de l'utilisation d'un terminal de service vnet pour les connexions entre Cloud Volumes ONTAP et les comptes de stockage. BlueXP utilise un point de terminaison de service si vous désactivez les connexions Azure Private Link.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["En savoir plus sur les connexions Azure Private Link avec Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["En savoir plus sur les connexions Azure Private Link avec Cloud Volumes ONTAP"].
 
 
 
@@ -545,7 +545,7 @@ La prise en charge de la création de machines virtuelles de stockage requiert d
 Notez que vous devez utiliser l'interface de ligne de commandes ou System Manager de ONTAP pour créer une machine virtuelle de stockage sur un système à un seul nœud.
 
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-gcp.html#storage-vm-limits["En savoir plus sur les limites des machines virtuelles de stockage dans Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Découvrez comment créer des machines virtuelles de stockage destinées aux données pour Cloud Volumes ONTAP dans Google Cloud"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Découvrez comment créer des machines virtuelles de stockage destinées aux données pour Cloud Volumes ONTAP dans Google Cloud"]
 
 
 
@@ -574,7 +574,7 @@ Lorsque BlueXP met à niveau le médiateur pour une paire HA, il confirme qu'une
 
 L'onglet K8s était obsolète dans une version précédente et a été supprimé. Si vous souhaitez utiliser Kubernetes avec Cloud Volumes ONTAP, vous pouvez ajouter des clusters Kubernetes gérés dans la Canvas comme environnement de travail pour une gestion avancée des données.
 
-https://docs.netapp.com/us-en/cloud-manager-kubernetes/concept-kubernetes.html["En savoir plus sur la gestion des données Kubernetes dans BlueXP"^]
+https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["En savoir plus sur la gestion des données Kubernetes dans BlueXP"^]
 
 
 
@@ -584,7 +584,7 @@ Les packages Essentials et Professional sont désormais disponibles dans Azure s
 
 Une fois que NetApp vous a fait part de son offre privée, vous pouvez sélectionner le plan annuel lorsque vous vous abonnez à Azure Marketplace lors de la création d'un environnement de travail.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les licences"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les licences"].
 
 
 
@@ -592,7 +592,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 Vous pouvez désormais stocker des données hiérarchisées dans la classe de stockage Amazon S3 Glacier Instant Retrieval.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["Découvrez comment changer la classe de stockage des données hiérarchisées"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#changing-the-storage-class-for-tiered-data["Découvrez comment changer la classe de stockage des données hiérarchisées"].
 
 
 
@@ -607,7 +607,7 @@ Les autorisations suivantes sont désormais nécessaires pour créer un groupe d
 ----
 Ces autorisations sont désormais nécessaires pour optimiser la façon dont BlueXP crée le groupe de placement.
 
-Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Consultez les dernières règles de connexion pour AWS"^].
+Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Consultez les dernières règles de connexion pour AWS"^].
 
 
 
@@ -648,7 +648,7 @@ Auparavant, BlueXP n'affichera aucune règle dans les VPC-1, VPC-2 ou VPC-3 qui 
 
 Lorsque vous sélectionnez le compte de service Google Cloud à utiliser avec Cloud Volumes ONTAP, BlueXP affiche désormais l'adresse e-mail associée à chaque compte de service. L'affichage de l'adresse e-mail peut faciliter la distinction entre les comptes de service partageant le même nom.
 
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["Capture d'écran du champ du compte de service"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-google-cloud-service-account.png["Capture d'écran du champ du compte de service"]
 
 
 
@@ -660,7 +660,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-cloud-volumes-o
 
 Nous avons supprimé le lien System Manager qui était auparavant disponible dans un environnement de travail Cloud Volumes ONTAP.
 
-Vous pouvez toujours vous connecter à System Manager en entrant l'adresse IP de gestion du cluster dans un navigateur Web qui dispose d'une connexion au système Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-connecting-to-otc.html["En savoir plus sur la connexion à System Manager"].
+Vous pouvez toujours vous connecter à System Manager en entrant l'adresse IP de gestion du cluster dans un navigateur Web qui dispose d'une connexion au système Cloud Volumes ONTAP. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-connecting-to-otc.html["En savoir plus sur la connexion à System Manager"].
 
 
 
@@ -682,7 +682,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.16 du conn
 
 L'assistant Create New volume que nous avons récemment introduit est maintenant disponible lors de la création d'un volume sur un agrégat spécifique à partir de l'option *Advanced allocation*.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html["Découvrez comment créer des volumes dans un agrégat spécifique"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-create-volumes.html["Découvrez comment créer des volumes dans un agrégat spécifique"].
 
 
 
@@ -708,7 +708,7 @@ Cette méthode de facturation est toujours disponible pour les clients existants
 
 
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les options de licence pour Cloud Volumes ONTAP"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les options de licence pour Cloud Volumes ONTAP"].
 
 
 
@@ -722,7 +722,7 @@ Si vous disposez d'une licence non attribuée à un nœud pour Cloud Volumes ONT
 
 Cette action révoque la licence Cloud Volumes ONTAP et crée une licence équivalente en dollars pour le service à la même date d'expiration.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Découvrez comment échanger des licences de nœuds non attribuées"].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["Découvrez comment échanger des licences de nœuds non attribuées"].
 
 
 
@@ -931,7 +931,7 @@ Les autorisations suivantes permettent à BlueXP de supprimer des ressources Clo
 "Microsoft.Network/privateEndpoints/delete",
 "Microsoft.Compute/availabilitySets/delete",
 ----
-Veillez à fournir ces autorisations à chaque ensemble d'identifiants Azure que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Découvrez la dernière règle de connecteurs pour Azure"^].
+Veillez à fournir ces autorisations à chaque ensemble d'identifiants Azure que vous avez ajoutés à BlueXP. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Découvrez la dernière règle de connecteurs pour Azure"^].
 
 
 
@@ -1013,7 +1013,7 @@ BlueXP supprime désormais les anciens snapshots cloud des disques racine et de 
 
 Cette amélioration contribue à réduire les coûts des fournisseurs de cloud en supprimant les snapshots qui ne sont plus nécessaires.
 
-Notez qu'un connecteur requiert une nouvelle autorisation pour supprimer les snapshots Azure. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html["Découvrez la dernière règle de connecteurs pour Azure"^].
+Notez qu'un connecteur requiert une nouvelle autorisation pour supprimer les snapshots Azure. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Découvrez la dernière règle de connecteurs pour Azure"^].
 
 [source, json]
 ----

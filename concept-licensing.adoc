@@ -269,7 +269,7 @@ Ce total compte six systèmes. Vous aurez alors de la place pour 14 systèmes su
 
 Si vous disposez d'un déploiement de grande envergure nécessitant plus de 20 systèmes, contactez votre ingénieur commercial ou votre responsable de compte.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-netapp-accounts.html["En savoir plus sur les comptes NetApp"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-netapp-accounts.html["En savoir plus sur les comptes NetApp"^].
 
 
 

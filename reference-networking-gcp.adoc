@@ -184,7 +184,7 @@ Pour une paire haute disponibilité, quatre VPC sont nécessaires. Chacun de ces
 
 Un VPC partagé vous permet de configurer et de gérer de manière centralisée les réseaux virtuels dans plusieurs projets. Vous pouvez configurer des réseaux VPC partagés dans le projet _host_ et déployer les instances de machines virtuelles Connector et Cloud Volumes ONTAP dans un projet _service_. https://cloud.google.com/vpc/docs/shared-vpc["Documentation Google Cloud : présentation du VPC partagé"^].
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Vérifiez les autorisations VPC partagées requises couvertes par le déploiement du connecteur"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Vérifiez les autorisations VPC partagées requises couvertes par le déploiement du connecteur"^]
 
 
 
@@ -254,7 +254,7 @@ Notez que deux jeux de règles de pare-feu sont nécessaires pour une configurat
 
 
 
-TIP: Vous recherchez des informations sur le connecteur ? https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Afficher les règles de pare-feu du connecteur"^]
+TIP: Vous recherchez des informations sur le connecteur ? https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Afficher les règles de pare-feu du connecteur"^]
 
 
 
@@ -509,6 +509,6 @@ NOTE: Pour permettre une vitesse d'écriture élevée dans les nouveaux déploie
 
 Si vous n'avez pas encore créé de connecteur, vous devez également consulter les exigences de mise en réseau pour le connecteur.
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["Afficher les exigences de mise en réseau du connecteur"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Afficher les exigences de mise en réseau du connecteur"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
 

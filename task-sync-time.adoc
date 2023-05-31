@@ -16,4 +16,4 @@ summary: 'La spécification d"un serveur NTP synchronise l"heure entre les syst�
 [role="lead"]
 La spécification d'un serveur NTP synchronise l'heure entre les systèmes de votre réseau, ce qui peut aider à éviter les problèmes dus aux différences de temps.
 
-Spécifiez un serveur NTP à l'aide de https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html["API BlueXP"^] ou depuis l'interface utilisateur lorsque vous link:task-create-volumes.html#create-a-volume["Créer un serveur CIFS"].
+Spécifiez un serveur NTP à l'aide de https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html["API BlueXP"^] ou depuis l'interface utilisateur lorsque vous link:task-create-volumes.html#create-a-volume["Créer un serveur CIFS"].

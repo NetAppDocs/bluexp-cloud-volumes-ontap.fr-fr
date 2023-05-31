@@ -109,7 +109,7 @@ Si l'état de la catégorie http-https est « ok », cela signifie que AutoSuppo
 . Si l'état est toujours échec, vérifiez qu'il y a une connectivité entre Cloud Volumes ONTAP et le connecteur sur le port 3128.
 . Si l'ID d'état échoue toujours après vérification de la connectivité, SSH vers le connecteur.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["En savoir plus sur la connexion à la VM Linux pour le connecteur"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["En savoir plus sur la connexion à la VM Linux pour le connecteur"^]
 
 . Accédez à `/opt/application/netapp/cloudmanager/docker_occm/data/`
 . Ouvrez le fichier de configuration du proxy `squid.conf`

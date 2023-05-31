@@ -52,7 +52,7 @@ Dans BlueXP, cliquez sur le service *Active IQ*.
 +
 image:screenshot_aiq_digital_advisor.png["Capture d'écran de l'interface utilisateur du conseiller numérique Active IQ dans BlueXP."]
 
-* Si vous n'avez pas enregistré de compte NSS dans BlueXP, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Enregistrez un compte NSS dès maintenant"^] Puis l'interface du conseiller numérique Active IQ s'affiche.
+* Si vous n'avez pas enregistré de compte NSS dans BlueXP, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Enregistrez un compte NSS dès maintenant"^] Puis l'interface du conseiller numérique Active IQ s'affiche.
 
 
 

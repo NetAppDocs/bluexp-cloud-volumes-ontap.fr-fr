@@ -106,7 +106,7 @@ En plus du stockage pour les données utilisateur, BlueXP achète également le 
 link:reference-default-configs.html#azure-single-node["Afficher les disques par défaut des données système Cloud Volumes ONTAP dans Azure"].
 
 
-TIP: Le connecteur nécessite également un disque système. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Afficher des détails sur la configuration par défaut du connecteur"^].
+TIP: Le connecteur nécessite également un disque système. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["Afficher des détails sur la configuration par défaut du connecteur"^].
 
 
 

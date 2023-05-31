@@ -24,7 +24,7 @@ TIP: Un système qui n'est pas enregistré pour le support recevra toujours les 
 .Étapes
 . Si vous n'avez pas encore ajouté votre compte sur le site de support NetApp à BlueXP, accédez à *Paramètres du compte* et ajoutez-le maintenant.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Découvrez comment ajouter des comptes au site de support NetApp"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Découvrez comment ajouter des comptes au site de support NetApp"^].
 
 . Sur la page Canevas, double-cliquez sur le nom du système que vous souhaitez enregistrer.
 . Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *enregistrement du support*.

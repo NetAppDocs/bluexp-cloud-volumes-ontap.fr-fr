@@ -109,7 +109,7 @@ Google Cloud Compute Engine met en œuvre des quotas quant à l'utilisation des 
 
 
 
-TIP: Le connecteur nécessite également un disque système. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-connector-default-config.html["Afficher des détails sur la configuration par défaut du connecteur"^].
+TIP: Le connecteur nécessite également un disque système. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-default-config.html["Afficher des détails sur la configuration par défaut du connecteur"^].
 
 
 

@@ -24,7 +24,7 @@ BlueXP met à jour les coûts lorsque vous actualisez la page. Vous devez vous r
 +
 .. Assurez-vous que la stratégie IAM qui fournit des autorisations à BlueXP inclut les autorisations requises.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html["Afficher les autorisations requises"^]
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Afficher les autorisations requises"^]
 
 .. https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html["Activer la balise *WorkingEnvironnement*"^].
 +

@@ -21,7 +21,7 @@ Vous pouvez déplacer un environnement de travail d'un groupe de ressources vers
 .Étapes
 . Supprimez l'environnement de travail de *Canvas*.
 +
-Pour savoir comment supprimer un environnement de travail, voir link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-removing.html["Suppression des environnements de travail Cloud Volumes ONTAP"].
+Pour savoir comment supprimer un environnement de travail, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-removing.html["Suppression des environnements de travail Cloud Volumes ONTAP"].
 
 . Exécutez le déplacement du groupe de ressources dans la console Azure.
 +

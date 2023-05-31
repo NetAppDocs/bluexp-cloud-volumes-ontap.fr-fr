@@ -298,11 +298,11 @@ Le déplacement d'un volume est nécessaire pour éviter les problèmes de capac
 . Identifiez un système Cloud Volumes ONTAP doté de la capacité disponible ou déployez un nouveau système.
 . Faites glisser et déposez l'environnement de travail source sur l'environnement de travail cible pour effectuer une réplication unique du volume.
 +
-Pour plus de détails, voir link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html["Réplication des données entre les systèmes"^].
+Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Réplication des données entre les systèmes"^].
 
 . Accédez à la page Etat de la réplication, puis rompez la relation SnapMirror pour convertir le volume répliqué d'un volume de protection des données en volume en lecture/écriture.
 +
-Pour plus de détails, voir link:https://docs.netapp.com/us-en/cloud-manager-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["Gestion des planifications et des relations de réplication des données"^].
+Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html#managing-data-replication-schedules-and-relationships["Gestion des planifications et des relations de réplication des données"^].
 
 . Configurez le volume pour l'accès aux données.
 +

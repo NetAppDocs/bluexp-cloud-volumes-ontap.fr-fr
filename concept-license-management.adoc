@@ -21,7 +21,7 @@ TIP: Une licence basée sur des nœuds est la génération précédente (BYOL) p
 
 link:concept-licensing.html["En savoir plus sur les options des licences Cloud Volumes ONTAP"].
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["En savoir plus sur la gestion des licences basées sur les nœuds"^].
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["En savoir plus sur la gestion des licences basées sur les nœuds"^].
 
 
 
@@ -41,7 +41,7 @@ Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de
 
 Lorsque vous créez un système BYOL basé sur des nœuds, BlueXP vous demande le numéro de série de votre licence et votre compte sur le site de support NetApp. BlueXP utilise le compte pour télécharger le fichier de licence depuis NetApp et l'installer sur le système Cloud Volumes ONTAP.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["Découvrez comment ajouter des comptes au site de support NetApp à BlueXP"^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Découvrez comment ajouter des comptes au site de support NetApp à BlueXP"^].
 
 Si BlueXP ne peut pas accéder au fichier de licence via la connexion Internet sécurisée, vous pouvez link:task-manage-node-licenses.html["Procurez-vous le fichier vous-même, puis téléchargez manuellement le fichier dans BlueXP"].
 

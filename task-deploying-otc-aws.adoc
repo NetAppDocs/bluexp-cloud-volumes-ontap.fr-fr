@@ -25,8 +25,8 @@ Vous avez besoin des éléments suivants pour créer un environnement de travail
 [[licensing]]
 * Un connecteur opérationnel.
 +
-** Vous devez avoir un https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Connecteur associé à votre espace de travail"^].
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["Vous devez être prêt à laisser le connecteur fonctionner en permanence"^].
+** Vous devez avoir un https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Connecteur associé à votre espace de travail"^].
+** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Vous devez être prêt à laisser le connecteur fonctionner en permanence"^].
 
 
 * Compréhension de la configuration que vous voulez utiliser.
@@ -56,7 +56,7 @@ Immédiatement après avoir créé l'environnement de travail, BlueXP lance une 
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . [[Subscribe]]sur la page Canvas, cliquez sur *Ajouter un environnement de travail* et suivez les invites.
 . *Choisissez un emplacement* : sélectionnez *Amazon Web Services* et *Cloud Volumes ONTAP Single Node*.
-. Si vous y êtes invité, https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["Créer un connecteur"^].
+. Si vous y êtes invité, https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Créer un connecteur"^].
 . *Détails et informations d'identification* : modifiez éventuellement les informations d'identification et l'abonnement AWS, entrez un nom d'environnement de travail, ajoutez des balises si nécessaire, puis entrez un mot de passe.
 +
 Certains champs de cette page sont explicites. Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -76,7 +76,11 @@ Certains champs de cette page sont explicites. Le tableau suivant décrit les ch
 | Nom d'utilisateur et mot de passe | Il s'agit des identifiants du compte d'administrateur du cluster Cloud Volumes ONTAP. Vous pouvez utiliser ces identifiants pour vous connecter à Cloud Volumes ONTAP via System Manager ou son interface de ligne de commandes. Conservez le nom d'utilisateur _admin_ par défaut ou remplacez-le par un nom d'utilisateur personnalisé. 
 
 
-| Modifier les informations d'identification | Sélectionnez les identifiants AWS associés au compte sur lequel vous souhaitez déployer le système. Vous pouvez également associer l'abonnement AWS Marketplace à ce système Cloud Volumes ONTAP. Cliquez sur *Ajouter un abonnement* pour associer les informations d'identification sélectionnées à un nouvel abonnement AWS Marketplace. L'abonnement peut s'agir d'un contrat annuel ou d'un paiement pour Cloud Volumes ONTAP à l'heure.https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Découvrez comment ajouter des identifiants AWS à BlueXP"^]. 
+| Modifier les informations d'identification | Sélectionnez les identifiants AWS associés au compte sur lequel vous souhaitez déployer le système. Vous pouvez également associer l'abonnement AWS Marketplace à ce système Cloud Volumes ONTAP.
+
+Cliquez sur *Ajouter un abonnement* pour associer les informations d'identification sélectionnées à un nouvel abonnement AWS Marketplace. L'abonnement peut s'agir d'un contrat annuel ou d'un paiement pour Cloud Volumes ONTAP à l'heure.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Découvrez comment ajouter des identifiants AWS à BlueXP"^]. 
 |===
 +
 Découvrez dans cette vidéo comment associer un abonnement payant basé sur l'utilisation Marketplace à vos identifiants AWS :
@@ -89,8 +93,8 @@ TIP: Si plusieurs utilisateurs IAM travaillent sur le même compte AWS, chaque u
 
 . *Services* : conservez les services activés ou désactivez les services individuels que vous ne souhaitez pas utiliser avec Cloud Volumes ONTAP.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["En savoir plus sur la classification BlueXP"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["En savoir plus sur la sauvegarde et la restauration BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["En savoir plus sur la classification BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["En savoir plus sur la sauvegarde et la restauration BlueXP"^]
 +
 
 TIP: Si vous souhaitez utiliser le Tiering WORM et des données, vous devez désactiver la sauvegarde et la restauration BlueXP et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
@@ -250,7 +254,9 @@ image:screenshot_cot_vol.gif["Capture d'écran : affiche la page Volume remplie 
 | Domaine DNS | Le domaine DNS de la machine virtuelle de stockage Cloud Volumes ONTAP (SVM). Dans la plupart des cas, le domaine est identique au domaine AD. 
 
 
-| Serveur NTP | Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documents d'automatisation BlueXP"^] pour plus d'informations. Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS. 
+| Serveur NTP | Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://docs.netapp.com/us-en/bluexp-automation/index.html["Documents d'automatisation BlueXP"^] pour plus d'informations.
+
+Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS. 
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
@@ -316,7 +322,13 @@ Certains champs de cette page sont explicites. Le tableau suivant décrit les ch
 | Nom d'utilisateur et mot de passe | Il s'agit des identifiants du compte d'administrateur du cluster Cloud Volumes ONTAP. Vous pouvez utiliser ces identifiants pour vous connecter à Cloud Volumes ONTAP via System Manager ou son interface de ligne de commandes. Conservez le nom d'utilisateur _admin_ par défaut ou remplacez-le par un nom d'utilisateur personnalisé. 
 
 
-| Modifier les informations d'identification | Sélectionnez les identifiants AWS et l'abonnement Marketplace pour les utiliser avec ce système Cloud Volumes ONTAP. Cliquez sur *Ajouter un abonnement* pour associer les informations d'identification sélectionnées à un nouvel abonnement AWS Marketplace. L'abonnement peut s'agir d'un contrat annuel ou d'un paiement pour Cloud Volumes ONTAP à l'heure. Si vous achetez une licence directement auprès de NetApp (BYOL), un abonnement AWS n'est pas requis.https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html["Découvrez comment ajouter des identifiants AWS à BlueXP"^]. 
+| Modifier les informations d'identification | Sélectionnez les identifiants AWS et l'abonnement Marketplace pour les utiliser avec ce système Cloud Volumes ONTAP.
+
+Cliquez sur *Ajouter un abonnement* pour associer les informations d'identification sélectionnées à un nouvel abonnement AWS Marketplace. L'abonnement peut s'agir d'un contrat annuel ou d'un paiement pour Cloud Volumes ONTAP à l'heure.
+
+Si vous achetez une licence directement auprès de NetApp (BYOL), un abonnement AWS n'est pas requis.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Découvrez comment ajouter des identifiants AWS à BlueXP"^]. 
 |===
 +
 Découvrez dans cette vidéo comment associer un abonnement payant basé sur l'utilisation Marketplace à vos identifiants AWS :
@@ -329,8 +341,8 @@ TIP: Si plusieurs utilisateurs IAM travaillent sur le même compte AWS, chaque u
 
 . *Services* : conservez les services activés ou désactivez les services individuels que vous ne souhaitez pas utiliser avec ce système Cloud Volumes ONTAP.
 +
-** https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html["En savoir plus sur la classification BlueXP"^]
-** https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html["En savoir plus sur la sauvegarde et la restauration BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["En savoir plus sur la classification BlueXP"^]
+** https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-s3.html["En savoir plus sur la sauvegarde et la restauration BlueXP"^]
 +
 
 TIP: Si vous souhaitez utiliser le Tiering WORM et des données, vous devez désactiver la sauvegarde et la restauration BlueXP et déployer un environnement de travail Cloud Volumes ONTAP avec la version 9.8 ou supérieure.
@@ -500,7 +512,9 @@ image:screenshot_cot_vol.gif["Capture d'écran : affiche la page Volume remplie 
 | Domaine DNS | Le domaine DNS de la machine virtuelle de stockage Cloud Volumes ONTAP (SVM). Dans la plupart des cas, le domaine est identique au domaine AD. 
 
 
-| Serveur NTP | Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://docs.netapp.com/us-en/cloud-manager-automation/index.html["Documents d'automatisation BlueXP"^] pour plus d'informations. Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS. 
+| Serveur NTP | Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Voir la https://docs.netapp.com/us-en/bluexp-automation/index.html["Documents d'automatisation BlueXP"^] pour plus d'informations.
+
+Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS. 
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
