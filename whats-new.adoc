@@ -20,6 +20,20 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 4 juin 2023
+
+Le changement suivant a été introduit avec la version 3.9.30 du connecteur.
+
+
+
+=== Mise à jour du sélecteur de version de mise à niveau Cloud Volumes ONTAP
+
+Sur la page Cloud Volumes ONTAP de mise à niveau, vous pouvez désormais choisir de mettre à niveau vers la dernière version disponible de Cloud Volumes ONTAP ou une version antérieure.
+
+Pour en savoir plus sur la mise à niveau d'Cloud Volumes ONTAP via BlueXP, consultez la section https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Mettez à niveau Cloud Volumes ONTAP"^].
+
+
+
 == 7 mai 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.29 du connecteur.

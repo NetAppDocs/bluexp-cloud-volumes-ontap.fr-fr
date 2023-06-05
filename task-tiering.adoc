@@ -195,22 +195,10 @@ endif::gcp[]
 
 === Activation du Tiering des données après la mise en œuvre des exigences
 
-BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, tant qu'il n'y a aucun problème de connectivité ou d'autorisation. Si vous n'avez pas mis en œuvre les exigences énumérées ci-dessus jusqu'à ce que vous ayez créé le système, vous devrez activer manuellement le Tiering, qui crée le magasin d'objets.
+BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, tant qu'il n'y a aucun problème de connectivité ou d'autorisation. Si vous n'avez pas mis en œuvre les exigences ci-dessus avant d'avoir créé le système, vous devrez activer manuellement la hiérarchisation via l'API ou System Manager, ce qui crée le magasin d'objets.
 
-.Étapes
-. <<De formation,Assurez-vous que vous avez satisfait à toutes les exigences>>.
-. Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
-. Sur la page Canevas, sélectionnez le nom de l'instance Cloud Volumes ONTAP.
-. Cliquez sur l'icône de menu et sélectionnez *Activer la hiérarchisation de capacité*.
-+
 
-NOTE: Cette option ne s'affiche que si le Tiering des données n'a pas pu être activé lorsque BlueXP a créé le système.
-
-+
-Dans Google Cloud, un compte de service doit être joint à Cloud Volumes ONTAP avant que cette option ne s'affiche. <<De formation,Assurez-vous que vous avez satisfait à toutes les exigences>>.
-
-. Cliquez sur *Activer* pour que BlueXP puisse créer le magasin d'objets que ce système Cloud Volumes ONTAP utilisera pour les données hiérarchisées.
-
+NOTE: La possibilité d'activer le Tiering via l'interface utilisateur BlueXP sera disponible dans une prochaine version d'Cloud Volumes ONTAP.
 
 
 

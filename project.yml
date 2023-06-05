@@ -203,8 +203,6 @@ sidebar:
           url: "/task-change-ec2-instance.html"
         - title: Modifier les tables de routage pour les paires haute disponibilité
           url: "/task-change-route-tables.html"
-        - title: Contrôle des coûts AWS
-          url: "/task-monitoring-costs.html"
         - title: Configurer la création d'un groupe de placement
           url: task-configure-placement-group-failure-aws.html
       - title: Administration d'Azure
