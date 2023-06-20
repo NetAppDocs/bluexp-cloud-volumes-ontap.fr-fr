@@ -3845,7 +3845,6 @@
   <block id="86f463a1f0f0879749d1274dc94305d9" category="paragraph-title">Remarque importante</block>
   <block id="fdee261787c8d28a1d5af5c07b8580d6" category="list-text">À partir de ONTAP 9.9.1P7, pour la NVRAM et le disque central, BlueXP utilise un ensemble de cryptage de disque qui permet de gérer les clés de cryptage avec des disques gérés. Les versions inférieures utilisent une clé gérée par Microsoft au lieu de la clé gérée par le client.</block>
   <block id="d01b00b7df0dd6620e8ab49fb88f67b9" category="list-text">*Chiffrement de disque Azure pour chiffrement de volume* (pour les systèmes à un seul nœud ou les paires HA dans plusieurs zones)</block>
-  <block id="6337ff9e523cd4d0c21d00ce582cb8ca" category="admonition">Les autorisations ne sont pas nécessaires pour les paires haute disponibilité dans une seule zone.</block>
   <block id="d1432d772b2382ef2395e1eed551d5bb" category="paragraph-title">Autorisations Google Cloud requises</block>
   <block id="675d38d552c49bbf67606b2c5f1d5bed" category="section-title">Qu'est-ce que Flash cache ?</block>
   <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Créer un connecteur</block>
@@ -4942,4 +4941,32 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="9eecbfaf12c4b441b4b80b15e69b1763" category="paragraph"><block ref="861512b606f6337e516b8d3562c115c3" category="inline-link-macro-rx"></block>.</block>
   <block id="ce8df63e83de2ff4c9315aacad840c85" category="inline-link-macro">Instances EC2 prises en charge</block>
   <block id="eb8249aa4fe7f904487ee8ca24dce280" category="paragraph">Pour obtenir la liste des types d'instances pris en charge dans AWS, reportez-vous à la section <block ref="ab5d2be79e0f4831293646ade5590437" category="inline-link-macro-rx"></block>.</block>
+  <block id="21d684c5497d7c44f38249fb9317e2ff" category="section-title">Créez une identité gérée attribuée par l'utilisateur</block>
+  <block id="c1d9d82ae4f42fc1db168e7b745f9697" category="paragraph">Vous avez la possibilité de créer une ressource appelée identité gérée attribuée par l'utilisateur. Vous pouvez ainsi chiffrer vos comptes de stockage lorsque vous créez un environnement de travail Cloud Volumes ONTAP. Nous vous recommandons de créer cette ressource avant de créer un coffre-fort de clés et de générer une clé.</block>
+  <block id="2da2bdad0a1c89d70cb7a7586bf14758" category="paragraph">La ressource a l'ID suivant :<block ref="0169e4e7c078e2230c21c551eaf35e56" prefix=" " category="inline-code"></block>.</block>
+  <block id="2f37b99340ba454bd7f13c34ebaf9799" category="list-text">Dans Azure, accédez aux services Azure et sélectionnez *identités gérées*.</block>
+  <block id="f2a42a68e067e481d094b018459ef895" category="list-text">Cliquez sur *Créer*.</block>
+  <block id="0de11488ec479f7728a12eaa20900087" category="list-text">Fournissez les informations suivantes :</block>
+  <block id="eb6b5e1059f0c14240e0b29450c64244" category="list-text">*Abonnement* : choisissez un abonnement. Nous vous recommandons de choisir le même abonnement que l'abonnement Connector.</block>
+  <block id="10a805425ce15433762da2005f065657" category="list-text">*Groupe de ressources* : utilisez un groupe de ressources existant ou créez-en un nouveau.</block>
+  <block id="da2433e2c4da1ae4d4ccf813bec559d8" category="list-text">*Région* : sélectionnez éventuellement la même région que le connecteur.</block>
+  <block id="5b75c82ea3a972e4af28cf4cebb17b30" category="list-text">*Nom* : entrez un nom pour la ressource.</block>
+  <block id="a5224fbb5f2e884564b316411dcf1c8b" category="list-text">Si vous le souhaitez, ajoutez des balises.</block>
+  <block id="8a719e3e1b73b371d427de036115d5ca" category="inline-xref">créé une identité gérée attribuée par l'utilisateur</block>
+  <block id="6290500d5abf30b274cc1c7ddf30e546" category="paragraph">Si vous <block ref="33573eb5764d0fad6438d3a347eee31f" category="inline-xref-macro-rx"></block>, lors de la création du coffre-fort de clés, vous devez également créer une stratégie d'accès pour le coffre-fort de clés.</block>
+  <block id="4fe37dc4f545dffb56459397b5344d4c" category="list-text">L'option suivante doit être activée si vous avez créé une identité gérée attribuée par l'utilisateur :</block>
+  <block id="7761893631ec0e57ca5b1847392a89d1" category="list-text">*Politique d'accès au coffre-fort*</block>
+  <block id="6b549cac54fb4417d571d2ff5fe2226a" category="list-text">Si vous avez sélectionné la règle d'accès au coffre-fort, cliquez sur Créer pour créer une règle d'accès pour le coffre-fort de clés. Si ce n'est pas le cas, passez à l'étape 3.</block>
+  <block id="05d7a493e761863b43bc21c5b24707a8" category="list-text">Sélectionnez les autorisations suivantes :</block>
+  <block id="b5eda0a74558a342cf659187f06f746f" category="list-text">obtenez</block>
+  <block id="10ae9fc7d453b0dd525d0edf2ede7961" category="list-text">liste</block>
+  <block id="9a2d8ce3ffdcdf2123bddd94d79ef200" category="list-text">déchiffrement</block>
+  <block id="53c82eba31f6d416f331de9162ebe997" category="list-text">chiffrer</block>
+  <block id="64d6d5cd6bec2e7026a301304363a0f2" category="list-text">touche de déroulage</block>
+  <block id="2733a028e38aa84f7ea84735ac7988a6" category="list-text">touche wrap</block>
+  <block id="e8418d1d706cd73548f9f16f1d55ad6e" category="list-text">la vérification</block>
+  <block id="04b29480233f4def5c875875b6bdc3b1" category="list-text">signe</block>
+  <block id="dfbbb3ca890c5e816afc33a0f5d49ec2" category="list-text">Sélectionnez l'identité gérée (ressource) attribuée par l'utilisateur comme principal.</block>
+  <block id="0882685275009e45f6167bce4081e668" category="list-text">Révision et création de la stratégie d'accès.</block>
+  <block id="1f8370f663ec71e8fac7dc386794543c" category="admonition">Incluez le<block ref="d740baa07e4af19d0de1f45650cf4bc0" prefix=" " category="inline-code"></block> si vous avez créé cette ressource à utiliser pour le cryptage du compte de stockage.</block>
 </blocks>

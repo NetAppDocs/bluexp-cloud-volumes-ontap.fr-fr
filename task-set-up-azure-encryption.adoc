@@ -76,9 +76,34 @@ Un seul nœud::
 
 
 
+== Créez une identité gérée attribuée par l'utilisateur
+
+Vous avez la possibilité de créer une ressource appelée identité gérée attribuée par l'utilisateur. Vous pouvez ainsi chiffrer vos comptes de stockage lorsque vous créez un environnement de travail Cloud Volumes ONTAP. Nous vous recommandons de créer cette ressource avant de créer un coffre-fort de clés et de générer une clé.
+
+La ressource a l'ID suivant : `userassignedidentity`.
+
+.Étapes
+. Dans Azure, accédez aux services Azure et sélectionnez *identités gérées*.
+. Cliquez sur *Créer*.
+. Fournissez les informations suivantes :
++
+** *Abonnement* : choisissez un abonnement. Nous vous recommandons de choisir le même abonnement que l'abonnement Connector.
+** *Groupe de ressources* : utilisez un groupe de ressources existant ou créez-en un nouveau.
+** *Région* : sélectionnez éventuellement la même région que le connecteur.
+** *Nom* : entrez un nom pour la ressource.
+
+
+. Si vous le souhaitez, ajoutez des balises.
+. Cliquez sur *Créer*.
+
+
+
+
 == Créez un coffre-fort de clés et générez une clé
 
 Le coffre-fort de clés doit résider dans la même région et l'abonnement Azure dans laquelle vous prévoyez de créer le système Cloud Volumes ONTAP.
+
+Si vous <<Créez une identité gérée attribuée par l'utilisateur,créé une identité gérée attribuée par l'utilisateur>>, lors de la création du coffre-fort de clés, vous devez également créer une stratégie d'accès pour le coffre-fort de clés.
 
 .Étapes
 . https://docs.microsoft.com/en-us/azure/key-vault/general/quick-create-portal["Créez un coffre-fort de clés dans votre abonnement Azure"^].
@@ -94,6 +119,29 @@ Notez les exigences suivantes pour le coffre-fort de clés :
 *** *Chiffrement de disque Azure pour chiffrement de volume* (pour les systèmes à un seul nœud ou les paires HA dans plusieurs zones)
 
 
+** L'option suivante doit être activée si vous avez créé une identité gérée attribuée par l'utilisateur :
++
+*** *Politique d'accès au coffre-fort*
+
+
+
+
+. Si vous avez sélectionné la règle d'accès au coffre-fort, cliquez sur Créer pour créer une règle d'accès pour le coffre-fort de clés. Si ce n'est pas le cas, passez à l'étape 3.
++
+.. Sélectionnez les autorisations suivantes :
++
+*** obtenez
+*** liste
+*** déchiffrement
+*** chiffrer
+*** touche de déroulage
+*** touche wrap
+*** la vérification
+*** signe
+
+
+.. Sélectionnez l'identité gérée (ressource) attribuée par l'utilisateur comme principal.
+.. Révision et création de la stratégie d'accès.
 
 
 . https://docs.microsoft.com/en-us/azure/key-vault/keys/quick-create-portal#add-a-key-to-key-vault["Générez une clé dans le coffre-fort de clés"^].
@@ -118,18 +166,15 @@ Si vous souhaitez utiliser une clé gérée par le client avec un système Cloud
 
 [source, json]
 ----
-"Microsoft.Compute/diskEncryptionSets/read"
+"Microsoft.Compute/diskEncryptionSets/read",
 "Microsoft.Compute/diskEncryptionSets/write",
 "Microsoft.Compute/diskEncryptionSets/delete"
 "Microsoft.KeyVault/vaults/deploy/action",
 "Microsoft.KeyVault/vaults/read",
-"Microsoft.KeyVault/vaults/accessPolicies/write"
+"Microsoft.KeyVault/vaults/accessPolicies/write",
 "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
 ----
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Affichez la liste des autorisations les plus récentes"^]
-
-
-NOTE: Les autorisations ne sont pas nécessaires pour les paires haute disponibilité dans une seule zone.
 
 .Étapes
 . Obtenez la liste des coffres-forts de clés dans votre abonnement Azure en utilisant l'appel d'API BlueXP suivant.
@@ -172,10 +217,13 @@ Le corps de la demande doit inclure les champs suivants :
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: Incluez le `"userAssignedIdentity": " userAssignedIdentityId"` si vous avez créé cette ressource à utiliser pour le cryptage du compte de stockage.
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-haworking-environments["En savoir plus sur cet appel d'API"^].
 
@@ -191,10 +239,13 @@ Le corps de la demande doit inclure les champs suivants :
 ----
 "azureEncryptionParameters": {
               "key": "keyName",
-              "vaultName": "vaultName",
-              "userAssignedIdentity": " userAssignedIdentityId", [Optional]***
+              "vaultName": "vaultName"
 }
 ----
++
+
+NOTE: Incluez le `"userAssignedIdentity": " userAssignedIdentityId"` si vous avez créé cette ressource à utiliser pour le cryptage du compte de stockage.
+
 +
 https://docs.netapp.com/us-en/bluexp-automation/cm/api_ref_resources.html#azure-vsaworking-environments["En savoir plus sur cet appel d'API"^].
 
