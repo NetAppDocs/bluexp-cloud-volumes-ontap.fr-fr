@@ -31,7 +31,7 @@ NOTE: La création de volumes FlexGroup dans BlueXP est prévue pour une prochai
 
 == BlueXP ne prend pas en charge S3 avec Cloud Volumes ONTAP
 
-Dans certains fournisseurs cloud, Cloud Volumes ONTAP prend en charge S3 en tant qu'option de stockage scale-out, mais BlueXP n'offre pas de fonctionnalités de gestion pour cette fonctionnalité. Il est recommandé d'utiliser l'interface de ligne de commandes pour configurer l'accès des clients S3 à partir d'Cloud Volumes ONTAP. Pour plus de détails, reportez-vous à la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["Guide de l'alimentation de la configuration S3"^].
+Cloud Volumes ONTAP prend en charge S3 en tant qu'option de stockage scale-out, mais BlueXP n'offre aucune fonctionnalité de gestion pour cette fonctionnalité. Il est recommandé d'utiliser l'interface de ligne de commandes pour configurer l'accès des clients S3 à partir d'Cloud Volumes ONTAP. Pour plus de détails, reportez-vous à la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["Guide de l'alimentation de la configuration S3"^].
 
 link:concept-client-protocols.html["En savoir plus sur la prise en charge de Cloud Volumes ONTAP pour S3 et d'autres protocoles client"].
 
