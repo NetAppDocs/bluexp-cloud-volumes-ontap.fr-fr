@@ -47,3 +47,13 @@ TIP: BlueXP crée ce périmètre lorsque vous activez FPolicy sur Cloud Volumes 
 
 
 image:screenshot_ransomware_protection.gif["Capture d'écran affichant la page protection contre les attaques par ransomware disponible dans un environnement de travail. L'écran affiche le nombre de volumes sans une règle Snapshot et la possibilité de bloquer les extensions de fichier ransomware."]
+
+
+
+== Protection autonome contre les ransomwares
+
+Cloud Volumes ONTAP prend en charge la fonctionnalité de protection anti-ransomware autonome (ARP), qui effectue des analyses sur les workloads pour détecter de manière proactive les activités anormales et vous avertir d'une attaque de ransomware.
+
+La fonctionnalité ARP est disponible uniquement pour les licences BYOL (sur un, deux ou trois ans), pour les modèles de licence basés sur les nœuds et la capacité. Vous devez contacter votre représentant commercial NetApp pour acheter une nouvelle licence à utiliser avec la fonction ARP de Cloud Volumes ONTAP.
+
+Lors de l'achat d'une licence et de son ajout au portefeuille digital, vous pouvez activer le protocole ARP par volume avec Cloud Volumes ONTAP. La configuration du protocole ARP pour les volumes s'effectue via ONTAP System Manager et l'interface de ligne de commande ONTAP. Pour plus d'informations sur l'activation d'ARP avec ONTAP System Manager et l'interface de ligne de commande, reportez-vous à la section https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Activation de la protection autonome contre les ransomwares"^].

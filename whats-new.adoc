@@ -20,6 +20,28 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 2 juillet 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.31 du connecteur.
+
+
+
+=== Prise en charge des déploiements haute disponibilité de plusieurs zones de disponibilité dans Azure
+
+Dans Azure, le Japon de l'est et la Corée du Sud prennent désormais en charge les déploiements de zones de disponibilité multiples haute disponibilité pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+Pour obtenir la liste de toutes les régions prenant en charge plusieurs zones de disponibilité, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+
+
+
+=== Prise en charge de la protection anti-ransomware autonome
+
+La protection anti-ransomware autonome (ARP) est désormais prise en charge sur Cloud Volumes ONTAP. La prise en charge ARP est disponible sur Cloud Volumes ONTAP version 9.12.1 et supérieure.
+
+Pour en savoir plus sur ARP avec Cloud Volumes ONTAP, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Protection autonome contre les ransomwares"].
+
+
+
 == 26 juin 2023
 
 Le changement suivant a été introduit avec la version 3.9.30 du connecteur.

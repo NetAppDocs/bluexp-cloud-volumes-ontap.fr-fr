@@ -285,7 +285,7 @@ Chaque machine virtuelle de stockage servant de données dispose d'au moins un v
 
 Si vous n'avez pas encore provisionné de volumes, le coût minimum n'est pas appliqué.
 
-Les frais de capacité minimale de 4 Tio ne s'appliquent pas aux machines virtuelles de stockage contenant uniquement des volumes secondaires (protection des données). Par exemple, si vous disposez d'une machine virtuelle de stockage avec 1 To de données secondaires, vous êtes facturé uniquement pour cette To de données.
+Pour le pack Essentials, les frais de capacité minimale de 4 To ne s'appliquent pas aux machines virtuelles de stockage qui contiennent des volumes secondaires (protection des données) uniquement. Par exemple, si vous disposez d'une machine virtuelle de stockage avec 1 To de données secondaires, vous êtes facturé uniquement pour cette To de données. Avec tous les autres types de packages non Essentials (optimisé, professionnel et Edge cache), les frais de capacité minimale de 4 To s'appliquent, quel que soit le type de volume.
 
 
 
