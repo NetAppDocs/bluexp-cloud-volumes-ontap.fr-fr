@@ -20,6 +20,20 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 26 juillet 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.31 du connecteur.
+
+
+
+=== Cloud Volumes ONTAP 9.13.1 GA
+
+BlueXP peut désormais déployer et gérer la version Cloud Volumes ONTAP 9.13.1 General Availability dans AWS, Azure et Google Cloud.
+
+https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
+
+
+
 == 2 juillet 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.31 du connecteur.
@@ -88,7 +102,7 @@ La région centrale de Suède est désormais prise en charge dans Azure pour Clo
 
 
 
-=== Prise en charge des déploiements de zones haute disponibilité dans Azure Australia East
+=== Prise en charge des déploiements de zones de disponibilité multiples haute disponibilité dans Azure Australia East
 
 La région est de l'Australie dans Azure prend désormais en charge les déploiements HA avec plusieurs zones de disponibilité pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
