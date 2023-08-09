@@ -31,6 +31,9 @@ Le modèle de licence par nœud précédent reste disponible pour les clients qu
 Les sections suivantes fournissent plus de détails sur chacune de ces options.
 
 
+NOTE: L'assistance n'est pas disponible pour l'utilisation des fonctions sous licence sans licence.
+
+
 
 == Licences basées sur la capacité
 

@@ -24,7 +24,7 @@ Des privilèges d'administrateur de compte sont requis pour modifier les paramè
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
 +
-image:screenshot_settings_connector_button.png["Capture d'écran de l'option Paramètres du connecteur sous l'icône Paramètres de la barre d'état."]
+image::screenshot_settings_connector_button.png[capture d'écran paramètres bouton connecteur]
 
 . Sous *Capacity*, modifiez l'un des paramètres suivants :
 +

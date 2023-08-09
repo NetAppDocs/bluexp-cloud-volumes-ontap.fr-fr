@@ -257,7 +257,7 @@ Par exemple, l'information avancée devrait dire quelque chose de similaire à c
 Vous devez choisir des volumes suffisamment volumineux pour libérer de l'espace dans l'agrégat afin d'éviter d'autres problèmes de capacité à l'avenir.
 
 +
-image:screenshot_aggr_volume_overview.png["Capture d'écran : affiche la liste des volumes d'un agrégat dans la boîte de dialogue Informations sur l'agrégat."]
+image::screenshot_aggr_volume_overview.png[vue d'ensemble du volume de capture d'écran]
 
 
 
@@ -335,7 +335,7 @@ Le déplacement de deux volumes ou plus est nécessaire pour éviter les problè
 .. Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône ellipse) > Afficher les détails de l'agrégat*.
 .. Sous la vignette Aggregate, afficher la capacité disponible (taille provisionnée moins capacité agrégée utilisée).
 +
-image:screenshot_aggr_capacity.png["Capture d'écran : affiche la capacité totale d'agrégat et la capacité d'agrégat utilisée disponibles dans la boîte de dialogue Informations d'agrégat."]
+image::screenshot_aggr_capacity.png[capacité de l'agrégat de capture d'écran]
 
 
 
@@ -380,7 +380,7 @@ Une ancienne méthode de nommage est utilisée si le Tiering des données était
 
 Vous pouvez afficher les volumes FlexGroup créés via l'interface de ligne de commande ou System Manager directement via l'onglet volumes de BlueXP. De même que les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées pour les volumes FleGroup créés via une mosaïque volumes dédiés. Sous la vignette volumes, vous pouvez identifier chaque groupe de volumes FlexGroup à l'aide du texte qui s'affiche lorsque vous positionnez le curseur de votre souris sur cette icône. En outre, vous pouvez identifier et trier les volumes FlexGroup sous la vue de liste des volumes via la colonne style de volume.
 
-image:screenshot_show_flexgroup_vol.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
+image::screenshot_show_flexgroup_vol.png[capture d'écran montrant FlexGroup vol]
 
 
 NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.

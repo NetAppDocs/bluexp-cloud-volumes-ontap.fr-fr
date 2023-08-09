@@ -42,7 +42,7 @@ Pour obtenir la liste des types d'instances pris en charge dans AWS, reportez-vo
 . Sur la page Canevas, sélectionnez l'environnement de travail.
 . Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *Type d'instance*.
 +
-image:screenshot_features_instance_type.png["Capture d'écran affichant le paramètre Type d'instance sous le panneau fonctions disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail."]
+image::screenshot_features_instance_type.png[400]
 
 +
 .. Si vous utilisez une licence PAYGO basée sur des nœuds, vous pouvez choisir une autre licence et un autre type d'instance en cliquant sur l'icône en forme de crayon en regard de *Type de licence*.

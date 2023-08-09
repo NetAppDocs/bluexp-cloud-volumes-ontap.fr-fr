@@ -29,7 +29,7 @@ Avant de modifier la vitesse d'écriture, vous devez link:concept-write-speed.ht
 . Sur la page Canevas, double-cliquez sur le nom du système que vous configurez pour la vitesse d'écriture.
 . Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *vitesse d'écriture*.
 +
-image:screenshot_features_write_speed.png["Capture d'écran affichant le paramètre vitesse d'écriture sous le panneau fonctionnalités disponible en haut à droite de la page vue d'ensemble lors de l'affichage d'un environnement de travail."]
+image::screenshot_features_write_speed.png[400]
 
 . Sélectionnez *Normal* ou *Haut*.
 +

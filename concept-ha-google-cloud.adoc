@@ -143,7 +143,7 @@ TIP: Si vous déplacez un volume entre les nœuds d'une paire HA, vous devez rem
 
 Vous pouvez facilement identifier l'adresse IP correcte via l'option _Mount Command_ du panneau Manage volumes de BlueXP.
 
-image:screenshot_mount_option.png["Capture d'écran : affiche la commande Mount qui est disponible lorsque vous sélectionnez un volume."]
+image::screenshot_mount_option.png[400]
 
 
 

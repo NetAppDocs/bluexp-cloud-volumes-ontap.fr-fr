@@ -38,7 +38,7 @@ Les instantanés sont automatiquement créés uniquement lors d'un arrêt manuel
 . Sur la page Canevas, double-cliquez sur l'environnement de travail souhaité.
 . Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *temps d'arrêt programmé*.
 +
-image:screenshot_schedule_downtime.png["Capture d'écran : affiche l'icône qui charge la page d'arrêt automatique."]
+image::screenshot_schedule_downtime.png[400]
 
 . Spécifiez la planification de l'arrêt :
 +
