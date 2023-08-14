@@ -11,6 +11,7 @@ summary: Utilisez le service de gestion des clés de Google pour votre service d
 :imagesdir: ../media/
 
 
+[role="lead"]
 Vous pouvez utiliser link:https://cloud.google.com/kms/docs["Service de gestion des clés (KMS cloud) de Google Cloud Platform"^] Pour protéger vos clés de chiffrement ONTAP dans une application déployée sur Google Cloud Platform.
 
 La gestion des clés via le serveur Cloud KMS peut être activée via l'interface de ligne de commande ou l'API REST de ONTAP.
