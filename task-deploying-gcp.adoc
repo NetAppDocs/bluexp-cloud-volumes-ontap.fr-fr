@@ -127,7 +127,7 @@ Si vous laissez BlueXP générer la stratégie de pare-feu pour vous, vous devez
 
 
 
-| Utilisez la politique de pare-feu existante | Si vous utilisez une politique de pare-feu existante, assurez-vous qu'elle inclut les règles requises. link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["En savoir plus sur les règles de pare-feu pour Cloud Volumes ONTAP"]. 
+| Utilisez la politique de pare-feu existante | Si vous utilisez une politique de pare-feu existante, assurez-vous qu'elle inclut les règles requises. Lien : https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#firewall-rules[Learn à propos des règles de pare-feu pour Cloud Volumes ONTAP^]. 
 |===
 . *Méthodes de chargement et compte NSS* : spécifiez l'option de chargement à utiliser avec ce système, puis spécifiez un compte sur le site de support NetApp.
 +
@@ -152,7 +152,7 @@ Le type de disque correspond au volume initial. Vous pouvez choisir un autre typ
 La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 
 +
-Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionnement du système dans Google Cloud"].
+Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionnez votre système dans Google Cloud"].
 
 . *Flash cache, vitesse d'écriture et WORM* :
 +
@@ -260,7 +260,7 @@ Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
-Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["Présentation des profils d'utilisation des volumes"] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
 
 . *Revue et approbation* : consultez et confirmez vos choix.
 +
@@ -368,7 +368,7 @@ Si vous laissez BlueXP générer la stratégie de pare-feu pour vous, vous devez
 
 
 
-| Utiliser l'existant | Si vous utilisez une politique de pare-feu existante, assurez-vous qu'elle inclut les règles requises. link:reference-networking-gcp.html#firewall-rules-for-cloud-volumes-ontap["En savoir plus sur les règles de pare-feu pour Cloud Volumes ONTAP"]. 
+| Utiliser l'existant | Si vous utilisez une politique de pare-feu existante, assurez-vous qu'elle inclut les règles requises. link:reference-networking-gcp.html#firewall-rules["En savoir plus sur les règles de pare-feu pour Cloud Volumes ONTAP"]. 
 |===
 . *Méthodes de chargement et compte NSS* : spécifiez l'option de chargement à utiliser avec ce système, puis spécifiez un compte sur le site de support NetApp.
 +
@@ -393,7 +393,7 @@ Le type de disque correspond au volume initial. Vous pouvez choisir un autre typ
 La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 
 +
-Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#sizing-your-system-in-gcp["Dimensionnement du système dans Google Cloud"].
+Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionnez votre système dans Google Cloud"].
 
 . *Flash cache, vitesse d'écriture et WORM* :
 +
@@ -500,7 +500,7 @@ Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
-Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choosing-a-volume-usage-profile["Présentation des profils d'utilisation des volumes"] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
 
 . *Revue et approbation* : consultez et confirmez vos choix.
 +

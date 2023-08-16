@@ -88,7 +88,7 @@ Si vous ne pouvez pas configurer de passerelle de transit, des adresses IP priv�
 
 Avant de déployer une configuration haute disponibilité sur plusieurs zones de disponibilité, vous devez consulter les exigences relatives aux adresses IP flottantes et aux tables de routage. Vous devez spécifier les adresses IP flottantes lors du déploiement de la configuration. Les adresses IP privées sont automatiquement créées par BlueXP.
 
-Pour plus de détails, voir link:reference-networking-aws.html#aws-networking-requirements-for-cloud-volumes-ontap-ha-in-multiple-azs["Configuration réseau AWS requise pour Cloud Volumes ONTAP HA dans plusieurs AZS"].
+Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["Configuration réseau AWS requise pour Cloud Volumes ONTAP HA dans plusieurs AZS"^].
 
 
 

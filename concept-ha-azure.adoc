@@ -32,7 +32,7 @@ Notez les éléments suivants concernant les composants Azure que BlueXP déploi
 
 Équilibreur de la charge Azure Standard:: Le répartiteur de charge gère le trafic entrant vers la paire haute disponibilité Cloud Volumes ONTAP.
 Ensemble de disponibilité:: Le jeu de disponibilité Azure est un regroupement logique des nœuds Cloud Volumes ONTAP. L'ensemble de disponibilité garantit que les nœuds se trouvent dans des domaines de défaillance et de mise à jour différents pour assurer la redondance et la disponibilité. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Pour en savoir plus sur les ensembles de disponibilité, consultez la documentation Azure"^].
-Disques:: Les données client résident sur les blobs de la page Premium Storage. Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["des données « boot », « root » et « core »"].
+Disques:: Les données client résident sur les blobs de la page Premium Storage. Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["des données « boot », « root » et « core »"^].
 Comptes de stockage::
 +
 --
@@ -61,7 +61,7 @@ Notez les éléments suivants concernant les composants Azure que BlueXP déploi
 
 Équilibreur de la charge Azure Standard:: Le répartiteur de charge gère le trafic entrant vers la paire haute disponibilité Cloud Volumes ONTAP.
 Ensemble de disponibilité:: Le jeu de disponibilité Azure est un regroupement logique des nœuds Cloud Volumes ONTAP. L'ensemble de disponibilité garantit que les nœuds se trouvent dans des domaines de défaillance et de mise à jour différents pour assurer la redondance et la disponibilité. https://docs.microsoft.com/en-us/azure/virtual-machines/availability-set-overview["Pour en savoir plus sur les ensembles de disponibilité, consultez la documentation Azure"^].
-Disques:: Les données client résident sur des disques gérés LRS (stockage redondant local). Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["Données d'amorçage, racine, racine du partenaire, cœur et données NVRAM"].
+Disques:: Les données client résident sur des disques gérés LRS (stockage redondant local). Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["Données d'amorçage, racine, racine du partenaire, cœur et données NVRAM"^].
 Comptes de stockage:: Les comptes de stockage sont utilisés pour les déploiements sur disques gérés pour la gestion des journaux de diagnostic et le Tiering sur le stockage d'objets blob.
 
 
@@ -77,7 +77,7 @@ Notez les éléments suivants concernant les composants Azure que BlueXP déploi
 
 Équilibreur de la charge Azure Standard:: Le répartiteur de charge gère le trafic entrant vers la paire haute disponibilité Cloud Volumes ONTAP.
 Zones de disponibilité:: Deux nœuds Cloud Volumes ONTAP sont déployés sur différentes zones de disponibilité. Les zones de disponibilité garantissent que les nœuds se trouvent dans différents domaines de défaillance. https://learn.microsoft.com/en-us/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks["En savoir plus sur le stockage redondant par zone Azure pour les disques gérés dans la documentation Azure"^].
-Disques:: Les données clients résident sur des disques gérés ZRS (zone-redondant Storage). Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour link:reference-default-configs.html#boot-and-root-data-for-cloud-volumes-ontap["données de démarrage, racine, racine partenaire et données principales"].
+Disques:: Les données clients résident sur des disques gérés ZRS (zone-redondant Storage). Chaque nœud a accès au stockage de l'autre nœud. Du stockage supplémentaire est également requis pour link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair["données de démarrage, racine, racine partenaire et données principales"^].
 Comptes de stockage:: Les comptes de stockage sont utilisés pour les déploiements sur disques gérés pour la gestion des journaux de diagnostic et le Tiering sur le stockage d'objets blob.
 
 

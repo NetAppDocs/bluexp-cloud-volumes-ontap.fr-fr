@@ -263,18 +263,18 @@ image::screenshot_aggr_volume_overview.png[vue d'ensemble du volume de capture d
 
 . Si le système n'a pas atteint la limite de disque, vous devez déplacer les volumes vers un agrégat existant ou vers un nouvel agrégat sur le même système.
 +
-Pour plus de détails, voir link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["Déplacement des volumes vers un autre agrégat pour éviter les problèmes de capacité"].
+Pour plus de détails, voir <<move-volumes-aggregate-capacity,Déplacez les volumes vers un autre agrégat pour éviter les problèmes de capacité>>.
 
 . Si le système a atteint la limite de disque, effectuez l'une des opérations suivantes :
 +
 .. Supprimez tous les volumes inutilisés.
 .. Réorganiser les volumes pour libérer de l'espace sur un agrégat.
 +
-Pour plus de détails, voir link:task-manage-volumes.html#moving-volumes-to-another-aggregate-to-avoid-capacity-issues["Déplacement des volumes vers un autre agrégat pour éviter les problèmes de capacité"].
+Pour plus de détails, voir <<move-volumes-aggregate-capacity,Déplacez les volumes vers un autre agrégat pour éviter les problèmes de capacité>>.
 
 .. Déplacez deux volumes ou plus vers un autre système disposant d'espace.
 +
-Pour plus de détails, voir link:task-manage-volumes.html#moving-volumes-to-another-system-to-avoid-capacity-issues["Déplacement des volumes vers un autre système pour éviter les problèmes de capacité"].
+Pour plus de détails, voir <<move-volumes-aggregate-capacity,Déplacez les volumes vers un autre agrégat pour éviter les problèmes de capacité>>.
 
 
 
