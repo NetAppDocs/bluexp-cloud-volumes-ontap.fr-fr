@@ -73,7 +73,7 @@ Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de 
 | Nom de l'environnement de travail | BlueXP utilise le nom de l'environnement de travail pour nommer à la fois le système Cloud Volumes ONTAP et l'instance Google Cloud VM. Il utilise également le nom comme préfixe pour le groupe de sécurité prédéfini, si vous sélectionnez cette option. 
 
 
-| Nom du compte de service | Si vous prévoyez d'utiliser link:concept-data-tiering.html["tiering des données"] ou https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Sauvegarde et restauration BlueXP"^] Avec Cloud Volumes ONTAP, vous devez alors activer *compte de service* et sélectionner un compte de service disposant du rôle d'administrateur de stockage prédéfini. link:task-creating-gcp-service-account.html["Découvrez comment créer un compte de service"]. 
+| Nom du compte de service | Si vous prévoyez d'utiliser link:concept-data-tiering.html["tiering des données"] ou https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["Sauvegarde et restauration BlueXP"^] Avec Cloud Volumes ONTAP, vous devez alors activer *compte de service* et sélectionner un compte de service disposant du rôle d'administrateur de stockage prédéfini. link:task-creating-gcp-service-account.html["Découvrez comment créer un compte de service"^]. 
 
 
 | Ajouter des étiquettes | Les étiquettes sont des métadonnées pour vos ressources Google Cloud. BlueXP ajoute les étiquettes au système Cloud Volumes ONTAP et aux ressources Google Cloud associées au système. Vous pouvez ajouter jusqu'à quatre étiquettes à partir de l'interface utilisateur lors de la création d'un environnement de travail, puis vous pouvez en ajouter d'autres une fois qu'elles ont été créées. Notez que l'API ne vous limite pas à quatre étiquettes lors de la création d'un environnement de travail. Pour plus d'informations sur les étiquettes, reportez-vous à la section https://cloud.google.com/compute/docs/labeling-resources["Documentation Google Cloud : étiquetage des ressources"^]. 
@@ -131,8 +131,8 @@ Si vous laissez BlueXP générer la stratégie de pare-feu pour vous, vous devez
 |===
 . *Méthodes de chargement et compte NSS* : spécifiez l'option de chargement à utiliser avec ce système, puis spécifiez un compte sur le site de support NetApp.
 +
-** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-google.html["Découvrez comment configurer les licences"].
+** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-google.html["Découvrez comment configurer les licences"^].
 
 
 . *Packages préconfigurés* : sélectionnez un des packages pour déployer rapidement un système Cloud Volumes ONTAP ou cliquez sur *Créer ma propre configuration*.
@@ -152,7 +152,7 @@ Le type de disque correspond au volume initial. Vous pouvez choisir un autre typ
 La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 
 +
-Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionnez votre système dans Google Cloud"].
+Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionnez votre système dans Google Cloud"^].
 
 . *Flash cache, vitesse d'écriture et WORM* :
 +
@@ -167,14 +167,14 @@ link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
 
 +
 
-NOTE: Une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 octets sont disponibles via l'option de vitesse d'écriture *élevée*. En outre, pour augmenter la MTU de 9 8,896, les VPC-1, VPC-2 et VPC-3 doivent être sélectionnés pour le déploiement. Pour plus d'informations sur les modèles VPC-1, VPC-2 et VPC-3, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Règles pour VPC-1, VPC-2 et VPC-3"].
+NOTE: Une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 octets sont disponibles via l'option de vitesse d'écriture *élevée*. En outre, pour augmenter la MTU de 9 8,896, les VPC-1, VPC-2 et VPC-3 doivent être sélectionnés pour le déploiement. Pour plus d'informations sur les modèles VPC-1, VPC-2 et VPC-3, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Règles pour VPC-1, VPC-2 et VPC-3"^].
 
 .. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
 LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
-link:concept-worm.html["En savoir plus sur le stockage WORM"].
+link:concept-worm.html["En savoir plus sur le stockage WORM"^].
 
 .. Si vous activez le stockage WORM, sélectionnez la période de conservation.
 
@@ -189,13 +189,13 @@ Notez ce qui suit :
 ** Vous pouvez choisir une règle de Tiering des volumes spécifique lorsque vous créez ou modifiez un volume.
 ** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants, mais vous devrez désactiver le système et ajouter un compte de service depuis la console Google Cloud.
 +
-link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
+link:concept-data-tiering.html["En savoir plus sur le Tiering des données"^].
 
 
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +
-link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"].
+link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"^].
 
 +
 Certains champs de cette page sont explicites. Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -260,7 +260,7 @@ Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
-Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"^] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"^].
 
 . *Revue et approbation* : consultez et confirmez vos choix.
 +
@@ -344,11 +344,11 @@ TIP: Si vous souhaitez utiliser le Tiering WORM et des données, vous devez dés
 
 . *Modèles de déploiement haute disponibilité* : choisissez plusieurs zones (recommandé) ou une seule zone pour la configuration haute disponibilité. Sélectionnez ensuite une région et des zones.
 +
-link:concept-ha-google-cloud.html["En savoir plus sur les modèles de déploiement pour la haute disponibilité"].
+link:concept-ha-google-cloud.html["En savoir plus sur les modèles de déploiement pour la haute disponibilité"^].
 
 . *Connectivité* : sélectionnez quatre VPC différents pour la configuration HA, un sous-réseau dans chaque VPC, puis choisissez une stratégie de pare-feu.
 +
-link:reference-networking-gcp.html["En savoir plus sur les exigences de mise en réseau"].
+link:reference-networking-gcp.html["En savoir plus sur les exigences de mise en réseau"^].
 
 +
 Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -368,12 +368,12 @@ Si vous laissez BlueXP générer la stratégie de pare-feu pour vous, vous devez
 
 
 
-| Utiliser l'existant | Si vous utilisez une politique de pare-feu existante, assurez-vous qu'elle inclut les règles requises. link:reference-networking-gcp.html#firewall-rules["En savoir plus sur les règles de pare-feu pour Cloud Volumes ONTAP"]. 
+| Utiliser l'existant | Si vous utilisez une politique de pare-feu existante, assurez-vous qu'elle inclut les règles requises. link:reference-networking-gcp.html#firewall-rules["En savoir plus sur les règles de pare-feu pour Cloud Volumes ONTAP"^]. 
 |===
 . *Méthodes de chargement et compte NSS* : spécifiez l'option de chargement à utiliser avec ce système, puis spécifiez un compte sur le site de support NetApp.
 +
-** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-google.html["Découvrez comment configurer les licences"].
+** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-google.html["Découvrez comment configurer les licences"^].
 
 
 . *Packages préconfigurés* : sélectionnez un des packages pour déployer rapidement un système Cloud Volumes ONTAP ou cliquez sur *Créer ma propre configuration*.
@@ -393,7 +393,7 @@ Le type de disque correspond au volume initial. Vous pouvez choisir un autre typ
 La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 
 +
-Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionnez votre système dans Google Cloud"].
+Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reportez-vous à la section link:task-planning-your-config-gcp.html#size-your-system-in-gcp["Dimensionnez votre système dans Google Cloud"^].
 
 . *Flash cache, vitesse d'écriture et WORM* :
 +
@@ -404,18 +404,18 @@ NOTE: À partir de Cloud Volumes ONTAP 9.13.1, _Flash cache_ est pris en charge 
 
 .. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
-link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
+link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"^].
 
 +
 
-NOTE: Une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 octets sont disponibles via l'option de vitesse d'écriture *élevée* avec les types d'instances n2-standard-16, n2-standard-32, n2-standard-48 et n2-standard-64. En outre, pour augmenter la MTU de 9 8,896, les VPC-1, VPC-2 et VPC-3 doivent être sélectionnés pour le déploiement. Une vitesse d'écriture élevée et un MTU de 9 8,896 dépendent des fonctionnalités et ne peuvent pas être désactivés individuellement dans une instance configurée. Pour plus d'informations sur les modèles VPC-1, VPC-2 et VPC-3, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Règles pour VPC-1, VPC-2 et VPC-3"].
+NOTE: Une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 octets sont disponibles via l'option de vitesse d'écriture *élevée* avec les types d'instances n2-standard-16, n2-standard-32, n2-standard-48 et n2-standard-64. En outre, pour augmenter la MTU de 9 8,896, les VPC-1, VPC-2 et VPC-3 doivent être sélectionnés pour le déploiement. Une vitesse d'écriture élevée et un MTU de 9 8,896 dépendent des fonctionnalités et ne peuvent pas être désactivés individuellement dans une instance configurée. Pour plus d'informations sur les modèles VPC-1, VPC-2 et VPC-3, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-gcp.html#requirements-for-the-connector["Règles pour VPC-1, VPC-2 et VPC-3"^].
 
 .. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
 LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
-link:concept-worm.html["En savoir plus sur le stockage WORM"].
+link:concept-worm.html["En savoir plus sur le stockage WORM"^].
 
 .. Si vous activez le stockage WORM, sélectionnez la période de conservation.
 
@@ -429,13 +429,13 @@ Notez ce qui suit :
 ** Vous pouvez choisir une règle de Tiering des volumes spécifique lorsque vous créez ou modifiez un volume.
 ** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants, mais vous devrez désactiver le système et ajouter un compte de service depuis la console Google Cloud.
 +
-link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
+link:concept-data-tiering.html["En savoir plus sur le Tiering des données"^].
 
 
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +
-link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"].
+link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"^].
 
 +
 Certains champs de cette page sont explicites. Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -500,7 +500,7 @@ Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
-Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Pour plus d'informations, voir link:task-planning-your-config-gcp.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"^] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"^].
 
 . *Revue et approbation* : consultez et confirmez vos choix.
 +

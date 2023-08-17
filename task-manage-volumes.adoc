@@ -347,7 +347,7 @@ image::screenshot_aggr_capacity.png[capacité de l'agrégat de capture d'écran]
 
 . Si aucun agrégat n'a de capacité disponible, créez un nouvel agrégat.
 +
-Pour plus de détails, voir link:task-create-aggregates.html["Création d'agrégats"].
+Pour plus de détails, voir link:task-create-aggregates.html["Création d'agrégats"^].
 
 . Utilisez System Manager ou l'interface de ligne de commande pour déplacer les volumes vers l'agrégat.
 . Dans la plupart des cas, vous pouvez utiliser System Manager pour déplacer des volumes.

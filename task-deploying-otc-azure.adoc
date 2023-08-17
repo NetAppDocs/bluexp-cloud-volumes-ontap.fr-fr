@@ -28,11 +28,11 @@ Vous avez besoin des éléments suivants pour créer un environnement de travail
 
 * Compréhension de la configuration que vous voulez utiliser.
 +
-Vous devez avoir choisi une configuration et obtenir des informations de mise en réseau Azure auprès de votre administrateur. Pour plus de détails, voir link:task-planning-your-config-azure.html["Planification de votre configuration Cloud Volumes ONTAP"].
+Vous devez avoir choisi une configuration et obtenir des informations de mise en réseau Azure auprès de votre administrateur. Pour plus de détails, voir link:task-planning-your-config-azure.html["Planification de votre configuration Cloud Volumes ONTAP"^].
 
 * Comprendre les exigences de configuration des licences pour Cloud Volumes ONTAP.
 +
-link:task-set-up-licensing-azure.html["Découvrez comment configurer les licences"].
+link:task-set-up-licensing-azure.html["Découvrez comment configurer les licences"^].
 
 
 
@@ -129,8 +129,8 @@ Si vous laissez BlueXP générer le groupe de sécurité pour vous, vous devez c
 |===
 . *Méthodes de chargement et compte NSS* : spécifiez l'option de chargement à utiliser avec ce système, puis spécifiez un compte sur le site de support NetApp.
 +
-** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-azure.html["Découvrez comment configurer les licences"].
+** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-azure.html["Découvrez comment configurer les licences"^].
 
 
 . *Packages préconfigurés* : sélectionnez un des packages pour déployer rapidement un système Cloud Volumes ONTAP ou cliquez sur *Créer ma propre configuration*.
@@ -156,7 +156,7 @@ Pour obtenir de l'aide sur le choix du type et de la taille d'un disque, reporte
 ** Vous pouvez choisir une règle de Tiering des volumes spécifique lorsque vous créez ou modifiez un volume.
 ** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants.
 +
-link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
+link:concept-data-tiering.html["En savoir plus sur le Tiering des données"^].
 
 
 
@@ -164,24 +164,24 @@ link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
 +
 .. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
-link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
+link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"^].
 
 .. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
-Cette option n'est disponible que pour certains types de VM. Pour connaître les types de VM pris en charge, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configurations prises en charge par licence pour les paires haute disponibilité"].
+Cette option n'est disponible que pour certains types de VM. Pour connaître les types de VM pris en charge, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configurations prises en charge par licence pour les paires haute disponibilité"^].
 
 +
 LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
-link:concept-worm.html["En savoir plus sur le stockage WORM"].
+link:concept-worm.html["En savoir plus sur le stockage WORM"^].
 
 .. Si vous activez le stockage WORM, sélectionnez la période de conservation.
 
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +
-link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"].
+link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"^].
 
 +
 Certains champs de cette page sont explicites. Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -364,8 +364,8 @@ Si vous laissez BlueXP générer le groupe de sécurité pour vous, vous devez c
 |===
 . *Méthodes de chargement et compte NSS* : spécifiez l'option de chargement à utiliser avec ce système, puis spécifiez un compte sur le site de support NetApp.
 +
-** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"].
-** link:task-set-up-licensing-azure.html["Découvrez comment configurer les licences"].
+** link:concept-licensing.html["Découvrez les options de licence pour Cloud Volumes ONTAP"^].
+** link:task-set-up-licensing-azure.html["Découvrez comment configurer les licences"^].
 
 
 . *Packages préconfigurés* : sélectionnez un des packages pour déployer rapidement un système Cloud Volumes ONTAP ou cliquez sur *Modifier la configuration*.
@@ -385,12 +385,12 @@ Notez ce qui suit :
 +
 ** La taille des disques correspond à tous les disques de l'agrégat initial et à tous les agrégats supplémentaires créés par BlueXP lorsque vous utilisez l'option de provisionnement simple. Vous pouvez créer des agrégats qui utilisent une taille de disque différente à l'aide de l'option d'allocation avancée.
 +
-Pour obtenir de l'aide sur le choix d'une taille de disque, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Dimensionnement du système dans Azure"^].
+Pour obtenir de l'aide sur le choix d'une taille de disque, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#size-your-system-in-azure["Dimensionnez votre système en Azure"^].
 
 ** Vous pouvez choisir une règle de Tiering des volumes spécifique lorsque vous créez ou modifiez un volume.
 ** Si vous désactivez le Tiering, vous pouvez l'activer sur les agrégats suivants.
 +
-link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
+link:concept-data-tiering.html["En savoir plus sur le Tiering des données"^].
 
 
 
@@ -398,17 +398,17 @@ link:concept-data-tiering.html["En savoir plus sur le Tiering des données"].
 +
 .. Choisissez *Normal* ou *vitesse d'écriture élevée*, si vous le souhaitez.
 +
-link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"].
+link:concept-write-speed.html["En savoir plus sur la vitesse d'écriture"^].
 
 .. Activez le stockage WORM (Write Once, Read Many), si vous le souhaitez.
 +
-Cette option n'est disponible que pour certains types de VM. Pour connaître les types de VM pris en charge, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configurations prises en charge par licence pour les paires haute disponibilité"].
+Cette option n'est disponible que pour certains types de VM. Pour connaître les types de VM pris en charge, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["Configurations prises en charge par licence pour les paires haute disponibilité"^].
 
 +
 LA FONCTION WORM ne peut pas être activée si le Tiering des données était activé pour les versions Cloud Volumes ONTAP 9.7 et ultérieures. La restauration ou la restauration à partir de Cloud Volumes ONTAP 9.8 est bloquée après l'activation de WORM et de la hiérarchisation.
 
 +
-link:concept-worm.html["En savoir plus sur le stockage WORM"].
+link:concept-worm.html["En savoir plus sur le stockage WORM"^].
 
 .. Si vous activez le stockage WORM, sélectionnez la période de conservation.
 
@@ -418,17 +418,17 @@ link:concept-worm.html["En savoir plus sur le stockage WORM"].
 La connexion HTTPS est établie depuis une paire haute disponibilité Cloud Volumes ONTAP 9.7 vers les comptes de stockage d'objets blob de pages Azure. Notez que l'activation de cette option peut avoir un impact sur les performances d'écriture. Vous ne pouvez pas modifier le paramètre après avoir créé l'environnement de travail.
 
 +
-link:concept-worm.html["En savoir plus sur le stockage WORM"].
+link:concept-worm.html["En savoir plus sur le stockage WORM"^].
 
 +
 IMPOSSIBLE D'activer WORM si le Tiering des données était activé.
 
 +
-link:concept-worm.html["En savoir plus sur le stockage WORM"].
+link:concept-worm.html["En savoir plus sur le stockage WORM"^].
 
 . *Créer un volume* : saisissez les détails du nouveau volume ou cliquez sur *Ignorer*.
 +
-link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"].
+link:concept-client-protocols.html["En savoir plus sur les versions et les protocoles clients pris en charge"^].
 
 +
 Certains champs de cette page sont explicites. Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
@@ -493,7 +493,7 @@ Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un
 |===
 . *Profil d'utilisation, type de disque et règle de hiérarchisation* : choisissez si vous souhaitez activer les fonctionnalités d'efficacité du stockage et modifiez la règle de hiérarchisation du volume, si nécessaire.
 +
-Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["Présentation des profils d'utilisation des volumes"^] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"^].
+Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-planning-your-config-azure.html#choose-a-volume-usage-profile["Choisissez un profil d'utilisation du volume"^] et link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"^].
 
 . *Revue et approbation* : consultez et confirmez vos choix.
 +
