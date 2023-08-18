@@ -159,6 +159,8 @@ sidebar:
       - title: Création de machines virtuelles de stockage dans Google Cloud
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
+      - title: Configuration de la reprise d'activité SVM
+        url: "/task-manage-svm-dr.html"
     - title: Sécurité et chiffrement des données
       entries:
       - title: Chiffrement des volumes avec le chiffrement NetApp
