@@ -5022,4 +5022,5 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="74ee0a2fe74e69a19051f0e09c04fc43" category="doc">Configuration de la reprise d'activité SVM</block>
   <block id="f01867033c75f2410ea82d8cbf4634d7" category="paragraph">Si vous configurez la réplication SnapMirror SVM entre deux systèmes Cloud Volumes ONTAP, la réplication doit se faire entre deux systèmes de paire HA ou deux systèmes à un seul nœud. Il n'est pas possible de configurer la réplication SnapMirror SVM entre une paire haute disponibilité et un système à un seul nœud.</block>
   <block id="64a88357645876cf49151eb26ffb0021" category="paragraph">Reportez-vous aux documents suivants pour obtenir des instructions sur l'interface de ligne de commande.</block>
+  <block id="ead6e5569d8d8a0e0ef737aef13e13d9" category="list-text">Pour vérifier l'état de la mise à niveau, cliquez sur l'icône Paramètres et sélectionnez *Timeline*.</block>
 </blocks>
