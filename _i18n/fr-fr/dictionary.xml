@@ -5025,4 +5025,12 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="28495b8712e93ec4d83d5af5db51d535" category="paragraph">BlueXP assure la gestion des volumes FlexCache avec le <block ref="06867f1eea47d22d6d5c52a51ce61294" category="inline-link-macro-rx"></block> services.</block>
   <block id="06156010b52bde259c58b15866491a02" category="paragraph">Vous pouvez également utiliser l'interface de ligne de commandes ONTAP ou ONTAP System Manager pour créer et gérer les volumes FlexCache :</block>
   <block id="6712712f329188ca2226c3cf1d0f925e" category="paragraph">BlueXP génère une licence FlexCache pour tous les nouveaux systèmes Cloud Volumes ONTAP. La licence inclut une limite d'utilisation de 500 Gio.</block>
+  <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 septembre 2023</block>
+  <block id="3e34162a2379c48e3eaf3f3857b029c0" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.33 du connecteur.</block>
+  <block id="e749c9d187d1531bb81af1a3c9eb73be" category="section-title">Prise en charge des VM Lsv3 dans Azure</block>
+  <block id="cc2bfd53f6bcbc23893aaa8fab8b1eb2" category="paragraph">Les types d'instances L48s_v3 et L64s_v3 sont désormais pris en charge avec Cloud Volumes ONTAP dans Azure pour les déploiements de paires à un seul nœud et haute disponibilité avec des disques gérés partagés dans une ou plusieurs zones de disponibilité, à partir de la version 9.13.1. Ces types d'instances prennent en charge Flash cache.</block>
+  <block id="c2af1dd6b400531e930c62dad5095f7d" category="inline-link-macro">Consultez les configurations prises en charge pour Cloud Volumes ONTAP dans Azure</block>
+  <block id="bc3a07be852924fbf8ece67dbd310169" category="inline-link-macro">Afficher les limites de stockage de Cloud Volumes ONTAP dans Azure</block>
+  <block id="7dd77d10e6ae3bee2c34fcea19d9c1ab" category="paragraph"><block ref="2e2ea5a0499f86c06503605a768ce8a2" category="inline-link-macro-rx"></block>
+<block ref="c1f4bd6aa6a7def50b28a0bec13e0184" category="inline-link-macro-rx"></block></block>
 </blocks>
