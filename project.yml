@@ -218,6 +218,8 @@ sidebar:
           url: "/task-enabling-private-link.html"
         - title: Déplacer des groupes de ressources
           url: "/task-moving-resource-groups-azure.html"
+        - title: Isolez le trafic SnapMirror dans Azure
+          url: "/task-segregate-snapmirror-azure.html"
       - title: Administration Google Cloud
         flavor: gcp
         entries:
