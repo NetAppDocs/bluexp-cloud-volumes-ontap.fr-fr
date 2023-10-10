@@ -163,6 +163,31 @@ BlueXP met également à jour l'instance de médiateur si nécessaire lors du pr
 
 
 
+=== Mises à niveau dans AWS avec les types d'instances EC2 c4, m4 et r4
+
+Cloud Volumes ONTAP ne prend plus en charge les types d'instances EC2 c4, m4 et r4. Vous pouvez mettre à niveau les déploiements existants vers Cloud Volumes ONTAP versions 9.8-9.12.1 avec ces types d'instances. Avant de procéder à la mise à niveau, nous vous recommandons de le faire <<Modifier le type d'instance,modifier le type d'instance>>. Si vous ne pouvez pas modifier le type d'instance, vous devez le faire <<Mise en réseau améliorée,mise en réseau améliorée>> avant de procéder à la mise à niveau. Lisez les sections suivantes pour en savoir plus sur la modification du type d'instance et l'activation d'une mise en réseau améliorée.
+
+Dans Cloud Volumes ONTAP exécutant les versions 9.13.0 et supérieures, vous ne pouvez pas effectuer de mise à niveau avec les types d'instances EC2 c4, m4 et r4. Dans ce cas, vous devez réduire le nombre de disques puis <<Modifier le type d'instance,modifier le type d'instance>> Vous pouvez également déployer une nouvelle configuration de paire haute disponibilité avec les types d'instances EC2 c5, m5 et r5 et migrer les données.
+
+
+
+==== Modifier le type d'instance
+
+les types d'instances EC2 c4, m4 et r4 permettent d'utiliser plus de disques par nœud que les types d'instances EC2 c5, m5 et r5. Si le nombre de disques par nœud pour l'instance EC2 c4, m4 ou r4 que vous exécutez est inférieur au nombre maximal de disques par nœud pour les instances c5, m5 et r5, vous pouvez remplacer le type d'instance EC2 par c5, m5 ou r5.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html#disk-and-tiering-limits-by-ec2-instance["Vérifier les limites de disques et de Tiering par instance EC2"^]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Modifiez le type d'instance EC2 pour Cloud Volumes ONTAP"^]
+
+Si vous ne pouvez pas modifier le type d'instance, suivez les étapes de la section <<Mise en réseau améliorée>>.
+
+
+
+==== Mise en réseau améliorée
+
+Pour effectuer une mise à niveau vers Cloud Volumes ONTAP version 9.8 ou ultérieure, vous devez activer _Enhanced Networking_ sur le cluster exécutant le type d'instance c4, m4 ou r4. Pour activer ENA, reportez-vous à l'article de la base de connaissances link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/How_to_enable_Enhanced_networking_like_SR-IOV_or_ENA_on_AWS_CVO_instances["Comment activer la mise en réseau améliorée comme SR-IOV ou ENA sur les instances Cloud Volumes ONTAP AWS"^].
+
+
+
 == Préparation à la mise à niveau
 
 Avant d'effectuer une mise à niveau, vous devez vérifier que vos systèmes sont prêts et apporter les modifications nécessaires à la configuration.

@@ -38,6 +38,8 @@ TIP: BlueXP change aisément un nœud à la fois en lançant le basculement et e
 .Référence
 Pour obtenir la liste des types d'instances pris en charge dans AWS, reportez-vous à la section link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-aws.html#supported-ec2-compute["Instances EC2 prises en charge"^].
 
+Si vous ne pouvez pas modifier le type d'instance à partir d'instances c4, m4 ou r4, consultez l'article de la base de connaissances link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error["Impossible de changer le type d'instance de r4 en r5 avec une erreur de nombre de disques"^].
+
 .Étapes
 . Sur la page Canevas, sélectionnez l'environnement de travail.
 . Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *Type d'instance*.
