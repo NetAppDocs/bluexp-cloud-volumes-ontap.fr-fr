@@ -22,6 +22,9 @@ Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit 
 Pour créer des VM de stockage supplémentaires qui assurent le service des données, vous devez allouer des adresses IP dans Azure, puis exécuter des commandes ONTAP pour créer la VM de stockage et les LIF de données.
 
 
+NOTE: Pour effectuer d'autres tâches liées à la carte réseau, vous pouvez attribuer un rôle de contributeur réseau ou un rôle personnalisé avec les autorisations appropriées dans Azure. Pour plus d'informations sur ces autorisations liées à la carte réseau, reportez-vous au https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-network-interface?tabs=azure-portal#permissions["Documentation Microsoft Azure"^].
+
+
 
 == Nombre de machines virtuelles de stockage pris en charge
 
