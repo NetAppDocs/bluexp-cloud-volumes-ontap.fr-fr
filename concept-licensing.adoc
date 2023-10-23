@@ -140,7 +140,11 @@ Payez par capacité pour tout type de configuration Cloud Volumes ONTAP avec des
 +
 Un seul nœud ou haute disponibilité avec chargement de la capacité pour les volumes primaires et secondaires au même rythme
 
-* Inclut des sauvegardes de volume illimitées avec la sauvegarde et la restauration BlueXP, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent l'offre professionnelle
+* Inclut des sauvegardes de volume illimitées avec la sauvegarde et la restauration BlueXP, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent l'offre professionnelle.
++
+
+NOTE: Un abonnement PAYGO est requis pour la sauvegarde et la restauration BlueXP. Toutefois, aucun frais n'est requis pour l'utilisation de ce service. Pour plus d'informations sur la configuration des licences pour la sauvegarde et la restauration BlueXP, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-backup-recovery/task-licensing-cloud-backup.html["Configurez les licences pour la sauvegarde et la restauration BlueXP"^].
+
 * Ajoutez des services de données cloud de NetApp à vos frais supplémentaires
 
 
