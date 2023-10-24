@@ -20,6 +20,30 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 23 octobre 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.34 du connecteur.
+
+
+
+=== De nouvelles régions prises en charge pour les déploiements HA de zones de disponibilité multiples dans Azure
+
+Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples haute disponibilité pour Cloud Volumes ONTAP 9.14.0 et versions ultérieures :
+
+* Australie Est
+* Asie de l'Est
+* France centrale
+* Europe du Nord
+* Qatar Central
+* Suède Centre
+* Europe de l'Ouest
+* Ouest des États-Unis 2
+
+
+Pour obtenir la liste de toutes les régions prenant en charge plusieurs zones de disponibilité, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+
+
+
 == 6 octobre 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.34 du connecteur.
@@ -44,8 +68,8 @@ Les modifications suivantes ont été introduites avec la version 3.9.33 du conn
 
 Les types d'instances L48s_v3 et L64s_v3 sont désormais pris en charge avec Cloud Volumes ONTAP dans Azure pour les déploiements de paires à un seul nœud et haute disponibilité avec des disques gérés partagés dans une ou plusieurs zones de disponibilité, à partir de la version 9.13.1. Ces types d'instances prennent en charge Flash cache.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Consultez les configurations prises en charge pour Cloud Volumes ONTAP dans Azure"]
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Afficher les limites de stockage de Cloud Volumes ONTAP dans Azure"]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Consultez les configurations prises en charge pour Cloud Volumes ONTAP dans Azure"^]
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Afficher les limites de stockage de Cloud Volumes ONTAP dans Azure"^]
 
 
 
@@ -67,7 +91,7 @@ Flash cache et la vitesse d'écriture élevée peuvent être activés séparéme
 
 Vous pouvez utiliser ces fonctionnalités séparément ou ensemble dans le cadre de déploiements à un seul nœud et de paires haute disponibilité.
 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lancez Cloud Volumes ONTAP dans Google Cloud"]
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html["Lancez Cloud Volumes ONTAP dans Google Cloud"^]
 
 
 
