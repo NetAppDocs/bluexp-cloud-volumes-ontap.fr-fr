@@ -73,6 +73,17 @@ L'exemple d'image suivant montre la table de routage pour VPC 1. Elle inclut une
 +
 image:screenshot_transit_gateway3.png["Une capture d'écran de la console AWS montre la table de la route pour VPC 1. Elle inclut une route vers les adresses IP flottantes et vers VPC 2, c'est-à-dire où réside un client."]
 
+. Mettez à jour les paramètres des groupes de sécurité sur tout le trafic pour le VPC.
++
+.. Sous Cloud privé virtuel, cliquez sur *sous-réseaux*.
+.. Cliquez sur l'onglet *Table de routage*, sélectionnez l'environnement souhaité pour l'une des adresses IP flottantes d'une paire HA.
+.. Cliquez sur *groupes de sécurité*.
+.. Sélectionnez *Modifier les règles entrantes*.
+.. Cliquez sur *Ajouter règle*.
+.. Sous Type, sélectionnez *tout le trafic*, puis sélectionnez l'adresse IP VPC.
+.. Cliquez sur *Enregistrer les règles* pour appliquer les modifications.
+
+
 . Montez les volumes sur des clients à l'aide de l'adresse IP flottante.
 +
 Vous pouvez trouver l'adresse IP correcte dans BlueXP via l'option *Mount Command* sous le panneau gérer les volumes de BlueXP.
