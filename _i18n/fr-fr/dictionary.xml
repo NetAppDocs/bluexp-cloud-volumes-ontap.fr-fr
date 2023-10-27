@@ -5041,7 +5041,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="2d713c56af0861a0b0bed91ef8da2e18" category="paragraph">Consultez les considérations suivantes :</block>
   <block id="97d737a59c7e796eb8610dce5b0f817a" category="list-text">Vous ne pouvez ajouter qu'une seule carte réseau à un seul nœud Cloud Volumes ONTAP ou à un déploiement par paire haute disponibilité (instance de machine virtuelle) pour la ségrégation du trafic SnapMirror.</block>
   <block id="933fe3c7f865ac41ceae93a6e0cb11be" category="list-text">Pour ajouter une nouvelle carte réseau, le type d'instance de machine virtuelle que vous déployez doit avoir une carte réseau inutilisée.</block>
-  <block id="e6f791d5fe8a01a86623cb53cef66120" category="list-text">Les clusters source et cible doivent se trouver dans le même réseau virtuel (vnet), mais pas dans le même sous-réseau.</block>
   <block id="c61486c21b19c2bf3cf6e82a2a1a645b" category="section-title">Étape 1 : créez une carte réseau supplémentaire et connectez-la à la machine virtuelle de destination</block>
   <block id="d1348b7908ab7ffc3e987964d5d681f0" category="paragraph">Cette section fournit des instructions sur la création d'une carte réseau supplémentaire et sa connexion à la machine virtuelle de destination. La machine virtuelle de destination est le système à un seul nœud ou paire haute disponibilité dans Cloud Volumes ONTAP Azure où vous souhaitez configurer votre carte réseau supplémentaire.</block>
   <block id="faa6897ed3f655c419813b3c65575b23" category="list-text">Dans l'interface de ligne de commandes de ONTAP, arrêtez le nœud.</block>
@@ -5142,4 +5141,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="0444b867f0aca3029a2b9ea7cd093316" category="list-text">Cliquez sur *Ajouter règle*.</block>
   <block id="39eb101f969fe671b016bf47de2d6d12" category="list-text">Sous Type, sélectionnez *tout le trafic*, puis sélectionnez l'adresse IP VPC.</block>
   <block id="20d3f54acd662a128694ddf527ea22fb" category="list-text">Cliquez sur *Enregistrer les règles* pour appliquer les modifications.</block>
+  <block id="2fd1ee72a12db129de96b6606fbce188" category="list-text">Les clusters source et cible doivent avoir accès au même réseau virtuel (vnet). Le cluster de destination est un système Cloud Volumes ONTAP dans Azure. Le cluster source peut être un système Cloud Volumes ONTAP dans Azure ou un système ONTAP.</block>
+  <block id="53dbdce3b901c59c8d3bbdae0e91364c" category="paragraph">Pour déplacer une relation de réplication SnapMirror existante, vous devez d'abord interrompre la relation de réplication SnapMirror existante avant de créer une nouvelle relation de réplication SnapMirror.</block>
 </blocks>

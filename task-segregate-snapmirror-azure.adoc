@@ -32,7 +32,7 @@ Consultez les considérations suivantes :
 
 * Vous ne pouvez ajouter qu'une seule carte réseau à un seul nœud Cloud Volumes ONTAP ou à un déploiement par paire haute disponibilité (instance de machine virtuelle) pour la ségrégation du trafic SnapMirror.
 * Pour ajouter une nouvelle carte réseau, le type d'instance de machine virtuelle que vous déployez doit avoir une carte réseau inutilisée.
-* Les clusters source et cible doivent se trouver dans le même réseau virtuel (vnet), mais pas dans le même sous-réseau.
+* Les clusters source et cible doivent avoir accès au même réseau virtuel (vnet). Le cluster de destination est un système Cloud Volumes ONTAP dans Azure. Le cluster source peut être un système Cloud Volumes ONTAP dans Azure ou un système ONTAP.
 
 
 
@@ -238,6 +238,8 @@ L'état homologue s'affiche *`peered`* et les applications de peering montrent *
 == Étape 5 : création d'une relation de réplication SnapMirror entre le système source et le système de destination
 
 Cette section fournit des instructions sur la création d'une relation de réplication SnapMirror entre le système source et le système de destination.
+
+Pour déplacer une relation de réplication SnapMirror existante, vous devez d'abord interrompre la relation de réplication SnapMirror existante avant de créer une nouvelle relation de réplication SnapMirror.
 
 Pour les étapes suivantes, utilisez l'interface de ligne de commandes ONTAP.
 
