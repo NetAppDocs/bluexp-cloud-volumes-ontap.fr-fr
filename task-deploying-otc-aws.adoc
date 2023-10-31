@@ -86,7 +86,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 Découvrez dans cette vidéo comment associer un abonnement payant basé sur l'utilisation Marketplace à vos identifiants AWS :
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP sur AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: Si plusieurs utilisateurs IAM travaillent sur le même compte AWS, chaque utilisateur doit s'abonner. Après l'abonnement du premier utilisateur, AWS Marketplace informe les autres utilisateurs qu'ils sont déjà abonnés, comme illustré dans l'image ci-dessous. Lorsqu'un abonnement est en place pour AWS _account_, chaque utilisateur IAM doit s'associer à cet abonnement. Si vous voyez le message ci-dessous, cliquez sur le lien *cliquez ici* pour accéder au site Web de BlueXP et terminer le processus.image:screenshot_aws_marketplace.gif["Capture d'écran affichant la page d'abonnement BlueXP pour Cloud Volumes ONTAP lorsque le compte AWS dispose déjà d'un abonnement, mais il se peut qu'un utilisateur IAM particulier ne le soit pas."]
@@ -334,7 +335,8 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["
 Découvrez dans cette vidéo comment associer un abonnement payant basé sur l'utilisation Marketplace à vos identifiants AWS :
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP sur AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 +
 
 TIP: Si plusieurs utilisateurs IAM travaillent sur le même compte AWS, chaque utilisateur doit s'abonner. Après l'abonnement du premier utilisateur, AWS Marketplace informe les autres utilisateurs qu'ils sont déjà abonnés, comme illustré dans l'image ci-dessous. Lorsqu'un abonnement est en place pour AWS _account_, chaque utilisateur IAM doit s'associer à cet abonnement. Si vous voyez le message ci-dessous, cliquez sur le lien *cliquez ici* pour accéder au site Web de BlueXP et terminer le processus.image:screenshot_aws_marketplace.gif["Capture d'écran affichant la page d'abonnement BlueXP pour Cloud Volumes ONTAP lorsque le compte AWS dispose déjà d'un abonnement, mais il se peut qu'un utilisateur IAM particulier ne le soit pas."]

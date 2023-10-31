@@ -99,7 +99,8 @@ Pour créer un système Cloud Volumes ONTAP de paiement basé sur l'utilisation,
 La vidéo suivante explique comment associer un abonnement au Marketplace à paiement basé sur l'utilisation à votre projet Google Cloud. Vous pouvez également suivre les étapes pour vous abonner à la https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Association d'un abonnement Marketplace aux identifiants Google Cloud"^] section.
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . *Services* : sélectionnez les services que vous souhaitez utiliser sur ce système. Pour sélectionner la sauvegarde et la restauration BlueXP ou pour utiliser le Tiering BlueXP, vous devez avoir spécifié le compte de service à l'étape 3.
 +
 
@@ -336,7 +337,8 @@ Pour créer un système Cloud Volumes ONTAP de paiement basé sur l'utilisation,
 La vidéo suivante explique comment associer un abonnement au Marketplace à paiement basé sur l'utilisation à votre projet Google Cloud.  Vous pouvez également suivre les étapes pour vous abonner à la https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-gcp-accounts.html["Association d'un abonnement Marketplace aux identifiants Google Cloud"^] section.
 
 +
-video::video_subscribing_gcp.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 . *Services* : sélectionnez les services que vous souhaitez utiliser sur ce système. Pour sélectionner la sauvegarde et la restauration BlueXP, ou pour utiliser le Tiering BlueXP, vous devez avoir spécifié le compte de service à l'étape 3.
 +
 
