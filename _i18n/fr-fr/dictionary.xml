@@ -5113,7 +5113,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="e8b3ed24563d59f059354b6c1674f982" category="admonition">Un abonnement PAYGO est requis pour la sauvegarde et la restauration BlueXP. Toutefois, aucun frais n'est requis pour l'utilisation de ce service. Pour plus d'informations sur la configuration des licences pour la sauvegarde et la restauration BlueXP, reportez-vous à la section<block ref="c958f229a6c4d788e19159c7ba08a48b" category="inline-link-rx"></block>.</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">23 octobre 2023</block>
   <block id="2bc953fcced4addf338156cc4681b683" category="section-title">De nouvelles régions prises en charge pour les déploiements HA de zones de disponibilité multiples dans Azure</block>
-  <block id="13ff77e69df5acabc2f0da9e5ebc94b8" category="paragraph">Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples haute disponibilité pour Cloud Volumes ONTAP 9.14.0 et versions ultérieures :</block>
   <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">Australie Est</block>
   <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">Asie de l'Est</block>
   <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">France centrale</block>
@@ -5151,4 +5150,10 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="20ea4c62f4c9e4254314fe7fbbef0319" category="inline-link">En savoir plus sur la surveillance de l'utilisation des abonnements</block>
   <block id="d7105dd212dc96a8b292b6b48f84916f" category="paragraph"><block ref="d7105dd212dc96a8b292b6b48f84916f" category="inline-link-rx"></block></block>
   <block id="28ca5cda5cdef790c457097830d81ca5" category="paragraph">Si vous ne souhaitez plus utiliser un abonnement Keystone avec BlueXP, vous pouvez dissocier l'abonnement. Notez que vous ne pouvez dissocier qu'un abonnement qui n'est pas associé à un abonnement Cloud Volumes ONTAP existant.</block>
+  <block id="499efcb2be11e80e5bdfc003278352e3" category="section-title">1er novembre 2023</block>
+  <block id="992f57af99811ae146ed6df67eccc26f" category="section-title">La région de l'Arabie saoudite est désormais prise en charge dans Google Cloud</block>
+  <block id="9e06c986efeeff600f0b04c67d5d6354" category="paragraph">La région Arabie saoudite est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
+  <block id="2bc724993144e8002899059117620062" category="inline-link">Carte des régions du monde sous Google Cloud</block>
+  <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
+  <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
 </blocks>

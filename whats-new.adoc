@@ -20,6 +20,20 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 1er novembre 2023
+
+Les modifications suivantes ont été introduites avec la version 3.9.34 du connecteur.
+
+
+
+=== La région de l'Arabie saoudite est désormais prise en charge dans Google Cloud
+
+La région Arabie saoudite est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+
+
+
 == 23 octobre 2023
 
 Les modifications suivantes ont été introduites avec la version 3.9.34 du connecteur.
@@ -28,7 +42,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.34 du conn
 
 === De nouvelles régions prises en charge pour les déploiements HA de zones de disponibilité multiples dans Azure
 
-Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples haute disponibilité pour Cloud Volumes ONTAP 9.14.0 et versions ultérieures :
+Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
 
 * Australie Est
 * Asie de l'Est
