@@ -204,7 +204,7 @@ NOTE: Les snapshots sont créés automatiquement au redémarrage.
 * Par défaut, chaque disque dans Azure est chiffré au repos.
 
 
-.Paires HAUTE DISPONIBILITÉ dans plusieurs zones de disponibilité
+.Paires HAUTE DISPONIBILITÉ avec disques gérés partagés dans plusieurs zones de disponibilité
 * Deux disques SSD Premium de 10 Gio pour le volume de démarrage (un par nœud)
 * Deux blobs de page Premium de stockage de 512 Gio pour le volume racine (un par nœud)
 * Deux disques durs standard de 1024 Gio pour les cœurs économiques (un par nœud)
