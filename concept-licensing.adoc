@@ -75,9 +75,9 @@ Tous les autres systèmes dont la capacité provisionnée est inférieure à 500
 Payez séparément la capacité provisionnée et les opérations d'E/S.
 
 * Cloud Volumes ONTAP à un seul nœud ou haute disponibilité
-* Le chargement repose sur deux facteurs de coûts : le stockage et l'utilisation (E/S)
+* La facturation se base sur deux éléments de coûts : le stockage et l'utilisation (E/S).
 +
-Vous ne serez pas facturé pour les E/S liées à la réplication de données (SnapMirror) ou NDMP.
+Vous ne serez pas facturé pour les E/S liées à la réplication de données (SnapMirror), aux sauvegardes (SnapVault) ou à NDMP.
 
 
 

@@ -1903,8 +1903,6 @@
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">Optimisé</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">Payez séparément la capacité provisionnée et les opérations d'E/S.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP à un seul nœud ou haute disponibilité</block>
-  <block id="ac8875b922d75fca71aa495c421855a6" category="list-text">Le chargement repose sur deux facteurs de coûts : le stockage et l'utilisation (E/S)</block>
-  <block id="a2e5678d48654234a84ed14a48c17119" category="paragraph">Vous ne serez pas facturé pour les E/S liées à la réplication de données (SnapMirror) ou NDMP.</block>
   <block id="3c5e979087ecb3ead1e8ace0120e5cb6" category="list-text">Ajoutez des services de données cloud de NetApp à vos frais supplémentaires</block>
   <block id="4d55f77f062bf48891bd0f749c36a36d" category="section-title">Points essentiels</block>
   <block id="57050f826fe75d25457ab448568ae53d" category="paragraph">Payez en fonction de la capacité de Cloud Volumes ONTAP dans différentes configurations.</block>
@@ -5156,4 +5154,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="2bc724993144e8002899059117620062" category="inline-link">Carte des régions du monde sous Google Cloud</block>
   <block id="6a050b5b1c64124ef335bf9dbf64e03f" category="paragraph">Pour obtenir la liste de toutes les régions, reportez-vous au<block ref="5328f934c7a30e2b8b67732fc162a525" category="inline-link-rx"></block>.</block>
   <block id="e8b16e899245eb584f98d48e087aa975" category="paragraph">Les régions suivantes dans Azure prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
+  <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">La facturation se base sur deux éléments de coûts : le stockage et l'utilisation (E/S).</block>
+  <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">Vous ne serez pas facturé pour les E/S liées à la réplication de données (SnapMirror), aux sauvegardes (SnapVault) ou à NDMP.</block>
 </blocks>
