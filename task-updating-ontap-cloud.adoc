@@ -196,6 +196,7 @@ Avant d'effectuer une mise à niveau, vous devez vérifier que vos systèmes son
 * <<Vérifier que le rétablissement automatique est toujours activé>>
 * <<Suspendre les transferts SnapMirror>>
 * <<Vérifiez que les agrégats sont en ligne>>
+* <<Vérifier que toutes les LIFs se trouvent sur les ports home>>
 
 
 
@@ -263,6 +264,12 @@ image:screenshots_aggregate_details_state.png["Capture d'écran : affiche le cha
 
 
 
+
+
+
+=== Vérifier que toutes les LIFs se trouvent sur les ports home
+
+Avant la mise à niveau, toutes les LIF doivent se trouver sur des ports home. Reportez-vous à la documentation ONTAP à la link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Vérifier que toutes les LIFs se trouvent sur les ports home"].
 
 
 

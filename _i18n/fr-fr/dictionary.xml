@@ -5156,4 +5156,8 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="0679d11689909adae41f54cfc8c6ef53" category="list-text">La facturation se base sur deux éléments de coûts : le stockage et l'utilisation (E/S).</block>
   <block id="992a45bae33fb9769eb5bc8c6317149c" category="paragraph">Vous ne serez pas facturé pour les E/S liées à la réplication de données (SnapMirror), aux sauvegardes (SnapVault) ou à NDMP.</block>
   <block id="0b8c1e660d75aa2bec12f002f097dcab" category="list-title">Paires HAUTE DISPONIBILITÉ avec disques gérés partagés dans plusieurs zones de disponibilité</block>
+  <block id="a710c8d7ee654ea3241f1b07f9f7de05" category="list-text"><block ref="de989a17a1629831650b134e00461edd" category="inline-xref-macro-rx"></block></block>
+  <block id="6d09b3b7b0c828e4faaa038218afc509" category="section-title">Vérifier que toutes les LIFs se trouvent sur les ports home</block>
+  <block id="4a0d5f4ccd3c4d2acc213b54daf63f9e" category="inline-link-macro">Vérifier que toutes les LIFs se trouvent sur les ports home</block>
+  <block id="0754aed90b1b7e3ecf810f88321b76f5" category="paragraph">Avant la mise à niveau, toutes les LIF doivent se trouver sur des ports home. Reportez-vous à la documentation ONTAP à la <block ref="e645c13326fab640068fe44ceb8154ff" category="inline-link-macro-rx"></block>.</block>
 </blocks>
