@@ -5165,4 +5165,7 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="8904b1f88c62ce8a8381c8474f2ccb42" category="paragraph">Le changement suivant a été introduit avec la version 3.9.34 du connecteur.</block>
   <block id="f4e12e22adfef297cd0c891e4cd2e1a9" category="paragraph">Le changement suivant a été introduit avec la version 3.9.33 du connecteur.</block>
   <block id="bbb12e7857993612931dbc5c19c5f9dc" category="paragraph">La hiérarchisation des données est optimisée par la technologie FabricPool. Cloud Volumes ONTAP fournit le Tiering des données pour tous les clusters Cloud Volumes ONTAP. Lorsque vous activez le Tiering des données, les données transférées vers le stockage objet entraînent des frais. Pour plus d'informations sur les coûts du stockage objet, reportez-vous à la documentation de votre fournisseur cloud.</block>
+  <block id="e95c0c487a8aec79b7d3484dc5452526" category="section-title">10 novembre 2023</block>
+  <block id="1e8bf13d2a6124785fff6ed75b8efe5d" category="section-title">Région Allemagne désormais prise en charge dans Google Cloud</block>
+  <block id="1eb6caf052a1ca736597d3e01c5333f9" category="paragraph">La région Allemagne est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
 </blocks>

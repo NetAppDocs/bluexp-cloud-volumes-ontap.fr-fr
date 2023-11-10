@@ -20,6 +20,20 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 10 novembre 2023
+
+Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
+
+
+
+=== Région Allemagne désormais prise en charge dans Google Cloud
+
+La région Allemagne est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+
+
+
 == 8 novembre 2023
 
 Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
