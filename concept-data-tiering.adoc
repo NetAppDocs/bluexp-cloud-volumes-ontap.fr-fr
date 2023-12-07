@@ -18,7 +18,7 @@ Réduisez vos coûts de stockage en permettant le Tiering automatisé des donné
 
 image:diagram_data_tiering.png["Il s'agit d'une image conceptuelle qui affiche les données actives envoyées au stockage EBS et les données inactives vers le stockage S3."]
 
-La hiérarchisation des données est optimisée par la technologie FabricPool. Cloud Volumes ONTAP fournit le Tiering des données pour tous les clusters Cloud Volumes ONTAP. Lorsque vous activez le Tiering des données, les données transférées vers le stockage objet entraînent des frais. Pour plus d'informations sur les coûts du stockage objet, reportez-vous à la documentation de votre fournisseur cloud.
+La hiérarchisation des données est optimisée par la technologie FabricPool. Cloud Volumes ONTAP fournit le Tiering des données pour tous les clusters Cloud Volumes ONTAP sans licence supplémentaire. Lorsque vous activez le Tiering des données, les données transférées vers le stockage objet entraînent des frais. Pour plus d'informations sur les coûts du stockage objet, reportez-vous à la documentation de votre fournisseur cloud.
 
 ifdef::aws[]
 
