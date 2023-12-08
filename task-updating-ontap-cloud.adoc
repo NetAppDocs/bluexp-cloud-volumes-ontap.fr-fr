@@ -277,6 +277,8 @@ image:screenshots_aggregate_details_state.png["Capture d'écran : affiche le cha
 
 Avant la mise à niveau, toutes les LIF doivent se trouver sur des ports home. Reportez-vous à la documentation ONTAP à la link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Vérifier que toutes les LIFs se trouvent sur les ports home"].
 
+Si une erreur d'échec de mise à niveau se produit, reportez-vous au link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Article de la base de connaissances « échec de la mise à niveau Cloud Volumes ONTAP »"].
+
 
 
 == Mettez à niveau Cloud Volumes ONTAP
