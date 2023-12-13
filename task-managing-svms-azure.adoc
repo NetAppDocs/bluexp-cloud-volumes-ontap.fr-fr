@@ -5,15 +5,12 @@ keywords: storage virtual machine, vserver, svm, storage vm, supported number, n
 summary: Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. 
 ---
 = Création de VM de stockage servant à la transmission des données pour Cloud Volumes ONTAP dans Azure
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

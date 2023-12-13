@@ -5,15 +5,12 @@ keywords: storage virtual machine, vserver, svm, storage vm, svm dr, disaster re
 summary: 'BlueXP ne propose pas de prise en charge de la configuration ou de l"orchestration pour la reprise après incident des machines virtuelles de stockage. Vous devez utiliser System Manager ou l"interface de ligne de commandes.' 
 ---
 = Configuration de la reprise d'activité SVM
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

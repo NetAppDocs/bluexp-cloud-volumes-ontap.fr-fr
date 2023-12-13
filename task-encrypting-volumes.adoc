@@ -5,15 +5,12 @@ keywords: encrypt, encryption, data, volumes, netapp volume encryption, volume e
 summary: 'Cloud Volumes ONTAP prend en charge NVE (NetApp Volume Encryption) et NAE (NetApp Aggregate Encryption) avec un gestionnaire de clés externe. NVE et NAE sont activés par défaut si vous configurez un gestionnaire de clés externe.' 
 ---
 = Cryptage de volumes grâce aux solutions de cryptage NetApp
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
