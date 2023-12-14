@@ -3709,7 +3709,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">Communauté NetApp</block>
   <block id="ff93781ff90bf605d8b3070c1501b28f" category="sidebar">Blog du site Web BlueXP</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
   <block id="e29d7c0b36af68edd13ebac84f15b44b" category="sidebar">Ou du fournisseur cloud</block>
   <block id="46aef2e5080a5347df1ce7546e1be1df" category="sidebar">Tous les fournisseurs cloud</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services</block>
@@ -4730,7 +4729,6 @@ Si vous achetez une licence directement auprès de NetApp (BYOL), un abonnement 
   <block id="111605ffc2720ee271322511d8e418e9" category="list-text">Si vous n'avez pas enregistré de compte NSS dans BlueXP,<block ref="fa1dd20a91aad716fe7b27583a904c1e" category="inline-link-rx"></block> Puis l'interface du conseiller numérique Active IQ s'affiche.</block>
   <block id="f9a3a3f013c1705985786496412a0de0" category="paragraph">Si vous n'avez pas de<block ref="2ed11e6bceb8b4ceeff62b64fdec4694" category="inline-link-rx"></block> Cependant, un administrateur de compte doit en créer un.<block ref="de51f8f797fd6bb6357ef338b87ca66d" category="inline-link-rx"></block></block>
   <block id="de6c35943505135e58a4af4389b1768d" category="list-text"><block ref="de6c35943505135e58a4af4389b1768d" category="inline-link-rx"></block></block>
-  <block id="8529c592033773e796216d83dbb6e52a" category="list-text"><block ref="8529c592033773e796216d83dbb6e52a" category="inline-link-rx"></block></block>
   <block id="9ae78035ef81aaff6187ef9a11cd1f03" category="list-text"><block ref="9ae78035ef81aaff6187ef9a11cd1f03" category="inline-link-rx"></block></block>
   <block id="08922f23ed9079ed0750935efad792c1" category="admonition">Vous recherchez des informations sur le connecteur ?<block ref="a05739e7bce05bd7a830b46920675255" category="inline-link-rx"></block></block>
   <block id="081496cbc3abd2aa45670e7415b9b307" category="list-text"><block ref="081496cbc3abd2aa45670e7415b9b307" category="inline-link-rx"></block></block>
@@ -5190,4 +5188,5 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="735d36020b1ee0734f4e9ddbbea4948e" category="paragraph">Tous les comptes de stockage Azure pour Cloud Volumes ONTAP sont chiffrés à l'aide d'une clé gérée par le client. Pour chiffrer vos comptes de stockage pendant leur création, vous devez créer et fournir l'ID de la ressource dans la demande de création CVO. Cela s'applique à tous les types de déploiements. Si vous ne le fournissez pas, les comptes de stockage seront toujours cryptés, mais BlueXP créera d'abord les comptes de stockage avec cryptage de clé géré par Microsoft, puis mettra à jour les comptes de stockage pour utiliser la clé gérée par le client.</block>
   <block id="3d398b97e4c42f1072862ca68a5330e0" category="inline-link-macro">Article de la base de connaissances « échec de la mise à niveau Cloud Volumes ONTAP »</block>
   <block id="73f61210747fe91bea8a184200d3fcc5" category="paragraph">Si une erreur d'échec de mise à niveau se produit, reportez-vous au <block ref="60b526b210a3d8d7f028168de61b0c4a" category="inline-link-macro-rx"></block>.</block>
+  <block id="9239af3d88d2e7788330e1bb0d8cd044" category="list-text"><block ref="9239af3d88d2e7788330e1bb0d8cd044" category="inline-link-rx"></block></block>
 </blocks>
