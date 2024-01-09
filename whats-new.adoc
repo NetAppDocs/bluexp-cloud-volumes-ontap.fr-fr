@@ -20,6 +20,24 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 8 janvier 2024
+
+
+
+=== Nouvelles machines virtuelles pour Azure dans plusieurs zones de disponibilité
+
+À partir de Cloud Volumes ONTAP 9.13.1, plusieurs types de VM prennent en charge Azure plusieurs zones de disponibilité pour les déploiements de paires haute disponibilité, nouveaux et existants :
+
+* L16s_v3
+* L32s_v3
+* L48s_v3
+* L64s_v3
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
+
+
+
 == 6 décembre 2023
 
 
