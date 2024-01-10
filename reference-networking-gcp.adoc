@@ -243,7 +243,7 @@ Pour obtenir des instructions, reportez-vous à la section https://cloud.google.
 
 === Règles de pare-feu
 
-BlueXP crée des règles de pare-feu Google Cloud qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres règles de pare-feu.
+BlueXP crée des règles de pare-feu Google Cloud qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez utiliser vos propres règles de pare-feu.
 
 Les règles de pare-feu de Cloud Volumes ONTAP requièrent des règles entrantes et sortantes. Si vous déployez une configuration haute disponibilité, ce sont les règles de pare-feu pour Cloud Volumes ONTAP dans VPC-0.
 

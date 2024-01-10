@@ -478,7 +478,6 @@
   <block id="2a37f0bf23209f41128e5c28160ecd0b" category="paragraph">BlueXP rencontre des problèmes de connexion si vous essayez de déployer une seconde paire HA Cloud Volumes ONTAP dans un groupe de ressources Azure.</block>
   <block id="9175bb34d0aede26315b313b9432bcbb" category="section-title">Groupes de sécurité</block>
   <block id="390a3dfacd9551e05363b9eb09a0464c" category="section-title">Règles de groupe de sécurité</block>
-  <block id="196affcedcabdcd9243dfaab58327dae" category="paragraph">BlueXP crée des groupes de sécurité Azure qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.</block>
   <block id="4f4194111f63429efd99a405e5d8ec85" category="paragraph">Le groupe de sécurité pour Cloud Volumes ONTAP requiert des règles entrantes et sortantes.</block>
   <block id="4d6ace52affbdd48b9198aac825d4a2c" category="section-title">Règles entrantes pour les systèmes à nœud unique</block>
   <block id="43cd867e31d6181725d728349aa4babc" category="paragraph">Lorsque vous créez un environnement de travail et choisissez un groupe de sécurité prédéfini, vous pouvez choisir d'autoriser le trafic dans l'un des éléments suivants :</block>
@@ -3954,7 +3953,6 @@
   <block id="0fc9a4a783a2856e3a35ee9b12a2f357" category="paragraph">Quatre clouds privés virtuels (VPC) sont nécessaires dans le cadre d'une configuration haute disponibilité. Quatre VPC sont requis car Google Cloud exige que chaque interface réseau réside dans un réseau VPC distinct.</block>
   <block id="74cd215a46d2bd96fc35dad7ef313283" category="section-title">Sous-réseaux</block>
   <block id="53c6f0799470bd2e67e7902192e11c7c" category="paragraph">Pour répliquer les données entre un système Cloud Volumes ONTAP dans Google Cloud et des systèmes ONTAP sur d'autres réseaux, vous devez disposer d'une connexion VPN entre le VPC et l'autre réseau, par exemple votre réseau d'entreprise.</block>
-  <block id="8bb6cd6de4a896f626b89e711d40aa4c" category="paragraph">BlueXP crée des règles de pare-feu Google Cloud qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres règles de pare-feu.</block>
   <block id="30f3abb35963e0cd7d66dc08581087c9" category="paragraph">Les règles de pare-feu de Cloud Volumes ONTAP requièrent des règles entrantes et sortantes. Si vous déployez une configuration haute disponibilité, ce sont les règles de pare-feu pour Cloud Volumes ONTAP dans VPC-0.</block>
   <block id="cb97a2b297b246ea14d6c17e8e5ee28a" category="list-text">Un ensemble de règles pour les composants HA dans VPC-0. Ces règles permettent l'accès aux données à Cloud Volumes ONTAP.</block>
   <block id="ae2d87942e6697528344ccace68364e3" category="section-title">Règles pour VPC-1, VPC-2 et VPC-3</block>
@@ -4009,7 +4007,6 @@
   <block id="3f73fdcd7eab5d7e67557205b890929e" category="list-text">*Tiering de données dans Google Cloud* : choisissez d'activer ou non le Tiering de données sur l'agrégat initial, choisissez une classe de stockage pour les données hiérarchisées, puis sélectionnez un compte de service avec le rôle d'administrateur de stockage prédéfini.</block>
   <block id="1aff466e3c0d499007e1d801be1c66d9" category="sidebar">Configurer la création d'un groupe de placement</block>
   <block id="f1e89d709c35aed2650bbf12a55f1ba1" category="list-text"><block ref="f1e89d709c35aed2650bbf12a55f1ba1" category="inline-link-macro-rx"></block></block>
-  <block id="2626748206273dbf0d13d2fffdb79c5b" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez que votre utilise ses propres groupes de sécurité.</block>
   <block id="eb19784d052e3e9a0aa941090082ebbe" category="inline-link">Afficher les règles de groupe de sécurité du connecteur</block>
   <block id="a6c935eff93c3c2a81864fdabc1d1951" category="inline-link">Afficher les règles de pare-feu du connecteur</block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Règles de pare-feu dans Google Cloud</block>
@@ -5198,4 +5195,7 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="list-text">L64s_v3</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="inline-link-macro">Configurations prises en charge dans Azure</block>
   <block id="22342037237200e034fd29c9cfd5bfd4" category="paragraph"><block ref="22342037237200e034fd29c9cfd5bfd4" category="inline-link-macro-rx"></block></block>
+  <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP crée des groupes de sécurité Azure qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres groupes de sécurité.</block>
+  <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres groupes de sécurité.</block>
+  <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP crée des règles de pare-feu Google Cloud qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez utiliser vos propres règles de pare-feu.</block>
 </blocks>
