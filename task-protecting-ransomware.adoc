@@ -63,13 +63,22 @@ Cloud Volumes ONTAP prend en charge la fonctionnalité de protection anti-ransom
 
 Séparer des protections d'extension de fichier fournies par le https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#protection-from-common-ransomware-file-extensions["paramètre de protection contre les ransomware"], La fonction ARP utilise l'analyse de la charge de travail pour alerter l'utilisateur sur les attaques potentielles en fonction de l'activité anormale détectée. Vous pouvez combiner la configuration de protection contre les ransomware et la fonctionnalité ARP pour bénéficier d'une protection complète contre les ransomware.
 
-La fonctionnalité ARP n'est disponible qu'avec les licences BYOL (sur un, deux ou trois ans), sur les modèles de licence basés sur les nœuds et la capacité. Vous devez contacter votre représentant commercial NetApp pour acheter une nouvelle licence d'extension séparée à utiliser avec la fonctionnalité ARP de Cloud Volumes ONTAP.
+La fonctionnalité ARP est disponible uniquement pour les licences BYOL (d'une durée de 1 à 36 mois), sur les modèles de licence basés sur les nœuds et la capacité. Vous devez contacter votre représentant commercial NetApp pour acheter une nouvelle licence d'extension séparée à utiliser avec la fonctionnalité ARP de Cloud Volumes ONTAP.
 
-Lors de l'achat d'une licence complémentaire et de son ajout au portefeuille digital, vous pouvez activer le protocole ARP par volume avec Cloud Volumes ONTAP. La configuration du protocole ARP pour les volumes s'effectue via ONTAP System Manager et l'interface de ligne de commande ONTAP.
+La licence ARP est considérée comme une licence « flottante », ce qui signifie qu'elle n'est pas liée à une seule instance Cloud Volumes ONTAP et peut être appliquée à plusieurs environnements Cloud Volumes ONTAP.
+
+
+NOTE: L'utilisation de la fonction ARP avec les licences Cloud Volumes ONTAP basées sur les nœuds n'est pas actuellement reflétée dans le portefeuille digital. La possibilité d'afficher l'utilisation du protocole ARP basé sur les nœuds sera disponible dans une prochaine version sous le portefeuille digital.
+
+Lors de l'achat d'une licence complémentaire et de son ajout au portefeuille digital, vous pouvez activer le protocole ARP par volume avec Cloud Volumes ONTAP. Le chargement du protocole ARP est mesuré au niveau du volume, en fonction de la capacité totale provisionnée des volumes pour lesquels la fonctionnalité ARP est activée. La capacité minimale de licence est de 1 To. Cependant, il n'y a pas de charge de capacité minimale pour la fonction ARP.
+
+Les volumes ARP activés ont un état désigné « mode apprentissage » ou « actif ». Tout volume dont l'état ARP est « désactivé » est exclu de la charge. Par exemple, un environnement Cloud Volumes ONTAP avec 30 Tio de capacité provisionnée peut choisir d'avoir uniquement un sous-ensemble de volumes de 15 Tio avec ARP activé.
+
+La configuration du protocole ARP pour les volumes s'effectue via ONTAP System Manager et l'interface de ligne de commande ONTAP.
 
 Pour plus d'informations sur l'activation d'ARP avec ONTAP System Manager et l'interface de ligne de commande, reportez-vous à la section https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Activation de la protection autonome contre les ransomwares"^].
 
+image::screenshot_arp.png[La capture d'écran montre la licence complémentaire pour la protection anti-ransomware autonome.]
+
 
 NOTE: L'assistance n'est pas disponible pour l'utilisation des fonctions sous licence sans licence.
-
-image::screenshot_arp.png[La capture d'écran montre la licence complémentaire pour la protection anti-ransomware autonome.]
