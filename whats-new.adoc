@@ -20,6 +20,18 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 16 janvier 2024
+
+
+
+=== Versions de correctifs dans BlueXP
+
+Les versions de correctifs sont disponibles dans BlueXP uniquement pour les trois dernières versions d'Cloud Volumes ONTAP.
+
+link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#patch-releases["Mettez à niveau Cloud Volumes ONTAP"^]
+
+
+
 == 8 janvier 2024
 
 

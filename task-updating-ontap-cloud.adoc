@@ -135,15 +135,20 @@ Notez ce qui suit :
 +
 Par exemple, si vous utilisez la version 9.8 et que vous voulez passer à la version 9.10.1, vous devez d'abord passer à la version 9.9.1 puis à la version 9.10.1.
 
-* Pour les versions de correctif (P), vous pouvez mettre à niveau d'une version vers n'importe quelle version P de la prochaine version.
-+
+
+
+
+
+=== Versions de correctifs
+
+À partir de janvier 2024, les mises à niveau de correctifs ne sont disponibles dans BlueXP que s'il s'agit d'une version de correctif pour les trois dernières versions d'Cloud Volumes ONTAP. Nous utilisons la dernière version de la version GA pour déterminer les trois dernières versions à afficher dans BlueXP. Par exemple, si la version GA actuelle est 9.13.1, les correctifs pour la version 9.11.1-9.13.1 apparaissent dans BlueXP. Si vous souhaitez effectuer une mise à niveau vers une version de correctif pour les versions 9.11.1 ou inférieures, vous devez utiliser la procédure de mise à niveau manuelle de <<Mise à niveau à partir d'une image disponible sur une URL,Téléchargement de l'image ONTAP>>.
+
+En règle générale pour les versions de correctif (P), vous pouvez mettre à niveau d'une version vers n'importe quelle version P de la version actuelle ou de la version suivante.
+
 Voici quelques exemples :
 
-+
-** 9.13.0 > 9.13,1 P15
-** 9.12.1 > 9,13,1 P2
-
-
+* 9.13.0 > 9.13,1 P15
+* 9.12.1 > 9,13,1 P2
 
 
 
