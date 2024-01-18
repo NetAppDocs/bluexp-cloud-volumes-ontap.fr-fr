@@ -30,6 +30,7 @@ Lorsque vous utilisez AKV, notez que par défaut une LIF de SVM de données perm
 
 .Limites
 * AKV ne peut être configuré que sur un SVM de données
+* NAE ne peut pas être utilisé avec AKV. NAE nécessite un serveur KMIP externe pris en charge.
 
 
 
@@ -152,7 +153,12 @@ image:screenshot-azure-service-endpoints-services.png["Capture d'écran des poin
 
 
 . Activez le coffre-fort de clés Azure à l'aide de l'ID client et de l'ID locataire enregistrés après l'enregistrement de l'application :
-`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _Azure_key_vault_name_ -key-id _Azure_key_ID_`
+`security key-manager external azure enable -vserver _SVM_name_ -client-id _Azure_client_ID_ -tenant-id _Azure_tenant_ID_ -name _key_vault_URI_ -key-id _full_key_URI_`
++
+
+NOTE: Le `_full_key_URI` la valeur doit utiliser le `<https:// <key vault host name>/keys/<key label>` format.
+
+. Une fois Azure Key Vault correctement installé, entrez dans le `client secret value` lorsque vous y êtes invité.
 . Vérifier le statut du gestionnaire de clés :
 `security key-manager external azure check`Le résultat sera le suivant :
 +
