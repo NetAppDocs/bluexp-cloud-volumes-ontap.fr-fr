@@ -5211,4 +5211,12 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="8f3a7aeceb3049764382da1a82a27238" category="list-text">Activez le coffre-fort de clés Azure à l'aide de l'ID client et de l'ID locataire enregistrés après l'enregistrement de l'application :<block ref="5e256216aa762875258d90fbe836b7b2" prefix=" " category="inline-code"></block></block>
   <block id="27546657617543a3f0cd8927c3f369c8" category="admonition">Le<block ref="ee5ecb949ba751e6c3f7b03d02fc2819" prefix=" " category="inline-code"></block> la valeur doit utiliser le<block ref="b5fd887d199c5a44249b4fce7085da7f" prefix=" " category="inline-code"></block> format.</block>
   <block id="b386d04ca3a89226a06701e85f70e33d" category="list-text">Une fois Azure Key Vault correctement installé, entrez dans le<block ref="00c44d3486742ffa7af4a8bfbab4d3d3" prefix=" " category="inline-code"></block> lorsque vous y êtes invité.</block>
+  <block id="055c53a891e1dcea17b9e4c18351c1e5" category="section-title">Limite max. De volume FlexVol de 300 Tio</block>
+  <block id="685bad4432f8d3176689b49c31fcdd5f" category="paragraph">Vous pouvez désormais créer un volume FlexVol d'une taille maximale de 300 Tio avec System Manager et l'interface de ligne de commandes ONTAP à partir de Cloud Volumes ONTAP 9.12.1 P2 et 9.13.0 P2, et dans BlueXP à partir de Cloud Volumes ONTAP 9.13.1.</block>
+  <block id="6870aed8e6dfc4f093d5b5c6f8a4d81c" category="inline-link-macro">Limites de stockage dans AWS</block>
+  <block id="a842d2e15b1126ce2e0e58e48ea17212" category="list-text"><block ref="a842d2e15b1126ce2e0e58e48ea17212" category="inline-link-macro-rx"></block></block>
+  <block id="e622ddac1a96836929babb5b993749ba" category="inline-link-macro">Limites de stockage dans Azure</block>
+  <block id="37da66fa8b940c6b66bd42740840f9cd" category="list-text"><block ref="37da66fa8b940c6b66bd42740840f9cd" category="inline-link-macro-rx"></block></block>
+  <block id="c73908091fadeb9dec16abab42821644" category="inline-link-macro">Limites de stockage dans Google Cloud</block>
+  <block id="cf7df70a21568dc1f0d90f876bcb89a1" category="list-text"><block ref="cf7df70a21568dc1f0d90f876bcb89a1" category="inline-link-macro-rx"></block></block>
 </blocks>
