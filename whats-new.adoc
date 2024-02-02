@@ -20,6 +20,26 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 2 février 2024
+
+
+
+=== Prise en charge des machines virtuelles Edv5-series dans Azure
+
+Cloud Volumes ONTAP prend désormais en charge les machines virtuelles de la série Edv5 suivantes avec des disques gérés partagés dans une ou plusieurs zones de disponibilité, à partir de la version 9.14.1.
+
+* E4ds_v5
+* E8ds_v5
+* E20s_v5
+* E32ds_v5
+* E48ds_v5
+* E64ds_v5
+
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
+
+
+
 == 16 janvier 2024
 
 
