@@ -52,6 +52,22 @@ NOTE: Le stockage et l'utilisation du réseau sont calculés en gigaoctets binai
 
 Les packages basés sur la capacité suivants sont disponibles pour Cloud Volumes ONTAP.
 
+Pour obtenir la liste des types de VM pris en charge avec les packages basés sur la capacité suivants, reportez-vous à :
+
+ifdef::azure[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^]
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Configurations prises en charge dans Google Cloud"^]
+
+
+endif::gcp[]
+
 
 
 ==== Fréemium
@@ -94,23 +110,6 @@ endif::azure[]
 ifdef::gcp[]
 
 * Disponible dans Google Cloud Marketplace comme offre de paiement à l'utilisation ou comme contrat annuel
-
-
-endif::gcp[]
-
-* Prise en charge avec certains types de VM :
-
-
-ifdef::azure[]
-
-* Pour Azure : E4S_v3, E4ds_v4, DS4_v2, DS13_v2, E8s_v3, E8ds_v4, E4ds_v5 et E8ds_v5
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Pour Google Cloud : n2-standard-4, n2-standard-8
 
 
 endif::gcp[]
