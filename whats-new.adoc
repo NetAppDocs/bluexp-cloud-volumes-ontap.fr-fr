@@ -20,6 +20,16 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 5 mars 2024
+
+
+
+=== Cloud Volumes ONTAP 9.14.1 GA
+
+BlueXP peut désormais déployer et gérer la version Cloud Volumes ONTAP 9.14.1 General Availability dans AWS, Azure et Google Cloud.
+
+
+
 == 2 février 2024
 
 
