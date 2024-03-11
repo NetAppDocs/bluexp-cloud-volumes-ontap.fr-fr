@@ -19,12 +19,12 @@ Chaque connecteur dispose de paramètres qui déterminent la façon dont il gèr
 Ces paramètres affectent tous les systèmes Cloud Volumes ONTAP gérés par un connecteur. Si vous avez un autre connecteur, il peut être configuré différemment.
 
 .Autorisations requises
-Des privilèges d'administrateur de compte sont requis pour modifier les paramètres de connecteur.
+Les privilèges d'administrateur de compte sont requis pour modifier les paramètres Cloud Volumes ONTAP.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres Cloud Volumes ONTAP*.
 +
-image::screenshot_settings_connector_button.png[capture d'écran paramètres bouton connecteur]
+image::screenshot-settings-cloud-volumes-ontap.png[Capture d'écran de l'option Paramètres Cloud Volumes ONTAP sous l'icône Paramètres.]
 
 . Sous *Capacity*, modifiez l'un des paramètres suivants :
 +

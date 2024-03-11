@@ -318,7 +318,7 @@ CAUTION: Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer 
 Le ratio est important pour les scénarios de reprise d'activité, car lors de la lecture des données à partir du magasin d'objets, Cloud Volumes ONTAP déplace les données vers des disques SSD/HDD pour de meilleures performances. Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données. Prenez en compte ces changements pour répondre aux besoins de votre entreprise.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône *Paramètres*, puis sélectionnez *Paramètres du connecteur*.
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône *Paramètres* et sélectionnez *Paramètres Cloud Volumes ONTAP*.
 +
 image:screenshot_settings_icon.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 

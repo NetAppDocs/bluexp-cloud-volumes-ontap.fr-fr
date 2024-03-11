@@ -97,8 +97,6 @@
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">Gérer les paramètres de capacité sur un connecteur</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">Chaque connecteur dispose de paramètres qui déterminent la façon dont il gère la capacité d'agrégat pour Cloud Volumes ONTAP.</block>
   <block id="4edc935aeaaf3923beb2e4249e6c56f3" category="paragraph">Ces paramètres affectent tous les systèmes Cloud Volumes ONTAP gérés par un connecteur. Si vous avez un autre connecteur, il peut être configuré différemment.</block>
-  <block id="4f85ddd6337c9d7a3f7f9955945eece1" category="paragraph">Des privilèges d'administrateur de compte sont requis pour modifier les paramètres de connecteur.</block>
-  <block id="190d3f654701a58653384f20c47c8ecf" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.</block>
   <block id="03c93da41831d72dcea5fc724b2b4658" category="list-text">Sous *Capacity*, modifiez l'un des paramètres suivants :</block>
   <block id="35e1526d677f2c5c412538ff39eaacd5" category="list-text">Mode de gestion de la capacité</block>
   <block id="270bb1237f850224c48374b974319501" category="list-text">Choisissez si BlueXP vous informe des décisions relatives à la capacité de stockage ou si BlueXP gère automatiquement les besoins en capacité pour vous.</block>
@@ -2127,7 +2125,6 @@
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">Par exemple, vous pouvez choisir un espace libre inférieur à 10 % pour vérifier que vous utilisez la capacité achetée. BlueXP peut ensuite vous acheter des disques supplémentaires lorsque vous avez besoin de capacité supplémentaire (jusqu'à atteindre la limite de disques pour l'agrégat).</block>
   <block id="e62da289d1df9b17e78658d0c7639034" category="admonition">Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données et vous risquez de subir une dégradation des performances. Toute modification doit être effectuée avec précaution. Si vous ne savez pas ce que vous devez faire, n'hésitez pas à contacter le service de support NetApp.</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">Le ratio est important pour les scénarios de reprise d'activité, car lors de la lecture des données à partir du magasin d'objets, Cloud Volumes ONTAP déplace les données vers des disques SSD/HDD pour de meilleures performances. Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données. Prenez en compte ces changements pour répondre aux besoins de votre entreprise.</block>
-  <block id="2b891711a30d74a376864ff361ead016" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône *Paramètres*, puis sélectionnez *Paramètres du connecteur*.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP.</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">Sous *capacité*, cliquez sur *seuils de capacité d'agrégat - ratio d'espace libre pour le Tiering des données*.</block>
   <block id="c389556b61d8e54624252a2563fdfc17" category="list-text">Modifiez le ratio d'espace libre en fonction de vos besoins et cliquez sur *Enregistrer*.</block>
@@ -4881,7 +4878,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="e40eb63a3506950ad93ba909dcf25c90" category="image-alt">capacité de l'agrégat de capture d'écran</block>
   <block id="ca7b4e21c879a84e19f4057cd971879d" category="image-alt">capture d'écran montrant FlexGroup vol</block>
   <block id="18d8042386b79e2c279fd162df0205c8" category="image-alt">400</block>
-  <block id="b26d26fe2543d5473bc9e47f43ccf1a0" category="image-alt">capture d'écran paramètres bouton connecteur</block>
   <block id="84ad21dcd6ff9e0e4d117b5b3950020e" category="admonition">L'assistance n'est pas disponible pour l'utilisation des fonctions sous licence sans licence.</block>
   <block id="3799dfe1ae4f409b181ad79e377574c6" category="paragraph">Les attaques par ransomware peuvent coûter du temps, des ressources et de la réputation à l'entreprise. BlueXP vous permet d'implémenter deux solutions NetApp pour les attaques par ransomware : protection contre les extensions de fichiers classiques et protection anti-ransomware autonome (ARP). Ces solutions fournissent des outils efficaces de visibilité, de détection et de résolution des problèmes.</block>
   <block id="78cc5cdbd5abab66548d6b3a595b1c6c" category="section-title">Protection contre les extensions de fichiers ransomware courantes</block>
@@ -5243,4 +5239,8 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="4ac5b49185bd4b8f8b0ef6b8869d149f" category="paragraph">Dans AWS, Cloud Volumes ONTAP, le médiateur et le connecteur prennent désormais en charge Amazon Instant Metadata Service v2 (IMDSv2) pour toutes les fonctions. IMDSv2 fournit une protection améliorée contre les vulnérabilités. Seul IMDSv1 était précédemment pris en charge.</block>
   <block id="7fcd14ee7d62b2a6f712b7ed775cdbc3" category="inline-link-macro">Documentation d'installation et d'administration BlueXP pour la gestion des connecteurs existants</block>
   <block id="6aec236f70c9d11e5073fa187bf36fd1" category="paragraph">Si vos stratégies de sécurité l'exigent, vous pouvez configurer vos instances EC2 pour qu'elles utilisent IMDSv2. Pour obtenir des instructions, reportez-vous à la section <block ref="437fb94a00c6c9b10a9ad9095b6680bc" category="inline-link-macro-rx"></block>.</block>
+  <block id="4954156ba208adf3ff1ee232d2f1d15f" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres Cloud Volumes ONTAP*.</block>
+  <block id="6f0bb9f0803011314813e6aad3d926bf" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône *Paramètres* et sélectionnez *Paramètres Cloud Volumes ONTAP*.</block>
+  <block id="d4b0cdcc1cd5c09a803de195e4f82296" category="paragraph">Les privilèges d'administrateur de compte sont requis pour modifier les paramètres Cloud Volumes ONTAP.</block>
+  <block id="13cdcbf94ff7381b25ca5784f874a9b6" category="image-alt">Capture d'écran de l'option Paramètres Cloud Volumes ONTAP sous l'icône Paramètres.</block>
 </blocks>
