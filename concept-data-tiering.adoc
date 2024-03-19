@@ -134,9 +134,12 @@ Lorsque BlueXP crée le compartiment, il utilise les paramètres par défaut sui
 
 
 --
-Classes de stockage:: La classe de stockage par défaut pour les données hiérarchisées est la classe _Standard Storage_. Si les données sont rarement utilisées, vous pouvez réduire vos coûts de stockage en utilisant _Nearline Storage_ ou _Coldline Storage_. Lorsque vous modifiez la classe de stockage, les données inactives se déplacent directement vers la classe que vous avez sélectionnée.
+Classes de stockage:: La classe de stockage par défaut pour les données hiérarchisées est la classe _Standard Storage_. Si les données sont rarement utilisées, vous pouvez réduire vos coûts de stockage en utilisant _Nearline Storage_ ou _Coldline Storage_. Lorsque vous modifiez la classe de stockage, les données inactives suivantes sont transférées directement vers la classe que vous avez sélectionnée.
 +
 --
+
+NOTE: Toutes les données inactives existantes conservent la classe de stockage par défaut lorsque vous modifiez la classe de stockage. Pour modifier la classe de stockage des données inactives existantes, vous devez effectuer la désignation manuellement.
+
 Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://cloud.google.com/storage/docs/storage-classes["En savoir plus sur les classes de stockage pour Google Cloud Storage"^].
 
 Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus de détails sur la modification de la classe de stockage, voir link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].

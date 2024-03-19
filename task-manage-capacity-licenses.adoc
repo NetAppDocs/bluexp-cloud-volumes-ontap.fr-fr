@@ -20,6 +20,9 @@ _Licences basées sur la capacité_ vous pouvez payer pour Cloud Volumes ONTAP p
 
 Le portefeuille digital BlueXP_ vous permet de gérer les licences pour Cloud Volumes ONTAP à partir d'un emplacement unique. Vous pouvez ajouter de nouvelles licences et mettre à jour des licences existantes.
 
+
+NOTE: Même si l'utilisation et les mesures réelles des produits et services gérés dans BlueXP sont toujours calculés en Gio et en Tio, les termes Go/Gio et To/Tio sont utilisés de manière interchangeable. Elles figurent dans les offres Cloud Marketplace, les devis, les descriptions des offres ainsi que d'autres documents justificatifs
+
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les licences Cloud Volumes ONTAP"].
 
 
