@@ -443,7 +443,7 @@ Les volumes FlexGroup créés directement via l'interface de ligne de commande o
 
 NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
 
-image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/main/media/screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
+image:screenshot-show-flexgroup-volume.png["Capture d'écran affichant l'icône de volume FlexGroup, placez le curseur de la souris sous la mosaïque volumes."]
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html["En savoir plus sur l'affichage des volumes FlexGroup créés."^]
 
