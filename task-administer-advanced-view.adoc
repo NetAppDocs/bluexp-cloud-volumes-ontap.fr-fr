@@ -16,8 +16,6 @@ summary: 'Si vous avez besoin d"effectuer une gestion avancée d"Cloud Volumes O
 [role="lead"]
 Si vous avez besoin d'effectuer une gestion avancée d'Cloud Volumes ONTAP, vous pouvez utiliser ONTAP System Manager, interface de gestion fournie avec un système ONTAP. Nous avons inclus l'interface System Manager directement dans BlueXP afin que vous n'ayez pas besoin de laisser BlueXP pour une gestion avancée.
 
-Cette vue avancée est disponible sous forme d'aperçu. Nous prévoyons d'affiner cette expérience et d'ajouter des améliorations dans les prochaines versions. Envoyez-nous vos commentaires à l'aide de l'outil de chat In-Product.
-
 
 
 == Caractéristiques
