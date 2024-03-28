@@ -99,28 +99,28 @@ Ce comportement est déterminé par le _Capacity Management mode_ sur un connect
 
 === Gestion automatique de la capacité
 
-Le mode de gestion de la capacité est défini sur automatique par défaut. Dans ce mode, BlueXP achète automatiquement de nouveaux disques pour les instances Cloud Volumes ONTAP lorsque davantage de capacité est nécessaire, supprime les ensembles de disques (agrégats) inutilisés, déplace des volumes entre les agrégats si nécessaire et tente de tomber en panne des disques.
+Le mode de gestion de la capacité est défini sur automatique par défaut. Dans ce mode, BlueXP vérifie le ratio d'espace libre toutes les 15 minutes pour déterminer si le ratio d'espace libre est inférieur au seuil spécifié. Si davantage de capacité est nécessaire, BlueXP lance automatiquement l'achat de nouveaux disques, supprime les ensembles de disques (agrégats) inutilisés, déplace les volumes entre les agrégats selon les besoins et tente d'empêcher une défaillance de disques.
 
 Les exemples suivants illustrent le fonctionnement de ce mode :
 
 * Si un agrégat atteint le seuil de capacité et dispose d'espace pour plus de disques, BlueXP achète automatiquement de nouveaux disques pour cet agrégat afin que les volumes puissent continuer à augmenter.
 +
-BlueXP vérifie le ratio d'espace libre toutes les 15 minutes pour déterminer s'il doit acheter des disques supplémentaires.
-
-
-
 ifdef::aws[]
 
-+ dans le cas d'un agrégat AWS qui prend en charge Elastic volumes, BlueXP augmente également la taille des disques d'un groupe RAID. link:concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes"].
+
+
+Dans le cas d'un agrégat dans AWS qui prend en charge Elastic volumes, BlueXP augmente également la taille des disques d'un groupe RAID. link:concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes"].
 
 endif::aws[]
 
-* Lorsqu'un agrégat atteint le seuil de capacité et qu'il ne prend pas en charge de disques supplémentaires, BlueXP déplace automatiquement un volume de cet agrégat vers un agrégat disposant de la capacité disponible ou vers un nouvel agrégat.
++
+* Si un agrégat atteint le seuil de capacité et qu'il ne peut pas prendre en charge de disques supplémentaires, BlueXP déplace automatiquement un volume de cet agrégat vers un agrégat de capacité disponible ou vers un nouvel agrégat.
+
 +
 Si BlueXP crée un nouvel agrégat pour le volume, il choisit une taille de disque adaptée à la taille de ce volume.
 
 +
-Notez que l'espace libre est désormais disponible sur l'agrégat d'origine. Les volumes existants ou les nouveaux volumes peuvent utiliser cet espace. Dans ce scénario, l'espace ne peut pas être retourné dans le Cloud provocé.
+Notez que l'espace libre est désormais disponible sur l'agrégat d'origine. Les volumes existants ou les nouveaux volumes peuvent utiliser cet espace. Dans ce scénario, l'espace ne peut pas être renvoyé au fournisseur cloud.
 
 * Si un agrégat ne contient aucun volume pendant plus de 12 heures, BlueXP le supprime.
 

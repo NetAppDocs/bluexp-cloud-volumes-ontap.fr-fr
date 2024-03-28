@@ -34,12 +34,15 @@ Mode de gestion de la capacité:: Choisissez si BlueXP vous informe des décisio
 link:concept-storage-management.html#capacity-management["Découvrez le fonctionnement du mode de gestion de la capacité"].
 
 --
-Seuil de capacité de l'agrégat : ratio d'espace libre:: Déclenche une notification lorsque le taux d'espace libre sur un agrégat chute en dessous du seuil spécifié.
+Seuil de capacité de l'agrégat : ratio d'espace libre:: Ce ratio est un paramètre clé pour les décisions relatives à la gestion de la capacité. Il est donc essentiel de comprendre son impact, que vous soyez en mode automatique ou manuel de gestion de la capacité. Il est recommandé de définir ce seuil en tenant compte de vos besoins de stockage spécifiques et de votre croissance prévue afin de maintenir un équilibre entre l'utilisation des ressources et les coûts.
 +
 --
-Le rapport d'espace libre est calculé comme suit :
+En mode manuel, si le ratio d'espace libre sur un agrégat chute en dessous du seuil spécifié, une notification vous avertit que vous devez prendre des mesures pour corriger ce ratio. Il est important de surveiller ces notifications et de gérer manuellement la capacité de l'agrégat pour éviter toute perturbation du service et assurer des performances optimales.
 
+Le rapport d'espace libre est calculé comme suit :
 (capacité de l'agrégat : capacité totale utilisée sur l'agrégat) / capacité de l'agrégat
+
+Voir link:concept-storage-management.html#automatic-capacity-management["Gestion automatique de la capacité"] Apprendre à utiliser la capacité est automatiquement gérée dans Cloud Volumes ONTAP.
 
 --
 Seuils de capacité de l'agrégat : ratio d'espace libre pour le Tiering des données:: Définit la quantité d'espace disponible requise sur le Tier de performance (disques) lors du Tiering des données vers un Tier de capacité (stockage objet).
