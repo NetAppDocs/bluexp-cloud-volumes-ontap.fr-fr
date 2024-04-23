@@ -20,6 +20,34 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 23 avril 2024
+
+
+
+=== Prise en charge de nouvelles régions pour les déploiements de zones de disponibilité multiples dans Azure
+
+Les régions suivantes prennent désormais en charge les déploiements HA de zones de disponibilité multiples dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
+
+* Allemagne de l'ouest du centre
+* Pologne Centre
+* Ouest des États-Unis 3
+* Israël Central
+* Italie Nord
+* Canada Central
+
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+
+
+
+=== La région de Johannesburg est désormais prise en charge par Google Cloud
+
+La région de Johannesburg (`africa-south1` Région) est désormais pris en charge par Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
+
+Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+
+
+
 == 8 mars 2024
 
 

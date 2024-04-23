@@ -5262,4 +5262,15 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
 Si BlueXP crée un nouvel agrégat pour le volume, il choisit une taille de disque adaptée à la taille de ce volume.</block>
   <block id="7f1e9230df284aec888c734befc03867" category="paragraph">+
 Notez que l'espace libre est désormais disponible sur l'agrégat d'origine. Les volumes existants ou les nouveaux volumes peuvent utiliser cet espace. Dans ce scénario, l'espace ne peut pas être renvoyé au fournisseur cloud.</block>
+  <block id="31e2ca9cb7755d06bc40e30fd8e408d3" category="section-title">23 avril 2024</block>
+  <block id="a2fefc65df2136938b995f8abbe643c2" category="section-title">Prise en charge de nouvelles régions pour les déploiements de zones de disponibilité multiples dans Azure</block>
+  <block id="0cc914ed23f0f7d6bc902ae731843213" category="paragraph">Les régions suivantes prennent désormais en charge les déploiements HA de zones de disponibilité multiples dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :</block>
+  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">Allemagne de l'ouest du centre</block>
+  <block id="26b4bdc11dfead08029a688129c42cf9" category="list-text">Pologne Centre</block>
+  <block id="64fb50bb758fe12b94faa568a567e13c" category="list-text">Ouest des États-Unis 3</block>
+  <block id="eb1aea8107eeeb90c841d5710262dd52" category="list-text">Israël Central</block>
+  <block id="6c2cb03afda0af373b8df47f9dc47ed7" category="list-text">Italie Nord</block>
+  <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">Canada Central</block>
+  <block id="0b745a8416b0a8e3b89e7e01ba13af65" category="section-title">La région de Johannesburg est désormais prise en charge par Google Cloud</block>
+  <block id="ec826289e3407edb59d3c5ed0aca5c74" category="paragraph">La région de Johannesburg <block ref="6d1d2d77b70fb38d060e5653977838a2" prefix="(" category="inline-code"></block> Région) est désormais pris en charge par Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.</block>
 </blocks>
