@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-create-volumes.html 
-keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, templates, cloud backup 
+keywords: storage, provisioning, iscsi, nfs, cifs, volumes, create a volume, add a volume, create volumes, add volumes, creating a volume, adding a volume, provision volume, provision a volume, provisioning volumes, add volume to second node, add volume to node 2, cloud backup 
 summary: Si vous avez besoin de plus de stockage après le lancement de votre système Cloud Volumes ONTAP initial, vous pouvez créer de nouveaux volumes FlexVol pour NFS, CIFS ou iSCSI à partir de BlueXP. 
 ---
 = Créer des volumes FlexVol
@@ -20,7 +20,6 @@ BlueXP offre plusieurs façons de créer un nouveau volume :
 
 * Spécifiez les détails d'un nouveau volume et laissez BlueXP gérer pour vous les agrégats de données sous-jacents. <<create-a-volume,En savoir plus >>>>
 * Créez un volume sur un agrégat de données de votre choix. <<create-a-volume,En savoir plus >>>>
-* Créer un volume à partir d'un modèle afin d'optimiser le volume en fonction des besoins de workloads pour certaines applications, telles que les bases de données ou les services de streaming. <<create-a-volume-from-a-template,En savoir plus >>>>
 * Créer un volume sur le second nœud dans une configuration HA. <<create-volume-second-node,En savoir plus >>>>
 
 
@@ -71,7 +70,7 @@ Dans l'onglet Aggregates, accédez à la mosaïque d'agrégat souhaitée. Clique
 ====
 . Suivez les étapes de l'assistant pour créer le volume.
 +
-.. *Volumes, Détails, protection et balises* : saisissez les détails de base du volume et sélectionnez une stratégie Snapshot.
+.. *Détails, protection et balises* : saisissez les informations de base sur le volume et sélectionnez une stratégie d'instantané.
 +
 Certains des champs de cette page sont explicites. La liste suivante décrit les champs pour lesquels vous pourriez avoir besoin de conseils :
 
@@ -85,9 +84,6 @@ Certains des champs de cette page sont explicites. La liste suivante décrit les
 
 
 | Taille du volume | La taille maximale que vous pouvez saisir dépend en grande partie de l'activation du provisionnement fin, ce qui vous permet de créer un volume plus grand que le stockage physique actuellement disponible. 
-
-
-| Étiquettes | Les balises que vous ajoutez à un volume sont associées à l' https://docs.netapp.com/us-en/bluexp-remediation/task-using-tags.html["Service modèles d'applications"^], qui peut vous aider à organiser et à simplifier la gestion de vos ressources. 
 
 
 | VM de stockage (SVM) | Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. Vous pouvez spécifier la VM de stockage du nouveau volume. 
@@ -219,58 +215,6 @@ Compression:: Réduit la capacité physique requise pour stocker les données en
 
 .Résultat
 BlueXP crée le volume sur le système Cloud Volumes ONTAP.
-
-
-
-== Créer un volume à partir d'un modèle
-
-Si votre entreprise a créé des modèles de volume Cloud Volumes ONTAP pour vous permettre de déployer des volumes optimisés pour répondre aux besoins de workloads de certaines applications, suivez les étapes de cette section.
-
-Le modèle doit faciliter votre travail car certains paramètres de volume seront déjà définis dans le modèle, tels que le type de disque, la taille, le protocole, la stratégie Snapshot, le fournisseur de cloud, entre autres. Lorsqu'un paramètre est déjà prédéfini, il vous suffit de passer au paramètre de volume suivant.
-
-
-NOTE: Vous pouvez créer des volumes NFS ou CIFS uniquement lors de l'utilisation de modèles.
-
-.Étapes
-. Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
-. Sur la page Canevas, cliquez sur le nom du système Cloud Volumes ONTAP dans lequel vous souhaitez provisionner un volume.
-. Accédez à l'onglet volumes et cliquez sur *Ajouter un volume* > *Nouveau volume à partir du modèle*.
-+
-image:screenshot_add_volume_template.png["Capture d'écran indiquant comment ajouter un nouveau volume à partir d'un modèle."]
-
-. Dans la page _Select Template_, sélectionnez le modèle à utiliser pour créer le volume et cliquez sur *Next*.
-+
-image:screenshot_select_template_cvo.png["Capture d'écran des modèles d'application disponibles."]
-
-+
-La page _Editor_ s'affiche.
-
-+
-image:screenshot_define_cvo_vol_from_template.png["Capture d'écran montrant un modèle vierge que vous devez remplir pour créer un volume."]
-
-. Au-dessus du panneau _action_, entrez un nom pour le modèle.
-. Sous _Context_, l'environnement de travail contient le nom de l'environnement de travail avec lequel vous avez démarré. Sélectionnez la *VM de stockage* où le volume sera créé.
-. Ajoutez des valeurs pour tous les paramètres qui ne sont pas codés en dur à partir du modèle. Voir <<create-a-volume,Créer un volume>> Pour obtenir des informations détaillées sur tous les paramètres nécessaires au déploiement d'un volume Cloud Volumes ONTAP.
-. Cliquez sur *appliquer* pour enregistrer les paramètres configurés dans l'action sélectionnée.
-. Si vous n'avez pas besoin de définir d'autres actions (par exemple, configuration de la sauvegarde et de la restauration BlueXP), cliquez sur *Enregistrer le modèle*.
-+
-S'il existe d'autres actions, cliquez sur l'action dans le volet gauche pour afficher les paramètres à compléter.
-
-+
-image:screenshot_template_select_next_action.png["Capture d'écran indiquant comment sélectionner des actions supplémentaires à réaliser."]
-
-+
-Par exemple, si l'action Activer Cloud Backup sur volume nécessite que vous sélectionniez une règle de sauvegarde, vous pouvez le faire maintenant.
-
-. Une fois la configuration des actions du modèle terminée, cliquez sur *Enregistrer le modèle*.
-
-
-.Résultat
-Cloud Volumes ONTAP provisionne le volume et affiche une page afin que vous puissiez voir sa progression.
-
-image:screenshot_template_creating_resource_cvo.png["Capture d'écran indiquant la progression de la création de votre nouveau volume à partir du modèle."]
-
-Par ailleurs, si une action secondaire est implémentée dans le modèle, par exemple pour l'activation de la sauvegarde et de la restauration BlueXP sur le volume, cette action est également exécutée.
 
 
 

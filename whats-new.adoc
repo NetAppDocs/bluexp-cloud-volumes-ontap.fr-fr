@@ -48,6 +48,12 @@ Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.ne
 
 
 
+=== Les balises et les modèles de volumes ne sont plus pris en charge
+
+Vous ne pouvez plus créer de volume à partir d'un modèle ni modifier les balises d'un volume. Ces actions ont été associées au service de correction BlueXP, qui n'est plus disponible.
+
+
+
 == 8 mars 2024
 
 
@@ -1145,7 +1151,6 @@ image:screenshot-cvo-user-name.png["Capture d'écran de la page Détails et info
 Nous avons apporté quelques améliorations à la création des volumes :
 
 * Nous avons repensé l'assistant de création de volumes pour en faciliter l'utilisation.
-* Les balises que vous ajoutez à un volume sont désormais associées au service modèles d'applications, qui peut vous aider à organiser et simplifier la gestion de vos ressources.
 * Vous pouvez désormais choisir une export policy personnalisée pour NFS.
 
 

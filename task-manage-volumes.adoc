@@ -59,15 +59,6 @@ Pour en savoir plus sur les volumes FlexClone, consultez le http://docs.netapp.c
 
 
 
-| Modifier les balises de volume (volumes en lecture-écriture uniquement)  a| 
-.. Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Modifier les balises de volume* pour modifier la balise de volume attribuée au volume sélectionné.
-.. Entrez la clé de balise de volume et la valeur sous les champs fournis.
-.. Pour inclure des balises supplémentaires, cliquez sur *Ajouter une nouvelle balise*.
-.. Cliquez sur *Enregistrer*.
-
-
-
-
 | Modifier un volume (volumes en lecture-écriture uniquement)  a| 
 .. Sous actions de volume dans le panneau gérer les volumes, cliquez sur *Modifier les paramètres de volume*
 .. Modifiez la règle Snapshot du volume, la version du protocole NFS, la liste de contrôle d'accès NFS (export policy) ou les autorisations de partage, puis cliquez sur *Apply*.
