@@ -10,6 +10,8 @@ indexpage:
       url: concept-overview-cvo.html
     - title: Démarrage rapide pour AWS
       url: task-getting-started-aws.html
+    - title: Démarrage rapide pour les régions Top Secret/Secret Cloud d'AWS
+      url: task-getting-started-aws-c2s.html
       flavor: aws
     - title: Démarrage rapide pour Azure
       url: task-getting-started-azure.html

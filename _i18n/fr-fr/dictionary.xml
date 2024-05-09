@@ -289,14 +289,7 @@
   <block id="3af4fb97c9f77d1ba8d551d286a88c61" category="list-text">Si vous n'avez pas encore d'abonnement,<block ref="49d6686f1a400348bbcff579d9d978a6" category="inline-link-rx"></block></block>
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link-macro">Associez vos abonnements pour une utilisation avec Cloud Volumes ONTAP</block>
   <block id="cf2d2d8d3f12faf0a0924f5c5c89598b" category="list-text">Après que NetApp autorise votre compte, <block ref="92e1d32055031f48c102a52373394710" category="inline-link-macro-rx"></block>.</block>
-  <block id="8e9d6d95264b6231f0a1d0ca22c087f7" category="summary">Les guides suivants peuvent vous aider à commencer à utiliser Cloud Volumes ONTAP dans Google Cloud pour répondre à vos besoins spécifiques.</block>
   <block id="f540a08b090d18fa948ca4ade8ceb7ff" category="doc">Cloud Volumes ONTAP pour Google Cloud</block>
-  <block id="f22e86b63856df3737d333499d0d8642" category="inline-link-macro">Mise en route de Cloud Volumes ONTAP dans Google Cloud : présentation de la configuration</block>
-  <block id="a480525c508abef033c6011b6b8ae5db" category="list-text"><block ref="a480525c508abef033c6011b6b8ae5db" category="inline-link-macro-rx"></block></block>
-  <block id="85536ede959e4a62b6eeb8fa7da21b71" category="inline-link-macro">Réplication des données ONTAP sur site vers NetApp Cloud Volumes ONTAP pour la reprise après incident</block>
-  <block id="8b26f0918bd84f8f658268af9e2d60ac" category="list-text"><block ref="8b26f0918bd84f8f658268af9e2d60ac" category="inline-link-macro-rx"></block></block>
-  <block id="ebd1806e62b51cb0c1b6db8082e0666d" category="inline-link-macro">Comment déployer NetApp FlexCache avec Cloud Volumes ONTAP sur Google Cloud</block>
-  <block id="dd8a20d5a7875f2be225fbdc1a4c18bf" category="list-text"><block ref="dd8a20d5a7875f2be225fbdc1a4c18bf" category="inline-link-macro-rx"></block></block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites.</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limites connues</block>
   <block id="06c86f2b2f40c7b5ae916f820dace6f3" category="inline-link">Accédez aux notes de version de Cloud Volumes ONTAP</block>
@@ -5248,4 +5241,5 @@ Pour les paires HA, vous pouvez sélectionner les rôles IAM pour Cloud Volumes 
   <block id="059ef6b8ce45a93c6445c0f41c224068" category="list-text"><block ref="059ef6b8ce45a93c6445c0f41c224068" category="inline-link-rx"></block></block>
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">Vous devez fournir votre propre rôle IAM dans AWS Secret Cloud. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">Déployez Cloud Volumes ONTAP dans les régions secrètes AWS</block>
+  <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">Démarrage rapide pour les régions Top Secret/Secret Cloud d'AWS</block>
 </blocks>
