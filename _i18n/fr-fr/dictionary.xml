@@ -4909,8 +4909,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">Mise en réseau améliorée</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">Comment activer la mise en réseau améliorée comme SR-IOV ou ENA sur les instances Cloud Volumes ONTAP AWS</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">Pour effectuer une mise à niveau vers Cloud Volumes ONTAP version 9.8 ou ultérieure, vous devez activer _Enhanced Networking_ sur le cluster exécutant le type d'instance c4, m4 ou r4. Pour activer ENA, reportez-vous à l'article de la base de connaissances <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>.</block>
-  <block id="4b9b39edb3e09fa20d9a66c33e754c00" category="inline-link-macro">Impossible de changer le type d'instance de r4 en r5 avec une erreur de nombre de disques</block>
-  <block id="58cbae1f4fc410ea043517dc0196bed4" category="paragraph">Si vous ne pouvez pas modifier le type d'instance à partir d'instances c4, m4 ou r4, consultez l'article de la base de connaissances <block ref="ddbe8a0e687a77b95fcbe5dc93c2e464" category="inline-link-macro-rx"></block>.</block>
   <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Documentation Microsoft Azure</block>
   <block id="75640f19259f0f28da8136565db5cc22" category="admonition">Pour effectuer d'autres tâches liées à la carte réseau, vous pouvez attribuer un rôle de contributeur réseau ou un rôle personnalisé avec les autorisations appropriées dans Azure. Pour plus d'informations sur ces autorisations liées à la carte réseau, reportez-vous au<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>.</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">Inclut des sauvegardes de volume illimitées avec la sauvegarde et la restauration BlueXP, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent l'offre professionnelle.</block>
@@ -5242,4 +5240,6 @@ Pour les paires HA, vous pouvez sélectionner les rôles IAM pour Cloud Volumes 
   <block id="8d248e3b0efc80b62fc62ba57027d13f" category="admonition">Vous devez fournir votre propre rôle IAM dans AWS Secret Cloud. <block ref="af622e808f4363be4413c4e256d0f137" category="inline-link-macro-rx"></block>.</block>
   <block id="275e611a605380e34988066f6fa53eae" category="sidebar">Déployez Cloud Volumes ONTAP dans les régions secrètes AWS</block>
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">Démarrage rapide pour les régions Top Secret/Secret Cloud d'AWS</block>
+  <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">Conversion d'une instance AWS Xen CVO en Nitro (KVM)</block>
+  <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">Si vous ne pouvez pas modifier le type d'instance à partir d'instances c4, m4 ou r4, consultez l'article de la base de connaissances <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>.</block>
 </blocks>
