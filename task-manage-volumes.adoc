@@ -258,7 +258,7 @@ Par exemple, l'information avancée devrait dire quelque chose de similaire à c
 . Identifiez un ou plusieurs volumes à sortir de l'agrégat :
 +
 .. Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.
-.. Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône ellipse) > Afficher les détails de l'agrégat*.
+.. Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône en forme d'ellipse) > Afficher les détails de l'agrégat*.
 .. Sous l'onglet Overview de l'écran Aggregate Details, vérifiez la taille de chaque volume et choisissez un ou plusieurs volumes à déplacer hors de l'agrégat.
 +
 Vous devez choisir des volumes suffisamment volumineux pour libérer de l'espace dans l'agrégat afin d'éviter d'autres problèmes de capacité à l'avenir.
@@ -339,7 +339,7 @@ Le déplacement de deux volumes ou plus est nécessaire pour éviter les problè
 . Vérifiez si un agrégat existant a la capacité disponible pour les volumes que vous devez déplacer :
 +
 .. Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.
-.. Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône ellipse) > Afficher les détails de l'agrégat*.
+.. Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône en forme d'ellipse) > Afficher les détails de l'agrégat*.
 .. Sous la vignette Aggregate, afficher la capacité disponible (taille provisionnée moins capacité agrégée utilisée).
 +
 image::screenshot_aggr_capacity.png[capacité de l'agrégat de capture d'écran]
@@ -348,7 +348,7 @@ image::screenshot_aggr_capacity.png[capacité de l'agrégat de capture d'écran]
 
 . Si nécessaire, ajoutez des disques à un agrégat existant :
 +
-.. Sélectionner l'agrégat, puis cliquer sur le bouton *... (Icône ellipse) > Ajouter des disques*.
+.. Sélectionner l'agrégat, puis cliquer sur le bouton *... (Icône en forme d'ellipse) > Ajouter des disques*.
 .. Sélectionnez le nombre de disques à ajouter, puis cliquez sur *Ajouter*.
 
 

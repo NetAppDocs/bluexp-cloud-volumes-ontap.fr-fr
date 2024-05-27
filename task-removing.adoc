@@ -28,7 +28,7 @@ La suppression d'un environnement de travail de BlueXP vous permet d'effectuer l
 
 .Étapes
 . Sur la page Canevas, double-cliquez sur l'environnement de travail à supprimer.
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône ellipse et sélectionnez *Supprimer de l'espace de travail*.
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône points de suspension et sélectionnez *Supprimer de l'espace de travail*.
 +
 image:screenshot_settings_remove.png["Capture d'écran affichant l'option « Supprimer de l'espace de travail » dans le coin supérieur droit de la console BlueXP."]
 

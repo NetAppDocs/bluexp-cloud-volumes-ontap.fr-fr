@@ -264,7 +264,7 @@ Ces étapes décrivent l'utilisation de System Manager pour la version 9.3 et ul
 
 .Étapes
 . Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.
-. Sous le titre de l'agrégat, cliquez sur le bouton ellipse, puis sélectionnez *Afficher les détails de l'agrégat*.
+. Sous le titre de l'agrégat, cliquez sur le bouton points de suspension, puis sélectionnez *Afficher les détails de l'agrégat*.
 +
 image:screenshots_aggregate_details_state.png["Capture d'écran : affiche le champ État lorsque vous affichez les informations d'un agrégat."]
 
@@ -375,7 +375,7 @@ Deux chemins sont disponibles. Le chemin correct dépend de la version de votre 
 ** `/opt/application/netapp/cloudmanager/ontap/images/`
 
 
-. Dans l'environnement de travail BlueXP, cliquez sur le bouton *... (Ellipse)*, puis cliquez sur *mettre à jour Cloud Volumes ONTAP*.
+. Dans l'environnement de travail BlueXP, cliquez sur le bouton *... (Icône en forme d'ellipse)*, puis cliquez sur *mettre à jour Cloud Volumes ONTAP*.
 . Sur la page mettre à jour la version de Cloud Volumes ONTAP, entrez l'URL, puis cliquez sur *changer l'image*.
 +
 Si vous avez copié l'image logicielle sur le connecteur dans le chemin indiqué ci-dessus, entrez l'URL suivante :

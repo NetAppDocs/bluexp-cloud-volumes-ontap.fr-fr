@@ -4117,20 +4117,13 @@
   <block id="2057f11c69807ba4cbd27e1e921f7823" category="paragraph"><block ref="2057f11c69807ba4cbd27e1e921f7823" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8bcb080f300b6dfd8ee09d89bb85d060" category="paragraph"><block ref="8bcb080f300b6dfd8ee09d89bb85d060" category="inline-image-macro-rx" type="image"></block></block>
   <block id="021ed7718b4d1f8ff42ac2d9a653d143" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.</block>
-  <block id="a83fde1416b692585ab72d55276e43ee" category="list-text">Dans l'onglet Aggregates, accédez au titre souhaité, puis cliquez sur le bouton *... (icône ellipse)*.</block>
   <block id="4940ff7a33940e4ec33b7d78f146648a" category="inline-image-macro">Capture d'écran des options du menu Aggregates.</block>
   <block id="65c989c474db774160c441e94f03ddfc" category="paragraph"><block ref="65c989c474db774160c441e94f03ddfc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="116812c107d40280e65a3a0f4f5c3440" category="cell">Sous le ... (Ellipse), cliquez sur *Afficher les détails de l'agrégat*.</block>
-  <block id="2e59a4ccfe2d0087aa6ece23a0922ea4" category="cell">Sous le ... (Ellipse), cliquez sur *Ajouter volume*.</block>
-  <block id="64209bde9f2d422a086f99622664bb4b" category="list-text">Sous le ... (Ellipse), cliquez sur *Ajouter des disques*.</block>
-  <block id="54afa16678d9fa49dd4f37f5d8d62d51" category="list-text">Sous le ... (Icône ellipse), cliquez sur *augmenter la capacité*.</block>
   <block id="cacd62863a1aec474ea14c7ba39b9f28" category="list-text">Entrez la capacité supplémentaire que vous souhaitez ajouter, puis cliquez sur *augmenter*.</block>
-  <block id="f20c2435bfa2bf017b0a33455e4d252c" category="list-text">Sélectionnez une mosaïque d'agrégats ne contenant aucun volume. Cliquez sur le bouton *... (Icône ellipse) &gt; Supprimer*.</block>
   <block id="44f505566cfb44ab274d6dd37da6a48b" category="list-text">Sur la page Canevas, double-cliquez sur le nom du système que vous configurez pour la vitesse d'écriture.</block>
   <block id="b9c48f0b7a355bd9b39b3ae2c666ec43" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *vitesse d'écriture*.</block>
   <block id="8e1d6d29fa6bbc00ab6896ec1e677037" category="list-text">Cliquez sur *Enregistrer*, vérifiez le message de confirmation, puis cliquez sur *approuver*.</block>
   <block id="38124763ec69515302fcd6a655b0cb92" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP.</block>
-  <block id="67f0f7bdc0b6b3c961c645e5a644b531" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône ellipse, puis sélectionnez *définir mot de passe*.</block>
   <block id="a18ec44ef07922a650e590de9dd0a36e" category="inline-image-macro">Capture d'écran affichant le menu disponible dans l'environnement de travail qui contient l'action définir le mot de passe.</block>
   <block id="6daca7a21673390f9b4946d99b575dbc" category="paragraph"><block ref="6daca7a21673390f9b4946d99b575dbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="906b0fc78378feea1883fe721c72e648" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *Type de machine*.</block>
@@ -4157,7 +4150,6 @@
   <block id="da881591358a049c4652b06b1054ccb1" category="inline-image-macro">Capture d'écran affichant deux agrégats où un champ a le texte volumes élastiques activés.</block>
   <block id="6d62cbba5d5d4db651e497c57ee98339" category="paragraph"><block ref="6d62cbba5d5d4db651e497c57ee98339" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f5b7e3773583b9ca6b634b5264139c7" category="list-text">Sur la page Canevas, double-cliquez sur l'environnement de travail à supprimer.</block>
-  <block id="a9d8201fa61b52d04aa8d5efa98407ef" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône ellipse et sélectionnez *Supprimer de l'espace de travail*.</block>
   <block id="41aeb32afbd7adcd7344a525b524aa2e" category="inline-image-macro">Capture d'écran affichant l'option « Supprimer de l'espace de travail » dans le coin supérieur droit de la console BlueXP.</block>
   <block id="68dff8388aadd10577c0c664fc4fa756" category="paragraph"><block ref="68dff8388aadd10577c0c664fc4fa756" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ccc69ca3b9f50bd572baa407834f41ed" category="list-text">Dans la fenêtre Revue à partir de l'espace de travail, cliquez sur *Supprimer*.</block>
@@ -4193,7 +4185,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">Capture d'écran affichant les options disponibles pour modifier la règle de Tiering d'un volume.</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fd6a9430e3d3dc98292b8abddc9d77ff" category="paragraph">Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est prise en charge uniquement à l'aide de l'API et de l'interface de ligne de commande.</block>
-  <block id="0f6046d8813989f95f3ce9353dba26a5" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône de l'ellipse, puis sélectionnez *Supprimer*.</block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">Dans la fenêtre Supprimer l'environnement de travail, saisissez le nom de l'environnement de travail, puis cliquez sur *Supprimer*.</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *volumes*.</block>
@@ -4218,7 +4209,6 @@
   <block id="d528ab86bd3d69a199b872eae76729c3" category="list-text">A partir de l'écran _Add aggregate_, créez l'agrégat.</block>
   <block id="6f3d3de9b8245394933ccb5a82580032" category="inline-image-macro">Capture d'écran montrant la progression de l'ajout d'un agrégat.</block>
   <block id="6d8395606a42c9b4b508b7083fef071b" category="paragraph"><block ref="6d8395606a42c9b4b508b7083fef071b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="61c67604de243e1d1f09464a53018e48" category="list-text">Sous le titre de l'agrégat, cliquez sur le bouton ellipse, puis sélectionnez *Afficher les détails de l'agrégat*.</block>
   <block id="46804cb5ec7cb836d1b3ea87af016b42" category="paragraph"><block ref="46804cb5ec7cb836d1b3ea87af016b42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b1d9e8a6210003e4a2d3ad9699698b5c" category="paragraph"><block ref="b1d9e8a6210003e4a2d3ad9699698b5c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c0db33b74d957aee90885031cc634b6" category="paragraph">Une notification apparaît dans l'onglet vue d'ensemble si une nouvelle version est disponible :</block>
@@ -4249,10 +4239,8 @@
   <block id="350c5507976ce0078fb3fab36bf47f9b" category="cell">La sélection du SVM (Cloud Volume ONTAP Storage Virtual machine) affiche les informations CIFS configurées.</block>
   <block id="1aad0c623c80b59d018f9ae6c07ca0bf" category="list-text">Cliquez sur *définir*.</block>
   <block id="4145a13d965a05b20f37aec1922ef7dd" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.</block>
-  <block id="7d3d9db5a4178e569561d635871c26ed" category="list-text">Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône ellipse) &gt; Afficher les détails de l'agrégat*.</block>
   <block id="920937d0401827a767850d6598f69cf9" category="list-text">Sous l'onglet Overview de l'écran Aggregate Details, vérifiez la taille de chaque volume et choisissez un ou plusieurs volumes à déplacer hors de l'agrégat.</block>
   <block id="c6d494ac63d05f0797b17cc4e9b671a5" category="list-text">Sous la vignette Aggregate, afficher la capacité disponible (taille provisionnée moins capacité agrégée utilisée).</block>
-  <block id="8fcffd0e2a621979482d32af8df3fa54" category="list-text">Sélectionner l'agrégat, puis cliquer sur le bouton *... (Icône ellipse) &gt; Ajouter des disques*.</block>
   <block id="85cbc8c9d17142818868d0deb987b7d4" category="section-title">Découvrir FlexGroup volumes</block>
   <block id="bfc66c582a5f0744b4549abc59217c8b" category="paragraph">Vous pouvez afficher les volumes FlexGroup créés via l'interface de ligne de commande ou System Manager directement via l'onglet volumes de BlueXP. De même que les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées pour les volumes FleGroup créés via une mosaïque volumes dédiés. Sous la vignette volumes, vous pouvez identifier chaque groupe de volumes FlexGroup à l'aide du texte qui s'affiche lorsque vous positionnez le curseur de votre souris sur cette icône. En outre, vous pouvez identifier et trier les volumes FlexGroup sous la vue de liste des volumes via la colonne style de volume.</block>
   <block id="18f38afc08c122a02d1cef0b8f55b13c" category="list-text">Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctionnalités, puis cliquez sur l'icône en forme de crayon en regard de *Type d'instance*.</block>
@@ -4399,7 +4387,6 @@
   <block id="5d52a8b51c505c42c6cec9d89c67795a" category="paragraph"><block ref="3abd3a0b5353b2721a22292e3b71aa39" category="inline-link-rx"></block> Est intégré à l'interface utilisateur BlueXP afin que vous puissiez optimiser les opérations, la sécurité et les performances de vos systèmes Cloud Volumes ONTAP dans une seule interface.</block>
   <block id="990d530a36683451e6ac666b1b224270" category="paragraph">Gérez les licences basées sur les nœuds dans le portefeuille digital BlueXP pour vérifier que chaque système Cloud Volumes ONTAP dispose d'une licence valide avec la capacité requise.</block>
   <block id="11a72b1b7122c65d1d6f13efb867113a" category="paragraph">BlueXP nomme automatiquement la machine virtuelle de stockage unique qu'elle crée pour Cloud Volumes ONTAP. Dans System Manager, l'interface de ligne de commandes ou l'API, vous pouvez modifier le nom de la machine virtuelle de stockage si vous avez des normes de nommage strictes. Par exemple, vous pouvez indiquer le nom des machines virtuelles de stockage dans vos clusters ONTAP.</block>
-  <block id="c916a82ca6e79a33689505d2642c711c" category="list-text">Dans l'environnement de travail BlueXP, cliquez sur le bouton *... (Ellipse)*, puis cliquez sur *mettre à jour Cloud Volumes ONTAP*.</block>
   <block id="31a578b8e294d03f4be50639f79e8160" category="list-text">Sur la page mettre à jour la version de Cloud Volumes ONTAP, entrez l'URL, puis cliquez sur *changer l'image*.</block>
   <block id="d32bc06f4693559b0941ab221004f77a" category="list-text"><block ref="b537ee4eb64ec01da34737ed00ba85c9" category="inline-link-macro-rx"></block>.</block>
   <block id="0f2fe7f7d7d6e9e8b6985ebcba41a752" category="paragraph">L'abonnement Keystone est un service d'abonnement avec paiement basé sur l'utilisation. <block ref="a4cf1d10eb125cd296862332c2edca47" category="inline-link-macro-rx"></block>.</block>
@@ -5242,4 +5229,19 @@ Pour les paires HA, vous pouvez sélectionner les rôles IAM pour Cloud Volumes 
   <block id="3f0b36cd14ec7bfa0b4b01e076c44477" category="sidebar">Démarrage rapide pour les régions Top Secret/Secret Cloud d'AWS</block>
   <block id="daa9928416a167d9b7399ff9cc7d8ca0" category="inline-link-macro">Conversion d'une instance AWS Xen CVO en Nitro (KVM)</block>
   <block id="77c35fc79180e21cd19319ed21d08508" category="paragraph">Si vous ne pouvez pas modifier le type d'instance à partir d'instances c4, m4 ou r4, consultez l'article de la base de connaissances <block ref="609c7ea2ea8625480f6266b3b7e7b947" category="inline-link-macro-rx"></block>.</block>
+  <block id="4d3482cab23eb402cf41eedc8626a3b7" category="list-text">Sous le titre de l'agrégat, cliquez sur le bouton points de suspension, puis sélectionnez *Afficher les détails de l'agrégat*.</block>
+  <block id="12cf9bddd8c4164812494d4fa3077665" category="list-text">Dans l'environnement de travail BlueXP, cliquez sur le bouton *... (Icône en forme d'ellipse)*, puis cliquez sur *mettre à jour Cloud Volumes ONTAP*.</block>
+  <block id="f2f8cb191116ce13c9353aba365ae95e" category="list-text">Naviguez jusqu'à la mosaïque d'agrégat souhaitée, puis cliquez sur le bouton *... (Icône en forme d'ellipse) &gt; Afficher les détails de l'agrégat*.</block>
+  <block id="138ffbf4a93266d3e7b39c528c04d8c7" category="list-text">Sélectionner l'agrégat, puis cliquer sur le bouton *... (Icône en forme d'ellipse) &gt; Ajouter des disques*.</block>
+  <block id="4c71965d58af1f26dd6e9a862f318b07" category="list-text">Dans l'onglet Aggregates, accédez au titre souhaité, puis cliquez sur le bouton *... (icône en forme d'ellipse)*.</block>
+  <block id="79af7751c40a5bdf0f691ca3f8994daa" category="cell">Dans le menu ... (icône en forme d'ellipse), cliquez sur *Afficher les détails de l'agrégat*.</block>
+  <block id="aa2920a3834825d262230b29a81f049d" category="cell">Dans le menu ... (icône en forme d'ellipse), cliquez sur *Ajouter un volume*.</block>
+  <block id="e85c530b7823cc4004b235aef0a57796" category="list-text">Dans le menu ... (icône en forme d'ellipse), cliquez sur *Ajouter des disques*.</block>
+  <block id="ffce78aa73104a63f2c157847b6ffc7c" category="list-text">Dans le menu ... (icône en forme d'ellipse), cliquez sur *augmenter la capacité*.</block>
+  <block id="2edc419b0e18ec1ac829938d9101535e" category="list-text">Sélectionnez une mosaïque d'agrégats ne contenant aucun volume. Cliquez sur le bouton *... (Icône en forme d'ellipse) &gt; Supprimer*.</block>
+  <block id="8c4fbb7e9bd5b396b627cc7e7862fbba" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône points de suspension et sélectionnez *Supprimer*.</block>
+  <block id="a0655fd5613af03dfa2a11af68b42b2e" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône points de suspension et sélectionnez *définir mot de passe*.</block>
+  <block id="21374a20e08d3e0c8ca328133d8fe5f4" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône points de suspension et sélectionnez *Supprimer de l'espace de travail*.</block>
+  <block id="b724364be6320cfd44126523f60ef584" category="inline-link">Déploiement programmatique des produits Marketplace</block>
+  <block id="1466cb0ca0af8994440faa54da634c8d" category="list-text">*Abonnez-vous à Azure Marketplace* : vous voyez cette page si BlueXP n'a pas pu activer les déploiements de programmation de Cloud Volumes ONTAP. Suivez les étapes indiquées à l'écran. Voir<block ref="bc817edffaba6b19533f23cdb879088c" category="inline-link-rx"></block> pour en savoir plus.</block>
 </blocks>

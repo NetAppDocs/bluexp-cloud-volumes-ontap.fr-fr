@@ -35,7 +35,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 . Supprimer l'environnement de travail Cloud Volumes ONTAP.
 +
 .. Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP que vous souhaitez supprimer.
-.. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône de l'ellipse, puis sélectionnez *Supprimer*.
+.. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône points de suspension et sélectionnez *Supprimer*.
 +
 image:screenshot_settings_delete.png["Capture d'écran affichant le menu disponible dans l'environnement de travail contenant l'action Supprimer."]
 
