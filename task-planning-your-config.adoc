@@ -36,6 +36,20 @@ Les régions AWS plus récentes doivent être activées avant de pouvoir créer 
 
 
 
+=== Choisissez une zone locale prise en charge
+
+Cloud Volumes ONTAP est pris en charge dans certaines zones locales AWS, y compris à Singapour. La sélection d'une zone locale est facultative.
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Afficher la liste complète des zones locales"^].
+Les zones locales doivent être activées avant de pouvoir créer et gérer des ressources dans ces zones.
+
+link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Découvrez comment activer une zone locale"^].
+
+
+NOTE: Phoenix n'est pas une zone locale prise en charge.
+
+
+
 == Choisissez une instance prise en charge
 
 Cloud Volumes ONTAP prend en charge plusieurs types d'instances, selon le type de licence choisi.

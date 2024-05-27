@@ -70,13 +70,13 @@ Une configuration haute disponibilité maintient la haute disponibilité de vos 
 
 == Modèles de déploiement HA
 
-Vous pouvez garantir la haute disponibilité de vos données en déployant une configuration haute disponibilité sur plusieurs zones de disponibilité (AZS) ou dans un seul AZ. Vous devriez consulter plus de détails sur chaque configuration afin de choisir celle qui répond le mieux à vos besoins.
+Vous pouvez assurer la haute disponibilité de vos données en déployant une configuration haute disponibilité dans plusieurs zones de disponibilité (AZ) ou dans une zone de disponibilité unique (AZ). Vous devriez consulter plus de détails sur chaque configuration afin de choisir celle qui répond le mieux à vos besoins.
 
 
 
 === Plusieurs zones de disponibilité
 
-Le déploiement d'une configuration haute disponibilité dans plusieurs zones de disponibilité (AZS) garantit une haute disponibilité de vos données en cas de défaillance avec un système AZ ou une instance exécutant un nœud Cloud Volumes ONTAP. Vous devez comprendre l'impact des adresses IP NAS sur l'accès aux données et le basculement du stockage.
+Le déploiement d'une configuration haute disponibilité dans plusieurs zones de disponibilité assure la haute disponibilité de vos données en cas de défaillance dans une zone de disponibilité ou une instance exécutant un nœud Cloud Volumes ONTAP. Vous devez comprendre l'impact des adresses IP NAS sur l'accès aux données et le basculement du stockage.
 
 
 
@@ -86,7 +86,7 @@ Lorsqu'une configuration haute disponibilité est répartie entre plusieurs zone
 
 Si vous ne pouvez pas configurer de passerelle de transit, des adresses IP privées sont disponibles pour les clients NAS qui ne sont pas du VPC. Cependant, ces adresses IP sont statiques ; elles ne peuvent pas basculer d'un nœud à l'autre.
 
-Avant de déployer une configuration haute disponibilité sur plusieurs zones de disponibilité, vous devez consulter les exigences relatives aux adresses IP flottantes et aux tables de routage. Vous devez spécifier les adresses IP flottantes lors du déploiement de la configuration. Les adresses IP privées sont automatiquement créées par BlueXP.
+Avant de déployer une configuration haute disponibilité sur plusieurs zones de disponibilité, vérifiez les exigences en matière d'adresses IP flottantes et de tables de routage. Vous devez spécifier les adresses IP flottantes lors du déploiement de la configuration. Les adresses IP privées sont automatiquement créées par BlueXP.
 
 Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["Configuration réseau AWS requise pour Cloud Volumes ONTAP HA dans plusieurs AZS"^].
 
@@ -123,7 +123,7 @@ Vous pouvez facilement identifier l'adresse IP correcte dans BlueXP en sélectio
 
 === Zone de disponibilité unique
 
-Le déploiement d'une configuration HA dans une seule zone de disponibilité (AZ) peut garantir une haute disponibilité de vos données en cas de défaillance d'une instance exécutant un nœud Cloud Volumes ONTAP. Toutes les données sont accessibles en mode natif depuis l'extérieur du VPC.
+Le déploiement d'une configuration haute disponibilité dans une zone de disponibilité unique (AZ) peut assurer la haute disponibilité de vos données en cas de défaillance d'une instance exécutant un nœud Cloud Volumes ONTAP. Toutes les données sont accessibles en mode natif depuis l'extérieur du VPC.
 
 
 NOTE: BlueXP crée un https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Groupe de placement AWS réparti"^] Et lance les deux nœuds haute disponibilité de ce groupe de placement. Le groupe de placement réduit le risque de défaillances simultanées en répartissant les instances sur un matériel sous-jacent distinct. Cette fonctionnalité améliore la redondance en termes de calcul, et non en termes de défaillance des disques.
@@ -148,6 +148,51 @@ Pour iSCSI, Cloud Volumes ONTAP utilise les E/S multichemins (MPIO) et l'accès 
 NOTE: Pour plus d'informations sur les configurations hôtes spécifiques qui prennent en charge ALUA, consultez le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] Et le Guide d'installation et de configuration des utilitaires hôtes pour votre système d'exploitation hôte.
 
 Pour les configurations NAS, les adresses IP des données peuvent migrer entre les nœuds HA en cas de défaillance. Cela garantit l'accès du client au stockage.
+
+
+
+=== Zones locales AWS
+
+AWS local zones est un déploiement d'infrastructure où le stockage, le calcul, la base de données et d'autres services AWS spécifiques sont situés à proximité de grandes villes et de secteurs. Avec AWS local zones, vous pouvez rapprocher les services AWS, ce qui améliore la latence de vos workloads et maintient les bases de données en local.
+
+Vous pouvez déployer une configuration AZ unique ou plusieurs dans les zones locales AWS.
+
+
+
+==== Exemples de configurations de zone locale AWS
+
+Voici des exemples de configurations :
+
+* Zone de disponibilité unique : les nœuds de cluster et le médiateur se trouvent tous deux dans la même zone locale.
+* Plusieurs zones de disponibilité
+Dans les configurations à plusieurs zones de disponibilité, il existe trois instances, deux nœuds et un médiateur. Une instance parmi les trois instances doit se trouver dans une zone distincte. Vous pouvez choisir la façon dont vous configurez cette fonction.
++
+Voici trois exemples de configuration :
+
++
+** Chaque nœud de cluster se trouve dans une zone locale différente et le médiateur dans une zone de disponibilité publique.
+** Un nœud de cluster dans une zone locale, le médiateur dans une zone locale et le second nœud de cluster se trouvent dans une zone de disponibilité.
+** Chaque nœud de cluster et le médiateur se trouvent dans des zones locales distinctes.
+
+
+
+
+
+
+==== Types de disques et d'instances pris en charge
+
+Le seul type de disque pris en charge est GP2.
+
+Les familles de types d'instances EC2 suivantes de tailles Xlarge à 4xlarge sont actuellement prises en charge :
+
+* M5
+* C5
+* C5d
+* R5
+* R5d
+
+
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Consultez AWS pour obtenir les informations les plus récentes et complètes sur les types d'instances EC2 prises en charge dans les zones locales"^].
 
 
 

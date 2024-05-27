@@ -304,6 +304,15 @@ Immédiatement après avoir créé l'environnement de travail, BlueXP lance une 
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sur la page Canevas, cliquez sur *Ajouter un environnement de travail* et suivez les invites.
 . *Choisissez un emplacement* : sélectionnez *Amazon Web Services* et *Cloud Volumes ONTAP HA*.
++
+Certaines zones locales AWS sont disponibles.
+
++
+Avant de pouvoir utiliser les zones locales AWS, vous devez activer les zones locales et créer un sous-réseau dans la zone locale de votre compte AWS. Suivez les étapes *opt in to an AWS local zone* et *exteNd your Amazon VPC to the local zone* de la link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Tutoriel AWS « commencer à déployer des applications à faible latence avec des zones locales AWS"^].
+
++
+Si vous exécutez un connecteur version 3.9.36 ou antérieure, vous devez ajouter l'autorisation suivante au rôle du connecteur AWS dans la console AWS EC2 : DescribeAvailabilityzones.
+
 . *Détails et informations d'identification* : modifiez éventuellement les informations d'identification et l'abonnement AWS, entrez un nom d'environnement de travail, ajoutez des balises si nécessaire, puis entrez un mot de passe.
 +
 Certains champs de cette page sont explicites. Le tableau suivant décrit les champs pour lesquels vous pouvez avoir besoin de conseils :
