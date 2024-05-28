@@ -32,8 +32,8 @@ Dans AWS, les configurations haute disponibilité de Cloud Volumes ONTAP incluen
 
 Voici quelques informations clés sur l'instance de médiateur dans AWS :
 
-Type d'instance:: t2 micro
-Disques:: Un disque magnétique EBS d'environ 8 Gio.
+Type d'instance:: t3-micro
+Disques:: Deux disques st1 de 8 Gio et 4 Gio
 Système d'exploitation:: Debian 11
 +
 --

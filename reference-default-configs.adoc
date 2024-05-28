@@ -147,17 +147,21 @@ ifdef::aws[]
 
 * Trois disques par nœud pour les données de démarrage, root et core :
 +
-** Disque io1 de 45 Gio pour les données de démarrage
+** 47 Gio de disque io1 pour les données de démarrage
 ** Disque gp3 140 Gio pour les données racines
 ** Disque gp2 540 Gio pour les données centrales
 
+
+* Pour les paires HA, deux volumes st1 EBS pour l'instance médiateur, qui sont environ 8 Gio et 4 Gio, et un disque gp3 supplémentaire de 140 Gio dans chaque nœud afin de contenir une copie des données root de l'autre nœud.
++
+
+NOTE: Dans certaines zones, le type de disque EBS disponible peut uniquement être gp2.
 
 * Un instantané EBS pour chaque disque d'initialisation et disque racine
 +
 
 NOTE: Les snapshots sont créés automatiquement au redémarrage.
 
-* Pour les paires HA, un volume EBS pour l'instance Mediator, qui est d'environ 8 Gio
 * Lorsque vous activez le chiffrement des données dans AWS à l'aide du service de gestion des clés (KMS), les disques racine et de démarrage pour Cloud Volumes ONTAP sont également chiffrés. Cela comprend le disque de démarrage de l'instance médiateur dans une paire HA. Les disques sont chiffrés à l'aide du CMK que vous sélectionnez lors de la création de l'environnement de travail.
 
 
