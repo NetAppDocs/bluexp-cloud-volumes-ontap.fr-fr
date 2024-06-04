@@ -158,6 +158,9 @@ AWS local zones est un déploiement d'infrastructure où le stockage, le calcul,
 Vous pouvez déployer une configuration AZ unique ou plusieurs dans les zones locales AWS.
 
 
+NOTE: Les zones locales AWS sont prises en charge lorsque BlueXP est utilisé en mode standard. À l'heure actuelle, les zones locales AWS ne sont pas prises en charge si BlueXP est utilisé en mode restreint ou en mode privé.
+
+
 
 ==== Exemples de configurations de zone locale AWS
 
