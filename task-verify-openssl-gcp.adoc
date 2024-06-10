@@ -22,7 +22,7 @@ NOTE: Les commandes OpenSSL permettant de valider l'image sont compatibles avec 
 .Étapes
 . Vérifiez le certificat à l'aide d'OpenSSL.
 +
-.Cliquez pour afficher le script
+.Cliquez pour afficher
 [%collapsible]
 ====
 [listing]
@@ -133,7 +133,7 @@ Certificate-GCP-CVO-20230119-0XXXXX.pem: OK
 . Extrayez la clé publique du certificat à l'aide d'OpenSSL.
 . Déchiffrez la signature à l'aide de la clé publique extraite et vérifiez le contenu du fichier disk.RAW téléchargé.
 +
-.Cliquez pour afficher le script
+.Cliquez pour afficher
 [%collapsible]
 ====
 [listing]

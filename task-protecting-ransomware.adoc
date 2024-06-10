@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-protecting-ransomware.html 
-keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks 
+keywords: snapshot policy, ransomware, protection, fpolicy, block, extension, attacks, arp, autonomous, monitor, alert, attacks, Cloud Volumes ONTAP 
 summary: 'Les attaques par ransomware peuvent coûter du temps, des ressources et de la réputation à l"entreprise. BlueXP vous permet d"implémenter la solution NetApp pour ransomware. Elle fournit des outils efficaces pour la visibilité, la détection et la résolution de problèmes.' 
 ---
 = Renforcer la protection contre les attaques par ransomware

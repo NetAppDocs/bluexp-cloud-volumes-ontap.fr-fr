@@ -28,7 +28,7 @@ Voici une présentation du workflow de vérification des images signées Google 
 ** Certificat contenant la clé publique (.pem)
 ** Chaîne de certificats (.pem)
 +
-image:screenshot_cloud_volumes_ontap_tar.gz.png["Image qui affiche la page NSS contenant le fichier Digest tar.gz téléchargements"]
+image::screenshot_cloud_volumes_ontap_tar.gz.png[capture d'écran Cloud Volumes ONTAP tar.gz]
 
 
 
@@ -40,7 +40,7 @@ image:screenshot_cloud_volumes_ontap_tar.gz.png["Image qui affiche la page NSS c
 ** Créez un résumé du fichier disk.RAW téléchargé
 ** Comparez les deux fichiers d'analyse pour validation
 +
-image:graphic_azure_check_signature.png["Image montrant le processus de vérification de la signature d'image"]
+image::graphic_azure_check_signature.png[signature de vérification graphique azure]
 
 
 

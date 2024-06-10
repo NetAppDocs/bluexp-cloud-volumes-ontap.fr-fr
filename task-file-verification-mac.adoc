@@ -1,0 +1,68 @@
+---
+sidebar: sidebar 
+permalink: task-file-verification-mac.html 
+keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Mac OS 
+summary: 'Vérifiez une signature de fichier VHD exportée via l"outil fichier de résumé d"images Cloud Volumes ONTAP sous Mac OS' 
+---
+= Vérification de signature de fichier sous Mac OS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Vous pouvez vérifier une signature de fichier VHD exportée pour Mac OS en suivant les étapes ci-dessous.
+
+.Étapes
+. Téléchargez le fichier Azure image Digest sur le https://mysupport.netapp.com/site/["Site de support NetApp"^] et extrayez le fichier digest(.sig), le fichier de certificat de clé publique (.pem) et le fichier de certificat de chaîne (.pem).
++
+Reportez-vous à la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-azure-download-digest-file.html["Téléchargez le fichier condensé d'images Azure"^] pour en savoir plus.
+
+. Vérifier la chaîne de confiance.
++
+[listing]
+----
+% openssl verify -CAfile Certificate-Chain-9.15.0P1_azure.pem Certificate-9.15.0P1_azure.pem
+Certificate-9.15.0P1_azure.pem: OK
+----
+. Supprimez le premier 1 Mo (1048576 octets) et terminez par 512 octets de fichier VHD.
++
+Si 'queue' est utilisé, l'option '-c +K' sort des octets commençant par les octets KTH
+du fichier spécifié. Par conséquent, 1048577 est passé à 'queue -c'. Il prend environ 13m
+Pour que la commande de queue se termine sous Mac OS.
+
++
+[listing]
+----
+% tail -c +1048577 ./9150.01000024.05090105.vhd > ./sign.tmp.tail
+% head -c -512 ./sign.tmp.tail > sign.tmp
+% rm ./sign.tmp.tail
+----
+. Utilisez openssl pour extraire la clé publique du certificat et vérifier la bande
+file(sign.tmp) avec le fichier de signature et la clé publique.
++
+Si le fichier d'entrée réussit la vérification, la commande affiche « Vérification OK ».
+Sinon, « échec de vérification » s'affiche.
+
++
+[listing]
+----
+% openssl x509 -pubkey -noout -in ./Certificate-9.15.0P1_azure.pem > ./Code-Sign-Cert-Public-key.pub
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./sign.tmp
+Verified OK
+
+% openssl dgst -verify Code-Sign-Cert-Public-key.pub -keyform PEM -sha256 -signature digest.sig -binary ./another_file_from_nowhere.tmp
+Verification Failure
+----
+. Nettoyez l'espace de travail.
++
+[listing]
+----
+% rm ./9150.01000024.05090105.vhd ./sign.tmp
+% rm *.sig *.pub *.pem
+----
+
