@@ -89,7 +89,7 @@ Vous ne pouvez plus créer de volume à partir d'un modèle ni modifier les bali
 
 Dans AWS, Cloud Volumes ONTAP, le médiateur et le connecteur prennent désormais en charge Amazon Instant Metadata Service v2 (IMDSv2) pour toutes les fonctions. IMDSv2 fournit une protection améliorée contre les vulnérabilités. Seul IMDSv1 était précédemment pris en charge.
 
-Si vos stratégies de sécurité l'exigent, vous pouvez configurer vos instances EC2 pour qu'elles utilisent IMDSv2. Pour obtenir des instructions, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Documentation d'installation et d'administration BlueXP pour la gestion des connecteurs existants"^].
+Si vos stratégies de sécurité l'exigent, vous pouvez configurer vos instances EC2 pour qu'elles utilisent IMDSv2. Pour obtenir des instructions, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["Documentation d'installation et d'administration BlueXP pour la gestion des connecteurs existants"^].
 
 
 
@@ -566,7 +566,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-encrypting-volumes
 Cloud Volumes ONTAP est désormais pris en charge dans tous les environnements cloud isolés d'Internet. Seule la licence basée sur les nœuds (BYOL) est prise en charge dans ces environnements. Les licences basées sur la capacité ne sont pas prises en charge. Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital BlueXP, puis déployez Cloud Volumes ONTAP.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["Accéder à la console BlueXP sur le connecteur"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
 
 
