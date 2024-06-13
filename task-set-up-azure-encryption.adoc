@@ -24,8 +24,8 @@ Les données Cloud Volumes ONTAP sont automatiquement chiffrées dans Azure à l
 
 Pour utiliser une clé gérée par le client avec Cloud Volumes ONTAP, vous devez effectuer les opérations suivantes :
 
-. Depuis Azure, créez un coffre-fort de clés, puis générez une clé dans ce coffre-fort
-. Depuis BlueXP, utilisez l'API pour créer un environnement de travail Cloud Volumes ONTAP qui utilise la clé
+. Depuis Azure, créez un coffre-fort de clés, puis générez une clé dans ce coffre-fort.
+. Depuis BlueXP, utilisez l'API pour créer un environnement de travail Cloud Volumes ONTAP qui utilise la clé.
 
 
 
@@ -144,7 +144,11 @@ Notez les exigences suivantes pour le coffre-fort de clés :
 +
 *** *Soft-delete* (cette option est activée par défaut, mais doit _not_ être désactivée)
 *** *Protection de purge*
-*** *Chiffrement de disque Azure pour chiffrement de volume* (pour les systèmes à un seul nœud ou les paires HA dans plusieurs zones)
+*** *Azure Disk Encryption pour le chiffrement des volumes* (pour les systèmes à un seul nœud, les paires haute disponibilité dans plusieurs zones et les déploiements AZ uniques haute disponibilité)
++
+
+NOTE: L'utilisation des clés de chiffrement gérées par le client Azure dépend de l'activation du chiffrement de disque Azure pour le coffre-fort de clés.
+
 
 
 ** L'option suivante doit être activée si vous avez créé une identité gérée attribuée par l'utilisateur :
