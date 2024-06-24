@@ -190,7 +190,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-goog
 
 === Duplication de paquets dans les VPC
 
-https://cloud.google.com/vpc/docs/packet-mirroring["Mise en miroir de paquets"^] Doit être désactivé dans le sous-réseau Google Cloud dans lequel vous déployez Cloud Volumes ONTAP. Cloud Volumes ONTAP ne peut pas fonctionner correctement si la mise en miroir des paquets est activée.
+https://cloud.google.com/vpc/docs/packet-mirroring["Mise en miroir de paquets"^] Doit être désactivé dans le sous-réseau Google Cloud dans lequel vous déployez Cloud Volumes ONTAP.
 
 
 
