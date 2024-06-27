@@ -205,7 +205,6 @@ Les régions suivantes prennent désormais en charge les déploiements de zones 
 * Suisse Nord
 * Afrique du Sud Nord
 * Émirats arabes Unis Nord
-* Chine Nord 3
 
 
 Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
