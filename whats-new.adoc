@@ -960,9 +960,7 @@ Lorsque BlueXP met à niveau le médiateur pour une paire HA, il confirme qu'une
 
 === L'onglet K8s a été supprimé
 
-L'onglet K8s était obsolète dans une version précédente et a été supprimé. Si vous souhaitez utiliser Kubernetes avec Cloud Volumes ONTAP, vous pouvez ajouter des clusters Kubernetes gérés dans la Canvas comme environnement de travail pour une gestion avancée des données.
-
-https://docs.netapp.com/us-en/bluexp-kubernetes/concept-kubernetes.html["En savoir plus sur la gestion des données Kubernetes dans BlueXP"^]
+L'onglet K8s était obsolète dans une version précédente, et a été supprimé.
 
 
 

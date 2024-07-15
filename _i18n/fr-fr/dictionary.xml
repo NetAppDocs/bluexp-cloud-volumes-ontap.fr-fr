@@ -3117,8 +3117,6 @@
   <block id="a0834297e8b28b9a51d59500441c7351" category="section-title">Amélioration des mises à niveau des médiateurs</block>
   <block id="17cc55e2cfcef39231025dad282b0760" category="paragraph">Lorsque BlueXP met à niveau le médiateur pour une paire HA, il confirme qu'une nouvelle image médiateur est disponible avant de supprimer le disque d'amorçage. Cette modification garantit que le médiateur peut continuer à fonctionner correctement si le processus de mise à niveau échoue.</block>
   <block id="e6e5b99786bfefd88e32c940b7547ab3" category="section-title">L'onglet K8s a été supprimé</block>
-  <block id="6eb7d1343cce33ec7d31b57edd9f3aef" category="paragraph">L'onglet K8s était obsolète dans une version précédente et a été supprimé. Si vous souhaitez utiliser Kubernetes avec Cloud Volumes ONTAP, vous pouvez ajouter des clusters Kubernetes gérés dans la Canvas comme environnement de travail pour une gestion avancée des données.</block>
-  <block id="998eb27e3e05260958103da3d27eb4ac" category="inline-link">En savoir plus sur la gestion des données Kubernetes dans BlueXP</block>
   <block id="7475abfb4039c00bb03fd05d6d792b3d" category="section-title">Contrat annuel dans Azure</block>
   <block id="52b398f13b1acf3e73584a9cb106e989" category="paragraph">Les packages Essentials et Professional sont désormais disponibles dans Azure sous forme de contrat annuel. Contactez votre ingénieur commercial NetApp pour souscrire un contrat annuel. Le contrat est disponible sous forme d'offre privée dans Azure Marketplace.</block>
   <block id="ba089edca33f314482ad946ae680f1eb" category="inline-link">En savoir plus sur les licences</block>
@@ -4477,7 +4475,6 @@ Si vous achetez une licence directement auprès de NetApp (BYOL), un abonnement 
   <block id="8ade4dc1ca161da57728a6bf29be1db9" category="paragraph">Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que vous avez ajoutés à BlueXP.<block ref="64ae4f789cd26cb4c9b5096ed42d2482" category="inline-link-rx"></block>.</block>
   <block id="ac1bc6f2b2358438076867200e537370" category="paragraph"><block ref="7abbb63a2cd3cab475ace2a577aa3de3" category="inline-link-rx"></block>.</block>
   <block id="07e4a4acdb333fe3d7b8dac1958d6459" category="list-text"><block ref="07e4a4acdb333fe3d7b8dac1958d6459" category="inline-link-rx"></block></block>
-  <block id="755c513b451157c807794bf1213fd1f9" category="paragraph"><block ref="755c513b451157c807794bf1213fd1f9" category="inline-link-rx"></block></block>
   <block id="73f030bd359abb41dc1089c470531542" category="paragraph"><block ref="37698926d26a2683d3b5c90c9b2406a6" category="inline-link-rx"></block>.</block>
   <block id="2e56aeba3c1fc24d42b0f15df12a08f9" category="paragraph"><block ref="5d4901194aa2380bf45bcc72c63f2763" category="inline-link-rx"></block>.</block>
   <block id="7abee0635d8cb81d3ae89fd8d82a442a" category="paragraph"><block ref="7abee0635d8cb81d3ae89fd8d82a442a" category="inline-image-macro-rx" type="image"></block></block>
@@ -5424,4 +5421,5 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="543cc078f66d581004934cfaa8988453" category="list-text">*Version ONTAP* : Assurez-vous que la version ONTAP de votre système Cloud Volumes ONTAP prend en charge FlexCache avec des volumes cryptés. Pour plus d'informations, reportez-vous à la dernière version ou à la<block ref="9ec4657ceea5a1d054b2b0fa2482a129" category="inline-link-rx"></block> matrice de compatibilité.</block>
   <block id="38d57b85102d8663bf30488289425e48" category="list-text">*Configuration réseau* : Assurez-vous que la configuration réseau permet une communication transparente entre le volume d'origine et le volume FlexCache. Cela inclut le routage et la résolution DNS dans un environnement cloud.</block>
   <block id="51aa8ce93131e7a6746f62c49df04fe2" category="paragraph">Créez un volume FlexCache sur votre système Cloud Volumes ONTAP à l'aide d'un volume source chiffré. Pour des étapes détaillées et des considérations supplémentaires, reportez-vous aux sections suivantes :</block>
+  <block id="9a06593a786548bb3b7320df7c76e7f1" category="paragraph">L'onglet K8s était obsolète dans une version précédente, et a été supprimé.</block>
 </blocks>
