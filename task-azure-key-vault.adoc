@@ -31,6 +31,7 @@ Lorsque vous utilisez AKV, notez que par défaut une LIF de SVM de données perm
 .Limites
 * AKV ne peut être configuré que sur un SVM de données
 * NAE ne peut pas être utilisé avec AKV. NAE nécessite un serveur KMIP externe pris en charge.
+* Les nœuds Cloud Volumes ONTAP interrogent AKV toutes les 15 minutes pour confirmer l'accessibilité et la disponibilité des clés. Cette période d'interrogation n'est pas configurable, et après quatre échecs consécutifs dans la tentative d'interrogation (au total 1 heure), les volumes sont mis hors ligne.
 
 
 

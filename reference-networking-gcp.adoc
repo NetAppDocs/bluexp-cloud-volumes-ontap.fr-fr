@@ -215,22 +215,6 @@ TIP: Si vous utilisez une paire haute disponibilité, le médiateur haute dispon
 
 Si BlueXP vous informe que les messages AutoSupport ne peuvent pas être envoyés, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Résoudre les problèmes de configuration AutoSupport"].
 
-Règles de pare-feu:: Il n'est pas nécessaire de créer des règles de pare-feu car BlueXP le fait pour vous. Si vous devez vous en servir, reportez-vous aux règles de pare-feu répertoriées ci-dessous.
-+
---
-Notez que deux jeux de règles de pare-feu sont nécessaires pour une configuration haute disponibilité :
-
-* Un ensemble de règles pour les composants HA dans VPC-0. Ces règles permettent l'accès aux données à Cloud Volumes ONTAP. <<Règles de pare-feu,En savoir plus >>>>.
-* Un autre ensemble de règles pour les composants HA dans les VPC-1, VPC-2 et VPC-3. Ces règles sont ouvertes pour les communications entrantes et sortantes entre les composants HA. <<Règles de pare-feu,En savoir plus >>>>.
-
-
---
-
-
-Si vous souhaitez effectuer le Tiering des données inactives dans un compartiment de stockage Google Cloud, le sous-réseau dans lequel réside Cloud Volumes ONTAP doit être configuré pour l'accès privé à Google (si vous utilisez une paire haute disponibilité, il s'agit du sous-réseau dans VPC-0). Pour obtenir des instructions, reportez-vous à la section https://cloud.google.com/vpc/docs/configure-private-google-access["Documentation Google Cloud : configuration de Private Google Access"^].
-
-Pour connaître les étapes supplémentaires nécessaires à la configuration du Tiering des données dans BlueXP, reportez-vous à la section link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
-
 
 
 === Connexions aux systèmes ONTAP dans d'autres réseaux
