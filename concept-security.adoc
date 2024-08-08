@@ -52,7 +52,7 @@ Les solutions de cryptage NetApp sont compatibles avec le chiffrement natif de v
 
 === Solutions de chiffrement NetApp (NVE et NAE)
 
-Prise en charge de Cloud Volumes ONTAP https://www.netapp.com/us/media/ds-3899.pdf["NetApp Volume Encryption (NVE) et chiffrement d'agrégat NetApp (NAE)"^]. NVE et NAE sont des solutions logicielles qui permettent le chiffrement des données au repos (conformes à la norme FIPS) de volumes 140-2. NVE et NAE utilisent tous deux le chiffrement AES 256 bits.
+Cloud Volumes ONTAP prend en charge https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption (NVE) et chiffrement d'agrégat NetApp (NAE)"^]. NVE et NAE sont des solutions logicielles qui permettent le chiffrement des données au repos (conformes à la norme FIPS) de volumes 140-2. NVE et NAE utilisent tous deux le chiffrement AES 256 bits.
 
 * NVE chiffre les données au repos un volume à la fois. Chaque volume de données dispose de sa propre clé de chiffrement unique.
 * NAE est une extension de NVE qui chiffre les données pour chaque volume, tandis que les volumes partagent une clé dans l'ensemble de l'agrégat. NAE permet également la déduplication de blocs communs à tous les volumes de l'agrégat.
