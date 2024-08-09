@@ -152,33 +152,6 @@ NOTE: Un abonnement PAYGO est requis pour la sauvegarde et la restauration BlueX
 
 
 
-==== Cache de périphérie
-
-Fournit des licences pour Cloud volumes Edge cache.
-
-* Les mêmes fonctionnalités que l'offre professionnelle, avec continuité de l'activité et protection des données pour une entreprise distribuée
-* Mise en cache intelligente de la périphérie via une machine virtuelle Windows à empreinte réduite sur chaque site
-* Un nœud Edge avec chaque capacité de 3 tibs achetée
-
-
-ifdef::azure[]
-
-* Disponible sur Azure Marketplace comme offre de paiement à l'utilisation ou comme contrat annuel
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Disponible dans Google Cloud Marketplace comme offre de paiement à l'utilisation ou comme contrat annuel
-
-
-endif::gcp[]
-
-https://cloud.netapp.com/cloud-volumes-edge-cache["Découvrez comment Cloud volumes Edge cache peut aider votre entreprise"^]
-
-
-
 === Modèles de consommation
 
 Des packs de licence basés sur la capacité sont disponibles avec les modèles de consommation suivants :
@@ -188,7 +161,7 @@ Des packs de licence basés sur la capacité sont disponibles avec les modèles 
 
 ifdef::azure[]
 
-+ Notez que les modules optimisé et Edge cache ne sont pas disponibles avec BYOL.
++ Notez que le pack optimisé n'est pas disponible avec BYOL.
 
 endif::azure[]
 
@@ -224,19 +197,6 @@ link:task-manage-capacity-licenses.html["Apprenez à changer les méthodes de ch
 === Tarifs
 
 Pour plus d'informations sur les prix, rendez-vous sur https://cloud.netapp.com/pricing?hsCtaTracking=4f8b7b77-8f63-4b73-b5af-ee09eab4fbd6%7C5fefbc99-396c-4084-99e6-f1e22dc8ffe7["Site Web NetApp BlueXP"^].
-
-
-
-=== Essais gratuits
-
-Vous pouvez bénéficier d'un essai gratuit de 30 jours sur l'abonnement au paiement à l'utilisation disponible sur le marché de votre fournisseur cloud. L'essai gratuit inclut les fonctionnalités de sauvegarde et de restauration Cloud Volumes ONTAP et BlueXP. La version d'évaluation commence lorsque vous vous inscrivez à l'offre sur le marché.
-
-Il n'y a aucune limite d'instance ou de capacité. Vous pouvez déployer autant de systèmes Cloud Volumes ONTAP que vous le souhaitez et allouer gratuitement la capacité nécessaire pendant 30 jours. L'essai gratuit est automatiquement converti en abonnement payant à l'heure après 30 jours.
-
-Il n'y a pas de frais de licence logicielle pour Cloud Volumes ONTAP à l'heure, mais des frais d'infrastructure sont toujours applicables par votre fournisseur cloud.
-
-
-TIP: Vous recevrez une notification dans BlueXP dès le début de l'essai gratuit, lorsqu'il reste 7 jours, et quand il reste 1 jour. Par exemple :image:screenshot-free-trial-notification.png["Une capture d'écran d'une notification dans l'interface BlueXP qui indique qu'il n'y a que 7 jours restants lors d'un essai gratuit."]
 
 
 
@@ -294,7 +254,7 @@ Chaque machine virtuelle de stockage servant de données dispose d'au moins un v
 
 Si vous n'avez pas encore provisionné de volumes, le coût minimum n'est pas appliqué.
 
-Pour le pack Essentials, les frais de capacité minimale de 4 To ne s'appliquent pas aux machines virtuelles de stockage qui contiennent des volumes secondaires (protection des données) uniquement. Par exemple, si vous disposez d'une machine virtuelle de stockage avec 1 To de données secondaires, vous êtes facturé uniquement pour cette To de données. Avec tous les autres types de packages non Essentials (optimisé, professionnel et Edge cache), les frais de capacité minimale de 4 To s'appliquent, quel que soit le type de volume.
+Pour le pack Essentials, les frais de capacité minimale de 4 To ne s'appliquent pas aux machines virtuelles de stockage qui contiennent des volumes secondaires (protection des données) uniquement. Par exemple, si vous disposez d'une machine virtuelle de stockage avec 1 To de données secondaires, vous êtes facturé uniquement pour cette To de données. Avec tous les autres types de package non Essentials (optimisé et professionnel), le tarif de capacité minimale de 4 To s'applique quel que soit le type de volume.
 
 
 
@@ -440,7 +400,7 @@ endif::gcp[]
 
 == Licence basée sur les nœuds
 
-La licence basée sur les nœuds est le modèle de licence de la génération précédente qui vous permet d'obtenir une licence Cloud Volumes ONTAP par nœud. Ce modèle de licence n'est pas disponible pour les nouveaux clients et aucune évaluation gratuite n'est disponible. Le chargement par nœud a été remplacé par les méthodes de charge par capacité décrites ci-dessus.
+La licence basée sur les nœuds est le modèle de licence de la génération précédente qui vous permet d'obtenir une licence Cloud Volumes ONTAP par nœud. Ce modèle de licence n'est pas disponible pour les nouveaux clients. Le chargement par nœud a été remplacé par les méthodes de charge par capacité décrites ci-dessus.
 
 Une licence basée sur les nœuds est toujours disponible pour les clients existants :
 
