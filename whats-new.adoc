@@ -44,14 +44,6 @@ L'essai automatique gratuit de 30 jours pour les abonnements avec paiement à l'
 
 
 
-=== La région du Canada Ouest est maintenant prise en charge dans AWS
-
-La région du Canada-Ouest est maintenant prise en charge dans le système AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
-
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous AWS"^].
-
-
-
 == 10 juin 2024
 
 
