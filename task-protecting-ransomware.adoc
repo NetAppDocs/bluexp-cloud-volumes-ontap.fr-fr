@@ -76,7 +76,7 @@ Les volumes ARP activés ont un état désigné « mode apprentissage » ou « a
 
 La configuration du protocole ARP pour les volumes s'effectue via ONTAP System Manager et l'interface de ligne de commande ONTAP.
 
-Pour plus d'informations sur l'activation d'ARP avec ONTAP System Manager et l'interface de ligne de commande, reportez-vous à la section https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Activation de la protection autonome contre les ransomwares"^].
+Pour plus d'informations sur l'activation d'ARP avec ONTAP System Manager et l'interface de ligne de commande ONTAP, reportez-vous à https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html["Activation de la protection autonome contre les ransomwares"^]la section .
 
 image::screenshot_arp.png[La capture d'écran montre la licence complémentaire pour la protection anti-ransomware autonome.]
 

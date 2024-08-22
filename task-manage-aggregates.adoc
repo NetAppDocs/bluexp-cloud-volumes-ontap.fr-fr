@@ -23,7 +23,7 @@ CAUTION: Tous les disques et agrégats doivent être créés et supprimés direc
 Si vous souhaitez supprimer un agrégat, vous devez d'abord supprimer les volumes de l'agrégat.
 
 .Description de la tâche
-Si un agrégat manque d'espace de stockage, il est possible de déplacer des volumes vers un autre agrégat via System Manager.
+Si un agrégat manque d'espace, vous pouvez déplacer des volumes vers un autre agrégat à l'aide du Gestionnaire système ONTAP.
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.

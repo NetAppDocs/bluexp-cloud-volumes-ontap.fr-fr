@@ -198,7 +198,7 @@ Cette LIF de gestion fournit une connexion à des outils de gestion tels que Sna
 . Créer le nombre requis de configurations IP front-end pour les LIFs data et SVM uniquement :
 +
 
-NOTE: Une IP front-end ne doit être créée sous NIC0 que pour chaque SVM correspondant. Pour plus d'informations sur l'ajout de l'adresse IP au SVM NIC0, voir « Etape 7 [hyperlien] »
+NOTE: Une IP front-end ne doit être créée sous NIC0 que pour chaque SVM correspondant. Pour plus d'informations sur l'ajout de l'adresse IP au SVM NIC0, se reporter à « Etape 7 [lien hypertexte] »
 
 +
 .. Sous *Paramètres*, cliquez sur *Configuration IP Frontend*.

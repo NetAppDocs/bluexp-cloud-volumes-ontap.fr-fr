@@ -64,7 +64,7 @@ image:screenshot_aws_e0a.gif["Capture d'écran de la console AWS qui montre le p
 +
 Dans la section précédente de cette page, vous devez avoir identifié le nombre maximal d'adresses IP prises en charge par interface.
 
-.. Facultatif : accédez à l'interface de ligne de commande pour Cloud Volumes ONTAP et exécutez *network interface show* pour confirmer que chacune de ces adresses IP est utilisée.
+.. Facultatif : accédez à l'interface de ligne de commande ONTAP pour Cloud Volumes ONTAP et exécutez *network interface show* pour confirmer que chacune de ces adresses IP est utilisée.
 +
 Si une adresse IP n'est pas utilisée, vous pouvez l'utiliser avec la nouvelle machine virtuelle de stockage.
 

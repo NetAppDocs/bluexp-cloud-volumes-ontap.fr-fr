@@ -183,7 +183,7 @@ Lorsque vous créez un environnement de travail et choisissez un groupe de sécu
 | 1000 inbound_ssh | 22 TCP | De tous les types à tous | Accès SSH à l'adresse IP du LIF de gestion de cluster ou d'un LIF de gestion de nœud 
 
 
-| 1001 inbound_http | 80 TCP | De tous les types à tous | Accès HTTP à la console Web System Manager à l'aide de l'adresse IP du LIF de gestion de cluster 
+| 1001 inbound_http | 80 TCP | De tous les types à tous | Accès HTTP à la console web ONTAP System Manager en utilisant l'adresse IP du LIF de cluster management 
 
 
 | 1002 inbound_111_tcp | 111 TCP | De tous les types à tous | Appel de procédure à distance pour NFS 
@@ -201,7 +201,7 @@ Lorsque vous créez un environnement de travail et choisissez un groupe de sécu
 | 1006 inbound_161-162 _udp | 161-162 UDP | De tous les types à tous | Protocole de gestion de réseau simple 
 
 
-| 1007 entrant_443 | 443 TCP | De tous les types à tous | Connectivité avec le connecteur et l'accès HTTPS à la console Web System Manager via l'adresse IP du LIF de cluster management 
+| 1007 entrant_443 | 443 TCP | De tous les types à tous | Connectivité avec le connecteur et accès HTTPS à la console web ONTAP System Manager via l'adresse IP du LIF de cluster management 
 
 
 | 1008 entrant_445 | 445 TCP | De tous les types à tous | Microsoft SMB/CIFS sur TCP avec encadrement NetBIOS 
@@ -269,7 +269,7 @@ NOTE: Les systèmes HAUTE DISPONIBILITÉ disposent de règles entrantes moins st
 | Priorité et nom | Port et protocole | Source et destination | Description 
 
 
-| 100 entrant_443 | 443 tout protocole | De tous les types à tous | Connectivité avec le connecteur et l'accès HTTPS à la console Web System Manager via l'adresse IP du LIF de cluster management 
+| 100 entrant_443 | 443 tout protocole | De tous les types à tous | Connectivité avec le connecteur et accès HTTPS à la console web ONTAP System Manager via l'adresse IP du LIF de cluster management 
 
 
 | 101 inbound_111_tcp | 111 tout protocole | De tous les types à tous | Appel de procédure à distance pour NFS 

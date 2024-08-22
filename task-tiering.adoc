@@ -14,7 +14,7 @@ summary: Vous pouvez réduire les coûts de stockage pour Cloud Volumes ONTAP en
 
 
 [role="lead"]
-Vous pouvez réduire les coûts de stockage pour Cloud Volumes ONTAP en combinant un Tier de performance SSD ou HDD pour les données actives avec un Tier de capacité de stockage objet pour les données inactives. La hiérarchisation des données est optimisée par la technologie FabricPool. Pour une vue d'ensemble de haut niveau, voir link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Vous pouvez réduire les coûts de stockage pour Cloud Volumes ONTAP en combinant un Tier de performance SSD ou HDD pour les données actives avec un Tier de capacité de stockage objet pour les données inactives. La hiérarchisation des données est optimisée par la technologie FabricPool. Pour une vue d'ensemble générale, reportez-vous à link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"]la .
 
 Pour configurer le Tiering des données, vous devez procéder comme suit :
 
@@ -141,11 +141,11 @@ ifdef::aws[]
 
 === Conditions requises pour le Tiering des données inactives vers AWS S3
 
-Assurez-vous que Cloud Volumes ONTAP dispose d'une connexion à S3. La meilleure façon de fournir cette connexion est de créer un terminal VPC vers le service S3. Pour obtenir des instructions, reportez-vous à la section https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentation AWS : création d'un terminal de passerelle"^].
+Assurez-vous que Cloud Volumes ONTAP dispose d'une connexion à S3. La meilleure façon de fournir cette connexion est de créer un terminal VPC vers le service S3. Pour obtenir des instructions, reportez-vous au https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["Documentation AWS : création d'un terminal de passerelle"^].
 
 Lorsque vous créez le terminal VPC, veillez à sélectionner la région, le VPC et la table de routage correspondant à l'instance Cloud Volumes ONTAP. Vous devez également modifier le groupe de sécurité pour ajouter une règle HTTPS sortante qui active le trafic vers le terminal S3. Dans le cas contraire, Cloud Volumes ONTAP ne peut pas se connecter au service S3.
 
-Si vous rencontrez des problèmes, reportez-vous à la section https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^].
+Si vous rencontrez des problèmes, reportez-vous à https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["Centre de connaissances du support AWS : pourquoi ne puis-je pas me connecter à un compartiment S3 à l'aide d'un terminal VPC de passerelle ?"^].
 
 endif::aws[]
 
@@ -195,7 +195,7 @@ endif::gcp[]
 
 === Activation du Tiering des données après la mise en œuvre des exigences
 
-BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, tant qu'il n'y a aucun problème de connectivité ou d'autorisation. Si vous n'avez pas mis en œuvre les exigences ci-dessus avant d'avoir créé le système, vous devrez activer manuellement la hiérarchisation via l'API ou System Manager, ce qui crée le magasin d'objets.
+BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, tant qu'il n'y a aucun problème de connectivité ou d'autorisation. Si vous n'avez pas mis en œuvre les exigences ci-dessus avant d'avoir créé le système, vous devrez activer manuellement la hiérarchisation via l'API ou ONTAP System Manager, ce qui crée le magasin d'objets.
 
 
 NOTE: La possibilité d'activer le Tiering via l'interface utilisateur BlueXP sera disponible dans une prochaine version d'Cloud Volumes ONTAP.
@@ -212,7 +212,7 @@ Si vous activez le Tiering des données sur un nouveau volume, vous n'avez plus 
 
 * *Volumes existants*
 +
-Pour activer le Tiering des données sur un volume existant, vous devez vous assurer que le Tiering des données est activé sur l'agrégat sous-jacent. Si le Tiering des données n'est pas activé sur l'agrégat existant, vous devez utiliser System Manager pour associer un agrégat existant au magasin d'objets.
+Pour activer le Tiering des données sur un volume existant, vous devez vous assurer que le Tiering des données est activé sur l'agrégat sous-jacent. Si le Tiering des données n'est pas activé sur l'agrégat existant, vous devez utiliser ONTAP System Manager pour relier un agrégat existant au magasin d'objets.
 
 
 
@@ -226,7 +226,7 @@ image:screenshot_aggregate_tiering_enabled.png["Capture d'écran affichant des i
 
 
 .Les étapes permettant d'activer la hiérarchisation sur un agrégat
-. Dans System Manager, cliquez sur *stockage > niveaux*.
+. Dans le Gestionnaire système ONTAP, cliquez sur *stockage > niveaux*.
 . Cliquez sur le menu d'action de l'agrégat et sélectionnez *attacher Cloud tiers*.
 . Sélectionnez le Tier de cloud à attacher et cliquez sur *Enregistrer*.
 
@@ -255,7 +255,7 @@ Cloud Volumes ONTAP peut déplacer les données inactives sur des volumes en lec
 |===
 . Sélectionnez une règle de hiérarchisation.
 +
-Pour obtenir une description de ces politiques, reportez-vous à la section link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Pour une description de ces stratégies, reportez-vous à link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"]la section .
 
 +
 *Exemple*
@@ -285,7 +285,7 @@ Cloud Volumes ONTAP permet de hiérarchiser les données d'un volume de protecti
 image:screenshot_replication_tiering.gif["Capture d'écran indiquant l'option de hiérarchisation S3 lors de la réplication d'un volume."]
 
 +
-Pour obtenir de l'aide sur la réplication des données, voir https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Réplication des données depuis et vers le cloud"^].
+Pour obtenir de l'aide sur la réplication des données, reportez-vous https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Réplication des données depuis et vers le cloud"^] à la section.
 
 
 
@@ -297,7 +297,7 @@ Une fois déployé Cloud Volumes ONTAP, vous pouvez réduire les coûts de stock
 
 ​it stockage des données hiérarchisées est disponible dans l'ensemble du système, et non dans chaque volume.
 
-Pour plus d'informations sur les classes de stockage prises en charge, reportez-vous à la section link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"].
+Pour plus d'informations sur les classes de stockage prises en charge, reportez-vous link:concept-data-tiering.html["Vue d'ensemble du hiérarchisation des données"]à la section .
 
 .Étapes
 . Dans l'environnement de travail, cliquez sur l'icône de menu, puis sur *classes de stockage* ou *stockage Blob Storage Tiering*.
@@ -330,7 +330,7 @@ image:screenshot_settings_icon.png["Capture d'écran affichant l'icône Paramèt
 
 == Modification de la période de refroidissement de la règle de hiérarchisation automatique
 
-Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est prise en charge uniquement à l'aide de l'API et de l'interface de ligne de commande.
+Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est uniquement prise en charge via l'interface de ligne de commandes et l'API de ONTAP.
 
 La période de refroidissement correspond au nombre de jours pendant lesquels les données utilisateur d'un volume doivent rester inactives avant qu'elles ne soient considérées comme « inactives » et déplacées vers le stockage objet.
 

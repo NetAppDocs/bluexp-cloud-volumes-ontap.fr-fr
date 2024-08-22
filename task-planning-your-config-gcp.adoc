@@ -71,7 +71,7 @@ Type de disque GCP:: Lorsque vous créez des volumes pour Cloud Volumes ONTAP, v
 * _Disques persistants équilibrés_ ces SSD équilibrent les performances et les coûts en fournissant des IOPS par Go plus faibles.
 * _Zonal Standard persistent disks_ : les disques persistants standard sont économiques et peuvent gérer des opérations de lecture/écriture séquentielles.
 +
-Pour plus de détails, voir https://cloud.google.com/compute/docs/disks/#pdspecs["Documentation Google Cloud : disques persistants zonés (standard et SSD)"^].
+Pour plus de détails, voir https://cloud.google.com/compute/docs/disks/#pdspecs["Documentation Google Cloud : disques persistants zonés (standard et SSD)"^] .
 
 
 

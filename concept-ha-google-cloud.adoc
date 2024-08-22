@@ -130,7 +130,7 @@ Une configuration Cloud Volumes ONTAP HA réplique de manière synchrone les don
 * Pour les configurations haute disponibilité qui servent les données des deux nœuds, les performances de lecture sont supérieures aux performances de lecture d'une configuration à nœud unique et les performances d'écriture sont identiques ou supérieures.
 
 
-Pour plus d'informations sur les performances de Cloud Volumes ONTAP, reportez-vous à link:concept-performance.html["Performance"].
+Pour plus d'informations sur les performances Cloud Volumes ONTAP, reportez-vous à link:concept-performance.html["Performance"]la section .
 
 
 
@@ -139,7 +139,7 @@ Pour plus d'informations sur les performances de Cloud Volumes ONTAP, reportez-v
 Les clients doivent accéder aux volumes NFS et CIFS en utilisant l'adresse IP de données du nœud sur lequel réside le volume. Si les clients NAS accèdent à un volume en utilisant l'adresse IP du nœud partenaire, le trafic passe entre les deux nœuds, ce qui réduit les performances.
 
 
-TIP: Si vous déplacez un volume entre les nœuds d'une paire HA, vous devez remonter le volume en utilisant l'adresse IP de l'autre nœud. Sinon, vous pouvez bénéficier d'une performance réduite. Si les clients prennent en charge les renvois NFSv4 ou la redirection de dossiers pour CIFS, vous pouvez activer ces fonctionnalités sur les systèmes Cloud Volumes ONTAP pour éviter de remanier le volume. Pour plus d'informations, consultez la documentation ONTAP.
+TIP: Si vous déplacez un volume entre les nœuds d'une paire HA, vous devez remonter le volume en utilisant l'adresse IP de l'autre nœud. Sinon, vous pouvez bénéficier d'une performance réduite. Si les clients prennent en charge les renvois NFSv4 ou la redirection de dossiers pour CIFS, vous pouvez activer ces fonctionnalités sur les systèmes Cloud Volumes ONTAP pour éviter de remanier le volume. Pour plus de détails, reportez-vous à la documentation ONTAP.
 
 Vous pouvez facilement identifier l'adresse IP correcte via l'option _Mount Command_ du panneau Manage volumes de BlueXP.
 

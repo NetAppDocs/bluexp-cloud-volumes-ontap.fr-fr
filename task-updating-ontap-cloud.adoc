@@ -26,7 +26,7 @@ Avant de démarrer le processus de mise à niveau Cloud Volumes ONTAP, vous deve
 
 === Mise à niveau depuis BlueXP uniquement
 
-Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de System Manager ou de l'interface de ligne de commandes. Cela peut affecter la stabilité du système.
+Les mises à niveau de Cloud Volumes ONTAP doivent être effectuées depuis BlueXP. Vous ne devez pas mettre à niveau Cloud Volumes ONTAP à l'aide de ONTAP System Manager ou de l'interface de ligne de commande ONTAP. Cela peut affecter la stabilité du système.
 
 
 
@@ -241,7 +241,7 @@ Si un système Cloud Volumes ONTAP a des relations SnapMirror actives, il est pr
 NOTE: Même si la sauvegarde et la restauration BlueXP utilisent une implémentation de SnapMirror pour créer des fichiers de sauvegarde (appelé SnapMirror Cloud), il n'est pas nécessaire de suspendre les sauvegardes lors de la mise à niveau d'un système.
 
 .Description de la tâche
-Ces étapes décrivent l'utilisation de System Manager pour la version 9.3 et ultérieure.
+La procédure suivante décrit l'utilisation de ONTAP System Manager pour la version 9.3 et les versions ultérieures.
 
 .Étapes
 . Connectez-vous à System Manager à partir du système de destination.
@@ -263,7 +263,7 @@ NOTE: L'ordinateur à partir duquel vous accédez à BlueXP doit disposer d'une 
 Les agrégats pour Cloud Volumes ONTAP doivent être en ligne avant de mettre à jour le logiciel. Les agrégats doivent être en ligne dans la plupart des configurations, mais si ce n'est pas le cas, vous devez les mettre en ligne.
 
 .Description de la tâche
-Ces étapes décrivent l'utilisation de System Manager pour la version 9.3 et ultérieure.
+La procédure suivante décrit l'utilisation de ONTAP System Manager pour la version 9.3 et les versions ultérieures.
 
 .Étapes
 . Dans l'environnement de travail, cliquez sur l'onglet *Aggregates*.
@@ -291,9 +291,9 @@ Si une erreur d'échec de mise à niveau se produit, reportez-vous au link:https
 
 == Mettez à niveau Cloud Volumes ONTAP
 
-BlueXP vous avertit lorsqu'une nouvelle version est disponible pour la mise à niveau. Vous pouvez démarrer le processus de mise à niveau à partir de cette notification. Pour plus de détails, voir <<Mise à niveau depuis les notifications BlueXP>>.
+BlueXP vous avertit lorsqu'une nouvelle version est disponible pour la mise à niveau. Vous pouvez démarrer le processus de mise à niveau à partir de cette notification. Pour plus d'informations, voir <<Mise à niveau depuis les notifications BlueXP>>.
 
-Une autre façon d'effectuer des mises à niveau logicielles à l'aide d'une image sur une URL externe. Cette option est utile si BlueXP ne peut pas accéder au compartiment S3 pour mettre à niveau le logiciel ou si vous avez reçu un correctif. Pour plus de détails, voir <<Mise à niveau à partir d'une image disponible sur une URL>>.
+Une autre façon d'effectuer des mises à niveau logicielles à l'aide d'une image sur une URL externe. Cette option est utile si BlueXP ne peut pas accéder au compartiment S3 pour mettre à niveau le logiciel ou si vous avez reçu un correctif. Pour plus d'informations, voir <<Mise à niveau à partir d'une image disponible sur une URL>>.
 
 
 

@@ -55,9 +55,9 @@ Classes de stockage:: La classe de stockage par défaut pour les données hiéra
 --
 Si vous ne prévoyez pas d'accéder aux données inactives, vous pouvez réduire vos coûts de stockage en remplaçant la classe de stockage par l'une des catégories suivantes : _Intelligent Tiering_, _One-zone Infrequent Access_, _Standard-Infrequent Access_ ou _S3 Glacier Instant Retrieval_. Lorsque vous modifiez la classe de stockage, les données inactives commencent dans la classe de stockage Standard et sont transitions vers la classe de stockage que vous avez sélectionnée, si les données ne sont pas accessibles après 30 jours.
 
-Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://aws.amazon.com/s3/storage-classes["En savoir plus sur les classes de stockage Amazon S3"^].
+Si vous accédez aux données, les coûts d'accès sont plus élevés, prenez-en compte avant de modifier la classe de stockage. https://aws.amazon.com/s3/storage-classes["Documentation sur Amazon S3 : en savoir plus sur les classes de stockage Amazon S3"^].
 
-Vous pouvez sélectionner une classe de stockage lors de la création de l'environnement de travail et la modifier à tout moment après. Pour plus de détails sur la modification de la classe de stockage, voir link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
+Vous pouvez sélectionner une classe de stockage lors de la création de l'environnement de travail et la modifier à tout moment après. Pour obtenir des instructions sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la .
 
 La classe de stockage du Tiering des données est étendue au système - elle n'est pas par volume.
 
@@ -98,9 +98,9 @@ Les niveaux d'accès au stockage:: Le niveau d'accès au stockage par défaut po
 --
 Si vous ne prévoyez pas d'accéder aux données inactives du niveau de capacité, vous pouvez réduire vos coûts de stockage en passant au niveau de stockage _cool_. Lorsque vous modifiez le Tier de stockage pour qu'il soit froid, les données inactives du Tier de capacité sont transférées directement vers le Tier de stockage utilisé.
 
-Les coûts d'accès sont plus élevés si vous accédez aux données, prenez donc ces considérations avant de changer le Tier de stockage. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["En savoir plus sur les tiers d'accès au stockage Azure Blob"^].
+Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez-en compte avant de modifier le niveau de stockage. https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Documentation Microsoft Azure : en savoir plus sur les tiers d'accès au stockage Azure Blob"^].
 
-Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus d'informations sur la modification du niveau de stockage, reportez-vous à la section link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
+Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus d'informations sur la modification du niveau de stockage, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la section .
 
 Le niveau d'accès au stockage pour le Tiering des données concerne l'ensemble du système - il ne s'agit pas de par volume.
 
@@ -140,9 +140,9 @@ Classes de stockage:: La classe de stockage par défaut pour les données hiéra
 
 NOTE: Toutes les données inactives existantes conservent la classe de stockage par défaut lorsque vous modifiez la classe de stockage. Pour modifier la classe de stockage des données inactives existantes, vous devez effectuer la désignation manuellement.
 
-Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. https://cloud.google.com/storage/docs/storage-classes["En savoir plus sur les classes de stockage pour Google Cloud Storage"^].
+Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. Pour en savoir plus, reportez-vous https://cloud.google.com/storage/docs/storage-classes["Documentation Google Cloud : classes de stockage"^] à la section .
 
-Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus de détails sur la modification de la classe de stockage, voir link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
+Vous pouvez sélectionner un niveau de stockage lors de la création de l'environnement de travail et le modifier à tout moment après. Pour plus d'informations sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la section .
 
 La classe de stockage du Tiering des données est étendue au système - elle n'est pas par volume.
 
@@ -214,4 +214,4 @@ TIP: Lorsque Cloud Volumes ONTAP est désactivé, la température de chaque bloc
 
 == Configuration du tiering des données
 
-Pour obtenir des instructions et une liste des configurations prises en charge, reportez-vous à la section link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"].
+Pour obtenir des instructions et une liste des configurations prises en charge, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la section .

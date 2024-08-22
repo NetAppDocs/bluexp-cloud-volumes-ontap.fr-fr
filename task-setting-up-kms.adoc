@@ -96,7 +96,7 @@ La stratégie suivante fournit les autorisations dont BlueXP a besoin pour utili
 }
 ----
 +
-Pour plus d'informations sur ce processus, reportez-vous à la section https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["Documentation AWS : possibilité pour les utilisateurs d'autres comptes d'utiliser une clé KMS"^].
+Pour plus de détails sur ce processus, reportez-vous au https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-modifying-external-accounts.html["Documentation AWS : possibilité pour les utilisateurs d'autres comptes d'utiliser une clé KMS"^].
 
 
 

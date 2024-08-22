@@ -31,7 +31,7 @@ Pour les paires HA, le changement n'est pas perturbateur. Les paires HA continue
 
 +
 
-TIP: BlueXP change aisément un nœud à la fois en lançant le basculement et en attente de retour. L'équipe d'assurance qualité de NetApp a testé l'écriture et la lecture des fichiers pendant ce processus et n'a rencontré aucun problème côté client. Au fur et à mesure des changements de connexion, nous avons constaté des tentatives d'E/S au niveau des E/S, mais la couche applicative a pu faire face à ces courtes « connexions » NFS/CIFS.
+TIP: BlueXP  change un nœud à la fois en initiant le basculement et en attendant le retour. L'équipe d'assurance qualité de NetApp a testé à la fois la rédaction et la lecture de fichiers pendant ce processus et n'a pas constaté de problèmes côté client. Lorsque les connexions ont changé, certaines tentatives ont été observées au niveau des E/S, mais la couche applicative a dépassé le recâblage des connexions NFS/CIFS.
 
 
 

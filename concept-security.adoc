@@ -83,7 +83,7 @@ Lorsque vous lancez un système Cloud Volumes ONTAP dans AWS, vous pouvez active
 
 TIP: Une fois que vous avez créé un système Cloud Volumes ONTAP, vous ne pouvez pas modifier la méthode de chiffrement des données AWS.
 
-Si vous souhaitez utiliser cette option de cryptage, vous devez vous assurer que le système AWS KMS est correctement configuré. Pour plus de détails, voir link:task-setting-up-kms.html["Configuration du système AWS KMS"].
+Si vous souhaitez utiliser cette option de cryptage, vous devez vous assurer que le système AWS KMS est correctement configuré. Pour plus d'informations, reportez-vous à link:task-setting-up-kms.html["Configuration du système AWS KMS"]la .
 
 endif::aws[]
 
@@ -119,9 +119,9 @@ Vous pouvez utiliser la fonctionnalité antivirus intégrée sur les systèmes O
 
 L'analyse antivirus ONTAP, appelée _Vscan_, associe le meilleur logiciel antivirus tiers à des fonctionnalités ONTAP, vous offrant ainsi la flexibilité nécessaire pour contrôler quels fichiers sont analysés et à quel moment.
 
-Pour plus d'informations sur les fournisseurs, les logiciels et les versions pris en charge par Vscan, voir le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^].
+Pour plus d'informations sur les fournisseurs, les logiciels et les versions pris en charge par Vscan, reportez-vous au http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] .
 
-Pour plus d'informations sur la configuration et la gestion de la fonctionnalité antivirus sur les systèmes ONTAP, consultez la http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["Guide de configuration antivirus ONTAP 9"^].
+Pour plus d'informations sur la configuration et la gestion de la fonctionnalité antivirus sur les systèmes ONTAP, reportez-vous au http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-acg/home.html["Guide de configuration antivirus ONTAP 9"^] .
 
 
 

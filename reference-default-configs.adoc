@@ -97,7 +97,7 @@ NOTE: Le basculement de LIF est désactivé par défaut pour Cloud Volumes ONTAP
 +
 Les sauvegardes sont accessibles à partir de \http://ipaddress/occm/offboxconfig/ où _ipaddress_ est l'adresse IP de l'hôte du connecteur.
 
-** BlueXP définit quelques attributs de volume différemment des autres outils de gestion (System Manager ou CLI, par exemple).
+** BlueXP  définit quelques attributs de volume différemment des autres outils de gestion (ONTAP System Manager ou l'interface de ligne de commande ONTAP, par exemple).
 +
 Le tableau suivant répertorie les attributs de volume définis par BlueXP différemment des valeurs par défaut :
 
@@ -127,7 +127,7 @@ NOTE: L'administrateur du compte peut modifier cette valeur à partir de la page
 | Autorisations UNIX (NFS uniquement) | 776 
 |===
 +
-Voir la link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP _volume create_ man page"] pour plus d'informations sur ces attributs.
+Pour plus d'informations sur ces attributs, reportez-vous link:https://docs.netapp.com/us-en/ontap-cli-9121/volume-create.html["ONTAP _volume create_ man page"]à la section .
 
 
 
@@ -189,6 +189,9 @@ Si la machine virtuelle que vous choisissez pour Cloud Volumes ONTAP prend en ch
 * Un disque dur standard de 1024 Gio pour économiser les cœurs
 * Un snapshot Azure pour chaque disque d'initialisation et disque racine
 * Par défaut, chaque disque dans Azure est chiffré au repos.
++
+Si la machine virtuelle que vous avez choisie pour Cloud Volumes ONTAP prend en charge le disque géré SSD v2 Premium en tant que disques de données, le système utilise un disque géré SSD v2 Premium de 32 Gio pour NVRAM, et un autre comme disque racine.
+
 
 
 
@@ -210,7 +213,7 @@ NOTE: Les snapshots sont créés automatiquement au redémarrage.
 
 .Paires HAUTE DISPONIBILITÉ avec disques gérés partagés dans plusieurs zones de disponibilité
 * Deux disques SSD Premium de 10 Gio pour le volume de démarrage (un par nœud)
-* Deux blobs de page Premium de stockage de 512 Gio pour le volume racine (un par nœud)
+* Deux disques SSD Premium de 512 Gio pour le volume racine (un par nœud)
 * Deux disques durs standard de 1024 Gio pour les cœurs économiques (un par nœud)
 * Deux disques SSD Premium de 512 Gio pour la NVRAM (un par nœud)
 * Un snapshot Azure pour chaque disque d'initialisation et disque racine
@@ -219,6 +222,16 @@ NOTE: Les snapshots sont créés automatiquement au redémarrage.
 NOTE: Les snapshots sont créés automatiquement au redémarrage.
 
 * Par défaut, chaque disque dans Azure est chiffré au repos.
+
+
+.Paires HAUTE DISPONIBILITÉ avec disques gérés partagés dans des zones de disponibilité uniques
+* Deux disques SSD Premium de 10 Gio pour le volume de démarrage (un par nœud)
+* Deux disques gérés partagés SSD Premium de 512 Gio pour le volume racine (un par nœud)
+* Deux disques durs standard de 1024 Gio pour les cœurs économiques (un par nœud)
+* Deux disques gérés SSD Premium de 512 Gio pour NVRAM (un par nœud)
++
+Si votre machine virtuelle prend en charge les disques gérés SSD v2 Premium comme disques de données, elle utilise des disques gérés SSD v2 Premium de 32 Gio pour NVRAM et des disques gérés partagés SSD v2 Premium de 512 Gio pour le volume racine.
+
 
 
 endif::azure[]

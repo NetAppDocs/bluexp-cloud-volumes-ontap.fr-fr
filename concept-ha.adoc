@@ -88,7 +88,7 @@ Si vous ne pouvez pas configurer de passerelle de transit, des adresses IP priv�
 
 Avant de déployer une configuration haute disponibilité sur plusieurs zones de disponibilité, vérifiez les exigences en matière d'adresses IP flottantes et de tables de routage. Vous devez spécifier les adresses IP flottantes lors du déploiement de la configuration. Les adresses IP privées sont automatiquement créées par BlueXP.
 
-Pour plus de détails, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["Configuration réseau AWS requise pour Cloud Volumes ONTAP HA dans plusieurs AZS"^].
+Pour plus d'informations, reportez-vous link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-aws.html#requirements-for-ha-pairs-in-multiple-azs["Configuration réseau AWS requise pour Cloud Volumes ONTAP HA dans plusieurs AZS"^]à .
 
 
 
@@ -103,7 +103,7 @@ La communication de données entre VPC n'est pas un problème car iSCSI n'utilis
 Pour iSCSI, Cloud Volumes ONTAP utilise les E/S multichemins (MPIO) et l'accès aux unités logiques asymétriques (ALUA) pour gérer le basculement de chemin entre les chemins optimisés et non optimisés.
 
 
-NOTE: Pour plus d'informations sur les configurations hôtes spécifiques qui prennent en charge ALUA, consultez le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] Et le Guide d'installation et de configuration des utilitaires hôtes pour votre système d'exploitation hôte.
+NOTE: Pour plus d'informations sur les configurations d'hôte spécifiques qui prennent en charge ALUA, reportez-vous au http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] et au https://docs.netapp.com/us-en/ontap-sanhost/["Guide des hôtes SAN et des clients cloud"] pour votre système d'exploitation hôte.
 
 
 
@@ -145,7 +145,7 @@ image:diagram_single_az.png["Image conceptuelle montrant une configuration ONTAP
 Pour iSCSI, Cloud Volumes ONTAP utilise les E/S multichemins (MPIO) et l'accès aux unités logiques asymétriques (ALUA) pour gérer le basculement de chemin entre les chemins optimisés et non optimisés.
 
 
-NOTE: Pour plus d'informations sur les configurations hôtes spécifiques qui prennent en charge ALUA, consultez le http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] Et le Guide d'installation et de configuration des utilitaires hôtes pour votre système d'exploitation hôte.
+NOTE: Pour plus d'informations sur les configurations d'hôte spécifiques qui prennent en charge ALUA, reportez-vous au http://mysupport.netapp.com/matrix["Matrice d'interopérabilité NetApp"^] et au https://docs.netapp.com/us-en/ontap-sanhost/["Guide des hôtes SAN et des clients cloud"] pour votre système d'exploitation hôte.
 
 Pour les configurations NAS, les adresses IP des données peuvent migrer entre les nœuds HA en cas de défaillance. Cela garantit l'accès du client au stockage.
 
@@ -195,7 +195,7 @@ Les familles de types d'instances EC2 suivantes de tailles Xlarge à 4xlarge son
 * R5d
 
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Consultez AWS pour obtenir les informations les plus récentes et complètes sur les types d'instances EC2 prises en charge dans les zones locales"^].
+Pour plus d'informations sur les systèmes pris en chargelink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Types d'instances EC2 dans les zones locales"^], reportez-vous à la documentation AWS .
 
 
 
@@ -228,7 +228,7 @@ Une configuration Cloud Volumes ONTAP HA réplique de manière synchrone les don
 * Pour les configurations haute disponibilité qui servent les données des deux nœuds, les performances de lecture sont supérieures aux performances de lecture d'une configuration à nœud unique et les performances d'écriture sont identiques ou supérieures.
 
 
-Pour plus d'informations sur les performances de Cloud Volumes ONTAP, reportez-vous à link:concept-performance.html["Performance"].
+Pour plus d'informations sur les performances Cloud Volumes ONTAP, reportez-vous à link:concept-performance.html["Performance"]la section .
 
 
 
@@ -237,7 +237,7 @@ Pour plus d'informations sur les performances de Cloud Volumes ONTAP, reportez-v
 Les clients doivent accéder aux volumes NFS et CIFS en utilisant l'adresse IP de données du nœud sur lequel réside le volume. Si les clients NAS accèdent à un volume en utilisant l'adresse IP du nœud partenaire, le trafic passe entre les deux nœuds, ce qui réduit les performances.
 
 
-TIP: Si vous déplacez un volume entre les nœuds d'une paire HA, vous devez remonter le volume en utilisant l'adresse IP de l'autre nœud. Sinon, vous pouvez bénéficier d'une performance réduite. Si les clients prennent en charge les renvois NFSv4 ou la redirection de dossiers pour CIFS, vous pouvez activer ces fonctionnalités sur les systèmes Cloud Volumes ONTAP pour éviter de remanier le volume. Pour plus d'informations, consultez la documentation ONTAP.
+TIP: Si vous déplacez un volume entre les nœuds d'une paire HA, vous devez remonter le volume en utilisant l'adresse IP de l'autre nœud. Sinon, vous pouvez bénéficier d'une performance réduite. Si les clients prennent en charge les renvois NFSv4 ou la redirection de dossiers pour CIFS, vous pouvez activer ces fonctionnalités sur les systèmes Cloud Volumes ONTAP pour éviter de remanier le volume. Pour plus de détails, reportez-vous à la documentation ONTAP.
 
 Vous pouvez facilement identifier l'adresse IP correcte via l'option _Mount Command_ du panneau Manage volumes de BlueXP.
 

@@ -52,14 +52,14 @@ Dans BlueXP, cliquez sur le service *Digital Advisor*.
 +
 image:screenshot_aiq_digital_advisor.png["Copie d'écran de l'interface utilisateur de Digital Advisor dans BlueXP."]
 
-* Si vous n'avez pas enregistré de compte NSS dans BlueXP, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Enregistrez un compte NSS dès maintenant"^] Puis l'interface utilisateur de Digital Advisor s'affiche.
+* Si vous n'avez pas enregistré de compte NSS dans BlueXP , enregistrez un compte NSS dès maintenant, puis l'interface utilisateur Digital Advisor s'affiche. Reportez-vous https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["Gérez les identifiants NSS associés à un compte BlueXP"] à pour les instructions.
 
 
 
-NOTE: Depuis le 3 décembre 2021, NetApp a adopté une nouvelle méthodologie d'enregistrement des identifiants pour les comptes NSS. https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Consultez cette FAQ pour plus de détails"]. Si votre compte NSS utilise l'ancien ensemble d'informations d'identification, vous devez mettre à jour le compte pour les nouvelles informations d'identification.
+NOTE: Depuis le 3 décembre 2021, NetApp a adopté une nouvelle méthodologie d'enregistrement des identifiants pour les comptes NSS. Pour plus d'informations, reportez-vous https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Cette FAQ"]à . Si votre compte NSS utilise l'ancien ensemble d'informations d'identification, vous devez mettre à jour le compte pour les nouvelles informations d'identification.
 
 
 
 == Et la suite
 
-Voir la https://docs.netapp.com/us-en/active-iq/index.html["Documentation de Digital Advisor"] pour plus d'informations.
+Reportez-vous au https://docs.netapp.com/us-en/active-iq/index.html["Documentation de Digital Advisor"] pour plus de détails.

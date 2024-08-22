@@ -58,8 +58,8 @@ Depuis Cloud Volumes ONTAP 9.10.1, vous pouvez activer ou désactiver WORM au ni
 
 Lorsque vous créez un environnement de travail Cloud Volumes ONTAP, vous êtes invité à activer ou désactiver le stockage WORM :
 
-* Si vous activez le stockage WORM lors de la création d'un environnement de travail, le mode WORM est activé pour chaque volume créé à partir de BlueXP. Toutefois, vous pouvez utiliser System Manager ou l'interface de ligne de commandes pour créer des volumes dont le protocole WORM est désactivé.
-* Si vous désactivez le stockage WORM lors de la création d'un environnement de travail, tous les volumes que vous créez à partir de BlueXP, System Manager ou de l'interface de ligne de commande sont désactivés. Si vous souhaitez activer WORM sur un environnement de travail Cloud Volumes ONTAP qui n'a pas été activé lors de la création, vous devez créer un ticket de support auprès du support NetApp.
+* Si vous activez le stockage WORM lors de la création d'un environnement de travail, le mode WORM est activé pour chaque volume créé à partir de BlueXP. Mais vous pouvez utiliser ONTAP System Manager ou l'interface de ligne de commande ONTAP pour créer des volumes dont le mode WORM est désactivé.
+* Si vous désactivez le stockage WORM lors de la création d'un environnement de travail, tous les volumes que vous créez à partir de BlueXP , ONTAP System Manager ou l'interface de ligne de commande de ONTAP sont désactivés. Si vous souhaitez activer WORM sur un environnement de travail Cloud Volumes ONTAP qui n'a pas été activé lors de la création, vous devez créer un ticket de support auprès du support NetApp.
 
 
 Quelle que soit l'option choisie, vous devez <<Chargement,comprendre le fonctionnement de la charge>>.

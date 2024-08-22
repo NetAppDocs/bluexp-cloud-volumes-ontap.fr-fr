@@ -37,7 +37,7 @@ Notez que les limites de capacité totale du système restent les mêmes.
 
 
 
-https://aws.amazon.com/ebs/features/["En savoir plus sur Elastic volumes d'AWS"^]
+https://aws.amazon.com/ebs/features/["Documentation AWS : en savoir plus sur Elastic volumes d'AWS"^]
 
 
 

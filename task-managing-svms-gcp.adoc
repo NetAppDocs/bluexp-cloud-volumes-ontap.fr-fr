@@ -28,7 +28,7 @@ Toutes les autres configurations Cloud Volumes ONTAP prennent en charge une VM d
 
 == Créez une machine virtuelle de stockage
 
-Si votre licence est prise en charge, vous pouvez créer plusieurs machines virtuelles de stockage sur un système à un seul nœud ou sur une paire haute disponibilité. Notez que vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage sur une paire haute disponibilité, tandis que vous pouvez utiliser l'interface de ligne de commande ou System Manager pour créer une machine virtuelle de stockage sur un système à un seul nœud.
+Si votre licence est prise en charge, vous pouvez créer plusieurs machines virtuelles de stockage sur un système à un seul nœud ou sur une paire haute disponibilité. Vous devez utiliser l'API BlueXP  pour créer une VM de stockage sur une paire HA, tandis que vous pouvez utiliser ONTAP System Manager ou l'interface de ligne de commande ONTAP pour créer une VM de stockage sur un système à un seul nœud.
 
 
 
@@ -98,7 +98,7 @@ Cette étape est obligatoire car la nouvelle machine virtuelle de stockage doit 
 
 === Paire HA
 
-Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage sur un système Cloud Volumes ONTAP dans Google Cloud. L'utilisation de l'API (et non de System Manager ou de l'interface de ligne de commande) est requise, car BlueXP configure la machine virtuelle de stockage avec les services LIF requis, ainsi qu'une LIF iSCSI requise pour les communications SMB/CIFS sortantes.
+Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage sur un système Cloud Volumes ONTAP dans Google Cloud. L'utilisation de l'API (et non de ONTAP System Manager ou de l'interface de ligne de commandes ONTAP) est requise, car BlueXP  configure la VM de stockage avec les services LIF requis, ainsi qu'une LIF iSCSI requise pour les communications SMB/CIFS sortantes.
 
 Notez que BlueXP alloue les adresses IP requises dans Google Cloud et crée la machine virtuelle de stockage avec une LIF de données pour les accès SMB/NFS et une LIF iSCSI pour les communications SMB sortantes.
 

@@ -26,7 +26,7 @@ Plusieurs machines virtuelles de stockage sont prises en charge dans certaines c
 
 == Utilisation de plusieurs machines virtuelles de stockage
 
-BlueXP prend en charge toutes les machines virtuelles de stockage supplémentaires que vous créez à partir de System Manager ou de l'interface de ligne de commande.
+BlueXP  prend en charge toutes les machines virtuelles de stockage supplémentaires que vous créez à partir de ONTAP System Manager ou de l'interface de ligne de commande ONTAP.
 
 Par exemple, l'image suivante montre comment choisir une VM de stockage lors de la création d'un volume.
 
@@ -40,4 +40,4 @@ image:screenshot_replicate_volume_svm.gif["Une capture d'écran montre la possib
 
 == Modifier le nom de la VM de stockage par défaut
 
-BlueXP nomme automatiquement la machine virtuelle de stockage unique qu'elle crée pour Cloud Volumes ONTAP. Dans System Manager, l'interface de ligne de commandes ou l'API, vous pouvez modifier le nom de la machine virtuelle de stockage si vous avez des normes de nommage strictes. Par exemple, vous pouvez indiquer le nom des machines virtuelles de stockage dans vos clusters ONTAP.
+BlueXP nomme automatiquement la machine virtuelle de stockage unique qu'elle crée pour Cloud Volumes ONTAP. Dans ONTAP System Manager, l'interface de ligne de commandes ou l'API ONTAP, vous pouvez modifier le nom de la machine virtuelle de stockage si vous avez des normes de nommage strictes. Par exemple, vous pouvez indiquer le nom des machines virtuelles de stockage dans vos clusters ONTAP.

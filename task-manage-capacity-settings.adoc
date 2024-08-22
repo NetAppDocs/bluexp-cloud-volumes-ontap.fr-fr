@@ -42,7 +42,7 @@ En mode manuel, si le ratio d'espace libre sur un agrégat chute en dessous du s
 Le rapport d'espace libre est calculé comme suit :
 (capacité de l'agrégat : capacité totale utilisée sur l'agrégat) / capacité de l'agrégat
 
-Voir link:concept-storage-management.html#automatic-capacity-management["Gestion automatique de la capacité"] Apprendre à utiliser la capacité est automatiquement gérée dans Cloud Volumes ONTAP.
+Reportez-vous link:concept-storage-management.html#automatic-capacity-management["Gestion automatique de la capacité"]à la section « Learn Now » pour savoir si la capacité est automatiquement gérée dans Cloud Volumes ONTAP.
 
 --
 Seuils de capacité de l'agrégat : ratio d'espace libre pour le Tiering des données:: Définit la quantité d'espace disponible requise sur le Tier de performance (disques) lors du Tiering des données vers un Tier de capacité (stockage objet).

@@ -628,7 +628,7 @@ CAUTION: Lors de la sélection à l'aide de l'assistant, ne sélectionnez pas *D
 .Remarques sur le déploiement de Cloud Volumes ONTAP HA dans plusieurs zones de disponibilité
 Notez les points suivants lorsque vous terminez l'assistant pour les paires haute disponibilité.
 
-* Vous devez configurer une passerelle de transit lorsque vous déployez Cloud Volumes ONTAP HA dans plusieurs zones de disponibilité (AZ). Voir link:task-setting-up-transit-gateway.html["Configuration d'une passerelle de transit AWS"].
+* Vous devez configurer une passerelle de transit lorsque vous déployez Cloud Volumes ONTAP HA dans plusieurs zones de disponibilité (AZ). Pour obtenir des instructions, reportez-vous à link:task-setting-up-transit-gateway.html["Configuration d'une passerelle de transit AWS"]la .
 * Déployez la configuration comme suit car seulement deux zones de disponibilité étaient disponibles dans le Top Secret Cloud d'AWS au moment de la publication :
 +
 ** Nœud 1 : zone de disponibilité A

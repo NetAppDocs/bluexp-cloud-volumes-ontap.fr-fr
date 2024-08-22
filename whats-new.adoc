@@ -20,6 +20,18 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 22 août 2024
+
+
+
+=== Cloud Volumes ONTAP 9.15.1 GA
+
+BlueXP  peut désormais déployer et gérer Cloud Volumes ONTAP 9.15.1 General Availability dans AWS, Azure et Google Cloud.
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Découvrez les nouvelles fonctionnalités de cette version d'Cloud Volumes ONTAP"^].
+
+
+
 == 8 août 2024
 
 
@@ -32,7 +44,7 @@ Les offres de licences basées sur la capacité Edge cache ne seront plus dispon
 
 === Version ONTAP minimale prise en charge pour Flash cache sur Azure
 
-La version minimale de ONTAP requise pour la configuration de Flash cache sur Azure est la version 9.13.1 GA. Seuls ONTAP 9.13.1 GA et versions ultérieures peuvent être utilisés pour le déploiement de Flash cache sur les systèmes Cloud Volumes ONTAP pour Azure.
+La version minimale de ONTAP requise pour la configuration de Flash cache sur Azure est la version 9.13.1 GA. Vous pouvez utiliser ONTAP 9.13.1 GA et versions ultérieures uniquement pour déployer Flash cache sur les systèmes Cloud Volumes ONTAP pour Azure.
 
 Pour les configurations prises en charge, voir https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Configurations prises en charge dans Azure"^].
 
@@ -87,7 +99,7 @@ Les régions suivantes prennent désormais en charge les déploiements HA de zon
 * Canada Central
 
 
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
 
 
 
@@ -95,7 +107,7 @@ Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.ne
 
 La région de Johannesburg (`africa-south1` Région) est désormais pris en charge par Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
 
 
 
@@ -233,7 +245,7 @@ Les régions suivantes prennent désormais en charge les déploiements de zones 
 * Émirats arabes Unis Nord
 
 
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous Azure"^].
 
 
 
@@ -247,7 +259,7 @@ Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
 
 La région de Berlin est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
 
 
 
@@ -261,7 +273,7 @@ Le changement suivant a été introduit avec la version 3.9.35 du connecteur.
 
 La région de tel Aviv est désormais prise en charge dans AWS pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous AWS"^].
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions globales sous AWS"^].
 
 
 
@@ -275,7 +287,7 @@ Le changement suivant a été introduit avec la version 3.9.34 du connecteur.
 
 La région Arabie saoudite est désormais prise en charge dans Google Cloud pour Cloud Volumes ONTAP et dans Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures.
 
-Pour obtenir la liste de toutes les régions, reportez-vous au https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
+Pour obtenir la liste de toutes les régions, reportez-vous à la https://bluexp.netapp.com/cloud-volumes-global-regions["Carte des régions du monde sous Google Cloud"^].
 
 
 
@@ -366,7 +378,7 @@ Diverses améliorations apportées aux informations affichées dans les rapports
 * Le type de volume « secondaire » est désormais libellé « secondaire (DP) ».
 
 
-Pour plus d'informations sur les rapports d'utilisation, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Télécharger les rapports d'utilisation"^].
+Pour plus d'informations sur les rapports d'utilisation, reportez-vous link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html#download-usage-reports["Télécharger les rapports d'utilisation"^]à la section .
 
 
 
@@ -402,7 +414,7 @@ Pour obtenir la liste de toutes les régions prenant en charge plusieurs zones d
 
 La protection anti-ransomware autonome (ARP) est désormais prise en charge sur Cloud Volumes ONTAP. La prise en charge ARP est disponible sur Cloud Volumes ONTAP version 9.12.1 et supérieure.
 
-Pour en savoir plus sur ARP avec Cloud Volumes ONTAP, reportez-vous à la section https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Protection autonome contre les ransomwares"^].
+Pour en savoir plus sur ARP avec Cloud Volumes ONTAP, reportez-vous à https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html#autonomous-ransomware-protection["Protection autonome contre les ransomwares"^]la section .
 
 
 
@@ -430,7 +442,7 @@ Le changement suivant a été introduit avec la version 3.9.30 du connecteur.
 
 Sur la page Cloud Volumes ONTAP de mise à niveau, vous pouvez désormais choisir de mettre à niveau vers la dernière version disponible de Cloud Volumes ONTAP ou une version antérieure.
 
-Pour en savoir plus sur la mise à niveau d'Cloud Volumes ONTAP via BlueXP, consultez la section https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Mettez à niveau Cloud Volumes ONTAP"^].
+Pour en savoir plus sur la mise à niveau de Cloud Volumes ONTAP via BlueXP , reportez-vous https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-cloud-volumes-ontap["Mettez à niveau Cloud Volumes ONTAP"^] à la section .
 
 
 
@@ -468,7 +480,7 @@ Vous pouvez désormais connaître les frais facturés lorsque vous souscrivez à
 * Utilisation des volumes
 
 
-Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^].
+Pour plus d'informations, reportez-vous link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-capacity-licenses.html["Gestion des licences basées sur la capacité"^]à .
 
 
 
@@ -486,7 +498,7 @@ Une notification s'affiche désormais chaque fois que vous accédez à Cloud Vol
 * Les licences achetées directement auprès de NetApp sont prises en charge.
 
 
-Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
+Pour connaître la disponibilité régionale, reportez-vous au link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
 
 
 
@@ -526,7 +538,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/bluexp-cloud-volumes-ontap/ma
 
 === FlexGroup volumes peut être consulté via Cloud Volumes ONTAP
 
-Les volumes FlexGroup créés directement via l'interface de ligne de commande ou System Manager sont désormais visibles dans la mosaïque volumes repensés dans BlueXP. Comme les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées sur les volumes FlexGroup créés via une mosaïque volumes dédiés.
+Les volumes FlexGroup créés directement via ONTAP System Manager ou l'interface de ligne de commande ONTAP sont désormais visibles dans la mosaïque volumes repensés dans BlueXP . Comme les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées sur les volumes FlexGroup créés via une mosaïque volumes dédiés.
 
 
 NOTE: Actuellement, vous ne pouvez afficher que les volumes FlexGroup existants sous BlueXP. La création de volumes FlexGroup dans BlueXP n'est pas disponible, mais prévue pour une prochaine version.
@@ -550,7 +562,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volume
 * Les licences achetées directement auprès de NetApp sont prises en charge.
 
 
-Pour connaître la disponibilité régionale, reportez-vous à la section link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
+Pour connaître la disponibilité régionale, reportez-vous au link:https://bluexp.netapp.com/cloud-volumes-global-regions["Cartes des régions mondiales pour Cloud Volumes ONTAP"^].
 
 
 
@@ -615,7 +627,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.26 du conn
 
 Un nouveau paramètre de configuration peut désormais être utilisé pour créer des groupes de placement avec AWS HA unique Availability zone (AZ). Vous pouvez désormais choisir de contourner les créations de groupes ayant échoué et d'autoriser les déploiements d'AWS HA unique en AZ à s'effectuer avec succès.
 
-Pour plus d'informations sur la configuration du paramètre de création du groupe de placement, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Configurez la création de groupe de placement pour AWS HA Single AZ"^].
+Pour plus d'informations sur la configuration du paramètre de création du groupe de positionnement, reportez-vous link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-configure-placement-group-failure-aws.html#overview["Configurez la création de groupe de placement pour AWS HA Single AZ"^]à la section .
 
 
 
@@ -645,7 +657,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.25 du conn
 
 Des packages de licence optimisés et Edge cache basés sur la capacité sont disponibles pour Cloud Volumes ONTAP dans Google Cloud Marketplace, à la demande ou en tant que contrat annuel.
 
-Voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Licences Cloud Volumes ONTAP"^].
+Reportez-vous à la link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages["Licences Cloud Volumes ONTAP"^].
 
 
 
@@ -653,7 +665,7 @@ Voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licen
 
 La licence MTEKM (Multi-tenant Encryption Key Management) n'est plus incluse dans les nouveaux déploiements Cloud Volumes ONTAP.
 
-Pour plus d'informations sur les licences de fonction ONTAP installées automatiquement avec Cloud Volumes ONTAP, reportez-vous à la section link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Configuration par défaut pour Cloud Volumes ONTAP"^].
+Pour plus d'informations sur les licences de fonction ONTAP installées automatiquement avec Cloud Volumes ONTAP, reportez-vous link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html["Configuration par défaut pour Cloud Volumes ONTAP"^]à la section .
 
 
 
@@ -723,7 +735,7 @@ Les modifications suivantes ont été introduites avec la version 3.9.23 du conn
 
 Vous pouvez maintenant déplacer un environnement de travail d'un groupe de ressources vers un autre groupe de ressources dans Azure dans le même abonnement Azure.
 
-Pour plus d'informations, voir link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["Déplacement de groupes de ressources"].
+Pour plus d'informations, reportez-vous link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-moving-resource-groups-azure.html["Déplacement de groupes de ressources"]à .
 
 
 
@@ -739,7 +751,7 @@ Pour plus d'informations sur la configuration et l'utilisation de NDMP, reportez
 
 Une nouvelle autorisation Azure a été ajoutée qui vous permet maintenant de chiffrer tous les disques gérés lors de leur création.
 
-Pour plus d'informations sur cette nouvelle fonctionnalité, voir https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["Configuration de Cloud Volumes ONTAP pour utiliser une clé gérée par le client dans Azure"].
+Pour plus d'informations sur cette nouvelle fonctionnalité, reportez-vous https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-azure-encryption.html["Configuration de Cloud Volumes ONTAP pour utiliser une clé gérée par le client dans Azure"] à la .
 
 
 

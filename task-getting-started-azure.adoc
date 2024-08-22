@@ -25,7 +25,7 @@ Si vous souhaitez déployer Cloud Volumes ONTAP dans un sous-réseau sans accès
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Planification de la configuration
 [role="quick-margin-para"]
-BlueXP offre des packages préconfigurés qui répondent à vos exigences de charge de travail, ou vous pouvez créer votre propre configuration. Dans ce dernier cas, il est important de connaître les options dont vous disposez. link:task-planning-your-config-azure.html["En savoir plus >>"].
+BlueXP offre des packages préconfigurés qui répondent à vos exigences de charge de travail, ou vous pouvez créer votre propre configuration. Dans ce dernier cas, il est important de connaître les options dont vous disposez. Pour plus d'informations, reportez-vous à link:task-planning-your-config-azure.html["Planification de votre configuration Cloud Volumes ONTAP dans Azure"]la .
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Configurez votre réseau
 [role="quick-margin-list"]

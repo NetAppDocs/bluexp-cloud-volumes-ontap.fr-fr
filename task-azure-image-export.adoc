@@ -22,7 +22,7 @@ Vous devez installer les programmes requis sur votre système.
 * L'interface de ligne de commande Azure est installée ou Azure Cloud Shell est disponible via le portail Azure.
 +
 
-NOTE: Pour plus d'informations sur l'installation d'Azure CLI, voir https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Documentation Azure : installation de l'interface de ligne de commandes Azure"^].
+NOTE: Pour plus d'informations sur l'installation de l'interface de ligne de commande Azure, reportez-vous à https://learn.microsoft.com/en-us/cli/azure/install-azure-cli["Documentation Azure : installation de l'interface de ligne de commandes Azure"^]la section .
 
 
 

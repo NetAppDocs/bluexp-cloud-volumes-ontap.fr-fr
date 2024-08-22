@@ -47,7 +47,7 @@ Vous recevez probablement ce message en raison de problèmes de réseau.
 Procédez comme suit pour résoudre ce problème.
 
 .Étapes
-. SSH vers le système Cloud Volumes ONTAP afin que vous puissiez gérer le système à partir de l'interface de ligne de commandes.
+. Connectez-vous au système Cloud Volumes ONTAP en utilisant une connexion SSH pour gérer le système à partir de l'interface de ligne de commande ONTAP.
 +
 link:task-connecting-to-otc.html["Découvrez comment SSH vers Cloud Volumes ONTAP"].
 
