@@ -70,9 +70,9 @@ La licence ARP est considérée comme une licence « flottante », ce qui signif
 
 NOTE: L'utilisation de la fonction ARP avec les licences Cloud Volumes ONTAP basées sur les nœuds n'est pas actuellement reflétée dans le portefeuille digital. La possibilité d'afficher l'utilisation du protocole ARP basé sur les nœuds sera disponible dans une prochaine version sous le portefeuille digital.
 
-Lors de l'achat d'une licence complémentaire et de son ajout au portefeuille digital, vous pouvez activer le protocole ARP par volume avec Cloud Volumes ONTAP. Le chargement du protocole ARP est mesuré au niveau du volume, en fonction de la capacité totale provisionnée des volumes pour lesquels la fonctionnalité ARP est activée. La capacité minimale de licence est de 1 To. Cependant, il n'y a pas de charge de capacité minimale pour la fonction ARP.
+Lors de l'achat d'une licence complémentaire et de son ajout au portefeuille digital, vous pouvez activer le protocole ARP par volume avec Cloud Volumes ONTAP.
 
-Les volumes ARP activés ont un état désigné « mode apprentissage » ou « actif ». Tout volume dont l'état ARP est « désactivé » est exclu de la charge. Par exemple, un environnement Cloud Volumes ONTAP avec 30 Tio de capacité provisionnée peut choisir d'avoir uniquement un sous-ensemble de volumes de 15 Tio avec ARP activé.
+Les volumes ARP activés ont un état désigné « mode apprentissage » ou « actif ».
 
 La configuration du protocole ARP pour les volumes s'effectue via ONTAP System Manager et l'interface de ligne de commande ONTAP.
 

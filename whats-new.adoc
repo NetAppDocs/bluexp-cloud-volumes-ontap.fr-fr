@@ -20,6 +20,23 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 9 septembre 2024
+
+
+
+=== Les fonctionnalités WORM et ARP ne sont plus payantes
+
+Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront incluses avec toutes les licences Cloud Volumes ONTAP sans frais supplémentaires. Cela sera applicable aux déploiements BYOL et PAYGO/Marketplace, nouveaux et existants, pour les licences basées sur des nœuds et sur la capacité. Le nouveau modèle de tarification s'applique à tous les fournisseurs de cloud et à tous les types de déploiement, y compris les configurations à un seul nœud et haute disponibilité (HA).
+
+Les avantages suivants seront disponibles :
+
+* Les comptes existants avec WORM et ARP ne seront plus facturés pour ces fonctionnalités. Vous serez facturé pour l'utilisation de la capacité, comme indiqué avant cette modification. LE VER et le ARP seront exclus dans la facturation future.
+* Si ces fonctions ne sont pas activées dans vos comptes existants, vous pouvez désormais opter pour WORM et ARP sans frais supplémentaires.
+* Pour les nouveaux comptes, les frais WORM et ARP seront éliminés de toutes les offres Cloud Volumes ONTAP.
+
+
+
+
 == 23 août 2024
 
 

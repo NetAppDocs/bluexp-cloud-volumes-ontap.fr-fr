@@ -97,6 +97,9 @@ NOTE: Le basculement de LIF est désactivé par défaut pour Cloud Volumes ONTAP
 +
 Les sauvegardes sont accessibles à partir de \http://ipaddress/occm/offboxconfig/ où _ipaddress_ est l'adresse IP de l'hôte du connecteur.
 
++
+Vous pouvez utiliser les sauvegardes pour reconfigurer votre système Cloud Volumes ONTAP. Pour plus d'informations sur les sauvegardes de configuration, reportez-vous https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["Documentation ONTAP"] à la section .
+
 ** BlueXP  définit quelques attributs de volume différemment des autres outils de gestion (ONTAP System Manager ou l'interface de ligne de commande ONTAP, par exemple).
 +
 Le tableau suivant répertorie les attributs de volume définis par BlueXP différemment des valeurs par défaut :
@@ -229,9 +232,15 @@ NOTE: Les snapshots sont créés automatiquement au redémarrage.
 * Deux disques gérés partagés SSD Premium de 512 Gio pour le volume racine (un par nœud)
 * Deux disques durs standard de 1024 Gio pour les cœurs économiques (un par nœud)
 * Deux disques gérés SSD Premium de 512 Gio pour NVRAM (un par nœud)
-+
+
+
 Si votre machine virtuelle prend en charge les disques gérés SSD v2 Premium comme disques de données, elle utilise des disques gérés SSD v2 Premium de 32 Gio pour NVRAM et des disques gérés partagés SSD v2 Premium de 512 Gio pour le volume racine.
 
+Vous pouvez déployer des paires haute disponibilité dans une seule zone de disponibilité et utiliser des disques gérés SSD v2 Premium lorsque les conditions suivantes sont remplies :
+
+* La version de Cloud Volumes ONTAP est 9.15.1 ou ultérieure.
+* La région et la zone sélectionnées prennent en charge les disques gérés Premium SSD v2. Pour plus d'informations sur les régions prises en charge, reportez-vous  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Site Web Microsoft Azure : produits disponibles par région"^]à la section .
+* L'abonnement est enregistré pour Microsoft link:task-saz-feature.html["Microsoft.Compute/VMOrchestratorZonalMultiFD fonctionnalité"].
 
 
 endif::azure[]
