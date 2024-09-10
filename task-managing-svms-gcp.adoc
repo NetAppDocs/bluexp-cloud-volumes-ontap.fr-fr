@@ -102,6 +102,17 @@ Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage s
 
 Notez que BlueXP alloue les adresses IP requises dans Google Cloud et crée la machine virtuelle de stockage avec une LIF de données pour les accès SMB/NFS et une LIF iSCSI pour les communications SMB sortantes.
 
+BlueXP  modifie également les `default-data-files` règles sur les VM de stockage de données en supprimant les services suivants des LIFs de données NAS et en les ajoutant aux LIFs de données iSCSI :
+
+* `data-fpolicy-client`
+* `management-ad-client`
+* `management-dns-client`
+* `management-ldap-client`
+* `management-nis-client`
+
+
+La modification des services est requise, car elle permet à Cloud Volumes ONTAP d'utiliser la LIF iSCSI pour les connexions de gestion sortantes.
+
 .Autorisations Google Cloud requises
 Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Règles fournies par NetApp"].
 

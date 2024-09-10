@@ -26,13 +26,19 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 === Les fonctionnalités WORM et ARP ne sont plus payantes
 
-Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront incluses avec toutes les licences Cloud Volumes ONTAP sans frais supplémentaires. Cela sera applicable aux déploiements BYOL et PAYGO/Marketplace, nouveaux et existants, pour les licences basées sur des nœuds et sur la capacité. Le nouveau modèle de tarification s'applique à tous les fournisseurs de cloud et à tous les types de déploiement, y compris les configurations à un seul nœud et haute disponibilité (HA).
+Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront proposées avec les licences Cloud Volumes ONTAP sans frais supplémentaires. Le nouveau modèle de tarification s'applique aussi bien aux modèles BYOL, actuels ou encore aux modèles BYOL, ainsi qu'aux modèles PAYGO/Marketplace d'AWS, d'Azure et de Google Cloud. Les licences basées sur la capacité et sur les nœuds contiennent ARP et WORM pour toutes les configurations, y compris les paires à un seul nœud et haute disponibilité, sans frais supplémentaires.
 
-Les avantages suivants seront disponibles :
+La tarification simplifiée offre les avantages suivants :
 
-* Les comptes existants avec WORM et ARP ne seront plus facturés pour ces fonctionnalités. Vous serez facturé pour l'utilisation de la capacité, comme indiqué avant cette modification. LE VER et le ARP seront exclus dans la facturation future.
-* Si ces fonctions ne sont pas activées dans vos comptes existants, vous pouvez désormais opter pour WORM et ARP sans frais supplémentaires.
-* Pour les nouveaux comptes, les frais WORM et ARP seront éliminés de toutes les offres Cloud Volumes ONTAP.
+* Les comptes qui incluent actuellement WORM et ARP n'entraînent plus de frais pour ces fonctionnalités. À l'avenir, votre facturation n'aura que des frais pour l'utilisation de la capacité, comme c'était avant ce changement. WORM et ARP ne seront plus inclus dans vos factures futures.
+* Si vos comptes actuels n'incluent pas ces fonctionnalités, vous pouvez désormais opter pour WORM et ARP sans frais supplémentaires.
+* Toutes les offres Cloud Volumes ONTAP pour les nouveaux comptes excluent les frais pour WORM et ARP.
+
+
+En savoir plus sur ces fonctionnalités :
+
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Renforcer la protection contre les attaques par ransomware"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Stockage WORM"^]
 
 
 
