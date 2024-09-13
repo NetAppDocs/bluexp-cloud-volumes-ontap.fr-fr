@@ -1957,7 +1957,6 @@
   <block id="2cca3ca6096bf8fb9c832683c582250c" category="section-title">Modification du ratio d'espace libre pour le Tiering des données</block>
   <block id="0f25882e78be6d7c0e2d9cd5c7808fb5" category="paragraph">Le ratio d'espace libre pour le Tiering des données définit la quantité d'espace disponible requise sur les disques SSD/HDD Cloud Volumes ONTAP lors du Tiering des données vers le stockage objet. Le paramètre par défaut est 10 % d'espace libre, mais vous pouvez ajuster le paramètre en fonction de vos besoins.</block>
   <block id="15772334d40a5e0ec433c7a427e96777" category="paragraph">Par exemple, vous pouvez choisir un espace libre inférieur à 10 % pour vérifier que vous utilisez la capacité achetée. BlueXP peut ensuite vous acheter des disques supplémentaires lorsque vous avez besoin de capacité supplémentaire (jusqu'à atteindre la limite de disques pour l'agrégat).</block>
-  <block id="e62da289d1df9b17e78658d0c7639034" category="admonition">Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données et vous risquez de subir une dégradation des performances. Toute modification doit être effectuée avec précaution. Si vous ne savez pas ce que vous devez faire, n'hésitez pas à contacter le service de support NetApp.</block>
   <block id="2aa3b7e505c0c56df0a2f60f7d4f87cc" category="paragraph">Le ratio est important pour les scénarios de reprise d'activité, car lors de la lecture des données à partir du magasin d'objets, Cloud Volumes ONTAP déplace les données vers des disques SSD/HDD pour de meilleures performances. Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données. Prenez en compte ces changements pour répondre aux besoins de votre entreprise.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP.</block>
   <block id="804f26a0bc44f8e04d1fb697d33eb4d8" category="list-text">Sous *capacité*, cliquez sur *seuils de capacité d'agrégat - ratio d'espace libre pour le Tiering des données*.</block>
@@ -2012,7 +2011,6 @@
   <block id="ac07e79360f18c4b3fc951c45c21a6ed" category="section-title">Rétablissement ou rétrogradation</block>
   <block id="2383344da5e27a7119b263bf26937e0b" category="paragraph">La restauration ou la rétrogradation d'une version antérieure de Cloud Volumes ONTAP n'est pas prise en charge.</block>
   <block id="1d4a4bd5e79a1d078c7cb5902a3481e8" category="inline-link-macro">Enregistrer manuellement les systèmes PAYGO</block>
-  <block id="a683dcc97e9a8443ac38b6298ea937aa" category="paragraph">Cloud Volumes ONTAP doit être enregistré auprès du service de support de NetApp pour mettre à niveau le logiciel à l'aide de l'une des méthodes décrites sur cette page. Cela s'applique à la fois à PAYGO et à BYOL. Vous devez le faire <block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>, Tandis que les systèmes BYOL sont enregistrés par défaut.</block>
   <block id="331278b9811c6edc293cd27e4bb970a2" category="admonition">Un système qui n'est pas enregistré pour le support recevra toujours les notifications de mise à jour de logiciel qui apparaissent dans BlueXP lorsqu'une nouvelle version est disponible. Mais vous devrez enregistrer le système avant de pouvoir mettre à niveau le logiciel.</block>
   <block id="aae82a5812996f78df0dae81c1668bcd" category="section-title">Mises à niveau du médiateur HA</block>
   <block id="e3e1c846d6bd42b537cbc6dc3bfd7e21" category="paragraph">BlueXP met également à jour l'instance de médiateur si nécessaire lors du processus de mise à niveau de Cloud Volumes ONTAP.</block>
@@ -3791,7 +3789,6 @@
   <block id="01277cd6d5e8d9a803f07b849cedae4b" category="summary">Vérifiez les fichiers de signature des fichiers d'image Google Cloud.</block>
   <block id="5567cef37155e1157348c6775226af57" category="doc">Présentation de la vérification des images Google Cloud</block>
   <block id="248cdc66c441a6612309f6e2ce80a63c" category="inline-link">NSS</block>
-  <block id="1c6fb094d8ad58a6db78e6b557985243" category="paragraph">La vérification des images Google Cloud est conforme aux exigences de sécurité améliorées de NetApp. Des modifications ont été apportées au script générant les images pour signer l'image en cours de route à l'aide de clés privées spécifiquement générées pour cette tâche. Vous pouvez vérifier l'intégrité de l'image GCP à l'aide du résumé signé et du certificat public pour Google Cloud qui peuvent être téléchargés via<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> pour une version spécifique.</block>
   <block id="5745e537e1e3a11e00e50f67820a46a1" category="admonition">La vérification d'images Google Cloud est prise en charge sur le logiciel Cloud Volumes ONTAP version 9.13.0 ou ultérieure.</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">Gestion de vos dossiers de demande de support (aperçu)</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.</block>
@@ -4768,7 +4765,6 @@ Reportez-vous à la<block ref="9394861c48a8d6b1dd64975c2c0558db" category="inlin
   <block id="eb4c08b87f805a62e5af64a0b7c6fb5a" category="paragraph">BlueXP crée des groupes de sécurité Azure qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres groupes de sécurité.</block>
   <block id="9864c286612d20c437e06d1612a86f2d" category="summary">BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres groupes de sécurité.</block>
   <block id="87ade7583253b06f01182c970d65aacd" category="paragraph">BlueXP crée des règles de pare-feu Google Cloud qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez vous référer aux ports à des fins de test ou si vous préférez utiliser vos propres règles de pare-feu.</block>
-  <block id="f297f6161ef6c027c4e0cd622d4c9f53" category="paragraph">La fonctionnalité ARP est disponible uniquement pour les licences BYOL (d'une durée de 1 à 36 mois), sur les modèles de licence basés sur les nœuds et la capacité. Vous devez contacter votre représentant commercial NetApp pour acheter une nouvelle licence d'extension séparée à utiliser avec la fonctionnalité ARP de Cloud Volumes ONTAP.</block>
   <block id="9edc62814e18ad5dad22ed4f08602be6" category="admonition">L'utilisation de la fonction ARP avec les licences Cloud Volumes ONTAP basées sur les nœuds n'est pas actuellement reflétée dans le portefeuille digital. La possibilité d'afficher l'utilisation du protocole ARP basé sur les nœuds sera disponible dans une prochaine version sous le portefeuille digital.</block>
   <block id="bab89553328d9045a17e6cd7ae426ebe" category="paragraph">La configuration du protocole ARP pour les volumes s'effectue via ONTAP System Manager et l'interface de ligne de commande ONTAP.</block>
   <block id="35588fa7f53bdbd040bfa9c96c87bf3d" category="section-title">16 janvier 2024</block>
@@ -5113,7 +5109,6 @@ Sinon, « échec de vérification » s'affiche.</block>
   <block id="96bd5fbfab590d16a7e4f221d5efbe02" category="summary">Vous pouvez télécharger le fichier condensé d'images Azure sur le site du support NetApp.</block>
   <block id="c94570a50f1ce2dc5922d4591072ac73" category="paragraph">Le fichier de résumé d'image Azure peut être téléchargé à partir du<block ref="3725c06f412bedb14ffd610de312875d" category="inline-link-rx"></block>. Le téléchargement est au format tar.gz et contient des fichiers pour la vérification de la signature d'image.</block>
   <block id="d3722e7531fbbcdfe3ca8955ec26bed2" category="inline-link">Page produit Cloud Volumes ONTAP sur le site de support NetApp</block>
-  <block id="b529bb252fa6fa7ead3dbf955fc61b55" category="list-text">Accédez au<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> Et téléchargez la version du logiciel souhaitée dans la section Téléchargements.</block>
   <block id="27363a072eabeaf6d8f44930f92fec72" category="list-text">Dans la page de téléchargement de Cloud Volumes ONTAP, cliquez sur le bouton *download* du fichier de résumé d'images Azure pour télécharger le TAR. Fichier GZ.</block>
   <block id="697ac446273be6ad7395fbb843a37765" category="image-alt">capture d'écran Cloud Volumes ONTAP tar.gz</block>
   <block id="5b7b593c571013e3aad0faa73cd02227" category="list-text">Pour Linux et MacOS, vous devez effectuer les opérations suivantes pour obtenir les fichiers md5sum et sha256sum pour le fichier Azure image Digest téléchargé.</block>
@@ -5456,4 +5451,77 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="0e3986fb787ff1e55f1d15206f8b39d9" category="paragraph">En savoir plus sur ces fonctionnalités :</block>
   <block id="a7cf7c6eee288b3a91bcae2e6522aa7a" category="list-text"><block ref="a7cf7c6eee288b3a91bcae2e6522aa7a" category="inline-link-rx"></block></block>
   <block id="a100999de1d9ee815d7e13741acf163d" category="list-text"><block ref="a100999de1d9ee815d7e13741acf163d" category="inline-link-rx"></block></block>
+  <block id="2a57c4c48ac4fed7319e97ba358228fe" category="paragraph">La vérification des images Google Cloud est conforme aux exigences de sécurité améliorées de NetApp. Des modifications ont été apportées au script générant les images pour signer l'image en cours de route à l'aide de clés privées spécifiquement générées pour cette tâche. Vous pouvez vérifier l'intégrité de l'image Google Cloud à l'aide du résumé signé et du certificat public pour Google Cloud qui peut être téléchargé via<block ref="4af4717946461f54169780875a3b5a98" category="inline-link-rx"></block> pour une version spécifique.</block>
+  <block id="92d90815a32824fbae3b0e1cc8bbf0bf" category="inline-link">Communiqué à la clientèle : CPC-00589</block>
+  <block id="86cd1a1bf629b4d25461fa99ef89719f" category="admonition">NetApp déviendra bientôt la licence basée sur les nœuds, qui sera remplacée par des licences basées sur la capacité. Pour plus d'informations, reportez-vous à<block ref="f09d1138443525e41476e551a1dde747" category="inline-link-rx"></block>la .</block>
+  <block id="c4dbcb8cfcc96461b41d3911e9d893a3" category="paragraph">Les nœuds Cloud Volumes ONTAP requièrent un accès Internet sortant pour contacter les terminaux suivants au quotidien.</block>
+  <block id="760b52b586ad97b520ea1071bb2f9839" category="section-title">Terminaux Cloud Volumes ONTAP</block>
+  <block id="26d5c70af8a128834ad7ae9714c92190" category="paragraph">Cloud Volumes ONTAP requiert un accès Internet sortant pour contacter différents terminaux au quotidien.</block>
+  <block id="5d17fe0f5737fcf131ca89bbb8891fd6" category="inline-link">Afficher les points d'extrémité contactés depuis le connecteur</block>
+  <block id="13ba2efb4fd4a349dae9e57188cc7124" category="inline-link">Préparez la mise en réseau à l'aide de la console BlueXP</block>
+  <block id="1633003ddfc1abefd1ac5659e539f81c" category="paragraph">Les terminaux suivants sont spécifiques à Cloud Volumes ONTAP. Le connecteur contacte également plusieurs points de terminaison pour les opérations quotidiennes, ainsi que la console Web BlueXP . Reportez-vous à<block ref="0a8949f1130beab385180d157118cad5" category="inline-link-rx"></block> et<block ref="979bd9d5982d3343248cd50bd0e0a8e2" category="inline-link-rx"></block>.</block>
+  <block id="b8724da75fb917e992576b17378e66b3" category="cell">Terminaux</block>
+  <block id="b5d798aa448124265adcb904b18f9ca3" category="cell">Applicable à</block>
+  <block id="2579d10862aa7770a64b058fb84ce858" category="cell">Modes de déploiement BlueXP</block>
+  <block id="121183f21cee81ef502651a940e3847f" category="cell">Impact si le point final n'est pas disponible</block>
+  <block id="300f031c227ed1b4448a8bb51abec2bb" category="cell">\https://netapp-cloud-account.auth0.com</block>
+  <block id="c75f7811d70d17dbcd88e9d03752cbed" category="cell">Authentification</block>
+  <block id="465a9a40bd3237aa6bf5afe05fec84f5" category="paragraph">Utilisé pour l'authentification BlueXP .</block>
+  <block id="c1ff24e4d084f59ac94218efd028cbf7" category="cell">Modes standard et restreint.</block>
+  <block id="1f61140efd623e78c839d13f4b14b9f7" category="paragraph">L'authentification de l'utilisateur échoue et les services suivants restent indisponibles :</block>
+  <block id="b5f4badb0c4d684d68e611a2bcca58e8" category="list-text">Services Cloud Volumes ONTAP</block>
+  <block id="437fe4cf0ba94eac0cc14bbc45cbe74f" category="list-text">Services ONTAP</block>
+  <block id="43ede35f19d46142596efa16b1ee32c5" category="list-text">Protocoles et services proxy</block>
+  <block id="f08159fec04f3c63047352bdded5b5ff" category="cell">\https://keyvault-production-aks.vault.azure.net</block>
+  <block id="cce8a0225002a3fa8095ed8782f394a3" category="cell">Coffre-fort de clés</block>
+  <block id="3d41451698b9c800b8f44837a532d5db" category="cell">Utilisé pour récupérer la clé secrète du client à partir du coffre-fort de clés Azure afin de communiquer avec les compartiments S3 pour la gestion des métadonnées. Le service Cloud Volumes ONTAP utilise ce composant en interne.</block>
+  <block id="bcf88b7ababd6bfaff375da727117c30" category="cell">Modes standard, restreint et privé.</block>
+  <block id="f4308ae3bc914b647813d26d0551a6ba" category="cell">Les services Cloud Volumes ONTAP ne sont pas disponibles.</block>
+  <block id="648b7f3d6699305c92d33129e6ea00fe" category="cell">\https://cloudmanager.cloud.netapp.com/tenancy</block>
+  <block id="0bf0f769c264b3c3d3bf11d6925ef4df" category="cell">Location</block>
+  <block id="59e5578f7aa3f992a39e475101ba0652" category="cell">Utilisé pour récupérer les ressources Cloud Volumes ONTAP de la location BlueXP  afin d'autoriser les ressources et les utilisateurs.</block>
+  <block id="3ad6fd4f53574fb15275384634ba2522" category="cell">Les ressources Cloud Volumes ONTAP et les utilisateurs ne sont pas autorisés.</block>
+  <block id="7985dddd602dc43cc2554ebe73ac02fe" category="cell">\https://support.NetApp.com/aods/asupmessage \https://support.NetApp.com/asupprod/post/1.0/postAsup</block>
+  <block id="770d24223a90208fcc25adc73041cea4" category="cell">Permet d'envoyer des données de télémétrie AutoSupport à la prise en charge de NetApp.</block>
+  <block id="34a061380a1a8a5348641db2b91fa88d" category="cell">Les informations AutoSupport ne sont toujours pas transmises.</block>
+  <block id="a8d5c9f7d1799515e6cf2c0e6f2ee339" category="inline-link">Documentation AWS pour en savoir plus</block>
+  <block id="2ec9aedecc16507ab2c1b3dc7e9b69b7" category="cell">Le terminal commercial exact pour le service AWS (suffixe<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block> ) dépend de la région AWS que vous utilisez. Reportez-vous à la<block ref="64ce6654519d9f0f8ba928cfee473505" category="inline-link-rx"></block>.</block>
+  <block id="58e3bfbabf904de43a6a22aca509b0d8" category="list-text">CloudFormation</block>
+  <block id="9d4942b614d2d8583bdf09c75ba94f3d" category="list-text">Cloud de calcul élastique (EC2)</block>
+  <block id="5fe5bde89ae88d436f1f8ba2d3a64130" category="list-text">Gestion des identités et des accès</block>
+  <block id="b7f432287355914a89f542bcac4bbdb0" category="list-text">Service de gestion des clés (KMS)</block>
+  <block id="5ea79461f4d299dc0735dc824ffeb854" category="list-text">Service de jetons de sécurité (STS)</block>
+  <block id="ec646b7b2f70895a68ca206afb2d6108" category="list-text">Service de stockage simple (S3)</block>
+  <block id="02531491f0d0247a340a45ad3a6032bf" category="cell">Communication avec les services AWS.</block>
+  <block id="381e070260ac3be2e38deaa9e933f870" category="cell">Modes standard et privé.</block>
+  <block id="a0a2d7678c0bb085b4fa04adceb32cab" category="cell">Cloud Volumes ONTAP ne peut pas communiquer avec le service AWS pour effectuer des opérations BlueXP  spécifiques sur AWS.</block>
+  <block id="976c42b7559c0a758617695729b92226" category="inline-link">KIT DE DÉVELOPPEMENT LOGICIEL AWS</block>
+  <block id="ca6c1b8dd23dea0cefa49ccce01e7bf6" category="inline-link">Documentation Amazon</block>
+  <block id="6ac9d9128a75fd3ed101cf091ff7b6cd" category="cell">Le terminal gouvernemental exact pour le service AWS dépend de la région AWS que vous utilisez. Les noeuds finaux sont suffixés avec<block ref="3441ddb447d90616fe905a033c8acc75" prefix=" " category="inline-code"></block> et<block ref="9418634abcbc8743a13685b8ac2ee79b" prefix=" " category="inline-code"></block>. Pour <block ref="a5c675e1d96015bd51012d29ec2a093b" category="inline-link-rx"></block><block ref="681746188c4b856bd684247ebb305be7" category="inline-link-rx"></block>plus d'informations, reportez-vous aux sections  et.</block>
+  <block id="f01dcf4246a1f130eae10e4fb90b9fed" category="cell">Mode restreint.</block>
+  <block id="dab36868c1a7d7f560e209ac6adf5a57" category="section-title">Accès Internet sortant pour NetApp AutoSupport</block>
+  <block id="12fd9367eea1001986ee9a0f050035dd" category="paragraph">Les nœuds Cloud Volumes ONTAP requièrent un accès Internet sortant pour accéder aux terminaux externes pour diverses fonctions. Cloud Volumes ONTAP ne peut pas fonctionner correctement si ces terminaux sont bloqués dans des environnements soumis à des exigences de sécurité strictes.</block>
+  <block id="6486582264c3651aad9b7bb2237218eb" category="cell">Impact si indisponible</block>
+  <block id="7dfb843f052469a3cc66d13554feb0f4" category="cell">\https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net</block>
+  <block id="347be217cfefaa7b87992105cf67635d" category="cell">Régions publiques</block>
+  <block id="a72d71e82249aa5ef151ce0b35800a79" category="cell">Communication avec les services Azure.</block>
+  <block id="f03941b6eac25da119925fc0a459eab0" category="cell">Cloud Volumes ONTAP ne peut pas communiquer avec le service Azure pour effectuer des opérations BlueXP  spécifiques sur Azure.</block>
+  <block id="6d03c18e4e6ecfac89f686c621314d96" category="cell">\https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn</block>
+  <block id="f228f9d91d22049a9acd9986793c0cdd" category="cell">Région de la Chine</block>
+  <block id="49c0c7c0d67b204fb961e40a94b636eb" category="cell">\https://management.microsoftazure.de \https://login.microsoftonline.de \https://blob.core.cloudapi.de \https://core.cloudapi.de</block>
+  <block id="6008f2d5f116c898672557df36f86391" category="cell">Région Allemagne</block>
+  <block id="6e3cecb8c14fa9293d2b497e9f907cbd" category="cell">\https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net</block>
+  <block id="472e9a5d1518a4cd75c33a3972db2768" category="cell">Des États-Unis</block>
+  <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud</block>
+  <block id="08c0a2896fee0160c8083277678851f6" category="cell">Régions du ministère de la défense des États-Unis</block>
+  <block id="98179c4c799c9419b4ba6f502cd22783" category="cell">Mode de déploiement BlueXP </block>
+  <block id="7b8d76983ab84b3978e67a05e145f16e" category="cell">Utilisé pour récupérer la clé secrète du client à partir du coffre-fort de clés Azure afin de communiquer avec le compartiment S3 pour le traitement des métadonnées. Le service Cloud Volumes ONTAP utilise ce composant en interne.</block>
+  <block id="f235e1a740b92e59100dda0cf4e3d76b" category="cell">\https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1</block>
+  <block id="342804fdcc569427f0c6f21b0757653d" category="cell">Google Cloud (usage commercial).</block>
+  <block id="bec523fb694fd6fe80736494c1a45a30" category="cell">Communication avec les services Google Cloud.</block>
+  <block id="958a7d50dde5e697e4e9a16ba64515e6" category="cell">Cloud Volumes ONTAP ne peut pas communiquer avec le service Google Cloud pour effectuer des opérations BlueXP  spécifiques sur Google Cloud.</block>
+  <block id="12acb6948c0c5fe54c5651d99ff9fd04" category="list-text">Accédez au<block ref="5003136445bb4fa028e23c93c86053e6" category="inline-link-rx"></block> et téléchargez la version logicielle requise dans la section Téléchargements.</block>
+  <block id="c3288ce29225fc4244fa01d5aef04aa3" category="paragraph">La fonctionnalité ARP est disponible pour les abonnements BYOL et Marketplace, tant pour les licences basées sur des nœuds que pour les licences basées sur la capacité, sans frais supplémentaires. Contactez votre ingénieur commercial NetApp pour ajouter ARP à votre licence actuelle.</block>
+  <block id="5ee4faea784afb4b7750a3c91c073449" category="admonition">Si l'espace disponible est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données et les performances risquent d'être dégradées. Toute modification doit être effectuée avec précaution. En cas de doute, contactez le support NetApp pour obtenir de l'aide.</block>
+  <block id="becb0288ca83df315765f9f31eb5847f" category="paragraph">Cloud Volumes ONTAP doit être enregistré auprès du support NetApp afin de mettre à niveau le logiciel à l'aide de l'une des méthodes décrites sur cette page. Cela s'applique à la fois à PAYGO et à BYOL. Vous devrez <block ref="f7029dacbf10b8aa72bca74845a64729" category="inline-link-macro-rx"></block>, tandis que les systèmes BYOL sont enregistrés par défaut.</block>
 </blocks>

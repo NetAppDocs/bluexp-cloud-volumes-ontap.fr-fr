@@ -402,6 +402,9 @@ endif::gcp[]
 
 La licence basée sur les nœuds est le modèle de licence de la génération précédente qui vous permet d'obtenir une licence Cloud Volumes ONTAP par nœud. Ce modèle de licence n'est pas disponible pour les nouveaux clients. Le chargement par nœud a été remplacé par les méthodes de charge par capacité décrites ci-dessus.
 
+
+IMPORTANT: NetApp déviendra bientôt la licence basée sur les nœuds, qui sera remplacée par des licences basées sur la capacité. Pour plus d'informations, reportez-vous à https://mysupport.netapp.com/info/communications/CPC-00589.html["Communiqué à la clientèle : CPC-00589"^]la .
+
 Une licence basée sur les nœuds est toujours disponible pour les clients existants :
 
 * Si vous disposez d'une licence active, BYOL est uniquement disponible avec les renouvellements de licence.

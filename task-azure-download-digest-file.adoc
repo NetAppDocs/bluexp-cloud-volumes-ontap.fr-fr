@@ -17,7 +17,7 @@ summary: 'Vous pouvez télécharger le fichier condensé d"images Azure sur le s
 Le fichier de résumé d'image Azure peut être téléchargé à partir du https://mysupport.netapp.com/site/["Site de support NetApp"^]. Le téléchargement est au format tar.gz et contient des fichiers pour la vérification de la signature d'image.
 
 .Étapes
-. Accédez au https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Page produit Cloud Volumes ONTAP sur le site de support NetApp"^] Et téléchargez la version du logiciel souhaitée dans la section Téléchargements.
+. Accédez au https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/guideme-tab["Page produit Cloud Volumes ONTAP sur le site de support NetApp"^] et téléchargez la version logicielle requise dans la section Téléchargements.
 . Dans la page de téléchargement de Cloud Volumes ONTAP, cliquez sur le bouton *download* du fichier de résumé d'images Azure pour télécharger le TAR. Fichier GZ.
 +
 image::screenshot_cloud_volumes_ontap_tar.gz.png[capture d'écran Cloud Volumes ONTAP tar.gz]

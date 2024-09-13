@@ -313,7 +313,7 @@ Le ratio d'espace libre pour le Tiering des données définit la quantité d'esp
 Par exemple, vous pouvez choisir un espace libre inférieur à 10 % pour vérifier que vous utilisez la capacité achetée. BlueXP peut ensuite vous acheter des disques supplémentaires lorsque vous avez besoin de capacité supplémentaire (jusqu'à atteindre la limite de disques pour l'agrégat).
 
 
-CAUTION: Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données et vous risquez de subir une dégradation des performances. Toute modification doit être effectuée avec précaution. Si vous ne savez pas ce que vous devez faire, n'hésitez pas à contacter le service de support NetApp.
+CAUTION: Si l'espace disponible est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données et les performances risquent d'être dégradées. Toute modification doit être effectuée avec précaution. En cas de doute, contactez le support NetApp pour obtenir de l'aide.
 
 Le ratio est important pour les scénarios de reprise d'activité, car lors de la lecture des données à partir du magasin d'objets, Cloud Volumes ONTAP déplace les données vers des disques SSD/HDD pour de meilleures performances. Si l'espace est insuffisant, Cloud Volumes ONTAP ne peut pas déplacer les données. Prenez en compte ces changements pour répondre aux besoins de votre entreprise.
 
