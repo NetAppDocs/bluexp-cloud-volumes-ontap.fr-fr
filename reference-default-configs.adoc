@@ -155,10 +155,15 @@ ifdef::aws[]
 ** Disque gp2 540 Gio pour les données centrales
 
 
-* Pour les paires HA, deux volumes st1 EBS pour l'instance médiateur, qui sont environ 8 Gio et 4 Gio, et un disque gp3 supplémentaire de 140 Gio dans chaque nœud afin de contenir une copie des données root de l'autre nœud.
+* Pour les paires HA :
++
+** Deux volumes st1 EBS pour l'instance médiateur, l'un d'environ 8 Gio en tant que disque racine, et l'autre de 4 Gio en tant que disque de données
+** Un disque gp3 de 140 Gio dans chaque nœud pour contenir une copie des données root de l'autre nœud
 +
 
 NOTE: Dans certaines zones, le type de disque EBS disponible peut uniquement être gp2.
+
+
 
 * Un instantané EBS pour chaque disque d'initialisation et disque racine
 +
