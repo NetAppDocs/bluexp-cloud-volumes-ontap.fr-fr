@@ -34,7 +34,7 @@ La façon dont vous activez le stockage WORM dépend de la version de Cloud Volu
 
 === Version 9.10.1 et ultérieure
 
-Depuis Cloud Volumes ONTAP 9.10.1, vous pouvez activer ou désactiver WORM au niveau du volume.
+Depuis Cloud Volumes ONTAP 9.10.1, vous pouvez activer ou désactiver le mode WORM au niveau du volume.
 
 Lorsque vous créez un environnement de travail Cloud Volumes ONTAP, vous êtes invité à activer ou désactiver le stockage WORM :
 

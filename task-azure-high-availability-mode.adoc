@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-azure-high-availability-mode.html 
 keywords: high availability mode, EnableHighAvailabilityMode, action required, nfsv4 
-summary: Le mode haute disponibilité de Microsoft Azure doit être activé pour réduire les temps de basculement non planifiés et permettre la prise en charge de NFSv4 pour Cloud Volumes ONTAP. 
+summary: Le mode haute disponibilité de Microsoft Azure doit être activé pour réduire les temps de basculement non planifiés et pour activer la prise en charge de NFSv4 pour Cloud Volumes ONTAP. 
 ---
 = Activez le mode haute disponibilité dans Azure
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Le mode haute disponibilité de Microsoft Azure doit être activé pour
 
 
 [role="lead"]
-Le mode haute disponibilité de Microsoft Azure doit être activé pour réduire les temps de basculement non planifiés et permettre la prise en charge de NFSv4 pour Cloud Volumes ONTAP.
+Le mode haute disponibilité de Microsoft Azure doit être activé pour réduire les temps de basculement non planifiés et pour activer la prise en charge de NFSv4 pour Cloud Volumes ONTAP.
 
-À partir de la version 9.10.1 d'Cloud Volumes ONTAP, nous avons réduit le temps de basculement non planifié pour les paires HA Cloud Volumes ONTAP qui s'exécutent dans Microsoft Azure et ajouté la prise en charge de NFSv4. Pour que ces améliorations soient disponibles dans Cloud Volumes ONTAP, vous devez activer la fonctionnalité de haute disponibilité de votre abonnement Azure.
+À partir de la version 9.10.1 d'Cloud Volumes ONTAP, nous avons réduit le temps de basculement non planifié pour les paires HA Cloud Volumes ONTAP qui s'exécutent dans Microsoft Azure et ajouté la prise en charge de NFSv4. Pour que ces améliorations soient disponibles dans Cloud Volumes ONTAP, vous devez activer la fonctionnalité de haute disponibilité dans votre abonnement Azure.
 
 BlueXP vous invite à entrer ces informations dans un message action requise lorsque la fonction doit être activée sur un abonnement Azure.
 
@@ -31,7 +31,7 @@ Un utilisateur Azure disposant de privilèges « propriétaire » peut activer c
 
 .Étapes
 . https://docs.microsoft.com/en-us/azure/cloud-shell/quickstart["Accédez au shell cloud Azure depuis le portail Azure"^]
-. Enregistrez la fonction de mode haute disponibilité :
+. Enregistrez la fonctionnalité de mode haute disponibilité :
 +
 [source, azurecli]
 ----

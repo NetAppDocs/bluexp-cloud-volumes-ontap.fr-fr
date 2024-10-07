@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-ha-azure.html 
 keywords: high-availability, HA, concepts, understanding, overview, takeover, giveback, rpo, rto, nondisruptive, ha pairs, node, nodes, recovery point objective, recovery time objective, nas, nfs, cifs, iscsi, mpio, alua, failover, failure, azure, shared storage, active, passive, load balancer, storage accounts, page blobs 
-summary: 'Une paire haute disponibilité Cloud Volumes ONTAP offre une fiabilité exceptionnelle et la continuité de l"activité en cas de défaillances dans votre environnement cloud. Dans Azure, le stockage est partagé entre les deux nœuds.' 
+summary: 'Une paire haute disponibilité Cloud Volumes ONTAP assure une fiabilité exceptionnelle et la continuité de l"activité en cas de défaillances dans votre environnement cloud. Dans Azure, le stockage est partagé entre les deux nœuds.' 
 ---
 = Paires haute disponibilité dans Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Une paire haute disponibilité Cloud Volumes ONTAP offre une fiabilit�
 
 
 [role="lead"]
-Une paire haute disponibilité Cloud Volumes ONTAP offre une fiabilité exceptionnelle et la continuité de l'activité en cas de défaillances dans votre environnement cloud. Dans Azure, le stockage est partagé entre les deux nœuds.
+Une paire haute disponibilité Cloud Volumes ONTAP assure une fiabilité exceptionnelle et la continuité de l'activité en cas de défaillances dans votre environnement cloud. Dans Azure, le stockage est partagé entre les deux nœuds.
 
 
 

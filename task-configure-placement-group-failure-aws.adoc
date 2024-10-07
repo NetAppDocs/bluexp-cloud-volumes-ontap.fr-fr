@@ -14,7 +14,7 @@ summary: Cloud Volumes ONTAP utilise une liaison privée Azure pour les connexio
 
 
 [role="lead"]
-Cloud Volumes ONTAP échoue et annule les nouveaux déploiements des configurations haute disponibilité AWS dans une même zone de disponibilité, à chaque fois que la création du groupe de placement échoue. Si nécessaire, vous pouvez forcer la réussite des déploiements en configurant des groupes de placement pour contourner le processus de restauration lorsque la création échoue.
+Cloud Volumes ONTAP échoue et restaure les nouveaux déploiements des configurations AWS haute disponibilité (HA) dans une zone de disponibilité unique (AZ) en cas d'échec de la création du groupe de placement. Si nécessaire, vous pouvez forcer la réussite des déploiements en configurant des groupes de placement pour contourner le processus de restauration lorsque la création échoue.
 
 
 

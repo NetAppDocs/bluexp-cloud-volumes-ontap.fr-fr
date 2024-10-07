@@ -20,13 +20,25 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 7 octobre 2024
+
+
+
+=== Expérience utilisateur améliorée lors de la sélection de la version pour la mise à niveau
+
+À partir de cette version, lorsque vous essayez de mettre à niveau Cloud Volumes ONTAP à l'aide de la notification BlueXP , vous recevrez des conseils sur les versions par défaut, les dernières et les versions compatibles à utiliser. De plus, vous pouvez maintenant sélectionner le dernier correctif ou la version majeure compatible avec votre instance Cloud Volumes ONTAP, ou entrer manuellement une version pour la mise à niveau.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Mettez à niveau le logiciel Cloud Volumes ONTAP"^]
+
+
+
 == 9 septembre 2024
 
 
 
 === Les fonctionnalités WORM et ARP ne sont plus payantes
 
-Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront proposées avec les licences Cloud Volumes ONTAP sans frais supplémentaires. Le nouveau modèle de tarification s'applique aussi bien aux modèles BYOL, actuels ou encore aux modèles BYOL, ainsi qu'aux modèles PAYGO/Marketplace d'AWS, d'Azure et de Google Cloud. Les licences basées sur la capacité et sur les nœuds contiennent ARP et WORM pour toutes les configurations, y compris les paires à un seul nœud et haute disponibilité, sans frais supplémentaires.
+Les fonctionnalités intégrées de protection des données et de sécurité de WORM (Write Once Read Many) et ARP (protection anti-ransomware autonome) seront proposées avec les licences Cloud Volumes ONTAP sans frais supplémentaires. Le nouveau modèle de tarification s'applique aussi bien aux modèles BYOL, actuels ou encore aux modèles BYOL, ainsi qu'aux modèles PAYGO/Marketplace d'AWS, d'Azure et de Google Cloud. Les licences basées sur la capacité et sur les nœuds contiennent ARP et WORM pour toutes les configurations, y compris les paires à un seul nœud et les paires haute disponibilité, sans frais supplémentaires.
 
 La tarification simplifiée offre les avantages suivants :
 

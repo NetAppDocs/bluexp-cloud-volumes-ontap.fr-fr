@@ -307,7 +307,8 @@ Une autre façon d'effectuer des mises à niveau logicielles à l'aide d'une ima
 
 BlueXP affiche une notification dans les environnements de travail Cloud Volumes ONTAP lorsqu'une nouvelle version de Cloud Volumes ONTAP est disponible :
 
-image:screenshot_overview_upgrade.png["Capture d'écran : affiche la notification Nouvelle version disponible qui s'affiche dans la page Canvas après avoir sélectionné un environnement de travail."]
+
+NOTE: Avant de pouvoir mettre à niveau Cloud Volumes ONTAP via la notification BlueXP, vous devez disposer d'un compte sur le site de support NetApp.
 
 Vous pouvez lancer le processus de mise à niveau à partir de cette notification, qui automatise le processus en obtenant l'image logicielle à partir d'un compartiment S3, en installant l'image, puis en redémarrant le système.
 
@@ -323,21 +324,22 @@ Une notification apparaît dans l'onglet vue d'ensemble si une nouvelle version 
 +
 image:screenshot_overview_upgrade.png["Une capture d'écran qui montre « mettre à niveau maintenant ! » Sous l'onglet vue d'ensemble."]
 
-. Si une nouvelle version est disponible, cliquez sur *mettre à niveau maintenant!*
-+
-
-NOTE: Avant de pouvoir mettre à niveau Cloud Volumes ONTAP via la notification BlueXP, vous devez disposer d'un compte sur le site de support NetApp.
-
-. Sur la page Cloud Volumes ONTAP de mise à niveau, lisez le CLUF, puis sélectionnez *J'ai lu et approuvé le CLUF*.
-. Cliquez sur *Upgrade*.
-+
-
-NOTE: La page Cloud Volumes ONTAP de mise à niveau sélectionne par défaut la dernière version Cloud Volumes ONTAP disponible pour la mise à niveau. Si disponible, vous pouvez sélectionner des versions plus anciennes de Cloud Volumes ONTAP pour votre mise à niveau en cliquant sur *Sélectionner les versions plus anciennes*.
-Reportez-vous à la https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#supported-upgrade-paths["Liste des chemins de mise à niveau pris en charge"^] Pour connaître le chemin de mise à niveau approprié en fonction de votre version Cloud Volumes ONTAP actuelle.
-
+. Si vous souhaitez mettre à niveau la version installée de Cloud Volumes ONTAP, cliquez sur *mettre à niveau maintenant!* Par défaut, vous voyez la dernière version compatible pour la mise à niveau.
 +
 image:screenshot_upgrade_select_versions.png["Capture d'écran de la page mise à niveau de la version Cloud Volumes ONTAP."]
 
++
+Si vous souhaitez effectuer une mise à niveau vers une autre version, cliquez sur *Sélectionner autres versions*. Les dernières versions de Cloud Volumes ONTAP répertoriées sont également compatibles avec la version installée sur votre système. Par exemple, la version installée sur votre système est 9.12.1P3 et les versions compatibles suivantes sont disponibles :
+
++
+** 9.12.1P4 à 9.12.1P14
+** 9.13.1 et 9.13.1P1 vous voyez 9.13.1P1 comme la version par défaut pour la mise à niveau, et 9.12.1P13, 9.13.1P14, 9.13.1 et 9.13.1P1 comme les autres versions disponibles.
+
+
+. Vous pouvez également cliquer sur *toutes les versions* pour entrer une autre version vers laquelle vous souhaitez effectuer la mise à niveau (par exemple, le prochain correctif de la version installée). Pour obtenir un chemin de mise à niveau compatible de votre version Cloud Volumes ONTAP actuelle, reportez-vous link:task-updating-ontap-cloud.html#supported-upgrade-paths["Chemins de mise à niveau pris en charge"]à la section .
+. Cliquez sur *Enregistrer*, puis sur *appliquer*. image:screenshot_upgrade_other_versions.png["Capture d'écran affichant les versions disponibles pour la mise à niveau."]
+. Sur la page Cloud Volumes ONTAP de mise à niveau, lisez le CLUF, puis sélectionnez *J'ai lu et approuvé le CLUF*.
+. Cliquez sur *Upgrade*.
 . Pour vérifier l'état de la mise à niveau, cliquez sur l'icône Paramètres et sélectionnez *Timeline*.
 
 
