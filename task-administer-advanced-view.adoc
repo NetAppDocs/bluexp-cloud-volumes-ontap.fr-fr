@@ -82,11 +82,8 @@ Ouvrez un environnement de travail Cloud Volumes ONTAP et cliquez sur l'option v
 
 .Étapes
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
-. Sur la page Canevas, double-cliquez sur le nom d'un système Cloud Volumes ONTAP.
-. Dans le coin supérieur droit, cliquez sur *basculer vers la vue avancée*.
-+
-image:screenshot_advanced_view.png["Capture d'écran d'un environnement de travail Cloud Volumes ONTAP affichant l'option basculer vers la vue avancée."]
-
+. Sur la page Canevas, sélectionnez un système Cloud Volumes ONTAP.
+. Dans le panneau de droite, sous *Services*, recherchez *System Manager* et sélectionnez *Open*.
 . Si le message de confirmation apparaît, lisez-le et cliquez sur *Fermer*.
 . Utilisez System Manager pour gérer Cloud Volumes ONTAP.
 . Si nécessaire, cliquez sur *basculer vers la vue standard* pour revenir à la gestion standard via BlueXP.

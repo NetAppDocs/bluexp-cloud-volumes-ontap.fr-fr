@@ -55,7 +55,7 @@ image:screenshot_warning.gif["Capture d'écran : affiche un environnement de tra
 
 Vous pouvez sélectionner l'environnement de travail pour consulter le message.
 
-BlueXP inclut un avertissement d'expiration de licence dans le rapport Cloud Volumes ONTAP qui vous est envoyé par e-mail, si vous êtes un administrateur de compte et que vous avez activé l'option :
+BlueXP  inclut un avertissement d'expiration de licence dans le rapport Cloud Volumes ONTAP qui vous est envoyé par e-mail, si vous êtes un administrateur d'organisation ou de compte BlueXP  et que vous avez activé l'option :
 
 image:screenshot_cvo_report.gif["Capture d'écran du panneau de profil utilisateur affichant la case à cocher pour activer le rapport Cloud Volumes ONTAP par e-mail."]
 

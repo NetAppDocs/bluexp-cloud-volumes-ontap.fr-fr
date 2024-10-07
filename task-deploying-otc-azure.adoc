@@ -22,7 +22,7 @@ Vous avez besoin des éléments suivants pour créer un environnement de travail
 [[licensing]]
 * Un connecteur opérationnel.
 +
-** Vous devez avoir un https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Connecteur associé à votre espace de travail"^].
+** Vous devriez avoir un https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["Connecteur associé à votre projet ou espace de travail"^].
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["Vous devez être prêt à laisser le connecteur fonctionner en permanence"^].
 
 

@@ -117,7 +117,7 @@ Le tableau suivant répertorie les attributs de volume définis par BlueXP diff�
 1 000 pour cent
 
 
-NOTE: L'administrateur du compte peut modifier cette valeur à partir de la page Paramètres.
+NOTE: L'administrateur de l'organisation ou du compte BlueXP  peut modifier cette valeur à partir de la page Paramètres.
 
 
 

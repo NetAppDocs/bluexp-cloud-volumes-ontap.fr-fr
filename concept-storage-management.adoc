@@ -48,9 +48,6 @@ endif::aws[]
 
 BlueXP détermine où placer un nouveau volume en se intéressant à plusieurs facteurs : la taille maximale d'un agrégat, l'activation ou non du provisionnement fin et les seuils d'espace disponible pour les agrégats.
 
-
-TIP: L'administrateur du compte peut modifier les seuils d'espace libre à partir de la page *Paramètres*.
-
 ifdef::aws[]
 
 
@@ -91,7 +88,7 @@ Au lieu de laisser BlueXP gérer des agrégats pour vous, vous pouvez le faire v
 
 == Gestion de la capacité
 
-L'administrateur du compte peut choisir si BlueXP vous informe des décisions relatives à la capacité de stockage ou si BlueXP gère automatiquement les besoins en capacité pour vous.
+L'administrateur de compte ou d'organisation BlueXP  peut choisir si BlueXP  vous informe des décisions relatives à la capacité de stockage ou si BlueXP  gère automatiquement les besoins en capacité pour vous.
 
 Ce comportement est déterminé par le _Capacity Management mode_ sur un connecteur. Le mode de gestion de la capacité concerne tous les systèmes Cloud Volumes ONTAP gérés par ce connecteur. Si vous avez un autre connecteur, il peut être configuré différemment.
 
@@ -135,7 +132,7 @@ La gestion automatique de la capacité de BlueXP ne s'applique pas aux LUN. Lors
 
 === Gestion manuelle de la capacité
 
-Si l'administrateur de compte définit le mode gestion de la capacité sur manuel, BlueXP affiche les messages action requise lorsque des décisions de capacité doivent être prises. Les mêmes exemples décrits en mode automatique s'appliquent au mode manuel, mais il vous appartient d'accepter les actions.
+Si l'administrateur de l'organisation ou du compte BlueXP  définit le mode de gestion de la capacité sur manuel, BlueXP  affiche les messages action requise lorsque des décisions de capacité doivent être prises. Les mêmes exemples décrits en mode automatique s'appliquent au mode manuel, mais il vous appartient d'accepter les actions.
 
 
 

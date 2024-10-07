@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-overriding-cifs-locks.html 
 keywords: CIFS locks, azure maintenance, maintenance events, cifs sessions, storage failover, storage giveback, giveback 
-summary: 'L"administrateur du compte peut activer un paramètre dans BlueXP qui empêche tout problème lié au rétablissement du stockage Cloud Volumes ONTAP lors des événements de maintenance Azure. Lorsque vous activez ce paramètre, Cloud Volumes ONTAP vetoes les verrous CIFS et réinitialise les sessions CIFS actives.' 
+summary: 'L"administrateur de compte ou d"organisation BlueXP  peut activer un paramètre dans BlueXP  qui empêche les problèmes de rétablissement du stockage Cloud Volumes ONTAP pendant les événements de maintenance Azure. Lorsque vous activez ce paramètre, Cloud Volumes ONTAP vetoes les verrous CIFS et réinitialise les sessions CIFS actives.' 
 ---
 = Remplacement des verrouillages CIFS pour les paires haute disponibilité Cloud Volumes ONTAP dans Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'L"administrateur du compte peut activer un paramètre dans BlueXP qui 
 
 
 [role="lead"]
-L'administrateur du compte peut activer un paramètre dans BlueXP qui empêche tout problème lié au rétablissement du stockage Cloud Volumes ONTAP lors des événements de maintenance Azure. Lorsque vous activez ce paramètre, Cloud Volumes ONTAP vetoes les verrous CIFS et réinitialise les sessions CIFS actives.
+L'administrateur de compte ou d'organisation BlueXP  peut activer un paramètre dans BlueXP  qui empêche les problèmes de rétablissement du stockage Cloud Volumes ONTAP pendant les événements de maintenance Azure. Lorsque vous activez ce paramètre, Cloud Volumes ONTAP vetoes les verrous CIFS et réinitialise les sessions CIFS actives.
 
 .Description de la tâche
 Microsoft Azure planifie des événements de maintenance périodiques sur ses machines virtuelles. Lorsqu'un événement de maintenance se produit sur une paire haute disponibilité Cloud Volumes ONTAP, la paire haute disponibilité déclenche le basculement du stockage. Si des sessions CIFS sont actives au cours de cet événement de maintenance, les verrous sur les fichiers CIFS peuvent empêcher tout rétablissement du stockage.
