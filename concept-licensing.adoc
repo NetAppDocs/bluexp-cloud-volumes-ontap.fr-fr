@@ -23,7 +23,7 @@ Plusieurs options de licence sont disponibles pour Cloud Volumes ONTAP. Chacune 
 Des options de licence sont disponibles pour les nouveaux clients :
 
 Licences basées sur la capacité:: Payez plusieurs systèmes Cloud Volumes ONTAP sur votre compte NetApp grâce à la capacité provisionnée. Inclut la possibilité d'acheter des services de données cloud supplémentaires.
-Abonnement Keystone:: Service basé sur un abonnement avec paiement à l'utilisation qui offre une expérience de cloud hybride transparente pour les paires haute disponibilité.
+Abonnement Keystone:: Service d'abonnement flexible avec paiement à l'utilisation offrant une expérience de cloud hybride fluide pour les paires haute disponibilité.
 
 
 Le modèle de licence par nœud précédent reste disponible pour les clients qui ont déjà acheté une licence ou qui disposent d'un abonnement actif sur le marché.
@@ -121,7 +121,7 @@ endif::gcp[]
 
 ==== Points essentiels
 
-Payez en fonction de la capacité de Cloud Volumes ONTAP dans différentes configurations.
+Vous pouvez payer par capacité dans plusieurs configurations différentes :
 
 * Choisissez votre configuration Cloud Volumes ONTAP :
 +
@@ -130,6 +130,26 @@ Payez en fonction de la capacité de Cloud Volumes ONTAP dans différentes confi
 
 
 * Ajoutez des services de données cloud de NetApp à vos frais supplémentaires
+
+
+La licence est entièrement basée sur le type de volume créé dans les systèmes Cloud Volumes ONTAP :
+
+* Essentials Single Node : volumes en lecture/écriture créés sur un système Cloud Volumes ONTAP à l'aide d'un seul nœud ONTAP.
+* Essentials HA : des volumes en lecture/écriture utilisant deux nœuds ONTAP qui peuvent basculer les uns vers les autres pour un accès aux données sans interruption.
+* Essentials Secondary Single Node : volumes de type protection des données (en général, volumes de destination SnapMirror ou SnapVault en lecture seule) créés sur un système Cloud Volumes ONTAP à l'aide d'un seul nœud ONTAP.
++
+
+NOTE: Si un volume en lecture seule/DP devient un volume principal, BlueXP  le considère comme des données primaires et les coûts de facturation sont calculés en fonction de la durée pendant laquelle le volume était en mode lecture/écriture. Lorsque le volume est de nouveau en lecture seule/DP, BlueXP  le considère à nouveau comme des données secondaires et se charge en conséquence en utilisant la licence la mieux adaptée du portefeuille numérique.
+
+* Essentials Secondary HA : volumes de type protection des données (en général, volumes de destination SnapMirror ou SnapVault en lecture seule) créés sur un système Cloud Volumes ONTAP à l'aide de deux nœuds ONTAP qui peuvent basculer les uns vers les autres pour un accès aux données sans interruption.
+
+
+Notez ces points :
+
+* Frais minimum : chaque machine virtuelle de stockage assurant le service des données dispose d'au moins un volume principal (lecture-écriture), moyennant un supplément minimal de 4 Tio. Pour le package Essentials, ce tarif minimal ne s'applique pas aux machines virtuelles de stockage dotées uniquement de volumes secondaires (protection des données).
+* Surplus : si la capacité sous licence est dépassée, les excédents sont facturés aux tarifs du marché, avec une préférence pour l'utilisation de la capacité disponible auprès d'autres licences en premier.
+* FlexClone et FlexCache volumes : les volumes FlexClone ne sont pas facturés. Les volumes FlexCache source et de destination sont considérés comme des données primaires et sont facturés en fonction de l'espace provisionné.
+* Frais des paires HAUTE DISPONIBILITÉ : pour les paires haute disponibilité, seule la capacité provisionnée sur un nœud est facturée. Les données mises en miroir de manière synchrone sur le nœud partenaire ne sont pas facturées.
 
 
 
@@ -403,7 +423,7 @@ endif::gcp[]
 La licence basée sur les nœuds est le modèle de licence de la génération précédente qui vous permet d'obtenir une licence Cloud Volumes ONTAP par nœud. Ce modèle de licence n'est pas disponible pour les nouveaux clients. Le chargement par nœud a été remplacé par les méthodes de charge par capacité décrites ci-dessus.
 
 
-IMPORTANT: NetApp déviendra bientôt la licence basée sur les nœuds, qui sera remplacée par des licences basées sur la capacité. Pour plus d'informations, reportez-vous à https://mysupport.netapp.com/info/communications/CPC-00589.html["Communiqué à la clientèle : CPC-00589"^]la .
+IMPORTANT: NetApp mettra fin à la disponibilité des licences basées sur les nœuds sous peu. Une fois la disponibilité terminée, les licences basées sur les nœuds doivent être converties en licences basées sur la capacité. Pour plus d'informations, reportez-vous à https://mysupport.netapp.com/info/communications/CPC-00589.html["Communiqué à la clientèle : CPC-00589"^]la .
 
 Une licence basée sur les nœuds est toujours disponible pour les clients existants :
 

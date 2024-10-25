@@ -153,18 +153,18 @@ Pour les configurations NAS, les adresses IP des données peuvent migrer entre l
 
 === Zones locales AWS
 
-AWS local zones est un déploiement d'infrastructure où le stockage, le calcul, la base de données et d'autres services AWS spécifiques sont situés à proximité de grandes villes et de secteurs. Avec AWS local zones, vous pouvez rapprocher les services AWS, ce qui améliore la latence de vos workloads et maintient les bases de données en local.
+AWS local zones est un déploiement d'infrastructure où le stockage, le calcul, la base de données et d'autres services AWS spécifiques sont situés à proximité de grandes villes et de secteurs. Avec AWS local zones, vous pouvez rapprocher les services AWS, ce qui améliore la latence de vos workloads et maintient les bases de données en local. Sur Cloud Volumes ONTAP,
 
 Vous pouvez déployer une configuration AZ unique ou plusieurs dans les zones locales AWS.
 
 
-NOTE: Les zones locales AWS sont prises en charge lorsque BlueXP est utilisé en mode standard. À l'heure actuelle, les zones locales AWS ne sont pas prises en charge si BlueXP est utilisé en mode restreint ou en mode privé.
+NOTE: Les zones locales AWS sont prises en charge lors de l'utilisation de BlueXP  en mode standard et privé. À l'heure actuelle, les zones locales AWS ne sont pas prises en charge si BlueXP  est utilisé en mode restreint.
 
 
 
 ==== Exemples de configurations de zone locale AWS
 
-Voici des exemples de configurations :
+Cloud Volumes ONTAP prend uniquement en charge les déploiements haute disponibilité dans les zones locales AWS. Voici des exemples de configurations :
 
 * Zone de disponibilité unique : les nœuds de cluster et le médiateur se trouvent tous deux dans la même zone locale.
 * Plusieurs zones de disponibilité
@@ -184,9 +184,7 @@ Voici trois exemples de configuration :
 
 ==== Types de disques et d'instances pris en charge
 
-Le seul type de disque pris en charge est GP2.
-
-Les familles de types d'instances EC2 suivantes de tailles Xlarge à 4xlarge sont actuellement prises en charge :
+Le seul type de disque pris en charge est GP2. Les familles de types d'instances EC2 suivantes de tailles Xlarge à 4xlarge sont actuellement prises en charge :
 
 * M5
 * C5
@@ -195,7 +193,7 @@ Les familles de types d'instances EC2 suivantes de tailles Xlarge à 4xlarge son
 * R5d
 
 
-Pour plus d'informations sur les systèmes pris en chargelink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Types d'instances EC2 dans les zones locales"^], reportez-vous à la documentation AWS .
+Cloud Volumes ONTAP prend uniquement en charge ces configurations. La sélection d'un autre type de disque ou d'une instance EC2 dans la configuration AWS local zone pour Cloud Volumes ONTAP peut entraîner une panne de déploiement. Consultez la documentation AWS pour obtenir les informations les plus récentes et complètes sur le link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Types d'instances EC2 dans les zones locales"^].
 
 
 
