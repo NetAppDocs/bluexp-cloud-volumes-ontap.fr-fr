@@ -51,7 +51,7 @@ Pour plus d'informations sur les zones locales AWS avec déploiements HA, report
 
 À partir de cette version, lorsque vous essayez de mettre à niveau Cloud Volumes ONTAP à l'aide de la notification BlueXP , vous recevrez des conseils sur les versions par défaut, les dernières et les versions compatibles à utiliser. De plus, vous pouvez maintenant sélectionner le dernier correctif ou la version majeure compatible avec votre instance Cloud Volumes ONTAP, ou entrer manuellement une version pour la mise à niveau.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Mettez à niveau le logiciel Cloud Volumes ONTAP"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html#upgrade-from-bluexp-notifications["Mettez à niveau le logiciel Cloud Volumes ONTAP"]
 
 
 
@@ -72,8 +72,8 @@ La tarification simplifiée offre les avantages suivants :
 
 En savoir plus sur ces fonctionnalités :
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Renforcer la protection contre les attaques par ransomware"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Stockage WORM"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Renforcer la protection contre les attaques par ransomware"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Stockage WORM"]
 
 
 
@@ -292,20 +292,14 @@ Les modifications suivantes ont été introduites.
 
 === Prise en charge de nouvelles régions dans Azure
 
-
-
-==== Prise en charge des régions à zone de disponibilité unique
-
+.Prise en charge des régions à zone de disponibilité unique
 Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité uniques hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
 
 * Tel Aviv
 * Milan
 
 
-
-
-==== Prise en charge de plusieurs zones de disponibilité par région
-
+.Prise en charge de plusieurs zones de disponibilité par région
 Les régions suivantes prennent désormais en charge les déploiements de zones de disponibilité multiples hautement disponibles dans Azure pour Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures :
 
 * Inde centrale
