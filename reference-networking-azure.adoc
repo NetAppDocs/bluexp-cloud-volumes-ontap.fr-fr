@@ -225,8 +225,9 @@ TIP: Vous recherchez des informations sur le connecteur ? https://docs.netapp.co
 
 Lorsque vous créez un environnement de travail et choisissez un groupe de sécurité prédéfini, vous pouvez choisir d'autoriser le trafic dans l'un des éléments suivants :
 
-* *VNet sélectionné uniquement* : la source du trafic entrant est la plage de sous-réseau du vnet pour le système Cloud Volumes ONTAP et la plage de sous-réseau du vnet où réside le connecteur. Il s'agit de l'option recommandée.
+* *VNet sélectionné uniquement* : la source du trafic entrant est la plage de sous-réseau du réseau virtuel pour le système Cloud Volumes ONTAP et la plage de sous-réseau du réseau virtuel où réside le connecteur. Il s'agit de l'option recommandée.
 * *Tous les VNets* : la source du trafic entrant est la plage IP 0.0.0.0/0.
+* *Désactivé* : cette option restreint l'accès du réseau public à votre compte de stockage et désactive le Tiering des données pour les systèmes Cloud Volumes ONTAP. Cette option est recommandée si vos adresses IP privées ne doivent pas être exposées, même dans le même réseau virtuel, en raison des réglementations et politiques de sécurité.
 
 
 [cols="4*"]
@@ -311,12 +312,15 @@ Lorsque vous créez un environnement de travail et choisissez un groupe de sécu
 
 Lorsque vous créez un environnement de travail et choisissez un groupe de sécurité prédéfini, vous pouvez choisir d'autoriser le trafic dans l'un des éléments suivants :
 
-* *VNet sélectionné uniquement* : la source du trafic entrant est la plage de sous-réseau du vnet pour le système Cloud Volumes ONTAP et la plage de sous-réseau du vnet où réside le connecteur. Il s'agit de l'option recommandée.
+* *VNet sélectionné uniquement* : la source du trafic entrant est la plage de sous-réseau du réseau virtuel pour le système Cloud Volumes ONTAP et la plage de sous-réseau du réseau virtuel où réside le connecteur. Il s'agit de l'option recommandée.
 * *Tous les VNets* : la source du trafic entrant est la plage IP 0.0.0.0/0.
 
 
 
 NOTE: Les systèmes HAUTE DISPONIBILITÉ disposent de règles entrantes moins strictes que les systèmes à un seul nœud, car le trafic des données entrantes transite par Azure Standard Load Balancer. Pour cette raison, le trafic provenant du Load Balancer doit être ouvert, comme indiqué dans la règle AllowAzureLoadBalancerInBound.
+
+* *Désactivé* : cette option restreint l'accès du réseau public à votre compte de stockage et désactive le Tiering des données pour les systèmes Cloud Volumes ONTAP. Cette option est recommandée si vos adresses IP privées ne doivent pas être exposées, même dans le même réseau virtuel, en raison des réglementations et politiques de sécurité.
+
 
 [cols="4*"]
 |===

@@ -38,15 +38,15 @@ Les régions AWS plus récentes doivent être activées avant de pouvoir créer 
 
 === Choisissez une zone locale prise en charge
 
-Cloud Volumes ONTAP est pris en charge dans certaines zones locales AWS, y compris à Singapour. La sélection d'une zone locale est facultative.
+La sélection d'une zone locale est facultative. Cloud Volumes ONTAP est pris en charge dans certaines zones locales AWS, y compris à Singapour. Cloud Volumes ONTAP dans AWS prend uniquement en charge le mode haute disponibilité (HA) dans une zone de disponibilité unique. Les déploiements à un seul nœud ne sont pas pris en charge.
+
+
+NOTE: Cloud Volumes ONTAP ne prend pas en charge le Tiering des données et le Tiering dans le cloud dans les zones locales AWS. De plus, les zones locales avec des instances qui n'ont pas été qualifiées pour Cloud Volumes ONTAP ne sont pas prises en charge. Par exemple, Miami, qui n'est pas disponible en tant que zone locale, car seules les instances Gen6 ne sont pas prises en charge et non qualifiées.
 
 link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Afficher la liste complète des zones locales"^].
 Les zones locales doivent être activées avant de pouvoir créer et gérer des ressources dans ces zones.
 
 link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Découvrez comment activer une zone locale"^].
-
-
-NOTE: Phoenix n'est pas une zone locale prise en charge.
 
 
 
@@ -102,7 +102,7 @@ Notez que Cloud Volumes ONTAP prend en charge la fonctionnalité Amazon EBS Elas
 * _Les disques durs à débit optimisé (st1)_ sont destinés aux charges de travail fréquemment utilisées qui exigent un débit rapide et constant à un prix inférieur.
 +
 
-NOTE: Il n'est pas recommandé de faire le Tiering des données dans le stockage objet lors de l'utilisation de disques durs à débit optimisé (st1).
+NOTE: Le Tiering des données vers AWS S3 n'est pas disponible dans les zones locales AWS en raison d'un manque de connectivité.
 
 
 

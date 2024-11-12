@@ -44,10 +44,10 @@ Le portefeuille digital BlueXP vous indique la capacité totale consommée de vo
 .Étapes
 . Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, conservez *licences basées sur la capacité* sélectionné.
-. Consultez le récapitulatif des packages, qui indique la capacité consommée, la capacité totale préallouée et la capacité totale PAYGO.
+. Consultez le récapitulatif des packages, qui indique la capacité consommée, la capacité préallouée totale et la capacité de paiement basé sur l'utilisation (PAYGO).
 +
 ** _Capacité totale consommée_ correspond à la capacité totale provisionnée de tous les systèmes Cloud Volumes ONTAP de votre compte NetApp. La charge dépend de la taille de provisionnement de chaque volume, peu importe l'espace local, utilisé, stocké ou effectif au sein du volume.
-** _La capacité totale préallouée_ correspond à la capacité totale sous licence (BYOL ou contrat Marketplace) que vous avez achetée auprès de NetApp.
+** _La capacité totale préallouée_ correspond à la capacité totale sous licence (BYOL) ou contrat Marketplace) que vous avez achetée auprès de NetApp.
 ** _Total PAYGO_ est la capacité totale provisionnée via des abonnements Cloud Marketplace. Le chargement via PAYGO n'est utilisé que si la capacité consommée est supérieure à la capacité sous licence ou si aucune licence BYOL n'est disponible dans le portefeuille digital BlueXP.
 +
 Voici un exemple de résumé des packages Cloud Volumes ONTAP dans le portefeuille digital BlueXP :

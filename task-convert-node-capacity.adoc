@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: task-convert-node-capacity.html 
+keywords: license conversion, convert node-based to capacity based, by-node to by-capacity, bluexp license conversion for node based 
+summary: 'Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité à l"aide de l"outil de conversion de licences BlueXP .' 
+---
+= Conversion des licences basées sur les nœuds en licences basées sur la capacité
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité à l'aide de l'outil de conversion de licences BlueXP .
+
+Pour les engagements annuels ou à long terme, NetApp vous recommande de contacter votre représentant NetApp avant la date de fin de disponibilité (11 novembre 2024) ou d'expiration de la licence afin de vérifier que les conditions préalables à la transition sont bien remplies. Si vous ne disposez pas d'un contrat à long terme pour un nœud Cloud Volumes ONTAP et que vous exécutez votre système avec un abonnement PAYGO (paiement basé sur l'utilisation) à la demande, vous devez planifier votre conversion avant la fin du support (EOS) du 31 décembre 2024. Dans les deux cas, vous devez vous assurer que votre système répond aux exigences avant d'utiliser l'outil de conversion de licences BlueXP  pour une transition transparente.
+
+Pour plus d'informations sur la fin de disponibilité et l'EOS, reportez-vous à link:concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"]la section .
+
+.Description de la tâche
+* Lorsque vous utilisez l'outil de conversion de licences, la transition d'un modèle de licence basé sur les nœuds à un modèle de licence basé sur la capacité s'effectue en ligne et sur place. De cette façon, vous n'avez plus besoin de migrer des données ou de provisionner des ressources cloud supplémentaires.
+* Elles permettent non seulement de réaliser des opérations sans interruption, mais elles ne provoquent aucune interruption du service ni aucune interruption des applications.
+* Les données de compte et d'application de votre système Cloud Volumes ONTAP restent intactes.
+* Les ressources cloud sous-jacentes ne restent pas affectées après la conversion.
+* L'outil de conversion de licences prend en charge tous les types de déploiement, tels qu'un seul nœud, la haute disponibilité (HA) dans une zone de disponibilité unique (AZ), la haute disponibilité dans plusieurs zones de disponibilité, BYOL (Bring Your Own License) et PAYGO.
+* L'outil prend en charge toutes les licences basées sur les nœuds en tant que source et toutes les licences basées sur la capacité en tant que destination. Par exemple, si vous disposez d'une licence basée sur des nœuds PAYGO Standard, vous pouvez la convertir en licence basée sur la capacité BYOL.
+* La conversion est prise en charge pour tous les fournisseurs cloud, AWS, Azure et Google Cloud.
+* Après la conversion, le numéro de série de la licence basée sur les nœuds sera remplacé par un format basé sur la capacité. Cela fait partie de la conversion et est indiqué sur votre compte du site de support NetApp (NSS).
+* Lorsque vous passez au modèle basé sur la capacité, vos données continuent d'être conservées au même emplacement que le modèle de licence basée sur les nœuds. Cette approche ne garantit aucune perturbation du placement des données et respecte les principes de souveraineté des données tout au long de la transition.
+
+
+.Avant de commencer
+* Vous devez disposer d'un compte NSS avec accès client ou accès administrateur.
+* Votre compte NSS doit être enregistré avec les informations d'identification de l'utilisateur BlueXP .
+* L'environnement de travail doit être lié au compte NSS avec accès client ou accès administrateur.
+* Vous devez disposer d'une licence basée sur la capacité valide, qu'il s'agisse d'une licence BYOL ou d'un abonnement Marketplace.
+* Une licence basée sur la capacité doit être disponible sur le compte BlueXP . Cette licence peut être un abonnement Marketplace ou une offre privée BYOL dans le portefeuille digital BlueXP .
+* Avant de sélectionner un package de destination, vous devez comprendre les critères suivants :
++
+** Si le compte dispose d'une licence BYOL basée sur la capacité, le package de destination sélectionné doit correspondre aux licences basées sur la capacité BYOL du compte :
++
+*** Lorsque `Professional` est sélectionné comme pack de destination, le compte doit disposer d'une licence BYOL avec un pack professionnel :
+*** Lorsque `Essentials` est sélectionné comme pack de destination, le compte doit disposer d'une licence BYOL avec le pack Essentials.
+*** Lorsque `Optimized` est sélectionné comme pack de destination, le compte doit disposer d'une licence BYOL avec le pack optimisé.
+
+
+** Si le package de destination ne correspond pas à la disponibilité de licence BYOL du compte, cela implique que la licence basée sur la capacité peut ne pas inclure le package sélectionné. Dans ce cas, vous serez facturé via votre abonnement Marketplace.
+** S'il n'existe pas de licence BYOL basée sur la capacité, mais uniquement un abonnement Marketplace, assurez-vous que le pack sélectionné est inclus dans votre abonnement basé sur la capacité.
+** Si votre licence basée sur la capacité disponible est insuffisante et si vous avez un abonnement Marketplace pour facturer l'utilisation de la capacité supplémentaire, vous serez facturé pour la capacité supplémentaire via votre abonnement Marketplace.
+** Si votre licence basée sur la capacité n'est pas suffisante et que vous ne disposez pas d'un abonnement Marketplace pour facturer l'utilisation de la capacité supplémentaire, la conversion ne peut pas avoir lieu. Vous devez ajouter un abonnement Marketplace pour facturer la capacité supplémentaire ou étendre la capacité disponible à votre licence actuelle.
+** Si le package de destination n'est pas aligné sur la disponibilité de la licence BYOL du compte et si la licence basée sur la capacité existante n'est pas suffisante, l'abonnement Marketplace vous facturera.
+
+
+
+
+
+NOTE: Si l'une de ces exigences n'est pas remplie, la conversion de licence ne se produit pas. Dans certains cas, la licence peut être convertie, mais ne peut pas être utilisée. Cliquez sur l'icône d'information pour identifier les problèmes et prendre des mesures correctives.
+
+.Étapes
+. Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail pour lequel vous souhaitez modifier le type de licence.
+. Dans l'onglet vue d'ensemble, cliquez sur le panneau fonctions.
+. Vérifiez l'icône en forme de crayon en regard de *méthode de chargement*. Si la méthode de charge de votre système est `Node Based`, vous pouvez la convertir en charge par capacité.
++
+
+TIP: L'icône est désactivée si votre système Cloud Volumes ONTAP est déjà chargé par la capacité ou si l'une des conditions requises n'est pas remplie.
+
+. Sur l'écran *convertir les licences basées sur les nœuds en licences basées sur la capacité*, vérifiez le nom de l'environnement de travail et les détails de la licence source.
+. Sélectionnez le package de destination pour la conversion de la licence existante :
++
+** Essentiel. La valeur par défaut est `Essentials`.
+** Professionnel
+
+
+
+
+ifdef::azure[]
+
+* Optimisé (pour Azure)
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Optimisé (pour Google Cloud)
+
+
+endif::gcp[]
+
+. Si vous disposez d'une licence BYOL, vous pouvez cocher la case pour supprimer la licence basée sur le nœud du portefeuille digital BlueXP  après la conversion. Si la conversion n'est pas terminée, même si vous cochez cette case, la licence ne sera pas supprimée du portefeuille numérique. Si vous disposez d'un abonnement Marketplace, cette option n'est pas disponible.
+. Cochez la case pour confirmer que vous comprenez les implications du changement, puis cliquez sur *Continuer*.
+
+
+.Une fois que vous avez terminé
+Consultez le nouveau numéro de série de licence et vérifiez les modifications apportées au portefeuille digital BlueXP .

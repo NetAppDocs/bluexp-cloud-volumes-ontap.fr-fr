@@ -14,7 +14,7 @@ summary: 'Chaque système Cloud Volumes ONTAP associé à un modèle BYOL basé 
 
 
 [role="lead"]
-Chaque système Cloud Volumes ONTAP associé à un modèle BYOL basé sur des nœuds doit disposer d'une licence système installée avec un abonnement actif. BlueXP simplifie le processus en gérant les licences pour vous et en affichant un avertissement avant leur expiration.
+Chaque système Cloud Volumes ONTAP doté d'une licence BYOL (Bring Your Own License) basée sur le nœud doit être doté d'une licence système installée avec un abonnement actif. BlueXP simplifie le processus en gérant les licences pour vous et en affichant un avertissement avant leur expiration.
 
 
 TIP: Une licence basée sur des nœuds est la génération précédente (BYOL) pour Cloud Volumes ONTAP. Une licence basée sur les nœuds est disponible uniquement pour les renouvellements de licence.

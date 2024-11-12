@@ -120,4 +120,4 @@ Le basculement, la resynchronisation et le rétablissement du stockage sont auto
 
 == Configurations de stockage
 
-Vous pouvez utiliser une paire HA comme configuration active-active, dans laquelle les deux nœuds servent les données aux clients ou comme configuration active-passive, dans laquelle le nœud passif répond aux demandes de données uniquement s'il a pris en charge le stockage pour le nœud actif.
+Vous pouvez utiliser une paire haute disponibilité en tant que configuration actif-actif, dans laquelle les deux nœuds fournissent des données aux clients ou en tant que configuration actif-passif, dans laquelle le nœud passif ne répond aux demandes de données que s'il a pris le relais du stockage du nœud actif.

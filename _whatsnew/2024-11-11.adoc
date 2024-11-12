@@ -1,0 +1,53 @@
+= Fin de disponibilité des licences basées sur les nœuds
+:allow-uri-read: 
+
+
+
+
+=== Fin de disponibilité des licences basées sur les nœuds
+
+NetApp a prévu la fin de disponibilité et la fin de prise en charge des licences basées sur des nœuds Cloud Volumes ONTAP. Depuis le 11 novembre 2024, la disponibilité limitée des licences basées sur les nœuds a pris fin. La prise en charge des licences basées sur les nœuds prend fin le 31 décembre 2024. Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité en utilisant l'outil de conversion de licences BlueXP .
+
+Pour les engagements annuels ou à long terme, NetApp vous recommande de contacter votre représentant NetApp avant la date de fin de disponibilité ou d'expiration de licence afin de vous assurer que les conditions préalables à la transition sont bien remplies. Si vous ne disposez pas d'un contrat à long terme pour un nœud Cloud Volumes ONTAP et que vous exécutez votre système avec un abonnement PAYGO à la demande, il est important de planifier votre conversion avant la date de fin de support. Pour les contrats à long terme et les abonnements PAYGO, vous pouvez utiliser l'outil de conversion de licences BlueXP  pour une conversion transparente.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Conversion des licences basées sur les nœuds en licences basées sur la capacité"^]
+
+
+
+=== Suppression des déploiements basés sur des nœuds de BlueXP 
+
+La possibilité de déployer des systèmes Cloud Volumes ONTAP à l'aide de licences basées sur les nœuds est obsolète sur BlueXP . Sauf dans certains cas particuliers, vous ne pouvez pas utiliser de licences basées sur les nœuds pour les déploiements Cloud Volumes ONTAP, quel que soit le fournisseur de cloud.
+
+NetApp reconnaît les exigences de licence uniques suivantes en conformité avec les obligations contractuelles et les besoins opérationnels. Dans les situations suivantes, elle continue de prendre en charge les licences basées sur des nœuds :
+
+* Clients USPS
+* Déploiements en mode privé
+* Déploiements de Cloud Volumes ONTAP dans AWS dans la région chinoise
+* Si vous disposez d'une licence BYOL (Bring Your Own License) valide et non expirée par nœud
+
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^]
+
+
+
+=== Ajout d'un Tier inactif pour les données Cloud Volumes ONTAP sur le stockage Azure Blob
+
+BlueXP  vous permet désormais de sélectionner un Tier à froid pour stocker les données de Tier de capacité inactives sur Azure Blob Storage. L'ajout du Tier inactif aux tiers actifs et inactifs existants vous offre une option de stockage plus économique et une meilleure rentabilité.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html#data-tiering-in-azure["Tiering des données dans Azure"^]
+
+
+
+=== Option pour restreindre l'accès public au compte de stockage pour Azure
+
+Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Règles de groupe de sécurité"^].
+
+
+
+=== Activation WORM après le déploiement de Cloud Volumes ONTAP
+
+Vous pouviez activer le stockage WORM en créant un environnement de travail Cloud Volumes ONTAP sur BlueXP . BlueXP  vous offre désormais la possibilité d'activer WORM dans un environnement de travail même si WORM n'y a pas été activé lors de la création. Après l'avoir activée, vous ne pouvez pas désactiver WORM.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html#enabling-worm-on-a-cloud-volumes-ontap-working-environment["Activation de WORM dans un environnement de travail Cloud Volumes ONTAP"^]

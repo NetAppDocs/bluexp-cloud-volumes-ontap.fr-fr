@@ -46,9 +46,9 @@ Si vous ne pouvez pas modifier le type d'instance des instances c4, m4 ou r4, re
 +
 image::screenshot_features_instance_type.png[400]
 
-+
-.. Si vous utilisez une licence PAYGO basée sur des nœuds, vous pouvez choisir une autre licence et un autre type d'instance en cliquant sur l'icône en forme de crayon en regard de *Type de licence*.
 
+
+Si vous utilisez une licence PAYGO (Node-based Pay As You Go), vous pouvez choisir une autre licence et un autre type d'instance en cliquant sur l'icône en forme de crayon en regard de *License type*.
 
 . Choisissez un type d'instance, cochez la case pour confirmer que vous comprenez les implications de la modification, puis cliquez sur *Modifier*.
 

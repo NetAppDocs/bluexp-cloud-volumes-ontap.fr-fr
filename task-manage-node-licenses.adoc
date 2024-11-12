@@ -18,7 +18,7 @@ Gérez les licences basées sur les nœuds dans le portefeuille digital BlueXP p
 
 _Les licences par nœud_ sont le modèle de licence de génération précédente (et non disponible pour les nouveaux clients) :
 
-* Licences BYOL achetées auprès de NetApp
+* BYOL (Bring Your Own License), acheté auprès d'NetApp
 * Des abonnements avec facturation à l'utilisation (PAYGO) à partir du marché de votre fournisseur cloud
 
 
@@ -231,3 +231,6 @@ https://docs.netapp.com/us-en/bluexp-replication/task-replicating-data.html["Dé
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deleting-working-env.html["Découvrez comment supprimer un environnement de travail Cloud Volumes ONTAP"].
 
 
+
+.Rubrique associée
+lien : link:concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"] link:task-convert-node-capacity.html["Conversion des licences basées sur les nœuds en licences basées sur la capacité"]

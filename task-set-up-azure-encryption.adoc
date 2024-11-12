@@ -100,7 +100,7 @@ Azure HA offre plusieurs zones de disponibilité avec des disques gérés partag
 
 
 |===
-Tous les comptes de stockage Azure pour Cloud Volumes ONTAP sont chiffrés à l'aide d'une clé gérée par le client. Pour chiffrer vos comptes de stockage pendant leur création, vous devez créer et fournir l'ID de la ressource dans la demande de création CVO. Cela s'applique à tous les types de déploiements. Si vous ne le fournissez pas, les comptes de stockage seront toujours cryptés, mais BlueXP créera d'abord les comptes de stockage avec cryptage de clé géré par Microsoft, puis mettra à jour les comptes de stockage pour utiliser la clé gérée par le client.
+Tous les comptes de stockage Azure pour Cloud Volumes ONTAP sont chiffrés à l'aide d'une clé gérée par le client. Si vous souhaitez chiffrer vos comptes de stockage lors de leur création, vous devez créer et fournir l'ID de la ressource dans la demande de création de Cloud Volumes ONTAP. Cela s'applique à tous les types de déploiements. Si vous ne le fournissez pas, les comptes de stockage seront toujours cryptés, mais BlueXP créera d'abord les comptes de stockage avec cryptage de clé géré par Microsoft, puis mettra à jour les comptes de stockage pour utiliser la clé gérée par le client.
 
 
 

@@ -164,7 +164,11 @@ NOTE: Les zones locales AWS sont prises en charge lors de l'utilisation de BlueX
 
 ==== Exemples de configurations de zone locale AWS
 
-Cloud Volumes ONTAP prend uniquement en charge les déploiements haute disponibilité dans les zones locales AWS. Voici des exemples de configurations :
+Cloud Volumes ONTAP dans AWS prend uniquement en charge le mode haute disponibilité (HA) dans une zone de disponibilité unique. Les déploiements à un seul nœud ne sont pas pris en charge.
+
+Cloud Volumes ONTAP ne prend pas en charge le Tiering des données, le Tiering dans le cloud et les instances non qualifiées dans les zones locales AWS.
+
+Voici des exemples de configurations :
 
 * Zone de disponibilité unique : les nœuds de cluster et le médiateur se trouvent tous deux dans la même zone locale.
 * Plusieurs zones de disponibilité
@@ -193,7 +197,10 @@ Le seul type de disque pris en charge est GP2. Les familles de types d'instances
 * R5d
 
 
-Cloud Volumes ONTAP prend uniquement en charge ces configurations. La sélection d'un autre type de disque ou d'une instance EC2 dans la configuration AWS local zone pour Cloud Volumes ONTAP peut entraîner une panne de déploiement. Consultez la documentation AWS pour obtenir les informations les plus récentes et complètes sur le link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Types d'instances EC2 dans les zones locales"^].
+
+NOTE: Cloud Volumes ONTAP prend uniquement en charge ces configurations. La sélection de types de disques non pris en charge ou d'instances non qualifiées dans la configuration de la zone locale AWS peut entraîner l'échec du déploiement. Le Tiering des données vers AWS S3 n'est pas disponible dans les zones locales AWS en raison d'un manque de connectivité.
+
+Consultez la documentation AWS pour obtenir les informations les plus récentes et complètes sur le link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Types d'instances EC2 dans les zones locales"^].
 
 
 
