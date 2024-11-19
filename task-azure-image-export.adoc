@@ -67,23 +67,28 @@ South Central US          southcentralus       (US) South Central US
 ----
 
 
-. Consultez le nom de référence du type de déploiement VM correspondant dans le tableau ci-dessous.
+. Consultez les noms de référence des versions Cloud Volumes ONTAP et des types de déploiement VM correspondants dans le tableau ci-dessous.
 +
 Le nom de SKU est utilisé comme valeur pour la variable "skuName" lors de la définition de l'URN de l'image Marketplace.
 
 +
-Par exemple, les déploiements à un seul nœud doivent utiliser le nom de référence « ontap_cloud_byol ».
+Par exemple, tous les déploiements à un seul nœud avec Cloud Volumes ONTAP 9.15.0 doivent utiliser `ontap_cloud_byol` comme nom de référence.
 
 +
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-| Type de déploiement VM | Nom SKU 
 
 
-| Nœud unique | ontap_cloud_byol 
+| *Version Cloud Volumes ONTAP* | *Type de déploiement VM* | *Nom SKU* 
 
 
-| Haute disponibilité | ontap_cloud_byol_ha 
+| 9.15.1 et 9.16.0 | Tous les déploiements via BlueXP  | ONTAP_cloud 
+
+
+| 9.15.0 | Un seul nœud | ontap_cloud_byol 
+
+
+| 9.15.0 | Haute disponibilité | ontap_cloud_byol_ha 
 |===
 . Une fois la version ONTAP et l'image Azure Marketplace mappées, exportez le fichier VHD depuis Azure Marketplace via Azure Cloud Shell ou l'interface de ligne de commande Azure.
 
@@ -94,7 +99,7 @@ Par exemple, les déploiements à un seul nœud doivent utiliser le nom de réf�
 
 . À partir d'Azure Cloud Shell, exportez l'image Marketplace vers une vhd (image 2, par exemple 9150.01000024.05090105.vhd) et téléchargez-la sur votre machine locale (par exemple, une machine Linux ou un PC Windows).
 +
-.Cliquez pour afficher
+.Afficher les étapes
 [%collapsible]
 ====
 [source]
@@ -150,7 +155,7 @@ PS /home/user1> Remove-AzDisk -ResourceGroupName $diskRG -DiskName $diskName
 
 . Exportez l'image Marketplace vers une vhd via l'interface de ligne de commande Azure à partir d'une machine Linux locale.
 +
-.Cliquez pour afficher
+.Afficher les étapes
 [%collapsible]
 ====
 [source]

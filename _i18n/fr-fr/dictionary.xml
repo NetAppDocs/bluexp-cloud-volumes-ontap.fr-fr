@@ -4988,14 +4988,8 @@ Sinon, « échec de vérification » s'affiche.</block>
   <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">Ce nom de région est utilisé comme valeur pour la variable "locName" lors de la définition de l'URN de l'image Marketplace.</block>
   <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">Pour recevoir une liste des régions disponibles, entrez le<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> commande.</block>
   <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">Dans le tableau ci-dessous, le nom de la région est appelé le champ « Nom ».</block>
-  <block id="5bedba73a6050611e792e12c6329c1dd" category="list-text">Consultez le nom de référence du type de déploiement VM correspondant dans le tableau ci-dessous.</block>
   <block id="0abd8188de5678bc75e8b9d823375978" category="paragraph">Le nom de SKU est utilisé comme valeur pour la variable "skuName" lors de la définition de l'URN de l'image Marketplace.</block>
-  <block id="81d9630c492a3a15f34b8eb9c8e68a40" category="paragraph">Par exemple, les déploiements à un seul nœud doivent utiliser le nom de référence « ontap_cloud_byol ».</block>
-  <block id="393d71d9f35267234158498682014c6a" category="cell">Type de déploiement VM</block>
-  <block id="045ad270536218882ac46065d2a725a8" category="cell">Nom SKU</block>
-  <block id="5b1c50a57995120cd7360ea46184cdd7" category="cell">Nœud unique</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ontap_cloud_byol</block>
-  <block id="520b661a272c9e6f55f469cc9c24193d" category="cell">Haute disponibilité</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ontap_cloud_byol_ha</block>
   <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">Une fois la version ONTAP et l'image Azure Marketplace mappées, exportez le fichier VHD depuis Azure Marketplace via Azure Cloud Shell ou l'interface de ligne de commande Azure.</block>
   <block id="4192872f9b14e75090d91ad3b58d627e" category="section-title">Exportez le fichier VHD via Azure Cloud Shell sur le portail Azure</block>
@@ -5508,7 +5502,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="a4b4a128b8ea43df8551a18d37b0bfcd" category="section-title">Suppression des déploiements basés sur des nœuds de BlueXP </block>
   <block id="04b144a0be31129b4ac9a0f2751271d9" category="paragraph">La possibilité de déployer des systèmes Cloud Volumes ONTAP à l'aide de licences basées sur les nœuds est obsolète sur BlueXP . Sauf dans certains cas particuliers, vous ne pouvez pas utiliser de licences basées sur les nœuds pour les déploiements Cloud Volumes ONTAP, quel que soit le fournisseur de cloud.</block>
   <block id="11c97a8e296f1428a1d4c9a2253b1bfb" category="paragraph">NetApp reconnaît les exigences de licence uniques suivantes en conformité avec les obligations contractuelles et les besoins opérationnels. Dans les situations suivantes, elle continue de prendre en charge les licences basées sur des nœuds :</block>
-  <block id="57389c1aef6c1264d9ad4bbe74640b2e" category="list-text">Clients USPS</block>
   <block id="43b1a7bfd4243a44cf321f03e7878ffd" category="list-text">Déploiements en mode privé</block>
   <block id="bbef1435f544b56bbed0e1c536c2515e" category="list-text">Déploiements de Cloud Volumes ONTAP dans AWS dans la région chinoise</block>
   <block id="e6eb4bcca3ad358d710ea99dd5c577d1" category="list-text">Si vous disposez d'une licence BYOL (Bring Your Own License) valide et non expirée par nœud</block>
@@ -5646,4 +5639,14 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 novembre 2024</block>
   <block id="4eaed4ff800bc18688fff95b8dee6d1e" category="sidebar">Conversion des licences basées sur les nœuds</block>
   <block id="b8c05ba27f3f7ff64dca585f43789e57" category="sidebar">Licences dans Cloud Volumes ONTAP</block>
+  <block id="500984bae07aedc6c662b31a3039d462" category="list-text">Aux États-Unis</block>
+  <block id="c1c1c782703499ca8577569137202bf1" category="list-text">Consultez les noms de référence des versions Cloud Volumes ONTAP et des types de déploiement VM correspondants dans le tableau ci-dessous.</block>
+  <block id="90069a3873814503a767070f04f3c286" category="paragraph">Par exemple, tous les déploiements à un seul nœud avec Cloud Volumes ONTAP 9.15.0 doivent utiliser<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> comme nom de référence.</block>
+  <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">*Version Cloud Volumes ONTAP*</block>
+  <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">*Type de déploiement VM*</block>
+  <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">*Nom SKU*</block>
+  <block id="30076581de6d5b6ad148c87cd00ad956" category="cell">9.15.1 et 9.16.0</block>
+  <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">Tous les déploiements via BlueXP </block>
+  <block id="273062411bc731be8028321277142365" category="cell">ONTAP_cloud</block>
+  <block id="23364a1412324aba4675105eacf57908" category="example-title">Afficher les étapes</block>
 </blocks>

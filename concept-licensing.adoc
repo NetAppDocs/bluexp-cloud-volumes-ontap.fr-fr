@@ -276,7 +276,7 @@ Vous cesserez de recevoir le support NetApp après la date de fin de support, ju
 .Exclusions
 NetApp reconnaît que certaines situations nécessitent une attention particulière, et la fin de disponibilité et la fin de commercialisation des licences basées sur des nœuds ne s'appliquent pas aux cas suivants :
 
-* Clients USPS
+* Aux États-Unis
 * Déploiements en mode privé
 * Déploiements de Cloud Volumes ONTAP dans AWS dans la région chinoise
 

@@ -20,7 +20,7 @@ La possibilité de déployer des systèmes Cloud Volumes ONTAP à l'aide de lice
 
 NetApp reconnaît les exigences de licence uniques suivantes en conformité avec les obligations contractuelles et les besoins opérationnels. Dans les situations suivantes, elle continue de prendre en charge les licences basées sur des nœuds :
 
-* Clients USPS
+* Aux États-Unis
 * Déploiements en mode privé
 * Déploiements de Cloud Volumes ONTAP dans AWS dans la région chinoise
 * Si vous disposez d'une licence BYOL (Bring Your Own License) valide et non expirée par nœud
