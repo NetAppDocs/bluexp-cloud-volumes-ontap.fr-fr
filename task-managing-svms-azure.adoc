@@ -66,7 +66,7 @@ Copiez les adresses IP privées que vous venez de créer. Vous devrez spécifier
 
 === Paire HA
 
-La façon dont vous allouez des adresses IP pour une paire haute disponibilité dépend du protocole de stockage que vous utilisez.
+Pour les paires haute disponibilité (HA), vous devez accéder à chaque machine virtuelle de stockage (SVM) dans le cluster et créer les adresses IP correspondantes sous nic0 pour chaque SVM. La façon dont vous allouez des adresses IP pour une paire haute disponibilité dépend du protocole de stockage que vous utilisez. En mode HA, les utilisateurs doivent s'assurer que les adresses IP sont correctement configurées pour prendre en charge le basculement et la redondance, ce qui est essentiel au maintien de la haute disponibilité et de la fiabilité du système de stockage.
 
 [role="tabbed-block"]
 ====
@@ -78,7 +78,7 @@ Vous devez créer les adresses IP suivantes :
 
 * Une adresse IP pour l'accès aux LIF de données iSCSI depuis le nœud 1
 * Une adresse IP pour l'accès aux LIF de données iSCSI depuis le nœud 2
-* Une adresse IP facultative pour une LIF de gestion de VM de stockage (SVM
+* Une adresse IP facultative pour une LIF de management du SVM
 +
 Cette LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.
 
@@ -111,7 +111,7 @@ Vous devez créer les adresses IP suivantes :
 * Une adresse IP pour l'accès LIF de données NAS depuis le nœud 2
 * Une adresse IP facultative pour une LIF de gestion de VM de stockage (SVM
 +
-Les LIF iSCSI sont requises pour la communication DNS. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.
+Les LIF iSCSI sont requises pour la communication DNS même si le protocole iSCSI n'est pas utilisé. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.
 
 +
 Cette LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.
@@ -434,7 +434,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. Création de LIF de données :
+. Création de LIF de données. Dans cette étape, vous utilisez les adresses IP que vous avez allouées à l' link:task-managing-svms-azure.html#ha-pair["procédure précédente"] pour servir de LIFs de données.
 +
 .. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 1.
 +
@@ -519,7 +519,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. Création de LIF de données :
+. Création de LIF de données. Dans cette étape, vous utilisez les adresses IP que vous avez allouées à l' link:task-managing-svms-azure.html#ha-pair["procédure précédente"] pour servir de LIFs de données.
 +
 .. Utiliser la commande suivante pour créer une LIF NAS sur le nœud 1.
 +
@@ -535,7 +535,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. Créez des LIF iSCSI pour fournir une communication DNS :
+. Créez des LIF iSCSI pour fournir une communication DNS. Les LIF iSCSI sont requises pour la communication DNS même si le protocole iSCSI n'est pas utilisé.
 +
 .. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 1.
 +
@@ -629,7 +629,7 @@ vserver create -vserver <svm-name> -subtype default -rootvolume <root-volume-nam
 ----
 network route create -vserver <svm-name> -destination 0.0.0.0/0 -gateway <ip-of-gateway-server>
 ----
-. Création de LIF de données NAS :
+. Créez les LIFs de données NAS. Dans cette étape, vous utilisez les adresses IP que vous avez allouées à l' link:task-managing-svms-azure.html#ha-pair["procédure précédente"] pour servir de LIFs de données.
 +
 .. Utiliser la commande suivante pour créer une LIF NAS sur le nœud 1.
 +
@@ -645,7 +645,7 @@ network interface create -vserver <svm-name> -lif <lif-name> -service-policy def
 ----
 
 
-. Créez des LIF iSCSI pour fournir une communication DNS :
+. Créez des LIF iSCSI pour fournir une communication DNS. Les LIF iSCSI sont requises pour la communication DNS même si le protocole iSCSI n'est pas utilisé.
 +
 .. Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 1.
 +

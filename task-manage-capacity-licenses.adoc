@@ -199,7 +199,7 @@ Une licence basée sur la capacité est disponible sous la forme d'un _package_.
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["En savoir plus sur les packs de licences basés sur la capacité"^].
 
 .Description de la tâche
-* La modification du mode de facturation n'a aucun impact sur le paiement à l'utilisation, que ce soit via une licence d'abonnement NetApp (BYOL) ou sur le marché de votre fournisseur cloud.
+* Si vous changez de mode de facturation, cela n'a pas d'impact, que vous utilisiez une licence achetée sous NetApp (BYOL) ou un abonnement PAYGO (marché, paiement basé sur l'utilisation).
 +
 BlueXP tente toujours de facturer d'abord une licence. Si une licence n'est pas disponible, elle est imputée à un abonnement Marketplace. Aucune conversion n'est requise pour les abonnements BYOL à un Marketplace, et inversement.
 

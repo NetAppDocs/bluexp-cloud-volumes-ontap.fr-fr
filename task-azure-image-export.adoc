@@ -82,7 +82,7 @@ Par exemple, tous les déploiements à un seul nœud avec Cloud Volumes ONTAP 9.
 | *Version Cloud Volumes ONTAP* | *Type de déploiement VM* | *Nom SKU* 
 
 
-| 9.15.1 et 9.16.0 | Tous les déploiements via BlueXP  | ONTAP_cloud 
+| 9.15.1 | Tous les déploiements via BlueXP  | ONTAP_cloud 
 
 
 | 9.15.0 | Un seul nœud | ontap_cloud_byol 
