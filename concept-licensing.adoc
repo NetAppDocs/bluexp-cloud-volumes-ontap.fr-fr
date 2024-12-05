@@ -100,7 +100,7 @@ Vous pouvez payer par capacité dans plusieurs configurations différentes :
 * Ajoutez des services de données cloud de NetApp à vos frais supplémentaires
 
 
-Pour plus d'informations, voir link:licensing-charging.html["Facturation des licences basées sur la capacité"].
+Pour plus d'informations, voir link:concept-licensing-charging.html["En savoir plus sur les licences basées sur la capacité"].
 
 
 
