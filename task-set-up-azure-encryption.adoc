@@ -14,13 +14,13 @@ summary: Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP da
 
 
 [role="lead"]
-Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide de https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Chiffrement de service de stockage Azure"] Et elle est dotée d'une clé gérée par Microsoft. Mais vous pouvez utiliser votre propre clé de cryptage en suivant les étapes de cette page.
+Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure grâce à Azure Storage Service Encryption avec une clé gérée par Microsoft. Mais vous pouvez utiliser votre propre clé de cryptage en suivant les étapes de cette page.
 
 
 
 == Présentation du chiffrement des données
 
-Les données Cloud Volumes ONTAP sont automatiquement chiffrées dans Azure à l'aide de https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Chiffrement de service de stockage Azure"^]. L'implémentation par défaut utilise une clé gérée par Microsoft. Aucune configuration n'est requise.
+Les données Cloud Volumes ONTAP sont automatiquement chiffrées dans Azure à l'aide de https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Chiffrement de service de stockage Azure"^]. L'implémentation par défaut utilise une clé gérée par Microsoft. Aucune configuration n'est requise.
 
 Pour utiliser une clé gérée par le client avec Cloud Volumes ONTAP, vous devez effectuer les opérations suivantes :
 

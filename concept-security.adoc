@@ -93,7 +93,7 @@ ifdef::azure[]
 
 === Chiffrement de service de stockage Azure
 
-Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide de https://azure.microsoft.com/en-us/documentation/articles/storage-service-encryption/["Chiffrement de service de stockage Azure"^] Et elle est dotée d'une clé gérée par Microsoft.
+Les données sont automatiquement chiffrées sur Cloud Volumes ONTAP dans Azure à l'aide https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-overview["Chiffrement de service de stockage Azure"^] d'une clé gérée par Microsoft.
 
 Si vous préférez, vous pouvez utiliser vos propres clés de chiffrement. link:task-set-up-azure-encryption.html["Découvrez comment configurer Cloud Volumes ONTAP de manière à utiliser une clé gérée par le client dans Azure"].
 
