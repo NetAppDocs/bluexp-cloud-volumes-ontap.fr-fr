@@ -60,13 +60,7 @@ Cloud Volumes ONTAP prend en charge https://www.netapp.com/pdf.html?item=/media/
 
 NVE et NAE sont pris en charge par un gestionnaire de clés externe.
 
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef::azure[] endif::azure[] ifdef::gcp[] endif::gcp[]
 
 Par défaut, NetApp Aggregate Encryption (NAE) est activé sur les nouveaux agrégats après la configuration d'un gestionnaire de clés externe. Pour les nouveaux volumes qui ne font pas partie d'un agrégat NAE, NetApp Volume Encryption (NVE) est activé par défaut (par exemple, si des agrégats existants ont été créés avant de configurer un gestionnaire de clés externe).
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-set-up-licensing-google.html 
-keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go, keystone flex, keystone, digital wallet 
+keywords: freemium, professional, essentials, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, optimized, paygo, pay as you go, keystone flex, keystone, digital wallet 
 summary: 'Après avoir décidé de l"option de licence à utiliser pour Cloud Volumes ONTAP, quelques étapes sont nécessaires avant de choisir cette option de licence lors du déploiement d"un nouveau système.' 
 ---
 = Configurez la licence pour Cloud Volumes ONTAP dans Google Cloud
@@ -44,9 +44,9 @@ link:task-deploying-gcp.html["Consultez des instructions détaillées pour lance
 
 == Licence basée sur la capacité
 
-La licence basée sur la capacité vous permet de payer pour le Cloud Volumes ONTAP par Tio de capacité. Une licence basée sur la capacité est disponible sous la forme d'un _package_ : le package Essentials ou le pack Professional.
+La licence basée sur la capacité vous permet de payer pour le Cloud Volumes ONTAP par Tio de capacité. La licence basée sur la capacité est disponible sous la forme d'un _package_: Essentials, Optimized, ou Professional.
 
-Les packs Essentials et Professional sont disponibles avec les modèles de consommation suivants :
+Les packages Essentials, Optimized et Professional sont disponibles avec les modèles de consommation suivants :
 
 * Une licence (BYOL), achetée auprès de NetApp
 * Un abonnement à l'heure avec paiement à l'utilisation (PAYGO) à partir de Google Cloud Marketplace

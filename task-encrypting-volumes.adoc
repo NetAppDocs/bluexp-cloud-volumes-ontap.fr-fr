@@ -18,26 +18,4 @@ Cloud Volumes ONTAP prend en charge NetApp Volume Encryption (NVE) et NetApp Agg
 
 NVE et NAE sont pris en charge par un gestionnaire de clés externe.
 
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
-
-ifdef::aws[]
-
-endif::aws[]
-
-ifdef::azure[]
-
-endif::azure[]
-
-ifdef::gcp[]
-
-endif::gcp[]
+ifdef::aws[] endif::aws[] ifdef::azure[] endif::azure[] ifdef::gcp[] endif::gcp[] ifdef::aws[] endif::aws[] ifdef::azure[] endif::azure[] endif::azure[] ifdef::gcp[]
