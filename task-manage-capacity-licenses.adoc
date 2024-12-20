@@ -230,6 +230,8 @@ Notez également que le portefeuille digital BlueXP actualise la capacité conso
 
 Si une licence basée sur la capacité a expiré et n'est plus utilisée, vous pouvez la supprimer à tout moment.
 
+Pour en savoir plus sur ce qui arrive à vos données Cloud Volumes ONTAP à l'expiration ou au retrait de votre licence, reportez-vous à https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/FAQs_on_Cloud_Volumes_ONTAP_license_expiry["Cet article de la base de connaissance"^]la section .
+
 .Étapes
 . Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Dans l'onglet *Cloud Volumes ONTAP*, cliquez sur le menu d'action en regard de la licence et sélectionnez *Supprimer la licence*.
