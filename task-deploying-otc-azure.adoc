@@ -393,6 +393,10 @@ Pour obtenir de l'aide sur le choix d'une taille de disque, reportez-vous link:h
 +
 link:concept-data-tiering.html["En savoir plus sur le Tiering des données"^].
 
+** À partir de Cloud Volumes ONTAP 9.15.0P1, les blobs de page Azure ne sont plus pris en charge pour les nouveaux déploiements de paires haute disponibilité. Si vous utilisez actuellement des objets blobs de page Azure dans des déploiements de paires haute disponibilité existants, vous pouvez migrer vers des types d'instances de machine virtuelle plus récents dans les machines virtuelles Edsv4-series et les machines virtuelles Edsv5-series.
++
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs["En savoir plus sur les configurations prises en charge dans Azure"^].
+
 
 
 . *Vitesse d'écriture et WORM* :
