@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-tiering.html 
-keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements 
+keywords: tier, tiering, cold data, hot data, storage tiering, data tiering, fabricpool, fabric pool, s3 endpoint, endpoint, connection, performance tier, capacity tier, object store, blob tiering, container, inactive, tiering requirements, remove S3 bucket, delete S3 CVO bucket 
 summary: Vous pouvez réduire les coûts de stockage pour Cloud Volumes ONTAP en combinant un Tier de performance SSD ou HDD pour les données actives avec un Tier de capacité de stockage objet pour les données inactives. La hiérarchisation des données est optimisée par la technologie FabricPool. 
 ---
-= Tiering des données inactives vers un stockage objet à faible coût
+= Basculez les données inactives vers un stockage objet à faible coût
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Assurez-vous que vous disposez d'un agrégat sur lequel le Tiering est activé
 [role="quick-margin-para"]
-Le Tiering des données doit être activé sur un agrégat pour que le Tiering des données puisse être activé sur un volume. Vous devez connaître les exigences relatives aux nouveaux volumes et aux volumes existants. <<S'assurer que le Tiering est activé sur les agrégats,En savoir plus >>>>.
+Le Tiering des données doit être activé sur un agrégat pour que le Tiering des données puisse être activé sur un volume. Vous devez connaître les exigences relatives aux nouveaux volumes et aux volumes existants. <<Ensuring that tiering is enabled on aggregates,En savoir plus >>>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Choisissez une règle de Tiering lors de la création, de la modification ou de la réplication d'un volume
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ BlueXP vous invite à choisir une stratégie de hiérarchisation lorsque vous cr
 * Il n'est pas nécessaire de créer un magasin d'objets pour le Tier de capacité. BlueXP le fait pour vous.
 * Inutile d'activer le Tiering des données au niveau du système.
 +
-BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, <<Activation du Tiering des données après la mise en œuvre des exigences,tant qu'il n'y a aucun problème de connectivité ou d'autorisation>>. Après cela, il vous suffit d'activer le Tiering des données sur les volumes (et dans certains cas, <<S'assurer que le Tiering est activé sur les agrégats,sur les agrégats>>).
+BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, <<Enabling data tiering after implementing the requirements,tant qu'il n'y a aucun problème de connectivité ou d'autorisation>>. Après cela, il vous suffit d'activer le Tiering des données sur les volumes (et dans certains cas, <<Ensuring that tiering is enabled on aggregates,sur les agrégats>>).
 
 
 
@@ -193,7 +193,7 @@ endif::gcp[]
 
 
 
-=== Activation du Tiering des données après la mise en œuvre des exigences
+=== Activez le Tiering des données après avoir mis en œuvre les exigences
 
 BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, tant qu'il n'y a aucun problème de connectivité ou d'autorisation. Si vous n'avez pas mis en œuvre les exigences ci-dessus avant d'avoir créé le système, vous devrez activer manuellement la hiérarchisation via l'API ou ONTAP System Manager, ce qui crée le magasin d'objets.
 
@@ -202,7 +202,7 @@ NOTE: La possibilité d'activer le Tiering via l'interface utilisateur BlueXP se
 
 
 
-== S'assurer que le Tiering est activé sur les agrégats
+== Assurez-vous que le Tiering est activé sur les agrégats
 
 Le Tiering des données doit être activé sur un agrégat pour que le Tiering des données puisse être activé sur un volume. Vous devez connaître les exigences relatives aux nouveaux volumes et aux volumes existants.
 
@@ -236,7 +236,7 @@ Vous pouvez désormais activer le Tiering des données sur les volumes, nouveaux
 
 
 
-== Tiering des données à partir de volumes en lecture/écriture
+== Déplacer des données à partir de volumes en lecture/écriture
 
 Cloud Volumes ONTAP peut déplacer les données inactives sur des volumes en lecture/écriture vers un stockage objet économique, libérant ainsi le Tier de performance pour les données actives.
 
@@ -270,7 +270,7 @@ BlueXP crée un nouvel agrégat pour le volume si un agrégat sur lequel le Tier
 
 
 
-== Tiering des données à partir des volumes de protection des données
+== Déplacez les données à partir de volumes de protection des données
 
 Cloud Volumes ONTAP permet de hiérarchiser les données d'un volume de protection des données vers un niveau de capacité. Si vous activez le volume de destination, les données passent progressivement au niveau de performance tel qu'il est lu.
 
@@ -306,7 +306,7 @@ Pour plus d'informations sur les classes de stockage prises en charge, reportez-
 
 
 
-== Modification du ratio d'espace libre pour le Tiering des données
+== Modifiez le ratio d'espace libre pour le Tiering des données
 
 Le ratio d'espace libre pour le Tiering des données définit la quantité d'espace disponible requise sur les disques SSD/HDD Cloud Volumes ONTAP lors du Tiering des données vers le stockage objet. Le paramètre par défaut est 10 % d'espace libre, mais vous pouvez ajuster le paramètre en fonction de vos besoins.
 
@@ -328,7 +328,7 @@ image:screenshot_settings_icon.png["Capture d'écran affichant l'icône Paramèt
 
 
 
-== Modification de la période de refroidissement de la règle de hiérarchisation automatique
+== Modifier la période de refroidissement de la règle de hiérarchisation automatique
 
 Si vous avez activé le Tiering des données sur un volume Cloud Volumes ONTAP à l'aide de la règle _auto_ Tiering, vous pouvez ajuster la période de refroidissement par défaut en fonction des besoins de votre entreprise. Cette action est uniquement prise en charge via l'interface de ligne de commandes et l'API de ONTAP.
 
@@ -343,3 +343,17 @@ La période de refroidissement par défaut de la règle de hiérarchisation auto
 .Étape
 . Utilisez le paramètre _minimumCoolingDays_ avec votre demande d'API lors de la création d'un volume ou de la modification d'un volume existant.
 
+
+
+
+== Suppression d'un compartiment S3 lors de la mise hors service d'un environnement de travail
+
+Vous pouvez supprimer un compartiment S3 avec les données hiérarchisées depuis un environnement de travail Cloud Volumes ONTAP lorsque vous désaffectez l'environnement.
+
+La suppression du compartiment S3 s'applique uniquement dans les cas suivants :
+
+* L'environnement de travail Cloud Volume ONTAP est supprimé de BlueXP .
+* Tous les objets sont supprimés du compartiment et le compartiment S3 est vide.
+
+
+Lorsque vous désaffectez un environnement de travail Cloud Volumes ONTAP, le compartiment S3 créé pour l'environnement n'est pas supprimé automatiquement. Elle reste en revanche dans un état orphelin pour éviter toute perte accidentelle de données. Vous pouvez supprimer les objets du compartiment, puis supprimer le compartiment S3 lui-même ou le conserver pour une utilisation ultérieure. Reportez-vous à la https://docs.netapp.com/us-en/ontap-cli/vserver-object-store-server-bucket-delete.html#description["Interface de ligne de commande ONTAP : suppression du compartiment vserver object-store-Server"^].

@@ -57,7 +57,7 @@ Si vous ne prévoyez pas d'accéder aux données inactives, vous pouvez réduire
 
 Si vous accédez aux données, les coûts d'accès sont plus élevés, prenez-en compte avant de modifier la classe de stockage. https://aws.amazon.com/s3/storage-classes["Documentation sur Amazon S3 : en savoir plus sur les classes de stockage Amazon S3"^].
 
-Vous pouvez sélectionner une classe de stockage lors de la création de l'environnement de travail et la modifier ultérieurement. Pour obtenir des instructions sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la .
+Vous pouvez sélectionner une classe de stockage lors de la création de l'environnement de travail et la modifier ultérieurement. Pour obtenir des instructions sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Basculez les données inactives vers un stockage objet à faible coût"]à la .
 
 La classe de stockage du Tiering des données est étendue au système - elle n'est pas par volume.
 
@@ -98,7 +98,7 @@ Les niveaux d'accès au stockage:: Le niveau d'accès au stockage par défaut po
 --
 Si vous ne prévoyez pas d'accéder aux données inactives du niveau de capacité, vous pouvez choisir le niveau de stockage _cool_ où les données inactives sont conservées pendant au moins 30 jours. Vous pouvez également opter pour le niveau _COLD_, où les données inactives sont stockées pendant au moins 90 jours. En fonction de vos besoins en stockage et de vos considérations de coût, vous pouvez sélectionner le Tier le mieux adapté à vos besoins. Lorsque vous définissez le niveau de stockage sur _cool_ ou _COLD_, les données de niveau de capacité inactives sont déplacées directement vers le Tier de stockage froid ou froid. Les tiers de données inactives et froides offrent des coûts de stockage plus faibles que le Tier actif, mais ils ont des coûts d'accès plus élevés. Il faut donc en tenir compte avant de modifier le Tier de stockage. Reportez-vous à la https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-storage-tiers["Documentation Microsoft Azure : en savoir plus sur les tiers d'accès au stockage Azure Blob"^].
 
-Vous pouvez sélectionner un niveau de stockage lorsque vous créez l'environnement de travail et le modifier ultérieurement. Pour plus d'informations sur la modification du niveau de stockage, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la section .
+Vous pouvez sélectionner un niveau de stockage lorsque vous créez l'environnement de travail et le modifier ultérieurement. Pour plus d'informations sur la modification du niveau de stockage, reportez-vous link:task-tiering.html["Basculez les données inactives vers un stockage objet à faible coût"]à la section .
 
 Le niveau d'accès au stockage pour le Tiering des données concerne l'ensemble du système - il ne s'agit pas de par volume.
 
@@ -140,7 +140,7 @@ NOTE: Toutes les données inactives existantes conservent la classe de stockage 
 
 Les coûts d'accès sont plus élevés si vous accédez aux données. Prenez donc ces considérations avant de changer la classe de stockage. Pour en savoir plus, reportez-vous https://cloud.google.com/storage/docs/storage-classes["Documentation Google Cloud : classes de stockage"^] à la section .
 
-Vous pouvez sélectionner un niveau de stockage lorsque vous créez l'environnement de travail et le modifier ultérieurement. Pour plus d'informations sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la section .
+Vous pouvez sélectionner un niveau de stockage lorsque vous créez l'environnement de travail et le modifier ultérieurement. Pour plus d'informations sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Basculez les données inactives vers un stockage objet à faible coût"]à la section .
 
 La classe de stockage du Tiering des données est étendue au système - elle n'est pas par volume.
 
@@ -212,4 +212,4 @@ TIP: Lorsque Cloud Volumes ONTAP est désactivé, la température de chaque bloc
 
 == Configuration du tiering des données
 
-Pour obtenir des instructions et une liste des configurations prises en charge, reportez-vous link:task-tiering.html["Tiering des données inactives vers un stockage objet à faible coût"]à la section .
+Pour obtenir des instructions et une liste des configurations prises en charge, reportez-vous link:task-tiering.html["Basculez les données inactives vers un stockage objet à faible coût"]à la section .

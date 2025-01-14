@@ -290,7 +290,7 @@ NOTE: Même dans ces scénarios, les nouvelles licences basées sur les nœuds e
 
 == Conversion de licence
 
-BlueXP  permet de convertir en toute transparence les licences basées sur les nœuds en fonction de la capacité via l'outil de conversion des licences. Pour plus d'informations sur la fin de disponibilité des licences basées sur les nœuds, reportez-vous à link:/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"]la section .
+BlueXP  permet de convertir en toute transparence les licences basées sur les nœuds en fonction de la capacité via l'outil de conversion des licences. Pour plus d'informations sur la fin de disponibilité des licences basées sur les nœuds, reportez-vous à link:concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"]la section .
 
 Avant la transition, il est bon de vous familiariser avec la différence entre les deux modèles de licence. La licence basée sur les nœuds inclut une capacité fixe pour chaque instance ONTAP, ce qui peut limiter la flexibilité. Les licences basées sur la capacité, quant à elles, permettent de partager un pool de stockage entre plusieurs instances. Résultat : une flexibilité accrue, une utilisation optimisée des ressources et une réduction des pénalités financières potentielles lors de la redistribution des charges de travail. La charge basée sur la capacité s'adapte en toute transparence à l'évolution des besoins en stockage.
 
