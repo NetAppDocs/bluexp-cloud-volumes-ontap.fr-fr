@@ -39,7 +39,7 @@ Digital Advisor affiche l'inventaire complet ainsi que des informations sur la c
 
 
 
-.Informations associées
+.Liens connexes
 * https://docs.netapp.com/us-en/active-iq/["Documentation NetApp : conseiller digital"^]
 * https://aiq.netapp.com/custom-dashboard/search["Lancez Digital Advisor"^]
 * https://www.netapp.com/us/services/support-edge.aspx["Services SupportEdge"^]

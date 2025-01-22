@@ -55,7 +55,7 @@ Classes de stockage:: La classe de stockage par défaut pour les données hiéra
 --
 Si vous ne prévoyez pas d'accéder aux données inactives, vous pouvez réduire vos coûts de stockage en remplaçant la classe de stockage par l'une des catégories suivantes : _Intelligent Tiering_, _One-zone Infrequent Access_, _Standard-Infrequent Access_ ou _S3 Glacier Instant Retrieval_. Lorsque vous modifiez la classe de stockage, les données inactives commencent dans la classe de stockage Standard et sont transitions vers la classe de stockage que vous avez sélectionnée, si les données ne sont pas accessibles après 30 jours.
 
-Si vous accédez aux données, les coûts d'accès sont plus élevés, prenez-en compte avant de modifier la classe de stockage. https://aws.amazon.com/s3/storage-classes["Documentation sur Amazon S3 : en savoir plus sur les classes de stockage Amazon S3"^].
+Si vous accédez aux données, les coûts d'accès sont plus élevés. Vous devez donc tenir compte de cette situation avant de modifier la classe de stockage. https://aws.amazon.com/s3/storage-classes["Documentation sur Amazon S3 : en savoir plus sur les classes de stockage Amazon S3"^].
 
 Vous pouvez sélectionner une classe de stockage lors de la création de l'environnement de travail et la modifier ultérieurement. Pour obtenir des instructions sur la modification de la classe de stockage, reportez-vous link:task-tiering.html["Basculez les données inactives vers un stockage objet à faible coût"]à la .
 

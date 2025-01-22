@@ -30,12 +30,6 @@ Pour utiliser une clé gérée par le client avec Cloud Volumes ONTAP, vous deve
 
 
 
-=== Rotation des clés
-
-Si vous créez une nouvelle version de votre clé, Cloud Volumes ONTAP utilise automatiquement la dernière version de la clé.
-
-
-
 === Mode de cryptage des données
 
 BlueXP utilise un jeu de chiffrement de disque qui permet de gérer les clés de chiffrement avec des disques gérés et non des objets blob de page. Les nouveaux disques de données utilisent également le même jeu de cryptage de disque. Les versions inférieures utilisent une clé gérée par Microsoft au lieu de la clé gérée par le client.
@@ -101,6 +95,20 @@ Azure HA offre plusieurs zones de disponibilité avec des disques gérés partag
 
 |===
 Tous les comptes de stockage Azure pour Cloud Volumes ONTAP sont chiffrés à l'aide d'une clé gérée par le client. Si vous souhaitez chiffrer vos comptes de stockage lors de leur création, vous devez créer et fournir l'ID de la ressource dans la demande de création de Cloud Volumes ONTAP. Cela s'applique à tous les types de déploiements. Si vous ne le fournissez pas, les comptes de stockage seront toujours cryptés, mais BlueXP créera d'abord les comptes de stockage avec cryptage de clé géré par Microsoft, puis mettra à jour les comptes de stockage pour utiliser la clé gérée par le client.
+
+
+
+== Rotation des clés dans Cloud Volumes ONTAP
+
+Si vous créez une nouvelle version de votre clé, Cloud Volumes ONTAP utilise automatiquement la dernière version de la clé, garantissant ainsi la sécurité de vos données sans nécessiter de mises à jour manuelles.
+
+.Étapes
+. Accédez à votre coffre-fort de clés dans le portail Azure.
+. Sélectionnez la touche que vous souhaitez faire pivoter.
+. Cliquez sur *Nouvelle version* pour générer une nouvelle version de la clé.
+
+
+Une fois qu'une nouvelle version est créée, Cloud Volumes ONTAP détecte et utilise automatiquement la dernière version de la clé pour le chiffrement.
 
 
 

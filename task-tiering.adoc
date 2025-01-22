@@ -20,7 +20,7 @@ Pour configurer le Tiering des données, vous devez procéder comme suit :
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Choisissez une configuration prise en charge
 [role="quick-margin-para"]
-La plupart des configurations sont prises en charge. Si vous avez un système Cloud Volumes ONTAP exécutant la version la plus récente, vous devriez avoir un bon choix. link:task-tiering.html#configurations-that-support-data-tiering["En savoir plus >>"].
+La plupart des configurations sont prises en charge. Si vous disposez d'un système Cloud Volumes ONTAP exécutant la version la plus récente, alors c'est un bon choix. link:task-tiering.html#configurations-that-support-data-tiering["En savoir plus >>"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Assurez la connectivité entre le Cloud Volumes ONTAP et le stockage objet
 [role="quick-margin-list"]
@@ -47,7 +47,7 @@ endif::gcp[]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Assurez-vous que vous disposez d'un agrégat sur lequel le Tiering est activé
 [role="quick-margin-para"]
-Le Tiering des données doit être activé sur un agrégat pour que le Tiering des données puisse être activé sur un volume. Vous devez connaître les exigences relatives aux nouveaux volumes et aux volumes existants. <<Ensuring that tiering is enabled on aggregates,En savoir plus >>>>.
+Le Tiering des données doit être activé sur un agrégat pour l'activer sur un volume. Vous devez connaître les exigences relatives aux nouveaux volumes et aux volumes existants. <<Ensuring that tiering is enabled on aggregates,En savoir plus >>>>.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quatre"] Choisissez une règle de Tiering lors de la création, de la modification ou de la réplication d'un volume
 [role="quick-margin-para"]
@@ -65,7 +65,7 @@ BlueXP vous invite à choisir une stratégie de hiérarchisation lorsque vous cr
 * Il n'est pas nécessaire de créer un magasin d'objets pour le Tier de capacité. BlueXP le fait pour vous.
 * Inutile d'activer le Tiering des données au niveau du système.
 +
-BlueXP crée un magasin d'objets pour les données inactives lorsque le système est créé, <<Enabling data tiering after implementing the requirements,tant qu'il n'y a aucun problème de connectivité ou d'autorisation>>. Après cela, il vous suffit d'activer le Tiering des données sur les volumes (et dans certains cas, <<Ensuring that tiering is enabled on aggregates,sur les agrégats>>).
+BlueXP  crée un magasin d'objets pour les données inactives lors de la création du système<<Enabling data tiering after implementing the requirements,tant qu'il n'y a aucun problème de connectivité ou d'autorisation>>. Ensuite, il vous suffit d'activer le Tiering des données sur les volumes (et dans certains cas, <<Ensuring that tiering is enabled on aggregates,sur les agrégats>>).
 
 
 
@@ -162,7 +162,7 @@ Vous n'avez pas besoin de configurer de connexion entre le niveau de performance
 "Microsoft.Network/virtualNetworks/subnets/write",
 "Microsoft.Network/routeTables/join/action",
 ----
-Les autorisations sont incluses dans le rôle personnalisé par défaut. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Afficher l'autorisation Azure pour le connecteur"^]
+Le rôle personnalisé inclut les autorisations par défaut. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Afficher l'autorisation Azure pour le connecteur"^]
 
 endif::azure[]
 
@@ -212,7 +212,7 @@ Si vous activez le Tiering des données sur un nouveau volume, vous n'avez plus 
 
 * *Volumes existants*
 +
-Pour activer le Tiering des données sur un volume existant, vous devez vous assurer que le Tiering des données est activé sur l'agrégat sous-jacent. Si le Tiering des données n'est pas activé sur l'agrégat existant, vous devez utiliser ONTAP System Manager pour relier un agrégat existant au magasin d'objets.
+Pour activer le Tiering des données sur un volume existant, assurez-vous qu'il est activé sur l'agrégat sous-jacent. Si le Tiering des données n'est pas activé sur l'agrégat existant, vous devez utiliser ONTAP System Manager pour relier un agrégat existant au magasin d'objets.
 
 
 

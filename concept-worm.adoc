@@ -114,6 +114,6 @@ Voici les éléments à prendre en compte concernant l'activation du Tiering des
 * En plus du modèle d'administrateur de stockage de confiance, le stockage WORM dans Cloud Volumes ONTAP fonctionne aussi implicitement sous un modèle d'administrateur cloud reconnu. Un administrateur cloud peut supprimer les données WORM avant leur date d'expiration en supprimant ou en modifiant directement le stockage cloud du fournisseur cloud.
 
 
-.Informations associées
+.Lien associé
 * link:reference-worm-snaplock.html["Créez des copies Snapshot inviolables pour le stockage WORM"]
 
