@@ -26,15 +26,15 @@ Les exigences réseau suivantes doivent être satisfaites dans Azure.
 
 === Accès Internet sortant
 
-Les nœuds Cloud Volumes ONTAP requièrent un accès Internet sortant pour accéder aux terminaux externes pour diverses fonctions. Cloud Volumes ONTAP ne peut pas fonctionner correctement si ces terminaux sont bloqués dans des environnements soumis à des exigences de sécurité strictes.
+Les systèmes Cloud Volumes ONTAP nécessitent un accès Internet sortant pour accéder à des terminaux externes pour diverses fonctions. Cloud Volumes ONTAP ne peut pas fonctionner correctement si ces terminaux sont bloqués dans des environnements soumis à des exigences de sécurité strictes.
+
+Le connecteur BlueXP  contacte également plusieurs points de terminaison pour les opérations quotidiennes, ainsi que la console Web BlueXP . Pour plus d'informations sur les noeuds finaux BlueXP , reportez-vous aux sections https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["Afficher les points d'extrémité contactés depuis le connecteur"^] et https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["Préparez la mise en réseau à l'aide de la console BlueXP"^].
 
 
 
 ==== Terminaux Cloud Volumes ONTAP
 
-Cloud Volumes ONTAP requiert un accès Internet sortant pour contacter différents terminaux au quotidien.
-
-Les terminaux suivants sont spécifiques à Cloud Volumes ONTAP. Le connecteur contacte également plusieurs points de terminaison pour les opérations quotidiennes, ainsi que la console Web BlueXP . Reportez-vous à https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-3-set-up-networking["Afficher les points d'extrémité contactés depuis le connecteur"^] et https://docs.netapp.com/us-en/bluexp-setup-admin/reference-networking-saas-console.html["Préparez la mise en réseau à l'aide de la console BlueXP"^].
+Cloud Volumes ONTAP utilise ces terminaux pour communiquer avec divers services.
 
 [cols="5*"]
 |===
