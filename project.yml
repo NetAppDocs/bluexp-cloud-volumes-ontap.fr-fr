@@ -56,6 +56,9 @@ sidebar:
           url: "/task-setting-up-transit-gateway.html"
         - title: Déploiement d'une paire haute disponibilité dans un sous-réseau partagé
           url: "/task-deploy-aws-shared-vpc.html"
+        - title: Configurez la création du groupe de placement Cloud Volumes ONTAP
+            pour AWS
+          url: "/task-configure-placement-group-failure-aws.html"
         - title: Règles de groupe de sécurité pour AWS
           url: "/reference-security-groups.html"
       - title: Configuration du KMS AWS

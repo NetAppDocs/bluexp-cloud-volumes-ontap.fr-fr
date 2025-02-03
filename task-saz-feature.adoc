@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-saz-feature.html 
-keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode 
+keywords: Microsoft Azure feature, HA in SAZ, single availability zone, Azure feature, Virtual Machine Scale Sets in Flexible mode, VMOrchestratorZonalMultiFD, VM Orchestrator, Zonal, MultiFD, Microsoft.Compute/VMOrchestratorZonalMultiFD feature 
 summary: Activez cette fonctionnalité de Microsoft Azure pour déployer la haute disponibilité dans SAZ. 
 ---
 = Activez VMOrchestratorZonalMultiFD pour les zones de disponibilité uniques
@@ -14,7 +14,7 @@ summary: Activez cette fonctionnalité de Microsoft Azure pour déployer la haut
 
 
 [role="lead"]
-Pour déployer des instances de machines virtuelles dans des zones de disponibilité uniques de stockage redondant localement (LRS), vous devez activer la `Microsoft.Compute/VMOrchestratorZonalMultiFD` fonction Microsoft pour vos abonnements. En mode HA, cette fonctionnalité facilite le déploiement de nœuds dans des domaines de panne distincts dans la même zone de disponibilité.
+Pour déployer des instances de serveur virtuel dans des zones de disponibilité uniques (AZ) de stockage redondant local (LRS), vous devez activer la fonctionnalité Microsoft `Microsoft.Compute/VMOrchestratorZonalMultiFD` pour vos abonnements. En mode haute disponibilité, cette fonctionnalité facilite le déploiement de nœuds dans des domaines de panne distincts dans la même zone de disponibilité.
 
 À moins que vous n'activiez cette fonction, le déploiement par zone ne se produit pas et le déploiement non zonal LRS précédent prend effet.
 
