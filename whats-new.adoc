@@ -1049,7 +1049,7 @@ https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["Décou
 
 Depuis la version 9.10.1, Cloud Volumes ONTAP est désormais pris en charge dans la région Azure West US 3.
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions prises en charge par Cloud Volumes ONTAP"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions prises en charge par Cloud Volumes ONTAP"^]
 
 
 
@@ -1208,7 +1208,7 @@ Cloud Volumes ONTAP est désormais pris en charge dans les régions Google Cloud
 * Santiago (southamerica-west1) - nœud unique seulement
 
 
-https://cloud.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions prises en charge par Cloud Volumes ONTAP"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Consultez la liste complète des régions prises en charge par Cloud Volumes ONTAP"^]
 
 
 

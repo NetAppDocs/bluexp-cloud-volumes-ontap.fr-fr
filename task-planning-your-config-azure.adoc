@@ -30,7 +30,7 @@ Plusieurs options de licence sont disponibles pour Cloud Volumes ONTAP. Chacune 
 
 == Choisissez une région prise en charge
 
-Cloud Volumes ONTAP est pris en charge dans la plupart des régions Microsoft Azure. https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^].
+Cloud Volumes ONTAP est pris en charge dans la plupart des régions Microsoft Azure. https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^].
 
 
 
