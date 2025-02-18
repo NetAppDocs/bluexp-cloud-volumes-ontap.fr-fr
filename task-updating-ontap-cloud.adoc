@@ -150,7 +150,9 @@ Par exemple, si vous utilisez la version 9.8 et que vous voulez passer à la ver
 
 === Versions de correctifs
 
-À partir de janvier 2024, les mises à niveau de correctifs ne sont disponibles dans BlueXP que s'il s'agit d'une version de correctif pour les trois dernières versions d'Cloud Volumes ONTAP. Nous utilisons la dernière version de la version GA pour déterminer les trois dernières versions à afficher dans BlueXP. Par exemple, si la version GA actuelle est 9.13.1, les correctifs pour la version 9.11.1-9.13.1 apparaissent dans BlueXP. Si vous souhaitez effectuer une mise à niveau vers une version de correctif pour les versions 9.11.1 ou inférieures, vous devez utiliser la procédure de mise à niveau manuelle de <<Mise à niveau à partir d'une image disponible sur une URL,Téléchargement de l'image ONTAP>>.
+À partir de janvier 2024, les mises à niveau de correctifs ne sont disponibles dans BlueXP  que s'il existe une version de correctif pour les trois dernières versions de Cloud Volumes ONTAP. Les versions de correctifs sont parfois disponibles pour le déploiement, lorsque la version RC ou GA n'est pas disponible pour le déploiement.
+
+Nous utilisons la dernière version de la version GA pour déterminer les trois dernières versions à afficher dans BlueXP. Par exemple, si la version GA actuelle est 9.13.1, les correctifs pour la version 9.11.1-9.13.1 apparaissent dans BlueXP. Si vous souhaitez effectuer une mise à niveau vers une version de correctif pour les versions 9.11.1 ou inférieures, vous devez utiliser la procédure de mise à niveau manuelle <<Mise à niveau à partir d'une image disponible sur une URL,Téléchargement de l'image ONTAP>>de .
 
 En règle générale pour les versions de correctif (P), vous pouvez mettre à niveau d'une version vers n'importe quelle version P de la version actuelle ou de la version suivante.
 
@@ -227,7 +229,7 @@ Lorsque vous mettez à niveau un système à un seul nœud, le processus de mise
 
 Dans la plupart des cas, la mise à niveau d'une paire haute disponibilité s'effectue sans interruption des E/S. Au cours de ce processus de mise à niveau sans interruption, chaque nœud est mis à niveau en tandem afin de continuer à traiter les E/S aux clients.
 
-Les protocoles orientés session peuvent avoir des effets négatifs sur les clients et les applications dans certains domaines pendant les mises à niveau. Pour plus d'informations, https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["Reportez-vous à la documentation ONTAP"^]
+Les protocoles orientés session peuvent avoir des effets négatifs sur les clients et les applications dans certains domaines pendant les mises à niveau. Pour plus de détails, reportez-vous au https://docs.netapp.com/us-en/ontap/upgrade/concept_considerations_for_session_oriented_protocols.html["Documentation ONTAP"^]
 
 
 
@@ -235,7 +237,7 @@ Les protocoles orientés session peuvent avoir des effets négatifs sur les clie
 
 Le rétablissement automatique doit être activé sur une paire Cloud Volumes ONTAP HA (paramètre par défaut). Si ce n'est pas le cas, l'opération échouera.
 
-http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentation ONTAP 9 : commandes pour la configuration du rétablissement automatique"^]
+http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-hacg/GUID-3F50DE15-0D01-49A5-BEFD-D529713EC1FA.html["Documentation ONTAP : commandes pour la configuration du rétablissement automatique"^]
 
 
 
@@ -289,9 +291,9 @@ image:screenshots_aggregate_details_state.png["Capture d'écran : affiche le cha
 
 === Vérifier que toutes les LIFs se trouvent sur les ports home
 
-Avant la mise à niveau, toutes les LIF doivent se trouver sur des ports home. Reportez-vous à la documentation ONTAP à la link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Vérifier que toutes les LIFs se trouvent sur les ports home"].
+Avant la mise à niveau, toutes les LIF doivent se trouver sur des ports home. Consultez la documentation ONTAP à l'adresse link:https://docs.netapp.com/us-en/ontap/upgrade/task_enabling_and_reverting_lifs_to_home_ports_preparing_the_ontap_software_for_the_update.html["Vérifier que toutes les LIFs se trouvent sur les ports home"^].
 
-Si une erreur d'échec de mise à niveau se produit, reportez-vous au link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Article de la base de connaissances « échec de la mise à niveau Cloud Volumes ONTAP »"].
+Si une erreur d'échec de mise à niveau se produit, consultez l'article de la base de connaissances (KB) link:https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/CVO_upgrade_fails["Échec de la mise à niveau de Cloud Volumes ONTAP"^].
 
 
 

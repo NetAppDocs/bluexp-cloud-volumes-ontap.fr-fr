@@ -118,7 +118,7 @@ Vous pouvez accéder à ONTAP System Manager à partir d'un environnement de tra
 
 == Aide sur l'utilisation de System Manager
 
-Si vous avez besoin d'aide pour utiliser System Manager avec Cloud Volumes ONTAP, vous pouvez voir https://docs.netapp.com/us-en/ontap/index.html["Documentation ONTAP"^] pour obtenir des instructions détaillées. Voici quelques liens utiles :
+Si vous avez besoin d'aide sur l'utilisation de System Manager avec Cloud Volumes ONTAP, reportez-vous au https://docs.netapp.com/us-en/ontap/index.html["Documentation ONTAP"^] pour obtenir des instructions détaillées. Voici quelques liens vers la documentation ONTAP qui peuvent vous aider :
 
 * https://docs.netapp.com/us-en/ontap/ontap-security-hardening/roles-applications-authentication.html["Rôles, applications et authentification ONTAP"^]
 * https://docs.netapp.com/us-en/ontap/system-admin/access-cluster-system-manager-browser-task.html["Utilisez System Manager pour accéder à un cluster"^].

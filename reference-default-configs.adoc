@@ -88,7 +88,7 @@ NOTE: Le basculement de LIF est désactivé par défaut pour Cloud Volumes ONTAP
 Les sauvegardes sont accessibles à partir de \http://ipaddress/occm/offboxconfig/ où _ipaddress_ est l'adresse IP de l'hôte du connecteur.
 
 +
-Vous pouvez utiliser les sauvegardes pour reconfigurer votre système Cloud Volumes ONTAP. Pour plus d'informations sur les sauvegardes de configuration, reportez-vous https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["Documentation ONTAP"] à la section .
+Vous pouvez utiliser les sauvegardes pour reconfigurer votre système Cloud Volumes ONTAP. Pour plus d'informations sur les sauvegardes de configuration, reportez-vous au https://docs.netapp.com/us-en/ontap/system-admin/config-backup-file-concept.html["Documentation ONTAP"^].
 
 ** BlueXP  définit quelques attributs de volume différemment des autres outils de gestion (ONTAP System Manager ou l'interface de ligne de commande ONTAP, par exemple).
 +

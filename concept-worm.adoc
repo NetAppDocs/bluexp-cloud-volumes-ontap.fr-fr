@@ -56,7 +56,7 @@ Vous pouvez activer le stockage WORM sur un système Cloud Volumes ONTAP lorsque
 
 Vous pouvez utiliser une application pour valider des fichiers sur WORM via NFS ou CIFS, ou utiliser l'interface de ligne de commande ONTAP pour auto-valider des fichiers sur WORM automatiquement. Vous pouvez également utiliser un fichier WORM inscriptible pour conserver les données écrites de façon incrémentielle, comme les informations de journal.
 
-Après avoir activé le stockage WORM sur un système Cloud Volumes ONTAP, vous devez utiliser l'interface de ligne de commande ONTAP pour toute la gestion du stockage WORM. Pour obtenir des instructions, reportez-vous à la section http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["Documentation ONTAP"^].
+Après avoir activé le stockage WORM sur un système Cloud Volumes ONTAP, vous devez utiliser l'interface de ligne de commande ONTAP pour toute la gestion du stockage WORM. Pour obtenir des instructions, reportez-vous au http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-arch-con/home.html["Documentation ONTAP sur SnapLock"^].
 
 
 
@@ -77,7 +77,7 @@ Si le mode WORM est déjà activé sur le système, l'icône en forme de crayon 
 
 . Sur la page *WORM*, définissez la période de conservation de l'horloge de conformité du cluster.
 +
-Pour plus d'informations, reportez-vous https://docs.netapp.com/us-en/ontap/snaplock/initialize-complianceclock-task.html["Documentation ONTAP : initialiser l'horloge de conformité"^]à .
+Pour plus d'informations, reportez-vous au https://docs.netapp.com/us-en/ontap/snaplock/initialize-complianceclock-task.html["Documentation ONTAP : initialiser l'horloge de conformité"^].
 
 . Cliquez sur *définir*.
 
@@ -91,7 +91,7 @@ Vous pouvez vérifier l'état de *WORM* sur le panneau fonctionnalités. Une foi
 
 Vous pouvez supprimer des fichiers WORM pendant la période de conservation à l'aide de la fonction de suppression privilégiée.
 
-Pour obtenir des instructions, reportez-vous à https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["Documentation ONTAP"^] la .
+Pour obtenir des instructions, reportez-vous au https://docs.netapp.com/us-en/ontap/snaplock/delete-worm-files-concept.html["Documentation ONTAP"^].
 
 
 
