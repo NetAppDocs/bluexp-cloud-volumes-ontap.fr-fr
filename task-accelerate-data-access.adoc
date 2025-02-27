@@ -33,7 +33,7 @@ video::PBNPVRUeT1o[youtube,width=848,height=480]
 
 Lors de la configuration de FlexCache sur un système Cloud Volumes ONTAP sur lequel le volume d'origine est chiffré, des étapes supplémentaires sont requises pour s'assurer que le volume FlexCache peut correctement accéder aux données chiffrées et les mettre en cache.
 
-.Ce dont vous avez besoin
+.Avant de commencer
 . *Configuration du chiffrement* : Assurez-vous que le volume source est entièrement chiffré et opérationnel. Pour les systèmes Cloud Volumes ONTAP, cette démarche implique l'intégration de services de gestion des clés spécifiques au cloud.
 
 

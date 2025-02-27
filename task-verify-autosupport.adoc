@@ -24,7 +24,7 @@ La seule étape de configuration requise consiste à s'assurer que Cloud Volumes
 
 Les nœuds Cloud Volumes ONTAP nécessitent un accès Internet sortant pour l'AutoSupport, qui surveille de manière proactive l'état de santé de votre système et envoie des messages au support technique de NetApp.
 
-Les règles de routage et de pare-feu doivent autoriser le trafic HTTP/HTTPS vers les terminaux suivants pour que Cloud Volumes ONTAP puisse envoyer les messages AutoSupport :
+Les règles de routage et de pare-feu doivent autoriser le trafic HTTPS vers les points de terminaison suivants pour que Cloud Volumes ONTAP puisse envoyer des messages AutoSupport :
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

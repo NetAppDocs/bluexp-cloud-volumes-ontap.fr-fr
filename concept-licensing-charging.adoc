@@ -146,7 +146,7 @@ Pour le pack Essentials, les frais de capacité minimale de 4 To ne s'appliquent
 
 === Surâge
 
-Si vous dépassez votre capacité BYOL ou si votre licence expire, vous serez facturé pour les suppléments de capacité au tarif horaire selon votre abonnement sur le marché.
+Si vous dépassez votre capacité BYOL ou si votre licence expire, vous serez facturé pour les surcharges au taux horaire en fonction de votre abonnement Marketplace. Les dépassements sont facturés aux taux du marché, avec une préférence pour l'utilisation de la capacité disponible en premier lieu pour d'autres licences.
 
 
 
@@ -164,14 +164,6 @@ La licence est entièrement basée sur le type de volume créé dans les systèm
 NOTE: Si un volume en lecture seule/DP devient un volume principal, BlueXP  le considère comme des données primaires et les coûts de facturation sont calculés en fonction de la durée pendant laquelle le volume était en mode lecture/écriture. Lorsque le volume est de nouveau en lecture seule/DP, BlueXP  le considère à nouveau comme des données secondaires et se charge en conséquence en utilisant la licence la mieux adaptée du portefeuille numérique.
 
 * Essentials Secondary HA : volumes de type protection des données (en général, volumes de destination SnapMirror ou SnapVault en lecture seule) créés sur un système Cloud Volumes ONTAP à l'aide de deux nœuds ONTAP qui peuvent basculer les uns vers les autres pour un accès aux données sans interruption.
-
-
-Notez ces points :
-
-* Frais minimum : chaque machine virtuelle de stockage assurant le service des données dispose d'au moins un volume principal (lecture-écriture), moyennant un supplément minimal de 4 Tio. Pour le package Essentials, ce tarif minimal ne s'applique pas aux machines virtuelles de stockage dotées uniquement de volumes secondaires (protection des données).
-* Surplus : si la capacité sous licence est dépassée, les excédents sont facturés aux tarifs du marché, avec une préférence pour l'utilisation de la capacité disponible auprès d'autres licences en premier.
-* FlexClone et FlexCache volumes : les volumes FlexClone ne sont pas facturés. Les volumes FlexCache source et de destination sont considérés comme des données primaires et sont facturés en fonction de l'espace provisionné.
-* Frais des paires HAUTE DISPONIBILITÉ : pour les paires haute disponibilité, seule la capacité provisionnée sur un nœud est facturée. Les données mises en miroir de manière synchrone sur le nœud partenaire ne sont pas facturées.
 
 
 .BYOL

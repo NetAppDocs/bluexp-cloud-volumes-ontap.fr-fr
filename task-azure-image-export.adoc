@@ -16,7 +16,7 @@ summary: Vous pouvez exporter des images ONTAP depuis Azure Marketplace pour vé
 [role="lead"]
 Une fois l'image VHD publiée dans le cloud Azure, celle-ci n'est plus gérée par NetApp. L'image publiée est placée sur Azure Marketplace. La modification d'Azure au 1 Mo principal et se terminant à 512 Mo du VHD se produit lorsque l'image est échelonnée et publiée sur Azure Marketplace. Pour vérifier la signature du fichier VHD, l'image VHD modifiée par Azure doit d'abord être exportée depuis Azure Marketplace.
 
-.Ce dont vous avez besoin
+.Avant de commencer
 Vous devez installer les programmes requis sur votre système.
 
 * L'interface de ligne de commande Azure est installée ou Azure Cloud Shell est disponible via le portail Azure.

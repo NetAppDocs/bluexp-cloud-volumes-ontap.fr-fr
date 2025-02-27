@@ -53,7 +53,7 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 
 
 
-| \https://keyvault-production-aks.vault.azure.net | Coffre-fort de clés | Utilisé pour récupérer la clé secrète du client à partir du coffre-fort de clés Azure afin de communiquer avec les compartiments S3 pour la gestion des métadonnées. Le service Cloud Volumes ONTAP utilise ce composant en interne. | Modes standard, restreint et privé. | Les services Cloud Volumes ONTAP ne sont pas disponibles. 
+| https://vault.azure.net[] | Coffre-fort de clés | Utilisé pour récupérer les clés secrètes client à partir du coffre-fort de clés Azure lors de l'utilisation de clés gérées par le client (CMK). | Modes standard, restreint et privé. | Les services Cloud Volumes ONTAP ne sont pas disponibles. 
 
 
 | \https://cloudmanager.cloud.netapp.com/tenancy | Location | Utilisé pour récupérer les ressources Cloud Volumes ONTAP de la location BlueXP  afin d'autoriser les ressources et les utilisateurs. | Modes standard et restreint. | Les ressources Cloud Volumes ONTAP et les utilisateurs ne sont pas autorisés. 
@@ -82,7 +82,7 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 
 Les nœuds Cloud Volumes ONTAP nécessitent un accès Internet sortant pour l'AutoSupport, qui surveille de manière proactive l'état de santé de votre système et envoie des messages au support technique de NetApp.
 
-Les règles de routage et de pare-feu doivent autoriser le trafic HTTP/HTTPS vers les terminaux suivants pour que Cloud Volumes ONTAP puisse envoyer les messages AutoSupport :
+Les règles de routage et de pare-feu doivent autoriser le trafic HTTPS vers les points de terminaison suivants pour que Cloud Volumes ONTAP puisse envoyer des messages AutoSupport :
 
 * \https://support.netapp.com/aods/asupmessage
 * \https://support.netapp.com/asupprod/post/1.0/postAsup

@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-Depuis Cloud Volumes ONTAP 9.16.1, vous pouvez utiliser le déploiement direct d'Azure Marketplace pour déployer rapidement et facilement Cloud Volumes ONTAP à partir d'Azure Marketplace et explorer ses principales fonctionnalités dans votre environnement.
+À partir de Cloud Volumes ONTAP 9.16.1, vous pouvez utiliser le déploiement direct d'Azure Marketplace pour déployer rapidement et facilement Cloud Volumes ONTAP. À partir d'Azure Marketplace, vous pouvez déployer rapidement Cloud Volumes ONTAP en quelques clics et explorer ses principales fonctionnalités dans votre environnement.
 
 Pour plus d'informations sur cette offre, reportez-vous à link:concept-azure-mktplace-direct.html["Découvrez les offres Cloud Volumes ONTAP sur BlueXP  et sur le marché"].
 
@@ -23,12 +23,12 @@ L'instance de Cloud Volumes ONTAP déployée à l'aide d'Azure Marketplace Direc
 
 * La dernière version de Cloud Volumes ONTAP (9.16.1 ou ultérieure).
 * Une licence gratuite pour Cloud Volumes ONTAP limitée à 500 Gio de capacité provisionnée Cette licence ne prend pas en charge NetApp et n'a pas de date d'expiration.
-* Deux nœuds configurés en mode haute disponibilité (HA) dans une zone de disponibilité unique (AZ), provisionnés avec des numéros de série par défaut. Les serveurs virtuels de stockage (SVM) sont déployés dans une link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["mode d'orchestration flexible"].
+* Deux nœuds configurés en mode haute disponibilité (HA) dans une zone de disponibilité unique (AZ), provisionnés avec des numéros de série par défaut. Les machines virtuelles de stockage (machines virtuelles de stockage) sont déployées dans un link:concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks["mode d'orchestration flexible"].
 * Un agrégat pour l'instance créée par défaut.
 * Un disque géré Premium SSD v2 de 500 Gio de capacité provisionnée, ainsi qu'une racine et un disque de données.
-* Un SVM de données déployé, avec les services de données NFS, CIFS, iSCSI et NVMe/TCP. Pas de provisionnement pour les SVM supplémentaires.
-* Licences pour NFS, CIFS (SMB), iSCSI, anti-ransomware (ARW), SnapLock et SnapMirror installées par rapport aux numéros de série par défaut.
-* https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["ONTAP efficacité du stockage sensible à la température (TSSE)"^], le chiffrement de volume et la gestion externe des clés sont activés par défaut.
+* Une VM de stockage de données déployée, avec les services de données NFS, CIFS, iSCSI et NVMe/TCP. Vous ne pouvez pas ajouter de machines virtuelles de stockage de données supplémentaires.
+* Licences installées pour NFS, CIFS (SMB), iSCSI, anti-ransomware (ARW), SnapLock et SnapMirror.
+* https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["Efficacité du stockage ONTAP sensible à la température (TSSE)"^], le chiffrement de volume et la gestion externe des clés sont activés par défaut.
 * Ces fonctionnalités ne sont pas prises en charge :
 +
 ** Hiérarchisation FabricPool
@@ -67,9 +67,9 @@ NOTE: Si vous avez enregistré le fournisseur de ressources « Microsoft.Storage
 . Dans l'onglet *Notions de base*, fournissez les détails suivants :
 +
 ** *Abonnement* : sélectionnez un abonnement. Le déploiement sera lié au numéro d'abonnement.
-** *Groupe de ressources* : utilisez un groupe de ressources existant ou créez-en un nouveau. Les groupes de ressources permettent d'allouer toutes les ressources, telles que les disques et les SVM, au sein d'un même groupe pour une instance Cloud Volumes ONTAP.
+** *Groupe de ressources* : utilisez un groupe de ressources existant ou créez-en un nouveau. Les groupes de ressources permettent d'allouer toutes les ressources, telles que les disques et les machines virtuelles de stockage, au sein d'un même groupe pour une instance Cloud Volumes ONTAP.
 ** *Région* : sélectionnez une région qui prend en charge le déploiement d'Azure HA dans une zone de disponibilité unique. Vous ne voyez que les régions disponibles dans la liste.
-** *Taille* : sélectionnez une taille de SVM pour le disque géré Premium SSD v2 pris en charge.
+** *Taille* : sélectionnez une taille de VM de stockage pour le disque géré Premium SSD v2 pris en charge.
 ** *Zone* : sélectionnez une zone pour la région que vous avez sélectionnée.
 ** *Mot de passe Admin* : définissez un mot de passe. Vous utilisez ce mot de passe d'administration pour vous connecter au système après le déploiement.
 ** *Confirmer le mot de passe* : saisissez à nouveau le même mot de passe pour confirmation.
@@ -90,9 +90,9 @@ NOTE: Pour respecter les restrictions de Microsoft Azure, vous devez créer un n
 
 
 .Une fois que vous avez terminé
-Sélectionnez l'icône de notification pour afficher la progression de votre déploiement. Une fois Cloud Volumes ONTAP déployé, vous pouvez afficher le SVM répertorié pour les opérations.
+Sélectionnez l'icône de notification pour afficher la progression de votre déploiement. Une fois Cloud Volumes ONTAP déployé, vous pouvez afficher la VM de stockage répertoriée pour les opérations.
 
-Une fois accessibles, utilisez ONTAP System Manager ou l'interface de ligne de commandes ONTAP pour vous connecter au SVM avec les identifiants d'administration que vous avez définis. Par la suite, vous pouvez créer des volumes, des LUN ou des partages et commencer à utiliser les fonctionnalités de stockage de Cloud Volumes ONTAP.
+Une fois accessible, utilisez ONTAP System Manager ou l'interface de ligne de commandes ONTAP pour vous connecter à la machine virtuelle de stockage avec les informations d'identification d'administration que vous avez définies. Par la suite, vous pouvez créer des volumes, des LUN ou des partages et commencer à utiliser les fonctionnalités de stockage de Cloud Volumes ONTAP.
 
 
 
