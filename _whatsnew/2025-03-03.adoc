@@ -1,10 +1,10 @@
-= Nouvelle-Zélande région du Nord désormais prise en charge dans Azure
+= Prise en charge de la région nord de la Nouvelle-Zélande dans Azure
 :allow-uri-read: 
 
 
 
 
-=== Nouvelle-Zélande région du Nord désormais prise en charge dans Azure
+=== Prise en charge de la région nord de la Nouvelle-Zélande dans Azure
 
 La région nord de la Nouvelle-Zélande est désormais prise en charge dans Azure pour les configurations à un seul nœud et haute disponibilité (HA) de Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures. Notez que le type d'instance Lsv3 n'est pas pris en charge dans cette région.
 

@@ -28,7 +28,7 @@ Voici la comparaison des fonctions entre les deux options :
 | *Intégration* | Plus rapide et plus simple, une préparation minimale est requise pour un déploiement direct | Processus d'intégration plus long, incluant l'installation de BlueXP  Connector 
 
 
-| *Instances de machines virtuelles de stockage (VM de stockage) prises en charge* | Edsv5 et Lsv3 | Gamme complète d'options de machines virtuelles de stockage. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^] 
+| *Types de machines virtuelles (VM) pris en charge* | Edsv5 et Lsv3 | Gamme complète de types de VM. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^] 
 
 
 | *Licence* | Licence gratuite | N'importe quelle licence basée sur la capacité. link:concept-licensing.html["Licences Cloud Volumes ONTAP"] 

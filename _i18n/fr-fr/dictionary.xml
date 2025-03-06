@@ -2799,7 +2799,6 @@
   <block id="55921e17a2d40b7985abb89a85ec5001" category="paragraph">Vous pouvez modifier ce comportement par défaut en activant la restauration si BlueXP ne parvient pas à créer Azure Private Link. Cela permet de vous assurer que vous êtes en parfaite conformité avec les réglementations de sécurité de votre entreprise.</block>
   <block id="3264a736059712e5a8f3a26421bbb400" category="paragraph">Si vous activez la restauration, BlueXP arrête l'action et annule toutes les ressources créées dans le cadre de l'action.</block>
   <block id="3964c03d92d8204dfd473576f17a5009" category="list-text">Utilisez le<block ref="f4868aca388daf10284f58112e13f2bd" prefix=" " category="inline-code"></block> Appel d'API avec le corps de demande suivant :</block>
-  <block id="3a293828e70d21dff60d66d4ef2d6993" category="paragraph">Les améliorations décrites sur cette page sont spécifiques aux fonctions BlueXP qui permettent la gestion de Cloud Volumes ONTAP. Pour découvrir les nouveautés du logiciel Cloud Volumes ONTAP lui-même,<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block></block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 novembre 2022</block>
   <block id="2325f561a20765def93d682f14cae306" category="paragraph">Les modifications suivantes ont été introduites avec la version 3.9.23 du connecteur.</block>
   <block id="6d5ba1b41fa03c2fdf0d747769a6b053" category="section-title">Déplacement de groupes de ressources dans Azure</block>
@@ -4862,7 +4861,6 @@ Sinon, « échec de vérification » s'affiche.</block>
   <block id="e03d271d662bcb0fab1d9537df279ef3" category="paragraph">Ce nom de région est utilisé comme valeur pour la variable "locName" lors de la définition de l'URN de l'image Marketplace.</block>
   <block id="0bcd35ecf261a40cdfb4cbae00a11aa2" category="list-text">Pour recevoir une liste des régions disponibles, entrez le<block ref="84ed3d395e738381fb9826cd0e156c91" prefix=" " category="inline-code"></block> commande.</block>
   <block id="30bf950af492b8ab681c83ec104628f7" category="paragraph">Dans le tableau ci-dessous, le nom de la région est appelé le champ « Nom ».</block>
-  <block id="0abd8188de5678bc75e8b9d823375978" category="paragraph">Le nom de SKU est utilisé comme valeur pour la variable "skuName" lors de la définition de l'URN de l'image Marketplace.</block>
   <block id="b2b27ade506086d79b3e7defdb321673" category="cell">ontap_cloud_byol</block>
   <block id="68593f3fae72dbec1b29acfd76c1aa17" category="cell">ontap_cloud_byol_ha</block>
   <block id="fc7898b425992521a2ae92bc34f6fa79" category="list-text">Une fois la version ONTAP et l'image Azure Marketplace mappées, exportez le fichier VHD depuis Azure Marketplace via Azure Cloud Shell ou l'interface de ligne de commande Azure.</block>
@@ -5052,7 +5050,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="e149ca9f0289610cb8ad6fd5b12512d8" category="admonition">Une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 octets sont disponibles via l'option de vitesse d'écriture *élevée*. En outre, pour augmenter la MTU de 9 8,896, les VPC-1, VPC-2 et VPC-3 doivent être sélectionnés pour le déploiement. Pour plus d'informations sur les VPC-1, VPC-2 et VPC-3, reportez-vous à la <block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>.</block>
   <block id="029f8920d36eb65c171c6c21ac843b04" category="list-text">Pour obtenir de l'aide sur l'ajout d'un compte Google Cloud, reportez-vous à <block ref="434f9c6247e5841006dab0119a511de9" category="inline-link-rx"></block>la section .</block>
   <block id="ed5e0eaead7695971d375db73537aede" category="cell">Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Pour<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> plus d'informations, reportez-vous au pour plus de détails. Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS.</block>
-  <block id="0aa82496785892f71f52a3f25d7a1a11" category="paragraph">Pour plus d'informations, reportez-vous à <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block> et <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>.</block>
   <block id="0088f6e3d17619bb18cd5df63ad60315" category="list-text">Si vous souhaitez appliquer des quotas à des volumes, utilisez ONTAP System Manager ou l'interface de ligne de commande ONTAP.</block>
   <block id="f7aba8921828d41f8e11789ea644a8f1" category="admonition">Une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 8,896 octets sont disponibles via l'option de vitesse d'écriture *élevée* avec les types d'instances n2-standard-16, n2-standard-32, n2-standard-48 et n2-standard-64. En outre, pour augmenter la MTU de 9 8,896, les VPC-1, VPC-2 et VPC-3 doivent être sélectionnés pour le déploiement. Une vitesse d'écriture élevée et un MTU de 9 8,896 dépendent des fonctionnalités et ne peuvent pas être désactivés individuellement dans une instance configurée. Pour plus d'informations sur les VPC-1, VPC-2 et VPC-3, reportez-vous à la <block ref="e0d6e9ceb3d5d27a7e0dc7b744a8cf4a" category="inline-link-rx"></block>.</block>
   <block id="0b53ba47db58ce07a5d3dfaac21a45f9" category="cell">Sélectionnez *utiliser le domaine Active Directory* pour configurer un serveur NTP à l'aide du DNS Active Directory. Si vous devez configurer un serveur NTP à l'aide d'une autre adresse, vous devez utiliser l'API. Reportez-vous au<block ref="7665d9260dd9d6a287f2bbc0560d523f" category="inline-link-rx"></block> pour plus de détails. Notez que vous ne pouvez configurer un serveur NTP que lors de la création d'un serveur CIFS. Elle n'est pas configurable après la création du serveur CIFS.</block>
@@ -5246,11 +5243,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="180b275121e0f37251fecae975bf46df" category="list-text">Deux volumes st1 EBS pour l'instance médiateur, l'un d'environ 8 Gio en tant que disque racine, et l'autre de 4 Gio en tant que disque de données</block>
   <block id="64b03175221d53e202f475eebaa91d75" category="list-text">Un disque gp3 de 140 Gio dans chaque nœud pour contenir une copie des données root de l'autre nœud</block>
   <block id="8988458abbc31ee6cea74e936e77a27d" category="list-text">9.15.1 GA</block>
-  <block id="b7c282068681beff1a173d0b12dfaf26" category="paragraph">Le nouveau mot de passe doit respecter les règles suivantes :</block>
-  <block id="d35bb0db0465412bf87fad3c0e029c98" category="list-text">Il ne peut pas contenir le nom d'utilisateur</block>
-  <block id="dbc56fe1cd1e248fe5365bf788c671af" category="list-text">Elle doit comporter au moins huit caractères</block>
-  <block id="4737ee9042d4511943f8ea991bd211c5" category="list-text">Il doit contenir au moins une lettre et un chiffre</block>
-  <block id="3f00eb5ab0ade2cfadc9848704073f92" category="list-text">Il ne peut pas être le même que les six derniers mots de passe</block>
   <block id="120ae360daecd24b580b71f9f2766bbc" category="cell">9.15.1</block>
   <block id="af4dea59253c9d0600f1101e032482c5" category="section-title">Prise en charge minimale de la version de Flash cache sur Azure</block>
   <block id="8fc1b74aa1cb89da788e1a3b937438ab" category="inline-link">Gérez les informations d'identification NSS associées à une organisation ou un compte BlueXP</block>
@@ -5467,7 +5459,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="c1c1c782703499ca8577569137202bf1" category="list-text">Consultez les noms de référence des versions Cloud Volumes ONTAP et des types de déploiement VM correspondants dans le tableau ci-dessous.</block>
   <block id="90069a3873814503a767070f04f3c286" category="paragraph">Par exemple, tous les déploiements à un seul nœud avec Cloud Volumes ONTAP 9.15.0 doivent utiliser<block ref="b2b27ade506086d79b3e7defdb321673" prefix=" " category="inline-code"></block> comme nom de référence.</block>
   <block id="d811ca86e147e8cf2239ee377f1dcd50" category="cell">*Version Cloud Volumes ONTAP*</block>
-  <block id="a3a1c7f3820a8886078a2878a83c8362" category="cell">*Type de déploiement VM*</block>
   <block id="aadb6d991e4406b990f6fca8b4c83fd6" category="cell">*Nom SKU*</block>
   <block id="1da19d67e22ac2cb25b90e0604702db1" category="cell">Tous les déploiements via BlueXP </block>
   <block id="273062411bc731be8028321277142365" category="cell">ONTAP_cloud</block>
@@ -5657,7 +5648,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="d001c47858581c979ac478e49c9661c4" category="cell">*Intégration*</block>
   <block id="c0245bda3ab2426b357c2f1dbac18fe4" category="cell">Plus rapide et plus simple, une préparation minimale est requise pour un déploiement direct</block>
   <block id="3629ee21db77809980881173196b6920" category="cell">Processus d'intégration plus long, incluant l'installation de BlueXP  Connector</block>
-  <block id="79bd8865b968021aedfe3ebf1eea0e3b" category="cell">Gamme complète d'options de machines virtuelles de stockage. <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
   <block id="ee998db55a5373c890946748cb8dafeb" category="cell">*Licence*</block>
   <block id="2c99fb634374338e105960f8a1b01571" category="cell">Licence gratuite</block>
   <block id="e6e0b8e1dd9ccebda94836b190cc1c77" category="cell">N'importe quelle licence basée sur la capacité. <block ref="4fd1dcab53132be8e410673d29b53538" category="inline-link-macro-rx"></block></block>
@@ -5801,12 +5791,10 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="3a02e985ca8f29995c51ae66b1b831f2" category="sidebar">Lancez-vous dans BlueXP </block>
   <block id="124dec3164ac7246452cc1456ff82f96" category="sidebar">Lancez-vous sur le marché</block>
   <block id="3afa4906e9f87a509c6412a260310879" category="sidebar">Utilisation des instances EC2 dans AWS</block>
-  <block id="62c9277e75aee50ddfb792de79bd94d3" category="doc">Nouvelle-Zélande région du Nord désormais prise en charge dans Azure</block>
   <block id="81ae8423a213b8c9bbcb79aee6ae0af8" category="paragraph">La région nord de la Nouvelle-Zélande est désormais prise en charge dans Azure pour les configurations à un seul nœud et haute disponibilité (HA) de Cloud Volumes ONTAP 9.12.1 GA et versions ultérieures. Notez que le type d'instance Lsv3 n'est pas pris en charge dans cette région.</block>
   <block id="b717ddfb2f9a28b7e4673751144693cc" category="paragraph">Pour obtenir la liste de toutes les régions prises en charge, reportez-vous au<block ref="0f1c2d6a84741595f86a459e46c2a400" category="inline-link-rx"></block>.</block>
   <block id="7c2f2acb2655a9e7f8ab7f69bbd0d731" category="paragraph">NetApp propose deux options de déploiement de Cloud Volumes ONTAP sur Azure. Le déploiement et l'orchestration de Cloud Volumes ONTAP reposent généralement sur BlueXP . À partir de Cloud Volumes ONTAP 9.16.1, vous pouvez tirer parti du déploiement direct d'Azure Marketplace, un processus rationalisé qui permet d'accéder à un ensemble limité mais néanmoins puissant de fonctionnalités et d'options Cloud Volumes ONTAP.</block>
   <block id="89191ae1b044d97b766a182a1727fae4" category="paragraph">Lorsque vous déployez Cloud Volumes ONTAP directement à partir d'Azure Marketplace, vous n'avez pas besoin de configurer BlueXP  Connector ni de répondre à d'autres critères de sécurité et d'intégration requis pour le déploiement de Cloud Volumes ONTAP via BlueXP . À partir d'Azure Marketplace, vous pouvez déployer rapidement Cloud Volumes ONTAP en quelques clics et explorer ses principales fonctionnalités dans votre environnement.</block>
-  <block id="73081e15ff5559e197b273ea471c9aeb" category="cell">*Instances de machines virtuelles de stockage (VM de stockage) prises en charge*</block>
   <block id="55f3f90910bdc78c8b57d6f9c6044843" category="cell">Edsv5 et Lsv3</block>
   <block id="94302f254b4d602be77fb6e28556ecec" category="cell">*Nombre de machines virtuelles de stockage prises en charge*</block>
   <block id="212ecc3006afeac1a27b275b3e8556b8" category="cell">Un par déploiement</block>
@@ -5828,4 +5816,26 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="20a0bd63dc9b064c0cedc40d649eb29a" category="paragraph">Une fois accessible, utilisez ONTAP System Manager ou l'interface de ligne de commandes ONTAP pour vous connecter à la machine virtuelle de stockage avec les informations d'identification d'administration que vous avez définies. Par la suite, vous pouvez créer des volumes, des LUN ou des partages et commencer à utiliser les fonctionnalités de stockage de Cloud Volumes ONTAP.</block>
   <block id="1c3093638c74eef35618192ff8049216" category="admonition">Pour les régions chinoises, les déploiements à un seul nœud sont pris en charge uniquement dans Cloud Volumes ONTAP 9.12.1 GA et 9.13.0 GA. Vous pouvez mettre à niveau ces versions vers les versions et correctifs ultérieurs de Cloud Volumes ONTAP. Si vous souhaitez déployer des versions Cloud Volumes ONTAP ultérieures dans les régions chinoises, contactez le support NetApp. Seules les licences achetées directement auprès de NetApp sont prises en charge dans les régions chinoises, les abonnements Marketplace ne sont pas disponibles.</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">03 mars 2025</block>
+  <block id="e622e2ddfce6c06eca3078953e9e6186" category="doc">Prise en charge de la région nord de la Nouvelle-Zélande dans Azure</block>
+  <block id="5781bb449b503c5fcaefb20bfaa81cc4" category="doc">Cloud Volumes ONTAP 9.16.1 GA</block>
+  <block id="efa5e5522cbd4457ef4e551fb5d60491" category="paragraph">Vous pouvez désormais utiliser BlueXP  pour déployer et gérer la version Cloud Volumes ONTAP 9.16.1 General Availability dans Azure et Google Cloud. Cependant, cette version n'est pas disponible pour le déploiement et la mise à niveau dans AWS.</block>
+  <block id="df65d9be8ade62cf7505e34c307cecad" category="cell">*Types de machines virtuelles (VM) pris en charge*</block>
+  <block id="b13b643af58b125fac839de04760d5f0" category="cell">Gamme complète de types de VM. <block ref="ef57b1c89cee8819c5de2b079e4b0640" category="inline-link-rx"></block></block>
+  <block id="97c2102867c5b54db1b773f42a540c16" category="list-text">9.16.1 GA</block>
+  <block id="70e23d6e402d67f6f86de0aa757d7bf0" category="paragraph">Le nom de SKU est la valeur de la variable « skuName » lors de la définition de l'URN de l'image Marketplace.</block>
+  <block id="4692723666baa52294f46ef51ee4ec3f" category="cell">*Méthode de déploiement VM*</block>
+  <block id="95392acbc8522bf81166b3d44b333fca" category="cell">9.16.1 et versions ultérieures</block>
+  <block id="e6c4c5f3851cefbfb1da8daa3aff1fb0" category="cell">Via la méthode de déploiement direct sur le marché</block>
+  <block id="8c63a56c7facb0a50c8c629b8b10d627" category="cell">ONTAP_cloud_direct</block>
+  <block id="3c0acb220a6d083f589c0e9d2c4bb5b9" category="paragraph">Le mot de passe doit respecter quelques règles. Le nouveau mot de passe :</block>
+  <block id="c3b8a6ca2fd73fcdea07816d50da5780" category="list-text">Ne doit pas contenir le mot<block ref="21232f297a57a5a743894a0e4a801fc3" prefix=" " category="inline-code"></block></block>
+  <block id="381979ed7a4bb72f3b0208ee434d237f" category="list-text">La longueur doit être comprise entre huit et 50 caractères</block>
+  <block id="035cd612f5f182c28849afc511825894" category="list-text">Doit contenir au moins une lettre anglaise et un chiffre</block>
+  <block id="823f5f4ed700cc35a2027d5df0c8706e" category="list-text">Ne doit pas contenir les caractères spéciaux suivants :<block ref="172ce81fb34a8026a9711811fececc33" prefix=" " category="inline-code"></block></block>
+  <block id="e574fef1a46f15b3c69233f51519d7cf" category="paragraph">Pour plus d'informations, reportez-vous aux sections <block ref="449d1f3dba62fd34c10497ac720687ce" category="inline-link-macro-rx"></block>, <block ref="1e62300500e1ad0802bb2b24113c7036" category="inline-link-macro-rx"></block>et<block ref="9af56c326a803ff09c4af3da1cdbc4e2" category="inline-link-rx"></block></block>
+  <block id="401117ae72e5a93172e8ce8c23c7676d" category="cell">9.16.1 (pour Azure et Google Cloud uniquement)</block>
+  <block id="c06b363f3dfd3ad2d628083406a0a1ac" category="paragraph">Les améliorations décrites sur cette page sont spécifiques aux fonctions BlueXP qui permettent la gestion de Cloud Volumes ONTAP. Pour découvrir les nouveautés du logiciel Cloud Volumes ONTAP lui-même,<block ref="708e09e3f2783926556b9c6d77f63a27" category="inline-link-rx"></block>.</block>
+  <block id="278edfabbac204688aa13f79c6f52497" category="section-title">6 mars 2025</block>
+  <block id="47d2a1d0b17f45434982fc698a98f5b6" category="paragraph"><block ref="7f8bbc744b255f0b452653dcd9455a80" category="inline-link-macro-rx"></block>.</block>
+  <block id="306a75aa4b30893090d1c91c8a8b3857" category="paragraph"><block ref="fd20bae6b6edab0a62ec432b47047149" category="inline-link-macro-rx"></block>.</block>
 </blocks>
