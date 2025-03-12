@@ -114,12 +114,12 @@ BlueXP  modifie également les `default-data-files` règles sur les VM de stock
 La modification des services est requise, car elle permet à Cloud Volumes ONTAP d'utiliser la LIF iSCSI pour les connexions de gestion sortantes.
 
 .Autorisations Google Cloud requises
-Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Règles fournies par NetApp"].
+Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Règles fournies par NetApp"^].
 
 .Étapes
 . Utilisez l'appel d'API suivant pour créer une machine virtuelle de stockage :
 +
-`POST /occm/api/gcp/ha/working-environments/{WE_ID}/svm/`
+`POST /gcp/ha/working-environments/{workingEnvironmentId}/svm/`
 
 +
 Le corps de la demande doit comprendre les éléments suivants :
@@ -146,7 +146,7 @@ Si besoin, vous pouvez à tout moment modifier le nom d'une machine virtuelle de
 .Étapes
 . Utiliser l'appel d'API suivant pour renommer une VM de stockage :
 +
-`PUT /occm/api/gcp/ha/working-environments/{WE_ID}/svm`
+`PUT /gcp/ha/working-environments/{workingEnvironmentId}/svm`
 
 +
 Le corps de la demande doit comprendre les éléments suivants :
@@ -170,6 +170,6 @@ Si vous n'avez plus besoin d'une machine virtuelle de stockage, vous pouvez la s
 .Étapes
 . Utilisez l'appel d'API suivant pour supprimer une VM de stockage :
 +
-`DELETE /occm/api/gcp/ha/working-environments/{WE_ID}/svm/{SVM_NAME}`
+`DELETE /gcp/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
 

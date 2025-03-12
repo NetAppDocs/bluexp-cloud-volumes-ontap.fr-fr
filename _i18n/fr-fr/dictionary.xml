@@ -2,94 +2,22 @@
 <blocks>
   <block id="0ca27a1b4f5a64b823a04f58a204d499" category="summary">Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires.</block>
   <block id="65cc3fef2113d2e1d1f636ab8cb02386" category="doc">Création de VM de stockage servant à la transmission des données pour Cloud Volumes ONTAP dans Azure</block>
-  <block id="479c3296d54e6f4715be2e37ee57edf1" category="paragraph">Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. Vous pouvez le connaître comme _SVM_ ou _vserver_. Cloud Volumes ONTAP est configuré avec une seule machine virtuelle de stockage par défaut, mais des machines virtuelles de stockage supplémentaires sont prises en charge lors de l'exécution de Cloud Volumes ONTAP dans Azure.</block>
-  <block id="a58a1a73a0fc2d46b2c8d3212a81b76b" category="paragraph">Pour créer des VM de stockage supplémentaires qui assurent le service des données, vous devez allouer des adresses IP dans Azure, puis exécuter des commandes ONTAP pour créer la VM de stockage et les LIF de données.</block>
   <block id="bbf8762fd7719517f7567e338ea9aa0b" category="section-title">Nombre de machines virtuelles de stockage pris en charge</block>
   <block id="bc2d1afe4b7b88784be36363245bd652" category="inline-link">Notes de version de Cloud Volumes ONTAP</block>
-  <block id="5e10fd94744d67ee9b4af8576d7d871b" category="paragraph">Plusieurs machines virtuelles de stockage sont prises en charge avec des configurations Cloud Volumes ONTAP spécifiques à partir de la version 9.9.0. Accédez au<block ref="7a96f232274f5a7cebcb1f6a52cc095f" category="inline-link-rx"></block> Pour vérifier le nombre de machines virtuelles de stockage pris en charge pour votre version de Cloud Volumes ONTAP.</block>
   <block id="61a207d9bd50b686e92d93d0f36e5fd4" category="paragraph">Toutes les autres configurations Cloud Volumes ONTAP prennent en charge une VM de stockage servant aux données et une VM de stockage de destination utilisée pour la reprise après incident. Vous pouvez activer la machine virtuelle de stockage de destination pour accéder aux données en cas de panne sur la machine virtuelle de stockage source.</block>
-  <block id="bc2d82be5ce2a751775a44460f5f36ae" category="section-title">Allouez des adresses IP dans Azure</block>
-  <block id="b06a344c267b8ee73a6d4d78ace617ea" category="paragraph">Vous devez allouer des adresses IP dans Azure avant de créer une VM de stockage et d'allouer des LIF.</block>
   <block id="0ecbfe2cb5b1df888639e1751cec905a" category="section-title">Système à un seul nœud</block>
-  <block id="ab446ebd1f851655193779b7c50f3533" category="paragraph">Les adresses IP doivent être attribuées à nic0 dans Azure avant de créer une machine virtuelle de stockage et d'allouer des LIF.</block>
-  <block id="19c2f8be3dc9f0749efedd54317e259b" category="paragraph">Vous devez créer une adresse IP pour l'accès LIF de données et une autre adresse IP en option pour une LIF de gestion de SVM (Storage VM). Cette LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
-  <block id="2c1d1f56d207e6b42d7866029b8f4f38" category="list-text">Connectez-vous au portail Azure et ouvrez le service *Virtual machine*.</block>
-  <block id="dd5a058a2c46a43106332205c45a30ee" category="list-text">Cliquez sur le nom de la machine virtuelle Cloud Volumes ONTAP.</block>
-  <block id="e63661b2472f7f4dc8a5b7065ca6d208" category="list-text">Cliquez sur *réseau*.</block>
-  <block id="1610b48e6b730ea719aa58edd2bd7f8f" category="list-text">Cliquez sur le nom de l'interface réseau pour nic0.</block>
-  <block id="b19099ea0de1f8c1bb7e71583234b1f4" category="list-text">Sous *Paramètres*, cliquez sur *configurations IP*.</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Cliquez sur *Ajouter*.</block>
-  <block id="9c13fa64c3b08e53658431a53f9c6b28" category="list-text">Entrez un nom pour la configuration IP, sélectionnez *Dynamic*, puis cliquez sur *OK*.</block>
-  <block id="4835f23f6ce17d26f5e908f04392b0e7" category="list-text">Cliquez sur le nom de la configuration IP que vous venez de créer, remplacez *Assignment* par *Static*, puis cliquez sur *Save*.</block>
-  <block id="42986462673b87a9a58e425c4a99bb91" category="paragraph">Il est préférable d'utiliser une adresse IP statique car une adresse IP statique garantit que l'adresse IP ne change pas, ce qui peut aider à éviter les pannes inutiles de votre application.</block>
-  <block id="3fc61f795c4036debc9bbee70495f5d3" category="paragraph">Pour créer une LIF de management du SVM, répétez la procédure ci-dessous afin de créer une adresse IP supplémentaire.</block>
-  <block id="b961dd3512f483e2a3c032644c80c59b" category="paragraph">Copiez les adresses IP privées que vous venez de créer. Vous devrez spécifier ces adresses IP lorsque vous créez des LIF pour la nouvelle machine virtuelle de stockage.</block>
   <block id="556696d309aaf81ce29c6a76f8f8a503" category="section-title">Paire HA</block>
   <block id="e4e1c13bb0b14f6cb7608cbecea948ef" category="open-title">ISCSI</block>
-  <block id="de6c446eec02722de82f7d7eaffa3970" category="paragraph">Les adresses IP iSCSI doivent être attribuées à nic0 dans Azure avant de créer une machine virtuelle de stockage et d'allouer des LIF. IPS pour iSCSI est affecté à nic0 et non à l'équilibreur de charge, car iSCSI utilise le protocole ALUA pour le basculement.</block>
-  <block id="bd88ed594712224b8e3f79251707158b" category="paragraph">Vous devez créer les adresses IP suivantes :</block>
-  <block id="959519864abf23eb751637cd9762312f" category="list-text">Une adresse IP pour l'accès aux LIF de données iSCSI depuis le nœud 1</block>
-  <block id="72b179a0d02f32caa6ee9d21826a4a30" category="list-text">Une adresse IP pour l'accès aux LIF de données iSCSI depuis le nœud 2</block>
-  <block id="d9fa1bba25e264315bb45a5db857089c" category="list-text">Une adresse IP facultative pour une LIF de gestion de VM de stockage (SVM</block>
-  <block id="0212110e6e591f399e46a0a33621323b" category="paragraph">Cette LIF de gestion fournit une connexion à des outils de gestion tels que SnapCenter.</block>
-  <block id="27f352c696e29cd9fd0f401648ff9862" category="list-text">Cliquez sur le nom de la machine virtuelle Cloud Volumes ONTAP pour le nœud 1.</block>
-  <block id="160ff1b01bd06e8151784b706f33a6a1" category="list-text">Répétez cette procédure sur le nœud 2.</block>
-  <block id="69aaba68c1c7e074c02079ece294e4ca" category="list-text">Pour créer une LIF de management du SVM, répétez ces étapes sur le nœud 1.</block>
   <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="open-title">NFS</block>
-  <block id="92e91b161b0371348686cd8b37ca5028" category="paragraph">Les adresses IP que vous utilisez pour NFS sont allouées au équilibreur de charge afin que les adresses IP puissent migrer vers l'autre nœud en cas d'événements de basculement.</block>
-  <block id="8560b84a5b55caac8c8ef30051a197e5" category="list-text">Une adresse IP pour l'accès LIF de données NAS depuis le nœud 1</block>
-  <block id="aba6d4795536d5c4e61cf75ce0ddd22c" category="list-text">Une adresse IP pour l'accès LIF de données NAS depuis le nœud 2</block>
-  <block id="7be0ecb9e73595d673d5fbaed0cb6378" category="list-text">Dans le portail Azure, ouvrez le service *Load balancers*.</block>
-  <block id="8097feb21f6c4186704bf26f92131fe0" category="list-text">Cliquez sur le nom du équilibreur de charge pour la paire HA.</block>
-  <block id="7a5be31086b3ad69d1c6b2c5abafcc64" category="list-text">Créez une configuration IP front-end pour l'accès aux LIF de données depuis le nœud 1, une autre pour l'accès aux LIF de données depuis le nœud 2 et une autre LIF front-end facultative pour la gestion d'une machine virtuelle de stockage (SVM).</block>
-  <block id="91755019ec4f9b4503c2abd1e2018220" category="list-text">Sous *Paramètres*, cliquez sur *Configuration IP Frontend*.</block>
-  <block id="b961ba228f0253598e8fe47f55865219" category="list-text">Entrez un nom pour l'IP front-end, sélectionnez le sous-réseau pour la paire HA Cloud Volumes ONTAP, laissez *Dynamic* sélectionné et, dans les régions avec des zones de disponibilité, laissez *zone redondante* sélectionné pour vous assurer que l'adresse IP reste disponible en cas d'échec d'une zone.</block>
-  <block id="fde48a87720c7f4a7b3fe579cf70ce21" category="inline-image-macro">Capture d'écran indiquant l'ajout d'une adresse IP front-end sur le portail Azure dans laquelle un nom et un sous-réseau sont sélectionnés.</block>
-  <block id="c00e2d19af360558425fe43036ba7057" category="paragraph"><block ref="c00e2d19af360558425fe43036ba7057" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0da801a9d3d38ccf39fc77f357cbd875" category="list-text">Cliquez sur le nom de la configuration IP front-end que vous venez de créer, définissez *Assignment* sur *Static*, puis cliquez sur *Save*.</block>
-  <block id="0f21ca89d8c8b745954f3d9e19a0dd80" category="list-text">Ajoutez une sonde de santé pour chaque IP front-end que vous venez de créer.</block>
-  <block id="1b45149e0b23a41687b2084ae6d33a48" category="list-text">Sous *Paramètres* de l'équilibreur de charge, cliquez sur *sondes de santé*.</block>
-  <block id="dc5af89bd23317abec464d2c75aeaac1" category="list-text">Saisissez un nom pour la sonde de santé et entrez un numéro de port compris entre 63005 et 65000. Conservez les valeurs par défaut des autres champs.</block>
-  <block id="8d5ccc6064bf24d956199fe629c8a705" category="paragraph">Il est important que le numéro de port soit compris entre 63005 et 65000. Par exemple, si vous créez trois sondes de santé, vous pouvez entrer des sondes utilisant les numéros de port 63005, 63006 et 63007.</block>
-  <block id="3f158195d787a76b9930725abf90217b" category="inline-image-macro">Capture d'écran de l'ajout d'une sonde de santé sur le portail Azure où un nom et un port sont saisis.</block>
-  <block id="7221eeb99a62a5c16a91eaad3abc1af7" category="paragraph"><block ref="7221eeb99a62a5c16a91eaad3abc1af7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f0494656b267aab37751c30e5a8a07e" category="list-text">Créer de nouvelles règles d'équilibrage de charge pour chaque IP front-end.</block>
-  <block id="f11380e89562c6ffb0067deb927a00ee" category="list-text">Sous *Paramètres* de l'équilibreur de charge, cliquez sur *règles d'équilibrage de charge*.</block>
-  <block id="b46de1ad1e07b7775bace9bf4917a405" category="list-text">Cliquez sur *Ajouter* et entrez les informations requises :</block>
-  <block id="a914e28fc43d170da9c2b2b78518eb37" category="list-text">*Nom* : saisissez un nom pour la règle.</block>
-  <block id="1e4efbe4a8dfa84e3f6f93e1573c601e" category="list-text">*IP version* : sélectionnez *IPv4*.</block>
-  <block id="1ddd50f122f73d126a4cb3fee90d2b7b" category="list-text">*Adresse IP Frontend* : sélectionnez l'une des adresses IP frontend que vous venez de créer.</block>
-  <block id="8328ee96d378b2984c58f116fcccd3a6" category="list-text">*Ports HA* : activez cette option.</block>
-  <block id="741c2eb7c095a3b40a6d1715966dbeb6" category="list-text">*Backend pool*: Conservez le pool Backend par défaut qui a déjà été sélectionné.</block>
-  <block id="9e72535253d8088038289763956d0b16" category="list-text">*Health Probe* : sélectionnez la sonde de santé que vous avez créée pour l'IP front-end sélectionnée.</block>
-  <block id="36703ed8697639a53fe06da2f1d77acc" category="list-text">*Persistance de session* : sélectionnez *aucun*.</block>
-  <block id="f1830206581ce60d04d4025551d9e990" category="list-text">*IP flottante* : sélectionnez *Enabled*.</block>
-  <block id="0763674e9bf55481025f48bd27d7aa67" category="inline-image-macro">Capture d'écran de l'ajout d'une règle d'équilibrage de la charge sur le portail Azure avec les champs ci-dessus.</block>
-  <block id="4dfb9365c6db058f009ea80d9ad1d88a" category="paragraph"><block ref="4dfb9365c6db058f009ea80d9ad1d88a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5031fdddd713681aa180d7bfa60b1f72" category="list-text">Assurez-vous que les règles de groupe de sécurité réseau pour Cloud Volumes ONTAP permettent à l'équilibreur de charge d'envoyer des sondes TCP pour les sondes d'intégrité créées à l'étape 4 ci-dessus. Notez que cette option est autorisée par défaut.</block>
   <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="open-title">PME</block>
-  <block id="c09d6988bf61135b41e7b195d446e2b9" category="paragraph">Les adresses IP utilisées pour les données SMB sont allouées au équilibreur de charge afin que les adresses IP puissent migrer vers l'autre nœud en cas d'événements de basculement.</block>
-  <block id="5aa1fc4c5c5e3c602f89524b94fcaf47" category="list-text">Une adresse IP pour une LIF iSCSI sur le nœud 2</block>
-  <block id="d31b2ca2df7d7ec89a597cf3ff166e6d" category="paragraph">Les LIFs iSCSI sont requises pour les communications DNS et SMB. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.</block>
-  <block id="a094ded8d387643804f456ad69ef9c4e" category="section-title">Créez un VM de stockage et des LIF</block>
-  <block id="3ad6e3f460248126da5c801e403088c1" category="paragraph">Une fois que vous avez alloué des adresses IP dans Azure, vous pouvez créer une nouvelle machine virtuelle de stockage sur un système à un seul nœud ou sur une paire haute disponibilité.</block>
-  <block id="5683cfda0c67cd1651e904160b0a5460" category="paragraph">La création d'une VM de stockage et de LIF sur un système à un seul nœud dépend du protocole de stockage que vous utilisez.</block>
-  <block id="2d376cf045c4838856b9429d7fecf7a5" category="paragraph">Suivez ces étapes pour créer une nouvelle machine virtuelle de stockage et les LIF nécessaires.</block>
   <block id="9b08db40ecf3304d34c7dadb34a6d2c2" category="list-text">Créer la VM de stockage et une route vers la VM de stockage</block>
-  <block id="070ee68a98b928bc45bc4178848e21da" category="list-text">Créer une LIF de données :</block>
   <block id="cf9742a528f0c020828f8af26d4a20dc" category="list-text">Facultatif : créez une LIF de gestion de machine virtuelle de stockage.</block>
   <block id="15b547deddcdfd8bf2fb3a23397e7833" category="list-text">Attribuez un ou plusieurs agrégats à la machine virtuelle de stockage.</block>
   <block id="d6f0e34ef668049ec1996dc9805ae695" category="paragraph">Cette étape est obligatoire car la nouvelle machine virtuelle de stockage doit accéder à au moins un agrégat avant de pouvoir créer des volumes sur cette machine virtuelle de stockage.</block>
-  <block id="b41808a70de11f6ad8400c22ebe933f1" category="paragraph">La création d'un VM de stockage et de LIF sur une paire haute disponibilité dépend du protocole de stockage que vous utilisez.</block>
-  <block id="604199268b7709a557c60a09df0624bf" category="list-text">Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 1.</block>
-  <block id="83871791a7611e5a981ec0b38a662078" category="list-text">Utiliser la commande suivante pour créer une LIF iSCSI sur le nœud 2.</block>
   <block id="67694021a675f2be09781b9b9c744e99" category="list-text">Facultatif : créez une LIF de gestion de VM de stockage sur le nœud 1.</block>
   <block id="6705d4b1a3db9cb88b17655dcca33de5" category="list-text">Si vous exécutez Cloud Volumes ONTAP 9.11.1 ou version ultérieure, modifiez les stratégies de service réseau pour la VM de stockage.</block>
   <block id="7acb007d1fa18c791042f54b5a8aa8ee" category="paragraph">La modification des services est requise, car elle permet à Cloud Volumes ONTAP d'utiliser la LIF iSCSI pour les connexions de gestion sortantes.</block>
-  <block id="622931dd0b6724a34dfe5a4f99b9a820" category="list-text">Utiliser la commande suivante pour créer une LIF NAS sur le nœud 1.</block>
-  <block id="0cffe85429bb79552ce3607190d9dbad" category="list-text">Utiliser la commande suivante pour créer une LIF NAS sur le nœud 2.</block>
-  <block id="9a34c8001fb2a94f36b91cd1711ee39f" category="paragraph">Après avoir créé un serveur virtuel de stockage sur une paire haute disponibilité, il est préférable d'attendre 12 heures avant de provisionner le stockage sur ce SVM. Depuis la version Cloud Volumes ONTAP 9.10.1, BlueXP analyse les paramètres de l'équilibreur de charge d'une paire HA à un intervalle de 12 heures. S'il existe de nouveaux SVM, BlueXP activation d'un paramètre qui permet un basculement non planifié plus court.</block>
   <block id="2d136412703a915f2b3b47846e42252a" category="summary">Gérez vous-même les agrégats en ajoutant des disques, en affichant les informations sur les agrégats et en les supprimant.</block>
   <block id="ae271afdca3c7d6785a9aefa74e6c80e" category="doc">Gérer les paramètres de capacité sur un connecteur</block>
   <block id="b62aaf3fb48f9f8f103dc68c41211be5" category="paragraph">Chaque connecteur dispose de paramètres qui déterminent la façon dont il gère la capacité d'agrégat pour Cloud Volumes ONTAP.</block>
@@ -2345,18 +2273,15 @@
   <block id="29788364ff656936651870f4b1c88537" category="list-text">Facultatif : créez une LIF de gestion de VM de stockage en spécifiant l'adresse IP que vous avez ajoutée dans Google Cloud.</block>
   <block id="2c5d07ca61673fa8fb94be1c97bf91fe" category="paragraph">Notez que BlueXP alloue les adresses IP requises dans Google Cloud et crée la machine virtuelle de stockage avec une LIF de données pour les accès SMB/NFS et une LIF iSCSI pour les communications SMB sortantes.</block>
   <block id="8786838db6c83df6feac856057d2e141" category="list-text">Utilisez l'appel d'API suivant pour créer une machine virtuelle de stockage :</block>
-  <block id="78beb47b48fe8b17a288b32a8942a187" category="paragraph"><block ref="969418114de5daee0030fd2eade35222" prefix="" category="inline-code"></block></block>
   <block id="995ddfd1247131c9653edbf829fa6e28" category="paragraph">Le corps de la demande doit comprendre les éléments suivants :</block>
   <block id="b93afa1b577022f0769bc7e27b5bcd75" category="section-title">Gérer les machines virtuelles de stockage sur des paires haute disponibilité</block>
   <block id="4a5ed1e1f5c4ada56ab2471bc9700165" category="paragraph">L'API BlueXP prend également en charge le changement de nom et la suppression des machines virtuelles de stockage sur les paires HA.</block>
   <block id="c97c5ffc330239a3245482bb4881877a" category="section-title">Renommer une machine virtuelle de stockage</block>
   <block id="e0867a20bdb8328df5da5826abffd2f7" category="paragraph">Si besoin, vous pouvez à tout moment modifier le nom d'une machine virtuelle de stockage.</block>
   <block id="369a2d15e783c13b71dafb712d78bd30" category="list-text">Utiliser l'appel d'API suivant pour renommer une VM de stockage :</block>
-  <block id="a8e13a4a2ae779d87c425f89f896c8d6" category="paragraph"><block ref="e167fe445b9575f30af233894a7d0ade" prefix="" category="inline-code"></block></block>
   <block id="ce9c0fa786ae9e9debeb029c1c0a4c92" category="section-title">Supprimer une machine virtuelle de stockage</block>
   <block id="60bf8baad4677ce21f08a45b132bf6a5" category="paragraph">Si vous n'avez plus besoin d'une machine virtuelle de stockage, vous pouvez la supprimer de Cloud Volumes ONTAP.</block>
   <block id="730a4c8af06cfa818a6cf7829358b200" category="list-text">Utilisez l'appel d'API suivant pour supprimer une VM de stockage :</block>
-  <block id="cf85e355c90a5d24771cdce3003c6914" category="paragraph"><block ref="4ff7e1d96489ff4a1886b99f43cd0f39" prefix="" category="inline-code"></block></block>
   <block id="627dbb600651aad7173ae13133dfe740" category="summary">Le support de NetApp est inclus avec les systèmes de facturation Cloud Volumes ONTAP, mais vous devez d'abord activer le support en enregistrant les systèmes NetApp.</block>
   <block id="969ea14c5bc8e5c519f2569d0b7e4ead" category="inline-link-macro">décrit sur cette page</block>
   <block id="145677a5a159dfbbd80d693eb835dd56" category="paragraph">L'enregistrement d'un système PAYGO avec NetApp est requis pour mettre à niveau le logiciel ONTAP à l'aide des méthodes indiquées <block ref="a298d5e88f2fe29dd7b686b16fbea686" category="inline-link-macro-rx"></block>.</block>
@@ -3740,18 +3665,6 @@
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">Les systèmes à un seul nœud sont pris en charge.</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">Les licences achetées directement auprès de NetApp sont prises en charge.</block>
   <block id="13615a82d1149a992b363c411914d3b8" category="inline-link-macro">Cartes des régions mondiales pour Cloud Volumes ONTAP</block>
-  <block id="c87f63c179c59eda8579e373c6a25976" category="paragraph">Vous devrez créer les adresses IP suivantes dans l'équilibreur de charge :</block>
-  <block id="9b31eba9539b4b373752a1f9efafb8ac" category="list-text">Une adresse IP pour une LIF iSCSI sur le nœud 1 dans la NIC0 respective de chaque machine virtuelle</block>
-  <block id="6f2174023153761cdb987311021eaf2b" category="list-text">Créer le nombre requis de configurations IP front-end pour les LIFs data et SVM uniquement :</block>
-  <block id="b31c05988fa937699345307f0d088b5e" category="list-text">Pour les LIFs iSCSI, ajoutez l'adresse IP de NIC0.</block>
-  <block id="d8268f30cad7ca754b650b30d5a9fb20" category="list-text">Sous Paramètres, cliquez sur *configurations IP*.</block>
-  <block id="f14404f1eb77db8c34dfa687da4e9969" category="inline-image-macro">Copie d'écran de la page de configurations IP du portail Azure</block>
-  <block id="d3f503b2101b1859a2272746e61a2bca" category="paragraph"><block ref="d3f503b2101b1859a2272746e61a2bca" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d8292c375cfd1e8785887fa2307c216e" category="list-text">Entrez un nom pour la configuration IP, sélectionnez dynamique, puis cliquez sur *OK*.</block>
-  <block id="d139a8131606839195ad605bafe04b07" category="inline-image-macro">Capture d'écran de la fenêtre Ajouter une configuration IP</block>
-  <block id="d78a1a202c691ad37ba63488112cab29" category="paragraph"><block ref="d78a1a202c691ad37ba63488112cab29" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5007d33dbe3f9e50ed8c96fc08a7443a" category="list-text">Cliquez sur le nom de la configuration IP que vous venez de créer, définissez l'affectation sur statique, puis cliquez sur *Enregistrer*.</block>
-  <block id="aa700fba04d3b674bf01f1887210edfe" category="list-text">Entrez la commande suivante pour accéder au mode avancé.</block>
   <block id="b85a0d4dea04769a8ce6e0860eb4c90f" category="paragraph">Le groupe de sécurité prédéfini pour le médiateur HA inclut la règle entrante suivante.</block>
   <block id="52554fb81854d42f02280f83a1067574" category="cell">CIDR du connecteur</block>
   <block id="cdbb82146d412877f64f943229bd9533" category="cell">Adresse IP du connecteur sur l'instance AWS EC2</block>
@@ -4074,7 +3987,6 @@ Pour créer une subvention, reportez-vous à la section <block ref="2e58dbc76dde
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Il s'agit d'un ID généré par le système qui correspond à votre courrier électronique. Sur la page *NSS Management*, vous pouvez afficher votre courriel à partir du <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Si vous avez besoin d'actualiser vos jetons d'identification de connexion, il existe également une option *mettre à jour les informations d'identification* dans le <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="be9422df375517187d0426d4361fafa6" category="paragraph">Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans<block ref="24390b04eaeaec89ce5246eaa294abc3" category="inline-link-rx"></block>.</block>
   <block id="af13749595f5960a363d1c58fc759656" category="paragraph"><block ref="4610c02b1fca3398eed82ad29d834f6a" category="inline-link-macro-rx"></block>.</block>
   <block id="fef38ae672e04cfca804a3528b0c02b9" category="paragraph"><block ref="ae94ab44d9cabcaf642548c08d913cf9" category="inline-link-rx"></block>.</block>
   <block id="78b9037265070d084c1d8bcd663811e7" category="paragraph"><block ref="78b9037265070d084c1d8bcd663811e7" category="inline-link-rx"></block></block>
@@ -4441,7 +4353,6 @@ Cliquez sur *Ajouter un abonnement* pour associer les informations d'identificat
   <block id="44c305a704023f5d643a06ce08c03402" category="section-title">Mise en réseau améliorée</block>
   <block id="2aed0ca02213325feada0ee707489e81" category="inline-link-macro">Comment activer la mise en réseau améliorée comme SR-IOV ou ENA sur les instances Cloud Volumes ONTAP AWS</block>
   <block id="489d7e740d2dd946585a03c48af8f4cf" category="paragraph">Pour effectuer une mise à niveau vers Cloud Volumes ONTAP version 9.8 ou ultérieure, vous devez activer _Enhanced Networking_ sur le cluster exécutant le type d'instance c4, m4 ou r4. Pour activer ENA, reportez-vous à l'article de la base de connaissances <block ref="a4ba9465250c8fbd5a9415056507370e" category="inline-link-macro-rx"></block>.</block>
-  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Documentation Microsoft Azure</block>
   <block id="2cf711540cadf3cbb4cac96dba2d9464" category="list-text">Inclut des sauvegardes de volume illimitées avec la sauvegarde et la restauration BlueXP, mais uniquement pour les systèmes Cloud Volumes ONTAP qui utilisent l'offre professionnelle.</block>
   <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link">Configurez les licences pour la sauvegarde et la restauration BlueXP</block>
   <block id="fb2530f9293a4ba59cfd3ca6492bb972" category="section-title">23 octobre 2023</block>
@@ -5094,8 +5005,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="4855acbd91be04daa7cfbcfc6779e8fc" category="paragraph">Pour plus d'informations, reportez-vous à <block ref="7f365a8b545ccbb9e9433fd7ab85acf6" category="inline-link-macro-rx"></block>la .</block>
   <block id="00ca87b823c9fbffa58cc1470a0fc184" category="paragraph">Vous pouvez afficher les volumes FlexGroup créés via ONTAP System Manager ou l'interface de ligne de commandes ONTAP directement via l'onglet volumes de BlueXP . De même que les informations fournies pour les volumes FlexVol, BlueXP fournit des informations détaillées pour les volumes FleGroup créés via une mosaïque volumes dédiés. Sous la vignette volumes, vous pouvez identifier chaque groupe de volumes FlexGroup à l'aide du texte qui s'affiche lorsque vous positionnez le curseur de votre souris sur cette icône. En outre, vous pouvez identifier et trier les volumes FlexGroup sous la vue de liste des volumes via la colonne style de volume.</block>
   <block id="704ce057086edc7f390e72f33febfb03" category="list-text">Facultatif : accédez à l'interface de ligne de commande ONTAP pour Cloud Volumes ONTAP et exécutez *network interface show* pour confirmer que chacune de ces adresses IP est utilisée.</block>
-  <block id="210737c390cb0d28243061081a9b7c4a" category="admonition">Pour effectuer d'autres tâches liées à la carte réseau, vous pouvez attribuer un rôle de contributeur réseau ou un rôle personnalisé avec les autorisations appropriées dans Azure. Pour plus d'informations sur ces autorisations liées à la carte réseau, reportez-vous au<block ref="66f156d6b7e425dd982efc44f4fabac6" category="inline-link-rx"></block>.</block>
-  <block id="61576418077bcd8f8092882074c7da4e" category="admonition">Une IP front-end ne doit être créée sous NIC0 que pour chaque SVM correspondant. Pour plus d'informations sur l'ajout de l'adresse IP au SVM NIC0, se reporter à « Etape 7 [lien hypertexte] »</block>
   <block id="448ebe9e1f128098ee0a86ff8eada021" category="paragraph">Si votre licence est prise en charge, vous pouvez créer plusieurs machines virtuelles de stockage sur un système à un seul nœud ou sur une paire haute disponibilité. Vous devez utiliser l'API BlueXP  pour créer une VM de stockage sur une paire HA, tandis que vous pouvez utiliser ONTAP System Manager ou l'interface de ligne de commande ONTAP pour créer une VM de stockage sur un système à un seul nœud.</block>
   <block id="0bc83530bf1c3dfbdf7ae1a46191b416" category="paragraph">Vous devez utiliser l'API BlueXP pour créer une machine virtuelle de stockage sur un système Cloud Volumes ONTAP dans Google Cloud. L'utilisation de l'API (et non de ONTAP System Manager ou de l'interface de ligne de commandes ONTAP) est requise, car BlueXP  configure la VM de stockage avec les services LIF requis, ainsi qu'une LIF iSCSI requise pour les communications SMB/CIFS sortantes.</block>
   <block id="3fddfb3310c868dbd37067b4e4c94bc2" category="paragraph">BlueXP  prend en charge toutes les machines virtuelles de stockage supplémentaires que vous créez à partir de ONTAP System Manager ou de l'interface de ligne de commande ONTAP.</block>
@@ -5465,13 +5374,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="23364a1412324aba4675105eacf57908" category="example-title">Afficher les étapes</block>
   <block id="6ecba12db0576e8891316b6674fda716" category="paragraph">Vous pouvez désormais activer le stockage WORM (Write Once, Read Many) sur un système Cloud Volumes ONTAP existant à l'aide de BlueXP . Cette fonctionnalité vous offre la flexibilité d'activer WORM dans un environnement de travail, même si WORM n'y a pas été activé lors de sa création. Une fois activé, vous ne pouvez pas désactiver WORM.</block>
   <block id="31ccaa5879eee7a69ef3c48f1004c59c" category="list-text">Si vous changez de mode de facturation, cela n'a pas d'impact, que vous utilisiez une licence achetée sous NetApp (BYOL) ou un abonnement PAYGO (marché, paiement basé sur l'utilisation).</block>
-  <block id="deeb890dedc65f3ba1539e8c0083a08b" category="paragraph">Pour les paires haute disponibilité (HA), vous devez accéder à chaque machine virtuelle de stockage (SVM) dans le cluster et créer les adresses IP correspondantes sous nic0 pour chaque SVM. La façon dont vous allouez des adresses IP pour une paire haute disponibilité dépend du protocole de stockage que vous utilisez. En mode HA, les utilisateurs doivent s'assurer que les adresses IP sont correctement configurées pour prendre en charge le basculement et la redondance, ce qui est essentiel au maintien de la haute disponibilité et de la fiabilité du système de stockage.</block>
-  <block id="d40f712a330c4835a0ab9b70db06051b" category="list-text">Une adresse IP facultative pour une LIF de management du SVM</block>
-  <block id="534113954d7a54ea89ef88fa230b7146" category="paragraph">Les LIF iSCSI sont requises pour la communication DNS même si le protocole iSCSI n'est pas utilisé. Une LIF iSCSI est utilisée à cette fin, car elle ne migre pas au basculement.</block>
-  <block id="779dc7c57d3ba82d3f1438a241a8770a" category="inline-link-macro">procédure précédente</block>
-  <block id="7e5f8351d1e24c2cf0c0d5fbc956ea2b" category="list-text">Création de LIF de données. Dans cette étape, vous utilisez les adresses IP que vous avez allouées à l' <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block> pour servir de LIFs de données.</block>
-  <block id="e5da8bd8aa33e128edc30f4d0c6082f4" category="list-text">Créez des LIF iSCSI pour fournir une communication DNS. Les LIF iSCSI sont requises pour la communication DNS même si le protocole iSCSI n'est pas utilisé.</block>
-  <block id="1ea87a95c176e342e1e8fd101628481f" category="list-text">Créez les LIFs de données NAS. Dans cette étape, vous utilisez les adresses IP que vous avez allouées à l' <block ref="c0438a20d1b940963832742d765316e8" category="inline-link-macro-rx"></block> pour servir de LIFs de données.</block>
   <block id="c023c17ce97ef2fee30e2cb2aa0cd81a" category="paragraph">Pour plus d'informations, voir <block ref="7e81f0f3d7f6d88b77289e1baaf5eecf" category="inline-link-macro-rx"></block>.</block>
   <block id="c0131b1cf44af0fec95135e45a801bbe" category="doc">Planification des contrôles de service VPC dans Google Cloud</block>
   <block id="fa055d94084c7095d6c7ec354ec44857" category="doc">Liste des machines virtuelles prises en charge mises à jour pour Google Cloud en accord avec les bonnes pratiques</block>
@@ -5841,4 +5743,35 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">Centre DES ÉTATS-UNIS</block>
   <block id="7a6df46ff8e25ac610f60f312512afa4" category="list-text">US Gov Virginia (région du gouvernement des États-Unis - Virginie)</block>
   <block id="0de5f5ade75808b90faefd69873b4b3c" category="section-title">12 mars 2025</block>
+  <block id="322a339b221056f32120ffd18077d44d" category="doc">La création des machines virtuelles de stockage est automatisée au moyen des API dans Azure</block>
+  <block id="aa1c2167957b1092da7e43e77867748c" category="paragraph">Vous pouvez désormais utiliser les API BlueXP  pour créer, renommer et supprimer d'autres machines virtuelles de stockage servant les données pour Cloud Volumes ONTAP dans Azure. Ces API automatisent le processus de création des machines virtuelles de stockage, y compris la configuration des interfaces réseau, des LIF et d'une LIF de gestion, si vous devez utiliser une VM de stockage à des fins de gestion.</block>
+  <block id="5fc68a139fdd05790792b12eb853e84d" category="paragraph"><block ref="5fc68a139fdd05790792b12eb853e84d" category="inline-link-rx"></block></block>
+  <block id="6c06918c853ceff156bfa91e6f728521" category="paragraph">Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. Vous pouvez le connaître comme _SVM_ ou _vserver_. Cloud Volumes ONTAP est configuré avec une VM de stockage par défaut, mais vous pouvez créer d'autres VM de stockage lors de l'exécution de Cloud Volumes ONTAP dans Azure.</block>
+  <block id="a085c0a61467db1db666585d6c91ebba" category="paragraph">Pour créer et gérer d'autres machines virtuelles de stockage donnant accès aux données sur Azure, vous devez utiliser les API BlueXP . En effet, ces API automatisent le processus de création des machines virtuelles de stockage et de configuration des interfaces réseau requises. Lors de la création des machines virtuelles de stockage, BlueXP  configure les services LIF requis, ainsi qu'une LIF iSCSI requise pour les communications SMB/CIFS sortantes depuis la machine virtuelle de stockage.</block>
+  <block id="7147a143d2af533e058f535a19e1223d" category="paragraph">À partir de Cloud Volumes ONTAP 9.9.0, selon votre licence, plusieurs machines virtuelles de stockage sont prises en charge avec des configurations spécifiques. Reportez-vous<block ref="17601f6b0c4702ab7b2568d76b48bf40" category="inline-link-rx"></block> au pour vérifier le nombre de machines virtuelles de stockage prises en charge pour votre version de Cloud Volumes ONTAP.</block>
+  <block id="c0bc1a321126780ce6dd98fe7445b54b" category="paragraph">Toutes les versions de Cloud Volumes ONTAP antérieures à la version 9.9.0 prennent en charge une VM de stockage servant les données et une VM de stockage de destination utilisée pour la reprise après incident. Vous pouvez activer la machine virtuelle de stockage de destination pour accéder aux données en cas de panne sur la machine virtuelle de stockage source.</block>
+  <block id="d614d92be13a98e84d160b41e3cc3192" category="paragraph">Le connecteur nécessite des autorisations spécifiques pour créer et gérer des VM de stockage pour Cloud Volumes ONTAP. Les autorisations requises sont incluses dans<block ref="7dc648b1297c419be8c55b589146f4e1" category="inline-link-rx"></block>.</block>
+  <block id="d77aca129ef05e1d8e6c8f148746dce9" category="paragraph">En fonction de votre configuration et de votre type de licence, vous pouvez créer plusieurs machines virtuelles de stockage sur un système à un seul nœud ou dans une configuration haute disponibilité à l'aide des API BlueXP .</block>
+  <block id="ee24c5eec6ef0b71321a4b5ab8c7c8eb" category="paragraph">Lorsque vous créez des machines virtuelles de stockage à l'aide des API et que vous configurez les interfaces réseau requises, BlueXP  modifie également les<block ref="891e111023ee3cccd4407be6ddd24c21" prefix=" " category="inline-code"></block> règles sur les machines virtuelles de stockage de données en supprimant les services suivants de la LIF de données NAS et en les ajoutant à la LIF de données iSCSI utilisée pour les connexions de gestion sortantes :</block>
+  <block id="8706f6ead181f6948eb97f37a1eb2445" category="paragraph">Utilisez l'appel d'API suivant pour créer une VM de stockage sur un système à un seul nœud.</block>
+  <block id="3fdacbfd71cad923423d9367166e8e10" category="paragraph"><block ref="c9cca6b9ba2558d529f121eb1e013395" prefix="" category="inline-code"></block></block>
+  <block id="6b6d0dcd4030cb1778fc115dbc546a6d" category="paragraph">Utilisez l'appel d'API suivant pour créer une VM de stockage dans une configuration Azure HA :</block>
+  <block id="ffed8e594be63a1704331cda026451ec" category="paragraph"><block ref="332a159c5eb24709f786ad048b2b2fc8" prefix="" category="inline-code"></block></block>
+  <block id="546e719c658c5e1549c21e8288af2461" category="section-title">Gérez les machines virtuelles de stockage sur des systèmes à un seul nœud et des paires haute disponibilité</block>
+  <block id="2d9a7bdb8e630290a3ab4f21dc7b190b" category="paragraph">Grâce aux API BlueXP , vous pouvez renommer et supprimer des machines virtuelles de stockage dans des configurations haute disponibilité à un seul nœud.</block>
+  <block id="292926f0684b9510b55c12943203a47a" category="paragraph">Pour renommer une machine virtuelle de stockage, indiquez les noms de la machine virtuelle de stockage existante et de la nouvelle machine virtuelle de stockage en tant que paramètres.</block>
+  <block id="e313c8cca3b79dbc79cbcfe63c3d6efb" category="list-text">Utilisez l'appel d'API suivant pour renommer une VM de stockage sur un système à un seul nœud :</block>
+  <block id="163713240b16088767c6e8dd70caefde" category="paragraph"><block ref="d3fe545ac501d33a61917e447e4f0069" prefix="" category="inline-code"></block></block>
+  <block id="5fb2806cc031c54b3af655dfffd8fd1e" category="list-text">Utilisez l'appel d'API suivant pour renommer une VM de stockage dans une configuration haute disponibilité :</block>
+  <block id="f80f88eb929c0d4cd5386633be23cf21" category="paragraph"><block ref="d138335618e0186622605f96b9b3b0d1" prefix="" category="inline-code"></block></block>
+  <block id="c92f0160e249d6660e4b4262409aea6c" category="paragraph">Dans une configuration à un seul nœud ou haute disponibilité, vous pouvez supprimer une VM de stockage s'il ne possède aucun volume actif.</block>
+  <block id="a3590d03d962ac5b789854576b314e57" category="list-text">Utilisez l'appel d'API suivant pour supprimer une VM de stockage sur un système à un seul nœud :</block>
+  <block id="eba2f559f6f185c3ecb4fd32a7acf4c8" category="paragraph"><block ref="f72e53a28ab0632263c72933e322d2a6" prefix="" category="inline-code"></block></block>
+  <block id="55aa553ec7b227afb3f22326cbc74d66" category="list-text">Utilisez l'appel d'API suivant pour supprimer une VM de stockage dans une configuration haute disponibilité :</block>
+  <block id="ab5ee533b7c08abc987c74ffd54477b9" category="paragraph"><block ref="4bd28f76ace2927734ae3d3abcca1009" prefix="" category="inline-code"></block></block>
+  <block id="29840bff9430e52461cf42481774b929" category="paragraph">Le connecteur nécessite des autorisations spécifiques pour créer et gérer des machines virtuelles de stockage pour les paires haute disponibilité Cloud Volumes ONTAP. Les autorisations requises sont incluses dans<block ref="fef452a667b371049bf1cd426aa1994a" category="inline-link-rx"></block>.</block>
+  <block id="3fab6f26ccc1354a7fda62c947fe176d" category="paragraph"><block ref="4ae3965c67ec8b00b8c07c6aa50d0d55" prefix="" category="inline-code"></block></block>
+  <block id="491f4afb4d76ae587fca5e7ac986bec8" category="paragraph"><block ref="6c678c0fbac1c8687769d59bba8c2b43" prefix="" category="inline-code"></block></block>
+  <block id="f6c911e7dfb2a5f8d5a5d0776d47d0cf" category="paragraph"><block ref="ead0722cb022f93c950a941d0eae1560" prefix="" category="inline-code"></block></block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">10 mars 2025</block>
 </blocks>
