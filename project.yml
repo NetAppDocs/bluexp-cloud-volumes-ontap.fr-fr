@@ -50,7 +50,7 @@ sidebar:
         url: "/task-planning-your-config.html"
       - title: Configurez votre réseau
         entries:
-        - title: Configuration réseau requise
+        - title: Configuration du réseau AWS
           url: "/reference-networking-aws.html"
         - title: Configuration d'une passerelle de transit AWS
           url: "/task-setting-up-transit-gateway.html"
@@ -111,8 +111,6 @@ sidebar:
               url: "/task-file-verification-linux.html"
             - title: Vérification de la signature du fichier Mac OS
               url: "/task-file-verification-mac.html"
-          - title: Informations supplémentaires
-            url: "/reference-image-verification-links.html"
       - title: Lancez-vous sur le marché
         url: "/task-deploy-cvo-azure-mktplc.html"
     - title: Lancez-vous dans Google Cloud
@@ -180,13 +178,13 @@ sidebar:
       entries:
       - title: Compatible avec les machines virtuelles de stockage dans BlueXP
         url: "/task-managing-svms.html"
-      - title: Créez des machines virtuelles de stockage dans AWS
+      - title: Gérez vos machines virtuelles de stockage dans AWS
         flavor: aws
         url: "/task-managing-svms-aws.html"
-      - title: Créez des machines virtuelles de stockage dans Azure
+      - title: Gérez les machines virtuelles de stockage dans Azure
         flavor: azure
         url: "/task-managing-svms-azure.html"
-      - title: Création de machines virtuelles de stockage dans Google Cloud
+      - title: Gérez les machines virtuelles de stockage dans Google Cloud
         flavor: gcp
         url: "/task-managing-svms-gcp.html"
       - title: Configuration de la reprise d'activité SVM

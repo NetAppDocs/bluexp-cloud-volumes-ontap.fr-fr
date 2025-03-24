@@ -4,7 +4,7 @@ permalink: task-convert-node-capacity.html
 keywords: license conversion, convert node-based to capacity based, by-node to by-capacity, bluexp license conversion for node based 
 summary: 'Après la fin de disponibilité de vos licences basées sur les nœuds, vous devez passer à une licence basée sur la capacité à l"aide de l"outil de conversion de licences BlueXP .' 
 ---
-= Conversion des licences basées sur les nœuds en licences basées sur la capacité
+= Il convertit une licence Cloud Volumes ONTAP basée sur les nœuds en licence basée sur la capacité
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

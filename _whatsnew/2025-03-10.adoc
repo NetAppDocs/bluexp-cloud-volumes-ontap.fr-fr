@@ -8,4 +8,4 @@
 
 Vous pouvez désormais utiliser les API BlueXP  pour créer, renommer et supprimer d'autres machines virtuelles de stockage servant les données pour Cloud Volumes ONTAP dans Azure. Ces API automatisent le processus de création des machines virtuelles de stockage, y compris la configuration des interfaces réseau, des LIF et d'une LIF de gestion, si vous devez utiliser une VM de stockage à des fins de gestion.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Création de VM de stockage servant à la transmission des données pour Cloud Volumes ONTAP dans Azure"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azure.html["Gestion des VM de stockage de service de données pour Cloud Volumes ONTAP dans Azure"^]

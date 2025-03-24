@@ -10,7 +10,7 @@ NetApp a prévu la fin de disponibilité et la fin de prise en charge des licenc
 
 Pour les engagements annuels ou à long terme, NetApp vous recommande de contacter votre représentant NetApp avant la date de fin de disponibilité ou d'expiration de licence, afin de vous assurer que les conditions préalables à la transition sont bien remplies. Si vous ne disposez pas d'un contrat à long terme pour un nœud Cloud Volumes ONTAP et que vous envisagez d'utiliser votre système avec un abonnement PAYGO, il est important de planifier votre conversion avant la date de fin de support. Pour les contrats à long terme et les abonnements PAYGO, vous pouvez utiliser l'outil de conversion de licences BlueXP  pour une conversion transparente.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Conversion des licences basées sur les nœuds en licences basées sur la capacité"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#end-of-availability-of-node-based-licenses["Fin de disponibilité des licences basées sur les nœuds"^] https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-convert-node-capacity.html["Il convertit une licence Cloud Volumes ONTAP basée sur les nœuds en licence basée sur la capacité"^]
 
 
 

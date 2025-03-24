@@ -4,7 +4,7 @@ permalink: concept-performance.html
 keywords: performance, technical report, TR, workload, cpu 
 summary: Vous pouvez consulter les résultats des performances pour déterminer les charges de travail appropriées à Cloud Volumes ONTAP. 
 ---
-= Performance
+= En savoir plus sur le contrôle des performances des workloads Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -45,7 +45,7 @@ Pour plus de détails, reportez-vous à link:reference-networking-aws.html["Conf
 
 
 
-== Lancement d'un système Cloud Volumes ONTAP à un seul nœud dans AWS
+== Lancez un système Cloud Volumes ONTAP à un seul nœud dans AWS
 
 Pour lancer Cloud Volumes ONTAP dans AWS, vous devez créer un nouvel environnement de travail dans BlueXP .
 
@@ -288,7 +288,7 @@ Les quotas vous permettent de restreindre ou de suivre l'espace disque et le nom
 
 
 
-== Lancement d'une paire Cloud Volumes ONTAP HA dans AWS
+== Lancez une paire haute disponibilité Cloud Volumes ONTAP dans AWS
 
 Si vous souhaitez lancer une paire Cloud Volumes ONTAP HA dans AWS, vous devez créer un environnement de travail haute disponibilité dans BlueXP.
 

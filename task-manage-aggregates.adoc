@@ -4,7 +4,7 @@ permalink: task-manage-aggregates.html
 keywords: aggregates, delete aggregates, add disks, view aggregates 
 summary: Gérez vous-même les agrégats en ajoutant des disques, en affichant les informations sur les agrégats et en les supprimant. 
 ---
-= Gestion des agrégats
+= Gestion des agrégats pour les clusters Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

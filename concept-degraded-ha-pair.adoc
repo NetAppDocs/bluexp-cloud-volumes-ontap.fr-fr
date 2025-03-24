@@ -4,7 +4,7 @@ permalink: concept-degraded-ha-pair.html
 keywords: storage takeover, storage giveback, degraded, degraded status, degraded state, ha pair, ha takeover, takeover, giveback 
 summary: 'Lorsqu"un nœud d"une paire HA n"est pas disponible, l"autre nœud transmet les données à son partenaire pour assurer la continuité du service de données. Il s"agit de l"appel d"acquisition du stockage. Plusieurs actions sont indisponibles jusqu"à la fin du rétablissement dans le stockage.' 
 ---
-= Actions non disponibles lors du basculement
+= Opérations non disponibles lorsqu'un nœud de la paire HA Cloud Volumes ONTAP est hors ligne
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

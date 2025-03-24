@@ -4,7 +4,7 @@ permalink: reference-vpc-service-controls-gcp.html
 keywords: vpc, service controls, vpc-sc, google, psc, private service connect 
 summary: Lorsque vous choisissez de verrouiller votre environnement Google avec les contrôles de service VPC, vous devez comprendre comment BlueXP et Cloud Volumes ONTAP interagissent avec les API Google ainsi que comment configurer votre paramètre de service pour déployer BlueXP et Cloud Volumes ONTAP. 
 ---
-= Planification des contrôles de service VPC dans Google Cloud
+= Configurez les contrôles de service VPC pour déployer Cloud Volumes ONTAP dans Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-registering.html
 keywords: Cloud Volumes ONTAP, register, registering, paygo, pay-as-you-go, registration, instance id, serial number, account id, support 
 summary: 'Le support de NetApp est inclus avec les systèmes de facturation Cloud Volumes ONTAP, mais vous devez d"abord activer le support en enregistrant les systèmes NetApp.' 
 ---
-= Enregistrement des systèmes de paiement à l'utilisation
+= Enregistrez vos systèmes de paiement à l'utilisation Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

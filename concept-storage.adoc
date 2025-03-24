@@ -4,7 +4,7 @@ permalink: concept-storage.html
 keywords: storage, capacity, volumes, aggregates, raw capacity, usable capacity 
 summary: Comprendre comment Cloud Volumes ONTAP utilise le stockage cloud pour vous aider à comprendre vos coûts de stockage. 
 ---
-= Disques et agrégats
+= Disques et agrégats utilisés pour les clusters Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -45,7 +45,7 @@ Stockage EBS:: Dans AWS, un agrégat peut contenir jusqu'à 6 disques de même t
 --
 La taille maximale de disque est de 16 Tio.
 
-Le type de disque EBS sous-jacent peut être soit des disques SSD polyvalents (gp3 ou gp2), soit des SSD IOPS provisionnés (io1), soit des disques durs optimisés en termes de débit (st1). Vous pouvez associer un disque EBS à Amazon S3 pour link:concept-data-tiering.html["déplacez les données inactives vers un stockage objet à faible coût"].
+Le type de disque EBS sous-jacent peut être soit des disques SSD polyvalents (gp3 ou gp2), soit des SSD IOPS provisionnés (io1), soit des disques durs optimisés en termes de débit (st1). Vous pouvez associer un disque EBS à Amazon S3 à link:concept-data-tiering.html["stockage objet à faible coût"].
 
 
 NOTE: Il n'est pas recommandé de faire le Tiering des données dans le stockage objet lors de l'utilisation de disques durs à débit optimisé (st1).
@@ -83,7 +83,7 @@ Systèmes à un seul nœud:: Les systèmes à un seul nœud peuvent utiliser les
 Chaque type de disque géré a une taille de disque maximale de 32 Tio.
 
 +
-Vous pouvez coupler un disque géré avec le stockage Azure Blob à link:concept-data-tiering.html["déplacez les données inactives vers un stockage objet à faible coût"].
+Vous pouvez associer un disque géré avec le stockage Azure Blob à link:concept-data-tiering.html["stockage objet à faible coût"].
 
 
 
@@ -101,7 +101,7 @@ Paires HA:: Les paires HAUTE DISPONIBILITÉ utilisent deux types de disques qui 
 * Liens connexes*
 
 * link:task-planning-your-config-azure.html["Découvrez comment choisir les types et les tailles de disques pour vos systèmes dans Azure"]
-* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Lancement d'une paire HA Cloud Volumes ONTAP dans Azure"]
+* link:task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Lancez une paire haute disponibilité Cloud Volumes ONTAP dans Azure"]
 * https://docs.microsoft.com/en-us/azure/virtual-machines/disks-types["Documentation Microsoft Azure : types de disques gérés Azure"^]
 * https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview["Documentation Microsoft Azure : présentation des objets blob de pages Azure"^]
 * https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-azure.html["Consultez les limites de stockage pour Cloud Volumes ONTAP dans Azure"^]
@@ -117,7 +117,7 @@ ifdef::gcp[]
 
 Dans Google Cloud, un agrégat peut contenir jusqu'à 6 disques de même taille. La taille maximale de disque est de 64 Tio.
 
-Le type de disque peut être soit _Zonal SSD persistent disks_, _Zonal équilibré persistent disks_, soit _Zonal standard persistent disks_. Vous pouvez coupler des disques persistants avec un compartiment Google Storage vers link:concept-data-tiering.html["déplacez les données inactives vers un stockage objet à faible coût"].
+Le type de disque peut être soit _Zonal SSD persistent disks_, _Zonal équilibré persistent disks_, soit _Zonal standard persistent disks_. Vous pouvez associer des disques persistants à un compartiment Google Storage à link:concept-data-tiering.html["stockage objet à faible coût"].
 
 * Liens connexes*
 

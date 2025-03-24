@@ -4,7 +4,7 @@ permalink: task-file-verification-mac.html
 keywords: Azure, image, VHD, file signature verification, encryption, sha256, ONTAP, Cloud Volumes, CLI, Mac OS 
 summary: 'Vérifiez une signature de fichier VHD exportée via l"outil fichier de résumé d"images Cloud Volumes ONTAP sous Mac OS' 
 ---
-= Vérification de signature de fichier sous Mac OS
+= Vérifiez la signature d'image Azure Marketplace pour Cloud Volumes ONTAP sur Mac OS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

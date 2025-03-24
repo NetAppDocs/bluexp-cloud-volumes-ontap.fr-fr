@@ -4,7 +4,7 @@ permalink: reference-security-groups.html
 keywords: security group, security groups, rules, ports, aws, inbound, outbound, rules 
 summary: BlueXP crée des groupes de sécurité AWS qui incluent les règles entrantes et sortantes nécessaires au bon fonctionnement de Cloud Volumes ONTAP. Vous pouvez consulter les ports à des fins de test ou si vous préférez utiliser vos propres groupes de sécurité. 
 ---
-= Règles de groupe de sécurité pour AWS
+= Règles de groupe de sécurité AWS entrantes et sortantes pour Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: reference-worm-snaplock.html
 keywords: WORM, SnapLock, Snapshot copies, 
 summary: 'Vous pouvez créer des copies Snapshot inviolables de fichiers WORM (Write Once, Read Many) sur un système Cloud Volumes ONTAP et conserver les copies Snapshot sous forme non modifiée pendant une période de conservation spécifique.' 
 ---
-= Créez des copies Snapshot inviolables pour le stockage WORM
+= Créez des copies Snapshot inviolables de fichiers WORM sur Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

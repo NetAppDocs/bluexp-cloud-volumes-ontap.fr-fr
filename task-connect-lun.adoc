@@ -4,7 +4,7 @@ permalink: task-connect-lun.html
 keywords: lun, connect lun, iscsi lun, target iqn, iqn 
 summary: 'Lorsque vous créez un volume iSCSI, BlueXP crée automatiquement un LUN pour vous. Nous avons simplifié la gestion en créant un seul LUN par volume, ce qui n"implique aucune gestion. Une fois le volume créé, utilisez l"IQN pour vous connecter à la LUN à partir de vos hôtes.' 
 ---
-= Connectez une LUN à un hôte
+= Connectez-vous à une LUN sur Cloud Volumes ONTAP à partir du système hôte
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

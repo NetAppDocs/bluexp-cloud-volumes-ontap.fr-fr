@@ -4,7 +4,7 @@ permalink: task-setting-up-transit-gateway.html
 keywords: transit gateway, aws, amazon web services, transit gateway, floating ip, client access, nas, outside, vpc, virtual private cloud, route table 
 summary: 'Configurez une passerelle de transit AWS pour permettre à un client NAS d"accéder à des adresses IP flottantes depuis l"extérieur sur le VPC où réside Cloud Volumes ONTAP. Cette fonctionnalité est avantageuse car les adresses IP flottantes migrent automatiquement entre les nœuds en cas de défaillances.' 
 ---
-= Configuration d'une passerelle de transit AWS pour les paires HA dans plusieurs AZS
+= Configuration d'une passerelle de transit AWS pour les paires HA Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

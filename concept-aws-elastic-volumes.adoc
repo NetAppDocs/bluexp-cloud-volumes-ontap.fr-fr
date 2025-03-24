@@ -4,7 +4,7 @@ permalink: concept-aws-elastic-volumes.html
 keywords: elastic volumes, ev, ebs elastic volumes, ebs, amazon ebs, disk growth 
 summary: 'La prise en charge de la fonctionnalité Amazon EBS Elastic volumes intégrée dans un agrégat Cloud Volumes ONTAP améliore les performances et la capacité, et permet à BlueXP d"augmenter automatiquement la capacité du disque sous-jacent selon les besoins.' 
 ---
-= Volumes flexibles dans AWS
+= Découvrez la prise en charge d'AWS Elastic volumes avec Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

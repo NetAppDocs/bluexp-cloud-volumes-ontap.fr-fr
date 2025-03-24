@@ -4,7 +4,7 @@ permalink: task-accelerate-data-access.html
 keywords: flexcache, flexcache volumes, create a flexcache volume, provision flexcache, create flexcache volume 
 summary: 'Un volume FlexCache est un volume de stockage qui met en cache les données lues par NFS à partir d"un volume d"origine ou source. Les lectures suivantes des données mises en cache permettent un accès plus rapide à ces données.' 
 ---
-= Accélération de l'accès aux données avec les volumes FlexCache
+= Accélérez l'accès aux données avec les volumes FlexCache sur un système Cloud Volumes ONTAP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

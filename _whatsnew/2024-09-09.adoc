@@ -17,6 +17,6 @@ La tarification simplifiée offre les avantages suivants :
 
 En savoir plus sur ces fonctionnalités :
 
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Renforcer la protection contre les attaques par ransomware"]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html["Activez les solutions de protection NetApp contre les ransomwares pour Cloud Volumes ONTAP"]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-worm.html["Stockage WORM"]
 

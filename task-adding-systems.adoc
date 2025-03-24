@@ -4,7 +4,7 @@ permalink: task-adding-systems.html
 keywords: discover, discovering, add, adding, existing 
 summary: Vous pouvez découvrir et ajouter des systèmes Cloud Volumes ONTAP existants à BlueXP. Vous pouvez le faire si vous avez déployé un nouveau système BlueXP. 
 ---
-= Ajout de systèmes Cloud Volumes ONTAP existants à BlueXP
+= Ajouter un système Cloud Volumes ONTAP existant à BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

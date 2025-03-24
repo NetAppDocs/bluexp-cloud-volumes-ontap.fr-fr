@@ -4,7 +4,7 @@ permalink: task-managing-svms-gcp.html
 keywords: storage virtual machine, vserver, svm, storage vm, supported number, number supported, create svm, create storage vm, create vserver 
 summary: Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit des services de données et de stockage à vos clients. On peut le connaître comme un SVM ou un vserver. La solution Cloud Volumes ONTAP est configurée par défaut avec une seule machine virtuelle de stockage, mais certaines configurations prennent en charge des machines virtuelles de stockage supplémentaires. 
 ---
-= Création de machines virtuelles de stockage destinées aux données pour Cloud Volumes ONTAP dans Google Cloud
+= Gestion des machines virtuelles de stockage destinées à la transmission des données pour Cloud Volumes ONTAP dans Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

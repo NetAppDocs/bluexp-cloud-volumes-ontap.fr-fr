@@ -4,36 +4,19 @@ permalink: task-configure-placement-group-failure-aws.html
 keywords: placement group, failure, HA single zone, app.conf, rollback, AWS 
 summary: Cloud Volumes ONTAP utilise une liaison privée Azure pour les connexions aux comptes de stockage associés. Si nécessaire, vous pouvez désactiver les liens privés Azure et utiliser les terminaux de service. 
 ---
-= Configurez la création de groupe de placement pour AWS HA Single AZ
-:hardbreaks:
+= Configurez la création de groupes de placement pour les paires HA Cloud Volumes ONTAP dans les zones de disponibilité AWS individuelles
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]
-Cloud Volumes ONTAP échoue et restaure les nouveaux déploiements des configurations AWS haute disponibilité (HA) dans une zone de disponibilité unique (AZ) en cas d'échec de la création du groupe de placement. Si nécessaire, vous pouvez forcer la réussite des déploiements en configurant des groupes de placement pour contourner le processus de restauration lorsque la création échoue.
+Les déploiements Cloud Volumes ONTAP haute disponibilité dans une zone de disponibilité unique AWS peuvent échouer et revenir en arrière en cas de défaillance de la création du groupe de placement. La création du groupe de placement échoue également et le déploiement revient en arrière si le nœud Cloud Volumes ONTAP et l'instance du médiateur ne sont pas disponibles. Pour éviter cela, vous pouvez modifier la configuration pour permettre la fin du déploiement, même si la création du groupe de positionnement échoue.
 
-
-
-== Présentation
-
-Par défaut, les déploiements échouent et les retours arrière lorsqu'un groupe de placement échoue au processus de création d'un environnement de travail à zone de disponibilité unique haute disponibilité. La création du groupe de placement échoue également et rebascule si les deux nœuds Cloud Volumes ONTAP et l'instance de médiateur ne sont pas présents.
-
-Vous pouvez contourner le processus de retour arrière chaque fois que la création du groupe de placement échoue et autoriser les déploiements à continuer en configurant le fichier app.conf. Lors de l'annulation du processus de restauration, les déploiements ont réussi et le système génère une notification indiquant que la création du groupe de placement a échoué avec un état incomplet.
-
-
-
-=== Désactiver la restauration en cas d'échec du groupe de positionnement
-
-Pour désactiver l'échec du groupe de placement, l'indicateur « rollback-on-placement-group-failure » doit être défini sur « false ».
+Si vous contournez le processus de restauration, le processus de déploiement Cloud Volumes ONTAP s'achève avec succès et vous informe que la création du groupe de placement est incomplète.
 
 .Étapes
 . Utilisez SSH pour vous connecter à l'hôte du connecteur et connectez-vous.
-. Accédez au répertoire suivant : /opt/application/netapp/cloudManager/docker_ocm/data
-. Modifiez APP.conf en changeant la valeur du paramètre "rollback-on-placement-group-failure" à "false" :
+. Accédez à `/opt/application/netapp/cloudmanager/docker_occm/data`.
+. Modifiez `app.conf` en changeant la valeur du `rollback-on-placement-group-failure` paramètre à `false`. La valeur par défaut de ce paramètre est `true`.
 +
 [listing]
 ----
@@ -45,12 +28,5 @@ Pour désactiver l'échec du groupe de placement, l'indicateur « rollback-on-pl
     }
 }
 ----
-+
-
-NOTE: Par défaut, le paramètre « rollback-on-placement-group-failure » est défini sur « vrai ».
-
-. Enregistrez le fichier et déconnectez le connecteur.
-+
-Aucun redémarrage n'est requis.
-
+. Enregistrez le fichier et déconnectez le connecteur. Vous n'avez pas besoin de redémarrer le connecteur.
 

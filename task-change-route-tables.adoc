@@ -4,7 +4,7 @@ permalink: task-change-route-tables.html
 keywords: route tables, update route tables, modify route tables, change route table 
 summary: 'Vous pouvez modifier les tables de routage AWS incluant des routes vers les adresses IP flottantes pour une paire HA déployée sur plusieurs zones de disponibilité AWS. Vous pouvez le faire si les nouveaux clients NFS ou CIFS ont besoin d"accéder à une paire haute disponibilité dans AWS.' 
 ---
-= Modifier les tables de routage pour les paires HA dans plusieurs AZS
+= Modifier les tables de routage des paires Cloud Volumes ONTAP HA dans plusieurs zones de disponibilité AWS
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
