@@ -40,7 +40,14 @@ Un cloud privé virtuel (VPC) est nécessaire pour un système à un seul nœud.
 
 ==== Adresses IP privées
 
-BlueXP alloue 3 ou 4 adresses IP privées à un système à nœud unique dans Google Cloud.
+Pour un système à un seul nœud dans Google Cloud, BlueXP  alloue des adresses IP privées aux éléments suivants :
+
+* Nœud
+* Cluster
+* VM de stockage
+* LIF Data NAS
+* LIF Data iSCSI
+
 
 Vous pouvez ignorer la création de la LIF de gestion de VM de stockage (SVM) si vous déployez Cloud Volumes ONTAP à l'aide de l'API et spécifier le drapeau suivant :
 
@@ -227,7 +234,7 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 | \https://support.NetApp.com/aods/asupmessage \https://support.NetApp.com/asupprod/post/1.0/postAsup | AutoSupport | Permet d'envoyer des données de télémétrie AutoSupport à la prise en charge de NetApp. | Modes standard et restreint. | Les informations AutoSupport ne sont toujours pas transmises. 
 
 
-| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud (usage commercial). | Communication avec les services Google Cloud. | Modes standard, restreint et privé. | Cloud Volumes ONTAP ne peut pas communiquer avec le service Google Cloud pour effectuer des opérations BlueXP  spécifiques sur Google Cloud. 
+| \https://www.googleapis.com/compute/v1/projects/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects \https://compute.googleapis.com/compute/v1 | Google Cloud (usage commercial). | Communication avec les services Google Cloud. | Modes standard, restreint et privé. | Cloud Volumes ONTAP ne peut pas communiquer avec le service Google Cloud pour effectuer des opérations BlueXP  spécifiques dans Google Cloud. 
 |===
 
 

@@ -24,7 +24,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 La gestion des licences Cloud Volumes ONTAP est simplifiée grâce à des points de navigation améliorés dans le portefeuille digital BlueXP  :
 
-* Accédez facilement aux informations relatives à votre licence Cloud Volumes ONTAP via les onglets *gouvernance > portefeuille numérique > Présentation/licences de service de données*.
+* Accédez facilement aux informations relatives à votre licence Cloud Volumes ONTAP via les onglets *gouvernance > portefeuille numérique > Présentation/licences directes*.
 * Cliquez sur *Afficher* dans le panneau ONTAP de volume cloud de l'onglet *Présentation* pour obtenir une compréhension complète de vos licences basées sur la capacité. Cette vue avancée offre des informations détaillées sur vos licences et vos abonnements.
 * Si vous préférez l'interface précédente, vous pouvez cliquer sur le bouton *basculer vers la vue héritée* pour afficher les détails de la licence par type et modifier les méthodes de facturation de vos licences.
 

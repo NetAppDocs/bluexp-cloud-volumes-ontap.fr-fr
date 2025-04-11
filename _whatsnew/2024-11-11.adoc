@@ -40,7 +40,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === Option pour restreindre l'accès public au compte de stockage pour Azure
 
-Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
+Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP dans Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Règles de groupe de sécurité"^].
 

@@ -20,6 +20,18 @@ Les améliorations décrites sur cette page sont spécifiques aux fonctions Blue
 
 
 
+== 14 avril 2025
+
+
+
+=== La création des machines virtuelles de stockage est automatisée au moyen des API dans Google Cloud
+
+Vous pouvez désormais utiliser les API BlueXP  pour automatiser la création des machines virtuelles de stockage dans Google Cloud. Vous utilisez cette fonctionnalité dans des configurations Cloud Volumes ONTAP haute disponibilité (HA), et vous pouvez désormais l'utiliser dans des déploiements à un seul nœud. Avec les API BlueXP , vous pouvez facilement créer, renommer et supprimer d'autres serveurs de stockage virtuels qui servent les données dans votre environnement Google Cloud, sans avoir à configurer manuellement les interfaces réseau, les LIF et les LIF de gestion requises. Cette automatisation simplifie le processus de gestion des machines virtuelles de stockage.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html["Gestion des machines virtuelles de stockage destinées à la transmission des données pour Cloud Volumes ONTAP dans Google Cloud"^]
+
+
+
 == 28 mars 2025
 
 
@@ -122,7 +134,7 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-administer-ad
 
 La gestion des licences Cloud Volumes ONTAP est simplifiée grâce à des points de navigation améliorés dans le portefeuille digital BlueXP  :
 
-* Accédez facilement aux informations relatives à votre licence Cloud Volumes ONTAP via les onglets *gouvernance > portefeuille numérique > Présentation/licences de service de données*.
+* Accédez facilement aux informations relatives à votre licence Cloud Volumes ONTAP via les onglets *gouvernance > portefeuille numérique > Présentation/licences directes*.
 * Cliquez sur *Afficher* dans le panneau ONTAP de volume cloud de l'onglet *Présentation* pour obtenir une compréhension complète de vos licences basées sur la capacité. Cette vue avancée offre des informations détaillées sur vos licences et vos abonnements.
 * Si vous préférez l'interface précédente, vous pouvez cliquer sur le bouton *basculer vers la vue héritée* pour afficher les détails de la licence par type et modifier les méthodes de facturation de vos licences.
 
@@ -183,7 +195,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.ht
 
 === Option pour restreindre l'accès public au compte de stockage pour Azure
 
-Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP sur Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
+Vous pouvez désormais restreindre l'accès public à votre compte de stockage pour les systèmes Cloud Volumes ONTAP dans Azure. En désactivant l'accès, vous pouvez protéger votre adresse IP privée contre toute exposition, même au sein du même vnet, en cas de nécessité de respecter les politiques de sécurité de votre organisation. Cette option désactive également le Tiering des données pour vos systèmes Cloud Volumes ONTAP, et s'applique aussi bien aux paires à un seul nœud qu'aux paires haute disponibilité.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-networking-azure.html#security-group-rules["Règles de groupe de sécurité"^].
 
@@ -289,9 +301,9 @@ Les offres de licences basées sur la capacité Edge cache ne seront plus dispon
 
 
 
-=== Prise en charge minimale de la version de Flash cache sur Azure
+=== Prise en charge minimale de la version de Flash cache dans Azure
 
-La version minimale de Cloud Volumes ONTAP requise pour la configuration de Flash cache sur Azure est la version 9.13.1 GA. Vous pouvez utiliser ONTAP 9.13.1 GA et versions ultérieures uniquement pour déployer Flash cache sur les systèmes Cloud Volumes ONTAP dans Azure.
+La version minimale de Cloud Volumes ONTAP requise pour la configuration de Flash cache dans Azure est la version 9.13.1 GA. Vous pouvez utiliser ONTAP 9.13.1 GA et versions ultérieures uniquement pour déployer Flash cache sur les systèmes Cloud Volumes ONTAP dans Azure.
 
 Pour les configurations prises en charge, voir https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#single-node-systems["Configurations prises en charge dans Azure"^].
 

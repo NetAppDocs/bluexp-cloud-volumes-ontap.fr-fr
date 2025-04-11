@@ -67,7 +67,7 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)
 
-| Communication avec les services AWS. | Modes standard et privé. | Cloud Volumes ONTAP ne peut pas communiquer avec le service AWS pour effectuer des opérations BlueXP  spécifiques sur AWS. 
+| Communication avec les services AWS. | Modes standard et privé. | Cloud Volumes ONTAP ne peut pas communiquer avec le service AWS pour effectuer des opérations BlueXP  spécifiques dans AWS. 
 
 
 | Le terminal gouvernemental exact pour le service AWS dépend de la région AWS que vous utilisez. Les noeuds finaux sont suffixés avec `amazonaws.com` et `c2s.ic.gov`. Pour 	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["KIT DE DÉVELOPPEMENT LOGICIEL AWS"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Documentation Amazon"]plus d'informations, reportez-vous aux sections  et.  a| 
@@ -78,7 +78,7 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)
 
-| Communication avec les services AWS. | Mode restreint. | Cloud Volumes ONTAP ne peut pas communiquer avec le service AWS pour effectuer des opérations BlueXP  spécifiques sur AWS. 
+| Communication avec les services AWS. | Mode restreint. | Cloud Volumes ONTAP ne peut pas communiquer avec le service AWS pour effectuer des opérations BlueXP  spécifiques dans AWS. 
 |===
 
 

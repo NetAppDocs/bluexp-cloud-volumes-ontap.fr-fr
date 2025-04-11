@@ -20,7 +20,7 @@ L'image utilisée pour déployer de nouvelles instances, mettre à niveau ou êt
 
 == Pourquoi cette étape est-elle nécessaire ?
 
-Les images de Google Cloud ne peuvent pas être téléchargées directement. Pour vérifier l'image par rapport au Digest signé et aux certificats, vous devez disposer d'un mécanisme pour comparer les deux fichiers et télécharger l'image. Pour ce faire, vous devez exporter/convertir l'image au format disk.RAW et enregistrer les résultats dans un compartiment de stockage sur Google Cloud. Le fichier disk.RAW est barré et gzippé dans le processus.
+Les images de Google Cloud ne peuvent pas être téléchargées directement. Pour vérifier l'image par rapport au Digest signé et aux certificats, vous devez disposer d'un mécanisme pour comparer les deux fichiers et télécharger l'image. Pour ce faire, vous devez exporter/convertir l'image au format disk.RAW et enregistrer les résultats dans un compartiment de stockage dans Google Cloud. Le fichier disk.RAW est barré et gzippé dans le processus.
 
 L'utilisateur/le compte de service aura besoin de privilèges pour effectuer les opérations suivantes :
 
