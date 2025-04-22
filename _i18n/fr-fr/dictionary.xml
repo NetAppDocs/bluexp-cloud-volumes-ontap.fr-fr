@@ -1554,13 +1554,9 @@
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">Par exemple, vous pouvez acheter une seule licence de 20 Tio, déployer quatre systèmes Cloud Volumes ONTAP puis allouer un volume de 5 Tio à chaque système, pour un total de 20 Tio. La capacité est disponible pour les volumes de chaque système Cloud Volumes ONTAP déployé sur ce compte.</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">Une licence basée sur la capacité est disponible sous la forme d'un _package_. Lorsque vous déployez un système Cloud Volumes ONTAP, vous avez le choix entre plusieurs packages de licences en fonction des besoins de votre entreprise.</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="section-title">Packs</block>
-  <block id="d7c357dcc3b8476a2eeba19c87ec383d" category="paragraph">Fournit toutes les fonctionnalités Cloud Volumes ONTAP gratuitement auprès de NetApp (frais des fournisseurs cloud toujours applicables).</block>
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">Aucune licence ni contrat n'est nécessaire.</block>
   <block id="cc3b16b51bb72e66b8f103fef83035d9" category="list-text">L'assistance de NetApp n'est pas incluse.</block>
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">Votre système Cloud Volumes ONTAP est limité à 500 Gio de capacité provisionnée.</block>
-  <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">Vous pouvez utiliser jusqu'à 10 systèmes Cloud Volumes ONTAP avec l'offre « Freemium » par compte NetApp, quel que soit le fournisseur de cloud.</block>
-  <block id="16c274138bfaf739b851a1b611d4cdb0" category="list-text">Si la capacité provisionnée d'un système Cloud Volumes ONTAP dépasse 500 Gio, BlueXP convertit le système en package Essentials.</block>
-  <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">Tous les autres systèmes dont la capacité provisionnée est inférieure à 500 Gio restent sur « Freemium » (tant qu'ils ont été déployés à l'aide de l'offre Freemium).</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="section-title">Optimisé</block>
   <block id="a131e5df30c445534883b2b08d3f9e4e" category="paragraph">Payez séparément la capacité provisionnée et les opérations d'E/S.</block>
   <block id="258f58bf86a685fa4951f45a75224c86" category="list-text">Cloud Volumes ONTAP à un seul nœud ou haute disponibilité</block>
@@ -5646,7 +5642,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="95b5ae6b0af18840a3741634cd325668" category="list-text">Payez plusieurs systèmes Cloud Volumes ONTAP sur votre compte NetApp grâce à la capacité provisionnée. Inclut la possibilité d'acheter des services de données cloud supplémentaires. Pour plus d'informations sur les modèles de consommation dans les licences basées sur la capacité, reportez-vous <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>à la section .</block>
   <block id="c3f0a05442b6c8a72739ff963cfeed7f" category="paragraph">Les packages basés sur la capacité suivants sont disponibles pour Cloud Volumes ONTAP. Pour plus d'informations sur les packages de licences basés sur la capacité, reportez-vous à la section <block ref="800c64ac20219346d421e96b28656701" category="inline-link-macro-rx"></block>.</block>
   <block id="19a5330bf6f5eac370d1103981c5a834" category="inline-link-macro">charge minimale</block>
-  <block id="b0890bcc109876c5e12a5adec396926f" category="paragraph">Dès qu'un système est converti en package Essentials, le <block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block> s'applique.</block>
   <block id="f6d538cae99e0f8fa45e7e8780358583" category="paragraph">Pour savoir comment effectuer cette conversion, reportez-vous à la section <block ref="3fdaa70059ad7f9b695791d3dfebbc25" category="inline-link-macro-rx"></block>.</block>
   <block id="1a7468dd02c2c074fc65d2ee7db41483" category="doc">En savoir plus sur le contrôle des performances des workloads Cloud Volumes ONTAP</block>
   <block id="554a0d7666ec33e45169ab1eed7eb037" category="doc">Découvrez le chiffrement des données Cloud Volumes ONTAP et la protection contre les ransomwares</block>
@@ -5801,4 +5796,9 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="801c0fa0d304ca22d8afec06189bcf93" category="section-title">16 avril 2025</block>
   <block id="f0d468a1074534e3b37c7322f2e97bb1" category="section-title">3 avril 2025</block>
   <block id="bbe4e5e3881ef8307eb1dd518412cb45" category="paragraph">La licence d'évaluation ou d'essai automatique de 30 jours pour les abonnements avec paiement à l'utilisation sur le marché des fournisseurs cloud ne sera plus disponible dans Cloud Volumes ONTAP. La facturation de tout type d'abonnement au marché (PAYGO ou contrat annuel) sera activée à partir de la première utilisation, sans aucune période d'essai gratuite.</block>
+  <block id="f10f9d69e12a045fa89f83322880ee7c" category="paragraph">Fournit toutes les fonctionnalités Cloud Volumes ONTAP gratuitement auprès de NetApp (frais des fournisseurs cloud toujours applicables). Un emballage Freemium présente les caractéristiques suivantes :</block>
+  <block id="4e2db8f84e83acbb3ce91109a9eef20e" category="list-text">Vous pouvez utiliser jusqu'à 10 systèmes Cloud Volumes ONTAP avec l'offre Freemium par compte NetApp, pour n'importe quel fournisseur de cloud.</block>
+  <block id="84befd86706fa21112c130084b373991" category="list-text">Si la capacité provisionnée d'un système Cloud Volumes ONTAP est supérieure à 500 Gio, BlueXP  convertit le système en package Essentials.</block>
+  <block id="a0f8f1341588aae4d56d3b5fb0fde3de" category="paragraph">Dès qu'un système est converti en package Essentials, <block ref="7af77c30f2eff63b0d18155ad569ed75" category="inline-link-macro-rx"></block> s'applique à celui-ci.</block>
+  <block id="0551862e260539a3a516b4868d9bcead" category="paragraph">Un système Cloud Volumes ONTAP converti en package Essentials ne peut pas être ramené à Freemium même si la capacité provisionnée est réduite à moins de 500 Gio. Les autres systèmes dont la capacité provisionnée est inférieure à 500 Gio restent sur Freemium (tant qu'ils ont été déployés à l'aide de l'offre Freemium).</block>
 </blocks>

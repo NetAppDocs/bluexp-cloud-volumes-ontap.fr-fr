@@ -70,18 +70,18 @@ endif::gcp[]
 
 ==== Fréemium
 
-Fournit toutes les fonctionnalités Cloud Volumes ONTAP gratuitement auprès de NetApp (frais des fournisseurs cloud toujours applicables).
+Fournit toutes les fonctionnalités Cloud Volumes ONTAP gratuitement auprès de NetApp (frais des fournisseurs cloud toujours applicables). Un emballage Freemium présente les caractéristiques suivantes :
 
 * Aucune licence ni contrat n'est nécessaire.
 * L'assistance de NetApp n'est pas incluse.
 * Votre système Cloud Volumes ONTAP est limité à 500 Gio de capacité provisionnée.
-* Vous pouvez utiliser jusqu'à 10 systèmes Cloud Volumes ONTAP avec l'offre « Freemium » par compte NetApp, quel que soit le fournisseur de cloud.
-* Si la capacité provisionnée d'un système Cloud Volumes ONTAP dépasse 500 Gio, BlueXP convertit le système en package Essentials.
+* Vous pouvez utiliser jusqu'à 10 systèmes Cloud Volumes ONTAP avec l'offre Freemium par compte NetApp, pour n'importe quel fournisseur de cloud.
+* Si la capacité provisionnée d'un système Cloud Volumes ONTAP est supérieure à 500 Gio, BlueXP  convertit le système en package Essentials.
 +
-Dès qu'un système est converti en package Essentials, le link:concept-licensing-charging.html#minimum-charge["charge minimale"] s'applique.
+Dès qu'un système est converti en package Essentials, link:concept-licensing-charging.html#minimum-charge["charge minimale"] s'applique à celui-ci.
 
 +
-Tous les autres systèmes dont la capacité provisionnée est inférieure à 500 Gio restent sur « Freemium » (tant qu'ils ont été déployés à l'aide de l'offre Freemium).
+Un système Cloud Volumes ONTAP converti en package Essentials ne peut pas être ramené à Freemium même si la capacité provisionnée est réduite à moins de 500 Gio. Les autres systèmes dont la capacité provisionnée est inférieure à 500 Gio restent sur Freemium (tant qu'ils ont été déployés à l'aide de l'offre Freemium).
 
 
 
