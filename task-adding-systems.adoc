@@ -23,7 +23,7 @@ Vous devez connaître le mot de passe du compte d'administrateur Cloud Volumes O
 . Dans le menu de navigation de gauche, sélectionnez *stockage > Canvas*.
 . Sur la page Canevas, cliquez sur *Ajouter un environnement de travail*.
 . Sélectionnez le fournisseur de cloud dans lequel réside le système.
-. Choisissez le type de système Cloud Volumes ONTAP.
+. Choisissez le type de système Cloud Volumes ONTAP à ajouter.
 . Cliquez sur le lien pour découvrir un système existant.
 
 
@@ -33,8 +33,12 @@ ifdef::aws[]
 
 endif::aws[]
 
-. Sur la page Région, choisissez la région dans laquelle les instances sont exécutées, puis sélectionnez les instances.
-. Sur la page informations d'identification, entrez le mot de passe de l'utilisateur administrateur Cloud Volumes ONTAP, puis cliquez sur *Go*.
+. Sur la page région, sélectionnez une région. Vous pouvez voir les systèmes qui s'exécutent dans la région sélectionnée.
++
+
+NOTE: Les systèmes Cloud Volumes ONTAP sont représentés en tant qu'instances sur cette page. Dans la liste, vous pouvez sélectionner uniquement les instances enregistrées avec le compte actuel.
+
+. Sur la page informations d'identification, entrez le mot de passe de l'utilisateur admin Cloud Volumes ONTAP, puis sélectionnez *Go*.
 
 
 .Résultat

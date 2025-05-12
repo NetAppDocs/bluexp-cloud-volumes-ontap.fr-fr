@@ -18,6 +18,8 @@ Une VM de stockage est une machine virtuelle exécutée dans ONTAP, qui fournit 
 
 Pour créer et gérer des machines virtuelles de stockage supplémentaires qui servent les données dans Azure, vous devez utiliser les API BlueXP . En effet, ces API automatisent le processus de création des machines virtuelles de stockage et de configuration des interfaces réseau requises. Lors de la création des machines virtuelles de stockage, BlueXP  configure les services LIF requis, ainsi qu'une LIF iSCSI requise pour les communications SMB/CIFS sortantes depuis la machine virtuelle de stockage.
 
+Pour plus d'informations sur l'exécution des appels de l'API Cloud Volumes ONTAP, reportez-vous https://docs.netapp.com/us-en/bluexp-automation/cm/your_api_call.html#step-1-select-the-identifie["Votre premier appel API"^] à la section .
+
 
 
 == Nombre de machines virtuelles de stockage pris en charge
@@ -140,4 +142,9 @@ Dans une configuration à un seul nœud ou haute disponibilité, vous pouvez sup
 +
 `DELETE /azure/ha/working-environments/{workingEnvironmentId}/svm/{svmName}`
 
+
+
+.Informations associées
+* https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["Préparez-vous à utiliser l'API"^]
+* https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Workflows Cloud Volumes ONTAP"^]
 

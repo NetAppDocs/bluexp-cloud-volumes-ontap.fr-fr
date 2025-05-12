@@ -14,12 +14,12 @@ summary:
 
 
 [role="lead"]
-À partir de Cloud Volumes ONTAP 9.16.1, vous pouvez utiliser le déploiement direct d'Azure Marketplace pour déployer rapidement et facilement Cloud Volumes ONTAP. À partir d'Azure Marketplace, vous pouvez déployer rapidement Cloud Volumes ONTAP en quelques clics et explorer ses principales fonctionnalités dans votre environnement.
+Vous pouvez utiliser le déploiement direct d'Azure Marketplace pour déployer rapidement et facilement Cloud Volumes ONTAP. À partir d'Azure Marketplace, vous pouvez déployer rapidement Cloud Volumes ONTAP en quelques clics et explorer ses principales fonctionnalités dans votre environnement.
 
 Pour plus d'informations sur cette offre, reportez-vous à link:concept-azure-mktplace-direct.html["Découvrez les offres Cloud Volumes ONTAP sur BlueXP  et sur le marché"].
 
 .Description de la tâche
-L'instance de Cloud Volumes ONTAP déployée à l'aide d'Azure Marketplace Direct Deployment possède les propriétés suivantes :
+Le système Cloud Volumes ONTAP déployé à l'aide d'Azure Marketplace Direct Deployment possède ces propriétés. Notez que les fonctionnalités d'une instance autonome déployée via Azure Marketplace changent lors de la découverte dans BlueXP .
 
 * La dernière version de Cloud Volumes ONTAP (9.16.1 ou ultérieure).
 * Une licence gratuite pour Cloud Volumes ONTAP limitée à 500 Gio de capacité provisionnée Cette licence ne prend pas en charge NetApp et n'a pas de date d'expiration.
@@ -27,12 +27,12 @@ L'instance de Cloud Volumes ONTAP déployée à l'aide d'Azure Marketplace Direc
 * Un agrégat pour l'instance créée par défaut.
 * Un disque géré Premium SSD v2 de 500 Gio de capacité provisionnée, ainsi qu'une racine et un disque de données.
 * Une VM de stockage de données déployée, avec les services de données NFS, CIFS, iSCSI et NVMe/TCP. Vous ne pouvez pas ajouter de machines virtuelles de stockage de données supplémentaires.
-* Licences installées pour NFS, CIFS (SMB), iSCSI, anti-ransomware (ARW), SnapLock et SnapMirror.
+* Licences installées pour NFS, CIFS (SMB), iSCSI, la protection anti-ransomware autonome (ARP), SnapLock et SnapMirror.
 * https://docs.netapp.com/us-en/ontap/volumes/enable-temperature-sensitive-efficiency-concept.html["Efficacité du stockage ONTAP sensible à la température (TSSE)"^], le chiffrement de volume et la gestion externe des clés sont activés par défaut.
 * Ces fonctionnalités ne sont pas prises en charge :
 +
 ** Hiérarchisation FabricPool
-** Modification du type d'instance
+** Modification du type de VM de stockage
 ** Mode d'écriture rapide
 
 
@@ -67,7 +67,7 @@ NOTE: Si vous avez enregistré le fournisseur de ressources « Microsoft.Storage
 . Dans l'onglet *Notions de base*, fournissez les détails suivants :
 +
 ** *Abonnement* : sélectionnez un abonnement. Le déploiement sera lié au numéro d'abonnement.
-** *Groupe de ressources* : utilisez un groupe de ressources existant ou créez-en un nouveau. Les groupes de ressources permettent d'allouer toutes les ressources, telles que les disques et les machines virtuelles de stockage, au sein d'un même groupe pour une instance Cloud Volumes ONTAP.
+** *Groupe de ressources* : utilisez un groupe de ressources existant ou créez-en un nouveau. Les groupes de ressources permettent d'allouer toutes les ressources, telles que les disques et les machines virtuelles de stockage, au sein d'un même groupe pour un système Cloud Volumes ONTAP.
 ** *Région* : sélectionnez une région qui prend en charge le déploiement d'Azure HA dans une zone de disponibilité unique. Vous ne voyez que les régions disponibles dans la liste.
 ** *Taille* : sélectionnez une taille de VM de stockage pour le disque géré Premium SSD v2 pris en charge.
 ** *Zone* : sélectionnez une zone pour la région que vous avez sélectionnée.
@@ -96,9 +96,9 @@ Une fois accessible, utilisez ONTAP System Manager ou l'interface de ligne de co
 
 
 
-== Dépannage
+== Résoudre les problèmes de déploiement
 
-Les déploiements Cloud Volumes ONTAP effectués directement via Azure Marketplace n'incluent pas le support d'NetApp. Vous pouvez identifier et résoudre les problèmes éventuels pendant le déploiement de manière indépendante.
+Les systèmes Cloud Volumes ONTAP déployés directement via Azure Marketplace n'incluent pas le support d'NetApp. Vous pouvez identifier et résoudre les problèmes éventuels pendant le déploiement de manière indépendante.
 
 .Étapes
 . Sur le site Azure Marketplace, accédez à *Boot diagnostics > Serial log*.
@@ -111,6 +111,38 @@ Les déploiements Cloud Volumes ONTAP effectués directement via Azure Marketpla
 
 
 
+
+
+
+== Découvrez les systèmes déployés dans BlueXP 
+
+Vous pouvez découvrir les systèmes Cloud Volumes ONTAP que vous avez déployés à l'aide d'Azure Marketplace, leur déploiement direct et les gérer en tant qu'environnements de travail dans BlueXP . BlueXP  Connector détecte les systèmes, les ajoute en tant qu'environnements de travail, applique les licences BlueXP  nécessaires et libère toutes les capacités de BlueXP  pour ces systèmes. La configuration haute disponibilité d'origine dans une zone de disponibilité unique avec des disques gérés PSSD v2 est conservée et le système est enregistré dans les mêmes abonnement Azure et groupe de ressources que le déploiement d'origine.
+
+.Description de la tâche
+Après avoir découvert les systèmes Cloud Volumes ONTAP déployés à l'aide d'un déploiement direct Azure Marketplace, BlueXP  Connector effectue les tâches suivantes :
+
+* Remplace les licences gratuites des systèmes découverts en tant que licences régulières basées sur la capacité link:concept-licensing.html#packages["Licences Freemium"].
+* Conserve les fonctionnalités existantes des systèmes déployés et ajoute les fonctionnalités supplémentaires de BlueXP , telles que la protection des données, la gestion des données et les fonctions de sécurité.
+* Remplace les licences installées sur les nœuds par de nouvelles licences ONTAP pour NFS, CIFS (SMB), iSCSI, ARP, SnapLock et SnapMirror.
+* Convertit les numéros de série des nœuds génériques en numéros de série uniques.
+* Attribue de nouveaux balises système aux ressources, le cas échéant.
+* Convertit les adresses IP dynamiques de l'instance en adresses IP statiques.
+* Active les fonctionnalités du stockagelink:task-tiering.html["Hiérarchisation FabricPool"] , link:task-verify-autosupport.html["AutoSupport"]et link:concept-worm.html["write-once-read-many"] (WORM) sur les systèmes déployés. Vous pouvez activer ces fonctionnalités à partir de la console BlueXP  lorsque vous en avez besoin.
+* Enregistre les instances dans les comptes NSS utilisés pour les découvrir.
+* Active des fonctionnalités de gestion de la capacité dans link:concept-storage-management.html#capacity-management["modes automatique et manuel"] pour les systèmes détectés.
+
+
+.Avant de commencer
+Vérifiez que le déploiement est complet sur Azure Marketplace. BlueXP  Connector ne peut détecter les systèmes qu'une fois le déploiement terminé et qu'il est disponible pour la découverte.
+
+
+NOTE: Le déploiement direct d'Azure Marketplace prend en charge les types d'instances L8S_v3. Cependant, BlueXP  ne prend pas en charge ce type d'instance pour les configurations haute disponibilité et ne pourra pas le détecter correctement lors de la découverte.
+
+.Étapes
+Dans BlueXP , vous suivez la procédure standard pour détecter les systèmes existants. Reportez-vous à la link:task-adding-systems.html["Ajouter un système Cloud Volumes ONTAP existant à BlueXP "].
+
+.Une fois que vous avez terminé
+Une fois la détection terminée, vous pouvez afficher les systèmes répertoriés en tant qu'environnements de travail dans BlueXP . Vous pouvez effectuer diverses tâches de gestion, telles que link:task-manage-aggregates.html["extension de l'agrégat"], , link:task-create-volumes.html["ajout de volumes"] link:task-managing-svms-azure.html["Provisionnement d'ordinateurs virtuels de stockage supplémentaires"]et link:task-change-azure-vm.html["modification des types d'instances"].
 
 .Liens connexes
 Pour plus d'informations sur la création de stockage, reportez-vous à la documentation ONTAP :
