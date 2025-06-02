@@ -82,12 +82,13 @@ ifdef::aws[]
 
 === Prise en charge dans AWS
 
-* Le Tiering des données est pris en charge dans AWS à partir de Cloud Volumes ONTAP 9.2.
+* La hiérarchisation des données est prise en charge dans AWS à partir de Cloud Volumes ONTAP 9.2.
 * Le Tier de performance peut être des SSD polyvalents (gp3 ou gp2) ou des SSD IOPS provisionnés (io1).
 +
 
-NOTE: Il n'est pas recommandé de faire le Tiering des données dans le stockage objet lors de l'utilisation de disques durs à débit optimisé (st1).
+NOTE: Nous ne recommandons pas de hiérarchiser les données vers le stockage d'objets lors de l'utilisation de disques durs à débit optimisé (st1).
 
+* Les données inactives sont hiérarchisées selon les compartiments Amazon S3. La hiérarchisation vers d'autres fournisseurs n'est pas prise en charge.
 
 
 endif::aws[]
@@ -105,6 +106,7 @@ ifdef::azure[]
 
 
 * Le Tier de performance peut être des disques gérés SSD premium, des disques gérés SSD standard ou des disques gérés HDD standard.
+* Les données inactives sont hiérarchisées vers Microsoft Azure Blob. La hiérarchisation vers d'autres fournisseurs n'est pas prise en charge.
 
 
 endif::azure[]
@@ -115,8 +117,9 @@ ifdef::gcp[]
 
 === Prise en charge dans Google Cloud
 
-* Le Tiering des données est pris en charge dans Google Cloud à partir de Cloud Volumes ONTAP 9.6.
+* La hiérarchisation des données est prise en charge dans Google Cloud à partir de Cloud Volumes ONTAP 9.6.
 * Le Tier de performance peut être soit des disques persistants SSD, soit des disques persistants équilibrés, soit des disques persistants standard.
+* Les données inactives sont hiérarchisées vers Google Cloud Storage. La hiérarchisation vers d'autres fournisseurs n'est pas prise en charge.
 
 
 endif::gcp[]

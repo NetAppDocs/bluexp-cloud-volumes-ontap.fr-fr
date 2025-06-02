@@ -52,17 +52,40 @@ Les solutions de cryptage NetApp sont compatibles avec le chiffrement natif de v
 
 === Solutions de chiffrement NetApp (NVE et NAE)
 
-Cloud Volumes ONTAP prend en charge https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption (NVE) et chiffrement d'agrégat NetApp (NAE)"^]. NVE et NAE sont des solutions logicielles qui permettent le chiffrement des données au repos (conformes à la norme FIPS) de volumes 140-2. NVE et NAE utilisent tous deux le chiffrement AES 256 bits.
+Cloud Volumes ONTAP prend en charge https://www.netapp.com/pdf.html?item=/media/17070-ds-3899.pdf["NetApp Volume Encryption (NVE) et chiffrement d'agrégat NetApp (NAE)"^]. NVE et NAE sont des solutions logicielles qui permettent le chiffrement des données au repos des volumes conforme à la norme (FIPS) 140-2. NVE et NAE utilisent tous deux le chiffrement AES 256 bits.
 
 * NVE chiffre les données au repos un volume à la fois. Chaque volume de données dispose de sa propre clé de chiffrement unique.
 * NAE est une extension de NVE qui chiffre les données pour chaque volume, tandis que les volumes partagent une clé dans l'ensemble de l'agrégat. NAE permet également la déduplication de blocs communs à tous les volumes de l'agrégat.
 
 
-NVE et NAE sont pris en charge par un gestionnaire de clés externe.
+Cloud Volumes ONTAP prend en charge NVE et NAE avec les services de gestion de clés externes (EKM) fournis par AWS, Azure et Google Cloud, y compris des solutions tierces comme Fortanix. Contrairement à ONTAP, pour Cloud Volumes ONTAP, les clés de chiffrement sont générées par le fournisseur cloud, et non dans ONTAP.
 
-ifdef::azure[] endif::azure[] ifdef::gcp[] endif::gcp[]
+Cloud Volumes ONTAP utilise les services standard KMIP (Key Management Interoperability Protocol) d'ONTAP. Pour plus d'informations sur les services pris en charge, consultez le  https://imt.netapp.com/imt/#welcome["Matrice d'interopérabilité"^] .
 
-Par défaut, NetApp Aggregate Encryption (NAE) est activé sur les nouveaux agrégats après la configuration d'un gestionnaire de clés externe. Pour les nouveaux volumes qui ne font pas partie d'un agrégat NAE, NetApp Volume Encryption (NVE) est activé par défaut (par exemple, si des agrégats existants ont été créés avant de configurer un gestionnaire de clés externe).
+Si vous utilisez NVE, vous avez la possibilité d'utiliser le coffre-fort de clés de votre fournisseur de cloud pour protéger les clés de chiffrement ONTAP :
+
+ifdef::aws[]
+
+* AWS Key Management Service (KMS)
+
+
+endif::aws[]
+
+ifdef::azure[]
+
+* Azure Key Vault (AKV)
+
+
+endif::azure[]
+
+ifdef::gcp[]
+
+* Service Google Cloud Key Management
+
+
+endif::gcp[]
+
+Par défaut, NetApp Aggregate Encryption (NAE) est activé sur les nouveaux agrégats après la configuration d'un gestionnaire de clés externe. Les nouveaux volumes qui ne font pas partie d'un agrégat NAE ont NVE activé par défaut (par exemple, si vous avez des agrégats existants qui ont été créés avant la configuration d'un gestionnaire de clés externe).
 
 La configuration d'un gestionnaire de clés pris en charge est la seule étape requise. Pour obtenir des instructions de configuration, reportez-vous link:task-encrypting-volumes.html["Chiffrez vos volumes avec les solutions de chiffrement NetApp"]à la .
 
