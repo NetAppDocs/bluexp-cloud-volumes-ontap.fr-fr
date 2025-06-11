@@ -793,7 +793,6 @@
   <block id="aee8d559abdc902721a67500e5adf4b2" category="paragraph">BlueXP crée le compte de stockage avec les paramètres suivants :</block>
   <block id="f7c5c3f829ba75eb23b7c60381fd4f74" category="list-text">Tier d'accès : chaud</block>
   <block id="c89729007f1266a456e5a1133a9f58e9" category="list-text">Performance : standard</block>
-  <block id="dc4d23da133e198d425564262ad6976b" category="list-text">Redondance : stockage redondant localement (LRS)</block>
   <block id="2f546189dda4bc24c6d8f6ed71c57a36" category="list-text">Compte : StorageV2 (usage général v2)</block>
   <block id="e0d679a04a2c140c65cff67ffbfd8444" category="list-text">Transfert sécurisé requis pour les opérations d'API REST activées</block>
   <block id="4fbd5770a6fd5de01bbbcf2a407118d7" category="list-text">Accès à la clé du compte de stockage : activé</block>
@@ -1645,15 +1644,10 @@
   <block id="7ed9c1f7193f7727cfac5a7b6f0c1266" category="summary">Utilisez Azure Key Vault pour votre service tiers de gestion des clés.</block>
   <block id="0dbdff8ed1ef0e78c4dc84ace48205d6" category="inline-link-macro">Service de gestion des clés (KMS cloud) de Google Cloud Platform</block>
   <block id="0dbc3b305b67f45cc077782f1bde33be" category="list-text">Cloud Volumes ONTAP doit exécuter la version 9.10.1 ou ultérieure</block>
-  <block id="3db7729c3f93b51e237e9f64f77736ce" category="list-text">Licence VE (Volume Encryption) installée</block>
   <block id="941d09f50e1c95a1d21454ff759fc757" category="list-text">Vous devez être un administrateur de cluster ou de SVM</block>
-  <block id="105e3d12938c631bc5d8ab6f6b628e1c" category="list-text">Un abonnement actif à Google Cloud Platform</block>
-  <block id="41a2c826f6f02a44a93533524c99b84e" category="list-text">Cloud KMS peut uniquement être configuré sur un SVM de données</block>
   <block id="254f642527b45bc260048e30704edb39" category="section-title">Configuration</block>
   <block id="d8cc118193ca8f7de894de3aa3760c8b" category="inline-link-macro">Créez une clé et une clé GCP symétriques</block>
   <block id="f510135977c794727163a8e714df5b99" category="list-text">Dans votre environnement Google Cloud, <block ref="7ea8c432087c9eb8393041b63739b4b6" category="inline-link-macro-rx"></block>.</block>
-  <block id="43b2c0508e829808a52d205609043890" category="list-text">Créez un rôle personnalisé pour votre compte de service Cloud Volumes ONTAP.</block>
-  <block id="df877e8ddc7d9aae543dcf9650ab2c34" category="list-text">Attribuez le rôle personnalisé à la clé KMS cloud et au compte de service Cloud Volumes ONTAP :<block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
   <block id="d21cbe89c10e8cddec31594493146dcf" category="list-text">Télécharger la clé JSON du compte de service :<block ref="4b937c45430d3329e1a582321dea4485" prefix=" " category="inline-code"></block></block>
   <block id="29c35caadd576a358e25cf276cf3f5c4" category="list-text">Connectez-vous à la LIF de gestion du cluster avec votre client SSH préféré.</block>
   <block id="82e39d2f55f4956d1929bbcff0b210aa" category="list-text">Basculer vers le niveau de privilège avancé :<block ref="0581d0d071ad835f74bf419081ce5d75" prefix=" " category="inline-code"></block></block>
@@ -3486,7 +3480,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir cas*: Afficher tous les détails sur un cas spécifique.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau.</block>
   <block id="c616f204302ed58d4618e3ded77f1858" category="paragraph">Si vous utilisez une paire haute disponibilité, Cloud Volumes ONTAP prend en charge la vitesse d'écriture élevée avec plusieurs types de machines virtuelles, à commencer par la version 9.13.0. Accédez au<block ref="44033d1307c0997839bd6a3cb420c3fd" category="inline-link-rx"></block> Pour afficher les types de VM qui prennent en charge une vitesse d'écriture élevée.</block>
-  <block id="436ea77bab9d72d8fe71dbccf1dd6613" category="list-text">Licence MTEKM (Encryption Key Management) mutualisée installée, à partir de Cloud Volumes ONTAP 9.12.1 GA.</block>
   <block id="51f24173f2f6195b17c8e22458037f6c" category="summary">Vérifiez la signature d'un fichier image Google Cloud exporté à l'aide de l'outil fichier de résumé d'images Cloud Volumes ONTAP.</block>
   <block id="019892a31385e7fb7670de88abfcf3cd" category="paragraph">Pour vérifier l'image signée Google Cloud exportée, vous devez télécharger le fichier image Digest à partir du NSS pour valider le contenu du fichier disk.RAW et du fichier Digest.</block>
   <block id="c81429443fac6104f46abd88cff6840a" category="section-title">Résumé du flux de travail de vérification des images signées</block>
@@ -5865,4 +5858,17 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="4fa4358b6bad8118578db6b5c02a52db" category="list-text">La hiérarchisation des données est prise en charge dans Google Cloud à partir de Cloud Volumes ONTAP 9.6.</block>
   <block id="bae7cc0d7e8eb757103bffb3f43417c4" category="list-text">Les données inactives sont hiérarchisées vers Google Cloud Storage. La hiérarchisation vers d'autres fournisseurs n'est pas prise en charge.</block>
   <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 mai 2025</block>
+  <block id="af06b9862164f62f5ee6325272d44053" category="list-text">Redondance : conformément au déploiement de Cloud Volume ONTAP</block>
+  <block id="9a5070a4f48a9f2a4059c8b0f6fabc0f" category="list-text">Zone de disponibilité unique : stockage localement redondant (LRS)</block>
+  <block id="c43f742471855ab4046c8e23e0d8fe4e" category="list-text">Zone de disponibilité multiple : stockage redondant dans une zone (ZRS)</block>
+  <block id="76246533f5983ea5fd5d33c0515bcb4d" category="list-text">Votre système doit exécuter Cloud Volumes ONTAP 9.10.1 ou une version ultérieure</block>
+  <block id="7f41679ba0e676db7de59363a178d7d6" category="list-text">Vous devez utiliser une SVM de données. Cloud KMS ne peut être configuré que sur une SVM de données.</block>
+  <block id="6c167007d611da9626ecac9c168c7e8a" category="list-text">La licence Volume Encryption (VE) doit être installée sur le SVM</block>
+  <block id="26a7c42662e416d13cb36f80c1950dfa" category="list-text">À partir de Cloud Volumes ONTAP 9.12.1 GA, la licence multi-locataire Encryption Key Management (MTEKM) doit également être installée</block>
+  <block id="843cdd13756df08efb884f520d2add09" category="list-text">Un abonnement actif à Google Cloud Platform est requis</block>
+  <block id="7c10ba4172019b4730c14e61275bafac" category="list-text">Attribuez un rôle personnalisé à la clé Cloud KMS et au compte de service Cloud Volumes ONTAP.</block>
+  <block id="2428f19901807b70d43261121dafcf93" category="list-text">Créer le rôle personnalisé :</block>
+  <block id="f193581eeaf23b712b81e0023faf5954" category="list-text">Attribuez le rôle personnalisé que vous avez créé : <block ref="1bc6114e9ddb3402400afe0f18264312" prefix=" " category="inline-code"></block></block>
+  <block id="2ca4641842d5ce20115dfc5ed991df9a" category="admonition">Si vous utilisez Cloud Volumes ONTAP 9.13.0 ou une version ultérieure, vous n'avez pas besoin de créer de rôle personnalisé. Vous pouvez attribuer le rôle prédéfini. <block ref="73ac35632bb1fe345fd295d7683fcbee" category="inline-link-rx"></block><block ref="8f1f4fa398a38c70f01951f69f3c2a1f" prefix="[" category="inline-code"></block> ^] rôle.</block>
+  <block id="07bc73dbf27c2d6ca6dd4dcbb64687bf" category="paragraph">BlueXP n'offre pas de support de configuration ou d'orchestration pour la reprise après sinistre des machines virtuelles de stockage (SVM). Pour effectuer ces tâches, utilisez ONTAP System Manager ou l'interface de ligne de commande ONTAP.</block>
 </blocks>
