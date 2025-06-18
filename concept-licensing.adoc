@@ -42,7 +42,7 @@ Par exemple, vous pouvez acheter une seule licence de 20 Tio, déployer quatre s
 Une licence basée sur la capacité est disponible sous la forme d'un _package_. Lorsque vous déployez un système Cloud Volumes ONTAP, vous avez le choix entre plusieurs packages de licences en fonction des besoins de votre entreprise.
 
 
-NOTE: Même si l'utilisation et les mesures réelles des produits et services gérés dans BlueXP sont toujours calculés en Gio et en Tio, les termes Go/Gio et To/Tio sont utilisés de manière interchangeable. Elles figurent dans les offres Cloud Marketplace, les devis, les descriptions des offres ainsi que d'autres documents justificatifs.
+NOTE: Même si l'utilisation et les mesures réelles des produits et services gérés dans BlueXP sont toujours calculés en Gio et en Tio, les termes Go/Gio et To/Tio sont utilisés de manière interchangeable. Cela se reflète dans les listes de la place de marché Cloud, les devis de prix, les descriptions des listes et dans d'autres documents justificatifs.
 
 
 
@@ -115,14 +115,14 @@ Vous ne serez pas facturé pour les E/S liées à la réplication de données (S
 
 ifdef::azure[]
 
-* Disponible sur Azure Marketplace comme offre de paiement à l'utilisation ou comme contrat annuel
+* Disponible sur la place de marché Azure sous forme d'offre à la carte ou de contrat annuel
 
 
 endif::azure[]
 
 ifdef::gcp[]
 
-* Disponible dans Google Cloud Marketplace comme offre de paiement à l'utilisation ou comme contrat annuel
+* Disponible sur la place de marché Google Cloud sous forme d'offre à la carte ou de contrat annuel
 
 
 endif::gcp[]
