@@ -32,9 +32,6 @@ Voici la comparaison des fonctions entre les deux options. Notez que les fonctio
 
 | *Types de machines virtuelles (VM) pris en charge*  a| 
 Types d'instances EDS_v5 et LS_v3
-
-
-NOTE: Le type d'instance L8S_v3 est pris en charge dans Azure Marketplace pour les configurations HA, mais pas dans BlueXP . BlueXP  ne pourra pas le détecter correctement lors de la découverte.
 | Gamme complète de types de VM. https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html["Configurations prises en charge dans Azure"^] 
 
 

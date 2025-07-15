@@ -34,6 +34,9 @@ Si aucune connexion Internet sortante n'est disponible pour envoyer des messages
 
 Si vous avez défini des règles sortantes strictes pour Cloud Volumes ONTAP, vous devrez également vous assurer que le groupe de sécurité Cloud Volumes ONTAP autorise les connexions _sortantes_ sur le port 3128.
 
+
+TIP: Si vous utilisez une paire haute disponibilité, le médiateur haute disponibilité ne nécessite pas d'accès à Internet sortant.
+
 Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous au https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentation ONTAP : configuration de AutoSupport"^].
 
 

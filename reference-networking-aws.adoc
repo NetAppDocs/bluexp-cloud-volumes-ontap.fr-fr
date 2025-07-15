@@ -82,35 +82,23 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 |===
 
 
-==== Accès Internet sortant pour NetApp AutoSupport
-
-Les nœuds Cloud Volumes ONTAP requièrent un accès Internet sortant pour accéder aux terminaux externes pour diverses fonctions. Cloud Volumes ONTAP ne peut pas fonctionner correctement si ces terminaux sont bloqués dans des environnements soumis à des exigences de sécurité strictes.
-
-Les nœuds Cloud Volumes ONTAP nécessitent un accès Internet sortant pour l'AutoSupport, qui surveille de manière proactive l'état de santé de votre système et envoie des messages au support technique de NetApp.
-
-Les règles de routage et de pare-feu doivent autoriser le trafic HTTPS vers les points de terminaison suivants pour que Cloud Volumes ONTAP puisse envoyer des messages AutoSupport :
-
-* \https://support.netapp.com/aods/asupmessage
-* \https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-Si vous disposez d'une instance NAT, vous devez définir une règle de groupe de sécurité entrante qui autorise le trafic HTTPS du sous-réseau privé vers Internet.
-
-Si aucune connexion Internet sortante n'est disponible pour envoyer des messages AutoSupport, BlueXP configure automatiquement vos systèmes Cloud Volumes ONTAP pour utiliser le connecteur comme serveur proxy. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions _entrantes_ sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.
-
-Si vous avez défini des règles sortantes strictes pour Cloud Volumes ONTAP, vous devrez également vous assurer que le groupe de sécurité Cloud Volumes ONTAP autorise les connexions _sortantes_ sur le port 3128.
-
-Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous au https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentation ONTAP : configuration de AutoSupport"^].
-
-Si BlueXP vous informe que les messages AutoSupport ne peuvent pas être envoyés, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Résoudre les problèmes de configuration AutoSupport"].
-
-
-
 === Accès Internet sortant pour le médiateur haute disponibilité
 
 L'instance de médiateur haute disponibilité doit disposer d'une connexion sortante au service AWS EC2 pour qu'il puisse faciliter le basculement du stockage. Pour fournir la connexion, vous pouvez ajouter une adresse IP publique, spécifier un serveur proxy ou utiliser une option manuelle.
 
 L'option manuelle peut être une passerelle NAT ou un terminal VPC d'interface, du sous-réseau cible au service AWS EC2. Pour plus d'informations sur les terminaux VPC, reportez-vous au http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-interface.html["Documentation AWS : terminaux VPC d'interface (AWS PrivateLink)"^].
+
+
+
+=== Configurations réseau pour prendre en charge le proxy Connector
+
+Vous pouvez utiliser les serveurs proxy configurés pour le connecteur BlueXP afin d'activer l'accès Internet sortant depuis Cloud Volumes ONTAP. BlueXP prend en charge deux types de proxys :
+
+* *Proxy explicite* : Le trafic sortant de Cloud Volumes ONTAP utilise l'adresse HTTP du serveur proxy spécifié lors de la configuration du proxy du connecteur. L'administrateur du connecteur a peut-être également configuré les informations d'identification utilisateur et les certificats d'autorité de certification racine pour une authentification supplémentaire. Si un certificat d'autorité de certification racine est disponible pour le proxy explicite, assurez-vous de l'obtenir et de le télécharger dans votre environnement Cloud Volumes ONTAP à l'aide de l'outil  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI : installation du certificat de sécurité"^] commande.
+* *Proxy transparent* : Le réseau est configuré pour acheminer automatiquement le trafic sortant de Cloud Volumes ONTAP via le proxy du connecteur. Lors de la configuration d'un proxy transparent, l'administrateur du connecteur doit uniquement fournir un certificat d'autorité de certification racine pour la connectivité depuis Cloud Volumes ONTAP, et non l'adresse HTTP du serveur proxy. Assurez-vous d'obtenir et de télécharger le même certificat d'autorité de certification racine dans votre environnement Cloud Volumes ONTAP à l'aide de l'outil  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI : installation du certificat de sécurité"^] commande.
+
+
+Pour plus d'informations sur la configuration des serveurs proxy pour le connecteur BlueXP , reportez-vous au  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Configurez un connecteur pour utiliser un serveur proxy"^] .
 
 
 
@@ -162,10 +150,6 @@ Le nombre d'adresses IP privées requises pour une paire haute disponibilité d�
 
 Les tableaux suivants fournissent des informations détaillées sur les LIF associées à chaque adresse IP privée.
 
-
-
-===== LIF pour les paires haute disponibilité dans une même zone de disponibilité
-
 [cols="20,20,20,40"]
 |===
 | LIF | Interface | Nœud | Objectif 
@@ -197,10 +181,6 @@ Les tableaux suivants fournissent des informations détaillées sur les LIF asso
 
 | Médiateur | eth0 | Médiateur | Canal de communication entre les nœuds et le médiateur pour faciliter les processus de basculement et de rétablissement du stockage. 
 |===
-
-
-===== LIF pour paires haute disponibilité dans plusieurs systèmes AZS
-
 [cols="20,20,20,40"]
 |===
 | LIF | Interface | Nœud | Objectif 
@@ -343,4 +323,9 @@ Si vous n'avez pas encore créé de connecteur, vous devez également consulter 
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["Afficher les exigences de mise en réseau du connecteur"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["Règles de groupe de sécurité dans AWS"^]
+
+
+.Sections connexes
+* link:task-verify-autosupport.html["Vérifiez la configuration AutoSupport pour Cloud Volumes ONTAP"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["En savoir plus sur les ports internes ONTAP"^].
 

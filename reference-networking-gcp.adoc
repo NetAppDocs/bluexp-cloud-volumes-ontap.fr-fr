@@ -238,29 +238,6 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 |===
 
 
-==== Accès Internet sortant pour NetApp AutoSupport
-
-Cloud Volumes ONTAP nécessite un accès Internet sortant pour l'AutoSupport, qui contrôle de manière proactive l'état de santé de votre système et envoie des messages au support technique de NetApp.
-
-Les règles de routage et de pare-feu doivent autoriser le trafic HTTPS vers les points de terminaison suivants pour que Cloud Volumes ONTAP puisse envoyer des messages AutoSupport :
-
-* \https://support.netapp.com/aods/asupmessage
-* \https://support.netapp.com/asupprod/post/1.0/postAsup
-
-
-Si aucune connexion Internet sortante n'est disponible pour envoyer des messages AutoSupport, BlueXP configure automatiquement vos systèmes Cloud Volumes ONTAP pour utiliser le connecteur comme serveur proxy. La seule exigence est de s'assurer que le pare-feu du connecteur autorise les connexions _Inbound_ sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.
-
-Si vous avez défini des règles de trafic sortant strictes pour Cloud Volumes ONTAP, vous devrez également vous assurer que le pare-feu Cloud Volumes ONTAP autorise les connexions _sortantes_ sur le port 3128.
-
-Après avoir vérifié que l'accès Internet sortant est disponible, vous pouvez tester AutoSupport pour vous assurer qu'il peut envoyer des messages. Pour obtenir des instructions, reportez-vous au https://docs.netapp.com/us-en/ontap/system-admin/setup-autosupport-task.html["Documentation ONTAP : configuration de AutoSupport"^].
-
-
-TIP: Si vous utilisez une paire haute disponibilité, le médiateur haute disponibilité ne nécessite pas d'accès à Internet sortant.
-
-Si BlueXP vous informe que les messages AutoSupport ne peuvent pas être envoyés, link:task-verify-autosupport.html#troubleshoot-your-autosupport-configuration["Résoudre les problèmes de configuration AutoSupport"].
-
-
-
 === Connexions aux systèmes ONTAP dans d'autres réseaux
 
 Pour répliquer les données entre un système Cloud Volumes ONTAP dans Google Cloud et des systèmes ONTAP sur d'autres réseaux, vous devez disposer d'une connexion VPN entre le VPC et l'autre réseau, par exemple votre réseau d'entreprise.
@@ -381,10 +358,7 @@ Si vous utilisez votre propre stratégie de pare-feu, assurez-vous d'ajouter tou
 
 Le groupe de sécurité prédéfini pour Cloud Volumes ONTAP ouvre tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.
 
-
-
-===== Règles de base pour les appels sortants
-
+.Règles de base pour les appels sortants
 Le groupe de sécurité prédéfini pour Cloud Volumes ONTAP inclut les règles de sortie suivantes.
 
 [cols="20,20,60"]
@@ -400,11 +374,8 @@ Le groupe de sécurité prédéfini pour Cloud Volumes ONTAP inclut les règles 
 
 | Tous les protocoles UDP | Tout | Tout le trafic sortant 
 |===
-
-
-===== Règles de sortie avancées
-
-Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utiliser les informations suivantes pour ouvrir uniquement les ports requis pour la communication sortante par Cloud Volumes ONTAP.
+.Règles de sortie avancées
+Si vous avez besoin de règles rigides pour le trafic sortant, vous pouvez utiliser les informations suivantes pour ouvrir uniquement les ports requis pour la communication sortante par Cloud Volumes ONTAP. Les clusters Cloud Volumes ONTAP utilisent les ports suivants pour réguler le trafic des nœuds.
 
 
 NOTE: La source est l'interface (adresse IP) du système Cloud Volumes ONTAP.
@@ -477,9 +448,6 @@ NOTE: La source est l'interface (adresse IP) du système Cloud Volumes ONTAP.
 | TCP | 3128 | FRV de gestion des nœuds | Connecteur | Envoi de messages AutoSupport via un serveur proxy sur le connecteur, si aucune connexion Internet sortante n'est disponible 
 
 
-| Cluster | Tout le trafic | Tout le trafic | Tous les LIF sur un nœud | Tous les LIF de l'autre nœud | Communications InterCluster (Cloud Volumes ONTAP HA uniquement) 
-
-
 | Sauvegardes de la configuration | HTTP | 80 | FRV de gestion des nœuds | \Http://<connector-IP-address>/occm/offboxconfig | Envoyer des sauvegardes de configuration au connecteur. link:https://docs.netapp.com/us-en/ontap/system-admin/node-cluster-config-backed-up-automatically-concept.html["Documentation ONTAP"^] 
 
 
@@ -539,4 +507,29 @@ Si vous n'avez pas encore créé de connecteur, vous devez également consulter 
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["Afficher les exigences de mise en réseau du connecteur"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"^]
+
+
+
+
+=== Configurations réseau pour prendre en charge le proxy Connector
+
+Vous pouvez utiliser les serveurs proxy configurés pour le connecteur BlueXP afin d'activer l'accès Internet sortant depuis Cloud Volumes ONTAP. BlueXP prend en charge deux types de proxys :
+
+* *Proxy explicite* : Le trafic sortant de Cloud Volumes ONTAP utilise l'adresse HTTP du serveur proxy spécifié lors de la configuration du proxy du connecteur. L'administrateur du connecteur a peut-être également configuré les informations d'identification utilisateur et les certificats d'autorité de certification racine pour une authentification supplémentaire. Si un certificat d'autorité de certification racine est disponible pour le proxy explicite, assurez-vous de l'obtenir et de le télécharger dans votre environnement Cloud Volumes ONTAP à l'aide de l'outil  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI : installation du certificat de sécurité"^] commande.
+* *Proxy transparent* : Le réseau est configuré pour acheminer automatiquement le trafic sortant de Cloud Volumes ONTAP via le proxy du connecteur. Lors de la configuration d'un proxy transparent, l'administrateur du connecteur doit uniquement fournir un certificat d'autorité de certification racine pour la connectivité depuis Cloud Volumes ONTAP, et non l'adresse HTTP du serveur proxy. Assurez-vous d'obtenir et de télécharger le même certificat d'autorité de certification racine dans votre environnement Cloud Volumes ONTAP à l'aide de l'outil  https://docs.netapp.com/us-en/ontap-cli/security-certificate-install.html["ONTAP CLI : installation du certificat de sécurité"^] commande.
+
+
+Pour plus d'informations sur la configuration des serveurs proxy pour le connecteur BlueXP , reportez-vous au  https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["Configurez un connecteur pour utiliser un serveur proxy"^] .
+
+.Configurer les balises réseau pour Cloud Volumes ONTAP dans Google Cloud
+Lors de la configuration du proxy transparent du connecteur, l'administrateur du connecteur ajoute une balise réseau pour Google Cloud. Vous devez obtenir et ajouter manuellement la même balise réseau pour votre configuration Cloud Volumes ONTAP . Cette balise est nécessaire au bon fonctionnement du serveur proxy.
+
+. Dans la console Google Cloud, recherchez votre environnement de travail Cloud Volumes ONTAP .
+. Accédez à *Détails > Réseau > Balises réseau*.
+. Ajoutez la balise utilisée pour le connecteur et enregistrez la configuration.
+
+
+.Sections connexes
+* link:task-verify-autosupport.html["Vérifiez la configuration AutoSupport pour Cloud Volumes ONTAP"]
+* https://docs.netapp.com/us-en/ontap/networking/ontap_internal_ports.html["En savoir plus sur les ports internes ONTAP"^].
 

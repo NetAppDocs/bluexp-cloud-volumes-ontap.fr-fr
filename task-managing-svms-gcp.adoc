@@ -147,4 +147,6 @@ Dans une configuration à un seul nœud ou haute disponibilité, vous pouvez sup
 .Informations associées
 * https://docs.netapp.com/us-en/bluexp-automation/cm/prepare.html["Préparez-vous à utiliser l'API"^]
 * https://docs.netapp.com/us-en/bluexp-automation/cm/workflow_processes.html#organization-of-cloud-volumes-ontap-workflows["Workflows Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html#get-the-connector-identifier["Obtenir les identifiants requis"^]
+* https://docs.netapp.com/us-en/bluexp-automation/platform/use_rest_apis.html["Utiliser les API REST BlueXP"^]
 
