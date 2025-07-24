@@ -155,6 +155,9 @@ NOTE: Vous devez souscrire un abonnement PAYGO pour la sauvegarde et la restaura
 Pour assurer la disponibilité des licences PAYGO et BYOL pour les systèmes Cloud Volumes ONTAP, BlueXP  Connector doit être opérationnel. Pour plus d'informations, reportez-vous https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#impact-on-cloud-volumes-ontap["En savoir plus sur les connecteurs"^]à .
 
 
+NOTE: NetApp a restreint l'achat, la prolongation et le renouvellement des licences BYOL. Pour plus d'informations, consultez  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilité restreinte des licences BYOL pour Cloud Volumes ONTAPP"^] .
+
+
 
 === Comment démarrer
 

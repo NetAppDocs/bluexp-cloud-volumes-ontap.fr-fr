@@ -23,6 +23,10 @@ Vous devez vous familiariser avec la facturation et l'utilisation de la capacit�
 Des packs de licence basés sur la capacité sont disponibles avec les modèles de consommation suivants :
 
 * *BYOL* : apportez votre propre licence (BYOL). Licence achetée auprès de NetApp qui permet de déployer Cloud Volumes ONTAP chez n'importe quel fournisseur cloud.
++
+
+NOTE: NetApp a restreint l'achat, la prolongation et le renouvellement des licences BYOL. Pour plus d'informations, consultez  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilité restreinte des licences BYOL pour Cloud Volumes ONTAP"^] .
+
 
 
 ifdef::azure[]
@@ -37,7 +41,7 @@ endif::azure[]
 
 Notez ce qui suit :
 
-* Si vous achetez une licence auprès de NetApp (BYOL), vous devez également vous abonner à l'offre PAYGO depuis le marché de votre fournisseur cloud.
+* Si vous achetez une licence auprès de NetApp (BYOL), vous devez également souscrire à l'offre PAYGO sur la marketplace de votre fournisseur cloud. NetApp a restreint les licences BYOL. À l'expiration de vos licences BYOL, vous devez les remplacer par des abonnements à la marketplace cloud.
 +
 Votre licence est toujours facturée en premier, mais vous devrez payer à l'heure sur le marché dans les cas suivants :
 
@@ -47,7 +51,7 @@ Votre licence est toujours facturée en premier, mais vous devrez payer à l'heu
 
 
 * Si vous avez un contrat annuel provenant d'un marché, les systèmes _All_ Cloud Volumes ONTAP que vous déployez sont facturés pour ce contrat. Vous ne pouvez pas combiner un contrat annuel de marché avec BYOL.
-* Seuls les systèmes à un seul nœud avec BYOL sont pris en charge dans les régions chinoises.
+* Seuls les systèmes à nœud unique avec BYOL sont pris en charge en Chine. Les déploiements en Chine sont exemptés des restrictions de licence BYOL.
 
 
 
@@ -148,7 +152,7 @@ Pour le pack Essentials, les frais de capacité minimale de 4 To ne s'appliquent
 
 === Surâge
 
-Si vous dépassez votre capacité BYOL ou si votre licence expire, vous serez facturé pour les surcharges au taux horaire en fonction de votre abonnement Marketplace. Les dépassements sont facturés aux taux du marché, avec une préférence pour l'utilisation de la capacité disponible en premier lieu pour d'autres licences.
+Si vous dépassez votre capacité BYOL, les dépassements vous seront facturés au tarif horaire de votre abonnement à la place de marché. Les dépassements sont facturés au tarif de la place de marché, la capacité disponible des autres licences étant privilégiée. Si votre licence BYOL expire, vous devrez passer à un modèle de licence basé sur la capacité via les places de marché cloud.
 
 
 

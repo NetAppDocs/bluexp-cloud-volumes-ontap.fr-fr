@@ -86,27 +86,20 @@ Notez que le nom DNS doit correspondre aux exigences de nommage des DNS Azure ht
 
 .Étapes
 . SSH vers l'hôte du connecteur et connectez-vous.
-. Accédez au répertoire suivant : /opt/application/netapp/cloudManager/docker_ocm/data
-. Modifiez APP.conf en ajoutant le paramètre "User-private-dns-zone-settings" avec les paires de valeur-mot-clé suivantes :
+. Accédez au  `/opt/application/netapp/cloudmanager/docker_occm/data` annuaire.
+. Modifier  `app.conf` en ajoutant le  `user-private-dns-zone-settings` paramètre avec les paires mot-clé-valeur suivantes :
 +
-....
-"user-private-dns-zone-settings" : {
-   "resource-group" : "<resource group name of the DNS zone>",
-   "subscription" : "<subscription ID>",
-   "use-existing" : true,
-   "create-private-dns-zone-link" : true
-}
-....
+[source, cli]
+----
+ "user-private-dns-zone-settings" : {
+    "resource-group" : "<resource group name of the DNS zone>",
+    "subscription" : "<subscription ID>",
+    "use-existing" : true,
+    "create-private-dns-zone-link" : true
+ }
+----
 +
-Le paramètre doit être entré au même niveau que « system-ID » comme indiqué ci-dessous :
-
-+
-....
-"system-id" : "<system ID>",
-"user-private-dns-zone-settings" : {
-....
-+
-Notez que le mot-clé d'abonnement n'est requis que si la zone DNS privée existe dans un abonnement différent de celui du connecteur.
+Le  `subscription` le mot-clé n'est requis que si la zone DNS privée se trouve dans un abonnement différent de celui du connecteur.
 
 . Enregistrez le fichier et déconnectez le connecteur.
 +

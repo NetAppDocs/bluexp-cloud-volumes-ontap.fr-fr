@@ -17,7 +17,7 @@ summary: 'Chaque système Cloud Volumes ONTAP associé à un modèle BYOL basé 
 Chaque système Cloud Volumes ONTAP doté d'une licence BYOL (Bring Your Own License) basée sur le nœud doit être doté d'une licence système installée avec un abonnement actif. BlueXP simplifie le processus en gérant les licences pour vous et en affichant un avertissement avant leur expiration.
 
 
-TIP: Une licence basée sur des nœuds est la génération précédente (BYOL) pour Cloud Volumes ONTAP. Une licence basée sur les nœuds est disponible uniquement pour les renouvellements de licence.
+NOTE: Une licence basée sur les nœuds est la licence de génération précédente pour Cloud Volumes ONTAP. Une licence basée sur les nœuds peut être obtenue auprès de NetApp (BYOL) et est disponible pour le renouvellement de licence, uniquement dans des cas spécifiques.
 
 link:concept-licensing.html["En savoir plus sur les options des licences Cloud Volumes ONTAP"].
 
@@ -27,11 +27,12 @@ link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-l
 
 == Licences de système BYOL
 
-Une licence basée sur les nœuds offre jusqu'à 368 Tio de capacité pour une seule nœud ou paire HA.
+Les licences basées sur les nœuds peuvent être obtenues auprès de NetApp. Le nombre de licences disponibles pour un système à nœud unique ou une paire HA est illimité.
 
-Vous pouvez acheter plusieurs licences pour un système Cloud Volumes ONTAP BYOL pour allouer plus de 368 Tio de capacité. Par exemple, vous pouvez acheter deux licences pour allouer une capacité allant jusqu'à 736 Tio à Cloud Volumes ONTAP. Vous pouvez également acheter quatre licences pour obtenir jusqu'à 1.4 Pio.
 
-Le nombre de licences que vous pouvez acheter pour un système à un seul nœud ou une paire HA est illimité.
+NOTE: NetApp a restreint l'achat, la prolongation et le renouvellement des licences BYOL. Pour plus d'informations, consultez  https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#restricted-availability-of-byol-licensing-for-cloud-volumes-ontap["Disponibilité restreinte des licences BYOL pour Cloud Volumes ONTAPP"^] .
+
+Une licence basée sur un nœud offre jusqu'à 368 Tio de capacité pour un nœud ou une paire HA. Vous avez peut-être acheté plusieurs licences pour un système Cloud Volumes ONTAP BYOL afin d'allouer plus de 368 Tio de capacité. Par exemple, vous pouvez disposer de deux licences pour allouer jusqu'à 736 Tio de capacité à Cloud Volumes ONTAP. Vous pouvez également disposer de quatre licences pour atteindre jusqu'à 1,4 Tio.
 
 Notez que les limites de disques peuvent vous empêcher d'atteindre la limite de capacité en utilisant des disques seuls. Vous pouvez aller au-delà de la limite des disques de link:concept-data-tiering.html["tiering des données inactives vers le stockage objet"]. Pour plus d'informations sur les limites de disques, reportez-vous à la section https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/["Limites de stockage dans les notes de mise à jour de Cloud Volumes ONTAP"^].
 
@@ -67,7 +68,7 @@ Si vous ne renouvelez pas la licence à temps, le système Cloud Volumes ONTAP s
 
 == Renouvellement de la licence
 
-Lorsque vous renouvelez un abonnement BYOL basé sur les nœuds en contactant un représentant NetApp, BlueXP obtient automatiquement la nouvelle licence NetApp et l'installe sur le système Cloud Volumes ONTAP.
+Si vous renouvelez un abonnement BYOL basé sur un nœud en contactant un représentant NetApp , BlueXP obtient automatiquement la nouvelle licence auprès de NetApp et l'installe sur le système Cloud Volumes ONTAP .
 
 Si BlueXP ne peut pas accéder au fichier de licence via la connexion Internet sécurisée, vous pouvez link:task-manage-node-licenses.html["Procurez-vous le fichier vous-même, puis téléchargez manuellement le fichier dans BlueXP"].
 
