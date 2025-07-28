@@ -83,14 +83,6 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploy-cvo-azure-m
 
 
 
-=== Tiering des données pour les locataires Azure
-
-Vous pouvez désormais activer le Tiering pour un locataire Azure dans le cas où l'environnement de travail Cloud Volumes ONTAP est créé par un locataire et où BlueXP  Connector est créé par un autre locataire. Grâce à cette fonctionnalité, vous pouvez utiliser le même connecteur pour hiérarchiser les données de plusieurs locataires Azure.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html#requirements-to-tier-data-for-an-azure-tenant["Conditions requises pour procéder au Tiering des données d'un locataire Azure"^]
-
-
-
 == 16 avril 2025
 
 
