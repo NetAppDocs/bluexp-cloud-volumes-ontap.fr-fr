@@ -44,7 +44,6 @@ Pour plus d'informations sur la fin de disponibilité et l'EOS, reportez-vous à
 +
 *** Lorsque `Professional` est sélectionné comme pack de destination, le compte doit disposer d'une licence BYOL avec un pack professionnel :
 *** Lorsque `Essentials` est sélectionné comme pack de destination, le compte doit disposer d'une licence BYOL avec le pack Essentials.
-*** Lorsque `Optimized` est sélectionné comme pack de destination, le compte doit disposer d'une licence BYOL avec le pack optimisé.
 
 
 ** Si le package de destination ne correspond pas à la disponibilité de licence BYOL du compte, cela implique que la licence basée sur la capacité peut ne pas inclure le package sélectionné. Dans ce cas, vous serez facturé via votre abonnement Marketplace.
@@ -74,25 +73,22 @@ TIP: L'icône est désactivée si votre système Cloud Volumes ONTAP est déjà 
 ** Professionnel
 
 
-
-
-ifdef::azure[]
-
-* Optimisé (pour Azure)
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Optimisé (pour Google Cloud)
-
-
-endif::gcp[]
-
 . Si vous disposez d'une licence BYOL, vous pouvez cocher la case pour supprimer la licence basée sur le nœud du portefeuille digital BlueXP  après la conversion. Si la conversion n'est pas terminée, même si vous cochez cette case, la licence ne sera pas supprimée du portefeuille numérique. Si vous disposez d'un abonnement Marketplace, cette option n'est pas disponible.
 . Cochez la case pour confirmer que vous comprenez les implications du changement, puis cliquez sur *Continuer*.
 
 
 .Une fois que vous avez terminé
 Consultez le nouveau numéro de série de licence et vérifiez les modifications apportées au portefeuille digital BlueXP .
+
+
+
+== Tarification dans différents hyperscalaires
+
+Pour plus de détails sur les prix, rendez-vous sur le https://bluexp.netapp.com/pricing/["Site Web NetApp BlueXP"^] .
+
+Pour plus d'informations sur les offres privées dans des hyperscalaires spécifiques, écrivez à :
+
+* AWS - awspo@netapp.com
+* Azure - azurepo@netapp.com
+* Google Cloud - gcppo@netapp.com
+

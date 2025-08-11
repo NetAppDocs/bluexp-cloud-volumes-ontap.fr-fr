@@ -102,36 +102,6 @@ Vous pouvez payer par capacité dans plusieurs configurations différentes :
 
 
 
-==== Optimisé
-
-Payez séparément la capacité provisionnée et les opérations d'E/S.
-
-* Cloud Volumes ONTAP à un seul nœud ou haute disponibilité
-* La facturation se base sur deux éléments de coûts : le stockage et l'utilisation (E/S).
-+
-Vous ne serez pas facturé pour les E/S liées à la réplication de données (SnapMirror), aux sauvegardes (SnapVault) ou à NDMP.
-
-
-
-ifdef::azure[]
-
-* Disponible sur la place de marché Azure sous forme d'offre à la carte ou de contrat annuel
-
-
-endif::azure[]
-
-ifdef::gcp[]
-
-* Disponible sur la place de marché Google Cloud sous forme d'offre à la carte ou de contrat annuel
-
-
-endif::gcp[]
-
-* Ajoutez des services de données cloud de NetApp à vos frais supplémentaires
-
-
-
-
 ==== Professionnel
 
 Payez par capacité pour tout type de configuration Cloud Volumes ONTAP avec des sauvegardes illimitées.
@@ -249,7 +219,7 @@ Pour plus d'informations, reportez-vous à https://mysupport.netapp.com/info/com
 
 === Fin de disponibilité des licences basées sur les nœuds
 
-Depuis le 11 novembre 2024, la disponibilité limitée des licences basées sur les nœuds a pris fin. La prise en charge des licences basées sur les nœuds prend fin le 31 décembre 2024.
+À compter du 11 novembre 2024, la disponibilité limitée des licences basées sur des nœuds a pris fin.  Le support des licences basées sur les nœuds prend fin le 31 décembre 2024.
 
 Si vous disposez d'un contrat basé sur les nœuds valide qui s'étend au-delà de la date de fin de disponibilité, vous pouvez continuer à utiliser la licence jusqu'à l'expiration du contrat. Une fois le contrat expiré, il sera nécessaire de passer au modèle de licence basé sur la capacité. Si vous n'avez pas de contrat à long terme pour un nœud Cloud Volumes ONTAP, il est important de planifier votre conversion avant la date de fin de support.
 

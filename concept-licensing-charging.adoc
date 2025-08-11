@@ -31,8 +31,6 @@ NOTE: NetApp a restreint l'achat, la prolongation et le renouvellement des licen
 
 ifdef::azure[]
 
-+ Notez que le pack optimisé n'est pas disponible avec BYOL.
-
 endif::azure[]
 
 * *PAYGO* : un abonnement de paiement basé sur l'utilisation (PAYGO) est un abonnement horaire disponible sur le marché de votre fournisseur de cloud.
@@ -68,7 +66,7 @@ Pour plus d'informations sur la conversion des licences basées sur les nœuds e
 
 == Tarifs et configurations prises en charge
 
-Pour plus d'informations sur les prix, rendez-vous sur https://bluexp.netapp.com/pricing/["Site Web NetApp BlueXP"^].
+Pour plus de détails sur les prix, rendez-vous sur le https://bluexp.netapp.com/pricing/["Site Web NetApp BlueXP"^] .
 
 Les packages de licence basés sur la capacité sont disponibles avec Cloud Volumes ONTAP 9.7 et les versions ultérieures.
 
@@ -146,7 +144,7 @@ Chaque machine virtuelle de stockage servant de données dispose d'au moins un v
 
 Si vous n'avez pas encore provisionné de volumes, le coût minimum n'est pas appliqué.
 
-Pour le pack Essentials, les frais de capacité minimale de 4 To ne s'appliquent pas aux machines virtuelles de stockage qui contiennent des volumes secondaires (protection des données) uniquement. Par exemple, si vous disposez d'une machine virtuelle de stockage avec 1 To de données secondaires, vous êtes facturé uniquement pour cette To de données. Avec tous les autres types de package non Essentials (optimisé et professionnel), le tarif de capacité minimale de 4 To s'applique quel que soit le type de volume.
+Pour le package Essentials, les frais de capacité minimale de 4 Tio ne s'appliquent pas aux machines virtuelles de stockage qui contiennent uniquement des volumes secondaires (protection des données).  Par exemple, si vous disposez d'une machine virtuelle de stockage avec 1 Tio de données secondaires, vous êtes facturé uniquement pour ces 1 Tio de données.  Avec le type de forfait Professionnel, la facturation de capacité minimale de 4 Tio s'applique quel que soit le type de volume.
 
 
 

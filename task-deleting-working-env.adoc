@@ -18,10 +18,10 @@ Vous devez toujours supprimer des systèmes Cloud Volumes ONTAP de BlueXP, plut�
 
 Lorsque vous supprimez un environnement de travail, BlueXP met fin aux instances Cloud Volumes ONTAP et supprime les disques et les snapshots.
 
-Les ressources gérées par d'autres services, tels que les sauvegardes pour la sauvegarde et la restauration BlueXP, et les instances de classification BlueXP ne sont pas supprimées lorsque vous supprimez un environnement de travail. Vous devrez les supprimer manuellement vous-même. Si ce n'est pas le cas, vous continuerez à recevoir des frais pour ces ressources.
 
+NOTE: D'autres ressources, telles que les sauvegardes gérées par la BlueXP backup and recovery et les instances pour la BlueXP classification, ne sont pas supprimées lorsque vous supprimez un environnement de travail.  Vous devrez les supprimer manuellement.  Si vous ne le faites pas, vous continuerez à payer des frais pour ces ressources.
 
-NOTE: Lorsque BlueXP déploie Cloud Volumes ONTAP dans votre fournisseur cloud, il assure la protection des instances. Cette option permet d'éviter les raccordements accidentels.
+Lorsque BlueXP déploie Cloud Volumes ONTAP dans votre fournisseur cloud, il assure la protection des instances. Cette option permet d'éviter les raccordements accidentels.
 
 .Étapes
 . Si vous avez activé la sauvegarde et la restauration BlueXP dans l'environnement de travail, déterminez si les données sauvegardées sont toujours requises https://docs.netapp.com/us-en/bluexp-backup-recovery/task-manage-backups-ontap.html#deleting-backups["supprimez les sauvegardes, si nécessaire"^].
@@ -46,3 +46,6 @@ La suppression de l'environnement de travail peut prendre jusqu'à 5 minutes.
 
 
 
+
+
+NOTE: La BlueXP backup and recovery sont gratuites uniquement pour les licences Cloud Volumes ONTAP Professional.  Cet avantage gratuit ne s’applique pas aux environnements supprimés.  Si des copies sauvegardées de l'environnement Cloud Volumes ONTAP sont conservées dans une instance de BlueXP backup and recovery , les copies sauvegardées vous seront facturées jusqu'à leur suppression.
