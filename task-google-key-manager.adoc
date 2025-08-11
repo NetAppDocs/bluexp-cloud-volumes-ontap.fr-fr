@@ -8,7 +8,7 @@ summary: Utilisez le service de gestion des clés de Google pour votre service d
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

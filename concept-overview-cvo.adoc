@@ -45,7 +45,7 @@ Basculez entre pools de stockage hautes performances et faibles performances à 
 Cohérence des copies NetApp Snapshot avec NetApp SnapCenter
 
 +
-https://docs.netapp.com/us-en/snapcenter/concept/concept_snapcenter_overview.html["En savoir plus sur SnapCenter"^]
+https://docs.netapp.com/us-en/snapcenter/get-started/concept_snapcenter_overview.html["En savoir plus sur SnapCenter"^]
 
 * Sécurité des données
 +

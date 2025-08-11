@@ -1118,7 +1118,6 @@
   <block id="57cbefe39109ab51b31e818f9ce6d9c4" category="list-text">Supprimer l'environnement de travail Cloud Volumes ONTAP.</block>
   <block id="deacec910b77251dad4f11490aa93221" category="list-text">Sur la page Canevas, double-cliquez sur le nom de l'environnement de travail Cloud Volumes ONTAP que vous souhaitez supprimer.</block>
   <block id="4a9ee4aa88ebf38223ea447fe291d222" category="inline-image-macro">Capture d'écran affichant le menu disponible dans l'environnement de travail contenant l'action Supprimer.</block>
-  <block id="7d73be13421466d5cf5d832329f74c79" category="paragraph">La suppression de l'environnement de travail peut prendre jusqu'à 5 minutes.</block>
   <block id="f71bca1a74e3009d7cff4912558ab628" category="summary">Configurez une passerelle de transit AWS pour permettre à un client NAS d'accéder à des adresses IP flottantes depuis l'extérieur sur le VPC où réside Cloud Volumes ONTAP. Cette fonctionnalité est avantageuse car les adresses IP flottantes migrent automatiquement entre les nœuds en cas de défaillances.</block>
   <block id="cf6001a1cee041e1f5a754d3c5447f93" category="inline-link-macro">Adresses IP flottantes</block>
   <block id="74800c4b0c4f7420856e108da469e4d7" category="paragraph">Configurez une passerelle de transit AWS pour autoriser l'accès à une paire HA <block ref="b4592641b260566283cc706f7ca397da" category="inline-link-macro-rx"></block> Depuis l'extérieur du VPC, où réside la paire HA.</block>
@@ -2534,7 +2533,6 @@
   <block id="2d51420db26e68ce07b81103e73ac40f" category="list-text">La cohérence des applications</block>
   <block id="39cc8f8f6f1d13bb434a4ddc5d57b61b" category="paragraph">Cohérence des copies NetApp Snapshot avec NetApp SnapCenter</block>
   <block id="b130d62b437f2a119198feb1466a4c3b" category="inline-link">En savoir plus sur SnapCenter</block>
-  <block id="17f0fae3c5e44f9a095562194f423343" category="paragraph"><block ref="17f0fae3c5e44f9a095562194f423343" category="inline-link-rx"></block></block>
   <block id="4c5d94eb4dc4bff93f6a96a08ab7b244" category="list-text">Sécurité des données</block>
   <block id="7bf338973426a289a345974f4910386c" category="list-text">Contrôles de conformité à la confidentialité</block>
   <block id="81a04b1e875d3a2de5542007c35718a3" category="admonition">Les licences des fonctionnalités ONTAP sont incluses dans Cloud Volumes ONTAP.</block>
@@ -3585,7 +3583,6 @@
   <block id="78cffa6560689ac98432ba58e17e78ff" category="inline-image-macro">Capture d'écran affichant les options disponibles pour modifier la règle de Tiering d'un volume.</block>
   <block id="e0e0725f5ef956857b33c008a39af157" category="paragraph"><block ref="e0e0725f5ef956857b33c008a39af157" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec8e04c7758ae04f1375383b387929a1" category="paragraph"><block ref="ec8e04c7758ae04f1375383b387929a1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e46b959133eadbb0d00ac0a308843f30" category="list-text">Dans la fenêtre Supprimer l'environnement de travail, saisissez le nom de l'environnement de travail, puis cliquez sur *Supprimer*.</block>
   <block id="c4bd89564dafc82c9b2027b549fa45f2" category="list-text">Dans l'environnement de travail, cliquez sur l'onglet *volumes*.</block>
   <block id="31fe088c17d984a78f5027d2b8428e18" category="list-text">Dans l'onglet volumes, accédez au titre du volume souhaité, puis cliquez sur *gérer le volume* pour accéder au panneau de droite gérer les volumes.</block>
   <block id="2142690a2d1ae8bd820983b7911914d5" category="list-text">Cliquez sur *IQN cible*.</block>
@@ -5436,7 +5433,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="cded3209819889817786a4170eb0e49c" category="inline-link">Activez les solutions de protection NetApp contre les ransomwares pour Cloud Volumes ONTAP</block>
   <block id="d2675df83ff2fbafe199fb06a1fd5d56" category="list-text"><block ref="d2675df83ff2fbafe199fb06a1fd5d56" category="inline-link-rx"></block></block>
   <block id="c2e10e9222f5db93eded2cefa02c0ef5" category="inline-link">Il convertit une licence Cloud Volumes ONTAP basée sur les nœuds en licence basée sur la capacité</block>
-  <block id="0fc6c6e7c7c886fe493ee21e8e7be67d" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="b3c563b157608d2aec77c4e8d2c32e61" category="inline-link-rx"></block></block>
   <block id="4a688a36b1b8761ed6587867f87a2cc3" category="inline-link">Gestion des VM de stockage de service de données pour Cloud Volumes ONTAP dans Azure</block>
   <block id="efef8f9f364ee7668a530080a3464383" category="paragraph"><block ref="efef8f9f364ee7668a530080a3464383" category="inline-link-rx"></block></block>
   <block id="36b957c17f5c2834f27a8de7ecccad90" category="doc">Découvrez comment AutoSupport et Digital Advisor sont utilisés pour Cloud Volumes ONTAP</block>
@@ -5879,7 +5875,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="doc">Fin de disponibilité des licences optimisées</block>
   <block id="cf4dd05cf065c9ae01bc836c5033bb63" category="paragraph">À compter du 11 août 2025, la licence Cloud Volumes ONTAP Optimized sera obsolète et ne sera plus disponible à l’achat ou au renouvellement sur les places de marché Azure et Google Cloud pour les abonnements à la carte (PAYGO).  Si vous disposez d'un contrat annuel existant avec une licence optimisée, vous pouvez continuer à utiliser la licence jusqu'à la fin de votre contrat.  Lorsque votre licence optimisée expire, vous pouvez opter pour les licences Cloud Volumes ONTAP Essentials ou Professional.</block>
-  <block id="4e106c84c3dd2cbdc5b24d055fe09562" category="paragraph">Cependant, la possibilité d’ajouter ou de renouveler des licences optimisées serait disponible via les API.</block>
   <block id="2b8e43c95c1d15bc0824064c3dc0f993" category="paragraph">Pour plus d'informations sur les packages de licence, reportez-vous à<block ref="4b2776d787a70224c2441f63d3888380" category="inline-link-rx"></block> .</block>
   <block id="ed1f600d01a229b43b3196dd2f2e48ca" category="inline-link">Gérer les licences basées sur la capacité</block>
   <block id="1d4a9a37e700957e9d79664f032cf5ec" category="paragraph">Pour plus d'informations sur le passage à une autre méthode de charge, reportez-vous à<block ref="eeeecd1116eaf4db26e064552c04366d" category="inline-link-rx"></block> .</block>
@@ -5897,4 +5892,9 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="219fa750a13ad456df1d25524d9f6ad9" category="list-text">* Utilisation du package Cloud Volumes ONTAP * : Ce rapport inclut les informations suivantes pour chaque package :</block>
   <block id="cfba7e7177c8f36e5c073175ecdcec93" category="paragraph">Les licences basées sur la capacité vous permettent de payer Cloud Volumes ONTAP par Tio de capacité.  Les licences basées sur la capacité sont disponibles sous la forme d'un _package_ : le package Essentials ou Professional.</block>
   <block id="b9d888f58b09c4007db0247286e392b5" category="section-title">11 août 2025</block>
+  <block id="d7541fdf3e0094adec62a7042b5512d9" category="inline-link">Convertir une licence basée sur un nœud Cloud Volumes ONTAP en une licence basée sur la capacité</block>
+  <block id="249c33a7057b26f2c17f912ee1675174" category="paragraph"><block ref="677ce77d69762bd9f63d8a2760e6a0c4" category="inline-link-rx"></block> <block ref="c718c65e9665241afe238019ab334376" category="inline-link-rx"></block></block>
+  <block id="09027718866a8a3a2edb0bb0eb53c926" category="paragraph">Cependant, la possibilité d’ajouter ou de renouveler des licences optimisées sera disponible via les API.</block>
+  <block id="064c8585f26a6a9766e55da306b39425" category="paragraph"><block ref="064c8585f26a6a9766e55da306b39425" category="inline-link-rx"></block></block>
+  <block id="42f21a40b3b95c1fc1fe699b458d9f4f" category="list-text">Sous la fenêtre Supprimer l'environnement de travail, saisissez le nom de l'environnement de travail, puis cliquez sur *Supprimer*.  La suppression de l’environnement de travail peut prendre jusqu’à cinq minutes.</block>
 </blocks>
