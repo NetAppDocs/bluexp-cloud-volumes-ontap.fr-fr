@@ -69,7 +69,7 @@ Lorsque BlueXP déploie Cloud Volumes ONTAP dans Azure, il crée un noeud final 
 
 L'accès client passe par la liaison privée lorsque les clients se trouvent dans le même VNet que Cloud Volumes ONTAP, dans les VNets péré ou dans votre réseau sur site lors de l'utilisation d'une connexion VPN ou ExpressRoute privée au VNet.
 
-Voici un exemple illustrant l'accès des clients par liaison privée à partir d'un même réseau vnet et d'un réseau sur site doté d'une connexion VPN ou ExpressRoute privée.
+Voici un exemple qui montre l’accès client via une liaison privée à partir du même réseau virtuel et à partir d’un réseau local doté d’une connexion VPN privée ou ExpressRoute.
 
 image:diagram_azure_private_link.png["Image conceptuelle qui montre l'accès aux données vers Cloud Volumes ONTAP et par l'intermédiaire d'un point de terminaison privé et d'un lien privé vers le compte de stockage."]
 

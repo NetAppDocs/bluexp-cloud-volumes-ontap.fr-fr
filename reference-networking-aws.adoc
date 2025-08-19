@@ -70,7 +70,7 @@ L'authentification de l'utilisateur échoue et les services suivants restent ind
 | Communication avec les services AWS. | Modes standard et privé. | Cloud Volumes ONTAP ne peut pas communiquer avec le service AWS pour effectuer des opérations BlueXP  spécifiques dans AWS. 
 
 
-| Le terminal gouvernemental exact pour le service AWS dépend de la région AWS que vous utilisez. Les noeuds finaux sont suffixés avec `amazonaws.com` et `c2s.ic.gov`. Pour 	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["KIT DE DÉVELOPPEMENT LOGICIEL AWS"] https://docs.aws.amazon.com/general/latest/gr/rande.html["Documentation Amazon"]plus d'informations, reportez-vous aux sections  et.  a| 
+| Le point de terminaison gouvernemental exact pour le service AWS dépend de la région AWS que vous utilisez.  Les points de terminaison sont suffixés par `amazonaws.com` et `c2s.ic.gov` .  Se référer à	https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/model/Region.html["KIT DE DÉVELOPPEMENT LOGICIEL AWS"^] et https://docs.aws.amazon.com/general/latest/gr/rande.html["Documentation AWS"^] pour plus d'informations.  a| 
 * CloudFormation
 * Cloud de calcul élastique (EC2)
 * Gestion des identités et des accès

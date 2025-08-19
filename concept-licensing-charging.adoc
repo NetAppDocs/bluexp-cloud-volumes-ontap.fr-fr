@@ -96,9 +96,14 @@ Pour les paires haute disponibilité, la capacité provisionnée n'est nécessai
 
 == Limite de capacité
 
-Avec ce modèle de licence, chaque système Cloud Volumes ONTAP peut supporter jusqu'à 2 Pio de capacité via les disques et la hiérarchisation au stockage objet.
+Dans le modèle de licence basé sur la capacité, chaque système Cloud Volumes ONTAP prend en charge la hiérarchisation du stockage d'objets, et la capacité hiérarchisée totale peut évoluer jusqu'à la limite de compartiment du fournisseur de cloud.  Bien que la licence n'impose pas de restrictions de capacité, suivez les https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Bonnes pratiques de FabricPool"^] pour garantir des performances, une fiabilité et une rentabilité optimales lors de la configuration et de la gestion de la hiérarchisation.
 
-Il n'y a pas de limitation de la capacité maximale lorsqu'il s'agit de la licence elle-même.
+Pour plus d'informations sur les limites de capacité de chaque fournisseur de cloud, reportez-vous à leur documentation :
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["Documentation AWS"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["Documentation Azure pour les disques gérés"^]et https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Documentation Azure pour le stockage d'objets blob"^]
+* https://cloud.google.com/storage/docs/buckets["Documentation Google Cloud"^]
+
 
 
 

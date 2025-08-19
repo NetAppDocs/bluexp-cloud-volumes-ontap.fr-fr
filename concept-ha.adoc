@@ -126,7 +126,7 @@ Vous pouvez facilement identifier l'adresse IP correcte dans BlueXP en sélectio
 Le déploiement d'une configuration haute disponibilité dans une zone de disponibilité unique (AZ) peut assurer la haute disponibilité de vos données en cas de défaillance d'une instance exécutant un nœud Cloud Volumes ONTAP. Toutes les données sont accessibles en mode natif depuis l'extérieur du VPC.
 
 
-NOTE: BlueXP crée un https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Groupe de placement AWS réparti"^] Et lance les deux nœuds haute disponibilité de ce groupe de placement. Le groupe de placement réduit le risque de défaillances simultanées en répartissant les instances sur un matériel sous-jacent distinct. Cette fonctionnalité améliore la redondance en termes de calcul, et non en termes de défaillance des disques.
+NOTE: BlueXP crée un https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["Documentation AWS : Groupe de placement de spread AWS"^] et lance les deux nœuds HA dans ce groupe de placement.  Le groupe de placement réduit le risque de pannes simultanées en répartissant les instances sur des matériels sous-jacents distincts.  Cette fonctionnalité améliore la redondance du point de vue du calcul et non du point de vue des pannes de disque.
 
 
 
@@ -200,7 +200,7 @@ Le seul type de disque pris en charge est GP2. Les familles de types d'instances
 
 NOTE: Cloud Volumes ONTAP prend uniquement en charge ces configurations. La sélection de types de disques non pris en charge ou d'instances non qualifiées dans la configuration de la zone locale AWS peut entraîner l'échec du déploiement. Le Tiering des données vers AWS S3 n'est pas disponible dans les zones locales AWS en raison d'un manque de connectivité.
 
-Consultez la documentation AWS pour obtenir les informations les plus récentes et complètes sur le link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Types d'instances EC2 dans les zones locales"^].
+Consultez la documentation AWS pour obtenir les détails les plus récents et complets surlink:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2["Documentation AWS : types d'instances EC2 dans les zones locales"^] .
 
 
 

@@ -43,10 +43,9 @@ La sélection d'une zone locale est facultative. Cloud Volumes ONTAP est pris en
 
 NOTE: Cloud Volumes ONTAP ne prend pas en charge le Tiering des données et le Tiering dans le cloud dans les zones locales AWS. De plus, les zones locales avec des instances qui n'ont pas été qualifiées pour Cloud Volumes ONTAP ne sont pas prises en charge. Par exemple, Miami, qui n'est pas disponible en tant que zone locale, car seules les instances Gen6 ne sont pas prises en charge et non qualifiées.
 
-link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Afficher la liste complète des zones locales"^].
-Les zones locales doivent être activées avant de pouvoir créer et gérer des ressources dans ces zones.
+link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/locations/?nc=sn&loc=3["Documentation AWS : afficher la liste complète des zones locales"^] . Les zones locales doivent être activées avant de pouvoir créer et gérer des ressources dans ces zones.
 
-link:https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/["Découvrez comment activer une zone locale"^].
+link:https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html["Documentation AWS : Premiers pas avec les zones locales AWS"^] .
 
 
 
@@ -78,7 +77,7 @@ Type d'instance::
 * Si votre champ d'application implique essentiellement la lecture, optez pour un système disposant de suffisamment de mémoire RAM.
 +
 ** https://aws.amazon.com/ec2/instance-types/["Documentation AWS : types d'instances Amazon EC2"^]
-** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["Documentation AWS : instances optimisées pour Amazon EBS"^]
+** https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html["Documentation AWS : Instances optimisées pour Amazon EBS"^]
 
 
 
@@ -89,7 +88,7 @@ Type de disque EBS:: À un niveau élevé, les différences entre les types de d
 --
 * _Les disques SSD à usage générique (gp3)_ sont les disques SSD les plus économiques qui permettent d'équilibrer les coûts et les performances pour une grande variété de charges de travail. Les performances sont définies en termes d'IOPS et de débit. Les disques gp3 sont pris en charge par Cloud Volumes ONTAP 9.7 et versions ultérieures.
 +
-Lorsque vous sélectionnez un disque gp3, BlueXP remplit les valeurs d'IOPS et de débit par défaut qui fournissent des performances équivalentes à un disque gp2 en fonction de la taille de disque sélectionnée. Vous pouvez augmenter les valeurs pour obtenir de meilleures performances à un coût plus élevé, mais nous ne prenons pas en charge des valeurs plus faibles, car cela peut entraîner des performances inférieures. En bref, collez-les avec les valeurs par défaut ou augmentez-les. Ne les baissez pas. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["En savoir plus sur les disques gp3 et leurs performances"^].
+Lorsque vous sélectionnez un disque gp3, BlueXP renseigne les valeurs d'IOPS et de débit par défaut qui fournissent des performances équivalentes à celles d'un disque gp2 en fonction de la taille du disque sélectionné.  Vous pouvez augmenter les valeurs pour obtenir de meilleures performances à un coût plus élevé, mais nous ne prenons pas en charge les valeurs inférieures car cela peut entraîner des performances inférieures.  En bref, conservez les valeurs par défaut ou augmentez-les.  Ne les baissez pas. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#gp3-ebs-volume-type["Documentation AWS : En savoir plus sur les disques gp3 et leurs performances"^] .
 
 +
 Notez que Cloud Volumes ONTAP prend en charge la fonctionnalité Amazon EBS Elastic volumes avec des disques gp3. link:concept-aws-elastic-volumes.html["En savoir plus sur la prise en charge d'Elastic volumes"].

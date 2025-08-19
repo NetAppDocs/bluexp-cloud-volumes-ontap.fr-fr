@@ -176,7 +176,14 @@ Les abonnements Keystone sont pris en charge avec les paires haute disponibilit�
 
 === Limite de capacité
 
-Chaque système Cloud Volumes ONTAP peut atteindre jusqu'à 2 Pio de capacité maximale grâce à des disques et à une hiérarchisation sur le stockage objet.
+Dans le modèle de licence basé sur la capacité, chaque système Cloud Volumes ONTAP prend en charge la hiérarchisation du stockage d'objets, et la capacité hiérarchisée totale peut évoluer jusqu'à la limite de compartiment du fournisseur de cloud.  Bien que la licence n'impose pas de restrictions de capacité, suivez les https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["Bonnes pratiques de FabricPool"^] pour garantir des performances, une fiabilité et une rentabilité optimales lors de la configuration et de la gestion de la hiérarchisation.
+
+Pour plus d'informations sur les limites de capacité de chaque fournisseur de cloud, reportez-vous à leur documentation :
+
+* https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html["Documentation AWS"^]
+* https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["Documentation Azure pour les disques gérés"^]et https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Documentation Azure pour le stockage d'objets blob"^]
+* https://cloud.google.com/storage/docs/buckets["Documentation Google Cloud"^]
+
 
 
 
