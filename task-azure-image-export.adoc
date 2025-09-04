@@ -63,22 +63,28 @@ Par exemple, tous les déploiements à un seul nœud avec Cloud Volumes ONTAP 9.
 |===
 
 
-| *Version Cloud Volumes ONTAP* | *Méthode de déploiement VM* | *Nom SKU* 
+| *Version Cloud Volumes ONTAP* | *Déploiement de VM via* | *Nom SKU* 
 
 
-| 9.16.1 et versions ultérieures | Via la méthode de déploiement direct sur le marché | ONTAP_cloud_direct 
+| 9.17.1 et versions ultérieures | La place de marché Azure | ontap_cloud_direct_gen2 
 
 
-| 9.16.1 et versions ultérieures | Tous les déploiements via BlueXP  | ONTAP_cloud 
+| 9.17.1 et versions ultérieures | BlueXP | ontap_cloud_gen2 
 
 
-| 9.15.1 | Tous les déploiements via BlueXP  | ONTAP_cloud 
+| 9.16.1 | La place de marché Azure | ONTAP_cloud_direct 
 
 
-| 9.15.0 | Un seul nœud | ontap_cloud_byol 
+| 9.16.1 | BlueXP | ONTAP_cloud 
 
 
-| 9.15.0 | Haute disponibilité | ontap_cloud_byol_ha 
+| 9.15.1 | BlueXP | ONTAP_cloud 
+
+
+| 9.15.0 | BlueXP, déploiements à nœud unique | ontap_cloud_byol 
+
+
+| 9.15.0 | BlueXP, déploiements haute disponibilité (HA) | ontap_cloud_byol_ha 
 |===
 . Après avoir mappé la version ONTAP et l’image de la place de marché Azure, exportez le fichier VHD à partir de la place de marché Azure à l’aide d’Azure Cloud Shell ou d’Azure CLI.
 
