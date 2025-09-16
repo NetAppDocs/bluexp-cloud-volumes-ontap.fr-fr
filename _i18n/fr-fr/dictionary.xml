@@ -5563,7 +5563,6 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="fdcb4cfaa6fda318a31e37ce29a14e92" category="section-title">Prise en charge minimale de la version de Flash cache dans Azure</block>
   <block id="d05c6d51d7a4b0bd019498131ff00f16" category="paragraph">La version minimale de Cloud Volumes ONTAP requise pour la configuration de Flash cache dans Azure est la version 9.13.1 GA. Vous pouvez utiliser ONTAP 9.13.1 GA et versions ultérieures uniquement pour déployer Flash cache sur les systèmes Cloud Volumes ONTAP dans Azure.</block>
   <block id="b77891a5294c25aca8a6fda943805ecf" category="doc">Prise en charge des régions chinoises pour Cloud Volumes ONTAP 9.13.1 dans AWS</block>
-  <block id="3899c7c0df13a38296f1334779a1dfe7" category="paragraph">Vous pouvez désormais déployer Cloud Volumes ONTAP 9.13.1 dans AWS dans les régions chinoises. Cela inclut la prise en charge des déploiements à un seul nœud et la haute disponibilité (HA). Une fois que vous avez déployé Cloud Volumes ONTAP 9.13.1, vous pouvez le mettre à niveau vers des versions ultérieures. Seules les licences achetées directement auprès de NetApp sont prises en charge.</block>
   <block id="abe88f95b23156cb29c433c9ebe92a00" category="inline-link">Cartes des régions mondiales pour Cloud Volumes ONTAP</block>
   <block id="10df570a0447a18b299f516b2e8498c2" category="paragraph">Pour connaître la disponibilité régionale, reportez-vous au<block ref="f76c632bc8b9c4e032a9d48fcbfa8dc1" category="inline-link-rx"></block>.</block>
   <block id="aa3bf76b3589430467bef386eaec9486" category="doc">Nouvelles régions prises en charge dans Azure</block>
@@ -5913,4 +5912,5 @@ Optimisez l'efficacité. Affichez les mesures de l'efficacité du stockage et id
   <block id="eeea8782a887558399361aec836b75d0" category="cell">BlueXP, déploiements haute disponibilité (HA)</block>
   <block id="36991a14fecff3acb300e7240e20124a" category="cell">9.17.1 (pour Azure et Google Cloud uniquement)</block>
   <block id="ba3c0cba3a3d15ce8426fc737476a59c" category="section-title">4 septembre 2025</block>
+  <block id="a3f77d8413628b40c09a649cd79a6e02" category="paragraph">Vous pouvez désormais déployer Cloud Volumes ONTAP 9.13.1 dans AWS dans les régions chinoises.  Cela inclut la prise en charge des déploiements à nœud unique et à haute disponibilité (HA).  Seules les licences achetées directement auprès de NetApp sont prises en charge.</block>
 </blocks>
